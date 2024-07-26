@@ -19,17 +19,18 @@
 
 Before starting to touch everywhere, you need to diagnose the general case. So it would be best if you asked yourself questions like:
 
-- How bad is it?
-  - What is the affected Environment?
-  - Does this impact the team delivery?
-  - Can we live with the issue?
-- What could be a possible cause?
-  - Naming: unless you are prepared for the unexpected and have ways to avoid depending on the name of resources, some changes may cause disruption as those could prevent you from accessing the right resource or prevent you from reaching the resource.
-  - Paths
-  - Versions: a [minor](https://docs.npmjs.com/about-semantic-versioning#:~:text=Backward%20compatible%20new%20features) update may not cause some issues but you never know! Best to be sure.
-  - Policies
-  - Rules
-  - You made plans or had the horrible idea of wanting a relaxed Friday.
+| Main Question               | Follow-up Questions    | Expected Insights |
+| -----------------------|:----------------:|:---------:|
+|How bad is it?|What is the affected Environment?||
+||Does this impact the team delivery?||
+||Can we live with the issue?||
+|What could be a possible cause?|Naming|unless you are prepared for the unexpected and have ways to avoid depending on the name of resources, some changes may cause disruption as those could prevent you from accessing the right resource or prevent you from reaching the resource.|
+||Paths||
+||Versions|a [minor](https://docs.npmjs.com/about-semantic-versioning#:~:text=Backward%20compatible%20new%20features) update may not cause some issues but you never know! Best to be sure.|
+||Policies||
+||Rules||
+||Make plans|horrible idea of wanting a relaxed Friday.|
+
 
 Reasoning the scope and range of the issue will reduce the stress caused by the abrupt interruption of your daily activities. And by knowing what it is, you can at least prepare some excuses for the upper management while you figure stuff.
 
