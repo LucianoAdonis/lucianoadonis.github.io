@@ -11,7 +11,7 @@ I've acquired some of these techniques through experience and by channeling my a
 * https://lucianoadonis.github.io/ 
 {:toc}
 
-### Reacting to a Problem
+## Reacting to a Problem
 
 >“We cannot choose our external circumstances, but we can always choose how we respond to them”
 ― Epictetus
@@ -56,7 +56,7 @@ Infrastructure > Development > Additional Teams > Dependencies > Blame the Cloud
 ```
 But before jumping on each type, let's go in a different direction, our techniques.
 
-### Techniques
+## Techniques
 
 >Where should I start? What can I check? Why me? Why on a Friday? - Engineer
 
@@ -64,7 +64,7 @@ It's normal to question where to begin, but without a structured approach, you m
 
 I will eventually go deep into each one, but consider the following titles as the suggested approach:
 
-#### Quick Methods
+### Quick Methods
 
 If everything has been quiet without any changes I would suggest this:
 
@@ -79,7 +79,7 @@ If you are during implementation or testing use the classic approach:
 - **Accept the Error**:
 - **Live with the Error**:
 
-#### Long Methods
+### Long Methods
 
 If your problem doesn't appear to go anywhere any time soon, then you will definetely will need to try any or all of the following:
 
@@ -89,7 +89,7 @@ If your problem doesn't appear to go anywhere any time soon, then you will defin
   - This will take time, but it will allow you to observe and compare various cases.
   - Always remember to take notes. Certain behaviors may only manifest under specific conditions, and in the heat of troubleshooting, it's easy to overlook or repeat steps. Keeping detailed notes helps you stay organized and in control of the situation. 
 
-#### Understanding is Half of the Battle
+### Understanding is Half of the Battle
 - **Taking notes**:
 - **Making Diagrams**:
 
@@ -97,16 +97,16 @@ Making the process easy to understand will definitely help if new team members h
 There is nothing worse than feeling like you have to start completely from scratch in a troubleshooting process. A new pair of eyes is always welcome, but if things seem to be at a dead end, it is better to concentrate efforts on exploring new avenues to progress. This can save time and effort in the troubleshooting process.
 
 
-### Proper Escalation
+## Proper Escalation
 
 
 
-#### Infrastructure
-#### Development
-#### Dependencies
-#### Other Stuff
+### Infrastructure
+### Development
+### Dependencies
+### Other Stuff
 
-### Git Gud
+## Git Gud
 >"I've wrestled with alligators, I've tussled with a whale. I done handcuffed lightning And throw thunder in jail (...)" — Muhammad Ali Jinnah
 
 Experience is what will make you proud of yourself. There isn’t a magic trick that will solve all problems; instead, there are tools and techniques that can help facilitate your reaction to things and act accordingly.
