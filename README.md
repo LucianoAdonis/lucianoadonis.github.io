@@ -34,6 +34,11 @@ Before starting to touch everywhere, you need to diagnose the general case. So i
 
 Reasoning the scope and range of the issue will reduce the stress caused by the abrupt interruption of your daily activities. And by knowing what it is, you can at least prepare some excuses for the upper management while you figure stuff.
 
+## Preemptive Strategies
+
+You can take it as panicking beforehand so you will know what to do when things go wrong.
+Preparation is key, and it is normal to ignore things that are "working" and don't add value to day-to-day work. But look at it this way: You are a prepper, and that will pay off eventually.
+
 ### Negative Thinking
 
 >'Expect the best, prepare for the worst.' — Muhammad Ali Jinnah
@@ -49,6 +54,38 @@ Like
 Some may seem counterintuitive, but tech debt makes our work more exciting and, above all, problematic. Finding those flaws in a critical moment won't make your life easier.
 
 Even if we have that in mind you mess up, that's an exciting story for a barbeque or to tell your dates.
+
+### Suggested Questions
+
+If your anxiety doesn't work overtime, I would advise starting to understand the dependencies of the applications/services you have.
+
+You should be able to answer questions like:
+
+- What are the teams we are related to?
+- What happen if any of those teams decided to explode their systems?
+- Do we have degradation for X systems?
+- What are our alerts/metrics?
+- What is the information on our endpoints? Do they tell us something?
+
+As a side note, I always thought Chaos Engineering was about crashing and strengthening things. But that's only about 20% of it. The rest is about getting to know your systems and the dependencies, as in big architectures, some components are not under our control.
+
+### Question Around and Find Out
+
+Trying to figuring it out alone is not worth it, may look cool, but it usually it is better to rely on others, like:
+
+- QA
+- Dev
+- Managers
+
+Everyone will have a piece of information that will help you uncover the secrets and mysteries, and by that, I mean the Tech Debt.
+Be aware that sometimes other team members won't have all the answers. It may be that they didn't care, or as it usually happens in technology, things stagnate or move fast, so they will probably remember parts of both architectures.
+This is a convoluted way to say: If they don't know, that's okay for them; if you don't, WHAT ARE YOU DOING!?
+
+Remember:
+
+- Be patient.
+- Be reasonable.
+- Respete para que lo respeten.
 
 ### Responsabilities
 
