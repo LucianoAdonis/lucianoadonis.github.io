@@ -44,7 +44,7 @@ Preparation is key, and it is normal to ignore things that are "working" and don
 
 ### Negative Thinking
 
->'Expect the best, prepare for the worst.' — Muhammad Ali Jinnah
+>"Expect the best, prepare for the worst." — Muhammad Ali Jinnah
 
 Considering the worst-case scenario, such as the risk of exacerbating the issue or even losing your job, can be a powerful motivator to set boundaries when troubleshooting. If you find yourself making things worse, it's a clear sign that these boundaries could have prevented such a situation. Remember, the consequences of not setting these boundaries can be severe.
 
@@ -73,12 +73,13 @@ You should be able to answer questions like:
 As a side note, I always thought Chaos Engineering was about crashing and strengthening things. But that's only about 20% of it. The rest is about getting to know your systems and the dependencies, as in big architectures, some components are not under our control.
 
 ### Question Around and Find Out
+> "When the you stare into the abyss, the abyss doubles it and gives it to the next person" - TikTok Nietzsche
 
 Trying to figuring it out alone is not worth it, may look cool, but it usually it is better to rely on others, like:
 
-- QA
-- Dev
-- Managers
+- QA: they know what can be wrong internally and in most cases between dependencies.
+- Dev: they have nightmare stories, so they may not recall inmmediately but their hearts will remember the experience.
+- Managers: they are haunted by technical debts and new problems, so they can give you insight in either the future or past for sure.
 
 Everyone will have a piece of information that will help you uncover the secrets and mysteries, and by that, I mean the Tech Debt.
 Be aware that sometimes other team members won't have all the answers. It may be that they didn't care, or as it usually happens in technology, things stagnate or move fast, so they will probably remember parts of both architectures.
@@ -148,7 +149,13 @@ There is nothing worse than feeling like you have to start completely from scrat
 ### Dependencies
 ### Other Stuff
 
-## Git Gud
+## Experience
+>"If you’re the smartest person in the room, you’re in the wrong room." - Richard P. Feynman
+
+### Git Gud
 >"I've wrestled with alligators, I've tussled with a whale. I done handcuffed lightning And throw thunder in jail (...)" — Muhammad Ali Jinnah
 
 Experience is what will make you proud of yourself. There isn’t a magic trick that will solve all problems; instead, there are tools and techniques that can help facilitate your reaction to things and act accordingly.
+
+### Share
+>"When people put you up in the pedestal don’t come off the pedestal acting like your humble. Stay up on that pedestal because if they put you there that’s showing you how high they can see. Stay there and pull them up." - Víctor Wooten
