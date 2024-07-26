@@ -3,6 +3,9 @@
 
 >I don't know who you are. I don't know what you want. If you are looking for specific solutions I can tell you I don't have any, but what I do have are a very particular set of skills. Skills I have acquired over a very long career. Skills that make me a problem-solver for people like you.
 
+Some approaches and strategies come so intuitively to me that I don't even think about them. I wanted to pull a more detailed explanation beyond just 'my hearts guide me.'
+I hope this will be useful to others.
+
 ---
 
 ⚠️ **I work on this on the side, so expect to be incompleted for a while!** ⚠️
