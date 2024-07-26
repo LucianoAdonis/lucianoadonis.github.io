@@ -1,10 +1,11 @@
 
 # Troubleshooting Guide
-I've acquired some of these techniques through experience and by channeling my anxiety into productive approaches. And if for some reason my memory gets wiped out, it should take me only a few months to get back to a decent level.
+
+>I don't know who you are. I don't know what you want. If you are looking for specific solutions I can tell you I don't have any, but what I do have are a very particular set of skills. Skills I have acquired over a very long career. Skills that make me a problem-solver for people like you.
 
 ---
 
-⚠️ **I do hope I have enough time and patience to keep up with this effort, as it will definitely save me a lot of time in the long run by avoiding the need to teach these concepts repeatedly.** ⚠️
+⚠️ **I work on this on the side, so expect to be incompleted for a while!** ⚠️
 
 ---
 
