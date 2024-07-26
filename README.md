@@ -8,7 +8,7 @@ I've acquired some of these techniques through experience and by channeling my a
 
 ---
 
-* https://lucianoadonis.github.io/ts/ 
+* https://lucianoadonis.github.io/ 
 {:toc}
 
 ### Reacting to a Problem
