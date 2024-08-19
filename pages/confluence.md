@@ -1,6 +1,8 @@
-# Oh God I'm Doing This
+---
+layout: default
+title: Confluence and You
+---
 
-## Confluence
 >Writing in Confluence is more like arranging your digital Zen garden, than actually writing. - Luciano Adonis
 
 ### Page Layout
