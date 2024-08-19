@@ -1,11 +1,21 @@
 ---
 layout: default
 title: Confluence and You
+description:
 ---
 
 >Writing in Confluence is more like arranging your digital Zen garden, than actually writing. - Luciano Adonis
 
+I've spent so many years with Confluence that I might as well marry it by now. But, sticking to the topic at hand, I've picked up a few tricks that can help your chakras alignt when it comes to Confluence.
+
+## Features
+
+To use Confluence you must become the Confluence.
+
 ### Page Layout
+
+Often overlooked, but using multiple rows and columns can significantly improve how you display content or highlight key points.
+Instead of scrolling through a vertical monolith of text, you can create a more dynamic and engaging layout. We're in a strange time where, if we're not engaging enough, we risk becoming irrelevant—or worse, ignored entirely.
 
 ### Macros
 

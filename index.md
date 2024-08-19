@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Luciano's Guide to Something
+description:
 ---
 
 # Welcome to My GitHub Pages Site
