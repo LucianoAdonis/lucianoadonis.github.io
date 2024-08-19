@@ -159,3 +159,11 @@ Experience is what will make you proud of yourself. There isn’t a magic trick 
 
 ### Share
 >"When people put you up in the pedestal don’t come off the pedestal acting like your humble. Stay up on that pedestal because if they put you there that’s showing you how high they can see. Stay there and pull them up." - Víctor Wooten
+
+## Plan B
+
+
+## Random Conclusions
+
+- It was the 
+- We didn't even had to do this to begin with.
