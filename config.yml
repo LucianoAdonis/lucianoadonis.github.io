@@ -2,4 +2,4 @@ title: Luciano's Documentation
 description: A few pages to share some thoughts and tips.
 baseurl: ""
 url: "https://lucianoadonis.github.io/"
-theme: minima
+theme: jekyll-theme-cayman
