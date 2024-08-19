@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Home
+title: Luciano's Guide to Something
 ---
 
 # Welcome to My GitHub Pages Site
 
-- [Troubleshooting](./pages/troubleshooting)
+- [Troubleshooting](./pages/troubleshooting): knowing is the first step.
 - [Confluence](./pages/confluence).
