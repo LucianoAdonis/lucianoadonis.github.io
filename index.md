@@ -5,4 +5,5 @@ title: Home
 
 # Welcome to My GitHub Pages Site
 
-This is the homepage. [Go to Documentation](./pages/confluence).
+- [Troubleshooting](./pages/troubleshooting)
+- [Confluence](./pages/confluence).
