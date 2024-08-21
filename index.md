@@ -28,3 +28,8 @@ description: I just can't bring myself to call them "Guides"
 - Communication: TO DO.
 - [Troubleshooting](./pages/troubleshooting): knowing is the first step.
 - Mentoring: TO DO.
+
+# Gists
+
+- [Chrome Plugins](https://gist.github.com/LucianoAdonis/be46fd68a6324a9777385b8982885cc3).
+- [VSCode Settings to Make Life Better](https://gist.github.com/LucianoAdonis/4a711db16b8eef7a24c5e66110ba644e).
