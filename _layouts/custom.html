@@ -23,7 +23,10 @@
     </header>
 
     <div id="banner">
-      <span id="logo"></span>
+      <!-- Linked logo with CSS hover effect -->
+      <a href="{{ site.github.repository_url }}" style="text-decoration: none;">
+        <img id="logo" src="{{ '/assets/images/logo.png' | relative_url }}" alt="Logo" class="logo">
+      </a>
 
       {% if page.url != "/" %}
         <a href="/" class="button home"><strong>Go to Home</strong></a>

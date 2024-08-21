@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: custom
 title: Confluence and You
 description: Unlocking the True Potential of Documentation
 ---
