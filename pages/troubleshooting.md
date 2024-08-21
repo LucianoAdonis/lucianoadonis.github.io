@@ -18,7 +18,7 @@ I hope this will be useful to others.
 * https://lucianoadonis.github.io/ 
 {:toc}
 
-## Reacting to a Problem
+# Reacting to a Problem
 
 >“We cannot choose our external circumstances, but we can always choose how we respond to them”
 ― Epictetus
@@ -40,12 +40,12 @@ Before starting to touch everywhere, you need to diagnose the general case. So i
 
 Reasoning the scope and range of the issue will reduce the stress caused by the abrupt interruption of your daily activities. And by knowing what it is, you can at least prepare some excuses for the upper management while you figure stuff.
 
-## Preemptive Strategies
+# Preemptive Strategies
 
 You can take it as panicking beforehand so you will know what to do when things go wrong.
 Preparation is key, and it is normal to ignore things that are "working" and don't add value to day-to-day work. But look at it this way: You are a prepper, and that will pay off eventually.
 
-### Negative Thinking
+## Negative Thinking
 
 >"Expect the best, prepare for the worst." — Muhammad Ali Jinnah
 
@@ -61,7 +61,7 @@ Some may seem counterintuitive, but tech debt makes our work more exciting and, 
 
 Even if we have that in mind you mess up, that's an exciting story for a barbeque or to tell your dates.
 
-### Suggested Questions
+## Suggested Questions
 
 If your anxiety doesn't work overtime, I would advise starting to understand the dependencies of the applications/services you have.
 
@@ -75,7 +75,7 @@ You should be able to answer questions like:
 
 As a side note, I always thought Chaos Engineering was about crashing and strengthening things. But that's only about 20% of it. The rest is about getting to know your systems and the dependencies, as in big architectures, some components are not under our control.
 
-### Question Around and Find Out
+## Question Around and Find Out
 > "When the you stare into the abyss, the abyss doubles it and gives it to the next person" - TikTok Nietzsche
 
 Trying to figuring it out alone is not worth it, may look cool, but it usually it is better to rely on others, like:
@@ -94,7 +94,7 @@ Remember:
 - Be reasonable.
 - Respete para que lo respeten.
 
-### Responsabilities
+## Responsabilities
 
 This may not apply to all companies but it shares some common patterns when working with big teams. I will follow this pattern:
 ```bash
@@ -102,7 +102,7 @@ Infrastructure > Development > Additional Teams > Dependencies > Blame the Cloud
 ```
 But before jumping on each type, let's go in a different direction, our techniques.
 
-## Techniques
+# Techniques
 
 >Where should I start? What can I check? Why me? Why on a Friday? - Engineer
 
@@ -110,7 +110,7 @@ It's normal to question where to begin, but without a structured approach, you m
 
 I will eventually go deep into each one, but consider the following titles as the suggested approach:
 
-### Quick Methods
+## Quick Methods
 
 If everything has been quiet without any changes I would suggest this:
 
@@ -125,7 +125,7 @@ If you are during implementation or testing use the classic approach:
 - **Accept the Error**:
 - **Live with the Error**:
 
-### Long Methods
+## Long Methods
 
 If your problem doesn't appear to go anywhere any time soon, then you will definetely will need to try any or all of the following:
 
@@ -135,7 +135,7 @@ If your problem doesn't appear to go anywhere any time soon, then you will defin
   - This will take time, but it will allow you to observe and compare various cases.
   - Always remember to take notes. Certain behaviors may only manifest under specific conditions, and in the heat of troubleshooting, it's easy to overlook or repeat steps. Keeping detailed notes helps you stay organized and in control of the situation. 
 
-### Understanding is Half of the Battle
+## Understanding is Half of the Battle
 - **Taking notes**:
 - **Making Diagrams**:
 
@@ -143,30 +143,30 @@ Making the process easy to understand will definitely help if new team members h
 There is nothing worse than feeling like you have to start completely from scratch in a troubleshooting process. A new pair of eyes is always welcome, but if things seem to be at a dead end, it is better to concentrate efforts on exploring new avenues to progress. This can save time and effort in the troubleshooting process.
 
 
-## Proper Escalation
+# Proper Escalation
 
 
 
-### Infrastructure
-### Development
-### Dependencies
-### Other Stuff
+## Infrastructure
+## Development
+## Dependencies
+## Other Stuff
 
 ## Experience
 >"If you’re the smartest person in the room, you’re in the wrong room." - Richard P. Feynman
 
-### Git Gud
+## Git Gud
 >"I've wrestled with alligators, I've tussled with a whale. I done handcuffed lightning And throw thunder in jail (...)" — Muhammad Ali Jinnah
 
 Experience is what will make you proud of yourself. There isn’t a magic trick that will solve all problems; instead, there are tools and techniques that can help facilitate your reaction to things and act accordingly.
 
-### Share
+## Share
 >"When people put you up in the pedestal don’t come off the pedestal acting like your humble. Stay up on that pedestal because if they put you there that’s showing you how high they can see. Stay there and pull them up." - Víctor Wooten
 
-## Plan B
+# Plan B
 
 
-## Random Conclusions
+# Random Conclusions
 
 - It was the 
 - We didn't even had to do this to begin with.
