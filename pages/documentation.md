@@ -15,12 +15,11 @@ Here are some tips:
 - When writing, think about the person who’ll be reading this. What will their first thought be? It’s a good practice to assume they’ll have more knowledge gaps than you do, so cover those quickly and clearly.
 
 
-## AIs and ChatGPT
+# AIs and ChatGPT
 
-As you may already know (I hope so), we shouldn't use this service. If you do because "insert the proper reason here," at least don't do it carelessly; exposing sensitive information by passing a whole document just to rewrite two lines of text would be very questionable.
+As you may already know (I hope so), in a company you should avoid use this service. If you do because "insert the proper reason here," at least don't do it carelessly; exposing sensitive information by passing a whole document just to rewrite two lines of text would be very questionable.
 
 To put it simply, if someone asks how they're doing and they respond with a lengthy explanation about the current geopolitical and economic situation before getting into business, it might come across as odd and pretentious. The same principle applies to documents; sometimes, less is more.
-
 
 Let's say I want to write a quick context for a document that delves deeper into the Cold Start issue affecting Lambdas inside VPCs. A simple answer would be, "Lambdas that run on VPCs are not fast because the allocation of internal resources is slower than public ones that are always ready to be executed."
 
