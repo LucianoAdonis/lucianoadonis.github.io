@@ -25,13 +25,15 @@
     <div id="banner">
       <!-- Linked logo with CSS hover effect -->
       <a href="{{ site.github.repository_url }}" style="text-decoration: none;">
-        <img id="logo" alt="Logo" class="logo">
+        <img id="logo" class="logo">
       </a>
 
       {% if page.url != "/" %}
         <a href="/" class="button home"><strong>Go to Home</strong></a>
       {% endif %}
       
+      <!-- Commenting out the extra buttons -->
+      <!--
       {% if site.show_links %}
         <div class="links">
           <span></span>
@@ -41,6 +43,7 @@
           </ul>
         </div>
       {% endif %}
+      -->
     </div><!-- end banner -->
 
     <div class="wrapper">
