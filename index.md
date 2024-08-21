@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Luciano's Guide to Something
-description:
+title: Luciano's Mini Books
+description: I just can't bring myself to call them "Guides"
 ---
 
 
