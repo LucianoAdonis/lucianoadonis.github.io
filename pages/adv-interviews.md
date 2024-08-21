@@ -1,5 +1,5 @@
 # Preparations
-This document is focused in people going from Ssr Advance to Sr and provide a quick way to refresh their knowledge on how client interviews work.
+This document is focused for DevOps/Cloud Engineers going from Ssr Advance to Sr and provide a quick way to refresh their knowledge on how client interviews work.
 But it can also be used by people of higher seniority that needs a refreshment on how things work or tend to.
 
 Try jumping to the other sections, get the following items sorted out before proceeding:
@@ -35,7 +35,8 @@ I’ll expand on this because it’s more fun, and it is what you need to start 
 
 ## Things to know
 
-- Work experience with tools is worth more than just general knowledge. At the Ssr level, being aware of things is enough. At this level, that’s a given. General knowledge questions are sold separately.
+- Work experience with tools is worth more than just general knowledge. At the Ssr level, being aware of things is enough. At this level, that’s a given.
+  - General knowledge questions are sold separately... but we have the [Interview Preparation](#interview-preparation) to give a glance in the different topics.
 - On the same note, certifications are good, but just enough to skip the easy questions.
   - It’s hard on people who work “hard” to get one, but yeah, with a certification, you tell me that you have time to study, a decent memory, and probably a subscription to Cloud Guru.
   - It can backfire, so my policy is to take certification on things I’m working on and have enough experience to back it up. Otherwise, I would tackle everything with just memory and cramming.
