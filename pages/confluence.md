@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Confluence and You
-description:
+description: Unlocking the True Potential of Documentation
 ---
 
 >Writing in Confluence is more like arranging your digital Zen garden, than actually writing. - Luciano Adonis

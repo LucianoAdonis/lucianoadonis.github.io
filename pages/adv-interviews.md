@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Advanced Interview
+title: Advanced Interviews
 description: The Information That You Always Wanted!
 ---
 > "To live is to suffer (...) - Friedrich Nietzsche"
@@ -101,6 +101,8 @@ Depending on how you get the interview you may get feedback, by a third-party or
 // Internal challenges
 
 # Interview Preparation
+
+You can google set of questions, but IMHO I prefer to hae pointers and go from there.
 
 - **Tell me about your experience.**
   - The interviewer wants to know about your experience. Lol.
