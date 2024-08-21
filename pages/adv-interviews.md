@@ -1,8 +1,16 @@
-# Preparations
-This document is focused for DevOps/Cloud Engineers going from Ssr Advance to Sr and provide a quick way to refresh their knowledge on how client interviews work.
-But it can also be used by people of higher seniority that needs a refreshment on how things work or tend to.
+---
+layout: default
+title: Advanced Interview
+description: The information that you always wanted.
+---
+> "To live is to suffer (...) - Friedrich Nietzsche"
 
-Try jumping to the other sections, get the following items sorted out before proceeding:
+This Mini Book is focused on DevOps/Cloud Engineers going from Semi-Senior Advanced to Senior and provides a quick way for them to refresh their knowledge on how client interviews work.
+
+Moreover, it can be a decent refresher for people with a higher seniority.
+
+# Preparations
+Before jumping to the other sections, get the items below in order. I have seen many people who try to go to an interview without preparation, which is possible when you either are getting to a level below what you currently are or have enough mileage to know how things go down.
 
 - Learn about yourself. Usually, in the first ten minutes, you will summarize what you have been doing for the past years and your process, achievements, challenges, and how you overcome them.
   - Prepare a speech. It might be hard initially if you are unfamiliar with English or just to interview. But you won’t want to improvise until you get more comfortable talking about your experience and adapting to tell them what they want to hear.
