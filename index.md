@@ -24,6 +24,7 @@ description:
 - Documentation Patterns: TO DO.
 
 ## Behavior
+- Advanced Interviews: TO DO.
 - Communication: TO DO.
 - [Troubleshooting](./pages/troubleshooting): knowing is the first step.
 - Mentoring: TO DO.
