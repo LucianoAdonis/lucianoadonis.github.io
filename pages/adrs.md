@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: custom
 title: Architectural Decision Record (ADR)
 description: Either the Reason or Solution of Your Problems
 ---

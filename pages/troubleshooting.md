@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: custom
 title: Troubleshooting Guide
 description: Who knows, you may find something useful here!
 ---
