@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: custom
 title: Luciano's Mini Books
 description: I just can't bring myself to call them "Guides"
 ---
