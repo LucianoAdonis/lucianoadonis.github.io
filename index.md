@@ -24,7 +24,7 @@ description:
 - Documentation Patterns: TO DO.
 
 ## Behavior
-- Advanced Interviews: TO DO.
+- [Advanced Interviews](./pages/adv-interviews): it won't land you a job right of the bat but it will definetily will give you more advice than "be confident" or "show them your teeth".
 - Communication: TO DO.
 - [Troubleshooting](./pages/troubleshooting): knowing is the first step.
 - Mentoring: TO DO.
