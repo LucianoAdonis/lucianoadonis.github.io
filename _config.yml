@@ -7,5 +7,5 @@ plugins:
 kramdown:
   toc_levels: 2..3
 
-social:
-  github: https://github.com/username
+github:
+  zip_url: https://lucianoadonis.github.io/
