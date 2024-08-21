@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Architectural Decision Record (ADR)
-description:
+description: Either the Reason or Solution of Your Problems
 ---
 
 An ADR is a document that outlines the critical details of an architectural decision, including its context and impact on the system. It helps gather input from multiple team members by providing a clear overview of the decision and the next steps. By documenting decisions upfront, an ADR ensures everyone is aligned on what was decided and why, preventing future misunderstandings.

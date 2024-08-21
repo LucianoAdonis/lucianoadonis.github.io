@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Advanced Interview
-description: The information that you always wanted!
+description: The Information That You Always Wanted!
 ---
 > "To live is to suffer (...) - Friedrich Nietzsche"
 
