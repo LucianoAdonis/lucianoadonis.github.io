@@ -8,6 +8,7 @@ kramdown:
   toc_levels: 2..3
 
 
-show_downloads: true
-custom_urls:
-  zip_url: https://lucianoadonis.github.io/
+show_links: true
+links:
+  github: https://lucianoadonis.github.io/
+  youtube: https://www.youtube.com/@energon-hq/

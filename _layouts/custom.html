@@ -26,12 +26,11 @@
         <span id="logo"></span>
 
         <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
-        {% if site.show_downloads %}
-          <div class="downloads">
-            <span>Downloads:</span>
+        {% if site.show_links %}
+          <div class="links">
             <ul>
-              <li><a href="{{ site.custom_urls.zip_url }}" class="button">ZIP</a></li>
-              <li><a href="{{ site.custom_urls.tar_url }}" class="button">TAR</a></li>
+              <li><a href="{{ site.links.github }}" class="button">GH</a></li>
+              <li><a href="{{ site.links.youtube }}" class="button">YT</a></li>
             </ul>
           </div>
         {% endif %}
