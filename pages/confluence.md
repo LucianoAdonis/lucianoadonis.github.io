@@ -50,7 +50,7 @@ So, what happened? A few slight changes with the layout:
 
 # Macros
 
-Let’s talk Macros—those nifty little tools that can take your pages from “meh” to “wow.” Below is a list of my favorites, but if you’re in a hurry, skip to the next section for the ones that’ll matter most in the short term.
+Let’s talk Macros—those nifty little tools that can take your pages from “meh” to “wow.” Below is a list of my favorites, but if you’re in a hurry, skip to the [next section](#simple-combination) for the ones that’ll matter most in the short term.
 
 - [Multiexcerpt](https://confluence.atlassian.com/conf719/excerpt-macro-1157466743.html): Reuse text and images across pages by naming them.
 - [Multiexcerpt Include](https://confluence.atlassian.com/conf719/excerpt-include-macro-1157466741.html): Import selected multiexcerpts from specified pages.
@@ -76,13 +76,20 @@ Let’s talk Macros—those nifty little tools that can take your pages from “
 - [Alert](https://confluence.atlassian.com/doc/expand-macro-223222352.html): Create customizable alerts that display when a page loads.
 
 
-## Macro Combinations
+## Simple Combination
 
-If you’ve only got the mental bandwidth for a few Macros, prioritize these:
+If you’ve only got the mental bandwidth for a few Macros, prioritize the following macros to get quick results:
 
-* [Multiexcerpt](https://confluence.atlassian.com/conf719/excerpt-macro-1157466743.html): I consider [Multiexcerpt Include](https://confluence.atlassian.com/conf719/excerpt-include-macro-1157466741.html) to be part of it, but this will allow you to reuse content in other pages. Like code!
+* [Multiexcerpt](https://confluence.atlassian.com/conf719/excerpt-macro-1157466743.html): I consider [Multiexcerpt Include](https://confluence.atlassian.com/conf719/excerpt-include-macro-1157466741.html) to be part of it, so it counts as one. This will allow you to reuse content in other pages. Like coding!
 * [Table Filter](https://docs.stiltsoft.com/tfac/cloud/how-to-use-table-filter-macro-42239756.html): There are such great things that you can do with filters and queries. It's sad that you have to but at least is not painful!
 - [ChildTabs](https://docs.bitvoodoo.app/navitabs-tabs-for-confluence-data-center/?utm_source=bv-app&utm_medium=Editor&utm_campaign=Navitabs%20Child%20Tabs%20Macro): For when you’ve got a bunch of subpages—this helps you keep it all organized without endless tabs.
+
+In the following example, the main page "Macros Example" displays two results with the ChildTabs that are the pages under it. The context behind those pages will be explained in the Datasource Page's [example](#example-1), but for know you need two know that those are separated pages loaded simultaneously and quickly accessible through the parent page.
+
+The cross reference between those is not limitated by location but just for simplicity.
+
+<img class="myImg" src="../images/confluence/childtabs-macro-content-side-by-side.png" alt="childtabs-macro-content-side-by-side" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
 
 # Datasource Pages
 
@@ -90,7 +97,9 @@ Just like it sounds, a Datasource Page is where you consolidate information. Wit
 
 If you ever change the name or something on the datasource page, it won’t break the pages that depend on it—it updates automatically. So go ahead, get creative!
 
-# Example
+## Structure
+
+## Example
 The reusable content can be anything that you can place in that box, so be either text or image it can be there. Of course, with the exception of tables which have their own macro to do that.
 
 <img class="myImg" src="../images/confluence/multiexcerpt-example.png" alt="multiexcerpt-example" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
