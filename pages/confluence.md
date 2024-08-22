@@ -17,6 +17,25 @@ To use Confluence you must become the Confluence.
 Often overlooked, but using multiple rows and columns can significantly improve how you display content or highlight key points.
 Instead of scrolling through a vertical monolith of text, you can create a more dynamic and engaging layout. We're in a strange time where, if we're not engaging enough, we risk becoming irrelevant—or worse, ignored entirely.
 
+### Example
+
+![alt text](../images/confluence/pagelayout-example-1.png "pl1") 
+
+![alt text](../images/confluence/pagelayout-example-2.png "pl2") 
+
+![alt text](../images/confluence/pagelayout-example-2-explanation.png "pl2") 
+
+1. Title was adjusted to Level 3 to not distract from the content.
+2. A grid was defined for only that item so it doesn't colide with others.
+3. Moved the text to make for a lenghty introduction.
+4. Logo is displayed at the side, same size.
+5. The Livesearch macro will now have a text to display and its kept under the logo.
+6. The grid is 2/3 to have more space to text.
+7. The difference with this grid is that it is three columns. Whatever works for you!
+8. Sometimes it's simpler to have a grid to act as a separator.
+
+
+
 ## Macros
 
 Let’s talk Macros—those nifty little tools that can take your pages from “meh” to “wow.” Below is a list of my favorites, but if you’re in a hurry, skip to the next section for the ones that’ll matter most in the short term.
