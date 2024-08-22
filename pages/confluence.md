@@ -50,6 +50,16 @@ So, what happened? A few slight changes with the layout:
 
 # Macros
 
+Macros are plugins that enhance Confluence's functionality. A wide variety is available, from official options to community-created tools. While some are premium and offer advanced features, there are plenty of free options to explore.
+
+You are probably already familiar with common plugins like [Code Block](https://confluence.atlassian.com/doc/code-block-macro-139390.html) and [Page Index](https://confluence.atlassian.com/doc/page-index-macro-182682092.html) macros.
+
+But there are a lot more combinations that you can make from them. The following section will include a list of amazing Macros worth checking out. 
+There will be examples of a few combinations and how to make the most of them.
+
+
+## Cool Macros 
+
 Let’s talk Macros—those nifty little tools that can take your pages from “meh” to “wow.” Below is a list of my favorites, but if you’re in a hurry, skip to the [next section](#simple-combination) for the ones that’ll matter most in the short term.
 
 - [Multiexcerpt](https://confluence.atlassian.com/conf719/excerpt-macro-1157466743.html): Reuse text and images across pages by naming them.
@@ -117,6 +127,15 @@ From the edition menu will look like this:
 [Live Search](https://confluence.atlassian.com/conf719/livesearch-macro-1157466803.html) gets even better when you’re using proper tagging, so take the time to tag your content wisely.
 
 [Go to Types of Pages](#types-of-pages) for more inspiration.
+
+# Security & Limitations
+
+Not much to say, just to complain.  
+
+- There are not granular controls over the documentation by default. Basically an exclusive list or allow all. There is a solution sold by Confluence to have more visibility over everything for each type of implementation:
+  - On-Prem: Tower.
+  - Cloud: Guard.
+- Page Ownership is only available in Cloud Version.
 
 
 <!-- Single Modal -->
