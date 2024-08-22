@@ -18,10 +18,21 @@ Often overlooked, but using multiple rows and columns can significantly improve 
 Instead of scrolling through a vertical monolith of text, you can create a more dynamic and engaging layout. We're in a strange time where, if we're not engaging enough, we risk becoming irrelevant—or worse, ignored entirely.
 
 ### Example
-
+The following page, which is a dummy btw (thanks ChatGPT) would be your run of the mill page in Confluence, let's see it!
 ![alt text](../images/confluence/pagelayout-example-1.png "pl1") 
 
+- It doesn't have cohesion.
+- Feels awkward.
+- Looks like some pointers from the new hire.
+
+Now let's continue with an "arranged" version of it:
+
 ![alt text](../images/confluence/pagelayout-example-2.png "pl2") 
+
+- Could be improved! but it feels more natural and structured. Like they know what are they doing.
+- Some extra colors may do some good, but let's keep it simple for now.
+
+So, what happened? A few slight changes with the layout:
 
 ![alt text](../images/confluence/pagelayout-example-2-explanation.png "pl2") 
 
