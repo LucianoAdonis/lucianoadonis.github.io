@@ -53,9 +53,6 @@ So, what happened? A few slight changes to the layout:
 One of the biggest problems that I have seen regarding people documentating is a lack of structure, so basically they expend more time wondering about how to do structure the page rather than sitting down to write.
 By using a template you can reduce the scope of doing that and have a limited scope of what they need to provide, so instead of making something from nothing, they just have to fill with the proper information.
 
-## Simple Documents
-
-
 ## Complex Documents
 
 An [Architecture Decision Record (ADR)](./pages/adrs.md) is a decent example of that! By "Complex" I'm referring to the lenght and the things that the page has to aboard.
@@ -64,15 +61,39 @@ In short, a document that get's you information relevant of how things where, wh
 
 <img class="myImg" src="../images/confluence/templates-example-1.png" alt="templates-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
-1.
-2.
-3.
+1. Page tags can be part of the template! Make sure to set them.
+2. The Badge Macro can help visualize the status. 
+3. This is a comment you will be seeing a lot.
+4. I have seen people trying to make an index manually. To avoid that awkwardness, we can leave it there, so they need only the basics.
+5. You'll find titles already defined with the proper level, saving you time and effort.
+6. A warning shouldn't be used like that, but enough to make something clear and have it as a reference that the macros exist.
+7. The comments can be helpful in clarifying the objectives of sections or other things to consider.
+8. Example subtitle with a comment of the same level.
+9. It's helpful to have some macros already in place, such as the table of contents, to convey the message that 'hey, this is possible and we've got you covered!'
+
+## Simple Documents
+
+After seeing the example of a Complex Document, you may wonder if you need much noise for everything. The answer is NO!
+
+Where I'm currently working, we have two main patterns: for **Procedures** and **Troubleshooting**. Those can be summarized in:
+
+- Predefined titles.
+- Import of predefined requirements from a Datasource page.
+- Short comments to guide the person's writing.
+- Guidelines on how to format a few things:
+  - Code: If the code/text in the block is lengthy, set it to "Expandable."
+  - Images: size limited to a certain width and a border.
+
 
 # Macros
 
 Macros are plugins that enhance Confluence's functionality. A wide variety is available, from official options to community-created tools. While some are premium and offer advanced features, there are plenty of free options to explore.
 
-You are probably already familiar with common plugins like [Code Block](https://confluence.atlassian.com/doc/code-block-macro-139390.html) and [Page Index](https://confluence.atlassian.com/doc/page-index-macro-182682092.html) macros.
+You are probably already familiar with common plugins like:
+- [Code Block](https://confluence.atlassian.com/doc/code-block-macro-139390.html)
+- [Page Index](https://confluence.atlassian.com/doc/page-index-macro-182682092.html)
+- [Status](https://confluence.atlassian.com/doc/status-macro-223222355.html)
+- [Info, Tip, Note, and Warning](https://confluence.atlassian.com/doc/info-tip-note-and-warning-macros-51872369.html)
 
 But there are a lot more combinations that you can make from them. The following section will include a list of amazing Macros worth checking out. 
 There will be examples of a few combinations and how to make the most of them.
