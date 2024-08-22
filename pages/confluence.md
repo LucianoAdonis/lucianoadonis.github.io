@@ -13,15 +13,22 @@ To use Confluence you must become the Confluence.
 # Page Layout
 
 Often overlooked, but using multiple rows and columns can significantly improve how you display content or highlight key points.
-Instead of scrolling through a vertical monolith of text, you can create a more dynamic and engaging layout. We're in a strange time where, if we're not engaging enough, we risk becoming irrelevant—or worse, ignored entirely.
+Instead of scrolling through a vertical monolith of text, you can create a more dynamic and engaging layout.
+
+Or just put the 
 
 ## Example
 The following page, which is a dummy btw (thanks ChatGPT) would be your run of the mill page in Confluence, let's see it!
 
-<a href="confluence.html" target="_blank" style="display: block; width: fit-content;">
-    <img src="../images/confluence/pagelayout-example-1.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px;" />
-</a>
+<!-- Thumbnail Image -->
+<img id="img1" src="../images/confluence/pagelayout-example-1.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; max-width: 150px; cursor: pointer;">
 
+<!-- Modal for Image 1 -->
+<div id="modal1" class="modal">
+  <span class="close" data-modal="modal1">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption1"></div>
+</div>
 
 - It doesn't have cohesion.
 - Feels awkward.
@@ -29,18 +36,109 @@ The following page, which is a dummy btw (thanks ChatGPT) would be your run of t
 
 Now let's continue with an "arranged" version of it:
 
-<a href="confluence.html" target="_blank" style="display: block; width: fit-content;">
-    <img src="../images/confluence/pagelayout-example-2.png" alt="pagelayout-example-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px;" />
-</a>
+<!-- Thumbnail Image -->
+<img id="img2" src="../images/confluence/pagelayout-example-2.png" alt="pagelayout-example-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; max-width: 150px; cursor: pointer;">
+
+<!-- Modal for Image 2 -->
+<div id="modal2" class="modal">
+  <span class="close" data-modal="modal2">&times;</span>
+  <img class="modal-content" id="img02">
+  <div id="caption2"></div>
+</div>
 
 - Could be improved! but it feels more natural and structured. Like they know what are they doing.
 - Some extra colors may do some good, but let's keep it simple for now.
 
 So, what happened? A few slight changes with the layout:
 
-<a href="confluence.html" target="_blank" style="display: block; width: fit-content;">
-    <img src="../images/confluence/pagelayout-example-2-explanation.png" alt="pagelayout-example-2-explanation" style="border: 2px solid #000; border-radius: 4px; padding: 5px;" />
-</a>
+<!-- Thumbnail Image -->
+<img id="img3" src="../images/confluence/pagelayout-example-2-explanation.png" alt="pagelayout-example-2-explanation" style="border: 2px solid #000; border-radius: 4px; padding: 5px; max-width: 150px; cursor: pointer;">
+
+<!-- Modal for Image 3 -->
+<div id="modal3" class="modal">
+  <span class="close" data-modal="modal3">&times;</span>
+  <img class="modal-content" id="img03">
+  <div id="caption3"></div>
+</div>
+
+<!-- CSS for Modal -->
+<style>
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.9); 
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+#caption1, #caption2, #caption3 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+}
+.modal-content, #caption1, #caption2, #caption3 { 
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+<!-- JavaScript for Modal Functionality -->
+<script>
+function openModal(modalId, imgId, captionId) {
+  var modal = document.getElementById(modalId);
+  var img = document.getElementById(imgId);
+  var modalImg = modal.getElementsByClassName("modal-content")[0];
+  var captionText = document.getElementById(captionId);
+  
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+
+  var span = modal.getElementsByClassName("close")[0];
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+}
+
+openModal('modal1', 'img1', 'caption1');
+openModal('modal2', 'img2', 'caption2');
+openModal('modal3', 'img3', 'caption3');
+</script>
 
 1. Title was adjusted to Level 3 to not distract from the content.
 2. A grid was defined for only that item so it doesn't colide with others.
