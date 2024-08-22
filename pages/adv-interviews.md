@@ -1,6 +1,6 @@
 ---
 layout: custom
-title: Advanced Interviews
+title: Advanced Interview Tactics
 description: The Information That You Always Wanted!
 ---
 > "To live is to suffer (...) - Friedrich Nietzsche"

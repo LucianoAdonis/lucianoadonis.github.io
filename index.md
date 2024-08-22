@@ -11,12 +11,12 @@ description: I just can't bring myself to call them "Guides"
 
 ---
 
-# Micro Books
+# Library
 
 
 ### Optimization
 
-- Slack: TO DO.
+- Slack Mastery: Communicate, Collaborate, and Conquer: TO DO.
 
 ### Documentation
 
@@ -24,22 +24,25 @@ description: I just can't bring myself to call them "Guides"
 - [ADRs](./pages/adrs.md): Document that will save you a lot of trouble down the line.
 - Documentation Patterns: TO DO.
 
-### Behavior
+### Self-Help
 
-- [Advanced Interviews](./pages/adv-interviews): it won't land you a job right of the bat but it will definetily will give you more advice than "be confident" or "show them your teeth".
+Anything related to more behavior 
+
+- [Advanced Interview Tactics: Beyond 'Be Confident'](./pages/adv-interviews): it won't land you a job right of the bat but it will definetily be more useful than many posts.
 - Communication: TO DO.
 - [Troubleshooting](./pages/troubleshooting): knowing is the first step.
 - Mentoring: TO DO.
 
-# Gists
+# Code Snippets & Quick Tips
 
-Single pages/snippets containing my tips and preferences for customization of tools.
+GitHub Gists containing some degree of wisdom and free time.
 
 - [Chrome Plugins](https://gist.github.com/LucianoAdonis/be46fd68a6324a9777385b8982885cc3).
 - [VSCode Settings to Make Life Better](https://gist.github.com/LucianoAdonis/4a711db16b8eef7a24c5e66110ba644e).
 - [Brewfile](https://gist.github.com/LucianoAdonis/43a43e5b80515abb828ceb1d3dca2258).
 - [Edition Tools](https://gist.github.com/LucianoAdonis/93f008e9bf92b0dbcdd5d2ee03f37535).
 - [Sublime Customization](https://gist.github.com/LucianoAdonis/2fdc70716cc00e7d584494b0beafc985).
+- <a href="https://gist.github.com/LucianoAdonis/2fdc70716cc00e7d584494b0beafc985" target="_blank">Sublime Customization</a>
 
 
 # Random Stuff
