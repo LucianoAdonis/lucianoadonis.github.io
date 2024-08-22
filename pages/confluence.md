@@ -17,8 +17,8 @@ Instead of scrolling through a vertical monolith of text, you can create a more 
 
 ## Example
 The following page, which is a dummy btw (thanks ChatGPT) would be your run of the mill page in Confluence, let's see it!
-<a href="confluence.html">
-    <img src="..images/confluence/pagelayout-example-1.png" alt="Example Image" style="border: 2px solid #000; border-radius: 4px; padding: 5px;" />
+<a href="confluence.html" target="_blank" style="display: block; width: fit-content;">
+    <img src="../images/confluence/pagelayout-example-1.png" alt="Example Image" style="border: 2px solid #000; border-radius: 4px; padding: 5px;" />
 </a>
 
 
