@@ -1,16 +1,14 @@
 ---
 layout: custom
 title: Confluence and You
-description: Unlocking the True Potential of Documentation
+description: I Would Marry Confluence
 ---
 
 >"To plant a garden is to believe in tomorrow." – Audrey Hepburn
 
-I've spent so many years with Confluence that I might as well marry it by now. But, sticking to the topic, I've picked up a few tricks to help your chakras align regarding Confluence.
-
 Based on my experience, when you facilitate the patterns and tools to make the process of documenting less taxing, people will be more willing to cooperate and improve things. When they see the value it provides, it is easier to invest time knowing that it will be helpful to someone, even if that person is yourself in the future.
 
-The thing is, unless you have read the documents or seen good examples, you probably know how to get to that point or what tools to use to get there or at least closer, so this mini-book tries to solve that!
+The thing is, unless you have read or seen good examples, you probably don't know how to get to that point or what tools to use to get there or at least closer, so this mini-book tries to solve that!
 
 I'll try to be as structured as possible when building from scratch rather than trying to jump into complex topics like Dynamic Documentation—oh yes, it gets better.
 
@@ -26,32 +24,39 @@ The following page, which is a dummy (thanks, ChatGPT), would be your run-of-the
 <img class="myImg" src="../images/confluence/pagelayout-example-1.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 - It doesn't have cohesion.
-- Feels awkward.
-- Looks like some pointers from the new hire.
+- It feels awkward.
+- It looks like some jotted-down pointers from the new hire.
 
-Now let's continue with an "arranged" version of it:
+I'm not mean. It is just Digital Feng Shui. Now let's continue with an "arranged" version of it:
 
 <img class="myImg" src="../images/confluence/pagelayout-example-2.png" alt="pagelayout-example-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 - Could be improved! But it feels more natural and structured. Like they know what they are doing.
-- Some extra colors may do some good, but let's keep it simple for now.
+- Some extra colors may do some good, but let's keep it simple.
 
-So, what happened? A few slight changes with the layout:
+So, what happened? A few slight changes to the layout:
 
 <img class="myImg" src="../images/confluence/pagelayout-example-2-explanation.png" alt="pagelayout-example-2-explanation" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 
-1. Title was adjusted to Level 3 to not distract from the content.
-2. A grid was defined for only that item so it doesn't colide with others.
-3. Moved the text to make for a lenghty introduction.
-4. Logo is displayed at the side, same size.
-5. The Livesearch macro will now have a text to display and its kept under the logo.
-6. The grid is 2/3 to have more space to text.
-7. The difference with this grid is that it is three columns. Whatever works for you!
-8. Sometimes it's simpler to have a grid to act as a separator.
+1. The title was adjusted to Level 3 to avoid distracting the reader from the content.
+2. A section was defined for only that item so it doesn't collide with others.
+3. Moved the text to make for a lengthy introduction.
+4. The logo is displayed on the side, in the same size.
+5. The Livesearch macro will now have a text to display, and it's kept under the logo.
+6. The double section is distributed in 2/3 to have more space for text.
+7. The difference with this section is that it has three columns. Whatever works for you!
+8. Sometimes, having a section acting as a separator is more straightforward than adding many new lines to persist the separation.
 
 # Templates
 
+One of the biggest problems that I have seen regarding people documentating is a lack of structure, so basically they expend more time wondering about how to do structure the page rather than sitting down to write.
+By using a template you can reduce the scope of doing that and have a limited scope of what they need to provide, so instead of making something from nothing, they just have to fill with the proper information.
+
+## Simple Documents
+
+
+## Complex Documents
 
 
 # Macros
@@ -64,9 +69,9 @@ But there are a lot more combinations that you can make from them. The following
 There will be examples of a few combinations and how to make the most of them.
 
 
-## Cool Macros 
+## Amazing Macros 
 
-Let’s talk Macros—those nifty little tools that can take your pages from “meh” to “wow.” Below is a list of my favorites, but if you’re in a hurry, skip to the [next section](#simple-combination) for the ones that’ll matter most in the short term.
+I wouldn't suggest you going and trying all of them, instead go to the [next section](#simple-combination) to start learning simple combinations and go from there.
 
 - [Multiexcerpt](https://confluence.atlassian.com/conf719/excerpt-macro-1157466743.html): Reuse text and images across pages by naming them.
 - [Multiexcerpt Include](https://confluence.atlassian.com/conf719/excerpt-include-macro-1157466741.html): Import selected multiexcerpts from specified pages.
