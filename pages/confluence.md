@@ -197,9 +197,8 @@ From the edition menu will look like this:
 // Get the modal
 var modal = document.getElementById("myModal");
 
-// Get the modal image and caption text
+// Get the modal image element
 var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
 
 // Get all images with class "myImg" and loop through them to add the click event
 var images = document.getElementsByClassName("myImg");
@@ -207,7 +206,6 @@ for (var i = 0; i < images.length; i++) {
   images[i].onclick = function(){
     modal.style.display = "flex"; // Ensure the modal is displayed using flexbox
     modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
   }
 }
 
@@ -225,6 +223,14 @@ modal.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// Close the modal when pressing the "Esc" key
+document.onkeydown = function(event) {
+  if (event.key === "Escape") {
+    modal.style.display = "none";
+  }
+}
+
 
 // Close the modal when pressing the "Esc" key
 document.onkeydown = function(event) {
