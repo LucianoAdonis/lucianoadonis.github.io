@@ -4,23 +4,21 @@ title: Luciano's Library
 description: Mini Books
 ---
 
-I have the opportunity to interact with many people and explore different ideas through my work. However, because I cover many topics, things can sometimes become chaotic, and getting others up to speed can get complicated.
-
-The goal of this website is to find common ground. By doing so, I can save time by avoiding getting caught up in details, and it may also provide valuable assistance to more people. Feedback and suggestions are always welcome!
+At work, I get to connect with all kinds of interesting people and dive into a variety of ideas. But with so much ground to cover, things can get a bit chaotic, and keeping everyone in the loop can be a challenge. That's where the 'Mini Books' on this site come in – they're designed to create a shared understanding and make things smoother down the line! 🚀
 
 ---
 
-## Optimization
+### Optimization
 
 - Slack Mastery: Communicate, Collaborate, and Conquer: TO DO.
 
-## Documentation
+### Documentation
 
 - [Confluence](./pages/confluence): make the most of Confluence.
 - [ADRs](./pages/adrs.md): Document that will save you a lot of trouble down the line.
 - Documentation Patterns: TO DO.
 
-## Self-Help
+### Self-Help
 
 Anything related to more behavior 
 
@@ -31,7 +29,7 @@ Anything related to more behavior
 
 ---
 
-## Code Snippets & Quick Tips
+### Code Snippets & Quick Tips
 
 GitHub Gists containing some degree of wisdom and free time.
 
@@ -43,6 +41,6 @@ GitHub Gists containing some degree of wisdom and free time.
 
 ---
 
-## Contribute
+### Contribute
 
-If you want to contribute just make an PR or reach out to me (somehow)! I'll make a page for contributors... eventually!
+If you want to contribute just make an PR or reach out to me (somehow)! I'll make a page for contributors... eventually! Feedback and suggestions are always welcome!
