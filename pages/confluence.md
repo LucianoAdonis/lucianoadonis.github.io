@@ -120,7 +120,7 @@ From the edition menu will look like this:
 <!-- CSS for Modal -->
 <style>
 .modal {
-  display: none; /* Hidden by default */
+  display: none; /* Ensure the modal is hidden by default */
   position: fixed; 
   z-index: 1; 
   left: 0;
@@ -144,7 +144,6 @@ From the edition menu will look like this:
   max-height: 80vh; /* Ensure it doesn't exceed 80% of the viewport height */
   object-fit: contain; /* Ensure the image scales properly */
 }
-
 
 #caption {
   margin: auto;
@@ -197,7 +196,7 @@ var captionText = document.getElementById("caption");
 var images = document.getElementsByClassName("myImg");
 for (var i = 0; i < images.length; i++) {
   images[i].onclick = function(){
-    modal.style.display = "block";
+    modal.style.display = "flex"; // Ensure the modal is displayed using flexbox
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
   }
@@ -224,4 +223,3 @@ document.onkeydown = function(event) {
     modal.style.display = "none";
   }
 }
-</script>
