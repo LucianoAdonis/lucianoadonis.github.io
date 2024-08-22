@@ -17,8 +17,9 @@ Instead of scrolling through a vertical monolith of text, you can create a more 
 
 ## Example
 The following page, which is a dummy btw (thanks ChatGPT) would be your run of the mill page in Confluence, let's see it!
+
 <a href="confluence.html" target="_blank" style="display: block; width: fit-content;">
-    <img src="../images/confluence/pagelayout-example-1.png" alt="Example Image" style="border: 2px solid #000; border-radius: 4px; padding: 5px;" />
+    <img src="../images/confluence/pagelayout-example-1.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px;" />
 </a>
 
 
@@ -28,14 +29,18 @@ The following page, which is a dummy btw (thanks ChatGPT) would be your run of t
 
 Now let's continue with an "arranged" version of it:
 
-![alt text](../images/confluence/pagelayout-example-2.png "pl2")(confluence.html)
+<a href="confluence.html" target="_blank" style="display: block; width: fit-content;">
+    <img src="../images/confluence/pagelayout-example-2.png" alt="pagelayout-example-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px;" />
+</a>
 
 - Could be improved! but it feels more natural and structured. Like they know what are they doing.
 - Some extra colors may do some good, but let's keep it simple for now.
 
 So, what happened? A few slight changes with the layout:
 
-![alt text](../images/confluence/pagelayout-example-2-explanation.png "pl2")(confluence.html)
+<a href="confluence.html" target="_blank" style="display: block; width: fit-content;">
+    <img src="../images/confluence/pagelayout-example-2-explanation.png" alt="pagelayout-example-2-explanation" style="border: 2px solid #000; border-radius: 4px; padding: 5px;" />
+</a>
 
 1. Title was adjusted to Level 3 to not distract from the content.
 2. A grid was defined for only that item so it doesn't colide with others.
