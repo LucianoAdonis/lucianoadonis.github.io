@@ -123,7 +123,6 @@ From the edition menu will look like this:
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
   <img class="modal-content" id="img01">
-  <div id="caption"></div>
 </div>
 
 <!-- CSS for Modal -->
@@ -178,12 +177,16 @@ From the edition menu will look like this:
 </style>
 
 <!-- JavaScript for Modal Functionality -->
-<script>
-// Get the modal
+<script>// Get the modal
 var modal = document.getElementById("myModal");
 
 // Get the modal image element
 var modalImg = document.getElementById("img01");
+
+// Ensure the modal is hidden on page load
+window.onload = function() {
+  modal.style.display = "none";
+};
 
 // Get all images with class "myImg" and loop through them to add the click event
 var images = document.getElementsByClassName("myImg");
@@ -208,14 +211,6 @@ modal.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
-// Close the modal when pressing the "Esc" key
-document.onkeydown = function(event) {
-  if (event.key === "Escape") {
-    modal.style.display = "none";
-  }
-}
-
 
 // Close the modal when pressing the "Esc" key
 document.onkeydown = function(event) {
