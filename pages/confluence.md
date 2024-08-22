@@ -1,7 +1,7 @@
 ---
 layout: custom
-title: Confluence and You
-description: I Would Marry Confluence
+title: Confluence
+description: Style Above Else
 ---
 
 >"To plant a garden is to believe in tomorrow." – Audrey Hepburn
