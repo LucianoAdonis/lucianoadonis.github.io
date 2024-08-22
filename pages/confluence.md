@@ -121,8 +121,8 @@ If you ever change the name or something on the datasource page, it won’t brea
   background-color: rgba(0,0,0,0.9); 
   display: flex; /* Use flexbox for centering */
   justify-content: center; /* Center horizontally */
-  align-items: flex-start; /* Align the content to start from the top */
-  padding-top: 50px; /* Adjust this value to move the modal lower */
+  align-items: flex-end; /* Align the content to the bottom */
+  padding-bottom: 50px; /* Adjust this value to move the modal higher or lower from the bottom */
 }
 
 .modal-content {
