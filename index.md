@@ -10,13 +10,13 @@ At work, I get to connect with all kinds of interesting people and dive into a v
 
 ### Optimization
 
-- Slack Mastery: Communicate, Collaborate, and Conquer: TO DO.
+- **Slack Mastery: Communicate, Collaborate, and Conquer**: SOON.
 
 ### Documentation
 
 - [Confluence](./pages/confluence): make the most of Confluence.
 - [ADRs](./pages/adrs.md): Document that will save you a lot of trouble down the line.
-- Documentation Patterns: TO DO.
+- **Documentation Patterns**: SOON.
 
 ### Self-Help
 
@@ -24,8 +24,8 @@ Anything related to more behavior
 
 - [Advanced Interview Tactics: Beyond 'Be Confident'](./pages/adv-interviews): it won't land you a job right of the bat but it will definetily be more useful than many posts.
 - [Troubleshooting](./pages/troubleshooting): knowing is the first step.
-- Communication: TO DO.
-- Mentoring: TO DO.
+- **Communication**: SOON.
+- **Mentoring**: SOON.
 
 ---
 
