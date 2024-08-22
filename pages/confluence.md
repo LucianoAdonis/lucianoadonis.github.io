@@ -20,7 +20,6 @@ Or just put the
 ## Example
 The following page, which is a dummy btw (thanks ChatGPT) would be your run of the mill page in Confluence, let's see it!
 
-<!-- Normal Size Image 1 -->
 <img class="myImg" src="../images/confluence/pagelayout-example-1.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 - It doesn't have cohesion.
@@ -29,7 +28,6 @@ The following page, which is a dummy btw (thanks ChatGPT) would be your run of t
 
 Now let's continue with an "arranged" version of it:
 
-<!-- Normal Size Image 2 -->
 <img class="myImg" src="../images/confluence/pagelayout-example-2.png" alt="pagelayout-example-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 - Could be improved! But it feels more natural and structured. Like they know what they are doing.
@@ -37,7 +35,6 @@ Now let's continue with an "arranged" version of it:
 
 So, what happened? A few slight changes with the layout:
 
-<!-- Normal Size Image 3 -->
 <img class="myImg" src="../images/confluence/pagelayout-example-2-explanation.png" alt="pagelayout-example-2-explanation" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 
@@ -92,6 +89,19 @@ If you’ve only got the mental bandwidth for a few Macros, prioritize these:
 Just like it sounds, a Datasource Page is where you consolidate information. With Macros like [Multiexcerpt](https://confluence.atlassian.com/conf719/excerpt-macro-1157466743.html) and [Table Include](https://docs.stiltsoft.com/tfac/dc-server/how-to-use-table-excerpt-and-table-excerpt-include-macros-42241623.html), you can save yourself a ton of headaches by keeping your source of truth and attached pages in sync.
 
 If you ever change the name or something on the datasource page, it won’t break the pages that depend on it—it updates automatically. So go ahead, get creative!
+
+# Example
+The reusable content can be anything that you can place in that box, so be either text or image it can be there. Of course, with the exception of tables which have their own macro to do that.
+
+<img class="myImg" src="../images/confluence/multiexcerpt-example.png" alt="multiexcerpt-example" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
+To include something you have to use the multiexcerpt include macro which will display you the available options in the page and a small preview of the content retrieved:
+
+<img class="myImg" src="../images/confluence/multiexcerpt-include-macro-menu.png" alt="multiexcerpt-include-macro-menu" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
+From the edition menu will look like this:
+
+<img class="myImg" src="../images/confluence/multiexcerpt-include-macro-example.png" alt="multiexcerpt-include-macro-example" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 # Tagging
 
