@@ -20,3 +20,9 @@ Markdown itself does not natively support expandable or collapsible sections. Ho
   <p>This is the content that will be hidden until clicked.</p>
 </details>
 
+
+## Importing Images with Format
+
+<a href="page.html">
+    <img src="assets/images/example.jpg" alt="Example Image" style="border: 2px solid #000; border-radius: 4px; padding: 5px;" />
+</a>
