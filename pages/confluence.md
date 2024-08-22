@@ -8,18 +8,16 @@ description: Unlocking the True Potential of Documentation
 
 I've spent so many years with Confluence that I might as well marry it by now. But, sticking to the topic at hand, I've picked up a few tricks that can help your chakras alignt when it comes to Confluence.
 
-# Features
-
 To use Confluence you must become the Confluence.
 
-## Page Layout
+# Page Layout
 
 Often overlooked, but using multiple rows and columns can significantly improve how you display content or highlight key points.
 Instead of scrolling through a vertical monolith of text, you can create a more dynamic and engaging layout. We're in a strange time where, if we're not engaging enough, we risk becoming irrelevant—or worse, ignored entirely.
 
-### Example
+## Example
 The following page, which is a dummy btw (thanks ChatGPT) would be your run of the mill page in Confluence, let's see it!
-<a href="pages/confluence.html">
+<a href="confluence.html">
     <img src="images/confluence/pagelayout-example-1.png" alt="Example Image" style="border: 2px solid #000; border-radius: 4px; padding: 5px;" />
 </a>
 
@@ -50,7 +48,7 @@ So, what happened? A few slight changes with the layout:
 
 
 
-## Macros
+# Macros
 
 Let’s talk Macros—those nifty little tools that can take your pages from “meh” to “wow.” Below is a list of my favorites, but if you’re in a hurry, skip to the next section for the ones that’ll matter most in the short term.
 
@@ -78,7 +76,7 @@ Let’s talk Macros—those nifty little tools that can take your pages from “
 - [Alert](https://confluence.atlassian.com/doc/expand-macro-223222352.html): Create customizable alerts that display when a page loads.
 
 
-### Macro Combinations
+## Macro Combinations
 
 If you’ve only got the mental bandwidth for a few Macros, prioritize these:
 
@@ -86,13 +84,13 @@ If you’ve only got the mental bandwidth for a few Macros, prioritize these:
 * [Table Filter](https://docs.stiltsoft.com/tfac/cloud/how-to-use-table-filter-macro-42239756.html): There are such great things that you can do with filters and queries. It's sad that you have to but at least is not painful!
 - [ChildTabs](https://docs.bitvoodoo.app/navitabs-tabs-for-confluence-data-center/?utm_source=bv-app&utm_medium=Editor&utm_campaign=Navitabs%20Child%20Tabs%20Macro): For when you’ve got a bunch of subpages—this helps you keep it all organized without endless tabs.
 
-## Datasource Pages
+# Datasource Pages
 
 Just like it sounds, a Datasource Page is where you consolidate information. With Macros like [Multiexcerpt](https://confluence.atlassian.com/conf719/excerpt-macro-1157466743.html) and [Table Include](https://docs.stiltsoft.com/tfac/dc-server/how-to-use-table-excerpt-and-table-excerpt-include-macros-42241623.html), you can save yourself a ton of headaches by keeping your source of truth and attached pages in sync.
 
 If you ever change the name or something on the datasource page, it won’t break the pages that depend on it—it updates automatically. So go ahead, get creative!
 
-## Tagging
+# Tagging
 
 [Live Search](https://confluence.atlassian.com/conf719/livesearch-macro-1157466803.html) gets even better when you’re using proper tagging, so take the time to tag your content wisely.
 
