@@ -1,30 +1,22 @@
 ---
 layout: custom
-title: Luciano's Mini Books
-description: I just can't bring myself to call them "Guides"
+title: Luciano's Library
+description: Mini Books
 ---
-
-
----
-
-📣 **WIP** 📣
 
 ---
 
-# Library
-
-
-### Optimization
+## Optimization
 
 - Slack Mastery: Communicate, Collaborate, and Conquer: TO DO.
 
-### Documentation
+## Documentation
 
 - [Confluence](./pages/confluence): make the most of Confluence.
 - [ADRs](./pages/adrs.md): Document that will save you a lot of trouble down the line.
 - Documentation Patterns: TO DO.
 
-### Self-Help
+## Self-Help
 
 Anything related to more behavior 
 
@@ -33,7 +25,9 @@ Anything related to more behavior
 - [Troubleshooting](./pages/troubleshooting): knowing is the first step.
 - Mentoring: TO DO.
 
-# Code Snippets & Quick Tips
+---
+
+## Code Snippets & Quick Tips
 
 GitHub Gists containing some degree of wisdom and free time.
 
@@ -44,6 +38,7 @@ GitHub Gists containing some degree of wisdom and free time.
 - [Sublime Customization](https://gist.github.com/LucianoAdonis/2fdc70716cc00e7d584494b0beafc985).
 - <a href="https://gist.github.com/LucianoAdonis/2fdc70716cc00e7d584494b0beafc985" target="_blank">Sublime Customization</a>
 
+---
 
 # Random Stuff
 
