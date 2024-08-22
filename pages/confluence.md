@@ -58,6 +58,15 @@ By using a template you can reduce the scope of doing that and have a limited sc
 
 ## Complex Documents
 
+An [Architecture Decision Record (ADR)](./pages/adrs.md) is a decent example of that! By "Complex" I'm referring to the lenght and the things that the page has to aboard.
+
+In short, a document that get's you information relevant of how things where, what where the options, what was proposed and how changes were applied. I cannot state how helpful is to have that for both onboarding (as context) and for internal agreedments.
+
+<img class="myImg" src="../images/confluence/templates-example-1.png" alt="templates-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
+1.
+2.
+3.
 
 # Macros
 
@@ -148,6 +157,12 @@ Not much to say, just to complain.
   - Cloud: Guard.
 - Page Ownership is only available in Cloud Version.
 
+# References
+
+There isn't much from Confluence but there are a few sources that are worth looking:
+
+- That YouTube Channel.
+- Stuff.
 
 <!-- Single Modal -->
 <div id="myModal" class="modal">
