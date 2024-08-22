@@ -20,15 +20,8 @@ Or just put the
 ## Example
 The following page, which is a dummy btw (thanks ChatGPT) would be your run of the mill page in Confluence, let's see it!
 
-<!-- Thumbnail Image -->
-<img id="img1" src="../images/confluence/pagelayout-example-1.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; max-width: 150px; cursor: pointer;">
-
-<!-- Modal for Image 1 -->
-<div id="modal1" class="modal">
-  <span class="close" data-modal="modal1">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption1"></div>
-</div>
+<!-- Normal Size Image 1 -->
+<img class="myImg" src="../images/confluence/pagelayout-example-1.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 - It doesn't have cohesion.
 - Feels awkward.
@@ -36,109 +29,17 @@ The following page, which is a dummy btw (thanks ChatGPT) would be your run of t
 
 Now let's continue with an "arranged" version of it:
 
-<!-- Thumbnail Image -->
-<img id="img2" src="../images/confluence/pagelayout-example-2.png" alt="pagelayout-example-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; max-width: 150px; cursor: pointer;">
+<!-- Normal Size Image 2 -->
+<img class="myImg" src="../images/confluence/pagelayout-example-2.png" alt="pagelayout-example-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
-<!-- Modal for Image 2 -->
-<div id="modal2" class="modal">
-  <span class="close" data-modal="modal2">&times;</span>
-  <img class="modal-content" id="img02">
-  <div id="caption2"></div>
-</div>
-
-- Could be improved! but it feels more natural and structured. Like they know what are they doing.
+- Could be improved! But it feels more natural and structured. Like they know what they are doing.
 - Some extra colors may do some good, but let's keep it simple for now.
 
 So, what happened? A few slight changes with the layout:
 
-<!-- Thumbnail Image -->
-<img id="img3" src="../images/confluence/pagelayout-example-2-explanation.png" alt="pagelayout-example-2-explanation" style="border: 2px solid #000; border-radius: 4px; padding: 5px; max-width: 150px; cursor: pointer;">
+<!-- Normal Size Image 3 -->
+<img class="myImg" src="../images/confluence/pagelayout-example-2-explanation.png" alt="pagelayout-example-2-explanation" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
-<!-- Modal for Image 3 -->
-<div id="modal3" class="modal">
-  <span class="close" data-modal="modal3">&times;</span>
-  <img class="modal-content" id="img03">
-  <div id="caption3"></div>
-</div>
-
-<!-- CSS for Modal -->
-<style>
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; 
-  z-index: 1; 
-  padding-top: 100px; 
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgba(0,0,0,0.9); 
-}
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-#caption1, #caption2, #caption3 {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-}
-.modal-content, #caption1, #caption2, #caption3 { 
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-</style>
-
-<!-- JavaScript for Modal Functionality -->
-<script>
-function openModal(modalId, imgId, captionId) {
-  var modal = document.getElementById(modalId);
-  var img = document.getElementById(imgId);
-  var modalImg = modal.getElementsByClassName("modal-content")[0];
-  var captionText = document.getElementById(captionId);
-  
-  img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-  }
-
-  var span = modal.getElementsByClassName("close")[0];
-  span.onclick = function() { 
-    modal.style.display = "none";
-  }
-}
-
-openModal('modal1', 'img1', 'caption1');
-openModal('modal2', 'img2', 'caption2');
-openModal('modal3', 'img3', 'caption3');
-</script>
 
 1. Title was adjusted to Level 3 to not distract from the content.
 2. A grid was defined for only that item so it doesn't colide with others.
@@ -148,7 +49,6 @@ openModal('modal3', 'img3', 'caption3');
 6. The grid is 2/3 to have more space to text.
 7. The difference with this grid is that it is three columns. Whatever works for you!
 8. Sometimes it's simpler to have a grid to act as a separator.
-
 
 
 # Macros
@@ -200,5 +100,111 @@ If you ever change the name or something on the datasource page, it won’t brea
 [Go to Types of Pages](#types-of-pages) for more inspiration.
 
 
+<!-- Single Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
 
+<!-- CSS for Modal -->
+<style>
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.9); 
+}
 
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 90%; /* Increased size */
+  max-width: 900px; /* Increased max-width */
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+}
+
+.modal-content, #caption { 
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+<!-- JavaScript for Modal Functionality -->
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the modal image and caption text
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+// Get all images with class "myImg" and loop through them to add the click event
+var images = document.getElementsByClassName("myImg");
+for (var i = 0; i < images.length; i++) {
+  images[i].onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+// Close the modal when clicking outside of the image
+modal.onclick = function(event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Close the modal when pressing the "Esc" key
+document.onkeydown = function(event) {
+  if (event.key === "Escape") {
+    modal.style.display = "none";
+  }
+}
+</script>
