@@ -4,21 +4,24 @@ title: Confluence and You
 description: Unlocking the True Potential of Documentation
 ---
 
->Writing in Confluence is more like arranging your digital Zen garden, than actually writing. - Luciano Adonis
+>"To plant a garden is to believe in tomorrow." – Audrey Hepburn
 
-I've spent so many years with Confluence that I might as well marry it by now. But, sticking to the topic at hand, I've picked up a few tricks that can help your chakras alignt when it comes to Confluence.
+I've spent so many years with Confluence that I might as well marry it by now. But, sticking to the topic, I've picked up a few tricks to help your chakras align regarding Confluence.
 
-To use Confluence you must become the Confluence.
+Based on my experience, when you facilitate the patterns and tools to make the process of documenting less taxing, people will be more willing to cooperate and improve things. When they see the value it provides, it is easier to invest time knowing that it will be helpful to someone, even if that person is yourself in the future.
+
+The thing is, unless you have read the documents or seen good examples, you probably know how to get to that point or what tools to use to get there or at least closer, so this mini-book tries to solve that!
+
+I'll try to be as structured as possible when building from scratch rather than trying to jump into complex topics like Dynamic Documentation—oh yes, it gets better.
+
 
 # Page Layout
 
-Often overlooked, but using multiple rows and columns can significantly improve how you display content or highlight key points.
-Instead of scrolling through a vertical monolith of text, you can create a more dynamic and engaging layout.
+Often overlooked, [Page Layouts, Columns and Sections](https://confluence.atlassian.com/doc/page-layouts-columns-and-sections-275188613.html) can significantly improve how you display content and help you to accentuate key points.
 
-Or just put the 
+Instead of scrolling through a vertical monolith of text, you can use the page space to create a more dynamic and engaging structure.
 
-## Example
-The following page, which is a dummy btw (thanks ChatGPT) would be your run of the mill page in Confluence, let's see it!
+The following page, which is a dummy (thanks, ChatGPT), would be your run-of-the-mill page in Confluence. Let's see it!
 
 <img class="myImg" src="../images/confluence/pagelayout-example-1.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
@@ -46,6 +49,9 @@ So, what happened? A few slight changes with the layout:
 6. The grid is 2/3 to have more space to text.
 7. The difference with this grid is that it is three columns. Whatever works for you!
 8. Sometimes it's simpler to have a grid to act as a separator.
+
+# Templates
+
 
 
 # Macros
