@@ -129,43 +129,29 @@ From the edition menu will look like this:
 <!-- CSS for Modal -->
 <style>
 .modal {
-  display: none; /* Hidden by default */
+  display: none; /* Ensure the modal is hidden by default */
   position: fixed; 
   z-index: 1; 
   left: 0;
   top: 0;
   width: 100%; 
   height: 100%; 
-  overflow: hidden; /* Hide any overflowing content */
-  background-color: rgba(0,0,0,0.9); /* Grey overlay */
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.9); 
   display: flex; /* Use flexbox for centering */
   justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  align-items: flex-end; /* Align the content to the bottom */
+  padding-bottom: 50px; /* Adjust this value to move the modal higher or lower from the bottom */
 }
 
 .modal-content {
   margin: auto;
   display: block;
-  width: auto; /* Let the image define its width */
-  max-width: 90%; /* Set maximum width to 90% of viewport */
+  width: 95%; /* Increased width */
+  max-width: 1200px; /* Increased max-width */
   height: auto; /* Ensure the height adjusts automatically */
   max-height: 80vh; /* Ensure it doesn't exceed 80% of the viewport height */
   object-fit: contain; /* Ensure the image scales properly */
-}
-
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-}
-
-.modal-content, #caption { 
-  animation-name: zoom;
-  animation-duration: 0.6s;
 }
 
 @keyframes zoom {
@@ -192,7 +178,8 @@ From the edition menu will look like this:
 </style>
 
 <!-- JavaScript for Modal Functionality -->
-<script>// Get the modal
+<script>
+// Get the modal
 var modal = document.getElementById("myModal");
 
 // Get the modal image element
@@ -221,6 +208,14 @@ modal.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// Close the modal when pressing the "Esc" key
+document.onkeydown = function(event) {
+  if (event.key === "Escape") {
+    modal.style.display = "none";
+  }
+}
+
 
 // Close the modal when pressing the "Esc" key
 document.onkeydown = function(event) {
