@@ -109,16 +109,6 @@ If you ever change the name or something on the datasource page, it won’t brea
 
 <!-- CSS for Modal -->
 <style>
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 95%; /* Increase the width */
-  max-width: 1200px; /* Increase the max-width */
-  height: auto; /* Ensure the height adjusts automatically */
-  max-height: 80vh; /* Ensure it doesn't exceed 80% of the viewport height */
-  object-fit: contain; /* Ensure the image scales properly */
-}
-
 .modal {
   display: none; /* Hidden by default */
   position: fixed; 
@@ -131,7 +121,18 @@ If you ever change the name or something on the datasource page, it won’t brea
   background-color: rgba(0,0,0,0.9); 
   display: flex; /* Use flexbox for centering */
   justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  align-items: flex-start; /* Align the content to start from the top */
+  padding-top: 50px; /* Adjust this value to move the modal lower */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 95%; /* Increased width */
+  max-width: 1200px; /* Increased max-width */
+  height: auto; /* Ensure the height adjusts automatically */
+  max-height: 80vh; /* Ensure it doesn't exceed 80% of the viewport height */
+  object-fit: contain; /* Ensure the image scales properly */
 }
 
 
