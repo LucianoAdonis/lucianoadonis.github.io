@@ -27,6 +27,10 @@ Anything related to more behavior
 - **Communication**: SOON.
 - **Mentoring**: SOON.
 
+### Meta
+
+- [Markdown](./pages/markdown-reference.md): Things I have recollected figuring things in this website.
+
 ---
 
 ### Code Snippets & Quick Tips
@@ -43,4 +47,6 @@ GitHub Gists containing some degree of wisdom and free time.
 
 ### Contribute
 
-If you want to contribute just make an PR or reach out to me (somehow)! I'll make a page for contributors... eventually! Feedback and suggestions are always welcome!
+If you want to contribute just make an PR or reach out to me (somehow)! I'll make a page for contributors... eventually!
+
+Feedback and suggestions are always welcome!

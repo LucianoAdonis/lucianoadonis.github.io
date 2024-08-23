@@ -174,8 +174,9 @@ From the edition menu will look like this:
 Not much to say, just to complain.  
 
 - There are not granular controls over the documentation by default. Basically an exclusive list or allow all. There is a solution sold by Confluence to have more visibility over everything for each type of implementation:
-  - On-Prem: Tower.
-  - Cloud: Guard.
+  - [Crowd (On-Prem)](https://www.atlassian.com/software/crowd).
+  - [Guard (Cloud)](https://www.atlassian.com/software/access/capabilities).
+- Someone could dump everything.
 - Page Ownership is only available in Cloud Version.
 
 # References
