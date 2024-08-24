@@ -14,7 +14,7 @@ At work, I get to connect with all kinds of interesting people and dive into a v
 
 ### Documentation
 
-- [Confluence](./pages/confluence): make the most of Confluence.
+- [Confluence](./pages/confluence.md): make the most of Confluence.
 - [ADRs](./pages/adrs.md): Document that will save you a lot of trouble down the line.
 - **Documentation Patterns**: SOON.
 
@@ -29,7 +29,7 @@ Anything related to more behavior
 
 ### Meta
 
-- [Markdown](./pages/markdown-reference.md): Things I have recollected figuring things in this website.
+- [Markdown](./pages/markdown-reference.md): examples of interesting things that I had to use to make some pages from this site.
 
 ---
 
