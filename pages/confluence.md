@@ -177,11 +177,11 @@ It may look that is not much different to configure but it has its nuances. Star
   - No really much thought put into it, it felt right.
 - Next section is divided with a layout of 2/3 
   - Titles start at level 2 with red color. This make it less weird the transition while reading from huge L1 text to normal size paragraph. 
-  - We use the Panel macro with a background of #FAFFFD (Baby Powder color) to highlight the content section.
+  - We use the <span class="highlight">Panel</span> macro with a background of #FAFFFD (Baby Powder color) to highlight the content section.
     - We make sure the content section contains the rule to start at level 2 otherwise it will have a weird indentation.
 
 
-And well, that was the fun part. For the next part we will see the <span style="color:blue">*Deck of Cards*</span>, for screenshot purposes I removed one section from the first Card to display how it looks when editing:
+And well, that was the fun part. For the next part we will see the <span style="color:blue">**Deck of Cards**</span>, for screenshot purposes I removed one section from the first Card to display how it looks when editing:
 
 
 <img class="myImg" src="../images/confluence/panel-example-configuration-2.png" alt="panel-example-configuration-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
@@ -257,57 +257,6 @@ There isn't much from Confluence but there are a few sources that are worth look
   <span class="close">&times;</span>
   <img class="modal-content" id="img01">
 </div>
-
-<!-- CSS for Modal -->
-<style>
-.modal {
-  display: none; /* Ensure the modal is hidden by default */
-  position: fixed; 
-  z-index: 1; 
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgba(0,0,0,0.9); 
-  display: flex; /* Use flexbox for centering */
-  justify-content: center; /* Center horizontally */
-  align-items: flex-end; /* Align the content to the bottom */
-  padding-bottom: 50px; /* Adjust this value to move the modal higher or lower from the bottom */
-}
-
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 95%; /* Increased width */
-  max-width: 1200px; /* Increased max-width */
-  height: auto; /* Ensure the height adjusts automatically */
-  max-height: 80vh; /* Ensure it doesn't exceed 80% of the viewport height */
-  object-fit: contain; /* Ensure the image scales properly */
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-</style>
 
 <!-- JavaScript for Modal Functionality -->
 <script>
