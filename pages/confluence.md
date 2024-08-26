@@ -48,6 +48,9 @@ So, what happened? A few slight changes to the layout:
 7. The difference with this section is that it has three columns. Whatever works for you!
 8. Sometimes, having a section acting as a separator is more straightforward than adding many new lines to persist the separation.
 
+
+You may say that it looks good, but it lacks personality as it may work as a page for documentation but not for a team presentation. If that's the case, you can skip right to the [Panels and Layout](#panels-and-layout) section to see a more colorful example.
+
 # Templates
 
 One of the biggest problems that I have seen regarding people documentating is a lack of structure, so basically they expend more time wondering about how to do structure the page rather than sitting down to write.
@@ -127,7 +130,9 @@ I wouldn't suggest you going and trying all of them, instead go to the [next sec
 - [Alert](https://confluence.atlassian.com/doc/expand-macro-223222352.html): Create customizable alerts that display when a page loads.
 
 
-## Simple Combination
+## Combinations
+
+### Quick Results
 
 If you’ve only got the mental bandwidth for a few Macros, prioritize the following macros to get quick results:
 
@@ -140,6 +145,21 @@ In the following example, the main page "Macros Example" displays two results wi
 The cross reference between those is not limitated by location but just for simplicity.
 
 <img class="myImg" src="../images/confluence/childtabs-macro-content-side-by-side.png" alt="childtabs-macro-content-side-by-side" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
+### Panels and Layout
+
+
+
+<img class="myImg" src="../images/confluence/panel-example-final-result.png" alt="panel-example-final-result" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
+<img class="myImg" src="../images/confluence/panel-example-first-attempt.png" alt="panel-example-first-attempt" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
+<img class="myImg" src="../images/confluence/panel-example-nested-panels.png" alt="panel-example-nested-panels" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
+<img class="myImg" src="../images/confluence/panel-example-bad-ending.png" alt="panel-example-bad-ending" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
+<img class="myImg" src="../images/confluence/panel-example-palette.png" alt="panel-example-palette" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
 
 
 # Datasource Pages
