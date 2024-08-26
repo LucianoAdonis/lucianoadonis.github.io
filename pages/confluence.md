@@ -247,6 +247,7 @@ There isn't much from Confluence but there are a few sources that are worth look
 - That YouTube Channel.
 - Stuff.
 
+{% raw %}
 <!-- Single Modal -->
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
@@ -305,44 +306,47 @@ There isn't much from Confluence but there are a few sources that are worth look
 </style>
 
 <!-- JavaScript for Modal Functionality -->
-<script>// Get the modal
-var modal = document.getElementById("myModal");
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
 
-// Get the modal image element
-var modalImg = document.getElementById("img01");
+  // Get the modal image element
+  var modalImg = document.getElementById("img01");
 
-// Ensure the modal is hidden on page load
-window.onload = function() {
-  modal.style.display = "none";
-};
+  // Ensure the modal is hidden on page load
+  window.onload = function() {
+    modal.style.display = "none";
+  };
 
-// Get all images with class "myImg" and loop through them to add the click event
-var images = document.getElementsByClassName("myImg");
-for (var i = 0; i < images.length; i++) {
-  images[i].onclick = function(){
-    modal.style.display = "flex"; // Ensure the modal is displayed using flexbox
-    modalImg.src = this.src;
+  // Get all images with class "myImg" and loop through them to add the click event
+  var images = document.getElementsByClassName("myImg");
+  for (var i = 0; i < images.length; i++) {
+    images[i].onclick = function(){
+      modal.style.display = "flex"; // Ensure the modal is displayed using flexbox
+      modalImg.src = this.src;
+    }
   }
-}
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-
-// Close the modal when clicking outside of the image
-modal.onclick = function(event) {
-  if (event.target === modal) {
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
     modal.style.display = "none";
   }
-}
 
-// Close the modal when pressing the "Esc" key
-document.onkeydown = function(event) {
-  if (event.key === "Escape") {
-    modal.style.display = "none";
+  // Close the modal when clicking outside of the image
+  modal.onclick = function(event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
   }
-}
+
+  // Close the modal when pressing the "Esc" key
+  document.onkeydown = function(event) {
+    if (event.key === "Escape") {
+      modal.style.display = "none";
+    }
+  }
+</script>
+{% endraw %}
