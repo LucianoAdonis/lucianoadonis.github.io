@@ -170,7 +170,7 @@ It may look that is not much different to configure but it has its nuances. Star
 <img class="myImg" src="../images/confluence/panel-example-configuration-1.png" alt="panel-example-configuration-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 - A <span style="color:blue">**Panel**</span> sets the background to match set the color. 
-  - Knuckles SEGA logo remains the same but above.
+  - Knuckles SEGA logo centered and with a smaller size.
   - The image for the title was generated with the [Font SpaceTech](https://www.fontspace.com/) site, using the Tech Headlines Font.
     - It looks invisible as I change it with the macOS image editor to be white and be compatible with the background.
 - A simple line made with the [Horizontal Rule]() macro separates the contents from the logo.
