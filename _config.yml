@@ -7,8 +7,6 @@ plugins:
 kramdown:
   toc_levels: 2..3
 
-markdown: GFM
-
 show_links: true
 links:
   github: https://lucianoadonis.github.io/

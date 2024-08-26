@@ -49,7 +49,8 @@ So, what happened? A few slight changes to the layout:
 8. Sometimes, having a section acting as a separator is more straightforward than adding many new lines to persist the separation.
 
 
-You may say that it looks good, but it lacks personality as it may work as a page for documentation but not for a team presentation. If that's the case, you can skip right to the [Panels and Layout](#panels-and-layout) section to see a more colorful example.
+You may say that it looks good, but it lacks personality as it may work as a page for documentation but not for a team presentation. If that's the case, you can skip right to the [Panels and Layout](#panels-cards-sections-and-layouts) section to see a more colorful example.
+
 
 # Templates
 
@@ -73,6 +74,7 @@ In short, a document that get's you information relevant of how things where, wh
 7. The comments can be helpful in clarifying the objectives of sections or other things to consider.
 8. Example subtitle with a comment of the same level.
 9. It's helpful to have some macros already in place, such as the table of contents, to convey the message that 'hey, this is possible and we've got you covered!'
+
 
 ## Simple Documents
 
@@ -132,6 +134,7 @@ I wouldn't suggest you going and trying all of them, instead go to the [next sec
 # Macro Combinations
 
 I would compare the Macros with Terraform functions. It is good to know that there are easier ways to do something, but you don't really make the most of the tool unless you have to push the boundaries and combine multiple functions on in this case Macros with a clear purpose.
+
 
 ## Quick Results
 
