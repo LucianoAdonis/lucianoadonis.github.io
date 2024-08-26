@@ -160,6 +160,8 @@ The [Panel](https://confluence.atlassian.com/conf719/panel-macro-1157466870.html
 
 <img class="myImg" src="../images/confluence/panel-example-palette.png" alt="panel-example-palette" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
+<img class="myImg" src="../images/confluence/panel-sections-wcolors-example.gif" alt="panel-sections-wcolors-example" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
 
 
 # Datasource Pages
