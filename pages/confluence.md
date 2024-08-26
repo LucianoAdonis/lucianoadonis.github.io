@@ -144,7 +144,7 @@ If you’ve only got the mental bandwidth for a few Macros, prioritize the follo
 * [Table Filter](https://docs.stiltsoft.com/tfac/cloud/how-to-use-table-filter-macro-42239756.html): There are such great things that you can do with filters and queries. It's sad that you have to but at least is not painful!
 - [ChildTabs](https://docs.bitvoodoo.app/navitabs-tabs-for-confluence-data-center/?utm_source=bv-app&utm_medium=Editor&utm_campaign=Navitabs%20Child%20Tabs%20Macro): For when you’ve got a bunch of subpages—this helps you keep it all organized without endless tabs.
 
-In the following example, the main page "Macros Example" displays two results with the ChildTabs that are the pages under it. The context behind those pages will be explained in the Datasource Page's [example](#example-1), but for know you need two know that those are separated pages loaded simultaneously and quickly accessible through the parent page.
+In the following example, the main page "Macros Example" displays two results with the <span class="highlight">ChildTabs</span> that are the pages under it. The context behind those pages will be explained in the Datasource Page's [example](#example-1), but for know you need two know that those are separated pages loaded simultaneously and quickly accessible through the parent page.
 
 The cross reference between those is not limitated by location but just for simplicity.
 
@@ -169,19 +169,19 @@ It may look that is not much different to configure but it has its nuances. Star
 
 <img class="myImg" src="../images/confluence/panel-example-configuration-1.png" alt="panel-example-configuration-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
-- A <span style="color:blue">**Panel**</span> sets the background to match set the color. 
-  - Knuckles SEGA logo centered and with a smaller size.
-  - The image for the title was generated with the [Font SpaceTech](https://www.fontspace.com/) site, using the Tech Headlines Font.
+1. A <span class="highlight">Panel</span> sets the background to match set the color. 
+2. Knuckles SEGA logo centered and with a smaller size.
+3. The image for the title was generated with the [Font SpaceTech](https://www.fontspace.com/) site, using the Tech Headlines Font.
     - It looks invisible as I change it with the macOS image editor to be white and be compatible with the background.
-- A simple line made with the [Horizontal Rule]() macro separates the contents from the logo.
+4. A simple line made with the <span class="highlight">Horizontal Rule</span> macro separates the contents from the logo.
   - No really much thought put into it, it felt right.
-- Next section is divided with a layout of 2/3 
-  - Titles start at level 2 with red color. This make it less weird the transition while reading from huge L1 text to normal size paragraph. 
-  - We use the <span class="highlight">Panel</span> macro with a background of #FAFFFD (Baby Powder color) to highlight the content section.
-    - We make sure the content section contains the rule to start at level 2 otherwise it will have a weird indentation.
+5. Next section is divided with a <span class="highlight">Layout</span> section of 2/3 
+6. Titles start at level 2 with red color. This make it less weird the transition while reading from huge L1 text to normal size paragraph. 
+7. We use the <span class="highlight">Panel</span> macro with a background of #FAFFFD (Baby Powder color) to highlight the content section.
+8. We make sure the <span class="highlight">Content Table</span> section contains the rule to start at level 2 otherwise it will have a weird indentation.
 
 
-And well, that was the fun part. For the next part we will see the <span style="color:blue">**Deck of Cards**</span>, for screenshot purposes I removed one section from the first Card to display how it looks when editing:
+And well, that was the fun part. For the next part we will see the <span class="highlight">Deck of Cards</span>, for screenshot purposes I removed one section from the first Card to display how it looks when editing:
 
 
 <img class="myImg" src="../images/confluence/panel-example-configuration-2.png" alt="panel-example-configuration-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
