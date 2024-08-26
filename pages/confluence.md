@@ -169,7 +169,7 @@ It may look that is not much different to configure but it has its nuances. Star
 
 <img class="myImg" src="../images/confluence/panel-example-configuration-1.png" alt="panel-example-configuration-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
-- A <span style="color:blue">*Panel*</span> sets the background to match set the color. 
+- A <span style="color:blue">**Panel**</span> sets the background to match set the color. 
   - Knuckles SEGA logo remains the same but above.
   - The image for the title was generated with the [Font SpaceTech](https://www.fontspace.com/) site, using the Tech Headlines Font.
     - It looks invisible as I change it with the macOS image editor to be white and be compatible with the background.
@@ -181,11 +181,15 @@ It may look that is not much different to configure but it has its nuances. Star
     - We make sure the content section contains the rule to start at level 2 otherwise it will have a weird indentation.
 
 
+And well, that was the fun part. For the next part we will see the <span style="color:blue">*Deck of Cards*</span>, for screenshot purposes I removed one section from the first Card to display how it looks when editing:
+
 
 <img class="myImg" src="../images/confluence/panel-example-configuration-2.png" alt="panel-example-configuration-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
-
-Oh boy, this gets interesting. I removed one section from the first Card to display how it looks:
+Yeah I know, quite messy, but the result it is worth the trouble. But there are a few extra considerations:
+- Column Macro
+- Section Macro
+- Panel Macro
 
 <img class="myImg" src="../images/confluence/panel-example-first-attempt.png" alt="panel-example-first-attempt" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
