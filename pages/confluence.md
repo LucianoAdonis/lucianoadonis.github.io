@@ -129,11 +129,13 @@ I wouldn't suggest you going and trying all of them, instead go to the [next sec
 - [Alert](https://confluence.atlassian.com/doc/expand-macro-223222352.html): Create customizable alerts that display when a page loads.
 
 
-## Combinations
+# Macro Combinations
 
-### Quick Results
+I would compare the Macros with Terraform functions. It is good to know that there are easier ways to do something, but you don't really make the most of the tool unless you have to push the boundaries and combine multiple functions on in this case Macros with a clear purpose.
 
-If you’ve only got the mental bandwidth for a few Macros, prioritize the following macros to get quick results:
+## Quick Results
+
+If you’ve only got the mental bandwidth for a few Macros, prioritize the following macros to get ahead of multiple documentations:
 
 * [Multiexcerpt](https://confluence.atlassian.com/conf719/excerpt-macro-1157466743.html): I consider [Multiexcerpt Include](https://confluence.atlassian.com/conf719/excerpt-include-macro-1157466741.html) to be part of it, so it counts as one. This will allow you to reuse content in other pages. Like coding!
 * [Table Filter](https://docs.stiltsoft.com/tfac/cloud/how-to-use-table-filter-macro-42239756.html): There are such great things that you can do with filters and queries. It's sad that you have to but at least is not painful!
@@ -145,14 +147,47 @@ The cross reference between those is not limitated by location but just for simp
 
 <img class="myImg" src="../images/confluence/childtabs-macro-content-side-by-side.png" alt="childtabs-macro-content-side-by-side" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
-### Panels and Layout
 
-The [Panel](https://confluence.atlassian.com/conf719/panel-macro-1157466870.html) allows to create a section with colored background, but you can draw its true potential by combining it with [Deck of Cards](https://appfire.atlassian.net/wiki/spaces/CTFCSM/pages/471176665/Deck+of+Cards)
+## Panels, Cards, Sections, and Layouts
 
+The [Panel](https://confluence.atlassian.com/conf719/panel-macro-1157466870.html) allows to create a section with colored background, but you can get more creative and do more by also using it with [Deck of Cards](https://appfire.atlassian.net/wiki/spaces/CTFCSM/pages/471176665/Deck+of+Cards)
 
+Let's begin with a new page example, the 'Cloud Guardians' team:
 <img class="myImg" src="../images/confluence/panel-example-final-result.png" alt="panel-example-final-result" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
+Compared to the first example of the 'Gotta Go Fast' team, it looks more imposing, even though it seems similar there are a lot of changes, but for now let's focus on the main ones:
+
+- The page contains a logo with a background.
+- Titles are in red color to match the theme.
+- The content table is at the side with a slightly different color (baby powder to be specific).
+- There is a section with tabs and cards containing information about products.
+
+It may look that is not much different to configure but it has its nuances. Staring from the title:
+
+<img class="myImg" src="../images/confluence/panel-example-configuration-1.png" alt="panel-example-configuration-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
+- A Panel macro sets the background to match set the color. 
+  - Knuckles SEGA logo remains the same but above.
+  - The image for the title was generated with the [Font SpaceTech](https://www.fontspace.com/) site, using the Tech Headlines Font.
+    - It looks invisible as I change it with the macOS image editor to be white and be compatible with the background.
+- A simple line made with the [Horizontal Rule]() macro separates the contents from the logo.
+  - No really much thought put into it, it felt right.
+- Next section is divided with a layout of 2/3 
+  - Titles start at level 2 with red color. This make it less weird the transition while reading from huge L1 text to normal size paragraph. 
+  - We use the Panel macro with a background of #FAFFFD (Baby Powder color) to highlight the content section.
+    - We make sure the content section contains the rule to start at level 2 otherwise it will have a weird indentation.
+
+
+
+<img class="myImg" src="../images/confluence/panel-example-configuration-2.png" alt="panel-example-configuration-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
+
+Oh boy, this gets interesting. I removed one section from the first Card to display how it looks:
+
 <img class="myImg" src="../images/confluence/panel-example-first-attempt.png" alt="panel-example-first-attempt" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
+
+
 
 <img class="myImg" src="../images/confluence/panel-example-nested-panels.png" alt="panel-example-nested-panels" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
@@ -162,6 +197,7 @@ The [Panel](https://confluence.atlassian.com/conf719/panel-macro-1157466870.html
 
 <img class="myImg" src="../images/confluence/panel-sections-wcolors-example.gif" alt="panel-sections-wcolors-example" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
+1. The color didn't felt right, for that purpose 
 
 
 # Datasource Pages
