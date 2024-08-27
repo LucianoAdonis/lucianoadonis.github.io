@@ -137,8 +137,7 @@ I wouldn't suggest you going and trying all of them, instead go to the [next sec
 
 # Macro Combinations
 
-I would compare the Macros with Terraform functions. It is good to know that there are easier ways to do something, but you don't really make the most of the tool unless you have to push the boundaries and combine multiple functions on in this case Macros with a clear purpose.
-
+Macros are comparable to Terraform functions. It's essential to recognize that there are easier ways to accomplish tasks. Yet, to fully leverage the tool, it's crucial to stretch its capabilities and intertwine multiple functions with a specific goal in mind.
 
 ## Quick Results
 
@@ -148,9 +147,9 @@ If you’ve only got the mental bandwidth for a few Macros, prioritize the follo
 * [Table Filter](https://docs.stiltsoft.com/tfac/cloud/how-to-use-table-filter-macro-42239756.html): There are such great things that you can do with filters and queries. It's sad that you have to but at least is not painful!
 - [ChildTabs](https://docs.bitvoodoo.app/navitabs-tabs-for-confluence-data-center/?utm_source=bv-app&utm_medium=Editor&utm_campaign=Navitabs%20Child%20Tabs%20Macro): For when you’ve got a bunch of subpages—this helps you keep it all organized without endless tabs.
 
-In the following example, the main page "Macros Example" displays two results with the <span class="highlight">ChildTabs</span> that are the pages under it. The context behind those pages will be explained in the Datasource Page's [example](#example-1), but for know you need two know that those are separated pages loaded simultaneously and quickly accessible through the parent page.
+In the following example, the main page "Macros Example" displays two results with the <span class="highlight">ChildTabs</span> that are the pages under it. The context behind those pages will be explained in the Datasource Page's [example](#example-1). Still, you must know that separated pages are loaded simultaneously and quickly accessible through the parent page.
 
-The cross reference between those is not limitated by location but just for simplicity.
+The cross-reference between those is not limited by location but just for simplicity.
 
 <img class="myImg" src="../images/confluence/childtabs-macro-content-side-by-side.png" alt="childtabs-macro-content-side-by-side" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
@@ -162,27 +161,27 @@ The [Panel](https://confluence.atlassian.com/conf719/panel-macro-1157466870.html
 Let's begin with a new page example, the 'Cloud Guardians' team:
 <img class="myImg" src="../images/confluence/panel-example-final-result.png" alt="panel-example-final-result" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
-Compared to the first example of the 'Gotta Go Fast' team, it looks more imposing, even though it seems similar there are a lot of changes, but for now let's focus on the main ones:
+Compared to the first example of the 'Gotta Go Fast' team, it looks more imposing. Even though it seems similar, there are a lot of changes, but for now, let's focus on the main ones:
 
 - The page contains a logo with a background.
-- Titles are in red color to match the theme.
-- The content table is at the side with a slightly different color (baby powder to be specific).
+- Titles are in red to match the theme.
+- The content table is on the side with a slightly different color (baby powder, precisely).
 - There is a section with tabs and cards containing information about products.
 
-It may look that is not much different to configure but it has its nuances. Staring from the title:
+It may look similar to the configuration, but it has its nuances. Starting from the title:
 
 <img class="myImg" src="../images/confluence/panel-example-configuration-1.png" alt="panel-example-configuration-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 1. A <span class="highlight">Panel</span> sets the background to match set the color. 
-2. Knuckles SEGA logo centered and with a smaller size.
-3. The image for the title was generated with the [Font SpaceTech](https://www.fontspace.com/) site, using the Tech Headlines Font.
-    - It looks invisible as I change it with the macOS image editor to be white and be compatible with the background.
+2. The Knuckles SEGA logo is centered and has a smaller size.
+3. The title image was generated using the Tech Headlines font on the [Font SpaceTech](https://www.fontspace.com/) site.
+    - It looks invisible as I change it with the MacOS image editor to be white and compatible with the background.
 4. A simple line made with the <span class="highlight">Horizontal Rule</span> macro separates the contents from the logo.
-  - No really much thought put into it, it felt right.
-5. Next section is divided with a <span class="highlight">Layout</span> section of 2/3 
-6. Titles start at level 2 with red color. This make it less weird the transition while reading from huge L1 text to normal size paragraph. 
-7. We use the <span class="highlight">Panel</span> macro with a background of #FAFFFD (Baby Powder color) to highlight the content section.
-8. We make sure the <span class="highlight">Content Table</span> section contains the rule to start at level 2 otherwise it will have a weird indentation.
+  - Not much thought was put into it; it felt right.
+5. Next section is divided with a <span class="highlight">Layout</span> section of 2/3.
+6. Titles start at level 2 with red color. This makes the transition from huge L1 text to normal-sized paragraphs less weird.  
+7. We use the <span class="highlight">Panel</span> macro with a background of #FAFFFD (Baby Powder color) to highlight the content section, ensuring important sections stand out.
+8. We make sure the <span class="highlight">Content Table</span> section contains the rule to start at level 2; otherwise, it will have a weird indentation.
 
 
 And well, that was the fun part. For the next part we will see the <span class="highlight">Deck of Cards</span>,
@@ -195,38 +194,50 @@ Let's first refresh the Macros that we will use for this section:
 5. [Panel](https://confluence.atlassian.com/doc/panel-macro-51872380.html)
 6. [Span](https://docs.adaptavist.com/cfm4cs/latest/content-formatting-macros/span)
 
-For screenshot purposes the last card of the first tab it won't appear but you are not missing anything:
+Please note that for screenshots, the last card of the first tab won't be visible. You're not missing anything.
 
 <img class="myImg" src="../images/confluence/panel-example-configuration-2.png" alt="panel-example-configuration-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
-Yeah I know, quite messy to read and probably hard to edit too. I can only say that the result is worth the trouble.
+Yeah, I know. It's quite messy to read and probably hard to edit, too. However, I can only say that the result is worth the trouble.
 
 So it goes like this:
 
-1. The <span class="highlight">Deck of Cards</span> creates horizontal tabs containing one or multiple <span class="highlight">Cards</span>. 
-2. Inside of a <span class="highlight">Card</span> we will have the <span class="highlight">Section</span>.
-3. To organize the content inside of the <span class="highlight">Section</span>, we will have <span class="highlight">Columns</span>.
-4. <span class="highlight">Columns</span> will have a <span class="highlight">Panel</span>.
-5. Each <span class="highlight">Panel</span> will have the text and display.
- 
+1. Originally the first <span class="highlight">Panel</span> was going to set a different color for the whole Deck of Cards, but it didn't looked right, so I avoided doing it like that. See images below to understand the pain:
+  <img class="myImg" src="../images/confluence/panel-example-bad-ending.png" alt="panel-example-bad-ending" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+  On that note, keep in mind that other Macros do not render in the preview:
+  <img class="myImg" src="../images/confluence/panel-example-nested-panels.png" alt="panel-example-nested-panels" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+2. The <span class="highlight">Deck of Cards</span> creates horizontal tabs containing one or multiple <span class="highlight">Cards</span>.  
+3. Inside of a <span class="highlight">Card</span> we will have the <span class="highlight">Section</span>.
+4. <span class="highlight">Section</span> will contain the <span class="highlight">Column</span> macro.
+5. <span class="highlight">Column</span> will have a <span class="highlight">Panel</span>.
+6. Each <span class="highlight">Panel</span> will have the text and display using a <span class="highlight">Span</span>.
+7. The <span class="highlight">Span</span> is used for set parameters to the block and have consistency.
+8. A <span class="highlight">Button Hyperlink</span> is used to provide a way for users to access the other links related to each Product.
+9. The rest of <span class="highlight">Columns</span> follow the same pattern. The percentage associated with it may variate but it is suggested to stick to percentages to not have issues when displaying.
 
+### Colors and Contrast
 
+Originally the example didn't looked like the one shown before. It was like this:
 
 <img class="myImg" src="../images/confluence/panel-example-first-attempt.png" alt="panel-example-first-attempt" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
+Even thought it may look alright, reading with highcontrast or weird colors can throw your attention away.
 
+There are plenty of tools to get ideas of how to get better colors based on a palette by either of concepts of complementary colors or the like.
 
+For this site I used Coolors, and took as main color the Knuckles red (#E63D26) locked that color and started generating palettes like pulling for a Gacha Character, and in the end I went with the Baby Powder as it was more subtle.
+ 
 
-<img class="myImg" src="../images/confluence/panel-example-nested-panels.png" alt="panel-example-nested-panels" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
-
-<img class="myImg" src="../images/confluence/panel-example-bad-ending.png" alt="panel-example-bad-ending" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 <img class="myImg" src="../images/confluence/panel-example-palette.png" alt="panel-example-palette" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
+The contrast is another element to keep in mind if you are going to user bright colors. As it may affect the readiblity and chakra mislalignment.
+
 <img class="myImg" src="../images/confluence/panel-sections-wcolors-example.gif" alt="panel-sections-wcolors-example" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
-1. The color didn't felt right, for that purpose 
-
+Just to recap:
+- Be mindful of the colors that you use.
+- If you are unsure of what to use, there are plenty of tools that can give you an answer regarding if a color is balanced with the existent or if the contrast of the text and background is correct.
 
 # Datasource Pages
 
