@@ -129,6 +129,9 @@ I wouldn't suggest you going and trying all of them, instead go to the [next sec
 - [ChildTabs](https://docs.bitvoodoo.app/navitabs-tabs-for-confluence-data-center/?utm_source=bv-app&utm_medium=Editor&utm_campaign=Navitabs%20Child%20Tabs%20Macro): Navigate between pages easily; view content from child pages without opening multiple tabs.
 - [Expand](https://confluence.atlassian.com/doc/expand-macro-223222352.html): Add expandable/collapsible sections to your page.
 - [Alert](https://confluence.atlassian.com/doc/expand-macro-223222352.html): Create customizable alerts that display when a page loads.
+- [Column Macro](https://confluence.atlassian.com/doc/column-macro-51872396.html)
+- [Section Macro](https://confluence.atlassian.com/doc/section-macro-51872531.html)
+- [Panel Macro](https://confluence.atlassian.com/doc/panel-macro-51872380.html)
 
 
 # Macro Combinations
@@ -181,15 +184,30 @@ It may look that is not much different to configure but it has its nuances. Star
 8. We make sure the <span class="highlight">Content Table</span> section contains the rule to start at level 2 otherwise it will have a weird indentation.
 
 
-And well, that was the fun part. For the next part we will see the <span class="highlight">Deck of Cards</span>, for screenshot purposes I removed one section from the first Card to display how it looks when editing:
+And well, that was the fun part. For the next part we will see the <span class="highlight">Deck of Cards</span>, for screenshot purposes I removed the last card of the example.
 
 
 <img class="myImg" src="../images/confluence/panel-example-configuration-2.png" alt="panel-example-configuration-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 Yeah I know, quite messy, but the result it is worth the trouble. But there are a few extra considerations:
-- Column Macro
-- Section Macro
-- Panel Macro
+
+- [Deck of Cards](https://appfire.atlassian.net/wiki/spaces/CTFCSM/pages/471176665/Deck+of+Cards)
+- [Section Macro](https://confluence.atlassian.com/doc/section-macro-51872531.html)
+- [Column Macro](https://confluence.atlassian.com/doc/column-macro-51872396.html)
+- [Section Macro](https://confluence.atlassian.com/doc/section-macro-51872531.html)
+- [Panel Macro](https://confluence.atlassian.com/doc/panel-macro-51872380.html)
+
+
+But trust me, it is fun... so:
+
+- The <span class="highlight">Deck of Cards</span> creates horizontal tabs containing one or multiple <span class="highlight">Cards</span>. 
+- Inside of a <span class="highlight">Card</span> we will have the <span class="highlight">Section</span>.
+- To organize the content inside of the <span class="highlight">Section</span>, we will have <span class="highlight">Columns</span>.
+- <span class="highlight">Columns</span> will have a <span class="highlight">Panel</span>.
+- Each <span class="highlight">Panel</span> will have the text and display.
+- 
+
+
 
 <img class="myImg" src="../images/confluence/panel-example-first-attempt.png" alt="panel-example-first-attempt" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
