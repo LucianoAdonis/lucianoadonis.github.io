@@ -6,20 +6,20 @@ description: Style Above Else
 
 >"To plant a garden is to believe in tomorrow." – Audrey Hepburn
 
-Based on my experience, when you facilitate the patterns and tools to make the process of documenting less taxing, people will be more willing to cooperate and improve things. When they see the value it provides, it is easier to invest time knowing that it will be helpful to someone, even if that person is yourself in the future.
+Based on my experience, when you facilitate the patterns and tools to make documenting less taxing, people will be more willing to cooperate and improve things. When they see the value it provides, it is easier to invest time knowing that it will be helpful to someone, even if that person is yourself in the future.
 
-The thing is, unless you have read or seen good examples, you probably don't know how to get to that point or what tools to use to get there or at least closer, so this mini-book tries to solve that!
+Unless you have read or seen good examples, you probably don’t know how to get to that point or what tools to use to get there or at least closer, so this mini-book tries to solve that!
 
-I'll try to be as structured as possible when building from scratch rather than trying to jump into complex topics like Dynamic Documentation—oh yes, it gets better.
+I’ll try to be as structured as possible when building from scratch rather than trying to jump into complex topics like Dynamic Documentation—oh yes, it gets better.
 
 
 # Page Layout
 
-Often overlooked, [Page Layouts, Columns and Sections](https://confluence.atlassian.com/doc/page-layouts-columns-and-sections-275188613.html) can significantly improve how you display content and help you to accentuate key points.
+Often overlooked, [Page Layouts, Columns, and Sections](https://confluence.atlassian.com/doc/page-layouts-columns-and-sections-275188613.html) can significantly improve how you display content and help you to accentuate key points.
 
-Instead of scrolling through a vertical monolith of text, you can use the page space to create a more dynamic and engaging structure.
+Instead of presenting your content as a dense, vertical monolith of text, you can transform the page space into a dynamic, engaging structure that captivates your audience.
 
-The following page, which is a dummy (thanks, ChatGPT), would be your run-of-the-mill page in Confluence. Let's see it!
+The following page, a dummy (thanks, ChatGPT), would be your run-of-the-mill page in Confluence. Let's see it!
 
 <img class="myImg" src="../images/confluence/pagelayout-example-1.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
@@ -31,7 +31,7 @@ I'm not mean. It is just Digital Feng Shui. Now let's continue with an "arranged
 
 <img class="myImg" src="../images/confluence/pagelayout-example-2.png" alt="pagelayout-example-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
-- Could be improved! But it feels more natural and structured. Like they know what they are doing.
+- It could be improved! But it feels more natural and structured. They know what they are doing.
 - Some extra colors may do some good, but let's keep it simple.
 
 So, what happened? A few slight changes to the layout:
@@ -65,15 +65,15 @@ In short, a document that get's you information relevant of how things where, wh
 
 <img class="myImg" src="../images/confluence/templates-example-1.png" alt="templates-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
-1. Page tags can be part of the template! Make sure to set them.
-2. The Badge Macro can help visualize the status. 
-3. This is a comment you will be seeing a lot.
-4. I have seen people trying to make an index manually. To avoid that awkwardness, we can leave it there, so they need only the basics.
-5. You'll find titles already defined with the proper level, saving you time and effort.
-6. A warning shouldn't be used like that, but enough to make something clear and have it as a reference that the macros exist.
-7. The comments can be helpful in clarifying the objectives of sections or other things to consider.
-8. Example subtitle with a comment of the same level.
-9. It's helpful to have some macros already in place, such as the table of contents, to convey the message that 'hey, this is possible and we've got you covered!'
+1. Page <span class="highlight">Tags</span> can be part of the <span class="highlight">template</span>! Make sure to set them.
+2. The <span class="highlight">Badge</span> Macro can help visualize the status. 
+3. This is a <span class="highlight">Comment</span> you will be seeing a lot.
+4. I have seen people trying to make an index manually. To avoid that awkwardness, the <span class="highlight">Table of Contents</span> will take care of it. So they only focus on writing.
+5. You'll find <span class="highlight">Titles</span> already defined with the proper level, saving you time and effort.
+6. A <span class="highlight">Warning</span> shouldn't be used like that. But in this case is enough to make something clear and have it as a reference that the macros exist.
+7. The <span class="highlight">Comments</span> can be helpful in clarifying the objectives of sections or other things to consider.
+8. Example <span class="highlight">Subtitle</span> with a <span class="highlight">Comment</span> of the same level.
+9. It's helpful to have some macros already in place, such as the <span class="highlight">Code Block</span>, to convey the message that 'hey, this is possible and we've got you covered!'
 
 
 ## Simple Documents
