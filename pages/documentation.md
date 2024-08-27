@@ -1,3 +1,9 @@
+---
+layout: custom
+title: Documentation Advise
+description: Write with your heart
+---
+
 # Documentation
 
 ## Types of Pages
