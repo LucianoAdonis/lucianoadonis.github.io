@@ -55,7 +55,20 @@ You may say that it looks good, but it lacks personality as it may work as a pag
 # Templates
 
 One of the biggest problems that I have seen regarding people documentating is a lack of structure, so basically they expend more time wondering about how to do structure the page rather than sitting down to write.
+
 By using a template you can reduce the scope of doing that and have a limited scope of what they need to provide, so instead of making something from nothing, they just have to fill with the proper information.
+
+Before diving in types of structures, we have to discuss about ways to make the Template more obvious to the casual Confluence User.
+
+## Template Accessibility
+
+Instead of creating a normal page by clicking the 'Create' button, you have to select the three dots at the side. If you or your admin promoted the template, it will appear in the first options, and you can select it and finally have the format.
+
+There are more straightforward ways to achieve this, but you may understand why people always miss this.
+
+[Add Page via Form](https://apps-docs.servicerocket.com/x/mglb?utm_medium=confluence&utm_source=macro_editor). In later sections, we will board more Macros, but by now, this is what lets you define a button to create a page based on a defined template or Live Templates.
+
+The Live Templates must be discussed separately, which can quickly get tricky.
 
 ## Complex Documents
 
