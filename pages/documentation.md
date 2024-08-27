@@ -119,6 +119,7 @@ But let's give it a try with ChatGPT (ChatGPT 3.5) with slightly different promp
       <p>When AWS Lambda functions are deployed within a private Virtual Private Cloud (VPC), they experience a cold start issue due to the additional networking setup and resource provisioning required before execution. This complexity in networking configuration, including subnet associations and security group assignments, along with the overhead of resource allocation within the VPC, contributes to longer initialization times. Additionally, stringent security checks and compliance measures further extend the cold start duration. As a Senior Cloud Engineer, addressing these factors is crucial to optimize the performance and responsiveness of serverless applications deployed in private VPC environments.</p>
 
     </div>
+  </details>
 
   - As a senior cloud engineer, explain the limitation of AWS lambdas running in private VPCs that causes the cold start issue as context, and be brief about it, make it two lines:
   <details style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
@@ -138,7 +139,7 @@ We don't want you to go into Prompt Engineering to write a summary you could oth
 - Alternative expressions for X text.
 
 
-If you only need a grammar check, go for Grammarly, only you would have to pay for it. Personally, it is worth every penny of saved time rereading. But I must admit that the capability to rewrite certain pieces or suggest options/ideas is handy.
+If you only need a grammar check, use Grammarly; you only have to pay for it. I think it's worth every penny for the time saved in proofreading. I also find the capability to rewrite certain pieces or suggest options and ideas quite handy.
 
 ## Advice for the Young at Heart
 
