@@ -13,6 +13,11 @@ Unless you have read or seen good examples, you probably don’t know how to get
 I’ll try to be as structured as possible when building from scratch rather than trying to jump into complex topics like Dynamic Documentation—oh yes, it gets better.
 
 
+# Basics
+
+
+
+
 # Page Layout
 
 Often overlooked, [Page Layouts, Columns, and Sections](https://confluence.atlassian.com/doc/page-layouts-columns-and-sections-275188613.html) can significantly improve how you display content and help you to accentuate key points.
