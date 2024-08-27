@@ -1,16 +1,21 @@
 ---
 layout: custom
-title: Documentation Advise
-description: Write with your heart
+title: Writing Advise
+description: An act that you do with your heart
 ---
 
-# Documentation
+# Blank Page
 
-## Types of Pages
+Depending of the document type you will need to figure how to start. If you barely have an idea of how it should look, search for references.
 
-## Review
+## Types of Documents
 
-### What to Look for
+
+# Review
+
+Is easier to spot a bad movie than to point what it does good. And if you do, you will end up with a bunch of cliches.
+
+## What to Look for
 
 We tend to miss a lot of information when we write because we skip the obvious stuff to keep things simple, which isn’t necessarily bad.
 
