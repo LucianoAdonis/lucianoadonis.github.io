@@ -21,6 +21,8 @@ As you may already know (I hope so), in a company you should avoid use this serv
 
 To put it simply, if someone asks how they're doing and they respond with a lengthy explanation about the current geopolitical and economic situation before getting into business, it might come across as odd and pretentious. The same principle applies to documents; sometimes, less is more.
 
+## Prompts
+
 Let's say I want to write a quick context for a document that delves deeper into the Cold Start issue affecting Lambdas inside VPCs. A simple answer would be, "Lambdas that run on VPCs are not fast because the allocation of internal resources is slower than public ones that are always ready to be executed."
 
 But let's give it a try with ChatGPT (ChatGPT 3.5) with slightly different prompts:
@@ -125,3 +127,22 @@ But let's give it a try with ChatGPT (ChatGPT 3.5) with slightly different promp
       <p>When AWS Lambda functions operate within private VPCs, the cold start issue arises due to the additional networking complexities and resource provisioning required, leading to longer initialization times. This includes configuring networking components, allocating resources within the VPC, and enforcing stringent security checks, all of which contribute to delays in function execution.</p>
     </div>
   </details>
+
+If you will have to go through a lot of filler to get to the essential notions of the document, that's no good; if you want to go deeper into a topic, that's fine, but be aware of who you are writing for. Is it a "From Zero to Hero" course or just a document providing clarity and guidance over a topic you would likely read in a pinch?
+
+We don't want you to go into Prompt Engineering to write a summary you could otherwise come up with while trying to get the correct output. A few things that you consider are:
+
+- Rewrite for clarity X text.
+- Suggest alternatives to X line.
+- Rewrite this more politely.
+- Alternative expressions for X text.
+
+
+If you only need a grammar check, go for Grammarly, only you would have to pay for it. Personally, it is worth every penny of saved time rereading. But I must admit that the capability to rewrite certain pieces or suggest options/ideas is handy.
+
+## Advice for the Young at Heart
+
+Adding more text won't necessarily improve your document; it might make reading overly complicated. ChatGPT typically aims to meet a specific character count to sound informative and engaging, but it's crucial to maintain clarity and conciseness above everything else.
+
+ChatGPT is helpful, but it is like using Mahoraga. Depends on how you use it.
+

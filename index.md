@@ -16,6 +16,7 @@ At work, I get to connect with all kinds of interesting people and dive into a v
 
 - [Confluence](./pages/confluence.md): make the most of Confluence.
 - [ADRs](./pages/adrs.md): Document that will save you a lot of trouble down the line.
+- [Documentation Advise](./pages/documentation.md)
 - **Documentation Patterns**: SOON.
 
 ### Self-Help
