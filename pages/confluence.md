@@ -12,13 +12,26 @@ Unless you have read or seen good examples, you probably don’t know how to get
 
 I’ll try to be as structured as possible when building from scratch rather than trying to jump into complex topics like Dynamic Documentation—oh yes, it gets better.
 
-
-# Basics
-
+To simplify each section we are going to go for the edition basics in the first part.
 
 
+# Getting Started
 
-# Page Layout
+I'll skip how to login and click the create a Page...
+
+// damn, explain the structuring process.
+
+
+In general, most Macros won't render and will make a block where you can add things.
+
+<img class="myImg" src="../images/confluence/basics-macro-customization.gif" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
+When editing the macro itself you will be able to preview with its contents already defined. Which in most cases will make a lot of sense.
+
+
+
+
+# Mastering Page Layouts
 
 Often overlooked, [Page Layouts, Columns, and Sections](https://confluence.atlassian.com/doc/page-layouts-columns-and-sections-275188613.html) can significantly improve how you display content and help you to accentuate key points.
 
@@ -57,7 +70,7 @@ So, what happened? A few slight changes to the layout:
 You may say that it looks good, but it lacks personality as it may work as a page for documentation but not for a team presentation. If that's the case, you can skip right to the [Panels and Layout](#panels-cards-sections-and-layouts) section to see a more colorful example.
 
 
-# Templates
+# Template Magic
 
 One of the biggest problems that I have seen regarding people documentating is a lack of structure, so basically they expend more time wondering about how to do structure the page rather than sitting down to write.
 
@@ -65,7 +78,7 @@ By using a template you can reduce the scope of doing that and have a limited sc
 
 Before diving in types of structures, we have to discuss about ways to make the Template more obvious to the casual Confluence User.
 
-## Template Accessibility
+## Making them Accessible
 
 Instead of creating a normal page by clicking the 'Create' button, you have to select the three dots at the side. If you or your admin promoted the template, it will appear in the first options, and you can select it and finally have the format.
 
@@ -75,7 +88,7 @@ There are more straightforward ways to achieve this, but you may understand why 
 
 The Live Templates must be discussed separately, which can quickly get tricky.
 
-## Complex Documents
+## How to Board Complex Documents
 
 An [Architecture Decision Record (ADR)](./pages/adrs.md) is a decent example of that! By "Complex" I'm referring to the lenght and the things that the page has to aboard.
 
@@ -94,7 +107,7 @@ In short, a document that get's you information relevant of how things where, wh
 9. It's helpful to have some macros already in place, such as the <span class="highlight">Code Block</span>, to convey the message that 'hey, this is possible and we've got you covered!'
 
 
-## Simple Documents
+## How to Board Simple Documents
 
 After seeing the example of a Complex Document, you may wonder if you need much noise for everything. The answer is NO!
 
@@ -108,7 +121,7 @@ Where I'm currently working, we have two main patterns: for **Procedures** and *
   - Images: size limited to a certain width and a border.
 
 
-# Macros
+# Advanced Macros
 
 Macros are plugins that enhance Confluence's functionality. A wide variety is available, from official options to community-created tools. While some are premium and offer advanced features, there are plenty of free options to explore.
 
@@ -122,7 +135,7 @@ But there are a lot more combinations that you can make from them. The following
 There will be examples of a few combinations and how to make the most of them.
 
 
-## Amazing Macros 
+## List
 
 I wouldn't suggest you going and trying all of them, instead go to the [next section](#simple-combination) to start learning simple combinations and go from there.
 
@@ -157,7 +170,15 @@ I wouldn't suggest you going and trying all of them, instead go to the [next sec
 
 Macros are comparable to Terraform functions. It's essential to recognize that there are easier ways to accomplish tasks. Yet, to fully leverage the tool, it's crucial to stretch its capabilities and intertwine multiple functions with a specific goal in mind.
 
-## Quick Results
+## Practical Enhancements
+
+Sometimes people don't use certain options of their macros which can impact in the way things are felt.
+
+If you document is heavy on code I could assume your readers won't care most of the time in the code itself but rather what you are talking about. For those cases, the expand option from the Code Macro will make a difference.
+
+This can also be done for images of even sections, with the expand macros. I personally hid memes this way.
+
+## Quick Wins
 
 If you’ve only got the mental bandwidth for a few Macros, prioritize the following macros to get ahead of multiple documentations:
 
@@ -170,7 +191,7 @@ In the following example, the main page "Macros Example" displays two results wi
 The cross-reference between those is not limited by location but just for simplicity.
 
 <img class="myImg" src="../images/confluence/childtabs-macro-content-side-by-side.png" alt="childtabs-macro-content-side-by-side" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
-
+<br>
 
 ## Panels, Cards, Sections, and Layouts
 
@@ -233,11 +254,20 @@ So it goes like this:
 8. A <span class="highlight">Button Hyperlink</span> is used to provide a way for users to access the other links related to each Product.
 9. The rest of <span class="highlight">Columns</span> follow the same pattern. The percentage associated with it may variate but it is suggested to stick to percentages to not have issues when displaying.
 
-### Colors and Contrast
+### Optimized Colors and Contrast
 
 Originally the example didn't looked like the one shown before. It was like this:
 
-<img class="myImg" src="../images/confluence/panel-example-first-attempt.png" alt="panel-example-first-attempt" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<details style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
+    <summary style="color: #00AEEF; cursor: pointer;">Click to expand</summary>
+    <div style="padding: 10px;">
+      <img class="myImg" src="../images/confluence/panel-example-first-attempt.png" alt="panel-example-first-attempt" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+    </div>
+  </details>
+
+<br>
+
+
 
 Even thought it may look alright, reading with highcontrast or weird colors can throw your attention away.
 
@@ -247,7 +277,7 @@ For this site I used Coolors, and took as main color the Knuckles red (#E63D26) 
  
 
 
-<img class="myImg" src="../images/confluence/panel-example-palette.png" alt="panel-example-palette" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="myImg" src="../images/confluence/panel-example-palette-cut.png" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 The contrast is another element to keep in mind if you are going to user bright colors. As it may affect the readiblity and chakra mislalignment.
 
