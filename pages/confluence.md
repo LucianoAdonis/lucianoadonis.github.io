@@ -24,28 +24,52 @@ I'll skip how to login and click the create a Page...
 
 ## Layouts
 
+The Layout settings are often overlooked, as you can only see the menu after clicking the button highlighted in red:
+
 <img class="myImg" src="../images/confluence/basics-layout-example-1.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
+The first time you click this button, it will add existing content to a single section. If you have a lot of content, there isn't a way around it; you must add more sections and separate them manually.
 
 <img class="myImg" src="../images/confluence/basics-layout-example-2.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
+From left to right:
+1. This first section will allow you to include rows, by default when you add a new one, this will be placed below the one that you are currently placed.
+2. This section will allow you to set the distribution of the section row.
+
 ## Macros
 
+The magic behind Confluence.
 
 <img class="myImg" src="../images/confluence/basics-macro-menu-example-1.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
+1. The plus button will open the menu where we can see standard macros.
+2. Horizontal rule
+3. Table of Contents.
+4. Other macros: this last one will display the menu with the rest of the available macros installed.
+
+For the following example we are going to search for the <span class="highlight">Code Block</span> macro.
+
 <img class="myImg" src="../images/confluence/basics-macro-menu-example-2.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
+1. Using the search menu you can filter the results.
+2. Click the macro.
+
+For most macros, if not all, clicking it will open an insert menu for customization. Don't worry, you can always return to this menu by clicking 'edit' on the macro.
 
 <img class="myImg" src="../images/confluence/basics-macro-menu-example-3.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
+Things to make clear about this section are:
 
-In general, most Macros won't render and will make a block where you can add things.
+The options will depend on the macro, but they are worth checking. In some cases, they are a bit complex and may require additional knowledge.
+- The preview menu lets you see how your changes will be reflected.
+
+In most cases, you will first need to include content to appreciate how it changes, so in the next section, we will do that.
 
 <img class="myImg" src="../images/confluence/basics-macro-customization.gif" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
-When editing the macro itself you will be able to preview with its contents already defined. Which in most cases will make a lot of sense.
+For this example, we are setting properties.
 
-
-
+- Those will be reflected in the after the macro name.
 
 # Page Layouts
 
