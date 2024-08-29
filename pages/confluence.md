@@ -19,7 +19,7 @@ To simplify each section we are going to go for the edition basics in the first 
 
 I'll skip how to login and click the create a Page...
 
-## Page Distribution
+## Page Distribution
 
 When you create a new page, it will automatically be nested under the page you were viewing when you pressed the "Create" button. If you want your new page to be a child of a specific parent page, you must navigate to that page before creating it.
 
