@@ -22,13 +22,13 @@ I'll skip how to login and click the create a Page...
 // damn, explain the structuring process.
 
 
-## Layout Menu
+## Layouts
 
 <img class="myImg" src="../images/confluence/basics-layout-example-1.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 <img class="myImg" src="../images/confluence/basics-layout-example-2.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
-## Macro Menu
+## Macros
 
 
 <img class="myImg" src="../images/confluence/basics-macro-menu-example-1.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
@@ -47,11 +47,13 @@ When editing the macro itself you will be able to preview with its contents alre
 
 
 
-# Mastering Page Layouts
+# Page Layouts
 
 Often overlooked, [Page Layouts, Columns, and Sections](https://confluence.atlassian.com/doc/page-layouts-columns-and-sections-275188613.html) can significantly improve how you display content and help you to accentuate key points.
 
 Instead of presenting your content as a dense, vertical monolith of text, you can transform the page space into a dynamic, engaging structure that captivates your audience.
+
+## Making the Difference
 
 The following page, a dummy (thanks, ChatGPT), would be your run-of-the-mill page in Confluence. Let's see it!
 
@@ -85,6 +87,10 @@ So, what happened? A few slight changes to the layout:
 
 You may say that it looks good, but it lacks personality as it may work as a page for documentation but not for a team presentation. If that's the case, you can skip right to the [Panels and Layout](#panels-cards-sections-and-layouts) section to see a more colorful example.
 
+## Considerations
+
+
+
 
 # Template Magic
 
@@ -94,7 +100,7 @@ By using a template you can reduce the scope of doing that and have a limited sc
 
 Before diving in types of structures, we have to discuss about ways to make the Template more obvious to the casual Confluence User.
 
-## Making them Accessible
+## Facilitate the Usage
 
 Instead of creating a normal page by clicking the 'Create' button, you have to select the three dots at the side. If you or your admin promoted the template, it will appear in the first options, and you can select it and finally have the format.
 
@@ -104,7 +110,7 @@ There are more straightforward ways to achieve this, but you may understand why 
 
 The Live Templates must be discussed separately, which can quickly get tricky.
 
-## How to Board Complex Documents
+## Working With Complex Documents
 
 An [Architecture Decision Record (ADR)](./pages/adrs.md) is a decent example of that! By "Complex" I'm referring to the lenght and the things that the page has to aboard.
 
@@ -123,7 +129,7 @@ In short, a document that get's you information relevant of how things where, wh
 9. It's helpful to have some macros already in place, such as the <span class="highlight">Code Block</span>, to convey the message that 'hey, this is possible and we've got you covered!'
 
 
-## How to Board Simple Documents
+## Working With Simple Documents
 
 After seeing the example of a Complex Document, you may wonder if you need much noise for everything. The answer is NO!
 
@@ -137,7 +143,7 @@ Where I'm currently working, we have two main patterns: for **Procedures** and *
   - Images: size limited to a certain width and a border.
 
 
-# Advanced Macros
+# Macros
 
 Macros are plugins that enhance Confluence's functionality. A wide variety is available, from official options to community-created tools. While some are premium and offer advanced features, there are plenty of free options to explore.
 
@@ -151,7 +157,7 @@ But there are a lot more combinations that you can make from them. The following
 There will be examples of a few combinations and how to make the most of them.
 
 
-## List
+## Advanced Macros
 
 I wouldn't suggest you going and trying all of them, instead go to the [next section](#simple-combination) to start learning simple combinations and go from there.
 
@@ -180,6 +186,10 @@ I wouldn't suggest you going and trying all of them, instead go to the [next sec
 - [Section](https://confluence.atlassian.com/doc/section-macro-51872531.html)
 - [Panel](https://confluence.atlassian.com/doc/panel-macro-51872380.html)
 - [Span](https://docs.adaptavist.com/cfm4cs/latest/content-formatting-macros/span)
+
+## Hardcore Macros
+
+- Live Templates.
 
 
 # Macro Combinations
