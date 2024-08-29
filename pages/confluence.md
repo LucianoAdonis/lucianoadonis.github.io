@@ -19,7 +19,15 @@ To simplify each section we are going to go for the edition basics in the first 
 
 I'll skip how to login and click the create a Page...
 
-// damn, explain the structuring process.
+## Page Distribution
+
+When you create a new page, it will automatically be nested under the page you were viewing when you pressed the "Create" button. If you want your new page to be a child of a specific parent page, you must navigate to that page before creating it.
+
+It's a common mistake that people often create pages without realizing where they are at the top level of the space, which can lead to drafts floating around at the top level. Not a huge problem, but it can make things messy very quickly.
+
+To keep your space organized, double-check your location before you create a page. It's a quick step that can save you from having to clean up later.
+
+You can also create pages in your personal space.
 
 
 ## Layouts
