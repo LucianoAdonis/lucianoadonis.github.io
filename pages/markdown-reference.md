@@ -35,7 +35,7 @@ Here's a small square displaying the color `#ff6347` (Tomato):
 <details>
   <summary>> See Code</summary>
 
-  ```html
+  </code></pre>
   1. <div style="width: 10px; height: 10px; background-color: #ff6347; display: inline-block; border: 1px solid #000;"></div>
   2. <div class="color-square" style="background-color: #ff6347;"></div>
 
@@ -49,7 +49,7 @@ Here's a small square displaying the color `#ff6347` (Tomato):
       border: 1px solid #000;
   }
   </style>
-  ```
+  </code></pre>
 </details> <br>
 
 ## Text Color
