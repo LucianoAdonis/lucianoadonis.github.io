@@ -1,4 +1,3 @@
-
 ---
 layout: custom
 title: Confluence - Chapter 3
