@@ -14,7 +14,7 @@ If you want to accompany me in this group therapy section, which may help you so
 
 I promise the rest of the content related to Confluence will be more direct to what you want to know!
 
-</br>
+<br>
 
 ## I'm All of Me
 
@@ -30,7 +30,7 @@ What happened was that I had the "luck" that the new teachers were from prestigi
 
 I made it through, but I cried my way to graduation. If someone had told me back then that those skills would eventually lead to better pay and more opportunities, I would have called it bullshit—but it turned out to be true.
 
-</br>
+<br>
 
 ## Advice For The Young at Heart
 
@@ -56,7 +56,7 @@ I realized when I started university and then working (in tech) that people ofte
 
 // I think I learned a lot from the forewords in science fiction books, where editors shared their thoughts and opinions about the book and other related sources. It was insightful, and I usually skipped those things if they were present during any mandatory High School book.
 
-</br>
+<br>
 
 ## About Present Me
 
@@ -64,7 +64,7 @@ At 28, I find myself with the technical proficiency of someone in their mid-30s.
 
 > "Caminante, no hay camino, se hace camino al andar." - Random Quote of One of My Teachers
 
-</br>
+<br>
 
 # Why This Book?
 
@@ -74,7 +74,7 @@ Unless you have read or seen good examples, you probably don’t know how to get
 
 I’ll try to be as structured as possible when building from scratch rather than trying to jump into complex topics like Dynamic Documentation—oh yes, it gets better.
 
-</br>
+<br>
 
 ## How to Use This Book
 
@@ -86,7 +86,7 @@ First I would start advicing to avoid reading this in mobile.
   - Images can be clicked so you can have a good look at them.
 - Expandable Code: if it says that you can expand it, then it is an example but not really needed to you look at it.
 
-</br>
+<br>
 
 # Overview of The Chapters
 
