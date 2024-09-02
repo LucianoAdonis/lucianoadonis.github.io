@@ -49,6 +49,12 @@ Looking back, I felt that I lacked a reason or meaning behind my actions to move
 
 // I think I learned a lot from the forewords in science fiction books, where editors shared their thoughts and opinions about the book and other related sources. It was insightful, and I usually skipped those things if they were present during any mandatory High School book.
 
+## About Present Me
+
+At 28, I find myself with the technical proficiency of someone in their mid-30s. But back when I was 19, I would often see people around 27 or 28 being celebrated as geniuses or experts in talks and courses, and I couldn’t quite relate.
+
+> "Caminante, no hay camino, se hace camino al andar." - Random Quote of One of My Teachers
+
 </br>
 
 # Why This Book?
@@ -61,7 +67,7 @@ I’ll try to be as structured as possible when building from scratch rather tha
 
 </br>
 
-# How to Use This Book
+## How to Use This Book
 
 First I would start advicing to avoid reading this in mobile.
 
