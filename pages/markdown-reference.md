@@ -16,28 +16,36 @@ This is what the page was made for.
 
 ## Text Color
 
-
-
 1. <span style="color:#ff6347">**Panel Macro**</span>
 2. <span class="highlight">Panel Macro</span>
+
 <style>
 .highlight {
   color: #ff6347; /* Example color (Tomato) */
   font-weight: bold; /* Example style (bold text) */
 }
-<style>
+</style>
+
+<details>
+  <summary>Expand Source Code</summary>
+
+  ```html
+  <style>
+    .highlight {
+      color: #ff6347; /* Example color (Tomato) */
+      font-weight: bold; /* Example style (bold text) */
+    }
+  </style>
+  ```
+</details>
 
 
-```
+
+```html
 1. <span style="color:#ff6347">**Panel Macro**</span>
 2. <span class="highlight">Panel Macro</span>
-<style>
-.highlight {
-  color: #ff6347; /* Example color (Tomato) */
-  font-weight: bold; /* Example style (bold text) */
-}
-<style>
-```
+
+
 
 
 ## Links
