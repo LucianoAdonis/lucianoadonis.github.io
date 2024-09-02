@@ -7,7 +7,7 @@ description: Structure Above Else
 
 ---
 
-<a href="pages/confluence-chapter-2" class="button fork"><strong>Return to Chapter 2</strong></a>
+<a href="/pages/confluence-chapter-2" class="button fork"><strong>Return to Chapter 2</strong></a>
 
 ---
 
@@ -288,7 +288,7 @@ You can [Customize Button Hyperlink With CSS](https://docs.adaptavist.com/cfm4cs
 
 ---
 
-<a href="pages/confluence-chapter-3" class="button fork"><strong>Next Chapter</strong></a>
+<a href="/pages/confluence-chapter-3" class="button fork"><strong>Next Chapter</strong></a>
 
 
 {% raw %}

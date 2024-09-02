@@ -6,7 +6,7 @@ description: Basics Above Else
 
 ---
 
-<a href="pages/confluence" class="button fork"><strong>Return</strong></a>
+<a href="/pages/confluence" class="button fork"><strong>Return</strong></a>
 
 ---
 
@@ -80,7 +80,7 @@ For this example, we are setting properties.
 
 ---
 
-<a href="pages/confluence-chapter-2" class="button fork"><strong>Chapter 2</strong></a>
+<a href="/pages/confluence-chapter-2" class="button fork"><strong>Chapter 2</strong></a>
 
 ---
 
