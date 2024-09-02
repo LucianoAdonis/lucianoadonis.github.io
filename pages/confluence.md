@@ -14,14 +14,29 @@ I’ll try to be as structured as possible when building from scratch rather tha
 
 To simplify each section we are going to go for the edition basics in the first part.
 
+I'll skip how to login and click the create a Page.
+
+For advanced topics I'll use Tomato <div style="width: 10px; height: 10px; background-color: #ff6347; display: inline-block; border: 2px solid #000;"></div> color to highlight either concepts or macros and avoid adding hyperlinks everywhere.
+
+The page distribution will have to be separated in three, as the content length exceeded the index bar, and it will be probably easier this way:
+
+- [Chapter 1: Basics](/confluence-chapter-1.md): 
+- [Chapter 2: Advanced Topics](): 
+- [Chapter 3: The Empire Strikes Back](/confluence-chapter-3.md): random trivia that may be helpful in a date.
+
+
+<br>
 
 # Getting Started
 
-I'll skip how to login and click the create a Page...
+
+
+
+<br>
 
 ## Page Distribution
 
-When you create a new page, it will automatically be nested under the page you were viewing when you pressed the "Create" button. If you want your new page to be a child of a specific parent page, you must navigate to that page before creating it.
+When you create a new page, it will automatically be nested under **the page you were viewing** when you pressed the "Create" button. If you want your new page to be a child of a specific parent page, you must navigate to that page before creating it.
 
 It's a common mistake that people often create pages without realizing where they are at the top level of the space, which can lead to drafts floating around at the top level. Not a huge problem, but it can make things messy very quickly.
 
@@ -355,7 +370,7 @@ You can [Customize Button Hyperlink With CSS](https://docs.adaptavist.com/cfm4cs
 
 ---
 
-<a href="pages/confluence-chapter-3.md" class="button fork"><strong>Next Chapter</strong></a>
+<a href="/confluence-chapter-3.md" class="button fork"><strong>Next Chapter</strong></a>
 
 
 {% raw %}

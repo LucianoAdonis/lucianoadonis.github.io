@@ -1,3 +1,9 @@
+---
+layout: custom
+title: Confluence - Chapter 3
+description: Structure Above Else
+---
+
 # Datasource Pages
 
 Just like it sounds, a Datasource Page is where you consolidate information. With Macros like [Multiexcerpt](https://confluence.atlassian.com/conf719/excerpt-macro-1157466743.html) and [Table Include](https://docs.stiltsoft.com/tfac/dc-server/how-to-use-table-excerpt-and-table-excerpt-include-macros-42241623.html), you can save yourself a ton of headaches by keeping your source of truth and attached pages in sync.
