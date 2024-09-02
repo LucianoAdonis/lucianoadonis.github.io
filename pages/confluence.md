@@ -12,6 +12,10 @@ description: Style Above Else
 I feel awkward writing the following section about myself rather than jumping straight to the topic, but I think it may help clear some misunderstandings about writing.
 If you want to accompany me in this group therapy section, which may help you sort your own feelings, continue reading. Otherwise, feel free to jump to the [following section](#why-this-book).
 
+I promise the rest of the content will be more direct to what you want to know!
+
+</br>
+
 ## I'm All of Me
 
 When I was in High School, we had to choose between two types of electives: scientific and Humanities. You would expect that because I work now in technology or always had that predisposition, I was going to be a scientific student, but nope, I chose Humanities instead.
@@ -25,6 +29,8 @@ I ended up being dead wrong. It was a lot of work, reading, and making reports a
 What happened was that I had the "luck" that the new teachers were from prestigious Universities and had the mentality of getting everyone at that level before getting into the university. I can remember my classmates excited about that and myself internally screaming.
 
 I made it through, but I cried my way to graduation. If someone had told me back then that those skills would eventually lead to better pay and more opportunities, I would have called it bullshit—but it turned out to be true.
+
+</br>
 
 ## Advice For The Young at Heart
 
@@ -42,12 +48,15 @@ There was nothing wrong with them; I realize now that I was the one who lacked t
 
 >"There are two types of kids. One will say 'Why didn't you make me learn to play the piano?' The other will say 'Why did you make me learn to play the piano?'" - David Foster Wallace
 
-It led me to believe that I wasn't normal or didn't fit their definition of smart. You know, the idea that "if you don't do or act a certain way, you're out of the league." I didn't buy into that notion of a definitive advantage over others, thanks to the "deep understanding of underlying themes". Still, the truth is that even a slight advantage can sometimes make all the difference.
- 
-Looking back, I felt that I lacked a reason or meaning behind my actions to move forward. But I kept learning, and I still am. The difference is that the foundation helped me develop more tolerance for spending time on things.
+Still, being out of tune with others, and being forced to learn led me to believe that I wasn't normal or didn't fit their definition of smart. You know, the idea that "if you don't do or act a certain way, you're out of the league." I didn't buy into that notion of a definitive advantage over others, thanks to the "deep understanding of underlying themes". Still, the truth is that even a slight advantage can sometimes make all the difference.
 
+Looking back, I felt that I lacked a reason or meaning behind my actions to move forward. But I kept learning, and I still am. The difference is that the foundation of **pain** helped me develop more tolerance for spending time on things.
+
+I realized when I started university and then working (in tech) that people often didn't give it more thought to writing and other things, even thought they were still mandatory and part of the general expectations. 
 
 // I think I learned a lot from the forewords in science fiction books, where editors shared their thoughts and opinions about the book and other related sources. It was insightful, and I usually skipped those things if they were present during any mandatory High School book.
+
+</br>
 
 ## About Present Me
 
