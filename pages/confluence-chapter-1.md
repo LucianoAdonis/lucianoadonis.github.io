@@ -6,7 +6,7 @@ description: Basics Above Else
 
 ---
 
-<a href="/confluence" class="button fork"><strong>Return</strong></a>
+<a href="pages/confluence" class="button fork"><strong>Return</strong></a>
 
 ---
 
