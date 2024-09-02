@@ -14,6 +14,44 @@ Basic commands.
 
 This is what the page was made for.
 
+## Color Reference
+
+Here's a small square displaying the color `#ff6347` (Tomato):
+
+1. <div style="width: 10px; height: 10px; background-color: #ff6347; display: inline-block; border: 1px solid #000;"></div>
+2. <div class="color-square" style="background-color: #ff6347;"></div>
+
+
+
+<style>
+.color-square {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border: 1px solid #000;
+}
+</style>
+
+<details>
+  <summary>> See Code</summary>
+
+  ```html
+  1. <div style="width: 10px; height: 10px; background-color: #ff6347; display: inline-block; border: 1px solid #000;"></div>
+  2. <div class="color-square" style="background-color: #ff6347;"></div>
+
+
+
+  <style>
+  .color-square {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      border: 1px solid #000;
+  }
+  </style>
+  ```
+</details> <br>
+
 ## Text Color
 
 1. <span style="color:#ff6347">**Panel Macro**</span>
@@ -27,7 +65,7 @@ This is what the page was made for.
 </style>
 
 <details>
-  <summary>See Code</summary>
+  <summary>> See Code</summary>
 
   ```html
   1. <span style="color:#ff6347">**Panel Macro**</span>
@@ -40,7 +78,7 @@ This is what the page was made for.
         }
       </style>
   ```
-</details>
+</details> <br>
 
 
 ## Links
@@ -57,18 +95,22 @@ This is what the page was made for.
 
 Markdown itself does not natively support expandable or collapsible sections. However, you can use HTML `<details>` and `<summary>` tags to create expandable sections in environments that support HTML within Markdown (e.g., GitHub, GitLab). Note that not all Markdown renderers support this.
 
-- <details>
-  <summary>Click to expand</summary>
-  <p>This is the content that will be hidden until clicked.</p>
-</details>
+1.  <details>
+    <summary>Click to expand</summary>
+    <p>This is the content that will be hidden until clicked.</p>
+  </details>
 
 
-```markdown
 <details>
-  <summary>Click to expand</summary>
-  <p>This is the content that will be hidden until clicked.</p>
-</details>
-```
+  <summary>> See Code</summary>
+
+  ```html
+  1.  <details>
+    <summary>Click to expand</summary>
+      <p>This is the content that will be hidden until clicked.</p>
+    </details>
+  ```
+</details> <br>
 
 ## Import Images
 
@@ -85,7 +127,7 @@ Markdown itself does not natively support expandable or collapsible sections. Ho
   
 
 <details>
-  <summary>See Code</summary>
+  <summary>> See Code </summary>
 
   ```
   # No Format:
@@ -193,11 +235,11 @@ Markdown itself does not natively support expandable or collapsible sections. Ho
   }
   </script>
   ```
-</details>
+</details> <br>
 
 <style>
   .modal {
-    display: none;
+    display: none; /* Initially hidden */
     position: fixed;
     z-index: 1;
     left: 0;
@@ -206,7 +248,6 @@ Markdown itself does not natively support expandable or collapsible sections. Ho
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.9);
-    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -235,42 +276,49 @@ Markdown itself does not natively support expandable or collapsible sections. Ho
     text-decoration: none;
     cursor: pointer;
   }
-  </style>
+</style>
 
-  <!-- Trigger/Open The Modal -->
-  
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
 
-  <!-- The Modal -->
-  <div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-  </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Get the modal
+    var modal = document.getElementById("myModal");
 
-  <script>
-  // Get the modal
-  var modal = document.getElementById("myModal");
+    // Get the image and insert it inside the modal
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
 
-  // Get the image and insert it inside the modal
-  var img = document.getElementById("myImg");
-  var modalImg = document.getElementById("img01");
-
-  img.onclick = function(){
-    modal.style.display = "flex";
-    modalImg.src = this.src;
-  }
-
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-
-  span.onclick = function() { 
-    modal.style.display = "none";
-  }
-
-  // Close the modal when pressing the "Esc" key
-  document.onkeydown = function(event) {
-    if (event.key === "Escape") {
-      modal.style.display = "none";
+    if (img) {
+        img.onclick = function(){
+            modal.style.display = "flex";
+            modalImg.src = this.src;
+        }
     }
-  }
-  </script>
 
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
+
+    // Close the modal when pressing the "Esc" key
+    document.onkeydown = function(event) {
+        if (event.key === "Escape") {
+            modal.style.display = "none";
+        }
+    }
+
+    // Close modal when clicking outside the content
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+  });
+</script>
