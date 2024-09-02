@@ -26,9 +26,9 @@ Thinking back, I was more in line with what you'd expect from the archetype of a
 
 I ended up being dead wrong. It was a lot of work, reading, and making reports about every small thing we read.
 
-What happened was that I had the "luck" that the new teachers were from prestigious Universities and had the mentality of getting everyone at that level before getting into the university. I can remember my classmates excited about that and myself internally screaming.
+What happened was that we had the "luck" that the new teachers for our generation were from prestigious Universities and had the mentality of getting their students at that level before getting into the university. I can remember my classmates excited about that and myself internally screaming.
 
-I made it through, but I cried my way to graduation. If someone had told me back then that those skills would eventually lead to better pay and more opportunities, I would have called it bullshit—but it turned out to be true.
+I made it through, but I cried my way to graduation. If someone had told me back then that those skills would eventually lead to better pay and more opportunities, I would have called it bullshit, but it turned out to be true.
 
 <br>
 
@@ -36,19 +36,19 @@ I made it through, but I cried my way to graduation. If someone had told me back
 
 This introduction is to say that I was not born loving writing and reading, so I can understand why most people dislike or want to avoid "spending" time on it at all costs.
 
-I began to read by my own will when I was about to start university at 17. While working in the summers, I didn't have enough signal to use my phone or other ways to distract myself after working in vacations and long weekends away from home.
+I began to read by my own will when I was about to start university at 17. While working in the summers, I didn't have enough signal to use my phone or other ways to distract myself after work during vacations and long weekends away from home.
 
-On a side note, thanks to ChatGPT, I have been able to regain and quickly search things that I didn't have mapped, like the following quotes that I couldn't recall fully, but can convey the feelings:
+On a side note, thanks to ChatGPT, I have been able to regain and quickly search things that I didn't have mapped, like the following quotes that I couldn't recall fully, but can convey my feelings:
 
 >"The tragedy of reading great works of literature in school is that they are often pushed upon students too early, before they are ready to truly understand or appreciate them." - C.S. Lewis.
 
 I was surrounded by classmates who were almost euphoric about the promise of becoming smarter by honing their skills, while I just wanted a decent job in technology so I could do my own thing.
 
-There was nothing wrong with them; I realize now that I was the one who lacked the mental maturity to appreciate certain things. I just had a clear sense of how I wanted to move forward, and that was enough for me.
+There was nothing wrong with them; I realize now that I was the one who lacked the mental maturity to appreciate certain things. I just had a clear sense of how I wanted to move forward, and that was enough for me, anything else seemed like pipe dreams.
 
 >"There are two types of kids. One will say 'Why didn't you make me learn to play the piano?' The other will say 'Why did you make me learn to play the piano?'" - David Foster Wallace
 
-Still, being out of tune with others, and being forced to learn led me to believe that I wasn't normal or didn't fit their definition of smart. You know, the idea that "if you don't do or act a certain way, you're out of the league." I didn't buy into that notion of a definitive advantage over others, thanks to the "deep understanding of underlying themes". Still, the truth is that even a slight advantage can sometimes make all the difference.
+Still, being out of tune with others, and being forced to learn led me to believe that I wasn't normal or didn't fit their definition of smart. You know, the idea that "if you don't do or act a certain way, you're out of the league". I didn't buy into that notion of a definitive advantage over others, thanks to the "deep understanding of underlying themes". Still, the truth is that even a slight advantage can sometimes make all the difference.
 
 Looking back, I felt that I lacked a reason or meaning behind my actions to move forward. But I kept learning, and I still am. The difference is that the foundation of **pain** helped me develop more tolerance for spending time on things.
 
