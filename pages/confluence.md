@@ -32,7 +32,7 @@ I made it through, but I cried my way to graduation. If someone had told me back
 
 <br>
 
-## Advice For The Young at Heart
+## Advice for the Young at Heart
 
 This introduction is to say that I was not born loving writing and reading, so I can understand why most people dislike or want to avoid "spending" time on it at all costs.
 
@@ -58,7 +58,7 @@ I realized when I started university and then working (in tech) that people ofte
 
 <br>
 
-## About Present Me
+## If You Don't Know Me by Now
 
 At 28, I find myself with the technical proficiency of someone in their mid-30s. But back when I was 19, I would often see people around 27 or 28 being celebrated as geniuses or experts in talks and courses, and I couldn’t quite relate.
 
