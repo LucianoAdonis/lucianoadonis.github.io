@@ -12,8 +12,14 @@ description: Basics Above Else
 
 # Getting Started
 
+In this chapter, we'll cover the basics to help you:
 
+- Understand how pages are organized.
+- Get familiar with the Layout feature.
+- Explore how to use Macros effectively.
+- Learn how to search in Confluence.
 
+With these foundations in place, we'll be ready to dive into the real fun.
 
 <br>
 
@@ -27,6 +33,7 @@ To keep your space organized, double-check your location before you create a pag
 
 You can also create pages in your personal space.
 
+<br>
 
 ## Layouts
 
@@ -41,6 +48,8 @@ The first time you click this button, it will add existing content to a single s
 From left to right:
 1. This first section will allow you to include rows, by default when you add a new one, this will be placed below the one that you are currently placed.
 2. This section will allow you to set the distribution of the section row.
+
+<br>
 
 ## Macros
 
@@ -77,6 +86,25 @@ For this example, we are setting properties.
 
 - Those will be reflected in the after the macro name.
 
+<br>
+
+## Search
+
+It is not a skill issue, it really sucks. But there are ways to get better results.
+
+When using the search keep in mind the following:
+  - Limit the scope:
+    - Filter by Space
+    - Filter by User
+  - Add tags:
+
+Most of these little improvements can be optimized.
+
+## Permissions
+
+// Explain certain limitations to take actions.
+
+<br>
 
 ---
 
