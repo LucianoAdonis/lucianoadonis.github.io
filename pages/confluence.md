@@ -12,7 +12,7 @@ description: Style Above Else
 I feel awkward writing the following section about myself rather than jumping straight to the topic, but I think it may help clear some misunderstandings about writing.
 If you want to accompany me in this group therapy section, which may help you sort your own feelings, continue reading. Otherwise, feel free to jump to the [following section](#why-this-book).
 
-I promise the rest of the content will be more direct to what you want to know!
+I promise the rest of the content related to Confluence will be more direct to what you want to know!
 
 </br>
 
