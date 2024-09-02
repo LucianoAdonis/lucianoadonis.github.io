@@ -100,6 +100,6 @@ The page distribution will have to be separated in three, as the content length 
 
 ---
 
-<a href="pages/confluence-chapter-1" class="button fork"><strong>Continue to Chapter 1</strong></a>
+<a href="/pages/confluence-chapter-1" class="button fork"><strong>Continue to Chapter 1</strong></a>
 
 ---
