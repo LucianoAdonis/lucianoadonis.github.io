@@ -80,7 +80,7 @@ For this example, we are setting properties.
 
 ---
 
-<a href="/confluence-chapter-2" class="button fork"><strong>Chapter 2</strong></a>
+<a href="pages/confluence-chapter-2" class="button fork"><strong>Chapter 2</strong></a>
 
 ---
 
