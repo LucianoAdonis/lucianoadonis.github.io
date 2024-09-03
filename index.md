@@ -43,6 +43,7 @@ GitHub Gists containing some degree of wisdom and free time.
 - <a href="https://gist.github.com/LucianoAdonis/43a43e5b80515abb828ceb1d3dca2258" target="_blank">Brewfile</a>
 - <a href="https://gist.github.com/LucianoAdonis/93f008e9bf92b0dbcdd5d2ee03f37535" target="_blank">Edition Tools</a>
 - <a href="https://gist.github.com/LucianoAdonis/2fdc70716cc00e7d584494b0beafc985" target="_blank">Sublime Customization</a>
+- <a href="https://gist.github.com/LucianoAdonis/91398d78df653e6a2d4969c87261b184" target="_blank">Team Building Activities</a>
 
 ---
 

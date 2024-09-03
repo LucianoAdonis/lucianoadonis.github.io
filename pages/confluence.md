@@ -66,7 +66,7 @@ At 28, I find myself with the technical proficiency of someone in their mid-30s.
 
 <br>
 
-# Why This Book?
+# Why This Mini-Book?
 
 Based on my experience, when you facilitate the patterns and tools to make documenting less taxing, people will be more willing to cooperate and improve things. When they see the value it provides, it is easier to invest time knowing that it will be helpful to someone, even if that person is yourself in the future.
 
@@ -76,7 +76,7 @@ I’ll try to be as structured as possible when building from scratch rather tha
 
 <br>
 
-## How to Use This Book
+## How to Use This Mini-Book
 
 First I would start advicing to avoid reading this in mobile.
 
