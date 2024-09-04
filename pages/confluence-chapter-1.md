@@ -41,7 +41,15 @@ It's a common mistake that people often create pages without realizing where the
 
 To keep your space organized, double-check your location before you create a page. It's a quick step that can save you from having to clean up later.
 
-You can also create pages in your personal space.
+// You can also create pages in your personal space.
+
+### Cloud Differences
+
+In the Cloud version it allows you to quickly add new pages directly from the side menu rather than relying solely on the "Create" button.
+
+<img class="myImg" src="../images/confluence/basics-cloud-page-creation.gif" alt="basics-cloud-page-creation" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
+Even though I was initially on the "Team Information" page, because I clicked the button to create a page from the "POCs" page, the new page was created, and I was automatically moved to the empty page under "POCs".
 
 <br>
 
@@ -58,6 +66,10 @@ The first time you click this button, it will add existing content to a single s
 From left to right:
 1. This first section will allow you to include rows, by default when you add a new one, this will be placed below the one that you are currently placed.
 2. This section will allow you to set the distribution of the section row.
+
+### Cloud Differences
+
+The base layout doesn't cover the entire page but applies to just one section, and you can add more as needed. The options remain the same, though it's likely designed this way to be more responsive.
 
 <br>
 
