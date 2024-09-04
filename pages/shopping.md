@@ -36,3 +36,7 @@ The products on this list are ones that I've truly put to the test and found inv
 - **In-ear Headphones (AirPods Pro)**: "I don't like cords. They're coarse, rough, irritating, and they get everywhere."
   - I love the transparency feature and being able to listen to music without being uncomfortable.
 - **Curved Monitor (Samsung Curved 34")**: You won't be able to work at the same level with one screen.
+
+# Useful Sites
+
+- [RTINGS](https://www.rtings.com/): A great site for comparing products. Unfortunately, I discovered it after buying a headset that was a complete disappointment, so I can attest that their reviews are spot-on.
