@@ -9,7 +9,7 @@ This Mini Book is focused on DevOps/Cloud Engineers going from Semi-Senior Advan
 
 Moreover, it can be a decent refresher for people with a higher seniority.
 
-# Preparations
+# Core Mechanics
 Before jumping to the other sections, get the items below in order. I have seen many people who try to go to an interview without preparation, which is possible when you either are getting to a level below what you currently are or have enough mileage to know how things go down.
 
 - Learn about yourself. Usually, in the first ten minutes, you will summarize what you have been doing for the past years and your process, achievements, challenges, and how you overcome them.
@@ -24,7 +24,7 @@ Before jumping to the other sections, get the items below in order. I have seen 
 
 <img class="myImg" src="../images/interviews/object-the-fundamentals.png" alt="object-fundamentals" style="cursor: pointer;">
 
-## Types of interview
+## Types of Builds
 
 ### Semi Senior
 - Certifications are valid as an extension of knowledge and proof that you care about learning more.
@@ -41,15 +41,13 @@ I’ll expand on this because it’s more fun, and it is what you need to start 
 - Bonus phase feeling: love at first sight or based on small gestures.
 - End phase: congrats!
 
-# Senior Interview
-
-## Preparation Bonfire
+# Preparation Bonfire
 
 Yup, not so fast to the boss fight. We need to gather a few essential items before pushing forward. The good news? These items improve with time, but you’ll need them in your inventory to stand a chance.
 
 You might be one of the hardcore ones, breezing through everything with 0% damage. But for the rest of us mere mortals, proper preparations are essential.
 
-### Work Experience Over General Knowledge
+## Work Experience Over General Knowledge
 
 Hands-on experience with tools is more valuable than theoretical knowledge. By the time you reach the mid-level (Ssr), you’re expected to know the essentials—this is the baseline.
 
@@ -57,24 +55,24 @@ Do we have here some General knowledge questions? Those are a separate challenge
 
 <img class="myImg" src="../images/interviews/object-estus-flask.png" alt="object-estus-flask" style="cursor: pointer;">
 
-### Certifications are Good, But...
+## Certifications are Good, But...
 
 They’re mostly just a way to skip the easy questions in interviews, but if you play your cards right, they can serve as leverage to claim even greater rewards.
 
-- It’s tough for those who’ve put in a serious effort to get certified. Still, all a certification tells me is that you have time to study, a good memory, and probably a Cloud Guru subscription or whatever younglings use these days.
+- It’s tough for those who’ve put in a serious effort to get certified. Still, all a certification tells me is that you have time to study, a good memory, and probably a Cloud Guru subscription or whatever young ones use these days.
 - Certifications can even backfire. That’s why I only certify in technologies I’m actively working with and have enough hands-on experience to support. Otherwise, it’s just cramming knowledge.
-- But everyone’s different. If your approach is, “I want to dive deeper into X technology, and I’m using this certification as a challenge to find a related job,” that’s valid, too.
+- If your approach is, “I want to dive deeper into X technology, and I’m using this certification as a challenge to find a related job,” that’s valid, too.
 
 In short, if the certification supports your build, great! Otherwise, it’s like being a Strength build and wasting early points on learning a spell you can barely cast, leaving you open to attacks instead of focusing on fortifying your core skills.
 
 <img class="myImg" src="../images/interviews/object-certification-spear.png" alt="object-certification-spear" style="cursor: pointer;">
 
 
-### Accents
+## Accents
 
 Since you're reading this, I assume you're comfortable with written and spoken English, which is safe. However, many underestimate the challenge of understanding everyday speech, especially from people who aren't native speakers.
 
-A few takeways:
+A few takeaways:
 
 - In tutorial videos, people often speak at a perfect pace and enunciate clearly. But in real life, it's common to encounter native speakers who mumble, rush through sentences, or use slang.
 - You'll work with people worldwide, and only some people care about flawless grammar or polished speech as long as they can convey their message.
@@ -83,7 +81,7 @@ A few takeways:
 
 <img class="myImg" src="../images/interviews/object-sun-speech.png" alt="object-sun-speech" style="cursor: pointer;">
 
-### Communication
+## Communication
 
 Clear Communication is Crucial whether in interviews or building relationships with clients, the ability to explain your ideas is not just a must but a significant factor in your professional success. Preparation is your Estus Flask—it will keep you going. While there will come a time when you'll breeze through interviews, preparation is key until then.
 
@@ -91,6 +89,8 @@ With this in mind, at least you won’t stumble right out of the fog gate, givin
 
 <img class="myImg" src="../images/interviews/object-charisma.png" alt="object-charisma" style="cursor: pointer;">
 
+
+# Senior Interview Boss Fight
 
 ## First Phase
 
