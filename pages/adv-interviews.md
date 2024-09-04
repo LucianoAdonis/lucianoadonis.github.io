@@ -22,6 +22,8 @@ Before jumping to the other sections, get the items below in order. I have seen 
 - Style makes the difference.
   - Remember always to have your computer configured and ready.
 
+<img class="myImg" src="../images/interviews/object-the-fundamentals.png" alt="object-fundamentals" style="cursor: pointer;">
+
 ## Types of interview
 
 ### Semi Senior
@@ -41,22 +43,54 @@ I’ll expand on this because it’s more fun, and it is what you need to start 
 
 # Senior Interview
 
-## Things to know
+## Preparation Bonfire
 
-- Work experience with tools is worth more than just general knowledge. At the Ssr level, being aware of things is enough. At this level, that’s a given.
-  - General knowledge questions are sold separately... but we have the [Interview Preparation](#interview-preparation) to give a glance in the different topics.
-- On the same note, certifications are good, but just enough to skip the easy questions.
-  - It’s hard on people who work “hard” to get one, but yeah, with a certification, you tell me that you have time to study, a decent memory, and probably a subscription to Cloud Guru.
-  - It can backfire, so my policy is to take certification on things I’m working on and have enough experience to back it up. Otherwise, I would tackle everything with just memory and cramming.
-    - But this variate from person to person. Perhaps you take certifications based on “I want to learn more from X technology, so I’m starting with this as a challenge to find a related job,” that’s fine.
-- English accents, because you are reading this, I assume you are on good terms with written and spoken English. The thing is that people underestimate listening to ordinary people that might not even be native.
-  - A guy from a tutorial/video needs to talk at an average speed and pronounce everything correctly. It’s normal and happens to native people speaking the same language. It happens on TNT!
-  - You will work with people from different countries, and some of them don’t give crap as long as they might explain what they want to say.
-  - Clients from other countries are polite when listening to people who are not native speakers. So don’t worry about it, and continue working on it!
-- Explaining your ideas is key for interviews and developing good relationships with clients.
-  - Preparation makes the difference. At some point, you won’t need to do anything and just go directly to the interviews, but until then, prepare accordingly.
-  - Not just by talking or writing. You can get other tools to support you when explaining things, like diagrams and Google Jamboard.
-  - Grammarly can help you with your writing skills as a complementary resource. There’s no shame in wanting to do things better!
+Yup, not so fast to the boss fight. We need to gather a few essential items before pushing forward. The good news? These items improve with time, but you’ll need them in your inventory to stand a chance.
+
+You might be one of the hardcore ones, breezing through everything with 0% damage. But for the rest of us mere mortals, proper preparations are essential.
+
+### Work Experience Over General Knowledge
+
+Hands-on experience with tools is more valuable than theoretical knowledge. By the time you reach the mid-level (Ssr), you’re expected to know the essentials—this is the baseline.
+
+Do we have here some General knowledge questions? Those are a separate challenge. But don’t worry. We’ve covered you with the [Interview Preparation](#interview-preparation) section to give you a glimpse of the critical topics.
+
+<img class="myImg" src="../images/interviews/object-estus-flask.png" alt="object-estus-flask" style="cursor: pointer;">
+
+### Certifications are Good, But...
+
+They’re mostly just a way to skip the easy questions in interviews, but if you play your cards right, they can serve as leverage to claim even greater rewards.
+
+- It’s tough for those who’ve put in a serious effort to get certified. Still, all a certification tells me is that you have time to study, a good memory, and probably a Cloud Guru subscription or whatever younglings use these days.
+- Certifications can even backfire. That’s why I only certify in technologies I’m actively working with and have enough hands-on experience to support. Otherwise, it’s just cramming knowledge.
+- But everyone’s different. If your approach is, “I want to dive deeper into X technology, and I’m using this certification as a challenge to find a related job,” that’s valid, too.
+
+In short, if the certification supports your build, great! Otherwise, it’s like being a Strength build and wasting early points on learning a spell you can barely cast, leaving you open to attacks instead of focusing on fortifying your core skills.
+
+<img class="myImg" src="../images/interviews/object-certification-spear.png" alt="object-certification-spear" style="cursor: pointer;">
+
+
+### Accents
+
+Since you're reading this, I assume you're comfortable with written and spoken English, which is safe. However, many underestimate the challenge of understanding everyday speech, especially from people who aren't native speakers.
+
+A few takeways:
+
+- In tutorial videos, people often speak at a perfect pace and enunciate clearly. But in real life, it's common to encounter native speakers who mumble, rush through sentences, or use slang.
+- You'll work with people worldwide, and only some people care about flawless grammar or polished speech as long as they can convey their message.
+- Clients from other countries are patient and understanding with non-native speakers. So don't stress over it, you will **git gud**.
+  - If you find some weird case... well It will make you stronger.
+
+<img class="myImg" src="../images/interviews/object-sun-speech.png" alt="object-sun-speech" style="cursor: pointer;">
+
+### Communication
+
+Clear Communication is Crucial whether in interviews or building relationships with clients, the ability to explain your ideas is not just a must but a significant factor in your professional success. Preparation is your Estus Flask—it will keep you going. While there will come a time when you'll breeze through interviews, preparation is key until then.
+
+With this in mind, at least you won’t stumble right out of the fog gate, giving off the wrong impression.
+
+<img class="myImg" src="../images/interviews/object-charisma.png" alt="object-charisma" style="cursor: pointer;">
+
 
 ## First Phase
 
@@ -189,3 +223,56 @@ You can google set of questions, but IMHO I prefer to hae pointers and go from t
   - Add the “Do it with security in mind” to all points above.
 
 
+
+{% raw %}
+<!-- Single Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
+
+<!-- JavaScript for Modal Functionality -->
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+
+  // Get the modal image element
+  var modalImg = document.getElementById("img01");
+
+  // Ensure the modal is hidden on page load
+  window.onload = function() {
+    modal.style.display = "none";
+  };
+
+  // Get all images with class "myImg" and loop through them to add the click event
+  var images = document.getElementsByClassName("myImg");
+  for (var i = 0; i < images.length; i++) {
+    images[i].onclick = function(){
+      modal.style.display = "flex"; // Ensure the modal is displayed using flexbox
+      modalImg.src = this.src;
+    }
+  }
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+
+  // Close the modal when clicking outside of the image
+  modal.onclick = function(event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  // Close the modal when pressing the "Esc" key
+  document.onkeydown = function(event) {
+    if (event.key === "Escape") {
+      modal.style.display = "none";
+    }
+  }
+</script>
+{% endraw %}
