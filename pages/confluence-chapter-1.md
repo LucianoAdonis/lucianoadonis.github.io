@@ -14,6 +14,7 @@ description: Basics Above Else
 
 In this chapter, we'll cover the basics to help you:
 
+- Meet the 
 - Understand how pages are organized.
 - Get familiar with the Layout feature.
 - Explore how to use Macros effectively.
@@ -22,6 +23,15 @@ In this chapter, we'll cover the basics to help you:
 With these foundations in place, we'll be ready to dive into the real fun.
 
 <br>
+
+## Cloud is Not the Same as On-Prem
+If you've heard about a cool new feature in Confluence but you're using the On-Prem version, chances are you won't see it anytime soon. Most of the exciting updates are only available to Cloud users.
+
+An example of that at the time of writing is changing the user who owns a page rather than sticking with the one who created it.
+
+This difference extends beyond features—integrations, performance improvements, and even the user interface can differ. Cloud gets more frequent updates, while On-Prem tends to get behind. 
+
+The UI differences might be an advantage for some On-Prem users who prefer a more stable and familiar environment.
 
 ## Page Distribution
 

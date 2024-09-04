@@ -10,7 +10,8 @@ description: Style Above Else
 # About the Author
 
 I feel awkward writing the following section about myself rather than jumping straight to the topic, but I think it may help clear some misunderstandings about writing.
-If you want to accompany me in this group therapy section, which may help you sort your own feelings, continue reading. Otherwise, feel free to jump to the [following section](#why-this-book).
+
+If you want to accompany me in this group therapy section, which may help you sort your own feelings, continue reading. Otherwise, feel free to jump to the [following section](#why-this-mini-book).
 
 I promise the rest of the content related to Confluence will be more direct to what you want to know!
 
@@ -78,13 +79,15 @@ I’ll try to be as structured as possible when building from scratch rather tha
 
 ## How to Use This Mini-Book
 
-First I would start advicing to avoid reading this in mobile.
+First, I suggest avoiding reading this on mobile. Second, this mini-book is **focused on the On-Prem version of Confluence**, so there will be some differences in menus and integrations.
 
-- Highlighted Words: I'll use Tomato color to highlight either concepts or macros and avoid adding hyperlinks everywhere.
-- Image Examples:
-  - I like the format, but between clicks you can miss some action.
-  - Images can be clicked so you can have a good look at them.
-- Expandable Code: if it says that you can expand it, then it is an example but not really needed to you look at it.
+In regards to the exposition of the content:
+
+- **Highlighted Words**: I'll use the Tomato color to highlight either concepts or macros and avoid adding hyperlinks everywhere.
+- **Image Examples**:
+  - I like the format, but you can miss some action between clicks.
+  - Images can be clicked to have a good look at them.
+- **Expandable Code**: if it says that you can expand it, then it is an example, but you do not need to look at it.
 
 <br>
 
