@@ -106,6 +106,31 @@ Where I'm currently working, we have two main patterns: for **Procedures** and *
   - Code: If the code/text in the block is lengthy, set it to "Expandable."
   - Images: size limited to a certain width and a border.
 
+## Cloud Templates
+
+
+The Cloud version has the advantage to have more variety and freedom to provide [Templates](https://www.atlassian.com/software/confluence/templates/categories/recommended).
+
+From that link I picked just a few examples:
+
+1. [Brainstorming](https://www.atlassian.com/software/confluence/templates/brainstorming)
+<img class="myImg" src="../images/confluence/cloud-template-example-1.png" alt="cloud-template-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+    - In my opinion, the Cloud version seems to take more pride in using emojis, while On-Prem docs often feel like they’re trying to turn into RFCs or some other clunky format.
+
+
+2. [Project Plan](https://www.atlassian.com/software/confluence/templates/project-plan):
+<img class="myImg" src="../images/confluence/cloud-template-example-2.png" alt="cloud-template-example-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+  - Besides Emojis and adding more colors, the titles main titles start at two, which is a good approach to avoid getting dizzy for the transtion of a higher case to a paragraph type.
+  <img class="myImg" src="../images/confluence/cloud-template-example-2a.gif" alt="cloud-template-example-2a" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+  - Scrolling down there is a Macro that I haven't seen before:
+  <img class="myImg" src="../images/confluence/cloud-template-example-2b.png" alt="cloud-template-example-2b" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+    - Quite handy if you ever need it.
+
+While these templates are great and can save time, **remember that not everything that shines is gold**. You should look beyond predefined templates and customize your workflow. Don't feel constrained by the structure—use these templates as a starting point, but have the insight to choose the right tools and create something unique!
+
+
+The idea is not to go and reinvent the wheel but to have the insights to pick the right tools and come up with something intersting!
+
 
 # Macros
 
@@ -151,10 +176,14 @@ I wouldn't suggest you going and trying all of them, instead go to the [next sec
 - [Panel](https://confluence.atlassian.com/doc/panel-macro-51872380.html)
 - [Span](https://docs.adaptavist.com/cfm4cs/latest/content-formatting-macros/span)
 
+
+## Cloud Macros
+
+
+
 ## Hardcore Macros
 
 - Live Templates.
-
 
 # Macro Combinations
 
