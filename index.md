@@ -35,7 +35,7 @@ Anything related to more behavior
 
 ---
 
-### Code Snippets & Quick Tips
+### Code Snippets, Tools, and Efficiency Tips
 
 GitHub Gists containing some degree of wisdom and free time.
 

@@ -17,7 +17,7 @@ The products on this list are ones that I've truly put to the test and found inv
   - Some tapes can be added to clothes.
   - Note: There is a slight tape waste between prints; it is more of a product issue than a configuration problem.
 
-**Transparent Boxes (Wenco)**: I prefer clear boxes because they allow me to see what's inside.
+- **Transparent Boxes (Wenco)**: I prefer clear boxes because they allow me to see what's inside.
   - Even with transparent boxes, labels are a game-changer when stacked or stored at angles.
 
 ## Cleaning & Lifestyle
