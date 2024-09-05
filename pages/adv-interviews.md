@@ -147,9 +147,77 @@ With this in mind, at least you won’t stumble right out of the fog gate, givin
 
 ---
 
-## Skill Set
+## Move Set
 
 // I'll move the [Interview Preparation](#interview-preparation) section here, it makes more sense.
+
+For this section we will go over the general attack patterns and how to counter them. C'mon it is just dogeing and hitting, how complicated can it gets?
+
+<div>
+  <p><strong>Tell me about your experience:</strong></p>
+  <ul>
+    <li>The interviewer wants to know about your experience. Briefly mention the technologies and projects you’ve worked on.</li>
+    <li>Prepare this beforehand, focusing on what they might want to hear and highlighting your key achievements.</li>
+  </ul>
+
+  <p><strong>What’s your level with X technology?</strong></p>
+  <ul>
+    <li>Your answer sets the difficulty of the questions. A safe option is “intermediate” if you’re unsure, but “advanced” or “expert” works if you have deep experience.</li>
+    <li>Expect a more engaging conversation when both parties have high levels of knowledge.</li>
+  </ul>
+
+  <p><strong>In this hypothetical scenario, how would you accomplish it?</strong></p>
+  <ul>
+    <li>This question aims to assess your understanding of architectures, workflows, and tools.</li>
+    <li>You may not have direct experience, but knowing which tools are best is key. Multiple answers are common, so stick to what you’re confident with.</li>
+    <li>They may challenge your answers to see how you react and adapt.</li>
+  </ul>
+
+  <p><strong>Architecture types:</strong></p>
+  <ul>
+    <li>At this level, you should be familiar with various architectures like microservices, monoliths, and event-driven systems, and know when each is appropriate.</li>
+    <li>Expect questions like “What challenges would you face when using a microservice architecture from scratch?”</li>
+  </ul>
+
+  <p><strong>What are the projects you have worked on?</strong></p>
+  <ul>
+    <li>The interviewer wants to see your hands-on experience. Be prepared to dive into the details of your most challenging projects.</li>
+    <li>Highlight popular technologies to earn more points and steer follow-up questions.</li>
+  </ul>
+
+  <p><strong>Cloud Provider Knowledge:</strong></p>
+  <ul>
+    <li>Expect questions on VPC setup, Load Balancers, security best practices, and specific service knowledge (CloudFront, Lambda, SQS, etc.).</li>
+    <li>Prepare for database-related questions: backups, configuration, and general use cases.</li>
+  </ul>
+
+  <p><strong>Containers:</strong></p>
+  <ul>
+    <li>Be ready for Docker and Kubernetes questions, including common commands, troubleshooting, service mesh, and Helm knowledge.</li>
+  </ul>
+
+  <p><strong>Pipelines:</strong></p>
+  <ul>
+    <li>Know how to automate everyday tasks, manage dependencies, and improve job speeds.</li>
+    <li>Understand good practices around CI/CD pipelines.</li>
+  </ul>
+
+  <p><strong>Automation IaC:</strong></p>
+  <ul>
+    <li>Prepare for specific questions around Terraform (e.g., state locking, merging maps) and CloudFormation, including SAM and Serverless Framework.</li>
+  </ul>
+
+  <p><strong>Automation Configuration Management:</strong></p>
+  <ul>
+    <li>Expect questions about tools like Packer, Chef, and Ansible, and their differences.</li>
+  </ul>
+
+  <p><strong>Security:</strong></p>
+  <ul>
+    <li>“Do it with security in mind” applies to everything above.</li>
+  </ul>
+</div>
+
 
 <br>
 
