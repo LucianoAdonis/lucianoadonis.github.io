@@ -153,6 +153,14 @@ With this in mind, at least you won’t stumble right out of the fog gate, givin
 
 For this section, we’ll dive into the general attack patterns and how to counter them. Honestly, it’s just dodging and hitting—how hard can it be, right?
 
+## Inspiration Sources
+
+Behavior and other patterns not directly related to combat.
+
+<img class="myImg" src="../images/interviews/object-estus-flask.png" alt="object-estus-flask" style="cursor: pointer;">
+<br>
+
+
 ## Enemies Moveset
 
 <div>
@@ -301,97 +309,6 @@ Depending on how you get the interview you may get feedback, by a third-party or
 // Rejection path
 // Acceptance path
 // Internal challenges
-
-# 
-
-# Interview Preparation
-
-You can google set of questions, but IMHO I prefer to hae pointers and go from there.
-
-- **Tell me about your experience.**
-  - The interviewer wants to know about your experience. Lol.
-  - Briefly mention the technologies and projects that you worked on. You should spend the necessary amount of time here.
-  - Prepare this beforehand, aiming at what they might want to hear, plus your highlights to use time wisely.
-  - As long as it’s true, go for it.
-
-- **What’s your level with X technology?**
-  - Depending on your experience, this will set the difficulty of the questions. 
-  - If unsure, a safe answer is “intermediate” so you, the interviewer, can start measuring you.
-  - Advanced or expert are good options when you have much experience with a technology and multiple use case scenarios.
-  - When two people have high levels, the interaction between questions, cases, and exceptions is fun.
-
-- **In this hypothetical scenario, how would you accomplish it?**
-  - This could vary, and its purpose is to get a gist of your mind map regarding architectures, workflows, and technologies.
-  - You might not have experience with a particular scenario, but you should know which tool/service is the best and what you might have seen elsewhere.
-  - There might be multiple answers. Usually, they are open about the answers to this kind of question.
-  - There might be better solutions, but go with what you feel confident as a solution. They will use this as an opportunity to argue against you and see how you react and adapt to new focus changes.
-
-- **Architecture types.**
-  - Migration tasks provide you with a lot of experience on this topic.
-  - You should know the possible types (micro-services, monoliths, event-driven, a mix, etc.) at this level, and when each is a better solution, along with their downsides.
-  - Expect questions like “Which challenges would you face when using a microservice architecture from scratch? Setting dependencies, good practices, etc.”
-  - You might also get questions like “Which LB should I use if I have an application that requires specific paths or redirects?”
-
-- **What are the projects that you have worked on?**
-  - The interviewer uses this to get a glimpse of what you have worked on and make you explain details that only a person involved would know.
-  - The “most challenging project” variant tests how you perform and approach problems.
-  - Prepare an answer to this beforehand, knowing your story.
-  - Ideally, mention popular technology to give you more points and facilitate the follow-up questions.
-
-- **Cloud Provider Knowledge:**
-  - Setup up VPCs, peering, and subnetting.
-  - Differences between Load Balancers and when to use them.
-  - Types of policies, scopes, good practices, and security questions (e.g., Service Account or IAM role for a service?).
-  - Options to access instances with SSH.
-  - When and how to use CloudFront, including cache rules and behaviors.
-  - WAF-related features, troubleshooting, and advantages.
-  - Configuration of SQS/SNS and use case scenarios.
-  - Cluster configuration.
-  - Alarm configuration and setup. What can we monitor by default?
-  - Log groups, permissions, and related.
-  - CloudFormation nested stacks vs. cross-reference stacks.
-  - Lambda knowledge (e.g., how to trigger a Lambda from S3?).
-  - Event-driven architectures and integration with other AWS Services (e.g., Step functions, concurrency limitations).
-  - Other services: When to use Kinesis, Cognito, types of databases, etc.
-  - Database general knowledge: Use cases, configuration, backup, recovery, CLI commands.
-
-- **Containers:**
-  - Common Docker commands.
-  - Dockerfile context.
-  - Build and run containers.
-  - Image registry questions: Push images, handle tags, etc.
-  - Custom registries.
-  - Cluster administration.
-  - Types of services.
-  - Knowledge of architectural concepts and requirements.
-  - Troubleshooting.
-  - Additional tools like Helm.
-  - Service mesh.
-
-- **Pipelines:**
-  - Explain logic to automate everyday tasks.
-  - Types of releases.
-  - How to manage dependencies.
-  - How to speed up jobs like builds.
-  - Good practices.
-
-- **Automation IaC:**
-  - Specific cases: Similar to those on the certification, questions that prove that you have worked with the respective technology.
-  - Terraform:
-    - Why use a provider inside a module when calling it with for_each from the consumer level?
-    - How to merge maps and determine which element overwrites the other?
-    - When to lock states? Is it necessary?
-  - CloudFormation: Popular for legacy and SAM deploys.
-    - What’s SAM? Have you used Serverless Framework?
-    - From 1 to 10, how much do you hate when the CloudFormation stacks explode and end up in a non-recoverable state?
-
-- **Automation Configuration Management:**
-  - Knowledge of Packer and the process of building AMIs.
-  - Knowledge of Chef, Ansible, differences, advantages, and disadvantages.
-
-- **Security:**
-  - Add the “Do it with security in mind” to all points above.
-
 
 
 {% raw %}
