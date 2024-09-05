@@ -12,6 +12,9 @@ Moreover, it can be a decent refresher for people with a higher seniority.
 # Core Mechanics
 Before jumping to the other sections, get the items below in order. I have seen many people who try to go to an interview without preparation, which is possible when you either are getting to a level below what you currently are or have enough mileage to know how things go down.
 
+
+## Character Creation
+
 - Learn about yourself. Usually, in the first ten minutes, you will summarize what you have been doing for the past years and your process, achievements, challenges, and how you overcome them.
   - Prepare a speech. It might be hard initially if you are unfamiliar with English or just to interview. But you won’t want to improvise until you get more comfortable talking about your experience and adapting to tell them what they want to hear.
     - You will see their faces and know when they hear something that interests them. It could be that they want to listen to a different approach or an improved structure of X technology. So highlights are essential.
@@ -25,6 +28,8 @@ Before jumping to the other sections, get the items below in order. I have seen 
 <img class="myImg" src="../images/interviews/object-the-fundamentals.png" alt="object-fundamentals" style="cursor: pointer;">
 
 ## Types of Builds
+
+How you play this game depends totally on you, but a guide may help you navigate better.
 
 ### Semi Senior
 - Certifications are valid as an extension of knowledge and proof that you care about learning more.
@@ -133,6 +138,8 @@ Depending on how you get the interview you may get feedback, by a third-party or
 // Rejection path
 // Acceptance path
 // Internal challenges
+
+# 
 
 # Interview Preparation
 

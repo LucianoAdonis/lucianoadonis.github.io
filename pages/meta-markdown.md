@@ -1,14 +1,65 @@
 ---
 layout: custom
-title: Markdown
-description: 
+title: Github Pages with Markdown
+description: Small pieces from this setup
 ---
 
 I thought at first that templates and Jekyll were limited, but that's not true! It can do a lot more, but rarely you get the chance to do more interesting things.
 
-# Common Stuff
+
+# Repository
+
+## Templates
+
+## Structure
+
+To use other layout or make changes to the existent one, make a copy from the original repository and do the proper changes.
+
+Then place it under:
+
+```bash
+.
+└── yoursite.github.io/
+    ├── _layouts/
+    │   ├── custom.html
+    │   └── default.html
+    ├── assets/
+    │   └── css/
+    │       └── style.scss
+    ├── images/
+    ├── pages/
+    │   ├── a.md
+    │   ├── b.md
+    │   └── c.md
+    ├── _config.yml
+    ├── favicon.ico
+    └── index.md
+```
+
+## Layout Overwrite
+
+```markdown
+---
+layout: custom
+title: Markdown
+description: 
+---
+```
+
+
+# Markdown and HTML
 
 Basic commands.
+
+## Favicon
+
+Inside of the head of your layout you must include the following line `<link rel="icon" href="/favicon.ico" type="image/x-icon">`
+
+I mention that because as I have multiple subpages handling that in everything would be complex.
+
+You can either overwrite the default.html or create a new one an refer it.
+
+## Layout
 
 # Cool Stuff
 
@@ -236,6 +287,13 @@ Markdown itself does not natively support expandable or collapsible sections. Ho
   </script>
   ```
 </details> <br>
+
+
+
+
+## Content Tips
+
+
 
 <style>
   .modal {

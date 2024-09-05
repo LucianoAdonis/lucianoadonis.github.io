@@ -31,7 +31,7 @@ Anything related to more behavior
 
 ### Meta
 
-- [Markdown](./pages/markdown-reference.md): examples of interesting things that I had to use to make some pages from this site.
+- [Markdown](./pages/meta-markdown.md): examples of interesting things that I had to use to make some pages from this site.
 
 ---
 
