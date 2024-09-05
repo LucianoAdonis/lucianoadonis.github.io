@@ -12,24 +12,30 @@ Moreover, it can be a decent refresher for people with a higher seniority.
 # Core Mechanics
 Before jumping to the other sections, get the items below in order. I have seen many people who try to go to an interview without preparation, which is possible when you either are getting to a level below what you currently are or have enough mileage to know how things go down.
 
-
 ## Character Creation
 
-- Learn about yourself. Usually, in the first ten minutes, you will summarize what you have been doing for the past years and your process, achievements, challenges, and how you overcome them.
-  - Prepare a speech. It might be hard initially if you are unfamiliar with English or just to interview. But you won’t want to improvise until you get more comfortable talking about your experience and adapting to tell them what they want to hear.
-    - You will see their faces and know when they hear something that interests them. It could be that they want to listen to a different approach or an improved structure of X technology. So highlights are essential.
-- Be aware of the technologies/methodologies you have used so far. You don’t want to come to an interview to discover what you didn’t know/understand about the last place you worked.
-  - Like “gaps” in the knowledge that surface when your answer to a question is “yeah, but another guy/team did/manage that,” which is understandable but don’t be a stranger to tech, at least for general knowledge, you should know the ropes of it.
-  - This is more encouraged specially if you include those in your resume.
-- I follow this rule for everything: “Studying is not worth my sleep.” In High School, I concluded that being fully awake and rested gives you the edge, rather than studying till the last minute to remember things and being slow during the test/interview.
-- Style makes the difference.
-  - Remember always to have your computer configured and ready.
+For the rest of us mere mortals that need to preparate, creating a character that aligns with your mindset is best. Speaking from experience, it might seem cool to imitate someone else’s build, but in the end, everything flows more naturally when you’re aligned with your strengths.
+
+## Know thyself
+
+In at least ten minutes during the beginning or middle of an interview, you'll likely be asked to summarize what you've been doing over the past few years—your process, achievements, challenges, and how you've overcome them.
+
+**Suggested Actions:**
+  - **Prepare a Speech:** It might feel challenging initially, especially if you're new to interviews or unfamiliar with English. But you don't want to wing it. Until you're more comfortable discussing your experience, preparing a concise overview and adapting your story to match what they want to hear is best.
+    - By "adapting" your story, I mean talking to them about what you know about what they are looking for. They are not going to be interested (at first) in learning about the random pet project that you picked but rather the skills that you have that they need to fill the position.
+    - Pay attention to their reactions. You'll know when something piques their interest—it could be that they're looking for a different approach or a more refined structure with X technology. Highlighting these key points is crucial.
+  - **Be Familiar with Your Tech Stack**: Do not let the interview be the moment you realize what you didn't understand about your last role.
+    - Avoid the dreaded "gaps" in your knowledge, where your answer is, "Yeah, but another guy/team handled that." It's understandable, but at least for general knowledge, you should be well-versed in the tools and methodologies you've worked with—especially if they're on your resume.
+  - **Prioritize Rest Over Cramming**: I live by this rule: "Studying isn't worth sacrificing sleep." I figured out back in high school that being rested gives you the edge. Don't stay up cramming before the interview; you'll perform far better when you're sharp and well-rested.
+
+And above all, style can make a real difference. Keep your equipment in shape and make sure everything is working smoothly. The last thing you want to say is that you had an issue like "ugh controller disconnected and that's why things didn't go well."
+
 
 <img class="myImg" src="../images/interviews/object-the-fundamentals.png" alt="object-fundamentals" style="cursor: pointer;">
 
 ## Types of Builds
 
-How you play this game depends totally on you, but a guide may help you navigate better.
+How you play this game depends totally on you, but a guide may help you navigate better and what setup is expected of each level.
 
 ### Semi Senior
 - Certifications are valid as an extension of knowledge and proof that you care about learning more.
