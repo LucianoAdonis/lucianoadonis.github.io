@@ -12,7 +12,7 @@ For those already there, it could be a fun way to refresh your knowledge of how 
 
 ---
 
-<img class="myImg" src="../images/interviews/location-interview-asylum.png" alt="location-interview-asylum" style="cursor: pointer;">
+<img class="myImg" src="../images/interviews/main-menu.png" alt="main-menu" style="cursor: pointer;">
 
 ---
 
@@ -67,7 +67,7 @@ I’ll expand on this because it’s more fun, and it is what you need to start 
 
 ---
 
-<img class="myImg" src="../images/interviews/location-interview-asylum-exit.png" alt="location-interview-asylum-exit" style="cursor: pointer;">
+<img class="myImg" src="../images/interviews/location-interview-asylum.png" alt="location-interview-asylum" style="cursor: pointer;">
 
 ---
 
@@ -123,6 +123,12 @@ With this in mind, at least you won’t stumble right out of the fog gate, givin
 
 <img class="myImg" src="../images/interviews/object-charisma.png" alt="object-charisma" style="cursor: pointer;">
 <br>
+
+---
+
+<img class="myImg" src="../images/interviews/location-interview-asylum-exit.png" alt="location-interview-asylum-exit" style="cursor: pointer;">
+
+---
 
 # Senior Interview Boss Fight
 
