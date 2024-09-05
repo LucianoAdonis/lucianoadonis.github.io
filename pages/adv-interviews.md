@@ -12,7 +12,7 @@ For those already there, it could be a fun way to refresh your knowledge of how 
 
 ---
 
-<img class="myImg" src="../images/interviews/main-menu.png" alt="main-menu" style="cursor: pointer;">
+<img class="myImg" src="../images/interviews/location-interview-asylum.png" alt="location-interview-asylum" style="cursor: pointer;">
 
 ---
 
@@ -67,12 +67,12 @@ I’ll expand on this because it’s more fun, and it is what you need to start 
 
 Oh this section is going to be fun, but I'm not writing it yet. I'll leave some pointers to get around it eventually.
 
-The following only applies upon your third or second run after the Senior threshold:
+The following only applies upon your third or fourth run after the Senior threshold:
 
 - Faith Stack.
 - Techmancer.
+- SME Strenght.
 - MLG Developer.
-- SME Streng.
 
 ---
 
@@ -88,7 +88,7 @@ The following only applies upon your third or second run after the Senior thresh
 
 ---
 
-<img class="myImg" src="../images/interviews/location-interview-asylum.png" alt="location-interview-asylum" style="cursor: pointer;">
+<img class="myImg" src="../images/interviews/location-interview-asylum-exit.png" alt="location-interview-asylum-exit" style="cursor: pointer;">
 
 ---
 
@@ -147,7 +147,7 @@ With this in mind, at least you won’t stumble right out of the fog gate, givin
 
 ---
 
-<img class="myImg" src="../images/interviews/location-interview-asylum-exit.png" alt="location-interview-asylum-exit" style="cursor: pointer;">
+<img class="myImg" src="../images/interviews/location-interview-asylum-boss.png" alt="location-interview-asylum-boss" style="cursor: pointer;">
 
 ---
 
