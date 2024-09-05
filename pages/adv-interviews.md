@@ -16,7 +16,7 @@ Before jumping to the other sections, get the items below in order. I have seen 
 
 For the rest of us mere mortals that need to preparate, creating a character that aligns with your mindset is best. Speaking from experience, it might seem cool to imitate someone else’s build, but in the end, everything flows more naturally when you’re aligned with your strengths.
 
-**Know thyself**
+<img class="myImg" src="../images/interviews/interact-box-know-thyself.png" alt="interact-box-know-thyself" style="cursor: pointer;">
 
 In at least ten minutes during the beginning or middle of an interview, you'll likely be asked to summarize what you've been doing over the past few years—your process, achievements, challenges, and how you've overcome them.
 
@@ -31,7 +31,7 @@ In at least ten minutes during the beginning or middle of an interview, you'll l
 And above all, style can make a real difference. Keep your equipment in shape and make sure everything is working smoothly. The last thing you want to say is that you had an issue like "ugh controller disconnected and that's why things didn't go well."
 
 
-<img class="myImg" src="../images/interviews/object-the-fundamentals.png" alt="object-fundamentals" style="cursor: pointer;">
+<img class="myImg" src="../images/interviews/interact-box-character-creation.png" alt="interact-box-character-creation" style="cursor: pointer;">
 
 ## Types of Builds
 
@@ -51,6 +51,8 @@ I’ll expand on this because it’s more fun, and it is what you need to start 
 - Second phase: what you say it’s what you will get.
 - Bonus phase feeling: love at first sight or based on small gestures.
 - End phase: congrats!
+
+<img class="myImg" src="../images/interviews/object-the-fundamentals.png" alt="object-fundamentals" style="cursor: pointer;">
 
 # Preparation Bonfire
 
