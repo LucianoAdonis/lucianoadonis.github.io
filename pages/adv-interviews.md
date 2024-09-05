@@ -18,16 +18,22 @@ For those already there, it could be a fun way to refresh your knowledge of how 
 
 # Core Mechanics
 
-Before jumping to the other sections, we will expend some time exploring mechanics. I have seen many people who try to go to an interview without preparation, which is possible when you either are getting to a level below what you currently are or have enough mileage to know how things go down.
+Before jumping to the other sections, we will expend some time exploring the mechanics. I have seen many people who try to go to an interview without preparation, which is possible when you either are getting to a level below what you currently are or have enough mileage to know how things go down from past experience with similar games.
 
 ## Character Creation
 
-For the rest of us mere mortals that need to preparate, creating a character that aligns with your mindset is best. Speaking from experience, it might seem cool to imitate someone else’s build, but in the end, everything flows more naturally when you’re aligned with your strengths.
+Creating a character that aligns with your mindset is best. Speaking from experience, it might seem cool to imitate someone else’s build, but in the end, everything flows more naturally when you’re aligned with your strengths.
+
+---
 
 <img class="myImg" src="../images/interviews/interact-box-know-thyself.png" alt="interact-box-know-thyself" style="cursor: pointer;">
+
+---
 <br>
 
 In at least ten minutes during the beginning or middle of an interview, you'll likely be asked to summarize what you've been doing over the past few years—your process, achievements, challenges, and how you've overcome them.
+
+That's why it is important to know yourself just enough so you don't have to improvise and waste mental bandwidth trying to articulate inputs/words.
 
 **Suggested Actions:**
   - **Prepare a Speech:** It might feel challenging initially, especially if you're new to interviews or unfamiliar with English. But you don't want to wing it. Until you're more comfortable discussing your experience, preparing a concise overview and adapting your story to match what they want to hear is best.
@@ -39,13 +45,9 @@ In at least ten minutes during the beginning or middle of an interview, you'll l
 
 And above all, style can make a real difference. Keep your equipment in shape and make sure everything is working smoothly. The last thing you want to say is that you had an issue like "ugh controller disconnected and that's why things didn't go well."
 
+## Level Thresholds
 
-<img class="myImg" src="../images/interviews/interact-box-character-creation.png" alt="interact-box-character-creation" style="cursor: pointer;">
-<br>
-
-## Types of Builds
-
-How you play this game depends totally on you, but a guide may help you navigate better and what setup is expected of each level.
+How you play this game depends totally on you, but it has a difficulty system that, after you reach a level threshold, tends to match the pace, so it doesn't get too easy, and fewer people can progress further unless they handle the mechanics correctly.
 
 **Semi Senior**:
 - Certifications are valid as an extension of knowledge and proof that you care about learning more.
@@ -61,6 +63,25 @@ I’ll expand on this because it’s more fun, and it is what you need to start 
 - Second phase: what you say it’s what you will get.
 - Bonus phase feeling: love at first sight or based on small gestures.
 - End phase: congrats!
+
+## Types of Builds
+
+Oh this section is going to be fun, but I'm not writing it yet. I'll leave some pointers to get around it eventually.
+
+The following only applies upon your third or second run after the Senior threshold:
+
+- Faith Stack.
+- Techmancer.
+- MLG Developer.
+- SME Streng.
+
+
+---
+
+<img class="myImg" src="../images/interviews/interact-box-character-creation.png" alt="interact-box-character-creation" style="cursor: pointer;">
+<br>
+
+---
 
 <img class="myImg" src="../images/interviews/object-the-fundamentals.png" alt="object-fundamentals" style="cursor: pointer;">
 <br>
