@@ -12,7 +12,7 @@ For those already there, it could be a fun way to refresh your knowledge of how 
 
 ---
 
-<img class="myImg" src="../images/interviews/location-interview-asylum.png" alt="location-interview-asylum" style="cursor: pointer;">
+<img class="myImg" src="../images/interviews/main-menu.png" alt="main-menu" style="cursor: pointer;">
 
 ---
 
@@ -84,7 +84,7 @@ The following only applies upon your third or fourth run after the Senior thresh
 
 ---
 
-<img class="myImg" src="../images/interviews/location-interview-asylum-exit.png" alt="location-interview-asylum-exit" style="cursor: pointer;">
+<img class="myImg" src="../images/interviews/location-interview-asylum.png" alt="location-interview-asylum" style="cursor: pointer;">
 
 ---
 
@@ -143,15 +143,17 @@ With this in mind, at least you won’t stumble right out of the fog gate, givin
 
 ---
 
-<img class="myImg" src="../images/interviews/location-interview-asylum-boss.png" alt="location-interview-asylum-boss" style="cursor: pointer;">
+<img class="myImg" src="../images/interviews/location-interview-asylum-exit.png" alt="location-interview-asylum-exit" style="cursor: pointer;">
 
 ---
 
-## Move Set
+# Interview Asylum | Practice Ground
 
 // I'll move the [Interview Preparation](#interview-preparation) section here, it makes more sense.
 
-For this section we will go over the general attack patterns and how to counter them. C'mon it is just dogeing and hitting, how complicated can it gets?
+For this section, we’ll dive into the general attack patterns and how to counter them. Honestly, it’s just dodging and hitting—how hard can it be, right?
+
+## Enemies Moveset
 
 <div>
   <details>
@@ -240,10 +242,18 @@ For this section we will go over the general attack patterns and how to counter 
   </details>
 </div>
 
-
 <br>
 
 <img class="myImg" src="../images/interviews/object-the-fundamentals.png" alt="object-fundamentals" style="cursor: pointer;">
+
+<br>
+
+
+---
+
+<img class="myImg" src="../images/interviews/location-interview-asylum-boss.png" alt="location-interview-asylum-boss" style="cursor: pointer;">
+
+---
 
 <br>
 
@@ -385,6 +395,21 @@ You can google set of questions, but IMHO I prefer to hae pointers and go from t
 
 
 {% raw %}
+
+<style>
+  details summary {
+    cursor: pointer;
+    font-weight: bold;
+  }
+  details summary::before {
+    content: '➕'; /* Plus sign to indicate expandability */
+    margin-right: 10px;
+  }
+  details[open] summary::before {
+    content: '➖'; /* Minus sign to indicate it's expanded */
+  }
+</style>
+
 <!-- Single Modal -->
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
