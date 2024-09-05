@@ -16,7 +16,7 @@ Before jumping to the other sections, get the items below in order. I have seen 
 
 For the rest of us mere mortals that need to preparate, creating a character that aligns with your mindset is best. Speaking from experience, it might seem cool to imitate someone else’s build, but in the end, everything flows more naturally when you’re aligned with your strengths.
 
-## Know thyself
+**Know thyself**
 
 In at least ten minutes during the beginning or middle of an interview, you'll likely be asked to summarize what you've been doing over the past few years—your process, achievements, challenges, and how you've overcome them.
 
@@ -26,7 +26,7 @@ In at least ten minutes during the beginning or middle of an interview, you'll l
     - Pay attention to their reactions. You'll know when something piques their interest—it could be that they're looking for a different approach or a more refined structure with X technology. Highlighting these key points is crucial.
   - **Be Familiar with Your Tech Stack**: Do not let the interview be the moment you realize what you didn't understand about your last role.
     - Avoid the dreaded "gaps" in your knowledge, where your answer is, "Yeah, but another guy/team handled that." It's understandable, but at least for general knowledge, you should be well-versed in the tools and methodologies you've worked with—especially if they're on your resume.
-  - **Prioritize Rest Over Cramming**: I live by this rule: "Studying isn't worth sacrificing sleep." I figured out back in high school that being rested gives you the edge. Don't stay up cramming before the interview; you'll perform far better when you're sharp and well-rested.
+  - **Prioritize Rest Over Cramming**: I live by this rule: "Studying isn't worth sacrificing sleep." I figured out back in high school that being rested gives you the edge. The same goes for an interview, you'll perform far better when you're sharp and well-rested.
 
 And above all, style can make a real difference. Keep your equipment in shape and make sure everything is working smoothly. The last thing you want to say is that you had an issue like "ugh controller disconnected and that's why things didn't go well."
 
@@ -37,13 +37,13 @@ And above all, style can make a real difference. Keep your equipment in shape an
 
 How you play this game depends totally on you, but a guide may help you navigate better and what setup is expected of each level.
 
-### Semi Senior
+**Semi Senior**:
 - Certifications are valid as an extension of knowledge and proof that you care about learning more.
 - This type of certification aims to check what you know more than what you have done.
 - Having side projects can be helpful to expand your knowledge of what you can use because of the tech stack of your last/current company. It depends a lot on - the interviewer how much it is worth it, but it is preferable to have something to not to have it at all.
 - The difficulty may vary on the company you are applying to, but it depends on their expectations and the job you will do.
 
-### Senior
+**Senior**:
 I’ll expand on this because it’s more fun, and it is what you need to start practicing to shorten knowledge gaps. I’ll divide this into the following categories:
 
 - Things to know: what are we facing, and how should we do it.
