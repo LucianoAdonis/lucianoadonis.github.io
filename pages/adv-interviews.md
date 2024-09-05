@@ -11,6 +11,8 @@ For those already there, it could be a fun way to refresh your knowledge of how 
 
 ⚠️ Spoilers: it's going to be Dark Souls themed.
 
+---
+
 # Core Mechanics
 Before jumping to the other sections, get the items below in order. I have seen many people who try to go to an interview without preparation, which is possible when you either are getting to a level below what you currently are or have enough mileage to know how things go down.
 
@@ -19,6 +21,7 @@ Before jumping to the other sections, get the items below in order. I have seen 
 For the rest of us mere mortals that need to preparate, creating a character that aligns with your mindset is best. Speaking from experience, it might seem cool to imitate someone else’s build, but in the end, everything flows more naturally when you’re aligned with your strengths.
 
 <img class="myImg" src="../images/interviews/interact-box-know-thyself.png" alt="interact-box-know-thyself" style="cursor: pointer;">
+<br>
 
 In at least ten minutes during the beginning or middle of an interview, you'll likely be asked to summarize what you've been doing over the past few years—your process, achievements, challenges, and how you've overcome them.
 
@@ -34,6 +37,7 @@ And above all, style can make a real difference. Keep your equipment in shape an
 
 
 <img class="myImg" src="../images/interviews/interact-box-character-creation.png" alt="interact-box-character-creation" style="cursor: pointer;">
+<br>
 
 ## Types of Builds
 
@@ -55,12 +59,15 @@ I’ll expand on this because it’s more fun, and it is what you need to start 
 - End phase: congrats!
 
 <img class="myImg" src="../images/interviews/object-the-fundamentals.png" alt="object-fundamentals" style="cursor: pointer;">
+<br>
 
 # Preparation Bonfire
 
 Yup, not so fast to the boss fight. We need to gather a few essential items before pushing forward. The good news? These items improve with time, but you’ll need them in your inventory to stand a chance.
 
 You might be one of the hardcore ones, breezing through everything with 0% damage. But for the rest of us mere mortals, proper preparations are essential.
+
+<br>
 
 ## Work Experience Over General Knowledge
 
@@ -69,6 +76,7 @@ Hands-on experience with tools is more valuable than theoretical knowledge. By t
 Do we have here some General knowledge questions? Those are a separate challenge. But don’t worry. We’ve covered you with the [Interview Preparation](#interview-preparation) section to give you a glimpse of the critical topics.
 
 <img class="myImg" src="../images/interviews/object-estus-flask.png" alt="object-estus-flask" style="cursor: pointer;">
+<br>
 
 ## Certifications are Good, But...
 
@@ -81,7 +89,7 @@ They’re mostly just a way to skip the easy questions in interviews, but if you
 In short, if the certification supports your build, great! Otherwise, it’s like being a Strength build and wasting early points on learning a spell you can barely cast, leaving you open to attacks instead of focusing on fortifying your core skills.
 
 <img class="myImg" src="../images/interviews/object-certification-spear.png" alt="object-certification-spear" style="cursor: pointer;">
-
+<br>
 
 ## Accents
 
@@ -95,6 +103,7 @@ A few takeaways:
   - If you find some weird case... well It will make you stronger.
 
 <img class="myImg" src="../images/interviews/object-sun-speech.png" alt="object-sun-speech" style="cursor: pointer;">
+<br>
 
 ## Communication
 
@@ -103,7 +112,7 @@ Clear Communication is Crucial whether in interviews or building relationships w
 With this in mind, at least you won’t stumble right out of the fog gate, giving off the wrong impression.
 
 <img class="myImg" src="../images/interviews/object-charisma.png" alt="object-charisma" style="cursor: pointer;">
-
+<br>
 
 # Senior Interview Boss Fight
 
