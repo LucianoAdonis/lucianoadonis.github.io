@@ -5,9 +5,11 @@ description: The Information That You Always Wanted!
 ---
 <img class="myImg" src="../images/interviews/location-interview-asylum.png" alt="location-interview-asylum" style="cursor: pointer;">
 
-This Mini Book is focused on DevOps/Cloud Engineers going from Semi-Senior Advanced to Senior and provides a quick way for them to refresh their knowledge on how client interviews work.
+This Mini Book is for DevOps and Cloud Engineers leveling up from Semi-Senior Advanced to Senior roles.
 
-Moreover, it can be a decent refresher for people with a higher seniority.
+For those already there, it could be a fun way to refresh your knowledge of how job interviews work. Think of it as a guide to help you sharpen your skills before you face those interview bosses.
+
+⚠️ Spoilers: it's going to be Dark Souls themed.
 
 # Core Mechanics
 Before jumping to the other sections, get the items below in order. I have seen many people who try to go to an interview without preparation, which is possible when you either are getting to a level below what you currently are or have enough mileage to know how things go down.
