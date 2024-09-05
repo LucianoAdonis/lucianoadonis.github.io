@@ -3,7 +3,6 @@ layout: custom
 title: Advanced Interview Tactics
 description: The Information That You Always Wanted!
 ---
-<img class="myImg" src="../images/interviews/location-interview-asylum.png" alt="location-interview-asylum" style="cursor: pointer;">
 
 This Mini Book is for DevOps and Cloud Engineers leveling up from Semi-Senior Advanced to Senior roles.
 
@@ -13,8 +12,13 @@ For those already there, it could be a fun way to refresh your knowledge of how 
 
 ---
 
+<img class="myImg" src="../images/interviews/location-interview-asylum.png" alt="location-interview-asylum" style="cursor: pointer;">
+
+---
+
 # Core Mechanics
-Before jumping to the other sections, get the items below in order. I have seen many people who try to go to an interview without preparation, which is possible when you either are getting to a level below what you currently are or have enough mileage to know how things go down.
+
+Before jumping to the other sections, we will expend some time exploring mechanics. I have seen many people who try to go to an interview without preparation, which is possible when you either are getting to a level below what you currently are or have enough mileage to know how things go down.
 
 ## Character Creation
 
@@ -60,6 +64,12 @@ I’ll expand on this because it’s more fun, and it is what you need to start 
 
 <img class="myImg" src="../images/interviews/object-the-fundamentals.png" alt="object-fundamentals" style="cursor: pointer;">
 <br>
+
+---
+
+<img class="myImg" src="../images/interviews/location-interview-asylum-exit.png" alt="location-interview-asylum-exit" style="cursor: pointer;">
+
+---
 
 # Preparation Bonfire
 
