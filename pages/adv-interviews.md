@@ -139,17 +139,17 @@ Clear Communication is Crucial whether in interviews or building relationships w
 With this in mind, at least you won’t stumble right out of the fog gate, giving off the wrong impression.
 
 <img class="myImg" src="../images/interviews/object-charisma.png" alt="object-charisma" style="cursor: pointer;">
-<br>
 
+<br>
 ---
 
 <img class="myImg" src="../images/interviews/location-interview-asylum-exit.png" alt="location-interview-asylum-exit" style="cursor: pointer;">
 
 ---
+<br>
 
-# Interview Asylum | Practice Ground
 
-// I'll move the [Interview Preparation](#interview-preparation) section here, it makes more sense.
+# Practice Grounds
 
 For this section, we’ll dive into the general attack patterns and how to counter them. Honestly, it’s just dodging and hitting—how hard can it be, right?
 
