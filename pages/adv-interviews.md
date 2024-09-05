@@ -8,7 +8,7 @@ This Mini Book is for DevOps and Cloud Engineers leveling up from Semi-Senior Ad
 
 For those already there, it could be a fun way to refresh your knowledge of how job interviews work. Think of it as a guide to help you sharpen your skills before you face those interview bosses.
 
-⚠️ Spoilers: it's going to be Dark Souls themed.
+⚠️ Spoilers: Since I’m revealing a lot of techniques and secrets, I’ve decided to make it Dark Souls-themed. 
 
 ---
 
@@ -24,11 +24,10 @@ Before jumping to the other sections, we will expend some time exploring the mec
 
 Creating a character that aligns with your mindset is best. Speaking from experience, it might seem cool to imitate someone else’s build, but in the end, everything flows more naturally when you’re aligned with your strengths.
 
----
+<br>
 
 <img class="myImg" src="../images/interviews/interact-box-know-thyself.png" alt="interact-box-know-thyself" style="cursor: pointer;">
 
----
 <br>
 
 In at least ten minutes during the beginning or middle of an interview, you'll likely be asked to summarize what you've been doing over the past few years—your process, achievements, challenges, and how you've overcome them.
@@ -75,15 +74,16 @@ The following only applies upon your third or second run after the Senior thresh
 - MLG Developer.
 - SME Streng.
 
-
 ---
+
+<br>
 
 <img class="myImg" src="../images/interviews/interact-box-character-creation.png" alt="interact-box-character-creation" style="cursor: pointer;">
 <br>
 
----
-
 <img class="myImg" src="../images/interviews/object-the-fundamentals.png" alt="object-fundamentals" style="cursor: pointer;">
+<br>
+
 <br>
 
 ---
