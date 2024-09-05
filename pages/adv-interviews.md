@@ -79,10 +79,6 @@ The following only applies upon your third or fourth run after the Senior thresh
 <br>
 
 <img class="myImg" src="../images/interviews/interact-box-character-creation.png" alt="interact-box-character-creation" style="cursor: pointer;">
-<br>
-
-<img class="myImg" src="../images/interviews/object-the-fundamentals.png" alt="object-fundamentals" style="cursor: pointer;">
-<br>
 
 <br>
 
@@ -150,6 +146,17 @@ With this in mind, at least you won’t stumble right out of the fog gate, givin
 <img class="myImg" src="../images/interviews/location-interview-asylum-boss.png" alt="location-interview-asylum-boss" style="cursor: pointer;">
 
 ---
+
+## Skill Set
+
+// I'll move the [Interview Preparation](#interview-preparation) section here, it makes more sense.
+
+<br>
+
+<img class="myImg" src="../images/interviews/object-the-fundamentals.png" alt="object-fundamentals" style="cursor: pointer;">
+
+<br>
+
 
 # Senior Interview Boss Fight
 
