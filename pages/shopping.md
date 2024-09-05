@@ -24,10 +24,14 @@ The products on this list are ones that I've truly put to the test and found inv
 
 - **Air Fryer**: can revive bread and make it feel fresh. What else do you want?
   - It's also incredible to fry other foods.
-- **Vertical Vacuum (Eufy )**: I'm not too fond of cords, this vacuum frees you from them.
+- **Vertical Vacuum (Eufy)**: I'm not too fond of cords, this vacuum frees you from them.
   - Cleaning the dirt from the container is straightforward.
   - Double filters.
   - There may be other models, but this is more than enough for my needs.
+- **Robot Vacuum (Eufy Twin Turbo)**: there are multiple options and most of the time it comes down to what you need. 
+  - If you have a pet you will need a bigger dust container, and you don't get that under 200 USD.
+  - In some reviews laser is considered dumb. But that applies for small spaces, in big open spaces it helps a lot.
+  - If the above it is your case, then the displayed model is a good match.
 - **Scale (Eufy)**: A sleek way to get detailed metrics about your body.
 
 ### Work Tech
