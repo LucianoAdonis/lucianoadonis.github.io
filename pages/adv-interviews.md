@@ -3,7 +3,7 @@ layout: custom
 title: Advanced Interview Tactics
 description: The Information That You Always Wanted!
 ---
-> "To live is to suffer (...) - Friedrich Nietzsche"
+<img class="myImg" src="../images/interviews/location-interview-asylum.png" alt="location-interview-asylum" style="cursor: pointer;">
 
 This Mini Book is focused on DevOps/Cloud Engineers going from Semi-Senior Advanced to Senior and provides a quick way for them to refresh their knowledge on how client interviews work.
 
