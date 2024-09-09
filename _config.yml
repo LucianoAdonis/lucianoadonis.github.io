@@ -7,6 +7,11 @@ plugins:
 kramdown:
   toc_levels: 2..3
 
+vars:
+  example_email: test@gmail.com
+  example_email_plus_a: test+a@gmail.com
+  example_email_plus_b: test+b@gmail.com
+
 show_links: true
 links:
   github: https://lucianoadonis.github.io/

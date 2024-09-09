@@ -10,6 +10,56 @@ For those already there, it could be a fun way to refresh your knowledge of how 
 
 ⚠️ Spoilers: Since I’m revealing a lot of techniques and secrets, I’ve decided to make it Dark Souls-themed. 
 
+# Game Modes
+
+Normally, you wouldn’t worry about this until you're deep into the game, but sometimes making the right choice upfront can give you an advantage.
+
+## Single Player
+
+In this mode, you’re on your own. You have to traverse through random and questionable pages to land on one where a boss fight (an interview) awaits. It’s a bit tricky at first, but the benefit is that when you do win, you can negotiate better rewards and positioning.
+
+Especially if you align yourself with a Covenant later on.
+
+
+## Covenants
+
+When you join a Covenant you get a lot of matches and opportunities to get interviews. It comes with the cost of a rewards cut from what would you get working directly without one.
+
+It’s a 50/50 scenario. Sometimes, you won’t have access to the same opportunities as someone going solo, and it’s often advised to avoid grinding your way up from the bottom in a Covenant. Switching Covenants (just not too often) can lead to better results.
+
+* Extra missions: When you’re part of a Covenant, you’ll also have extra tasks outside of your usual world, like gathering items, slaying demons (read: tedious tasks), or making presentations for other members.
+
+* Additional Menus: Being in a Covenant comes with its perks, but also more complexity. There are additional metrics to track, and you’ll have to handle extra layers of responsibility to keep things running smoothly.
+
+In the good parts, if it applies to you, you will have more tools at your disposal to not get bored during your playthrough.
+
+- Vouchers and Discounts: you can get your money back for what spells (certifications) you adquire.
+  - I know, with the rewards reduction, perfectly you could have pay the certs a few times each month, but keep reading to understand why.
+- Trainings: be either by associations other members, you can learn from other players.
+- Help Network: usually you won't be alone, not that you can someone a ghost in every fight, but a least will get some help with some worlds-
+
+### Opposite Covenants
+
+Now, there’s this risky mechanic that’s technically not illegal but definitely frowned upon: swapping between rival Covenants. It can offer some nice rewards upfront, but keep these in mind:
+
+- You may get shadow banned from other companies.
+  - Even if you workaround the normal restrictions, like moving to single player, finding a match and joining the rival covenant. You will still get it.
+- The rewards start off good, but after a few years, it’s more or less the same as staying in any other Covenant.
+- Kinda a dick move.
+- There are other things to be aware:
+  - What happens when you don't have a match?
+  - What controls you have over the requirements of the Covenant?
+
+How you do it, is up to you, but be careful.
+
+
+## Multi Accounts
+
+Some may argue that this is better than joining a Covenant, as in a Covenant with the relative same energy for the side-quests you can gain more rewards.
+
+It's a little controversial. It's up to you, in my opinion, if you are half assing two things you may get better rewards but not level up much really. But that's my mentality which is more farm level and go directly to the boss, then explore the zone.
+
+
 ---
 
 <img class="myImg" src="../images/interviews/main-menu.png" alt="main-menu" style="cursor: pointer;">

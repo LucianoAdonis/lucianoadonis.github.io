@@ -10,7 +10,7 @@ At work, I get to connect with all kinds of interesting people and dive into a v
 
 ### Optimization
 
-- **Slack Mastery: Communicate, Collaborate, and Conquer**: SOON.
+- [Slack Mastery: Communicate, Collaborate, and Conquer](./pages/slack.md): SOON.
 - [Shopping](./pages/shopping.md): recommended products!
 
 ### Documentation
@@ -27,7 +27,13 @@ Anything related to more behavior
 - [Advanced Interview Tactics: Beyond 'Be Confident'](./pages/adv-interviews): it won't land you a job right of the bat but it will definetily be more useful than many posts.
 - [Troubleshooting](./pages/troubleshooting): knowing is the first step.
 - **Communication**: SOON.
-- **Mentoring**: SOON.
+
+### Mentoring
+
+Personal suggestions to improve your quality of life at work.
+
+- [Obsidian](./pages/obsidian.md)
+- [Digital Life](./pages/digital-life.md)
 
 ### Meta
 
