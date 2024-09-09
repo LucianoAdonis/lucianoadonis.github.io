@@ -24,7 +24,9 @@ At work, I get to connect with all kinds of interesting people and dive into a v
 
 Anything related to more behavior 
 
-- [Advanced Interview Tactics: Beyond 'Be Confident'](./pages/adv-interviews): it won't land you a job right of the bat but it will definetily be more useful than many posts.
+- Dark Souls Themed:
+  - [Work Game Modes ](./pages/ds-game-modes.md): Small section talking about the ways that you can get some fun in tech.
+  - [Advanced Interview Tactics: Beyond 'Be Confident'](./pages/ds-interviews): it won't land you a job right of the bat but it will definetily be more useful than many guides out there.
 - [Troubleshooting](./pages/troubleshooting): knowing is the first step.
 - **Communication**: SOON.
 
