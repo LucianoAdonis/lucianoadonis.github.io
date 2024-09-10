@@ -4,7 +4,7 @@ title: Awesome Products
 description: Things that might be useful for you too
 ---
 
-<img class="myImg" src="../images/headers/yellow-shopping-cart.png" alt="headersyellow-shopping-cart" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="hover-image" src="../images/headers/yellow-shopping-cart.png" alt="headersyellow-shopping-cart" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 ---
 

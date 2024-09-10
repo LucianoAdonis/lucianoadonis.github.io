@@ -16,7 +16,7 @@ Usually, you would only worry about this once you're deep into the game, but som
 
 ⚠️ Spoilers: Since I’m revealing a lot of techniques and secrets, I’ve decided to make it Dark Souls-themed. 
 
-<img class="myImg" src="../images/interviews/location-interview-grand-archives.png" alt="location-interview-grand-archives" style="cursor: pointer;">
+<img class="hover-image" src="../images/interviews/location-interview-grand-archives.png" alt="location-interview-grand-archives" style="cursor: pointer;">
 
 # Single Player
 

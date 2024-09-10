@@ -11,7 +11,7 @@ description: Showdown!
 
 ---
 
-<img class="myImg" src="../images/interviews/location-interview-asylum-boss.png" alt="location-interview-asylum-boss" style="cursor: pointer;">
+<img class="hover-image" src="../images/interviews/location-interview-asylum-boss.png" alt="location-interview-asylum-boss" style="cursor: pointer;">
 
 ---
 
@@ -64,77 +64,3 @@ Depending on how you get the interview you may get feedback, by a third-party or
 
 
 ---
-
-<div class="ds-button-container">
-  <a href="/pages/ds-interviews" class="ds-button right-button"><strong>Main Page</strong></a>
-</div>
-
-
-
-{% raw %}
-
-<style>
-  details summary {
-    cursor: pointer;
-    font-weight: bold;
-  }
-  details summary::before {
-    content: '➕'; /* Plus sign to indicate expandability */
-    margin-right: 10px;
-  }
-  details[open] summary::before {
-    content: '➖'; /* Minus sign to indicate it's expanded */
-  }
-</style>
-
-<!-- Single Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-</div>
-
-<!-- JavaScript for Modal Functionality -->
-<script>
-  // Get the modal
-  var modal = document.getElementById("myModal");
-
-  // Get the modal image element
-  var modalImg = document.getElementById("img01");
-
-  // Ensure the modal is hidden on page load
-  window.onload = function() {
-    modal.style.display = "none";
-  };
-
-  // Get all images with class "myImg" and loop through them to add the click event
-  var images = document.getElementsByClassName("myImg");
-  for (var i = 0; i < images.length; i++) {
-    images[i].onclick = function(){
-      modal.style.display = "flex"; // Ensure the modal is displayed using flexbox
-      modalImg.src = this.src;
-    }
-  }
-
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() { 
-    modal.style.display = "none";
-  }
-
-  // Close the modal when clicking outside of the image
-  modal.onclick = function(event) {
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  }
-
-  // Close the modal when pressing the "Esc" key
-  document.onkeydown = function(event) {
-    if (event.key === "Escape") {
-      modal.style.display = "none";
-    }
-  }
-</script>
-{% endraw %}

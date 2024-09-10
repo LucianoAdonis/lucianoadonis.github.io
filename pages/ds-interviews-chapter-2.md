@@ -11,7 +11,7 @@ description: It's not you, it's me, Mario
 
 ---
 
-<img class="myImg" src="../images/interviews/location-interview-asylum.png" alt="location-interview-asylum" style="cursor: pointer;">
+<img class="hover-image" src="../images/interviews/location-interview-asylum.png" alt="location-interview-asylum" style="cursor: pointer;">
 
 ---
 
@@ -29,7 +29,7 @@ Hands-on experience with tools is more valuable than theoretical knowledge. By t
 
 Do we have here some General knowledge questions? Those are a separate challenge. But don’t worry. We’ve covered you with the [Interview Preparation](#interview-preparation) section to give you a glimpse of the critical topics.
 
-<img class="myImg" src="../images/interviews/object-estus-flask.png" alt="object-estus-flask" style="cursor: pointer;">
+<img class="hover-image" src="../images/interviews/object-estus-flask.png" alt="object-estus-flask" style="cursor: pointer;">
 <br>
 
 ## Certifications are Good, But...
@@ -42,7 +42,7 @@ They’re mostly just a way to skip the easy questions in interviews, but if you
 
 In short, if the certification supports your build, great! Otherwise, it’s like being a Strength build and wasting early points on learning a spell you can barely cast, leaving you open to attacks instead of focusing on fortifying your core skills.
 
-<img class="myImg" src="../images/interviews/object-certification-spear.png" alt="object-certification-spear" style="cursor: pointer;">
+<img class="hover-image" src="../images/interviews/object-certification-spear.png" alt="object-certification-spear" style="cursor: pointer;">
 <br>
 
 ## Accents
@@ -56,7 +56,7 @@ A few takeaways:
 - Clients from other countries are patient and understanding with non-native speakers. So don't stress over it, you will **git gud**.
   - If you find some weird case... well It will make you stronger.
 
-<img class="myImg" src="../images/interviews/object-sun-speech.png" alt="object-sun-speech" style="cursor: pointer;">
+<img class="hover-image" src="../images/interviews/object-sun-speech.png" alt="object-sun-speech" style="cursor: pointer;">
 <br>
 
 ## Communication
@@ -65,13 +65,13 @@ Clear Communication is Crucial whether in interviews or building relationships w
 
 With this in mind, at least you won’t stumble right out of the fog gate, giving off the wrong impression.
 
-<img class="myImg" src="../images/interviews/object-charisma.png" alt="object-charisma" style="cursor: pointer;">
+<img class="hover-image" src="../images/interviews/object-charisma.png" alt="object-charisma" style="cursor: pointer;">
 
 <br>
 
 ---
 
-<img class="myImg" src="../images/interviews/location-interview-asylum-exit.png" alt="location-interview-asylum-exit" style="cursor: pointer;">
+<img class="hover-image" src="../images/interviews/location-interview-asylum-exit.png" alt="location-interview-asylum-exit" style="cursor: pointer;">
 
 ---
 
@@ -79,72 +79,3 @@ With this in mind, at least you won’t stumble right out of the fog gate, givin
   <a href="/pages/ds-interviews-chapter-2" class="ds-button left-button"><strong>Go to Chapter 2</strong></a>
   <a href="/pages/ds-interviews-chapter-3" class="ds-button right-button"><strong>Go to Chapter 3</strong></a>
 </div>
-
-
-{% raw %}
-
-<style>
-  details summary {
-    cursor: pointer;
-    font-weight: bold;
-  }
-  details summary::before {
-    content: '➕'; /* Plus sign to indicate expandability */
-    margin-right: 10px;
-  }
-  details[open] summary::before {
-    content: '➖'; /* Minus sign to indicate it's expanded */
-  }
-</style>
-
-<!-- Single Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-</div>
-
-<!-- JavaScript for Modal Functionality -->
-<script>
-  // Get the modal
-  var modal = document.getElementById("myModal");
-
-  // Get the modal image element
-  var modalImg = document.getElementById("img01");
-
-  // Ensure the modal is hidden on page load
-  window.onload = function() {
-    modal.style.display = "none";
-  };
-
-  // Get all images with class "myImg" and loop through them to add the click event
-  var images = document.getElementsByClassName("myImg");
-  for (var i = 0; i < images.length; i++) {
-    images[i].onclick = function(){
-      modal.style.display = "flex"; // Ensure the modal is displayed using flexbox
-      modalImg.src = this.src;
-    }
-  }
-
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() { 
-    modal.style.display = "none";
-  }
-
-  // Close the modal when clicking outside of the image
-  modal.onclick = function(event) {
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  }
-
-  // Close the modal when pressing the "Esc" key
-  document.onkeydown = function(event) {
-    if (event.key === "Escape") {
-      modal.style.display = "none";
-    }
-  }
-</script>
-{% endraw %}

@@ -4,7 +4,7 @@ title: Slack Tips
 description: A Second Home
 ---
 
-<img class="myImg" src="../images/headers/purple-computer.png" alt="headers-purple-computer" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="hover-image" src="../images/headers/purple-computer.png" alt="headers-purple-computer" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 ---
 

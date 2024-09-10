@@ -18,35 +18,63 @@
   padding: 5px;
 }
 
+/* The Modal (background overlay) */
 .modal {
-  display: none; /* Ensure the modal is hidden by default */
-  position: fixed; 
-  z-index: 1; 
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  padding-top: 60px; /* Position modal 60px from the top */
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgba(0,0,0,0.9); 
-  display: flex; /* Use flexbox for centering */
-  justify-content: center; /* Center horizontally */
-  align-items: flex-end; /* Align the content to the bottom */
-  padding-bottom: 50px; /* Adjust this value to move the modal higher or lower from the bottom */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.9); /* Black with opacity for a darker overlay */
 }
 
+/* Modal Content (the image) */
 .modal-content {
   margin: auto;
   display: block;
-  width: 95%; /* Increased width */
-  max-width: 1200px; /* Increased max-width */
-  height: auto; /* Ensure the height adjusts automatically */
-  max-height: 80vh; /* Ensure it doesn't exceed 80% of the viewport height */
-  object-fit: contain; /* Ensure the image scales properly */
+  width: 90%; /* Larger width */
+  max-width: 1000px; /* Max width increased */
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add Animation */
+.modal-content, .close {
+  animation-name: zoom;
+  animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Fullscreen Modal for extra large screens */
+@media screen and (min-width: 1200px) {
+  .modal-content {
+    width: 80%; /* Even larger for big screens */
+  }
 }
 
 .close {
@@ -120,4 +148,34 @@
   display: flex;
   justify-content: flex-end; /* Aligns buttons to the right */
   margin-top: 20px; /* Adds some space above the button */
+}
+
+/* Style for the hover preview container */
+.preview-box {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 100;
+  width: 200px;
+  height: auto;
+  padding: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.preview-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+details summary::before {
+  content: '➕'; /* Plus sign to indicate expandability */
+  margin-right: 10px;
+}
+details[open] summary::before {
+  content: '➖'; /* Minus sign to indicate it's expanded */
 }

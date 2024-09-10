@@ -21,7 +21,7 @@ Instead of presenting your content as a dense, vertical monolith of text, you ca
 
 The following page, a dummy (thanks, ChatGPT), would be your run-of-the-mill page in Confluence. Let's see it!
 
-<img class="myImg" src="../images/confluence/pagelayout-example-1.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="hover-image" src="../images/confluence/pagelayout-example-1.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 - It doesn't have cohesion.
 - It feels awkward.
@@ -29,14 +29,14 @@ The following page, a dummy (thanks, ChatGPT), would be your run-of-the-mill pag
 
 I'm not mean. It is just Digital Feng Shui. Now let's continue with an "arranged" version of it:
 
-<img class="myImg" src="../images/confluence/pagelayout-example-2.png" alt="pagelayout-example-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="hover-image" src="../images/confluence/pagelayout-example-2.png" alt="pagelayout-example-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 - It could be improved! But it feels more natural and structured. They know what they are doing.
 - Some extra colors may do some good, but let's keep it simple.
 
 So, what happened? A few slight changes to the layout:
 
-<img class="myImg" src="../images/confluence/pagelayout-example-2-explanation.png" alt="pagelayout-example-2-explanation" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="hover-image" src="../images/confluence/pagelayout-example-2-explanation.png" alt="pagelayout-example-2-explanation" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 
 1. The title was adjusted to Level 3 to avoid distracting the reader from the content.
@@ -80,7 +80,7 @@ An [Architecture Decision Record (ADR)](./pages/adrs.md) is a decent example of 
 
 In short, a document that get's you information relevant of how things where, what where the options, what was proposed and how changes were applied. I cannot state how helpful is to have that for both onboarding (as context) and for internal agreedments.
 
-<img class="myImg" src="../images/confluence/templates-example-1.png" alt="templates-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="hover-image" src="../images/confluence/templates-example-1.png" alt="templates-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 1. Page <span class="highlight">Tags</span> can be part of the <span class="highlight">template</span>! Make sure to set them.
 2. The <span class="highlight">Badge</span> Macro can help visualize the status. 
@@ -114,16 +114,16 @@ The Cloud version has the advantage to have more variety and freedom to provide 
 From that link I picked just a few examples:
 
 1. [Brainstorming](https://www.atlassian.com/software/confluence/templates/brainstorming)
-<img class="myImg" src="../images/confluence/cloud-template-example-1.png" alt="cloud-template-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="hover-image" src="../images/confluence/cloud-template-example-1.png" alt="cloud-template-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
     - In my opinion, the Cloud version seems to take more pride in using emojis, while On-Prem docs often feel like they’re trying to turn into RFCs or some other clunky format.
 
 
 2. [Project Plan](https://www.atlassian.com/software/confluence/templates/project-plan):
-<img class="myImg" src="../images/confluence/cloud-template-example-2.png" alt="cloud-template-example-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="hover-image" src="../images/confluence/cloud-template-example-2.png" alt="cloud-template-example-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
   - Besides Emojis and adding more colors, the titles main titles start at two, which is a good approach to avoid getting dizzy for the transtion of a higher case to a paragraph type.
-  <img class="myImg" src="../images/confluence/cloud-template-example-2a.gif" alt="cloud-template-example-2a" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+  <img class="hover-image" src="../images/confluence/cloud-template-example-2a.gif" alt="cloud-template-example-2a" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
   - Scrolling down there is a Macro that I haven't seen before:
-  <img class="myImg" src="../images/confluence/cloud-template-example-2b.png" alt="cloud-template-example-2b" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+  <img class="hover-image" src="../images/confluence/cloud-template-example-2b.png" alt="cloud-template-example-2b" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
     - Quite handy if you ever need it.
 
 While these templates are great and can save time, **remember that not everything that shines is gold**. You should look beyond predefined templates and customize your workflow. Don't feel constrained by the structure—use these templates as a starting point, but have the insight to choose the right tools and create something unique!
@@ -222,7 +222,7 @@ In the following example, the main page "Macros Example" displays two results wi
 
 The cross-reference between those is not limited by location but just for simplicity.
 
-<img class="myImg" src="../images/confluence/childtabs-macro-content-side-by-side.png" alt="childtabs-macro-content-side-by-side" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="hover-image" src="../images/confluence/childtabs-macro-content-side-by-side.png" alt="childtabs-macro-content-side-by-side" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 <br>
 
 ## Panels, Cards, Sections, and Layouts
@@ -230,7 +230,7 @@ The cross-reference between those is not limited by location but just for simpli
 The [Panel](https://confluence.atlassian.com/conf719/panel-macro-1157466870.html) allows to create a section with colored background, but you can get more creative and do more by also using it with [Deck of Cards](https://appfire.atlassian.net/wiki/spaces/CTFCSM/pages/471176665/Deck+of+Cards)
 
 Let's begin with a new page example, the 'Cloud Guardians' team:
-<img class="myImg" src="../images/confluence/panel-example-final-result.png" alt="panel-example-final-result" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="hover-image" src="../images/confluence/panel-example-final-result.png" alt="panel-example-final-result" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 Compared to the first example of the 'Gotta Go Fast' team, it looks more imposing. Even though it seems similar, there are a lot of changes, but for now, let's focus on the main ones:
 
@@ -241,7 +241,7 @@ Compared to the first example of the 'Gotta Go Fast' team, it looks more imposin
 
 It may look similar to the configuration, but it has its nuances. Starting from the title:
 
-<img class="myImg" src="../images/confluence/panel-example-configuration-1.png" alt="panel-example-configuration-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="hover-image" src="../images/confluence/panel-example-configuration-1.png" alt="panel-example-configuration-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 1. A <span class="highlight">Panel</span> sets the background to match set the color. 
 2. The Knuckles SEGA logo is centered and has a smaller size.
@@ -267,16 +267,16 @@ Let's first refresh the Macros that we will use for this section:
 
 Please note that for screenshots, the last card of the first tab won't be visible. You're not missing anything.
 
-<img class="myImg" src="../images/confluence/panel-example-configuration-2.png" alt="panel-example-configuration-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="hover-image" src="../images/confluence/panel-example-configuration-2.png" alt="panel-example-configuration-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 Yeah, I know. It's quite messy to read and probably hard to edit, too. However, I can only say that the result is worth the trouble.
 
 So it goes like this:
 
 1. Originally the first <span class="highlight">Panel</span> was going to set a different color for the whole Deck of Cards, but it didn't looked right, so I avoided doing it like that. See images below to understand the pain:
-  <img class="myImg" src="../images/confluence/panel-example-bad-ending.png" alt="panel-example-bad-ending" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+  <img class="hover-image" src="../images/confluence/panel-example-bad-ending.png" alt="panel-example-bad-ending" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
   On that note, keep in mind that other Macros do not render in the preview:
-  <img class="myImg" src="../images/confluence/panel-example-nested-panels.png" alt="panel-example-nested-panels" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+  <img class="hover-image" src="../images/confluence/panel-example-nested-panels.png" alt="panel-example-nested-panels" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 2. The <span class="highlight">Deck of Cards</span> creates horizontal tabs containing one or multiple <span class="highlight">Cards</span>.  
 3. Inside of a <span class="highlight">Card</span> we will have the <span class="highlight">Section</span>.
 4. <span class="highlight">Section</span> will contain the <span class="highlight">Column</span> macro.
@@ -293,7 +293,7 @@ Originally the example didn't looked like the one shown before. It was like this
 <details style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
     <summary style="color: #00AEEF; cursor: pointer;">Click to expand</summary>
     <div style="padding: 10px;">
-      <img class="myImg" src="../images/confluence/panel-example-first-attempt.png" alt="panel-example-first-attempt" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+      <img class="hover-image" src="../images/confluence/panel-example-first-attempt.png" alt="panel-example-first-attempt" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
     </div>
   </details>
 
@@ -309,11 +309,11 @@ For this site I used Coolors, and took as main color the Knuckles red (#E63D26) 
  
 
 
-<img class="myImg" src="../images/confluence/panel-example-palette-cut.png" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="hover-image" src="../images/confluence/panel-example-palette-cut.png" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 The contrast is another element to keep in mind if you are going to user bright colors. As it may affect the readiblity and chakra mislalignment.
 
-<img class="myImg" src="../images/confluence/panel-sections-wcolors-example.gif" alt="panel-sections-wcolors-example" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="hover-image" src="../images/confluence/panel-sections-wcolors-example.gif" alt="panel-sections-wcolors-example" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 Just to recap:
 - Be mindful of the colors that you use.
@@ -330,57 +330,3 @@ You can [Customize Button Hyperlink With CSS](https://docs.adaptavist.com/cfm4cs
 ---
 
 <a href="/pages/confluence-chapter-3" class="button fork"><strong>Next Chapter</strong></a>
-
-
-{% raw %}
-<!-- Single Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-</div>
-
-<!-- JavaScript for Modal Functionality -->
-<script>
-  // Get the modal
-  var modal = document.getElementById("myModal");
-
-  // Get the modal image element
-  var modalImg = document.getElementById("img01");
-
-  // Ensure the modal is hidden on page load
-  window.onload = function() {
-    modal.style.display = "none";
-  };
-
-  // Get all images with class "myImg" and loop through them to add the click event
-  var images = document.getElementsByClassName("myImg");
-  for (var i = 0; i < images.length; i++) {
-    images[i].onclick = function(){
-      modal.style.display = "flex"; // Ensure the modal is displayed using flexbox
-      modalImg.src = this.src;
-    }
-  }
-
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() { 
-    modal.style.display = "none";
-  }
-
-  // Close the modal when clicking outside of the image
-  modal.onclick = function(event) {
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  }
-
-  // Close the modal when pressing the "Esc" key
-  document.onkeydown = function(event) {
-    if (event.key === "Escape") {
-      modal.style.display = "none";
-    }
-  }
-</script>
-{% endraw %}
