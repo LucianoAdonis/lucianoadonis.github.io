@@ -1,11 +1,9 @@
-
 ---
 layout: custom
 title: Interviews - Chapter 2
 description: Showdown!
 ---
 
----
 
 <a href="/pages/ds-interviews-chapter-2" class="button fork"><strong>Return to Chapter 2</strong></a>
 
