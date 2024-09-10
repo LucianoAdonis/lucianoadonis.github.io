@@ -4,7 +4,11 @@ title: Interviews - Chapter 1
 description: It's not you, it's me, Mario
 ---
 
-<a href="/pages/ds-interviews" class="button fork"><strong>Return</strong></a>
+<div class="nav-buttons">
+  <a href="/pages/ds-interviews-chapter-1" class="ds-button left-button"><strong>Go Back to Chapter 1</strong></a>
+  <a href="/pages/ds-interviews-chapter-3" class="ds-button right-button"><strong>Go to Chapter 3</strong></a>
+</div>
+
 
 ---
 

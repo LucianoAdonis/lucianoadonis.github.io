@@ -75,30 +75,38 @@
   color: #ff6347;
   font-weight: bold;
 }
-.ds-button-container {
-  text-align: right; /* Align buttons to the right */
-  margin-top: 20px;  /* Add space above the buttons */
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between; /* Align one button left, one button right */
+  margin-top: 20px;
+}
+
+.left-button {
+  text-align: left;
+}
+
+.right-button {
+  text-align: right;
 }
 
 .ds-button {
   display: inline-block;
-  padding: 8px 16px;   /* Smaller padding for smaller buttons */
+  padding: 8px 16px;
   margin: 5px;
-  background-color: #1C1C1C;   /* Dark, near-black background */
-  color: #FFFFFF;              /* White text for better contrast */
+  background-color: #1C1C1C;   /* Dark background */
+  color: #FFFFFF;              /* White text */
   text-decoration: none;
-  border: 2px solid #6B6B6B;   /* Grey border, with a metallic look */
-  border-radius: 3px;          /* Slightly rounded corners */
+  border: 2px solid #6B6B6B;   /* Grey border */
+  border-radius: 3px;
   font-weight: bold;
-  font-size: 14px;             /* Smaller font size */
-  font-family: 'serif';        /* Medieval-like font style, optional */
-  box-shadow: 0 0 5px #000;    /* Add a faint shadow for depth */
+  font-size: 14px;
   transition: background-color 0.3s, border-color 0.3s, color 0.3s;
 }
 
 .ds-button:hover {
-  background-color: #373737;    /* Darker, almost stone-like background */
-  color: #F0E68C;              /* Slightly glowing gold/yellow text on hover */
-  border-color: #F0E68C;       /* Border takes on a gold hue on hover */
-  box-shadow: 0 0 10px #F0E68C;/* Glow effect on hover */
+  background-color: #373737;    /* Darker background on hover */
+  color: #F0E68C;              /* Gold text on hover */
+  border-color: #F0E68C;       /* Gold border on hover */
+  box-shadow: 0 0 10px #F0E68C;
 }
