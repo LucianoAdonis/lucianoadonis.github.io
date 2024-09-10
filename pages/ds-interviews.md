@@ -6,7 +6,7 @@ description: The Information That You Always Wanted!
 
 ~~This Mini Book is for DevOps and Cloud Engineers leveling up from Semi-Senior Advanced to Senior roles.~~
 
-I originally started writing this to empower Cloud/DevOps/SRE Semi-Seniors to advance to Senior roles. I found myself repeatedly sharing the same practical advice, so summarizing everything made sense.
+I originally started writing this to help Cloud/DevOps/SRE Semi-Seniors to advance to Senior roles. I found myself repeatedly sharing the same practical advice, so summarizing everything made sense.
 
 As a fun touch, I styled this like a Dark Souls playthrough guide. Of course, that led to me diverting my attention and delving into multiple topics beyond just interviews.
 
@@ -18,7 +18,7 @@ The references might be confusing for some, and for others, they may be helpful 
 
 ---
 
-# Overview
+# Menu
 
 
 - [Chapter 0: Game Modes](/pages/ds-interviews-chapter-0): optional content, to talk a little bit about ~~companies~~ covenants.
@@ -31,6 +31,7 @@ The references might be confusing for some, and for others, they may be helpful 
 ---
 
 <a href="/pages/ds-interviews-chapter-0" class="button fork"><strong>Continue to Optional Chapter 0</strong></a>
+
 <a href="/pages/ds-interviews-chapter-1" class="button fork"><strong>Continue to Chapter 1</strong></a>
 
 
