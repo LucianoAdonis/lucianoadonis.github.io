@@ -18,9 +18,6 @@ The references might be confusing for some, and for others, they may be helpful 
 
 ---
 
-# Menu
-
-
 - [Chapter 0: Game Modes](/pages/ds-interviews-chapter-0): optional content, to talk a little bit about ~~companies~~ covenants.
 - [Chapter 1: Setting Your Character](/pages/ds-interviews-chapter-1): customization and types of builds.
 - [Chapter 1.5: Grand Archives](/pages/ds-interviews-chapter-1.5): optional content to get more experience and preparation. 
@@ -30,9 +27,10 @@ The references might be confusing for some, and for others, they may be helpful 
 
 ---
 
-<a href="/pages/ds-interviews-chapter-0" class="button fork"><strong>Continue to Optional Chapter 0</strong></a>
-
-<a href="/pages/ds-interviews-chapter-1" class="button fork"><strong>Continue to Chapter 1</strong></a>
+<div class="ds-button-container">
+  <a href="/pages/ds-interviews-chapter-0" class="ds-button"><strong>Continue to Optional Chapter 0</strong></a>
+  <a href="/pages/ds-interviews-chapter-1" class="ds-button"><strong>Continue to Chapter 1</strong></a>
+</div>
 
 
 {% raw %}
