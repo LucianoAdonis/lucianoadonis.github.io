@@ -17,6 +17,8 @@ It's sad that the companies have more information and know about you more than y
 
 # Email (GMAIL)
 
+Your identity. 
+
 Using the `+` sign gives you a infinite possibilities.
 
 For anything {{ site.vars.example_email }}
@@ -27,8 +29,17 @@ Label email work in more way besides having everything look tight, it also helps
 
 Unsuscribe for god's sake.
 
+## Unsubscribe
+
+Rather than making labels for everything subscribing may be a better way.
 
 ## Account Separation
+
+Basically, whenever you share it, you will get more spam, and separating things may be best in the long run.
+
+## Security
+
+If having an additional phone for shopping is not your cup of TEA, having fisical keys, at least two of them.
 
 ## Forward Account
 
