@@ -32,8 +32,8 @@ Anything related to more behavior
 
 Personal suggestions to improve your quality of life at work.
 
-- [Obsidian]()
-- [Digital Life]()
+- [Obsidian](./pages/obsidian.md): SOON.
+- [Digital Life](./pages/digital-life.md): SOON.
 
 ### Meta
 

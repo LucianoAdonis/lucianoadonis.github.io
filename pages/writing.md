@@ -4,11 +4,12 @@ title: Writing Advise
 description: An act that you do with your heart
 ---
 
-# Blank Page
-
 Depending of the document type you will need to figure how to start. If you barely have an idea of how it should look, search for references.
 
-## Types of Documents
+---
+
+Topics:
+* Types of Documents
 
 
 # Review
@@ -25,6 +26,12 @@ Here are some tips:
 - Think about your approach when writing. Personally, I like to brain-dump everything and then organize it later. Sometimes, I even start with the conclusion. But others might prefer to outline their titles first and work from there.
 - When writing, think about the person who’ll be reading this. What will their first thought be? It’s a good practice to assume they’ll have more knowledge gaps than you do, so cover those quickly and clearly.
 
+## What to Avoid
+
+- Overexplaining: It’s easy to overexplain simple ideas, overwhelming your writing.
+- Too Many Cliches: While relying on common phrases is tempting, avoid stuffing your review with clichés.
+- Forgetting the Purpose: Stay focused on the purpose of your document.
+- Not Enough Detail: missing parts break the immersion and may divert the attention from the document if you are trying to find out things outside of it.
 
 # AIs and ChatGPT
 
