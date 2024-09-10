@@ -1,6 +1,6 @@
 ---
 layout: custom
-title: Interviews - Chapter 1
+title: Interviews - Chapter 2
 description: It's not you, it's me, Mario
 ---
 
@@ -68,17 +68,18 @@ With this in mind, at least you won’t stumble right out of the fog gate, givin
 <img class="myImg" src="../images/interviews/object-charisma.png" alt="object-charisma" style="cursor: pointer;">
 
 <br>
+
 ---
 
 <img class="myImg" src="../images/interviews/location-interview-asylum-exit.png" alt="location-interview-asylum-exit" style="cursor: pointer;">
 
 ---
-<br>
 
----
+<div class="nav-buttons">
+  <a href="/pages/ds-interviews-chapter-2" class="ds-button left-button"><strong>Go to Chapter 2</strong></a>
+  <a href="/pages/ds-interviews-chapter-3" class="ds-button right-button"><strong>Go to Chapter 3</strong></a>
+</div>
 
-<a href="/pages/ds-interviews-chapter-1.5" class="button fork"><strong>Chapter 1.5</strong></a>
-<a href="/pages/ds-interviews-chapter-2" class="button fork"><strong>Chapter 2</strong></a>
 
 {% raw %}
 

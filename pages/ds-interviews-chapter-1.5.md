@@ -123,6 +123,7 @@ Behavior and other patterns not directly related to combat.
 
 ---
 
-<a href="/pages/ds-interviews-chapter-2" class="button fork"><strong>Chapter 2</strong></a>
-
----
+<div class="nav-buttons">
+  <a href="/pages/ds-interviews-chapter-1" class="ds-button left-button"><strong>Go to Chapter 1</strong></a>
+  <a href="/pages/ds-interviews-chapter-2" class="ds-button right-button"><strong>Go to Chapter 2</strong></a>
+</div>

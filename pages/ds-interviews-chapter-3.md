@@ -1,6 +1,6 @@
 ---
 layout: custom
-title: Interviews - Chapter 2
+title: Interviews - Chapter 3
 description: Showdown!
 ---
 
@@ -65,9 +65,10 @@ Depending on how you get the interview you may get feedback, by a third-party or
 
 ---
 
-<a href="/pages/ds-interviews" class="button fork"><strong>Main Page</strong></a>
+<div class="ds-button-container">
+  <a href="/pages/ds-interviews" class="ds-button right-button"><strong>Main Page</strong></a>
+</div>
 
----
 
 
 {% raw %}

@@ -27,14 +27,13 @@ The references might be confusing for some, and for others, they may be helpful 
 
 ---
 
-<div class="nav-buttons">
+<div class="ds-button-container">
   <a href="/pages/ds-interviews-chapter-0" class="ds-button right-button"><strong>Go to Chapter 0</strong></a>
 </div>
 
-<div class="nav-buttons">
+<div class="ds-button-container">
   <a href="/pages/ds-interviews-chapter-1" class="ds-button right-button"><strong>Go to Chapter 1</strong></a>
 </div>
-
 
 
 {% raw %}

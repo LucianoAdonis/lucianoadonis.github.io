@@ -4,6 +4,14 @@ title: Work Game Modes
 description: The Information That You Always Wanted!
 ---
 
+<div class="nav-buttons">
+  <a href="/pages/ds-interviews" class="ds-button left-button"><strong>Go Back to Home</strong></a>
+  <a href="/pages/ds-interviews-chapter-1" class="ds-button right-button"><strong>Go to Chapter 1</strong></a>
+</div>
+
+
+---
+
 Usually, you would only worry about this once you're deep into the game, but sometimes knowing the options will lead to better mental health.
 
 ⚠️ Spoilers: Since I’m revealing a lot of techniques and secrets, I’ve decided to make it Dark Souls-themed. 
@@ -70,3 +78,9 @@ If you half-ass two things, you may get better rewards but need to level up more
 For someone who wants to keep a steady rhythm after a certain point and doesn't care about climbing the corporate ladder or developing themselves through the pain of maxing the skill trees, the multi-account makes a lot of sense.
 
 There is also the mental health aspect, but I'm not here to preach about that; everyone has their own circumstances; maybe you have reasons to do it and can keep a good pace in both places without affecting your respective teams and deliverables. If that's your case, good for you!
+
+---
+
+<div class="ds-button-container">
+  <a href="/pages/ds-interviews-chapter-1" class="ds-button right-button"><strong>Continue to Chapter 1</strong></a>
+</div>
