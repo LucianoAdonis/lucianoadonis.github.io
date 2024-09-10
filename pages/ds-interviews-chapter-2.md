@@ -1,75 +1,81 @@
 ---
 layout: custom
-title: Interviews - Chapter 2
-description: Showdown!
+title: Interviews - Chapter 1
+description: It's not you, it's me, Mario
 ---
 
-
-<a href="/pages/ds-interviews-chapter-2" class="button fork"><strong>Return to Chapter 2</strong></a>
-
----
-
+<a href="/pages/ds-interviews" class="button fork"><strong>Return</strong></a>
 
 ---
 
-<img class="myImg" src="../images/interviews/location-interview-asylum-boss.png" alt="location-interview-asylum-boss" style="cursor: pointer;">
+<img class="myImg" src="../images/interviews/location-interview-asylum.png" alt="location-interview-asylum" style="cursor: pointer;">
 
 ---
+
+# Preparation Bonfire
+
+Yup, not so fast to the boss fight. We need to gather a few essential items before pushing forward. The good news? These items improve with time, but you’ll need them in your inventory to stand a chance.
+
+You might be one of the hardcore ones, breezing through everything with 0% damage. But for the rest of us mere mortals, proper preparations are essential.
 
 <br>
 
+## Work Experience Over General Knowledge
 
-# Senior Interview Boss Fight
+Hands-on experience with tools is more valuable than theoretical knowledge. By the time you reach the mid-level (Ssr), you’re expected to know the essentials—this is the baseline.
 
-## First Phase
+Do we have here some General knowledge questions? Those are a separate challenge. But don’t worry. We’ve covered you with the [Interview Preparation](#interview-preparation) section to give you a glimpse of the critical topics.
 
-After the pleasantries, meet each other and explain a little about yourself. Usually, the interviewer will describe the technologies they are looking for and what they use, setting the tone. Or it can be at the end after testing you against some questions or after you talk about yourself. Therefore, you will find the common scenarios below based on my experience.
+<img class="myImg" src="../images/interviews/object-estus-flask.png" alt="object-estus-flask" style="cursor: pointer;">
+<br>
 
-- **Rarely**: the interviewer starts from scratch, asking straightforward questions and increasing the difficulty slowly or based on your answers. It rarely happens because you require the meeting to be one hour long, which averages 30 minutes.
-- **Sometimes**: the interviewer starts asking questions about the technologies it uses, expecting a similar level to him or decent answers. I like this type of interview because it’s faster and you can learn much from it.
-- **Usually**: the interviewer asks you about your experience and questions based on what you tell him to dimension your level/skills. Of course, this applies if your knowledge matches 50-70 percent at least on what they do. It’s more challenging to interrogate someone on something the interviewer doesn’t work with—for example, a different Cloud Provider. If they are still willing to listen, common ground can be made based on similar approaches like troubleshooting, network configs, etc.
+## Certifications are Good, But...
 
-## Second Phase
+They’re mostly just a way to skip the easy questions in interviews, but if you play your cards right, they can serve as leverage to claim even greater rewards.
 
-Now that you are getting comfier, the nerves are calming, and the interviewer knows what you have to offer, the things below can happen.
+- It’s tough for those who’ve put in a serious effort to get certified. Still, all a certification tells me is that you have time to study, a good memory, and probably a Cloud Guru subscription or whatever young ones use these days.
+- Certifications can even backfire. That’s why I only certify in technologies I’m actively working with and have enough hands-on experience to support. Otherwise, it’s just cramming knowledge.
+- If your approach is, “I want to dive deeper into X technology, and I’m using this certification as a challenge to find a related job,” that’s valid, too.
 
-- If the structured story of your experience were catching enough, the interviewer would be on the path to ask you about what you expect! Otherwise, improvise; you did all that you could. Congrats!
-- An example of questions will be at the end. (Eventually)
-  - I won’t go deep on those because they depend on your experience, the client's expectations, and the positions you are applying for.
+In short, if the certification supports your build, great! Otherwise, it’s like being a Strength build and wasting early points on learning a spell you can barely cast, leaving you open to attacks instead of focusing on fortifying your core skills.
 
-## Bonus Phase: Feeling
+<img class="myImg" src="../images/interviews/object-certification-spear.png" alt="object-certification-spear" style="cursor: pointer;">
+<br>
 
-Often ignored, people sometimes say, “yeah, I would like to work with him” or “I like him,” and that’s enough. So if you are not charismatic like me, check the points below.
+## Accents
 
-- Interviewers look at and evaluate how people respond to things.
-  - Internal questions like “How did he react when he didn’t understand or couldn’t respond,” “He missed the question and didn’t want to admit it,” or “Did he resist the pressure?”
-- Easy to overlook, but companies are searching for a person to work with, and with the interview, they get a glance at the person’s character, and they will be stuck with you for a long time. It’s not about being a liability. It’s about not making things harder for others.
-  - If you take minutes to answer simple questions or similar, don’t go anywhere when trying to answer, that’s a pretty good message to interviewers on how you are working.
-- The engagement can make a difference, especially if the interviewer is the person you will be working with. If you don’t know, that’s okay. Depending on the interviewer, they will be willing to listen to you to get to the answer or something near. You can recover some points by explaining your reasoning and including him in the conversation.
-  - It’s not about quitting before answering. It’s to try to figure it out. You will often get with clients and app owners, and they will expect a satisfactory answer in a short amount of time. There are tricks to handle that, but that’s sold separately.
-  - But if you are stuck, be upfront of it but not with the intention of running.
-- Troubleshooting is an essential skill. Finding a piece of code that does the trick we need is easier, but resolving issues specific to the company’s scenario is not easy.
-  - Of course! Stackoverflow can save you from various things, but when you are stuck on a call against the clock and the issue is not common, you will see how much you understand how things work.
-  - An old coworker told me, “Our jobs can be done through scripts and thus automated. We get paid because we can solve problems and our capacity to troubleshoot and adapt to new issues.” Or something like that. The story's moral is that when we resolve issues (complex) or architectural challenges, we show our way of thinking and how we handle ourselves.
+Since you're reading this, I assume you're comfortable with written and spoken English, which is safe. However, many underestimate the challenge of understanding everyday speech, especially from people who aren't native speakers.
 
-## End Phase
+A few takeaways:
 
-At this point, the interview concludes, and the interviewer will tell you the next steps or close the door in your face. In any case, everything is a learning experience.
+- In tutorial videos, people often speak at a perfect pace and enunciate clearly. But in real life, it's common to encounter native speakers who mumble, rush through sentences, or use slang.
+- You'll work with people worldwide, and only some people care about flawless grammar or polished speech as long as they can convey their message.
+- Clients from other countries are patient and understanding with non-native speakers. So don't stress over it, you will **git gud**.
+  - If you find some weird case... well It will make you stronger.
 
-Depending on how you get the interview you may get feedback, by a third-party or by people of the same company.
+<img class="myImg" src="../images/interviews/object-sun-speech.png" alt="object-sun-speech" style="cursor: pointer;">
+<br>
 
-// Will add some tips later
-// Rejection path
-// Acceptance path
-// Internal challenges
+## Communication
 
+Clear Communication is Crucial whether in interviews or building relationships with clients, the ability to explain your ideas is not just a must but a significant factor in your professional success. Preparation is your Estus Flask—it will keep you going. While there will come a time when you'll breeze through interviews, preparation is key until then.
+
+With this in mind, at least you won’t stumble right out of the fog gate, giving off the wrong impression.
+
+<img class="myImg" src="../images/interviews/object-charisma.png" alt="object-charisma" style="cursor: pointer;">
+
+<br>
+---
+
+<img class="myImg" src="../images/interviews/location-interview-asylum-exit.png" alt="location-interview-asylum-exit" style="cursor: pointer;">
+
+---
+<br>
 
 ---
 
-<a href="/pages/ds-interviews" class="button fork"><strong>Main Page</strong></a>
-
----
-
+<a href="/pages/ds-interviews-chapter-1.5" class="button fork"><strong>Chapter 1.5</strong></a>
+<a href="/pages/ds-interviews-chapter-2" class="button fork"><strong>Chapter 2</strong></a>
 
 {% raw %}
 
