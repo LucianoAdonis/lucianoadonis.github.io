@@ -94,19 +94,30 @@
   display: inline-block;
   padding: 8px 16px;
   margin: 5px;
-  background-color: #1C1C1C;   /* Dark background */
-  color: #FFFFFF;              /* White text */
+  background-color: #1A1308;   
+  color: #FFFFFF !important;  /* Force white text */
   text-decoration: none;
-  border: 2px solid #6B6B6B;   /* Grey border */
+  border: 2px solid #6B6B6B;   
   border-radius: 3px;
   font-weight: bold;
   font-size: 14px;
   transition: background-color 0.3s, border-color 0.3s, color 0.3s;
 }
 
+.ds-button * {
+  color: #FFFFFF !important;  /* Apply white color to all child elements */
+}
+
 .ds-button:hover {
-  background-color: #373737;    /* Darker background on hover */
-  color: #F0E68C;              /* Gold text on hover */
-  border-color: #F0E68C;       /* Gold border on hover */
+  background-color: #502208;    
+  color: #F0E68C !important;    /* Gold text on hover */
+  border-color: #F0E68C;        
   box-shadow: 0 0 10px #F0E68C;
+}
+
+
+.ds-button-container {
+  display: flex;
+  justify-content: flex-end; /* Aligns buttons to the right */
+  margin-top: 20px; /* Adds some space above the button */
 }
