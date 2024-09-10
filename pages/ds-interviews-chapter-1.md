@@ -77,8 +77,6 @@ With this in mind, at least you won’t stumble right out of the fog gate, givin
 <a href="/pages/ds-interviews-chapter-1.5" class="button fork"><strong>Chapter 1.5</strong></a>
 <a href="/pages/ds-interviews-chapter-2" class="button fork"><strong>Chapter 2</strong></a>
 
----
-
 {% raw %}
 
 <style>

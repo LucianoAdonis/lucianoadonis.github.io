@@ -85,8 +85,8 @@ The following only applies upon your third or fourth run after the Senior thresh
 ---
 
 <a href="/pages/ds-interviews-chapter-1" class="button fork"><strong>Continue to Chapter 1</strong></a>
+<a href="/pages/ds-interviews-chapter-1.5" class="button fork"><strong>Continue to Chapter 1.5</strong></a>
 
----
 
 {% raw %}
 
