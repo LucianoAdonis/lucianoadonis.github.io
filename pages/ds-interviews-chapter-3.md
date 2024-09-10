@@ -5,10 +5,9 @@ description: Showdown!
 ---
 
 
-<a href="/pages/ds-interviews-chapter-2" class="button fork"><strong>Return to Chapter 2</strong></a>
-
----
-
+<div class="nav-buttons">
+  <a href="/pages/ds-interviews-chapter-0" class="ds-button left-button"><strong>Go to Chapter 0</strong></a>
+</div>
 
 ---
 

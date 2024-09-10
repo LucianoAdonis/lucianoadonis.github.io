@@ -1,12 +1,13 @@
 ---
 layout: custom
-title: Interviews - Chapter 1
+title: Interviews - Chapter 1.5
 description: It's not you, it's me, Mario
 ---
 
-<a href="/pages/ds-interviews-chapter-1" class="button fork"><strong>Return to Chapter 1</strong></a>
-<a href="/pages/ds-interviews-chapter-2" class="button fork"><strong>Go to Chapter 2</strong></a>
-
+<div class="nav-buttons">
+  <a href="/pages/ds-interviews" class="ds-button left-button"><strong>Go Back to Home</strong></a>
+  <a href="/pages/ds-interviews-chapter-3" class="ds-button right-button"><strong>Go to Chapter 2</strong></a>
+</div>
 ---
 
 <img class="myImg" src="../images/interviews/location-interview-grand-archives.png" alt="location-interview-grand-archives" style="cursor: pointer;">
