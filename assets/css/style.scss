@@ -75,7 +75,6 @@
   color: #ff6347;
   font-weight: bold;
 }
-
 .ds-button-container {
   text-align: right; /* Align buttons to the right */
   margin-top: 20px;  /* Add space above the buttons */
@@ -83,15 +82,16 @@
 
 .ds-button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 8px 16px;   /* Smaller padding for smaller buttons */
   margin: 5px;
   background-color: #1C1C1C;   /* Dark, near-black background */
-  color: #C0C0C0;              /* Light grey text, like worn metal */
+  color: #FFFFFF;              /* White text for better contrast */
   text-decoration: none;
   border: 2px solid #6B6B6B;   /* Grey border, with a metallic look */
   border-radius: 3px;          /* Slightly rounded corners */
   font-weight: bold;
-  font-family: 'serif';        /* Add a more medieval font style, optional */
+  font-size: 14px;             /* Smaller font size */
+  font-family: 'serif';        /* Medieval-like font style, optional */
   box-shadow: 0 0 5px #000;    /* Add a faint shadow for depth */
   transition: background-color 0.3s, border-color 0.3s, color 0.3s;
 }
