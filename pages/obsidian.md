@@ -4,7 +4,7 @@ title: Obsidian
 description: Okay, It's Worth It
 ---
 
-<img class="hover-image" src="../images/headers/grey-obsidian-graph-view.png" alt="grey-obsidian-graph-view" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="hover-image" src="../images/headers/grey-obsidian-graph-view-version-two.png" alt="grey-obsidian-graph-view-version-two" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
 
 
 Taking notes always has been a problem to solve for me, until I stumble thanks to the Algorythm with Obsidian, and the neuron-like format to display links between "ideas".

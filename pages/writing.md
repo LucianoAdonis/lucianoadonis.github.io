@@ -4,12 +4,19 @@ title: Writing Advise
 description: An act that you do with your heart
 ---
 
+<img class="hover-image" src="../images/headers/sky-blue-writting.png" alt="sky-blue-writting" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
+
 Depending of the document type you will need to figure how to start. If you barely have an idea of how it should look, search for references.
 
 ---
 
 Topics:
 * Types of Documents
+
+# Who are you writing this for?
+
+- Know who is this for.
+  - I personally write thinking on myself if I forget everything.
 
 
 # Review
