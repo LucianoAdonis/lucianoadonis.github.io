@@ -1,7 +1,7 @@
 ---
 layout: custom
 title: Work Game Modes
-description: The Information That You Always Wanted!
+description: Chapter 0
 ---
 
 <div class="nav-buttons">
@@ -9,14 +9,13 @@ description: The Information That You Always Wanted!
   <a href="/pages/ds-interviews-chapter-1" class="ds-button right-button"><strong>Go to Chapter 1</strong></a>
 </div>
 
+---
+
+<img class="hover-image" src="../images/interviews/location-interview-network-menu.png" alt="location-interview-network-menu" style="cursor: pointer;">
 
 ---
 
 Usually, you would only worry about this once you're deep into the game, but sometimes knowing the options will lead to better mental health.
-
-⚠️ Spoilers: Since I’m revealing a lot of techniques and secrets, I’ve decided to make it Dark Souls-themed. 
-
-<img class="hover-image" src="../images/interviews/location-interview-grand-archives.png" alt="location-interview-grand-archives" style="cursor: pointer;">
 
 # Single Player
 

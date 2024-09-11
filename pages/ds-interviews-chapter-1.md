@@ -11,7 +11,7 @@ description: It's not you, it's me, Mario
 
 ---
 
-<img class="hover-image" src="../images/interviews/location-interview-asylum.png" alt="location-interview-asylum" style="cursor: pointer;">
+<img class="hover-image" src="../images/interviews/main-menu.png" alt="main-menu" style="cursor: pointer;">
 
 ---
 
@@ -85,9 +85,6 @@ The following only applies upon your third or fourth run after the Senior thresh
 
 <div class="nav-buttons">
   <a href="/pages/ds-interviews" class="ds-button left-button"><strong>Go Back to Home</strong></a>
-  <a href="/pages/ds-interviews-chapter-1.5" class="ds-button right-button"><strong>Go to Chapter 1.5</strong></a>
-</div>
-
-<div class="ds-button-container">
   <a href="/pages/ds-interviews-chapter-2" class="ds-button right-button"><strong>Go to Chapter 2</strong></a>
 </div>
+
