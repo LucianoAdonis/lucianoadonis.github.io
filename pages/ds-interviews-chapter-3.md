@@ -6,7 +6,11 @@ description: Showdown!
 
 
 <div class="nav-buttons">
-  <a href="/pages/ds-interviews-chapter-0" class="ds-button left-button"><strong>Go to Chapter 0</strong></a>
+  <a href="/pages/ds-interviews-chapter-2" class="ds-button left-button"><strong>Go to Chapter 2</strong></a>
+  <a href="/pages/ds-interviews" class="ds-button right-button"><strong>Go to Main Menu</strong></a>
+</div>
+<div class="nav-buttons">
+  <a href="/pages/ds-interviews-chapter-2.5" class="ds-button left-button"><strong>Go to Chapter 2.5</strong></a>
 </div>
 
 ---

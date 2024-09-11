@@ -6,7 +6,7 @@ description: It's not you, it's me, Mario
 
 <div class="nav-buttons">
   <a href="/pages/ds-interviews" class="ds-button left-button"><strong>Go Back to Home</strong></a>
-  <a href="/pages/ds-interviews-chapter-3" class="ds-button right-button"><strong>Go to Chapter 2</strong></a>
+  <a href="/pages/ds-interviews-chapter-2" class="ds-button right-button"><strong>Go to Chapter 2</strong></a>
 </div>
 
 ---
