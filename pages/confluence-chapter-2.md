@@ -4,8 +4,6 @@ title: Confluence - Chapter 3
 description: Structure Above Else
 ---
 
----
-
 <a href="/pages/confluence-chapter-1" class="button fork"><strong>Return to Chapter 1</strong></a>
 
 ---

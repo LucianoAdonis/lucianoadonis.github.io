@@ -4,8 +4,6 @@ title: Confluence - Chapter 1
 description: Basics Above Else
 ---
 
----
-
 <a href="/pages/confluence" class="button fork"><strong>Return</strong></a>
 
 ---
@@ -131,5 +129,3 @@ Most of these little improvements can be optimized.
 ---
 
 <a href="/pages/confluence-chapter-2" class="button fork"><strong>Chapter 2</strong></a>
-
----
