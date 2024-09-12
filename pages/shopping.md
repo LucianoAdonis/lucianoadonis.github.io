@@ -37,7 +37,15 @@ The products on this list are ones that I've truly put to the test and found inv
   - If you have a pet you will need a bigger dust container, and you don't get that under 200 USD.
   - In some reviews laser is considered dumb. But that applies for small spaces, in big open spaces it helps a lot.
   - If the above it is your case, then the displayed model is a good match.
-- **Scale (Eufy)**: A sleek way to get detailed metrics about your body.
+- **Scale (Eufy Smart Scale)**: A convenient tool to get detailed metrics about your body.
+  - It provides reports on body fat, muscle mass, water percentage, and other key health indicators to help you track your progress.
+  - Syncs with your phone via the Eufy Health App for easy tracking. Some models also offer WiFi syncing for added convenience.
+  - This also allows you to track your history and progress over time.
+- **Ereader (Kindle)**: If I'm honest, I prefer real books, but the Kindle is easy on the eyes and offers a ton of convenience.
+  - The book you're reading shows up as the Kindle's cover.
+    - For users in Latin America, you may need to contact support to enable this feature, or pay a small fee to remove ads and display book covers instead.
+  - The battery lasts a long time, so you don’t have to worry about frequent charging.
+  - You can also upload other documents and convert them to Kindle-friendly formats like EPUB.
 
 ## Work Tech
 
@@ -45,26 +53,32 @@ The products on this list are ones that I've truly put to the test and found inv
 - **In-ear Headphones (AirPods Pro)**: "I don't like cords. They're coarse, rough, irritating, and they get everywhere."
   - I love the transparency feature and being able to listen to music without being uncomfortable.
 - **Curved Monitor (Samsung Curved 34")**: You won't be able to work at the same level with one screen.
-- **Laser Printer (HP NeverStop)**: best purchase if you don't trust your printer.
-  - Laser uses a dust that magnetise to the paper which makes it durable and doesn't have the problem of getting dry.
-  - Thousand of pages per catridge.
-  - You won't have colors, but unless you have to do some homework for your kids, it won't be a problem.
-  - Trustable.
-  - The model that I use, has a storage container, but it is just an extension which allows to leave pages there without worrying about the dust. 
-    - Also easy to remove, it is just a cover for the part that gets outside of the printer.
+- **Laser Printer (HP NeverStop)**: The best choice if you're tired of unreliable printers.
+  - Unlike inkjet printers that use liquid ink, laser printers use toner, a fine powder that is bonded to the paper through heat and magnetism.
+    - This method makes the print more durable and avoids issues like dried-out cartridges.
+  - You can print thousands of pages with one toner refill.
+  - It doesn't print in color, but unless you need to print your kids' homework, you won’t miss it.
+  - Reliable and efficient.
+  - My model has an additional paper storage container. It’s essentially an extension to hold extra pages, which keeps them dust-free.
+    - It’s also easy to remove—just a simple cover for the papers that stick out from the printer.
 
 ## Aliexpress
 
-- **Soap Dispenser**
-- **Solar lights**
-- **Rechargable Lights for hallways and other spaces**: no more bumpying in the night.
-- **Extendable Arm**
-- **Fluorescent Tape**
-- **Coin Cutter**
+- **Foam Washing Machine**: I can't recommend this enough.
+  - I tried soap dispensers, but they were a hassle. The foam dispenser, however, works perfectly.
+
+- **Solar Lights**: Exceeded my expectations, and work better than I imagined.
+- **Rechargeable Lights for Hallways and Other Spaces**: No more bumping into furniture in the dark.
+- **Extendable Arm**: A handy tool for picking up items, with soft silicone tips for better grip.
+  - It also has a small magnet, making it easy to retrieve small metal objects.
+  - Not just useful for seniors—everyone can benefit from it!
+- **Fluorescent Tape**: Bright and practical.
+- **Coin Cutter**: Convenient for cutting perfect circles from coins or other small, round items.
 
 ## Tried and Regreted
 
-- Elgato Streamdeck.
+**Elgato Streamdeck**: It’s a cool gadget, but honestly, it's not that useful for me unless you’re into gaming or streaming. It can help a lot, but it’s often more effective to simplify your workflow rather than set up automation for everything.
+  - You can customize the buttons with different themes and assign them to tasks like running automation, launching apps, or even closing programs.
 
 <br>
 
