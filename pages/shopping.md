@@ -61,6 +61,11 @@ The products on this list are ones that I've truly put to the test and found inv
   - Reliable and efficient.
   - My model has an additional paper storage container. It’s essentially an extension to hold extra pages, which keeps them dust-free.
     - It’s also easy to remove—just a simple cover for the papers that stick out from the printer.
+- **Magnetic Charging Cables (Ankndo)**: These are essentially magnetic cables with interchangeable tips for different connectors to leave the adapter in your devices.
+  - A great way to standardize charging for multiple devices that use Micro USB, USB-C, and Lightning, _one cable to rule them all_.
+  - It comes with multiple cable lengths and several tip types for each main phone cable. You can also purchase additional heads separately.
+  - Especially handy for anyone who prefers not to fiddle with different cables, making it perfect for older or less tech-savvy users.
+
 
 ## Aliexpress
 
@@ -69,6 +74,7 @@ The products on this list are ones that I've truly put to the test and found inv
 
 - **Solar Lights**: Exceeded my expectations, and work better than I imagined.
 - **Rechargeable Lights for Hallways and Other Spaces**: No more bumping into furniture in the dark.
+  - When paired with the **Magnetic Charging Cables (Ankndo)**, it makes life even easier.
 - **Extendable Arm**: A handy tool for picking up items, with soft silicone tips for better grip.
   - It also has a small magnet, making it easy to retrieve small metal objects.
   - Not just useful for seniors—everyone can benefit from it!
