@@ -1,8 +1,10 @@
 ---
 layout: custom
 title: Interviews - Chapter 1
-description: It's not you, it's me, Mario
+description: Character
 ---
+
+<!--- https://darksouls.wiki.fextralife.com/Character+Information --->
 
 <div class="nav-buttons">
   <a href="/pages/ds-interviews" class="ds-button left-button"><strong>Go Back to Home</strong></a>
@@ -61,6 +63,10 @@ I’ll expand on this because it’s more fun, and it is what you need to start 
 - Second phase: what you say it’s what you will get.
 - Bonus phase feeling: love at first sight or based on small gestures.
 - End phase: congrats!
+
+## Classes
+
+<!--- https://darksouls.wiki.fextralife.com/Classes --->
 
 ## Types of Builds
 

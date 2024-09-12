@@ -12,6 +12,9 @@ As a fun touch, I styled this like a Dark Souls playthrough guide. Of course, th
 
 The references might be confusing for some, and for others, they may be helpful as an analogy. In any case, I understand that this may be a bit overwhelming, but I hope this helps you in some way!
 
+<!-- https://darksouls.wiki.fextralife.com/Dark+Souls+Remastered -->
+
+
 ---
 
 <img class="myImg" src="../images/interviews/main-menu.png" alt="main-menu" style="cursor: pointer;">

@@ -1,7 +1,7 @@
 ---
 layout: custom
-title: Work Game Modes
-description: Chapter 0
+title: Interviews - Chapter 0
+description: General Information
 ---
 
 <div class="nav-buttons">
@@ -29,20 +29,34 @@ When you join Covenant, you get more frequent matches and interview opportunitie
 
 It's a 50/50 scenario. Sometimes, you won't get the same opportunities as someone going single-player, and it's often advised not to grind your way up from the bottom in a Covenant. Switching from a better position in a single-player or another Covenant (not too frequently) can lead to better results.
 
-## Benefits
+## Items
+
+- **Extra Side Missions:** You'll have extra tasks outside your regular work, like gathering items, slaying demons (read: tedious tasks), or preparing presentations for other members.
+- **Additional Menus:** Covenants come with more tools but also more complexity. Metrics and additional responsibilities come into play, making it harder to balance.
+
+
+## Ranks
+<!-- https://darksouls.wiki.fextralife.com/Covenants#:~:text=humanity%20as%20offerings.-,Ranks,-Most%20of%20the -->
+
+Most of the covenants allow progression within the covenant in the form of ranks, starting at base (referred to as +0), and maxing at +3.. Raising your rank in a covenant will typically give bonuses and bragging rights.
+
+- Base Senior/+0: 0 offerings
+- Covenant rank +1: 10 total offerings
+- Covenant rank +2: 20 more offerings, for 30 total
+- Covenant rank +3: 50 more offerings, for 80 total
+- Covenant rank +4
+
+In all honesty, this is not really worth it unless you are really into the game, and even if you are you should be carefull.
+
+## Rewards
+
+Based you base salary, there are some benefits to it:
 
 - **Worlds Available:** you get more stuff
   - This can be potentiated by knowing languages like English (If it isn't your primary language). 
 - **Vouchers and Discounts:** Some Covenants will refund or cover certifications (spells) you acquire. However, with a reduced reward cut, you might've been able to pay for the certifications yourself.
 - **Training:** You can learn from more experienced players through associations or other members.
 - **Help Network:** You're not alone, and while you can't summon a ghost for every fight, you will have help when needed for different worlds.
-
-
-## Additional Conditions
-
-- **Extra Side Missions:** You'll have extra tasks outside your regular work, like gathering items, slaying demons (read: tedious tasks), or preparing presentations for other members.
-- **Additional Menus:** Covenants come with more tools but also more complexity. Metrics and additional responsibilities come into play, making it harder to balance.
-  
 
 ## Opposite Covenants
 

@@ -1,7 +1,7 @@
 ---
 layout: custom
 title: Interviews - Chapter 2.5
-description: It's not you, it's me, Mario
+description: Combat
 ---
 
 <div class="nav-buttons">
@@ -18,7 +18,9 @@ description: It's not you, it's me, Mario
 
 For this section, we’ll dive into the general attack patterns and how to counter them. Honestly, it’s just dodging and hitting—how hard can it be, right?
 
-## Inspiration Sources
+## Stamina
+
+## Status Ailments
 
 Behavior and other patterns not directly related to combat.
 
