@@ -77,7 +77,7 @@ The products on this list are ones that I've truly put to the test and found inv
 
 ## Tried and Regreted
 
-**Elgato Streamdeck**: It’s a cool gadget, but honestly, it's not that useful for me unless you’re into gaming or streaming. It can help a lot, but it’s often more effective to simplify your workflow rather than set up automation for everything.
+- **Elgato Streamdeck**: It’s a cool gadget, but honestly, it's not that useful for me unless you’re into gaming or streaming. It can help a lot, but it’s often more effective to simplify your workflow rather than set up automation for everything.
   - You can customize the buttons with different themes and assign them to tasks like running automation, launching apps, or even closing programs.
 
 <br>
