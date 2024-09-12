@@ -12,41 +12,54 @@ description: Style Above Else
 
 # Why This Mini-Book?
 
-Based on my experience, when you facilitate the patterns and tools to make documenting less taxing, people will be more willing to cooperate and improve things. When they see the value it provides, it is easier to invest time knowing that it will be helpful to someone, even if that person is yourself in the future.
+Our memory isn't perfect, especially in tech, juggling multiple stacks and constantly switching contexts. Then, out of nowhere, someone (or several people) asks about something you worked on months ago, and you have to dig deep into the archives of your brain to pull that knowledge back out.
 
-Unless you have read or seen good examples, you probably don’t know how to get to that point or what tools to use to get there or at least closer, so this mini-book tries to solve that!
+If you can recall, nice! But you will probably stumble over small details that you have already encountered. That's not efficient for you or your coworkers.
 
-I’ll try to be as structured as possible when building from scratch rather than trying to jump into complex topics like Dynamic Documentation—oh yes, it gets better.
+And that's one of the values that documenting provides: It is easier to invest time knowing that it will be helpful to someone, even if that person is yourself, in a few months.
+
+Based on my experience working with many people and teams, is that when you facilitate the patterns and tools to make documenting less taxing, people will be more willing to cooperate and improve things.
+
+Unless you’ve come across good examples, it’s hard to know how to reach that level of quality, what tools to use to get there, or at least close to good documentation. While examples and templates are available, many people don’t have the time or patience to sift through all the resources. 
+
+This mini-book aims to simplify that process by providing examples and explanations in one place instead of leaving you to search through scattered gold nuggets in official docs, service providers, or random Google searches.
+
+I'll try to be as structured as possible when building from scratch rather than trying to jump into complex topics like Dynamic Documentation—oh yes, it gets better.
 
 <br>
 
 ## How to Use This Mini-Book
 
-First, I suggest avoiding reading this on mobile. Second, this mini-book is **focused on the On-Prem version of Confluence**, so there will be some differences in menus and integrations.
+First, I recommend avoiding reading this on mobile for the best experience. Second, this mini-book is **focused on the Data Center version of Confluence**, so there may be differences in menus and integrations compared to other versions. I'll do my best to include examples for both or at least provide pointers where differences arise.
 
 In regards to the exposition of the content:
 
-- **Highlighted Words**: I'll use the Tomato color to highlight either concepts or macros and avoid adding hyperlinks everywhere.
+- **Highlighted Words**: I'll use a Tomato color to highlight key concepts or macros so you won't see hyperlinks everywhere.
 - **Image Examples**:
-  - I like the format, but you can miss some action between clicks.
-  - Images can be clicked to have a good look at them.
-- **Expandable Code**: if it says that you can expand it, then it is an example, but you do not need to look at it.
+  - I like this format, but it might miss some details between clicks.
+  - You can click on images to view them in full.
+- **Expandable Code**: If you see an option to expand the code, it's an example—feel free to skip it if you don't need the details.
 
 <br>
 
 # Chapters Overview
 
-The page distribution will have to be separated in three, as the content length exceeded the index bar, and it will be probably easier this way:
+The content will be split into four sections, as the index bar exceeded its length, making it easier to read and navigate:
 
-- [Chapter 0: About the Author (optional)](/pages/confluence-chapter-0): read this if you don't believe that you have the skills to write.
-- [Chapter 1: Basics](/pages/confluence-chapter-1): this is the right place to start if you feel a little awkward navigating through Confluence.
-- [Chapter 2: Advanced Topics](/pages/confluence-chapter-2): this is where the fun begins. Sections to improve the way that you work with Confluence.
-- [Chapter 3: The Empire Strikes Back](/pages/confluence-chapter-3): random trivia that may be helpful in a date.
+- [Chapter 0: About the Author (optional)](/pages/confluence-chapter-0): Read this if you're doubting your ability to write.
+- [Chapter 1: Basics](/pages/confluence-chapter-1): Start here if you feel awkward navigating Confluence.
+- [Chapter 2: Page Structure](/pages/confluence-chapter-2): How to format your pages.
+- [Chapter 3: The Macros Strikes Back](/pages/confluence-chapter-3): Macros
+- [Chapter 4: A New Hope](/pages/confluence-chapter-4): Random trivia that might be useful on a date to break the ice.
 
 <br>
 
 ---
+<div class="ds-button-container">
+  <a href="/pages/confluence-chapter-0" class="custom-button left"><strong>Chapter 0 (Optional)</strong></a>
+</div>
 
-<a href="/pages/confluence-chapter-1" class="button fork"><strong>Continue to Chapter 1</strong></a>
 
----
+<div class="ds-button-container">
+  <a href="/pages/confluence-chapter-1" class="custom-button left"><strong>Chapter 1</strong></a>
+</div>

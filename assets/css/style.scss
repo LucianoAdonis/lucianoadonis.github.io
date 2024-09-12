@@ -12,12 +12,6 @@
   transform: scale(1.1);
 }
 
-.custom-image {
-  border: 2px solid #000;
-  border-radius: 4px;
-  padding: 5px;
-}
-
 /* The Modal (background overlay) */
 .modal {
   display: none; /* Hidden by default */
@@ -178,4 +172,45 @@ details summary::before {
 }
 details[open] summary::before {
   content: '➖'; /* Minus sign to indicate it's expanded */
+}
+
+/* Base styles for the custom buttons */
+.custom-button {
+  background-color: #FFCC01; /* Base color */
+  border: none;
+  color: #000; /* Text color */
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #6B6B6B;   
+  border-radius: 2px;
+  font-size: 14px;
+  margin: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: relative;
+}
+
+/* Hover effect */
+.custom-button:hover {
+  background-color: #FFE788; /* Hover color */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Left-aligned button */
+.custom-button.left {
+  float: left;
+}
+
+/* Right-aligned button */
+.custom-button.right {
+  float: right;
+}
+
+/* Clear floats after the buttons to ensure proper layout */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }

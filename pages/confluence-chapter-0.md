@@ -4,6 +4,13 @@ title: Confluence - Chapter 0
 description: Self Reference
 ---
 
+<div class="nav-buttons">
+  <a href="/pages/confluence" class="custom-button right"><strong>Menu</strong></a>
+  <a href="/pages/confluence-chapter-1" class="custom-button left"><strong>Chapter 1</strong></a>
+</div>
+
+---
+
 
 # About the Author
 

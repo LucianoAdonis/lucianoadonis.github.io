@@ -4,32 +4,42 @@ title: Confluence - Chapter 1
 description: Basics Above Else
 ---
 
-<a href="/pages/confluence" class="button fork"><strong>Return</strong></a>
+<div class="nav-buttons">
+  <a href="/pages/confluence-chapter-0" class="custom-button right"><strong>Chapter 0</strong></a>
+  <a href="/pages/confluence-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
+</div>
 
 ---
+
+<br>
 
 # Getting Started
 
 In this chapter, we'll cover the basics to help you:
 
-- Meet the 
+- Learn the sad difference between Cloud and Data Center versions.
 - Understand how pages are organized.
 - Get familiar with the Layout feature.
 - Explore how to use Macros effectively.
-- Learn how to search in Confluence.
+- Search in Confluence.
 
 With these foundations in place, we'll be ready to dive into the real fun.
 
 <br>
 
-## Cloud is Not the Same as On-Prem
-If you've heard about a cool new feature in Confluence but you're using the On-Prem version, chances are you won't see it anytime soon. Most of the exciting updates are only available to Cloud users.
+## Cloud is Not the Same as Data Center
 
-An example of that at the time of writing is changing the user who owns a page rather than sticking with the one who created it.
+If you've heard about a cool new feature in Confluence but are using the Data Center version, chances are even if you're lucky, you won't see it soon.
 
-This difference extends beyond features—integrations, performance improvements, and even the user interface can differ. Cloud gets more frequent updates, while On-Prem tends to get behind. 
+One feature not available at the time of writing is the ability to change a page's owner. The user who creates the page is the owner, while others who edit or update it appear in the history as the last person to make changes to the page. There is no way to replace the owner other than recreate the document.
 
-The UI differences might be an advantage for some On-Prem users who prefer a more stable and familiar environment.
+Now, imagine that you search for information, find a document, and have questions about it. Naturally, you'd reach out to the original author, but guess what? They don't work at the company anymore.
+
+That feature is convenient, especially in teams with high rotation. It prevents you from being unnecessarily contacted about something you're no longer responsible for or from having to act as a go-between to the correct person.
+
+There are workarounds, like using a macro to make people who have edited the document appear as contributors at the end of the page, which we'll cover later in the advanced topics.
+
+This difference extends beyond features—integrations, performance improvements, and even the user interface can differ. Cloud gets more frequent updates, while Data Center tends to get behind to be more stable. 
 
 ## Page Distribution
 
@@ -128,4 +138,7 @@ Most of these little improvements can be optimized.
 
 ---
 
-<a href="/pages/confluence-chapter-2" class="button fork"><strong>Chapter 2</strong></a>
+<div class="nav-buttons">
+  <a href="/pages/confluence-chapter-0" class="custom-button right"><strong>Chapter 0</strong></a>
+  <a href="/pages/confluence-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
+</div>
