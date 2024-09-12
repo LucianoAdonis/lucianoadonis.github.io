@@ -45,6 +45,22 @@ The products on this list are ones that I've truly put to the test and found inv
 - **In-ear Headphones (AirPods Pro)**: "I don't like cords. They're coarse, rough, irritating, and they get everywhere."
   - I love the transparency feature and being able to listen to music without being uncomfortable.
 - **Curved Monitor (Samsung Curved 34")**: You won't be able to work at the same level with one screen.
+- **Laser Printer (HP NeverStop)**: best purchase if you don't trust your printer.
+  - Laser uses a dust that magnetise to the paper which makes it durable and doesn't have the problem of getting dry.
+  - Thousand of pages per catridge.
+  - You won't have colors, but unless you have to do some homework for your kids, it won't be a problem.
+  - Trustable.
+  - The model that I use, has a storage container, but it is just an extension which allows to leave pages there without worrying about the dust. 
+    - Also easy to remove, it is just a cover for the part that gets outside of the printer.
+
+## Aliexpress
+
+- **Soap Dispenser**
+- **Solar lights**
+- **Rechargable Lights for hallways and other spaces**: no more bumpying in the night.
+- **Extendable Arm**
+- **Fluorescent Tape**
+- **Coin Cutter**
 
 ## Tried and Regreted
 
