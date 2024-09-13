@@ -4,7 +4,7 @@ title: Confluence
 description: Style Above Else
 ---
 
-<img class="hover-image" src="../images/headers/white-confluence-logo.png" alt="white-confluence-logo" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
+<img class="myImg" src="../images/headers/white-confluence-logo.png" alt="white-confluence-logo" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
 
 >"To plant a garden is to believe in tomorrow." – Audrey Hepburn
 

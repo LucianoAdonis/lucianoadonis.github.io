@@ -10,7 +10,7 @@ description: Combat
 </div>
 ---
 
-<img class="hover-image" src="../images/interviews/location-interview-grand-archives.png" alt="location-interview-grand-archives" style="cursor: pointer;">
+<img class="myImg" src="../images/interviews/location-interview-grand-archives.png" alt="location-interview-grand-archives" style="cursor: pointer;">
 
 ---
 
@@ -24,7 +24,7 @@ For this section, we’ll dive into the general attack patterns and how to count
 
 Behavior and other patterns not directly related to combat.
 
-<img class="hover-image" src="../images/interviews/object-estus-flask.png" alt="object-estus-flask" style="cursor: pointer;">
+<img class="myImg" src="../images/interviews/object-estus-flask.png" alt="object-estus-flask" style="cursor: pointer;">
 <br>
 
 
@@ -121,7 +121,7 @@ Behavior and other patterns not directly related to combat.
 
 <br>
 
-<img class="hover-image" src="../images/interviews/object-the-fundamentals.png" alt="object-fundamentals" style="cursor: pointer;">
+<img class="myImg" src="../images/interviews/object-the-fundamentals.png" alt="object-fundamentals" style="cursor: pointer;">
 
 <br>
 

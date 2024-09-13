@@ -23,15 +23,15 @@ If you ever change the name or something on the datasource page, it won’t brea
 ## Example
 The reusable content can be anything that you can place in that box, so be either text or image it can be there. Of course, with the exception of tables which have their own macro to do that.
 
-<img class="hover-image" src="../images/confluence/multiexcerpt-example.png" alt="multiexcerpt-example" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="myImg" src="../images/confluence/multiexcerpt-example.png" alt="multiexcerpt-example" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 To include something you have to use the multiexcerpt include macro which will display you the available options in the page and a small preview of the content retrieved:
 
-<img class="hover-image" src="../images/confluence/multiexcerpt-include-macro-menu.png" alt="multiexcerpt-include-macro-menu" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="myImg" src="../images/confluence/multiexcerpt-include-macro-menu.png" alt="multiexcerpt-include-macro-menu" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 From the edition menu will look like this:
 
-<img class="hover-image" src="../images/confluence/multiexcerpt-include-macro-example.png" alt="multiexcerpt-include-macro-example" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="myImg" src="../images/confluence/multiexcerpt-include-macro-example.png" alt="multiexcerpt-include-macro-example" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 # Tagging
 

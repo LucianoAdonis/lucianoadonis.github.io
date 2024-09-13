@@ -92,17 +92,17 @@ This can also be done for images of even sections, with the expand macros. I per
 
 ## Quick Wins
 
-If you’ve only got the mental bandwidth for a few Macros, prioritize the following macros to get ahead of multiple documentations:
+If you've only got the mental bandwidth for a few Macros, prioritize the following macros to get ahead of multiple documentations:
 
 * [Multiexcerpt](https://confluence.atlassian.com/conf719/excerpt-macro-1157466743.html): I consider [Multiexcerpt Include](https://confluence.atlassian.com/conf719/excerpt-include-macro-1157466741.html) to be part of it, so it counts as one. This will allow you to reuse content in other pages. Like coding!
 * [Table Filter](https://docs.stiltsoft.com/tfac/cloud/how-to-use-table-filter-macro-42239756.html): There are such great things that you can do with filters and queries. It's sad that you have to but at least is not painful!
-- [ChildTabs](https://docs.bitvoodoo.app/navitabs-tabs-for-confluence-data-center/?utm_source=bv-app&utm_medium=Editor&utm_campaign=Navitabs%20Child%20Tabs%20Macro): For when you’ve got a bunch of subpages—this helps you keep it all organized without endless tabs.
+- [ChildTabs](https://docs.bitvoodoo.app/navitabs-tabs-for-confluence-data-center/?utm_source=bv-app&utm_medium=Editor&utm_campaign=Navitabs%20Child%20Tabs%20Macro): For when you've got a bunch of subpages—this helps you keep it all organized without endless tabs.
 
 In the following example, the main page "Macros Example" displays two results with the <span class="highlight">ChildTabs</span> that are the pages under it. The context behind those pages will be explained in the Datasource Page's [example](#example-1). Still, you must know that separated pages are loaded simultaneously and quickly accessible through the parent page.
 
 The cross-reference between those is not limited by location but just for simplicity.
 
-<img class="hover-image" src="../images/confluence/childtabs-macro-content-side-by-side.png" alt="childtabs-macro-content-side-by-side" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="myImg" src="../images/confluence/childtabs-macro-content-side-by-side.png" alt="childtabs-macro-content-side-by-side" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 <br>
 
 ## Panels, Cards, Sections, and Layouts
@@ -110,7 +110,7 @@ The cross-reference between those is not limited by location but just for simpli
 The [Panel](https://confluence.atlassian.com/conf719/panel-macro-1157466870.html) allows to create a section with colored background, but you can get more creative and do more by also using it with [Deck of Cards](https://appfire.atlassian.net/wiki/spaces/CTFCSM/pages/471176665/Deck+of+Cards)
 
 Let's begin with a new page example, the 'Cloud Guardians' team:
-<img class="hover-image" src="../images/confluence/panel-example-final-result.png" alt="panel-example-final-result" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="myImg" src="../images/confluence/panel-example-final-result.png" alt="panel-example-final-result" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 Compared to the first example of the 'Gotta Go Fast' team, it looks more imposing. Even though it seems similar, there are a lot of changes, but for now, let's focus on the main ones:
 
@@ -121,7 +121,7 @@ Compared to the first example of the 'Gotta Go Fast' team, it looks more imposin
 
 It may look similar to the configuration, but it has its nuances. Starting from the title:
 
-<img class="hover-image" src="../images/confluence/panel-example-configuration-1.png" alt="panel-example-configuration-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="myImg" src="../images/confluence/panel-example-configuration-1.png" alt="panel-example-configuration-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 1. A <span class="highlight">Panel</span> sets the background to match set the color. 
 2. The Knuckles SEGA logo is centered and has a smaller size.
@@ -147,16 +147,16 @@ Let's first refresh the Macros that we will use for this section:
 
 Please note that for screenshots, the last card of the first tab won't be visible. You're not missing anything.
 
-<img class="hover-image" src="../images/confluence/panel-example-configuration-2.png" alt="panel-example-configuration-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="myImg" src="../images/confluence/panel-example-configuration-2.png" alt="panel-example-configuration-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 Yeah, I know. It's quite messy to read and probably hard to edit, too. However, I can only say that the result is worth the trouble.
 
 So it goes like this:
 
 1. Originally the first <span class="highlight">Panel</span> was going to set a different color for the whole Deck of Cards, but it didn't looked right, so I avoided doing it like that. See images below to understand the pain:
-  <img class="hover-image" src="../images/confluence/panel-example-bad-ending.png" alt="panel-example-bad-ending" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+  <img class="myImg" src="../images/confluence/panel-example-bad-ending.png" alt="panel-example-bad-ending" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
   On that note, keep in mind that other Macros do not render in the preview:
-  <img class="hover-image" src="../images/confluence/panel-example-nested-panels.png" alt="panel-example-nested-panels" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+  <img class="myImg" src="../images/confluence/panel-example-nested-panels.png" alt="panel-example-nested-panels" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 2. The <span class="highlight">Deck of Cards</span> creates horizontal tabs containing one or multiple <span class="highlight">Cards</span>.  
 3. Inside of a <span class="highlight">Card</span> we will have the <span class="highlight">Section</span>.
 4. <span class="highlight">Section</span> will contain the <span class="highlight">Column</span> macro.
@@ -173,7 +173,7 @@ Originally the example didn't looked like the one shown before. It was like this
 <details style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
     <summary style="color: #00AEEF; cursor: pointer;">Click to expand</summary>
     <div style="padding: 10px;">
-      <img class="hover-image" src="../images/confluence/panel-example-first-attempt.png" alt="panel-example-first-attempt" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+      <img class="myImg" src="../images/confluence/panel-example-first-attempt.png" alt="panel-example-first-attempt" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
     </div>
   </details>
 
@@ -189,11 +189,11 @@ For this site I used Coolors, and took as main color the Knuckles red (#E63D26) 
  
 
 
-<img class="hover-image" src="../images/confluence/panel-example-palette-cut.png" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="myImg" src="../images/confluence/panel-example-palette-cut.png" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 The contrast is another element to keep in mind if you are going to user bright colors. As it may affect the readiblity and chakra mislalignment.
 
-<img class="hover-image" src="../images/confluence/panel-sections-wcolors-example.gif" alt="panel-sections-wcolors-example" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="myImg" src="../images/confluence/panel-sections-wcolors-example.gif" alt="panel-sections-wcolors-example" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 Just to recap:
 - Be mindful of the colors that you use.

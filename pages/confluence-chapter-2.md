@@ -24,7 +24,7 @@ Instead of presenting your content as a dense, vertical monolith of text, you ca
 
 The following page, a dummy (thanks, ChatGPT), would be your run-of-the-mill page in Confluence. Let's see it!
 
-<img class="hover-image" src="../images/confluence/pagelayout-example-1.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="myImg" src="../images/confluence/pagelayout-example-1.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 - It doesn't have cohesion.
 - It feels awkward.
@@ -32,14 +32,14 @@ The following page, a dummy (thanks, ChatGPT), would be your run-of-the-mill pag
 
 I'm not mean. It is just Digital Feng Shui. Now let's continue with an "arranged" version of it:
 
-<img class="hover-image" src="../images/confluence/pagelayout-example-2.png" alt="pagelayout-example-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="myImg" src="../images/confluence/pagelayout-example-2.png" alt="pagelayout-example-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 - It could be improved! But it feels more natural and structured. They know what they are doing.
 - Some extra colors may do some good, but let's keep it simple.
 
 So, what happened? A few slight changes to the layout:
 
-<img class="hover-image" src="../images/confluence/pagelayout-example-2-explanation.png" alt="pagelayout-example-2-explanation" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="myImg" src="../images/confluence/pagelayout-example-2-explanation.png" alt="pagelayout-example-2-explanation" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 
 1. The title was adjusted to Level 3 to avoid distracting the reader from the content.
@@ -89,7 +89,7 @@ An [Architecture Decision Record (ADR)](./pages/adrs.md) is a decent example of 
 
 In short, a document that get's you information relevant of how things where, what where the options, what was proposed and how changes were applied. I cannot state how helpful is to have that for both onboarding (as context) and for internal agreedments.
 
-<img class="hover-image" src="../images/confluence/templates-example-1.png" alt="templates-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="myImg" src="../images/confluence/templates-example-1.png" alt="templates-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 1. Page <span class="highlight">Tags</span> can be part of the <span class="highlight">template</span>! Make sure to set them.
 2. The <span class="highlight">Badge</span> Macro can help visualize the status. 
@@ -125,16 +125,16 @@ The Cloud version has the advantage to have more variety and freedom to provide 
 From that link I picked just a few examples:
 
 1. [Brainstorming](https://www.atlassian.com/software/confluence/templates/brainstorming)
-<img class="hover-image" src="../images/confluence/cloud-template-example-1.png" alt="cloud-template-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="myImg" src="../images/confluence/cloud-template-example-1.png" alt="cloud-template-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
     - In my opinion, the Cloud version seems to take more pride in using emojis, while Data Center docs often feel like they’re trying to turn into RFCs or some other clunky format.
 
 
 2. [Project Plan](https://www.atlassian.com/software/confluence/templates/project-plan):
-<img class="hover-image" src="../images/confluence/cloud-template-example-2.png" alt="cloud-template-example-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+<img class="myImg" src="../images/confluence/cloud-template-example-2.png" alt="cloud-template-example-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
   - Besides Emojis and adding more colors, the titles main titles start at two, which is a good approach to avoid getting dizzy for the transtion of a higher case to a paragraph type.
-  <img class="hover-image" src="../images/confluence/cloud-template-example-2a.gif" alt="cloud-template-example-2a" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+  <img class="myImg" src="../images/confluence/cloud-template-example-2a.gif" alt="cloud-template-example-2a" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
   - Scrolling down there is a Macro that I haven't seen before:
-  <img class="hover-image" src="../images/confluence/cloud-template-example-2b.png" alt="cloud-template-example-2b" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+  <img class="myImg" src="../images/confluence/cloud-template-example-2b.png" alt="cloud-template-example-2b" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
     - Quite handy if you ever need it.
 
 While these templates are great and can save time, **remember that not everything that shines is gold**. You should look beyond predefined templates and customize your workflow. Don't feel constrained by the structure—use these templates as a starting point, but have the insight to choose the right tools and create something unique!

@@ -13,7 +13,7 @@ description: Character
 
 ---
 
-<img class="hover-image" src="../images/interviews/main-menu.png" alt="main-menu" style="cursor: pointer;">
+<img class="myImg" src="../images/interviews/main-menu.png" alt="main-menu" style="cursor: pointer;">
 
 ---
 
@@ -27,7 +27,7 @@ Creating a character that aligns with your mindset is best. Speaking from experi
 
 <br>
 
-<img class="hover-image" src="../images/interviews/interact-box-know-thyself.png" alt="interact-box-know-thyself" style="cursor: pointer;">
+<img class="myImg" src="../images/interviews/interact-box-know-thyself.png" alt="interact-box-know-thyself" style="cursor: pointer;">
 
 <br>
 
@@ -83,7 +83,7 @@ The following only applies upon your third or fourth run after the Senior thresh
 
 <br>
 
-<img class="img01" src="../images/interviews/interact-box-character-creation.png" alt="interact-box-character-creation" style="cursor: pointer;">
+<img class="myImg" src="../images/interviews/interact-box-character-creation.png" alt="interact-box-character-creation" style="cursor: pointer;">
 
 <br>
 

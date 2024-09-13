@@ -15,7 +15,7 @@ description: Showdown!
 
 ---
 
-<img class="hover-image" src="../images/interviews/location-interview-asylum-boss.png" alt="location-interview-asylum-boss" style="cursor: pointer;">
+<img class="myImg" src="../images/interviews/location-interview-asylum-boss.png" alt="location-interview-asylum-boss" style="cursor: pointer;">
 
 ---
 
