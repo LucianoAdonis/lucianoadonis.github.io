@@ -39,4 +39,25 @@ document.addEventListener('DOMContentLoaded', function () {
       modal.style.display = 'none';
     }
   });
+
+  // Add hover effect for image triggers
+  const triggers = document.querySelectorAll('.hover-image-trigger');
+  
+  triggers.forEach(trigger => {
+    const img = new Image();
+    img.src = trigger.dataset.image;
+    img.className = 'hover-image';
+    img.style.maxWidth = '120px';
+    img.style.maxHeight = '120px';
+    
+    trigger.appendChild(img);
+
+    trigger.addEventListener('mouseenter', function() {
+      img.style.display = 'block';
+    });
+
+    trigger.addEventListener('mouseleave', function() {
+      img.style.display = 'none';
+    });
+  });
 });

@@ -214,3 +214,21 @@ details[open] summary::before {
   clear: both;
   display: table;
 }
+
+.hover-image-trigger {
+  position: relative;
+  cursor: pointer;
+}
+
+.hover-image {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  background-color: white;
+  padding: 5px;
+  max-width: 150px;
+  max-height: 150px;
+}

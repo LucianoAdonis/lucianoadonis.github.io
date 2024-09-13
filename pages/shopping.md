@@ -15,14 +15,14 @@ The products on this list are ones that I've truly put to the test and found inv
 
 ## Organization
 
-- **Label Maker (Brother P-Touch PTH110)**: Perfect for categorizing and keeping things in order.
+- **<span class="hover-image-trigger" data-image="../images/shopping/label-maker.png">Label Maker (Brother P-Touch PTH110)</span>**: Perfect for categorizing and keeping things in order.
   - Letters and symbols can be personalized with borders.
   - Variety of colors.
   - Can do wonders for organizing plastic and crystal Food Storage Containers.
   - Some tapes can be added to clothes.
   - Note: There is a slight tape waste between prints; it is more of a product issue than a configuration problem.
 
-- **Transparent Boxes (Wenco)**: I prefer clear boxes because they allow me to see what's inside.
+- **<span class="hover-image-trigger" data-image="../images/shopping/plastic-box-wenco.png">Transparent Boxes (Wenco)</span>**: I prefer clear boxes because they allow me to see what's inside.
   - Even with transparent boxes, labels are a game-changer when stacked or stored at angles.
 
 ## Cleaning & Lifestyle
@@ -53,7 +53,7 @@ The products on this list are ones that I've truly put to the test and found inv
 - **In-ear Headphones (AirPods Pro)**: "I don't like cords. They're coarse, rough, irritating, and they get everywhere."
   - I love the transparency feature and being able to listen to music without being uncomfortable.
 - **Curved Monitor (Samsung Curved 34")**: You won't be able to work at the same level with one screen.
-- **Laser Printer (HP NeverStop)**: The best choice if you're tired of unreliable printers.
+- **<span class="hover-image-trigger" data-image="../images/shopping/laser-printer.png">Laser Printer (Brother)</span>**:  The best choice if you're tired of unreliable printers.
   - Unlike inkjet printers that use liquid ink, laser printers use toner, a fine powder that is bonded to the paper through heat and magnetism.
     - This method makes the print more durable and avoids issues like dried-out cartridges.
   - You can print thousands of pages with one toner refill.
@@ -61,7 +61,7 @@ The products on this list are ones that I've truly put to the test and found inv
   - Reliable and efficient.
   - My model has an additional paper storage container. It’s essentially an extension to hold extra pages, which keeps them dust-free.
     - It’s also easy to remove—just a simple cover for the papers that stick out from the printer.
-- **Magnetic Charging Cables (Ankndo)**: These are essentially magnetic cables with interchangeable tips for different connectors to leave the adapter in your devices.
+- **<span class="hover-image-trigger" data-image="../images/shopping/magnetic-cables.png">Magnetic Charging Cables (Ankndo)</span>**: These are essentially magnetic cables with interchangeable tips for different connectors to leave the adapter in your devices.
   - A great way to standardize charging for multiple devices that use Micro USB, USB-C, and Lightning, _one cable to rule them all_.
   - It comes with multiple cable lengths and several tip types for each main phone cable. You can also purchase additional heads separately.
   - Especially handy for anyone who prefers not to fiddle with different cables, making it perfect for older or less tech-savvy users.
@@ -69,17 +69,17 @@ The products on this list are ones that I've truly put to the test and found inv
 
 ## Aliexpress
 
-- **Foam Washing Machine**: I can't recommend this enough.
+- **<span class="hover-image-trigger" data-image="../images/shopping/aliexpress-foam-machine.png">Foam Washing Machine</span>**: I can't recommend this enough.
   - I tried soap dispensers, but they were a hassle. The foam dispenser, however, works perfectly.
 
 - **Solar Lights**: Exceeded my expectations, and work better than I imagined.
 - **Rechargeable Lights for Hallways and Other Spaces**: No more bumping into furniture in the dark.
   - When paired with the **Magnetic Charging Cables (Ankndo)**, it makes life even easier.
-- **Extendable Arm**: A handy tool for picking up items, with soft silicone tips for better grip.
-  - It also has a small magnet, making it easy to retrieve small metal objects.
-  - Not just useful for seniors—everyone can benefit from it!
+- **<span class="hover-image-trigger" data-image="../images/shopping/aliexpress-extendable-arm.png">Extendable Arm</span>**: A versatile and adjustable arm for mounting devices or accessories.
+  - Useful for holding phones, tablets, or small cameras in various positions.
+  - Can be clamped to desks, tables, or other surfaces for flexible positioning.
 - **Fluorescent Tape**: Bright and practical.
-- **Coin Cutter**: Convenient for cutting perfect circles from coins or other small, round items.
+- **<span class="hover-image-trigger" data-image="../images/shopping/aliexpress-coin-cutter.png">Coin Cutter</span>**: Convenient for opening boxes and other things.
 
 ## Tried and Regreted
 
