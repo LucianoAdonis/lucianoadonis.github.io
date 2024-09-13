@@ -29,11 +29,11 @@ The products on this list are ones that I've truly put to the test and found inv
 
 - **Air Fryer**: can revive bread and make it feel fresh. What else do you want?
   - It's also incredible to fry other foods.
-- **Vertical Vacuum (Eufy)**: I'm not too fond of cords, this vacuum frees you from them.
+- **<span class="hover-image-trigger" data-image="../images/shopping/eufy-cordless-vacuum-s11.png">Cordless Vacuum (Eufy S11)</span>**: I'm not too fond of cords, this vacuum frees you from them.
   - Cleaning the dirt from the container is straightforward.
   - Double filters.
   - There may be other models, but this is more than enough for my needs.
-- **Robot Vacuum (Eufy Twin Turbo)**: there are multiple options and most of the time it comes down to what you need. 
+- **<span class="hover-image-trigger" data-image="../images/shopping/eufy-twin-turbo-x8.png">Robot Vacuum (Eufy Twin Turbo X8)</span>**: there are multiple options and most of the time it comes down to what you need. 
   - If you have a pet you will need a bigger dust container, and you don't get that under 200 USD.
   - In some reviews laser is considered dumb. But that applies for small spaces, in big open spaces it helps a lot.
   - If the above it is your case, then the displayed model is a good match.
@@ -41,10 +41,10 @@ The products on this list are ones that I've truly put to the test and found inv
   - It provides reports on body fat, muscle mass, water percentage, and other key health indicators to help you track your progress.
   - Syncs with your phone via the Eufy Health App for easy tracking. Some models also offer WiFi syncing for added convenience.
   - This also allows you to track your history and progress over time.
-- **Ereader (Kindle)**: If I'm honest, I prefer real books, but the Kindle is easy on the eyes and offers a ton of convenience.
+- **<span class="hover-image-trigger" data-image="../images/shopping/kindle.png">Ereader (Kindle)</span>**: If I'm honest, I prefer real books, but the Kindle is easy on the eyes and offers a ton of convenience.
   - The book you're reading shows up as the Kindle's cover.
     - For users in Latin America, you may need to contact support to enable this feature, or pay a small fee to remove ads and display book covers instead.
-  - The battery lasts a long time, so you don’t have to worry about frequent charging.
+  - The battery lasts a long time, so you don't have to worry about frequent charging.
   - You can also upload other documents and convert them to Kindle-friendly formats like EPUB.
 
 ## Work Tech
@@ -81,9 +81,9 @@ The products on this list are ones that I've truly put to the test and found inv
 - **Fluorescent Tape**: Bright and practical.
 - **<span class="hover-image-trigger" data-image="../images/shopping/aliexpress-coin-cutter.png">Coin Cutter</span>**: Convenient for opening boxes and other things.
 
-## Tried and Regreted
+## Tried and Regretted
 
-- **Elgato Streamdeck**: It’s a cool gadget, but honestly, it's not that useful for me unless you’re into gaming or streaming. It can help a lot, but it’s often more effective to simplify your workflow rather than set up automation for everything.
+- **<span class="hover-image-trigger" data-image="../images/shopping/elgato-streamdeck-mk2.png">Elgato Stream Deck MK.2</span>**: It's a cool gadget, but honestly, it's not that useful for me unless you're into gaming or streaming. It can help a lot, but it's often more effective to simplify your workflow rather than set up automation for everything.
   - You can customize the buttons with different themes and assign them to tasks like running automation, launching apps, or even closing programs.
 
 <br>
