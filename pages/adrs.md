@@ -24,17 +24,22 @@ So, next time you're tempted to skip writing an ADR, remember: your future self 
 
 Look, I've seen more ADR templates than I've had hot dinners. But after years in the trenches, I've fine-tuned a format that actually works. It's lean, mean, and gets the job done. Here's the breakdown:
 
-In summary:
+🔍 Detailed Breakdown
 1. 🎯 Problem Statement: What's the itch we're scratching?
-2. 🤔 Considered Options: The good, the bad, and the "why didn't we think of this sooner?"
-3. 🏗️ Proposed Architecture: The chosen one, in all its glory.
+2. 🤔 Considered Options: The good, the bad, and the "why 
+didn't we think of this sooner?"
+3. 🏗️ Proposed Architecture: The chosen one, in all its 
+glory.
 4. 💥 Impact: Who's going to feel the ripples?
-5. 🚀 Adoption Plan: How we're going to make this baby fly.
+5. 🚀 Adoption Plan: How we're going to make this baby 
+fly.
 6. 🐛 Known Errors: Because forewarned is forearmed.
-7. ✅ Company Checklist: Dotting the i's and crossing the t's.
+7. ✅ Company Checklist: Dotting the i's and crossing the 
+t's.
 
 ## Problem Statement
 Set the stage for your decision. Paint a clear picture of why this ADR exists and what it aims to solve.
+
 
 Key points to cover:
 - 🔍 Context: What's the backstory that led to this decision point?
@@ -45,8 +50,26 @@ Key points to cover:
 - 🚩 Current Pain Points: What issues or inefficiencies are we addressing?
 - 🏋️ Constraints: Are there any limitations (budget, time, resources) we need to consider?
 
+Example:
+Our current monolithic application is struggling to scale with our growing user base. Response times have increased by 40% in the last quarter, and deploying new features has become a time-consuming process, often requiring full system restarts. We need to explore options to improve scalability and deployment efficiency without disrupting our existing user experience.
+
+
 ## Considered Options
 Don't just present the winner - show your work! Outline the contenders and why they made it to the final round.
+
+Example:
+We considered three main options:
+1. Vertical Scaling: Simply increasing our server capacity.
+   Pros: Quick to implement, no architectural changes.
+   Cons: Costly, doesn't solve underlying issues.
+
+2. Microservices Architecture: Breaking our monolith into smaller, independent services.
+   Pros: Improved scalability, easier deployments.
+   Cons: Complex to implement, requires significant refactoring.
+
+3. Serverless Architecture: Moving to a fully managed, event-driven model.
+   Pros: High scalability, pay-per-use pricing.
+   Cons: Vendor lock-in, potential cold start issues.
 
 Dive into:
 - 🧠 Brainstormed Ideas: What options did the team come up with?
@@ -59,6 +82,14 @@ Dive into:
 
 ## Proposed Architecture
 Here's where you unveil the chosen one. Explain why this solution is our knight in shining armor.
+
+Example:
+We propose adopting a microservices architecture, gradually breaking down our monolith into smaller, independently deployable services. We'll start by extracting our user authentication and product catalog as separate services, using Docker for containerization and Kubernetes for orchestration. This approach allows us to:
+- Scale services independently based on demand
+- Deploy updates more frequently with less risk
+- Improve fault isolation
+
+We'll use an API gateway to route requests to the appropriate microservices, maintaining a single entry point for our clients.
 
 Cover these bases:
 - 🏗️ Solution Overview: High-level description of the proposed architecture.
@@ -73,6 +104,13 @@ Cover these bases:
 ## Impact
 Time to put on your fortune-teller hat. What ripples will this decision create across our tech ocean?
 
+Example:
+The transition to microservices will have several impacts:
+- Performance: We expect a 30% improvement in response times for our most used features.
+- Team Structure: We'll need to reorganize into cross-functional teams aligned with specific services.
+- Learning Curve: The team will need training in microservices patterns, Docker, and Kubernetes.
+- Costs: Initial development costs will increase, but we anticipate long-term savings in scaling and maintenance.
+
 Predict these impacts:
 - ⏰ Downtime: Will there be any service interruptions? How can we minimize them?
 - 🎢 Performance: How will this affect system speed and efficiency?
@@ -85,6 +123,14 @@ Predict these impacts:
 
 ## Adoption Plan
 Plot the course from decision to implementation. This is your roadmap to success.
+
+Example:
+Our adoption plan spans 6 months:
+Month 1-2: Team training and proof of concept
+Month 3-4: Extract authentication service, test in production with 10% of traffic
+Month 5-6: Extract product catalog, gradually increase traffic to new services
+
+We'll use feature flags to easily roll back if we encounter issues, and we'll hold weekly team meetings to address challenges and share learnings.
 
 Outline these steps:
 - 📅 Timeline: Key milestones and deadlines.
@@ -99,6 +145,14 @@ Outline these steps:
 ## Known Errors
 Learn from the past to build a better future. Document the stumbling blocks we've already identified.
 
+Example:
+During our proof of concept, we encountered:
+- Data consistency issues between services
+- Increased latency due to network calls between services
+- Challenges in distributed logging and tracing
+
+We're addressing these by implementing event sourcing for data consistency, optimizing inter-service communication, and adopting a distributed tracing solution.
+
 Capture these details:
 - 🐛 Encountered Issues: What problems have we already run into?
 - 🔍 Root Causes: Why did these issues occur?
@@ -110,6 +164,12 @@ Capture these details:
 ## Company Checklist
 Dot your i's and cross your t's. Ensure we're aligned with company standards and best practices.
 
+Example:
+✅ Architecture review board approval obtained on 2023-06-15
+✅ Security team consulted, additional encryption requirements noted
+✅ New runbook created for microservices deployment process
+✅ Quarterly review scheduled to assess progress and adjust course if needed
+
 Don't forget to:
 - ✅ Standard Procedures: Have we followed all company-mandated processes?
 - 🔗 Related Resources: Link to relevant docs, MRs, or external references.
@@ -118,6 +178,9 @@ Don't forget to:
 - 🏷️ Tagging and Categorization: How should this ADR be labeled for easy future reference?
 - 📢 Announcement Plan: How will we communicate this decision to the wider org?
 - 🔄 Update Cycle: When should this ADR be reviewed and potentially updated?
+
+
+---
 
 # Example
 
