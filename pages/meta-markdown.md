@@ -69,38 +69,47 @@ This is what the page was made for.
 
 Here's a small square displaying the color `#ff6347` (Tomato):
 
-1. <div style="width: 10px; height: 10px; background-color: #ff6347; display: inline-block; border: 1px solid #000;"></div>
-2. <div class="color-square" style="background-color: #ff6347;"></div>
+1. <div class="color-square" style="background-color: #ff6347;" title="#ff6347 (Tomato)"></div>
 
-
+<div class="color-square" style="background-color: #ff6347;" title="#ff6347 (Tomato)"></div>
 
 <style>
 .color-square {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     display: inline-block;
     border: 1px solid #000;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.color-square:hover {
+    transform: scale(1.2);
 }
 </style>
 
 <details>
   <summary>> See Code</summary>
 
-  </code></pre>
-  1. <div style="width: 10px; height: 10px; background-color: #ff6347; display: inline-block; border: 1px solid #000;"></div>
+  ```html
+  1. <div class="color-square" style="background-color: #ff6347;" title="#ff6347 (Tomato)"></div>
   2. <div class="color-square" style="background-color: #ff6347;"></div>
 
 
 
   <style>
   .color-square {
-      width: 10px;
-      height: 10px;
+      width: 20px;
+      height: 20px;
       display: inline-block;
       border: 1px solid #000;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+  }
+  .color-square:hover {
+      transform: scale(1.2);
   }
   </style>
-  </code></pre>
+  ```
 </details> <br>
 
 ## Text Color
@@ -306,6 +315,7 @@ Markdown itself does not natively support expandable or collapsible sections. Ho
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.9);
+    display: flex;
     justify-content: center;
     align-items: center;
   }

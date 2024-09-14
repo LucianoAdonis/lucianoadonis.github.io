@@ -13,6 +13,8 @@ description: Things that might be useful for you too
 
 The products on this list are ones that I've truly put to the test and found invaluable.
 
+<br>  
+
 ## Organization
 
 - **<span class="hover-image-trigger" data-image="../images/shopping/label-maker.png">Label Maker (Brother P-Touch PTH110)</span>**: Perfect for categorizing and keeping things in order.
@@ -24,6 +26,8 @@ The products on this list are ones that I've truly put to the test and found inv
 
 - **<span class="hover-image-trigger" data-image="../images/shopping/plastic-box-wenco.png">Transparent Boxes (Wenco)</span>**: I prefer clear boxes because they allow me to see what's inside.
   - Even with transparent boxes, labels are a game-changer when stacked or stored at angles.
+
+<br>  
 
 ## Cleaning & Lifestyle
 
@@ -37,22 +41,30 @@ The products on this list are ones that I've truly put to the test and found inv
   - If you have a pet you will need a bigger dust container, and you don't get that under 200 USD.
   - In some reviews laser is considered dumb. But that applies for small spaces, in big open spaces it helps a lot.
   - If the above it is your case, then the displayed model is a good match.
-- **Scale (Eufy Smart Scale)**: A convenient tool to get detailed metrics about your body.
+- **<span class="hover-image-trigger" data-image="../images/shopping/eufy-scale.png">Scale (Eufy Smart Scale)</span>**: A convenient tool to get detailed metrics about your body.
   - It provides reports on body fat, muscle mass, water percentage, and other key health indicators to help you track your progress.
   - Syncs with your phone via the Eufy Health App for easy tracking. Some models also offer WiFi syncing for added convenience.
   - This also allows you to track your history and progress over time.
+  - Supports multiple user profiles.
 - **<span class="hover-image-trigger" data-image="../images/shopping/kindle.png">Ereader (Kindle)</span>**: If I'm honest, I prefer real books, but the Kindle is easy on the eyes and offers a ton of convenience.
   - The book you're reading shows up as the Kindle's cover.
     - For users in Latin America, you may need to contact support to enable this feature, or pay a small fee to remove ads and display book covers instead.
   - The battery lasts a long time, so you don't have to worry about frequent charging.
   - You can also upload other documents and convert them to Kindle-friendly formats like EPUB.
 
+<br>  
+
 ## Work Tech
 
 - **Mouse (Apple Trackpad)**: For an authentic gaming experience and the satisfaction of drawing on a shared screen.
-- **In-ear Headphones (AirPods Pro)**: "I don't like cords. They're coarse, rough, irritating, and they get everywhere."
+- **<span class="hover-image-trigger" data-image="../images/shopping/airpods-pro-second-generation.png">In-ear Headphones (AirPods Pro 2nd Gen)</span>**: "I don't like cords. They're coarse, rough, irritating, and they get everywhere."
   - I love the transparency feature and being able to listen to music without being uncomfortable.
-- **Curved Monitor (Samsung Curved 34")**: You won't be able to work at the same level with one screen.
+  - The noise cancellation is excellent for focusing in noisy environments.
+- **<span class="hover-image-trigger" data-image="../images/shopping/curved-monitor-samsung-ultrawide.png">Curved Monitor (Samsung Ultrawide 34")</span>**: You won't be able to work at the same level with one screen.
+  - The curved design provides a more immersive experience and reduces eye strain.
+  - Ultrawide aspect ratio is great for multitasking and productivity.
+  - Perfect for side-by-side document viewing or coding.
+  - Reduces the need for multiple monitors, saving desk space.
 - **<span class="hover-image-trigger" data-image="../images/shopping/laser-printer.png">Laser Printer (Brother)</span>**:  The best choice if you're tired of unreliable printers.
   - Unlike inkjet printers that use liquid ink, laser printers use toner, a fine powder that is bonded to the paper through heat and magnetism.
     - This method makes the print more durable and avoids issues like dried-out cartridges.
@@ -66,6 +78,7 @@ The products on this list are ones that I've truly put to the test and found inv
   - It comes with multiple cable lengths and several tip types for each main phone cable. You can also purchase additional heads separately.
   - Especially handy for anyone who prefers not to fiddle with different cables, making it perfect for older or less tech-savvy users.
 
+<br>
 
 ## Aliexpress
 
