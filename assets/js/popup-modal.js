@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Event delegation for clickable images
   document.body.addEventListener('click', function (event) {
-    if (event.target.classList.contains('hover-image')) {
+    if (event.target.classList.contains('myImg')) {
       const imgSrc = event.target.getAttribute('src');
       if (imgSrc) {
         modal.style.display = 'block';

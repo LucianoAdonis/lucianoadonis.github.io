@@ -17,7 +17,7 @@
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1000; /* Sit on top */
-  padding-top: 60px; /* Position modal 60px from the top */
+  padding-top: 50px; /* Position modal 50px from the top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -30,8 +30,8 @@
 .modal-content {
   margin: auto;
   display: block;
-  width: 90%; /* Larger width */
-  max-width: 1000px; /* Max width increased */
+  width: 80%; /* Increased from default (usually 60-70%) */
+  max-width: 90%; /* Ensure it doesn't get too large on big screens */
 }
 
 /* The Close Button */
@@ -39,7 +39,7 @@
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #fff;
+  color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -231,4 +231,11 @@ details[open] summary::before {
   padding: 5px;
   max-width: 150px;
   max-height: 150px;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
 }

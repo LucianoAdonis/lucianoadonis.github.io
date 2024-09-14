@@ -37,15 +37,18 @@ The products on this list are ones that I've truly put to the test and found inv
   - Cleaning the dirt from the container is straightforward.
   - Double filters.
   - There may be other models, but this is more than enough for my needs.
+
 - **<span class="hover-image-trigger" data-image="../images/shopping/eufy-twin-turbo-x8.png">Robot Vacuum (Eufy Twin Turbo X8)</span>**: there are multiple options and most of the time it comes down to what you need. 
   - If you have a pet you will need a bigger dust container, and you don't get that under 200 USD.
   - In some reviews laser is considered dumb. But that applies for small spaces, in big open spaces it helps a lot.
   - If the above it is your case, then the displayed model is a good match.
+
 - **<span class="hover-image-trigger" data-image="../images/shopping/eufy-scale.png">Scale (Eufy Smart Scale)</span>**: A convenient tool to get detailed metrics about your body.
   - It provides reports on body fat, muscle mass, water percentage, and other key health indicators to help you track your progress.
   - Syncs with your phone via the Eufy Health App for easy tracking. Some models also offer WiFi syncing for added convenience.
   - This also allows you to track your history and progress over time.
   - Supports multiple user profiles.
+
 - **<span class="hover-image-trigger" data-image="../images/shopping/kindle.png">Ereader (Kindle)</span>**: If I'm honest, I prefer real books, but the Kindle is easy on the eyes and offers a ton of convenience.
   - The book you're reading shows up as the Kindle's cover.
     - For users in Latin America, you may need to contact support to enable this feature, or pay a small fee to remove ads and display book covers instead.
@@ -56,15 +59,21 @@ The products on this list are ones that I've truly put to the test and found inv
 
 ## Work Tech
 
-- **Mouse (Apple Trackpad)**: For an authentic gaming experience and the satisfaction of drawing on a shared screen.
+- **<span class="hover-image-trigger" data-image="../images/shopping/apple-trackpad.png">Mouse (Apple Magic Trackpad)</span>**: For an authentic gaming 
+experience and the satisfaction of drawing on a shared 
+screen.
+  - Large surface area for comfortable use and multi-touch gestures.
+
 - **<span class="hover-image-trigger" data-image="../images/shopping/airpods-pro-second-generation.png">In-ear Headphones (AirPods Pro 2nd Gen)</span>**: "I don't like cords. They're coarse, rough, irritating, and they get everywhere."
   - I love the transparency feature and being able to listen to music without being uncomfortable.
   - The noise cancellation is excellent for focusing in noisy environments.
+
 - **<span class="hover-image-trigger" data-image="../images/shopping/curved-monitor-samsung-ultrawide.png">Curved Monitor (Samsung Ultrawide 34")</span>**: You won't be able to work at the same level with one screen.
   - The curved design provides a more immersive experience and reduces eye strain.
   - Ultrawide aspect ratio is great for multitasking and productivity.
   - Perfect for side-by-side document viewing or coding.
   - Reduces the need for multiple monitors, saving desk space.
+
 - **<span class="hover-image-trigger" data-image="../images/shopping/laser-printer.png">Laser Printer (Brother)</span>**:  The best choice if you're tired of unreliable printers.
   - Unlike inkjet printers that use liquid ink, laser printers use toner, a fine powder that is bonded to the paper through heat and magnetism.
     - This method makes the print more durable and avoids issues like dried-out cartridges.
@@ -73,6 +82,7 @@ The products on this list are ones that I've truly put to the test and found inv
   - Reliable and efficient.
   - My model has an additional paper storage container. It’s essentially an extension to hold extra pages, which keeps them dust-free.
     - It’s also easy to remove—just a simple cover for the papers that stick out from the printer.
+
 - **<span class="hover-image-trigger" data-image="../images/shopping/magnetic-cables.png">Magnetic Charging Cables (Ankndo)</span>**: These are essentially magnetic cables with interchangeable tips for different connectors to leave the adapter in your devices.
   - A great way to standardize charging for multiple devices that use Micro USB, USB-C, and Lightning, _one cable to rule them all_.
   - It comes with multiple cable lengths and several tip types for each main phone cable. You can also purchase additional heads separately.
