@@ -11,7 +11,7 @@ At work, I get to connect with all kinds of interesting people and dive into a v
 ### Optimization
 
 - [Slack Mastery: Communicate, Collaborate, and Conquer](./pages/slack.md): SOON.
-- [Shopping](./pages/shopping.md): recommended products!
+- [Buy it for Life](./pages/shopping.md): recommended products!
 
 ### Documentation
 
