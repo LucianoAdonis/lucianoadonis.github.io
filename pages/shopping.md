@@ -104,10 +104,18 @@ screen.
 - **Fluorescent Tape**: Bright and practical.
 - **<span class="hover-image-trigger" data-image="../images/shopping/aliexpress-coin-cutter.png">Coin Cutter</span>**: Convenient for opening boxes and other things.
 
+## House Tools
+
+- **<span class="hover-image-trigger" data-image="../images/shopping/makita-cordless-screwdriver.png">Cordless Screwdriver (Makita)</span>**: It's like a first aid kit but for furniture and other things that have screw on them.
+  - It is not much of an investment but your hands will appreciate it in the long run.
+
+<br>
+
 ## Tried and Regretted
 
 - **<span class="hover-image-trigger" data-image="../images/shopping/elgato-streamdeck-mk2.png">Elgato Stream Deck MK.2</span>**: It's a cool gadget, but honestly, it's not that useful for me unless you're into gaming or streaming. It can help a lot, but it's often more effective to simplify your workflow rather than set up automation for everything.
   - You can customize the buttons with different themes and assign them to tasks like running automation, launching apps, or even closing programs.
+  - Cordless, what else you need? Also the battery last a lot.
 
 <br>
 
