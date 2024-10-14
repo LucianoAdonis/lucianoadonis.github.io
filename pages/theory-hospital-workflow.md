@@ -75,57 +75,77 @@ By applying triage in tech, you can ensure that critical problems are resolved f
 
 To define roles for your "tech doctors" (engineers) within the context of your emergency room analogy, it’s important to focus on their responsibilities during high-pressure incidents and structure teams based on specialized expertise and cross-functional capabilities. Here’s a breakdown of potential roles, inspired by hospital roles, that can help structure an engineering team to work efficiently during incidents:
 
-1. Incident Commander (Lead Doctor / Emergency Room Attending)
-Role: This person is the overall leader during an incident, overseeing the entire operation. They make the final decisions and coordinate efforts across the team. They have the broadest view of the situation and ensure that resources are used effectively.
-Responsibilities:
-Directing the response to major incidents.
-Making decisions on priorities and allocating resources (like which team works on what issue).
-Communicating with stakeholders, such as management, customers, or other departments.
-Ensuring that the team is focused on resolving the most critical issues first.
+## Incident Commander (Lead Doctor / Emergency Room Attending)
+
+- Role: This person is the overall leader during an incident, overseeing the entire operation. They make the final decisions and coordinate efforts across the team. They have the broadest view of the situation and ensure that resources are used effectively.
+- Responsibilities:
+  - Directing the response to major incidents.
+  - Making decisions on priorities and allocating resources (like which team works on what issue).
+  - Communicating with stakeholders, such as management, customers, or other departments.
+  - Ensuring that the team is focused on resolving the most critical issues first.
+
 Example in Tech: The Incident Commander would be the "lead engineer" or tech lead during a system outage, coordinating the efforts of different teams.
-2. Subject Matter Experts (Specialist Doctors)
-Role: These are the engineers who are deeply specialized in specific areas, like database management, network infrastructure, or security. When an incident falls within their area of expertise, they take charge of diagnosing and resolving that specific issue.
-Responsibilities:
-Providing expertise in their specific domain to resolve the issue at hand.
-Diagnosing the root cause of the incident within their area.
-Implementing fixes or guiding generalists in applying solutions.
+
+## Subject Matter Experts (Specialist Doctors)
+
+- Role: These are the engineers who are deeply specialized in specific areas, like database management, network infrastructure, or security. When an incident falls within their area of expertise, they take charge of diagnosing and resolving that specific issue.
+- Responsibilities:
+  - Providing expertise in their specific domain to resolve the issue at hand.
+  - Diagnosing the root cause of the incident within their area.
+  - Implementing fixes or guiding generalists in applying solutions.
+
 Example in Tech: During a database failure, the Database SME would take the lead in restoring the database while working alongside others to ensure system-wide recovery.
-3. Generalist Engineers (Emergency Room Nurses)
-Role: Like nurses who can handle a range of tasks in the ER, generalist engineers are skilled in multiple areas but don’t specialize deeply in one. They assist the specialists in fixing the immediate issue and ensure smooth operations in non-critical areas.
-Responsibilities:
-Supporting the specialists by handling secondary tasks.
-Applying fixes that don’t require deep expertise but are necessary to keep the system functioning.
-Providing backup support in areas where they have some knowledge, especially during large-scale incidents.
+
+## Generalist Engineers (Emergency Room Nurses)
+
+- Role: Like nurses who can handle a range of tasks in the ER, generalist engineers are skilled in multiple areas but don’t specialize deeply in one. They assist the specialists in fixing the immediate issue and ensure smooth operations in non-critical areas.
+- Responsibilities:
+  - Supporting the specialists by handling secondary tasks.
+  - Applying fixes that don’t require deep expertise but are necessary to keep the system functioning.
+  - Providing backup support in areas where they have some knowledge, especially during large-scale incidents.
+
 Example in Tech: A generalist might be able to handle simple database maintenance, network reconfiguration, or server resets to relieve the specialist for more complex tasks.
-4. Triage Engineer (Triage Nurse / Dispatcher)
-Role: This engineer assesses the incoming issues, classifies them based on severity, and ensures that the right people are working on the most critical problems. They are often the first to interact with the incident report and determine the level of urgency.
-Responsibilities:
-Classifying incidents based on priority (critical, high, medium, low).
-Assigning incidents to the appropriate team members or specialists.
-Monitoring the overall system to spot issues early and escalate as needed.
-Continuously reassessing issues if new information arises, or if a situation deteriorates.
+
+## Triage Engineer (Triage Nurse / Dispatcher)
+
+- Role: This engineer assesses the incoming issues, classifies them based on severity, and ensures that the right people are working on the most critical problems. They are often the first to interact with the incident report and determine the level of urgency.
+- Responsibilities:
+  - Classifying incidents based on priority (critical, high, medium, low).
+  - Assigning incidents to the appropriate team members or specialists.
+  - Monitoring the overall system to spot issues early and escalate as needed.
+  - Continuously reassessing issues if new information arises, or if a situation deteriorates.
+
 Example in Tech: A Triage Engineer could be the first responder to monitor system alerts or support tickets, making sure they’re appropriately routed to the team that can solve the problem fastest.
-5. Communications Officer (ER Coordinator / Patient Liaison)
-Role: Much like a hospital ER coordinator, this person is responsible for maintaining clear communication with external teams, departments, or stakeholders during the incident. They ensure that critical information is communicated effectively and that non-technical teams understand the situation.
-Responsibilities:
-Keeping management, customers, and other stakeholders informed of the incident's status.
-Relaying key information between the tech team and external teams (e.g., business, product, or customer success).
-Ensuring that the Incident Commander and the rest of the team aren’t overwhelmed by communication tasks.
+
+## Communications Officer (ER Coordinator / Patient Liaison)
+
+- Role: Much like a hospital ER coordinator, this person is responsible for maintaining clear communication with external teams, departments, or stakeholders during the incident. They ensure that critical information is communicated effectively and that non-technical teams understand the situation.
+- Responsibilities:
+  - Keeping management, customers, and other stakeholders informed of the incident's status.
+  - Relaying key information between the tech team and external teams (e.g., business, product, or customer success).
+  - Ensuring that the Incident Commander and the rest of the team aren’t overwhelmed by communication tasks.
+
 Example in Tech: A Communications Officer could update a status page, inform leadership, and handle any customer-facing messaging during a major system outage, letting the engineers focus on resolving the problem.
-6. Support Engineer (Resident Doctor / Intern)
-Role: Support engineers are less experienced but can still handle important tasks under supervision. Like residents in a hospital, they assist with simpler tasks, learn from the specialists, and develop their skills in a high-pressure environment.
-Responsibilities:
-Handling smaller, non-critical tasks that free up senior engineers to focus on the main incident.
-Assisting senior engineers by gathering data or running diagnostics.
-Learning on the job by working closely with more experienced engineers.
+
+## Support Engineer (Resident Doctor / Intern)
+
+- Role: Support engineers are less experienced but can still handle important tasks under supervision. Like residents in a hospital, they assist with simpler tasks, learn from the specialists, and develop their skills in a high-pressure environment.
+- Responsibilities:
+  - Handling smaller, non-critical tasks that free up senior engineers to focus on the main incident.
+  - Assisting senior engineers by gathering data or running diagnostics.
+  - Learning on the job by working closely with more experienced engineers.
+
 Example in Tech: A junior support engineer might handle lower-priority tasks like checking logs, restarting services, or monitoring system health during an incident.
-7. Post-Incident Analyst (Post-Op Team)
-Role: After the incident is resolved, this role focuses on analyzing what happened, what went right, and what went wrong. Their job is to ensure that lessons are learned and applied to improve the response for future incidents.
-Responsibilities:
-Conducting a detailed post-incident review.
-Identifying the root cause of the incident and how it could have been prevented.
-Proposing changes to processes, tools, or training based on the findings.
-Organizing a debrief session with the entire team to gather feedback.
+
+## Post-Incident Analyst (Post-Op Team)
+
+- Role: After the incident is resolved, this role focuses on analyzing what happened, what went right, and what went wrong. Their job is to ensure that lessons are learned and applied to improve the response for future incidents.
+- Responsibilities:
+  - Conducting a detailed post-incident review.
+  - Identifying the root cause of the incident and how it could have been prevented.
+  - Proposing changes to processes, tools, or training based on the findings.
+  - Organizing a debrief session with the entire team to gather feedback.
+
 Example in Tech: A Post-Incident Analyst might lead a blameless postmortem meeting after an outage, focusing on system improvements and process refinements.
 
 
