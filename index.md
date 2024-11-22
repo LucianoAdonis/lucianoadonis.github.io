@@ -49,12 +49,17 @@ Personal suggestions to improve your quality of life at work.
 
 GitHub Gists containing some degree of wisdom and free time.
 
-- <a href="https://gist.github.com/LucianoAdonis/be46fd68a6324a9777385b8982885cc3" target="_blank">Chrome Plugins</a>
-- <a href="https://gist.github.com/LucianoAdonis/4a711db16b8eef7a24c5e66110ba644e" target="_blank">VSCode Settings to Make Life Better</a>
-- <a href="https://gist.github.com/LucianoAdonis/43a43e5b80515abb828ceb1d3dca2258" target="_blank">Brewfile</a>
-- <a href="https://gist.github.com/LucianoAdonis/93f008e9bf92b0dbcdd5d2ee03f37535" target="_blank">Edition Tools</a>
-- <a href="https://gist.github.com/LucianoAdonis/2fdc70716cc00e7d584494b0beafc985" target="_blank">Sublime Customization</a>
-- <a href="https://gist.github.com/LucianoAdonis/91398d78df653e6a2d4969c87261b184" target="_blank">Team Building Activities</a>
+- Configurations:
+    - <a href="https://gist.github.com/LucianoAdonis/be46fd68a6324a9777385b8982885cc3" target="_blank">Chrome Plugins</a>
+    - <a href="https://gist.github.com/LucianoAdonis/4a711db16b8eef7a24c5e66110ba644e" target="_blank">VSCode Settings to Make Life Better</a>
+    - <a href="https://gist.github.com/LucianoAdonis/43a43e5b80515abb828ceb1d3dca2258" target="_blank">Brewfile</a>
+    - <a href="https://gist.github.com/LucianoAdonis/2fdc70716cc00e7d584494b0beafc985" target="_blank">Sublime Customization</a>
+
+- Random Stuff:
+    - <a href="https://gist.github.com/LucianoAdonis/24888d407bec9e59c9cfc460a866b163" target="_blank">Cool Pages</a>
+    - <a href="https://gist.github.com/LucianoAdonis/93f008e9bf92b0dbcdd5d2ee03f37535" target="_blank">Edition Tools and Sites</a>
+    - <a href="https://gist.github.com/LucianoAdonis/91398d78df653e6a2d4969c87261b184" target="_blank">Team Building Activities</a>
+        - <a href="https://gist.github.com/LucianoAdonis/da2d0e3b8cea63407eb0a181bf30985f" target="_blank">Music to Describe Your Sprint</a>
 
 ---
 
