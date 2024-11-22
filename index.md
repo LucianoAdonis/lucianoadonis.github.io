@@ -10,15 +10,19 @@ At work, I get to connect with all kinds of interesting people and dive into a v
 
 ### Optimization
 
-- [Slack Mastery: Communicate, Collaborate, and Conquer](./pages/slack.md): SOON.
 - [Buy it for Life](./pages/shopping.md): recommended products!
+- [Slack Mastery: Communicate, Collaborate, and Conquer](./pages/slack.md): EVENTUALLY.
 
 ### Documentation
 
 - [Confluence](./pages/confluence.md): compendium.
 - [ADRs](./pages/adrs.md): Document that will save you a lot of trouble down the line.
 - [Writing Advise](./pages/writing.md)
-- **Documentation Patterns**: SOON.
+- **Documentation Patterns**: EVENTUALLY.
+- **IA Partially Generated**: to lazy to get into details, take them as source of inspiration.
+    - [Requesting Assistance](./pages/advice-communications-assistance.md).
+    - [Expressing Things](./pages/advice-communications-expressing-things.md).
+    - [Expressions](./pages/advice-communications-expressions.md).
 
 ### Self-Help
 
@@ -26,14 +30,14 @@ Anything related to more behavior
 
 - [A Playthrough Guide for Interviews and Work](./pages/ds-interviews): it won't land you a job right of the bat but it will definetily be more useful than many guides out there.
 - [Troubleshooting](./pages/troubleshooting): knowing is the first step.
-- **Communication**: SOON.
+- **Communication**: EVENTUALLY.
 
 ### Mentoring
 
 Personal suggestions to improve your quality of life at work.
 
-- [Obsidian](./pages/obsidian.md): SOON.
-- [Digital Life](./pages/digital-life.md): SOON.
+- [Obsidian](./pages/obsidian.md): EVENTUALLY.
+- [Digital Life](./pages/digital-life.md): EVENTUALLY.
 
 ### Meta
 

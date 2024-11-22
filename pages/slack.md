@@ -23,7 +23,23 @@ You can also personalize sections with Emojis. I tend to assign emojis that matc
 
 I like the example of a coworker that uses pokemons to identify each group.
 
-## Theme
+## Visual Organization
+
+### Emoji Strategy
+Use consistent emoji prefixes for quick visual identification:
+- 🔴 Critical/Production
+- 🟡 Development/Staging
+- 🟢 General/Information
+- 🔧 Technical
+- 🎯 Projects
+- 📢 Announcements
+
+### Custom Themes
+
+Theme recommendations:
+- Dark mode: #1A1D21,#232529,#2F3136,#FFFFFF
+- Light mode: #FFFFFF,#F8F8F8,#2F3136,#1A1D21
+- Accessible: High contrast themes for better readability
 
 Style above else, it doesn't have bright colors I don't want to use it.
 
@@ -34,26 +50,108 @@ Creating a Slack User Group for your team or a group can significantly simplify 
 - Avoid the need to tag all team members individually when asking questions or making announcements. Less dependency on one team member and less awkwarness when reaching out to a team and tagging each person.
 
 
-# Channels
+## Channels
 
-### Suggested Channel Organization
-If you don’t have a list of channels (refer to the Team Context section), consider adding them progressively in the following order:
-1. **Infrastructure Channels and Internal Groups:** These could include channels related to core systems, internal discussions, and technical operations.
-2. **Squad Channels:** Channels dedicated to your squad's activities, such as Scrum meetings, DevOps tasks, and notifications.
-3. **External Teams:** Include channels for communication with external teams or services, like MyID, Datadog, O11Y, Bespin, or any other necessary integrations.
+### Essential Channels Setup
 
-## Pin Important Messages
-Use the pin feature to keep crucial messages at the top of a channel for easy access. This is particularly useful for quick reference to documents, key decisions, or ongoing discussions.
+1. **Team Operations**
+   - `#team-standups`: Daily meetings
+   - `#team-announcements`: Important updates
+   - `#team-social`: Non-work discussions
 
-## Set Channel Purposes and Topics
-Clearly define the purpose and topic of each channel. This helps new members quickly understand the channel's focus and reduces off-topic discussions.
+2. **Technical Channels**
+   - `#tech-architecture`: Design discussions
+   - `#tech-reviews`: Code reviews
+   - `#tech-deployments`: Release coordination
 
-## Use Threads to Keep Discussions Organized
-Encourage the use of threads to keep conversations within a channel organized. Threads help in maintaining clarity by containing specific discussions within a single message, preventing the main channel from becoming cluttered.
+3. **Support Channels**
+   - `#help-technical`: Technical assistance
+   - `#help-access`: Access requests
+   - `#help-oncall`: Emergency support
 
-## Mute Channels to Reduce Noise
-If you’re part of channels that aren’t immediately relevant but still need to be monitored, consider muting them. This way, you won’t receive notifications, but you can still check in when necessary.
+## Notification Management
 
+### Priority Settings
+Priority Levels:
+1. All messages
+2. Direct messages & mentions
+3. Nothing
 
-## Use the “Do Not Disturb” Mode
-Enable “Do Not Disturb” mode during focused work sessions to silence notifications. You can also schedule “Do Not Disturb” hours to ensure uninterrupted time during and outside of work hours.
+### Do Not Disturb Schedule
+Recommended Settings:
+• Working hours: 9:00 AM - 5:00 PM
+• Focus time: 2-hour blocks
+• After hours: Automated response
+
+## Message Organization
+
+### Pinned Items Structure
+📌 Pinned Content:
+1. Team agreements
+2. On-call schedule
+3. Important links
+4. Emergency procedures
+5. Team documentation
+
+### Thread Best Practices
+- Start threads for:
+  - Technical discussions
+  - Problem-solving
+  - Multiple responses
+  - Status updates
+
+## User Groups (`@handle`)
+
+### Group Structure
+@team-all: Everyone in the team
+@team-dev: Developers
+@team-ops: Operations
+@team-leads: Team leads
+@team-oncall: Current on-call
+
+### Custom Statuses
+🟢 Available
+🟡 In meeting
+🔴 Do not disturb
+⏰ Be right back
+🌙 After hours
+
+# Advanced Features
+
+## Workflow Automation
+- Set up reminders for recurring tasks
+- Create custom slash commands
+- Integrate with development tools
+- Automate status updates
+
+## Search Optimization
+Search modifiers:
+in:#channel
+from:@user
+before:2024-03-21
+has:link
+has:reaction
+
+## Keyboard Shortcuts
+Essential shortcuts:
+Cmd/Ctrl + K: Quick switcher
+Cmd/Ctrl + /: View all shortcuts
+Cmd/Ctrl + Shift + A: All unreads
+Cmd/Ctrl + ]: Next unread channel
+
+# Best Practices
+
+1. **Channel Management**
+   - Archive inactive channels
+   - Regular cleanup of pinned items
+   - Update channel topics weekly
+
+2. **Communication**
+   - Use threads for discussions
+   - Keep messages concise
+   - Use formatting for readability
+
+3. **Organization**
+   - Regular workspace audit
+   - Consistent naming conventions
+   - Clear channel purposes
