@@ -120,6 +120,9 @@ screen.
 
 - **<span class="hover-image-trigger" data-image="../images/shopping/elgato-streamdeck-mk2.png">Elgato Stream Deck MK.2</span>**: It's a cool gadget, but honestly, it's not that useful for me unless you're into gaming or streaming. It can help a lot, but it's often more effective to simplify your workflow rather than set up automation for everything.
   - You can customize the buttons with different themes and assign them to tasks like running automation, launching apps, or even closing programs.
+- **<span class="hover-image-trigger" data-image="../images/shopping/lifesmart-cololight-strip.png">LifeSmart ColoLight, 60 Leds</span>**: it's a good product if you like lights and bright colors, but it isn't for me.
+  - It's extensible and doesn't require welding to do expand it as it has defined connectors.
+  - Price is awful but understandable.
 
 
 <br>
