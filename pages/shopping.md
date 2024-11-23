@@ -31,7 +31,7 @@ The products on this list are ones that I've truly put to the test and found inv
 
 ## Cleaning & Lifestyle
 
-- **Air Fryer**: can revive bread and make it feel fresh. What else do you want?
+- **<span class="hover-image-trigger" data-image="../images/shopping/instant-vortex-mini-air-fryer.png">Air Fryer (Instant Vortex Mini)</span>**: can revive bread and make it feel fresh. What else do you want?
   - It's also incredible to fry other foods.
 - **<span class="hover-image-trigger" data-image="../images/shopping/eufy-cordless-vacuum-s11.png">Cordless Vacuum (Eufy S11)</span>**: I'm not too fond of cords, this vacuum frees you from them.
   - Cleaning the dirt from the container is straightforward.
@@ -95,7 +95,7 @@ screen.
 - **<span class="hover-image-trigger" data-image="../images/shopping/aliexpress-foam-machine.png">Foam Washing Machine</span>**: I can't recommend this enough.
   - I tried soap dispensers, but they were a hassle. The foam dispenser, however, works perfectly.
 
-- **Solar Lights**: Exceeded my expectations, and work better than I imagined.
+- **<span class="hover-image-trigger" data-image="../images/shopping/amaryllis-solar-light.png">Garage Solar Light</span>**: Exceeded my expectations, and work better than I imagined.
 - **Rechargeable Lights for Hallways and Other Spaces**: No more bumping into furniture in the dark.
   - When paired with the **Magnetic Charging Cables (Ankndo)**, it makes life even easier.
 - **<span class="hover-image-trigger" data-image="../images/shopping/aliexpress-extendable-arm.png">Extendable Arm</span>**: A versatile and adjustable arm for mounting devices or accessories.

@@ -39,6 +39,10 @@ Personal suggestions to improve your quality of life at work.
 - [Obsidian](./pages/obsidian.md): EVENTUALLY.
 - [Digital Life](./pages/digital-life.md): EVENTUALLY.
 
+### Theories and Thesis
+
+- [The Core Five](./pages/thesis-the-core-five.md): EVENTUALLY.
+
 ### Meta
 
 - [Markdown](./pages/meta-markdown.md): examples of interesting things that I had to use to make some pages from this site.
