@@ -14,53 +14,86 @@ description: Time for some character development
 
 ---
 
-<img class="myImg" src="../images/interviews/main-menu.png" alt="main-menu" style="cursor: pointer;">
-
----
-
 # The Core Five
 
 <img class="myImg" src="../images/thesis/the-core-five-1.png" alt="pthe-core-five-1" style="border: 0px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
-- **Power**: Expertise in one or multiple fields, Time available to improve, Focus.
-- **Range**: Scope of solutions Reusability, Efficacy.
-- **Foresight**: Anticipation, Planification, Risk Management.
-- **Insight**: Context, Company and Standard knowledge.
-- **Versatility**: Readapt, reuse to multiple scenarios.
-- **Speed**: Delivery Time,  Engagement.
+Dividing skills into just "soft" and "technical" feels like an oversimplification, especially in the tech world. These labels don’t capture the full complexity of what it takes to thrive in modern roles, where the lines between expertise, collaboration, and creativity are increasingly blurred.
 
+Based on my experience working with teams in big companies I had divided the categories into six dimensions:
 
-It's not about the thing that you are an expert with, it's about the qualities that you have.
+- **<span class="hover-image-trigger" data-image="../images/thesis/item-core-power.png">Power</span>**: Expertise in one or multiple fields, Time available to improve, Focus.
+- **<span class="hover-image-trigger" data-image="../images/thesis/item-core-range.png">Range</span>**: Scope of solutions Reusability, Efficacy.
+- **<span class="hover-image-trigger" data-image="../images/thesis/item-core-foresight.png">Foresight</span>**: Anticipation, Planification, Risk Management.
+- **<span class="hover-image-trigger" data-image="../images/thesis/item-core-insight.png">Insight</span>**: Context, Company and Standard knowledge.
+- **<span class="hover-image-trigger" data-image="../images/thesis/item-core-versatility.png">Versatility</span>**: Readapt, reuse to multiple scenarios.
+- **<span class="hover-image-trigger" data-image="../images/thesis/item-core-speed.png">Speed</span>**: Delivery Time,  Engagement.
 
-## The Speaker
+These dimensions provide a more complete view of the abilities required for tech jobs, where success often comes from the interplay of strengths rather than isolated skills. By focusing on these, we can better evaluate, develop, and celebrate the unique contributions that every individual brings.
+
+## About The Speaker
 
 <img class="myImg" src="../images/thesis/the-core-five-2.png" alt="pthe-core-five-2" style="border: 0px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
-In my personal opinion I'm well balanced, at the point that some things are no longer fun. 
+In my personal view, I’ve reached a level of balance where some things no longer feel as exciting. It’s an interesting paradox: achieving proficiency can sometimes take away the thrill of the journey.
 
-Even with multiple advantages, and the combination of skills, the real magic comes from the elements added by people. These can range from ideas, actitudes or even memes.
+Despite having multiple advantages and a blend of skills, I’ve come to realize that the true magic comes from the unique elements that people bring to the table. These contributions—whether they are fresh ideas, attitudes, or even lighthearted memes—are what make collaboration dynamic and impactful.
 
-I've leverage my speed a lot to get the advantage and overcome challenges in the past, that's why I have the notion that it's not just raw "power" what can get you results. So it's sad to think of people that can't make it because they don't fall under the common categories.
+Personally, I’ve leaned heavily on speed to gain an edge and tackle challenges in the past. This experience has taught me that success isn’t just about raw “power” or expertise—it’s about leveraging all dimensions of ability. It’s disheartening to think of talented individuals being overlooked simply because they don’t fit into traditional molds or categories.
 
-## Combinations
-
-<img class="myImg" src="../images/thesis/the-core-five-3.png" alt="pthe-core-five-3" style="border: 0px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
-
-Compensating it's not that bad as it seems.
-
-- Versatility + Speed: can compensate Power.
-- Power + Speed: can compensate Versatility.
-- Power + Versatility: can compensate Speed.
-- Range requires more, but it is possible.
 
 
 # Potentiation
 
+<img class="myImg" src="../images/thesis/the-core-five-4.png" alt="pthe-core-five-4" style="border: 0px solid #000; border-radius: 0px; padding: 5px; cursor: pointer;">
+
+Focusing solely on enforcing shared skills across the board often leads to inefficiencies and wasted effort. Instead, addressing and bridging gaps can unlock potential and drive better outcomes.
+
+This doesn’t mean that studying and improving foundational skills aren’t important—quite the opposite. The key lies in balancing individual strengths while strategically filling in areas of weakness. When gaps are acknowledged and worked on, the result is a more cohesive and high-performing team or individual.
+
 <img class="myImg" src="../images/thesis/the-core-five-4a.png" alt="pthe-core-five-4a" style="border: 0px solid #000; border-radius: 0px; padding: 5px; cursor: pointer;">
 
-Enforcing to reach the level of shared skills will only lead to waste, on contrary, working on the gaps can potentiate and lead to better results. This doesn't mean that studying isn't important.
+## Starting Point
 
-<img class="myImg" src="../images/thesis/the-core-five-4b.png" alt="pthe-core-five-4b" style="border: 0px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+Ideally, your company or direct lead should provide a clear roadmap for improving technical skills. In the worst-case scenario, there should at least be some guidance on the expected outcomes for the role and areas requiring improvement, assuming that feedback is part of the equation.
+
+Now, let’s imagine you do have a roadmap. It’s well-designed, supplemented by structured training programs, and supported by a mentorship system to track the technical progress. Even then, it’s not enough.
+
+If it were that simple, providing a few licenses for curated programs or courses should suffice to elevate skills and ensure people perform at the expected level for their roles. While access to these resources is valuable, true growth requires more than just tools. It demands consistent guidance, actionable feedback, and opportunities to apply learning in meaningful and challenging contexts.
+
+If you don’t have a plan, make one. It’s always better to have something to guide you than nothing at all.
+
+## The Ego
+
+A solid base of knowledge is just facts—it’s not the same as real, hands-on experience. The difference between someone who spends 10 hours sitting through a course and someone who spends 5 hours banging their head against a wall under pressure, plus 2 hours facing clients, is staggering. The latter gains resilience, adaptability, and practical insights that no course can replicate.
+
+But not everyone has the temperament or willingness to endure those challenges. Outside factors, such as personal life, can interfere and disrupt progress. So, what happens then?
+
+It doesn't have to be always like that!
+
+For my own sadness, most situations don’t need to escalate into a technical “fight”. Sometimes, the solution is as simple as listening and understanding. Yet, in a culture that often prioritizes proving one’s “power” and “speed” skills, other critical skills are overlooked. This imbalance frequently creates larger problems, which we’ll explore in Chapter Two, where we’ll discuss the dangers of scaling your “fight response” to match perceived challenges. Spoiler, it only leads to waste.
+
+## Chain of Command
+
+
+
+# Combinations
+
+<img class="myImg" src="../images/thesis/the-core-five-3.png" alt="pthe-core-five-3" style="border: 0px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
+Compensating isn’t as limiting as it might seem—in fact, it’s where creativity and adaptability shine. Different combinations of skills can fill gaps and create balance in surprising ways:
+
+- Versatility + Speed: A powerful duo that can compensate for a lack of raw Power.
+- Power + Speed: Together, they can make up for limited Versatility.
+- Power + Versatility: A strong pairing that can offset slower execution.
+- Range: This one is more demanding to compensate for, but with the right mix of skills, it’s still achievable.
+
+By understanding and leveraging these combinations, individuals and teams can turn perceived weaknesses into strengths and achieve remarkable results.
+
+
+
+
+<img class="myImg" src="../images/thesis/the-core-five-4-1b.png" alt="pthe-core-five-4-1b" style="border: 0px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 Some expected skills are usually missing like the insight of the project, reducing the time to pass from it and get down to business should be a priority to "automate".
 

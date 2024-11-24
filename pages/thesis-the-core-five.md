@@ -1,16 +1,16 @@
 ---
 layout: custom
 title: The Core Five
-description: For The Galactic Republic
+description: An Alternative Path
 ---
 
 ~~Life it's like a game of chess, I don't know how to play chess.~~
 
-I've had my fair share of onboardings and interviews, one thing that always sticks is that sometimes the aim is a little of.
+I’ve had my fair share of onboardings and interviews, and one thing that always stands out is how often the aim feels just a little off.
 
-It reminds me of that blog that I read a while ago sometime, the title summarizes everything "Companies don't need geniuses" which apply very well when discussing about the expectations of a position.
+It reminds me of a blog I read some time ago, with a title that really stuck with me: “Companies Don’t Need Geniuses.” That sentiment perfectly captures the heart of what’s often wrong with role expectations.
 
-If you need to hire a genius to work with you, you either are pushing the boundaries of innovation or just searching for unicorns.
+If you find yourself needing to hire a genius to fill a position, it’s likely for one of two reasons: you’re genuinely pushing the boundaries of innovation—or you’re chasing unicorns.
 
 
 ---
@@ -20,10 +20,8 @@ If you need to hire a genius to work with you, you either are pushing the bounda
 ---
 
 - [Chapter 1: Our Pieces and Us](/pages/thesis-the-core-five-1.md): think mark, think.
-  - [Chapter 1.5: OverBoard](/pages/thesis-the-core-five-1.5.md): what will happen to your pieces.
-
+- [Chapter 1.5: OverBoard](/pages/thesis-the-core-five-1.5.md): what will happen to your pieces.
 - [Chapter 2: The Board](/pages/thesis-the-core-five-2.md): it's game on!
-
 -  Chapter 3: 4D Businesses.
 
 
