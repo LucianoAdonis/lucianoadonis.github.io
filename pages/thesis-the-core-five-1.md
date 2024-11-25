@@ -99,6 +99,28 @@ Some expected skills are usually missing like the insight of the project, reduci
 
 # Automation Opportunities
 
+<img class="myImg" src="../images/thesis/the-core-five-5.png" alt="pthe-core-five-5" style="border: 0px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
+Documentation in a way is the "automation"  to reduce the friction when joining a new project and increase the time for Leads/Managers to help out members on other critical areas/skills. In short, less telling of the good old histories and more focusing on the present.
 
+<img class="myImg" src="../images/thesis/the-core-five-5a.png" alt="pthe-core-five-5a" style="border: 0px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
+All skills can be improved with "good" working experience, but the degree of improvement will variate... a lot.
+
+Versatility, Insight, and Foresight can only get an real improved by understanding the decisions and learning.
+
+Reading and Writing can allow people to artificially receive part of the experience.
+
+## Chest Board
+
+<img class="myImg" src="../images/thesis/the-core-five-5b.png" alt="pthe-core-five-5b" style="border: 0px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
+Not knowing the paths will make everything take longer, as the discovery phase will solely depend on the piece.
+
+Knowing the available paths and possible challenges can lead to take better decisions 
+
+<img class="myImg" src="../images/thesis/the-core-five-5c.png" alt="pthe-core-five-5c" style="border: 0px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
+Having documentation can make the difference for pieces to take challenges greater than their current level.
+
+Reality checks are often needed to remind the piece that is only possible because is standing in shoulders of giants.
