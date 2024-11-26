@@ -15,7 +15,7 @@ If you find yourself needing to hire a genius to fill a position, it’s likely 
 
 ---
 
-<img class="myImg" src="../images/headers/cian-chess-board.png" alt="cian-chess-board" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
+<img class="myImg" src="../images/headers/cian-chess-board-v2.png" alt="cian-chess-board" style="border: 0px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
 
 ---
 

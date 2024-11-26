@@ -11,6 +11,9 @@ description: Time for some character development
   <a href="/pages/thesis-the-core-five-2" class="custom-button left"><strong>Chapter 2</strong></a>
 </div>
 
+---
+
+<img class="myImg" src="../images/headers/cian-chess-board.png" alt="cian-chess-board" style="border: 0px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
 
 ---
 
