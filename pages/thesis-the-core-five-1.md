@@ -4,8 +4,6 @@ title: Our Pieces and Us - Chapter 1
 description: Time for some character development
 ---
 
-<!--- https://darksouls.wiki.fextralife.com/Character+Information --->
-
 <div class="nav-buttons">
   <a href="/pages/thesis-the-core-five" class="custom-button right"><strong>Go Back to Home</strong></a>
   <a href="/pages/thesis-the-core-five-2" class="custom-button left"><strong>Chapter 2</strong></a>
@@ -13,7 +11,7 @@ description: Time for some character development
 
 ---
 
-<img class="myImg" src="../images/headers/cian-chess-board.png" alt="cian-chess-board" style="border: 0px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
+<img class="myImg" src="../images/headers/cian-chess-board.png" alt="cian-chess-board" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
 
 ---
 
@@ -34,6 +32,8 @@ Based on my experience working with teams in big companies I had divided the cat
 
 These dimensions provide a more complete view of the abilities required for tech jobs, where success often comes from the interplay of strengths rather than isolated skills. By focusing on these, we can better evaluate, develop, and celebrate the unique contributions that every individual brings.
 
+<br>
+
 ## About The Speaker
 
 <img class="myImg" src="../images/thesis/the-core-five-2.png" alt="pthe-core-five-2" style="border: 0px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
@@ -44,7 +44,7 @@ Despite having multiple advantages and a blend of skills, I’ve come to realize
 
 Personally, I’ve leaned heavily on speed to gain an edge and tackle challenges in the past. This experience has taught me that success isn’t just about raw “power” or expertise—it’s about leveraging all dimensions of ability. It’s disheartening to think of talented individuals being overlooked simply because they don’t fit into traditional molds or categories.
 
-
+<br>
 
 # Potentiation
 
@@ -56,6 +56,8 @@ This doesn’t mean that studying and improving foundational skills aren’t imp
 
 <img class="myImg" src="../images/thesis/the-core-five-4a.png" alt="pthe-core-five-4a" style="border: 0px solid #000; border-radius: 0px; padding: 5px; cursor: pointer;">
 
+<br>
+
 ## Starting Point
 
 Ideally, your company or direct lead should provide a clear roadmap for improving technical skills. In the worst-case scenario, there should at least be some guidance on the expected outcomes for the role and areas requiring improvement, assuming that feedback is part of the equation.
@@ -65,6 +67,8 @@ Now, let’s imagine you do have a roadmap. It’s well-designed, supplemented b
 If it were that simple, providing a few licenses for curated programs or courses should suffice to elevate skills and ensure people perform at the expected level for their roles. While access to these resources is valuable, true growth requires more than just tools. It demands consistent guidance, actionable feedback, and opportunities to apply learning in meaningful and challenging contexts.
 
 If you don’t have a plan, make one. It’s always better to have something to guide you than nothing at all.
+
+<br>
 
 ## The Ego
 
@@ -76,6 +80,8 @@ It doesn't have to be always like that!
 
 For my own sadness, most situations don’t need to escalate into a technical “fight”. Sometimes, the solution is as simple as listening and understanding. Yet, in a culture that often prioritizes proving one’s “power” and “speed” skills, other critical skills are overlooked. This imbalance frequently creates larger problems, which we’ll explore in Chapter Two, where we’ll discuss the dangers of scaling your “fight response” to match perceived challenges. Spoiler, it only leads to waste.
 
+<br>
+
 ## Chain of Command
 
 
@@ -86,19 +92,21 @@ For my own sadness, most situations don’t need to escalate into a technical �
 
 Compensating isn’t as limiting as it might seem—in fact, it’s where creativity and adaptability shine. Different combinations of skills can fill gaps and create balance in surprising ways:
 
-- Versatility + Speed: A powerful duo that can compensate for a lack of raw Power.
-- Power + Speed: Together, they can make up for limited Versatility.
-- Power + Versatility: A strong pairing that can offset slower execution.
-- Range: This one is more demanding to compensate for, but with the right mix of skills, it’s still achievable.
+- **Versatility + Speed**: A powerful duo that can compensate for a lack of raw Power.
+- **Power + Speed**: Together, they can make up for limited Versatility.
+- **Power + Versatility**: A strong pairing that can offset slower execution.
+- **Range**: This one is more demanding to compensate for, but with the right mix of skills, it’s still achievable.
 
 By understanding and leveraging these combinations, individuals and teams can turn perceived weaknesses into strengths and achieve remarkable results.
 
-
+<br>
 
 
 <img class="myImg" src="../images/thesis/the-core-five-4-1b.png" alt="pthe-core-five-4-1b" style="border: 0px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
 Some expected skills are usually missing like the insight of the project, reducing the time to pass from it and get down to business should be a priority to "automate".
+
+<br>
 
 # Automation Opportunities
 
@@ -114,6 +122,8 @@ Versatility, Insight, and Foresight can only get an real improved by understandi
 
 Reading and Writing can allow people to artificially receive part of the experience.
 
+<br>
+
 ## Chest Board
 
 <img class="myImg" src="../images/thesis/the-core-five-5b.png" alt="pthe-core-five-5b" style="border: 0px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
@@ -127,3 +137,13 @@ Knowing the available paths and possible challenges can lead to take better deci
 Having documentation can make the difference for pieces to take challenges greater than their current level.
 
 Reality checks are often needed to remind the piece that is only possible because is standing in shoulders of giants.
+
+<br>
+
+---
+
+<div class="nav-buttons">
+  <a href="/pages/thesis-the-core-five" class="custom-button right"><strong>Home</strong></a>
+  <a href="/pages/thesis-the-core-five-1.5" class="custom-button left"><strong>Chapter 1.5</strong></a>
+</div>
+<a href="/pages/thesis-the-core-five-2" class="custom-button right"><strong>Chapter 2</strong></a>

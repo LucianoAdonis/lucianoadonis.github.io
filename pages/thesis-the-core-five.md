@@ -27,14 +27,9 @@ If you find yourself needing to hire a genius to fill a position, it’s likely 
 
 ---
 
-<div class="ds-button-container">
-  <a href="/pages/thesis-the-core-five-1" class="ds-button right-button"><strong>Go to Chapter 1</strong></a>
+<div class="nav-buttons">
+  <a href="/index" class="custom-button right"><strong>Main Page</strong></a>
+  <a href="/pages/thesis-the-core-five-1" class="custom-button left"><strong>Chapter 1</strong></a>
 </div>
 
-<div class="ds-button-container">
-  <a href="/pages/thesis-the-core-five-1.5" class="ds-button right-button"><strong>Go to Chapter 1.5</strong></a>
-</div>
-
-<div class="ds-button-container">
-  <a href="/pages/thesis-the-core-five-2" class="ds-button right-button"><strong>Go to Chapter 1</strong></a>
-</div>
+<a href="/pages/thesis-the-core-five-2" class="custom-button right"><strong>Chapter 1.5</strong></a>
