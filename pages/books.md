@@ -1,7 +1,7 @@
 ---
 layout: custom
 title: Books
-description: Things that might be useful for you too
+description: To Do
 ---
 
 <img class="myImg" src="../images/headers/yellow-shopping-cart.png" alt="yellow-shopping-cart" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
