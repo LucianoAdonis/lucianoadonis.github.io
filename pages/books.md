@@ -18,8 +18,8 @@ description: Things that might be useful for you too
 
 # Science Fiction Favs
 
-- Aprendíz de Guerrero
-- Worthing Saga
+- Warrior's Apprentice by Lois McMaster Bujold.
+- Worthing Saga - Orson Scott Card
 
 # Suggestions if you don't like reading
 
