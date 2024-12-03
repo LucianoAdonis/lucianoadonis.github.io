@@ -37,11 +37,13 @@ As quoted from the certification site, **LSP** enables individuals and teams to:
 - Analyze scenarios and explore actionable solutions.
 
 
-# Why it does it have a certification?
+# Why Does It Have a Certification?
 
 Well, as mentioned before there is a **LSP V1.0** and **V2.0**, you can guess which one it's free. So the certification consists 4-Day 40-Hour Training program that it won't make you an expert but will help you to facilitate the workshops and have the tools to work with them.
 
-## Why Paying for it? It's Open Source
+And yes, you have to pay for it.
+
+## Wait, Wasn’t It Open Source?
 
 Yes, it’s expensive. And honestly? I’ve already spent ten times that amount on LEGO, so why not go the extra mile and get a certification?
 
@@ -61,13 +63,13 @@ Sure, you can dive into the instructions for the LEGO® SERIOUS PLAY® Starter K
 These are the gaps that Version 2.0, along with the training, aims to bridge. It’s not just about having a framework—it’s about learning the techniques and striving to master them.
 
 
-## Where do I get it?
+## Where Can I Get It?
 
 For North and Central America you can contact them directly, but for South America you will have to get to them through official Partners like [Meraki Consultores](https://merakiconsultores.cl/lego-seriousplay/).
 
 <br>
 
-# Will hurt?
+# Will It Hurt?
 
 Yes, move on.
 
