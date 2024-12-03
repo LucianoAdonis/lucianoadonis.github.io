@@ -1,7 +1,7 @@
 ---
 layout: custom
-title: My Motivation - Chapter 1
-description: Is It Possible to Learn This Power?
+title: Tell Me Why - Chapter 1
+description: I Never Wanna Hear You Say
 ---
 
 <div class="nav-buttons">
@@ -13,45 +13,61 @@ description: Is It Possible to Learn This Power?
 
 <br>
 
-# Why
+# What it is the LSP?
 
-One word: **mapping**. In a world dominated by systems, navigating through them is far more important than the speed at which you move through them. To survive my trials in a big company adapting was the number one priority.
+When you search for the meaning and description of LEGO® SERIOUS PLAY® (LSP), you’ll come across multiple interpretations—and that’s the beauty of the methodology, it opens up numerous opportunities for deep learning and innovative thinking. With the right guidance, it can also unlock the potential of the people you work with.
 
-The concept of **mapping** came back to me a year ago when I had to explain the problems derivated from the inner workings of systems and their interconnections to a client. These were elements I could clearly see, but they struggled to grasp. Interestingly, I managed to convey this through LEGO. Thought it wasn’t the LEGO itself that was indispensable—it was the root of my ability to visualize. Like imagining, but with structure. Tying things together in a way that makes sense and show that mental map to others.
+LSP originated in 2001, created by the LEGO® Group to keep up with the growing demand for innovative problem-solving and team-building approaches. However, since 2010, the LEGO® Group no longer supports the methodology (LSP V1.0). However, the *Association of Master Trainers* in the LEGO® SERIOUS PLAY® Method has stepped in to keep it up-to-date, continuously refining and evolving the model.
 
-
-For me, this process feels automatic. Maybe it’s part of my education, or maybe it’s the years spent playing with LEGOs—building characters, connections, and stories. It’s the same mental framework I use today, just with a company variable instead of plastic bricks.
-
-That said, I’m also someone who leans toward pragmatism. Sometimes, playing when there’s work to be done feels unnecessary. But after years in tech, sometime the detours and pause are as needed as the crunch periods.
-
-<br>
-
-## The One Thing You Can (Not) Teach 
-
-I can teach a lot from my experience or by leading through example, but instilling a way of thinking—that’s the real challenge.
-
-For me, teaching is an exchange. I’m upfront about what I expect, and among all the things I could ask for, loyalty or personal appreciation isn’t one of them.
-
-I’ve developed a sense for recognizing when someone is open to learning and when they simply don’t care. Naturally, I choose to invest my time in those who are willing to grow. But it’s never one-sided—I learn just as much from their perspectives. It’s not just about technical skills; attitudes, mannerisms, opinions, even memes—everything adds up and shapes the way I see things.
-
-Above all, I do it because I want to. It’s what others did for me when I needed it, and I see it as my way of paying it forward. And no, I wouldn’t put a paywall on that—at least not an expensive one, jaja.
-
-So my wish for the people that I work with is not for them to be tied to me, if they want to stick great, but I'll be even happier to now that they are carving their own path and moving forward in the way that they can. 
+LSP is a powerful approach with a wide range of applications, fostering deep learning and innovative thinking. Moreover, there's an [LEGO® SERIOUS PLAY® Certification](https://seriousplay.community/usa/certification/) for those who want to master the methodology in the version 2.0.
 
 
-I’m also tired of hearing, “We need to hire clones of you.” That would be awful. Unless there’s diversity in thought and skills, a team of clones would be the worst outcome. Sure, we’d get from point A to B quickly—or even find a shortcut to C. But the moment things change, or we need to explore new ideas, the lack of variation would hold us back. That’s why investing time in people is a better approach.
+As quoted from the certification site, LSP enables individuals and teams to:
 
-Yes, it’s expensive. But out of 100 people, if even one does something meaningful—whether it’s work they’re proud of or helping others—that investment is worth it. I’m not talking about inventing revolutionary technologies, but creating something that matters, even in small ways.
+- Unlock the potential of people and their values.
+- Develop teamwork, leadership, and interpersonal relationships.
+- Create and validate business models.
+- Facilitate strategic planning meetings.
+- Define and refine mission, vision, and organizational values.
+- Design innovative products or services.
+- Analyze scenarios and explore actionable solutions.
+
+
+# Why it does it have a certification?
+
+Well, as mentioned before there is a version 1.0 and 2.0, you can guess which one it's free. So the certification consists 4-Day 40-Hour Training program that it won't make you an expert but will help you to facilitate the workshops and have the tools to work with them.
+
+## Why Paying for it? It's Open Source
+
+Yes it is quite expensive, and in my honest opinion I've already have expended 10 times that in LEGO, so I may as well get a certification. But going back to the main topic as everything Open Source, there is a **pay-to-win** "Pro" version with modifications that makes it worth it.
+
+I mean, go ahead read and read the instruction of the LEGO® SERIOUS PLAY® Starter Kit (15 min) or the [Open Source](https://davidgauntlett.com/wp-content/uploads/2013/04/LEGO_SERIOUS_PLAY_OpenSource_14mb.pdf) content (40 min).
+
+It will give you a base, but not answers to:
+
+- How do I lead a session?
+- How do I manage participants?
+- What should be my behavior?
+- What happens if X does Y and Z doesn't like it?
+- How do we control time **and space**? 
+- Where can I get predefined excersices with detailed steps?
+- Do
+- Practice and Theorical knowledge.
+
+## Where do I get it?
+
+For North and Central America you can contact them directly, but for South America you will have to get to them through official Partners like [Meraki Consultores](https://merakiconsultores.cl/lego-seriousplay/).
+
+By quoting the site again:
+
+- Design and facilitate custom workshops
+- Apply the methods to teams and organizations
+- Create an engaging and productive experience for clients
 
 <br>
 
 ## Trusting Others
 
-If you’re still not convinced why this is important, let me put it this way: moving up in your career will require you to rely on others. Your performance will increasingly depend on their efforts. Sooner or later, you’ll need to trust and count on people. I keep my expectations realistic, but I also know I can’t be everywhere at once. If I’m unable to handle my part, I need someone I trust to step in.
-
-This isn’t about heroism or savior complexes—I’ve made my peace with those ideas. It’s about freedom. Freedom to rely on others, to let them shine, and to avoid a culture of dependency on one “indispensable” individual. If I were running a company, I wouldn’t want someone who believed they were irreplaceable. Trust is essential, but symbiotic dependency is dangerous.
-
-I know it might sound like overthinking for something that should just involve running commands and troubleshooting. But sadly, it’s rarely that simple. There’s always more at play—business pressures, relationships, team dynamics, and external factors all add layers of complexity.
 
 
 
