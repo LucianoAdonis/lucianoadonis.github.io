@@ -11,6 +11,10 @@ description: Is It Possible to Learn This Power?
 
 ---
 
+<img class="myImg" src="../images/interviews/yt-wizbricks-clone-army-23-upscaled.png" alt="yt-wizbricks-clone-army-23-upscaled" style="cursor: pointer;">
+
+---
+
 <br>
 
 # The Difference
@@ -30,7 +34,7 @@ That said, I’m also someone who leans toward pragmatism. Sometimes, playing wh
 
 <br>
 
-## The One Thing You Can (Not) Teach 
+# The One Thing You Can (Not) Teach 
 
 I can teach a lot from my experience or by leading through example, but instilling a way of thinking—that’s the real challenge.
 
