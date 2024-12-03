@@ -11,7 +11,7 @@ description: Is It Possible to Learn This Power?
 
 ---
 
-<img class="myImg" src="../images/interviews/yt-wizbricks-clone-army-23-upscaled.png" alt="yt-wizbricks-clone-army-23-upscaled" style="cursor: pointer;">
+<img class="myImg" src="../images/lsp/yt-wizbricks-clone-army-23-upscaled.png" alt="yt-wizbricks-clone-army-23-upscaled" style="cursor: pointer;">
 
 ---
 
@@ -27,7 +27,7 @@ One word: **mapping**. In a world dominated by systems, navigating through them 
 
 The concept of **mapping** came back to me a year ago when I had to explain the problems derivated from the inner workings of systems and their interconnections to a client. These were elements I could clearly see, but they struggled to grasp. Interestingly, I managed to convey this through LEGO. Thought it wasn’t the LEGO itself that was indispensable—it was the root of my ability to visualize. Like imagining, but with structure. Tying things together in a way that makes sense and show that mental map to others.
 
-
+f
 For me, this process feels automatic. Maybe it’s part of my education, or maybe it’s the years spent playing with LEGOs—building characters, connections, and stories. It’s the same mental framework I use today, just with a company variable instead of plastic bricks.
 
 That said, I’m also someone who leans toward pragmatism. Sometimes, playing when there’s work to be done feels unnecessary. But after years in tech, sometime the detours and pause are as needed as the crunch periods.

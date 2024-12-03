@@ -11,7 +11,7 @@ description: I Never Wanna Hear You Say
 
 ---
 
-<img class="myImg" src="../images/interviews/teen-titans-get-serious.png" alt="teen-titans-get-serious" style="cursor: pointer;">
+<img class="myImg" src="../images/lsp/teen-titans-get-serious.png" alt="teen-titans-get-serious" style="cursor: pointer;">
 
 ---
 
