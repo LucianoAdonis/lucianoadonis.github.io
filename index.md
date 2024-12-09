@@ -11,7 +11,7 @@ At work, I get to connect with all kinds of interesting people and dive into a v
 ### Optimization
 
 - [Buy it for Life](./pages/shopping.md): recommended products!
-- [Slack Mastery: Communicate, Collaborate, and Conquer](./pages/slack.md): EVENTUALLY.
+- [Slack and You](./pages/slack.md): EVENTUALLY.
 
 ### Documentation
 
@@ -29,7 +29,7 @@ At work, I get to connect with all kinds of interesting people and dive into a v
 Anything related to more behavior 
 
 - [LEGO® SERIOUS PLAY® (LSP)](./pages/lsp): more useful than you would think.
-- [A Playthrough Guide for Interviews and Work](./pages/ds-interviews): it won't land you a job right of the bat but it will definetily be more useful than many guides out there.
+- [Interviews and Work, Walkthrough Guide](./pages/ds-interviews): it won't land you a job right of the bat but it will definetily be more useful than many guides out there.
 - [Troubleshooting](./pages/troubleshooting): knowing is the first step.
 - **Communication**: EVENTUALLY.
 
@@ -50,6 +50,7 @@ Personal suggestions to improve your quality of life at work.
 
 ---
 
+
 ### Code Snippets, Tools, and Efficiency Tips
 
 GitHub Gists containing some degree of wisdom and free time.
@@ -65,6 +66,7 @@ GitHub Gists containing some degree of wisdom and free time.
     - <a href="https://gist.github.com/LucianoAdonis/93f008e9bf92b0dbcdd5d2ee03f37535" target="_blank">Edition Tools and Sites</a>
     - <a href="https://gist.github.com/LucianoAdonis/91398d78df653e6a2d4969c87261b184" target="_blank">Team Building Activities</a>
         - <a href="https://gist.github.com/LucianoAdonis/da2d0e3b8cea63407eb0a181bf30985f" target="_blank">Music to Describe Your Sprint</a>
+
 
 ---
 
