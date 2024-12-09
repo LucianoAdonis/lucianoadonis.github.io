@@ -4,6 +4,12 @@ title: Github Pages with Markdown
 description: Small pieces from this setup
 ---
 
+<img class="myImg" src="../images/headers/cian-markdown-wallpaper.png" alt="cian-markdown-wallpaper" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
+
+>"Somehow HTML has return"
+
+---
+
 I thought at first that templates and Jekyll were limited, but that's not true! It can do a lot more, but rarely you get the chance to do more interesting things.
 
 
@@ -38,13 +44,19 @@ Then place it under:
 
 ## Layout Overwrite
 
+There are a lot of values that you can change directly in each page, this is how you do it:
+
 ```markdown
+
 ---
 layout: custom
 title: Markdown
 description: 
 ---
+
 ```
+
+There a lot of parameters that you can update, but that's for another time!
 
 
 # Markdown and HTML
@@ -185,208 +197,116 @@ Markdown itself does not natively support expandable or collapsible sections. Ho
 - **Popup Image:**
   <img id="myImg" src="../images/neptunia-please-wait.png" alt="Popup Image" style="border: 2px solid #000; border-radius: 4px; padding: 5px;">
   
-
 <details>
-  <summary>> See Code </summary>
+<summary>> See Code</summary>
+<pre>
+# No Format:
+![alt image](../images/neptunia-please-wait.png "Title")
 
-  ```
-  # No Format:
+# With Format:
+&lt;a href="page.html"&gt;
+  &lt;img src="../images/neptunia-please-wait.png" alt="Example Image" style="border: 2px solid #000; border-radius: 4px; padding: 5px;" /&gt;
+&lt;/a&gt;
 
-  ![alt image](../images/neptunia-please-wait.png "Title")
+# Popup Image
+&lt;img id="myImg" src="../images/neptunia-please-wait.png" alt="Example Image" style="border: 2px solid #000; border-radius: 4px; padding: 5px; max-width: 200px; cursor: pointer;"&gt;
 
-  # With Format:
+&lt;style&gt;
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  <a href="page.html">
-    <img src="../images/neptunia-please-wait.png" alt="Example Image" style="border: 2px solid #000; border-radius: 4px; padding: 5px;" />
-  </a>
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 4px;
+}
 
-  # Popup Image
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
 
-  <!-- Trigger/Open The Modal -->
-  <img id="myImg" src="../images/neptunia-please-wait.png" alt="Example Image" style="border: 2px solid #000; border-radius: 4px; padding: 5px; max-width: 200px; cursor: pointer;">
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+&lt;/style&gt;
 
-  <style>
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+&lt;!-- The Modal --&gt;
+&lt;div id="myModal" class="modal"&gt;
+  &lt;span class="close"&gt;&times;&lt;/span&gt;
+  &lt;img class="modal-content" id="img01"&gt;
+&lt;/div&gt;
 
-  .modal-content {
-    margin: auto;
-    display: block;
-    max-width: 90%;
-    max-height: 80vh;
-    border-radius: 4px;
-  }
+&lt;script&gt;
+// Get the modal
+var modal = document.getElementById("myModal");
 
-  .close {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
+// Get the image and insert it inside the modal
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
 
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  </style>
+img.onclick = function(){
+  modal.style.display = "flex";
+  modalImg.src = this.src;
+}
 
-  <!-- The Modal -->
-  <div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-  </div>
+// Get the &lt;span&gt; element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
-  <script>
-  // Get the modal
-  var modal = document.getElementById("myModal");
+span.onclick = function() { 
+  modal.style.display = "none";
+}
 
-  // Get the image and insert it inside the modal
-  var img = document.getElementById("myImg");
-  var modalImg = document.getElementById("img01");
-
-  img.onclick = function(){
-    modal.style.display = "flex";
-    modalImg.src = this.src;
-  }
-
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-
-  span.onclick = function() { 
+// Close the modal when pressing the "Esc" key
+document.onkeydown = function(event) {
+  if (event.key === "Escape") {
     modal.style.display = "none";
   }
+}
+&lt;/script&gt;
 
-  // Close the modal when pressing the "Esc" key
-  document.onkeydown = function(event) {
-    if (event.key === "Escape") {
-      modal.style.display = "none";
-    }
-  }
-  </script>
+# Copy to Clipboard
 
-  # Copy to Clipboard
+&lt;button onclick="copyToClipboard()"&gt;Copy Text&lt;/button&gt;
+&lt;input type="text" value="This is the text to be copied" id="myInput"&gt;
 
-  <button onclick="copyToClipboard()">Copy Text</button>
-  <input type="text" value="This is the text to be copied" id="myInput">
+&lt;script&gt;
+function copyToClipboard() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+&lt;/script&gt;
+</pre>
+</details>
 
-  <script>
-  function copyToClipboard() {
-    var copyText = document.getElementById("myInput");
-    copyText.select();
-    document.execCommand("copy");
-    alert("Copied the text: " + copyText.value);
-  }
-  </script>
-  ```
-</details> <br>
+<br>
 
 
 
 
 ## Content Tips
 
-
-
-<style>
-  .modal {
-    display: none; /* Initially hidden */
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .modal-content {
-    margin: auto;
-    display: block;
-    max-width: 90%;
-    max-height: 80vh;
-    border-radius: 4px;
-  }
-
-  .close {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-</style>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-</div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the image and insert it inside the modal
-    var img = document.getElementById("myImg");
-    var modalImg = document.getElementById("img01");
-
-    if (img) {
-        img.onclick = function(){
-            modal.style.display = "flex";
-            modalImg.src = this.src;
-        }
-    }
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    span.onclick = function() { 
-        modal.style.display = "none";
-    }
-
-    // Close the modal when pressing the "Esc" key
-    document.onkeydown = function(event) {
-        if (event.key === "Escape") {
-            modal.style.display = "none";
-        }
-    }
-
-    // Close modal when clicking outside the content
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-  });
-</script>

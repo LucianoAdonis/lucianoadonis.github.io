@@ -6,7 +6,7 @@ description: Is It Possible to Learn This Power?
 
 <div class="nav-buttons">
   <a href="/pages/lsp" class="custom-button right"><strong>Home</strong></a>
-  <a href="/pages/lsp-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
+  <a href="/pages/lsp-chapter-1" class="custom-button left"><strong>Chapter 1</strong></a>
 </div>
 
 ---
@@ -78,5 +78,5 @@ I know it might sound like overthinking for something that should just involve r
 
 <div class="nav-buttons">
   <a href="/pages/lsp-chapter-0" class="custom-button right"><strong>Chapter 0</strong></a>
-  <a href="/pages/lsp-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
+  <a href="/pages/lsp-chapter-1" class="custom-button left"><strong>Chapter 1</strong></a>
 </div>

@@ -1,7 +1,7 @@
 ---
 layout: custom
 title: LEGO® SERIOUS PLAY®
-description: Review & Tips
+description: Review & Tips as a Chilean
 ---
 
 <img class="myImg" src="../images/headers/black-lsp-master-trainers-association-logo.png" alt="https://wallpapers.com/wallpapers/lego-star-wars-1920-x-1200-rct4ulve5dbdfj6n.html" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
@@ -12,7 +12,7 @@ description: Review & Tips
 
 # Why This Mini-Book?
 
-Unless you’ve attended an **LSP Certification Training**, it’s hard to grasp what it truly offers. And even when you do, explaining the experience can be a challenge.
+Unless you’ve attended an **LSP Certification Training**, it’s hard to grasp what it truly offers. And even when you do, explaining the experience can be a bit challeng¡ng.
 
 Attending an **LSP training** is a different experience altogether. It provides the applied version of the methodology—crafted from extensive considerations, techniques, studies, and practice. Most importantly, it’s not a one-size-fits-all solution but rather a structured or tailored version designed specifically for your team or company.
 
