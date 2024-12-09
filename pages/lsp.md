@@ -1,12 +1,12 @@
 ---
 layout: custom
-title: LEGO Serious Play
+title: LEGO® SERIOUS PLAY®
 description: Style Above Else
 ---
 
 <img class="myImg" src="../images/headers/black-lego-stormtrooper.png" alt="https://wallpapers.com/wallpapers/lego-star-wars-1920-x-1200-rct4ulve5dbdfj6n.html" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
 
->"IT'S LEGO TIME." – LEGOBIUS
+>"Metaphors, Do You Speak It!?"
 
 ---
 
@@ -24,9 +24,9 @@ That’s why I’ll try to summarize it in a way that captures its essence witho
 
 The content will be split into four sections, as the index bar exceeded its length, making it easier to read and navigate:
 
-- [Chapter 0: What Led Me Here (Optional)](/pages/lsp-chapter-0): .
-- [Chapter 1: Tell Me Why](/pages/lsp-chapter-1): You will have a lot of questions if you are wondering about attending or not.
-- [Chapter 2: First Impressions](/pages/lsp-chapter-2): YES.
+- [Chapter 0: What Led Me Here (Optional)](/pages/lsp-chapter-0): Rant about my existence.
+- [Chapter 1: Many Questions](/pages/lsp-chapter-1): You will have a lot of questions if you are wondering about attending or not.
+- [Chapter 2: Explain It](/pages/lsp-chapter-2): "Boom", "kaboom" & "tuturu".
 
 <br>
 
