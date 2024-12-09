@@ -19,7 +19,7 @@ At work, I get to connect with all kinds of interesting people and dive into a v
 - [ADRs](./pages/adrs.md): Document that will save you a lot of trouble down the line.
 - [Writing Advise](./pages/writing.md)
 - **Documentation Patterns**: EVENTUALLY.
-- **IA Partially Generated**: to lazy to get into details, take them as source of inspiration.
+- **IA Partially Generated**: too lazy to get into details, take them as source of inspiration.
     - [Requesting Assistance](./pages/advice-communications-assistance.md).
     - [Expressing Things](./pages/advice-communications-expressing-things.md).
     - [Expressions](./pages/advice-communications-expressions.md).
@@ -28,6 +28,7 @@ At work, I get to connect with all kinds of interesting people and dive into a v
 
 Anything related to more behavior 
 
+- [LEGO® SERIOUS PLAY® (LSP)](./pages/lsp): more useful than you would think.
 - [A Playthrough Guide for Interviews and Work](./pages/ds-interviews): it won't land you a job right of the bat but it will definetily be more useful than many guides out there.
 - [Troubleshooting](./pages/troubleshooting): knowing is the first step.
 - **Communication**: EVENTUALLY.

@@ -1,7 +1,7 @@
 ---
 layout: custom
-title: Tell Me Why - Chapter 1
-description: I Never Wanna Hear You Say
+title: Many Questions - Chapter 1
+description: A Methodology the Jedi Wouldn’t Tell You
 ---
 
 <div class="nav-buttons">
@@ -11,7 +11,7 @@ description: I Never Wanna Hear You Say
 
 ---
 
-<img class="myImg" src="../images/lsp/teen-titans-get-serious.png" alt="teen-titans-get-serious" style="cursor: pointer;">
+<img class="myImg" src="../images/lsp/teen-titans-get-serious-lsp.png" alt="teen-titans-get-serious" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
 
 ---
 
@@ -19,12 +19,15 @@ description: I Never Wanna Hear You Say
 
 # What it is the LEGO® SERIOUS PLAY®?
 
-When you search for the meaning and description of **LEGO® SERIOUS PLAY® (LSP)**, you’ll come across multiple interpretations—and that’s the beauty of the methodology, it opens up numerous opportunities for deep learning and innovative thinking. With the right guidance, it can also unlock the potential of the people you work with.
+When you search for the meaning and description of **LEGO® SERIOUS PLAY® (LSP)**, you’ll come across multiple interpretations—and that’s the cool part of the methodology, it opens up numerous opportunities for deep learning and innovative thinking. With the right guidance, it can also **unlock the potential** of the people you work with.
 
 **LSP** originated in 2001, created by the **LEGO® Group** to keep up with the growing demand for innovative problem-solving and team-building approaches. However, since 2010 it doesn't longer supports the methodology (LSP V1.0). However, the **LSP Association of Master Trainers** has stepped in to keep it up-to-date, continuously refining and evolving the model.
 
 It's really powerful approach with a wide range of applications, that can foster deep learning and innovative thinking. Moreover, there's an [LEGO® SERIOUS PLAY® Certification](https://seriousplay.community/usa/certification/) for those who want to master the methodology in the **version 2.0**.
 
+<br>
+
+## What Can It Really Do?
 
 As quoted from the certification site, **LSP** enables individuals and teams to:
 
@@ -36,12 +39,23 @@ As quoted from the certification site, **LSP** enables individuals and teams to:
 - Design innovative products or services.
 - Analyze scenarios and explore actionable solutions.
 
+<br>
+
+---
+
+<br>
 
 # Why Does It Have a Certification?
 
-Well, as mentioned before there is a **LSP V1.0** and **V2.0**, you can guess which one it's free. So the certification consists 4-Day 40-Hour Training program that it won't make you an expert but will help you to facilitate the workshops and have the tools to work with them.
+Well, as mentioned before there is a **LSP V1.0** and **V2.0**, you can guess which one it's free.
 
-And yes, you have to pay for it.
+The certification consists 4-Day 40-Hour Training program on the **V2.0** that it won't make you an expert but will help you to get you started making tailored solutions and facilitate the workshops.
+
+And yes, you have to "**pay-to-learn**", there is no other way around it, specially because it's teached to others, a summary and mind map won't be helpfull at all.
+
+There’s no way around it, especially because the methodology is meant to be taught through experience. A summary or mind map won’t be helpful at all. To truly grasp it, you need to learn from a well-structured example of how sessions are guided, reinforced by studying and analyzing what was done.
+
+<br>
 
 ## Wait, Wasn’t It Open Source?
 
@@ -62,16 +76,30 @@ Sure, you can dive into the instructions for the LEGO® SERIOUS PLAY® Starter K
 
 These are the gaps that Version 2.0, along with the training, aims to bridge. It’s not just about having a framework—it’s about learning the techniques and striving to master them.
 
+<br>
 
 ## Where Can I Get It?
 
-For North and Central America you can contact them directly, but for South America you will have to get to them through official Partners like [Meraki Consultores](https://merakiconsultores.cl/lego-seriousplay/).
+For North and Central America you can contact them directly, but for South America you will have to get to them through official Partners.
+
+- México: AD HOC.
+- Chile: [Meraki Consultores](https://merakiconsultores.cl/lego-seriousplay/).
 
 <br>
 
-# Will It Hurt?
+## What About The Course That Last Two Days?
 
-Yes, move on.
+There are multiple sites that offer the certification in two or three days... beware of those! 4 is about right for the training and you will require to practice on your own, so if you get a offer that will give you that amount of training in less than that, don't expect much!
+
+Specially when the [Master Trainers in LEGO SERIOUS PLAY method](https://www.youtube.com/@mastertrainerslegoseriousplay) has a [video](https://youtu.be/ZdFSaJqf_Tk?si=59amQUPG9IjDNygk) explaining why it takes that amount of time.
+
+Don't fall for those!
+
+<br>
+
+## Do I Get The Same?
+
+Knock yourself out, but keep in mind that your trainer will make the difference in your journey! And having someone with good reputation will help you.
 
 <br>
 

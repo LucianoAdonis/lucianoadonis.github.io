@@ -19,18 +19,29 @@ description: Is It Possible to Learn This Power?
 
 # The Difference
 
-Why he is stronger than myself? What's our difference?
+Realizing you have tunnel vision is tough, and shaking that feeling off can be even harder. That’s why I decided to confront what I saw as a weakness in my thinking pattern, and for me, it was represented as a chess game.
 
-## The realization
+In tech, specialization is essential—it’s what makes you effective. But it also forces you to focus intensely on one "column," leaving you vulnerable to problems outside that scope. You’re like a rocket: capable of extraordinary things when aimed in the right direction, but prone to disaster without the help of others to steer you clear of obstacles. Back then, I couldn’t see those obstacles—that’s tunnel vision in action.
 
-One word: **mapping**. In a world dominated by systems, navigating through them is far more important than the speed at which you move through them. To survive my trials in a big company adapting was the number one priority.
+Back then, I noticed that Tech Managers and Directors didn’t seem to suffer from this (at least, not visibly). Their broader perspective allowed them to anticipate and predict moves on the chessboard. While it sounds obvious in theory, putting it into practice is an entirely different challenge.
+
+Long story short, I found a way to break free by blending different techniques and strategies. Now, in a better position, I can’t help but think about those who are still stuck seeing only a few squares ahead. How can I share the mindset and tools I’ve gained to save them a few years—or at least spare them a few headaches?
+
+Instead of focusing on just 2–3 squares ahead, I want others to see 7–8. At the very least, I want you to develop the ability to see the side view of at least one square, broadening your perspective.
+
+If people can achieve that level of awareness, it will make my life so much easier. I could rely on others more effectively, rather than feeling like I have to bring out a nuke to solve every problem.
+
+<br>
+
+## The Realization, Mapping
+
+In a world dominated by systems, navigating through them is far more important than the speed at which you move through them. Looking back, to survive my trials in a big company, adapting was the number one priority.
+
+But the key word shouldn't be "adapting" then? Nope, that's a subproduct of the technique that I apply.
 
 The concept of **mapping** came back to me a year ago when I had to explain the problems derivated from the inner workings of systems and their interconnections to a client. These were elements I could clearly see, but they struggled to grasp. Interestingly, I managed to convey this through LEGO. Thought it wasn’t the LEGO itself that was indispensable—it was the root of my ability to visualize. Like imagining, but with structure. Tying things together in a way that makes sense and show that mental map to others.
 
-f
 For me, this process feels automatic. Maybe it’s part of my education, or maybe it’s the years spent playing with LEGOs—building characters, connections, and stories. It’s the same mental framework I use today, just with a company variable instead of plastic bricks.
-
-That said, I’m also someone who leans toward pragmatism. Sometimes, playing when there’s work to be done feels unnecessary. But after years in tech, sometime the detours and pause are as needed as the crunch periods.
 
 <br>
 
@@ -66,6 +77,6 @@ I know it might sound like overthinking for something that should just involve r
 ---
 
 <div class="nav-buttons">
-  <a href="/pages/confluence-chapter-0" class="custom-button right"><strong>Chapter 0</strong></a>
-  <a href="/pages/confluence-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
+  <a href="/pages/lsp-chapter-0" class="custom-button right"><strong>Chapter 0</strong></a>
+  <a href="/pages/lsp-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
 </div>

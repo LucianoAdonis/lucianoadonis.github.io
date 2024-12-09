@@ -26,6 +26,7 @@ The content will be split into four sections, as the index bar exceeded its leng
 
 - [Chapter 0: What Led Me Here (Optional)](/pages/lsp-chapter-0): .
 - [Chapter 1: Tell Me Why](/pages/lsp-chapter-1): You will have a lot of questions if you are wondering about attending or not.
+- [Chapter 2: First Impressions](/pages/lsp-chapter-2): YES.
 
 <br>
 
