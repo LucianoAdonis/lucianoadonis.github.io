@@ -19,11 +19,14 @@ description: A Methodology the Jedi Wouldn’t Tell You
 
 # What it is the LEGO® SERIOUS PLAY®?
 
-When you search for the meaning and description of **LEGO® SERIOUS PLAY® (LSP)**, you’ll come across multiple interpretations—and that’s the cool part of the methodology, it opens up numerous opportunities for deep learning and innovative thinking. With the right guidance, it can also **unlock the potential** of the people you work with.
+When you search for the meaning and description of **LSP**, you’ll come across multiple interpretations—and that’s the cool part of the methodology, it opens up numerous opportunities for deep learning and innovative thinking. With the right guidance, it can also **unlock the potential** of the people you work with.
 
-**LSP** originated in 2001, created by the **LEGO® Group** to keep up with the growing demand for innovative problem-solving and team-building approaches. However, since 2010 it doesn't longer supports the methodology (LSP V1.0). However, the **LSP Association of Master Trainers** has stepped in to keep it up-to-date, continuously refining and evolving the model.
+**LSP** originated in 2001, created by the **LEGO® Group** to keep up with the growing demand for innovative problem-solving and team-building approaches. However, since 2010 it doesn't longer supports the methodology (LSP V1.0), though it continues to sell the LEGO® sets used in the process. For more details, see [Chapter 3](./lsp-chapter-3).
 
-It's really powerful approach with a wide range of applications, that can foster deep learning and innovative thinking. Moreover, there's an [LEGO® SERIOUS PLAY® Certification](https://seriousplay.community/usa/certification/) for those who want to master the methodology in the **version 2.0**.
+The **LSP Association of Master Trainers** now maintains and develops **Version 2.0** of the methodology, introducing improvements based on feedback from practitioners and facilitators.
+
+For those who want to learn this methodology, there's the training program to get the [LEGO® SERIOUS PLAY® Certification](https://seriousplay.community/usa/certification/).
+
 
 <br>
 
@@ -39,13 +42,15 @@ As quoted from the official site, **LSP** enables individuals and teams to:
 - Design innovative products or services.
 - Analyze scenarios and explore actionable solutions.
 
+The versatility of the methodology and all of the knowledge that it is behind it, it's quite impressive. If applied well, you can get results that you wouldn't thought possible in a year, just in a few days.
+
 <br>
 
 ---
 
 <br>
 
-# Why Does It Have a Certification?
+# Why Should I Take The Certification?
 
 Well, as mentioned before there is a **LSP V1.0** and **V2.0**, you can guess which one it's free.
 
@@ -101,7 +106,9 @@ Don't fall for those!
 
 Knock yourself out, but keep in mind that your trainer will make the difference in your journey! And having someone with good reputation will help you.
 
+
 <br>
+
 
 ---
 
