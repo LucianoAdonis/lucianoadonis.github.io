@@ -1,10 +1,10 @@
 ---
 layout: custom
 title: LEGO® SERIOUS PLAY®
-description: Style Above Else
+description: Review & Tips
 ---
 
-<img class="myImg" src="../images/headers/black-lego-stormtrooper.png" alt="https://wallpapers.com/wallpapers/lego-star-wars-1920-x-1200-rct4ulve5dbdfj6n.html" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
+<img class="myImg" src="../images/headers/black-lsp-master-trainers-association-logo.png" alt="https://wallpapers.com/wallpapers/lego-star-wars-1920-x-1200-rct4ulve5dbdfj6n.html" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
 
 >"Metaphors, Do You Speak It!?"
 
@@ -27,6 +27,7 @@ The content will be split into four sections, as the index bar exceeded its leng
 - [Chapter 0: What Led Me Here (Optional)](/pages/lsp-chapter-0): Rant about my existence.
 - [Chapter 1: Many Questions](/pages/lsp-chapter-1): You will have a lot of questions if you are wondering about attending or not.
 - [Chapter 2: Explain It](/pages/lsp-chapter-2): "Boom", "kaboom" & "tuturu".
+- [Chapter 3: Materials](/pages/lsp-chapter-3): Bricks dahhh.
 
 <br>
 

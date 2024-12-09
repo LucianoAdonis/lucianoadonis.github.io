@@ -6,7 +6,7 @@ description: Not From a Jedi
 
 <div class="nav-buttons">
   <a href="/pages/lsp-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
-  <a href="/pages/lsp" class="custom-button left"><strong>Home</strong></a>
+  <a href="/pages/lsp-chapter-3" class="custom-button left"><strong>Chapter 3</strong></a>
 </div>
 
 ---
@@ -24,6 +24,6 @@ description: Not From a Jedi
 ---
 
 <div class="nav-buttons">
-  <a href="/pages/lsp-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
-  <a href="/pages/lsp" class="custom-button left"><strong>Home</strong></a>
+  <a href="/pages/lsp-chapter-1" class="custom-button left"><strong>Chapter 1</strong></a>
+  <a href="/pages/lsp-chapter-3" class="custom-button right"><strong>Chapter 3</strong></a>
 </div>

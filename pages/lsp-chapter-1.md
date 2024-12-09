@@ -29,7 +29,7 @@ It's really powerful approach with a wide range of applications, that can foster
 
 ## What Can It Really Do?
 
-As quoted from the certification site, **LSP** enables individuals and teams to:
+As quoted from the official site, **LSP** enables individuals and teams to:
 
 - Unlock the potential of people and their values.
 - Develop teamwork, leadership, and interpersonal relationships.
