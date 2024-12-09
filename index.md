@@ -9,29 +9,38 @@ At work, I get to connect with all kinds of interesting people and dive into a v
 ---
 
 ### Optimization
+Time is money, and more time we have, we can waste it in other things, like hobbies and family!
 
 - [Buy it for Life](./pages/shopping.md): recommended products!
 - [Slack and You](./pages/slack.md): EVENTUALLY.
+- Check the [Gist section](#code-snippets-tools-and-efficiency-tips) for more tips!
+
+<br>
 
 ### Documentation
 
-- [Confluence](./pages/confluence.md): compendium.
-- [ADRs](./pages/adrs.md): Document that will save you a lot of trouble down the line.
-- [Writing Advise](./pages/writing.md)
-- **Documentation Patterns**: EVENTUALLY.
+Writing is the ultimate skill.
+
+- [How to Make the Most of Confluence](./pages/confluence.md): compendium.
+- [Why ADRs Matter and How to Use Them](./pages/adrs.md): Document that will save you a lot of trouble down the line.
+- [Writing Efficiently](./pages/writing.md)
 - **IA Partially Generated**: too lazy to get into details, take them as source of inspiration.
     - [Requesting Assistance](./pages/advice-communications-assistance.md).
     - [Expressing Things](./pages/advice-communications-expressing-things.md).
     - [Expressions](./pages/advice-communications-expressions.md).
 
+<br>
+
 ### Self-Help
 
-Anything related to more behavior 
+Anything related to behavior, techniques and ways to improve yourself and others.
 
 - [LEGO® SERIOUS PLAY® (LSP)](./pages/lsp): more useful than you would think.
 - [Interviews and Work, Walkthrough Guide](./pages/ds-interviews): it won't land you a job right of the bat but it will definetily be more useful than many guides out there.
 - [Troubleshooting](./pages/troubleshooting): knowing is the first step.
 - **Communication**: EVENTUALLY.
+
+<br>
 
 ### Mentoring
 
@@ -40,13 +49,23 @@ Personal suggestions to improve your quality of life at work.
 - [Obsidian](./pages/obsidian.md): EVENTUALLY.
 - [Digital Life](./pages/digital-life.md): EVENTUALLY.
 
+<br>
+
 ### Theories and Thesis
+
+Think of me talking like the Anakin parody of Seals Are Good.
 
 - [The Core Five](./pages/thesis-the-core-five.md): EVENTUALLY.
 
+<br>
+
 ### Meta
 
+Learned stuff while doing other things.
+
 - [Markdown](./pages/meta-markdown.md): examples of interesting things that I had to use to make some pages from this site.
+
+<br>
 
 ---
 

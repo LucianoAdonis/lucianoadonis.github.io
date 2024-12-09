@@ -1,7 +1,7 @@
 ---
 layout: custom
 title: LEGO® SERIOUS PLAY®
-description: Review & Tips as a Chilean
+description: Review & Tips From a Chilean
 ---
 
 <img class="myImg" src="../images/headers/black-lsp-master-trainers-association-logo.png" alt="https://wallpapers.com/wallpapers/lego-star-wars-1920-x-1200-rct4ulve5dbdfj6n.html" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
