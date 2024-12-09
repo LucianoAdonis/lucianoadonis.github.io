@@ -4,6 +4,12 @@ title: Architecture Decision Record (ADR)
 description: Documenting Key Architectural Decisions for Enterprise Systems
 ---
 
+<img class="myImg" src="../images/headers/bluish-disney-the-beauty-and-the-beast-library.png" alt="the-beauty-and-the-beast" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
+
+>"To plant a garden is to believe in tomorrow." – Audrey Hepburn
+
+---
+
 # Why Use ADRs?
 
 In large-scale enterprise environments, architectural decisions have far-reaching implications. Architecture Decision Records (ADRs) serve as a crucial tool for documenting these decisions, their context, and rationale. They're not just documentation; they're a strategic asset in managing complex systems and teams.

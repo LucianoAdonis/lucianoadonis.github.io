@@ -6,7 +6,7 @@ description: Let's Build a Death Star!
 
 <div class="nav-buttons">
   <a href="/pages/lsp-chapter-2" class="custom-button right"><strong>Chapter 2</strong></a>
-  <a href="/pages/lsp" class="custom-button left"><strong>Home</strong></a>
+  <a href="/pages/lsp-chapter-4" class="custom-button left"><strong>Chapter 4</strong></a>
 </div>
 
 ---
@@ -74,5 +74,5 @@ And what about the unbranded Kits? Well, it depends:
 
 <div class="nav-buttons">
   <a href="/pages/lsp-chapter-2" class="custom-button right"><strong>Chapter 2</strong></a>
-  <a href="/pages/lsp" class="custom-button left"><strong>Home</strong></a>
+  <a href="/pages/lsp-chapter-4" class="custom-button left"><strong>Chapter 4</strong></a>
 </div>
