@@ -19,13 +19,32 @@ description: CSS is my Passion
 
 
 
-# HTML
+# Adjustments
 
-Basic commands.
+Out of the box the site looks good, but it misses a lot of details that you will have to tackle individually, so this section will focus on those small things that make the difference between a basic site and a decent one.
+
+<br>
+
+## Tab Name
+
+It mixes the title of the page set with the "title" followed by a `|` and then the main title.
+
+```bash
+# _config.yml - title: 📚
+# pages/markdown-chapter-2.md - title: HTML - Chapter 2
+
+# Tab Name: HTML - Chapter 2 | 📚
+```
+
+<br>
 
 ## Favicon
 
-Inside of the head of your layout you must include the following line `<link rel="icon" href="/favicon.ico" type="image/x-icon">`
+Inside of the head of your layout you must include the following line
+
+```html
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+```
 
 I mention that because as I have multiple subpages handling that in everything would be complex.
 
@@ -38,6 +57,8 @@ You can either overwrite the default.html or create a new one an refer it.
 # Format
 
 This is what the page was made for.
+
+<br>
 
 ## Color Reference
 
@@ -64,6 +85,7 @@ Here's a small square displaying the color `#ff6347` (Tomato):
 * **Text Color**: 
   1. <span style="color:#ff6347">**Panel Macro**</span>
   2. <span class="highlight">Panel Macro</span>
+
 
 <style>
 .highlight {
@@ -92,18 +114,23 @@ Here's a small square displaying the color `#ff6347` (Tomato):
         }
       </style>
   ```
-</details> <br>
+</details>
 
+<br>
 
 ## Links
 
-1. [Link to Another Markdown Section](#expandable-blocks)
-2. <a href="https://youtu.be/dQw4w9WgXcQ?si=PhZ3KjgImSJVEXaL" target="_blank">Open a New Tab</a>
+* **Hyper Links**
+  1. [Link to Another Markdown Section](#expandable-blocks)
+  2. <a href="https://youtu.be/dQw4w9WgXcQ?si=PhZ3KjgImSJVEXaL" target="_blank">Open a New Tab</a>
 
-```
-1. [Link to Another Markdown Section](#expandable-blocks)
-2. <a href="https://youtu.be/dQw4w9WgXcQ?si=PhZ3KjgImSJVEXaL" target="_blank">Open a New Tab</a>
-```
+<details>
+  <summary>Links Code</summary>
+  1. [Link to Another Markdown Section](#expandable-blocks)
+  2. <a href="https://youtu.be/dQw4w9WgXcQ?si=PhZ3KjgImSJVEXaL" target="_blank">Open a New Tab</a>
+</details>
+
+<br>
 
 ## Expandable Blocks
 
@@ -129,8 +156,6 @@ Markdown itself does not natively support expandable or collapsible sections. Ho
 <br>
 
 ## Import Images
-
-### **Image Handling in Markdown**
 
 - **No Format:**
   ![alt image](../images/neptunia-please-wait.png "Title")

@@ -1,6 +1,6 @@
 ---
 layout: custom
-title: Advanced Interview Tactics
+title: Interviews and Work, Walkthrough Guide
 description: The Information That You Always Wanted!
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: custom
-title: LEGO® SERIOUS PLAY®
+title: The LEGO® SERIOUS PLAY® (LSP) Experience
 description: Review & Tips From a Chilean
 ---
 

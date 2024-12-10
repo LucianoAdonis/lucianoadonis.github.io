@@ -30,7 +30,7 @@ If you want to customize you will need to look the repository to overwrite them.
 
 To use other layout or make changes to the existent one, make a copy from the original repository and do the proper changes.
 
-Then place it under:
+The following example repository structure is part of this [page](https://github.com/LucianoAdonis/lucianoadonis.github.io/tree/main).
 
 ```bash
 .
@@ -55,15 +55,13 @@ Then place it under:
 
 # Layout
 
-Continuing the Leap Day example you can get the file from the _layouts folder right [here](https://github.com/pages-themes/leap-day/blob/master/_layouts/default.html).
+Continuing the Leap Day example you can get the file from the [_layouts](https://github.com/pages-themes/leap-day/blob/master/_layouts/default.html) folder.
 
 Sometimes it's easier to look what you will get by going directly to that repo and see what you need to update.
 
+This logic to overwrite values applies for other settings.
+
 <br>
-
-
-### Template Source
-
 
 
 ### Layout Overwrite
@@ -108,6 +106,8 @@ featured: true
 ```
 
 <br>
+
+This paraters are the ones that you would see in the [_config.yml](https://github.com/LucianoAdonis/lucianoadonis.github.io/blob/main/_config.yml).
 
 ---
 

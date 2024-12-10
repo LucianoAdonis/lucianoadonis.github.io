@@ -1,6 +1,6 @@
 ---
 layout: custom
-title: Confluence
+title: Make the Most of Confluence
 description: Style Above Else
 ---
 

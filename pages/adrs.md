@@ -1,6 +1,6 @@
 ---
 layout: custom
-title: Architecture Decision Record (ADR)
+title: Why ADRs Matter and How to Use Them
 description: Documenting Key Architectural Decisions for Enterprise Systems
 ---
 

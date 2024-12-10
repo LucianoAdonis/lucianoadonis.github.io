@@ -21,7 +21,7 @@ Time is money, and more time we have, we can waste it in other things, like hobb
 
 Writing is the ultimate skill.
 
-- [How to Make the Most of Confluence](./pages/confluence.md): compendium.
+- [Make the Most of Confluence](./pages/confluence.md): compendium.
 - [Why ADRs Matter and How to Use Them](./pages/adrs.md): Document that will save you a lot of trouble down the line.
 - [Writing Efficiently](./pages/writing.md)
 - **IA Partially Generated**: too lazy to get into details, take them as source of inspiration.
@@ -35,7 +35,7 @@ Writing is the ultimate skill.
 
 Anything related to behavior, techniques and ways to improve yourself and others.
 
-- [LEGO® SERIOUS PLAY® (LSP)](./pages/lsp): more useful than you would think.
+- [The LEGO® SERIOUS PLAY® (LSP) Experience](./pages/lsp): more useful than you would think.
 - [Interviews and Work, Walkthrough Guide](./pages/ds-interviews): it won't land you a job right of the bat but it will definetily be more useful than many guides out there.
 - [Troubleshooting](./pages/troubleshooting): knowing is the first step.
 - **Communication**: EVENTUALLY.
