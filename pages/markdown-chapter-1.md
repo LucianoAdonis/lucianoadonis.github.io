@@ -1,11 +1,12 @@
 ---
 layout: custom
 title: Repository - Chapter 1
-description: Let's Build a Death Star!
+description: Cheap and Simple Site
+keywords: [markdown, jekyll, tutorial, GitHub Pages]
 ---
 
 <div class="nav-buttons">
-  <a href="/pages/markdown" class="custom-button right"><strong>Home</strong></a>
+  <a href="/pages/markdown" class="custom-button right"><strong>Menu</strong></a>
   <a href="/pages/markdown-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
 </div>
 
@@ -82,11 +83,35 @@ description:
 There a lot of parameters that you can update, but that's for another time!
 
 
+```markdown
+
+---
+layout: custom
+title: Markdown Guide
+description: Learn how to use Markdown effectively in Jekyll.
+permalink: /guides/markdown/
+categories: [guides, markdown]
+tags: [markdown, jekyll, tutorials]
+date: 2024-12-10
+author: Luciano Adonis
+header_image: /assets/images/markdown-banner.jpg
+sidebar: true
+toc: true
+lang: en
+keywords: [markdown, jekyll, guide]
+custom_css: /assets/css/markdown.css
+custom_js: /assets/js/markdown.js
+show_comments: true
+featured: true
+---
+
+```
+
 <br>
 
 ---
 
 <div class="nav-buttons">
-  <a href="/pages/lsp-chapter-2" class="custom-button right"><strong>Chapter 2</strong></a>
-  <a href="/pages/lsp-chapter-4" class="custom-button left"><strong>Chapter 4</strong></a>
+  <a href="/pages/markdown" class="custom-button right"><strong>Menu</strong></a>
+  <a href="/pages/markdown-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
 </div>
