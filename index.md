@@ -63,7 +63,7 @@ Think of me talking like the Anakin parody of Seals Are Good.
 
 Learned stuff while doing other things.
 
-- [Markdown](./pages/meta-markdown.md): examples of interesting things that I had to use to make some pages from this site.
+- [Markdown](./pages/markdown): examples of interesting things that I had to use to make some pages from this site.
 
 <br>
 

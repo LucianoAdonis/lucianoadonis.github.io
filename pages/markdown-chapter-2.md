@@ -1,65 +1,25 @@
 ---
 layout: custom
-title: Github Pages with Markdown
-description: Small pieces from this setup
+title: HTML - Chapter 2
+description: CSS is my Passion
 ---
 
-<img class="myImg" src="../images/headers/cian-markdown-wallpaper.png" alt="cian-markdown-wallpaper" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
+<div class="nav-buttons">
+  <a href="/pages/markdown-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
+  <a href="/pages/markdown-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
+</div>
 
->"Somehow HTML has return"
+---
+
+<img class="myImg" src="../images/headers/pink-css-is-my-pasion.png" alt="pink-css-is-my-pasion" style="cursor: pointer;">
 
 ---
 
-I thought at first that templates and Jekyll were limited, but that's not true! It can do a lot more, but rarely you get the chance to do more interesting things.
+<br>
 
 
-# Repository
 
-## Templates
-
-## Structure
-
-To use other layout or make changes to the existent one, make a copy from the original repository and do the proper changes.
-
-Then place it under:
-
-```bash
-.
-└── yoursite.github.io/
-    ├── _layouts/
-    │   ├── custom.html
-    │   └── default.html
-    ├── assets/
-    │   └── css/
-    │       └── style.scss
-    ├── images/
-    ├── pages/
-    │   ├── a.md
-    │   ├── b.md
-    │   └── c.md
-    ├── _config.yml
-    ├── favicon.ico
-    └── index.md
-```
-
-## Layout Overwrite
-
-There are a lot of values that you can change directly in each page, this is how you do it:
-
-```markdown
-
----
-layout: custom
-title: Markdown
-description: 
----
-
-```
-
-There a lot of parameters that you can update, but that's for another time!
-
-
-# Markdown and HTML
+# HTML
 
 Basic commands.
 
@@ -73,7 +33,9 @@ You can either overwrite the default.html or create a new one an refer it.
 
 ## Layout
 
-# Cool Stuff
+<br>
+
+# Format
 
 This is what the page was made for.
 
@@ -81,9 +43,9 @@ This is what the page was made for.
 
 Here's a small square displaying the color `#ff6347` (Tomato):
 
-1. <div class="color-square" style="background-color: #ff6347;" title="#ff6347 (Tomato)"></div>
-
-<div class="color-square" style="background-color: #ff6347;" title="#ff6347 (Tomato)"></div>
+* **Square Color Display**: 
+  1. <div class="color-square" style="background-color: #ff6347;" title="#ff6347 (Tomato)"></div>
+  2. <div class="color-square" style="background-color: #ff6347;" title="#ff6347 (Tomato)"></div>
 
 <style>
 .color-square {
@@ -99,35 +61,9 @@ Here's a small square displaying the color `#ff6347` (Tomato):
 }
 </style>
 
-<details>
-  <summary>> See Code</summary>
-
-  ```html
-  1. <div class="color-square" style="background-color: #ff6347;" title="#ff6347 (Tomato)"></div>
-  2. <div class="color-square" style="background-color: #ff6347;"></div>
-
-
-
-  <style>
-  .color-square {
-      width: 20px;
-      height: 20px;
-      display: inline-block;
-      border: 1px solid #000;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-  }
-  .color-square:hover {
-      transform: scale(1.2);
-  }
-  </style>
-  ```
-</details> <br>
-
-## Text Color
-
-1. <span style="color:#ff6347">**Panel Macro**</span>
-2. <span class="highlight">Panel Macro</span>
+* **Text Color**: 
+  1. <span style="color:#ff6347">**Panel Macro**</span>
+  2. <span class="highlight">Panel Macro</span>
 
 <style>
 .highlight {
@@ -135,9 +71,15 @@ Here's a small square displaying the color `#ff6347` (Tomato):
   font-weight: bold; /* Example style (bold text) */
 }
 </style>
-
 <details>
-  <summary>> See Code</summary>
+  <summary>Square Box Code</summary>
+  ```html
+  1. <div class="color-square" style="background-color: #ff6347;" title="#ff6347 (Tomato)"></div>
+  2. <div class="color-square" style="background-color: #ff6347;"></div>
+  ```
+</details>
+<details>
+  <summary>Text Color Code</summary>
 
   ```html
   1. <span style="color:#ff6347">**Panel Macro**</span>
@@ -183,6 +125,8 @@ Markdown itself does not natively support expandable or collapsible sections. Ho
     </details>
   ```
 </details> <br>
+
+<br>
 
 ## Import Images
 
@@ -310,3 +254,12 @@ function copyToClipboard() {
 
 ## Content Tips
 
+
+
+
+---
+
+<div class="nav-buttons">
+  <a href="/pages/markdown-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
+  <a href="/pages/markdown-chapter-3" class="custom-button left"><strong>Chapter 3</strong></a>
+</div>
