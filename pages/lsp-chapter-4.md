@@ -1,6 +1,6 @@
 ---
 layout: custom
-title: Extras - Chapter 3
+title: Extras - Chapter 4
 description: Style Above Else
 ---
 
@@ -11,15 +11,23 @@ description: Style Above Else
 
 ---
 
-<img class="myImg" src="../images/lsp/header-lego-identity-and-landscape-kit.png" alt="header-lego-identity-and-landscape-kit" style="cursor: pointer;">
+<img class="myImg" src="../images/headers/blue-under-construction.png" alt="blue-under-construction" style="cursor: pointer;">
 
 ---
 
 <br>
 
-# LEGO Kits
+# Promo Pics
 
-As mentioned before, they provide existent kits containing the pieces needed to make the sessions, here is the summary:
+<img class="myImg" src="../images/lsp/custom/marriage.png" alt="marriage" style="cursor: pointer;">
+
+<br>
+
+<img class="myImg" src="../images/lsp/custom/iceberg.png" alt="iceberg" style="cursor: pointer;">
+
+<br>
+
+<img class="myImg" src="../images/lsp/custom/meme-shark.png" alt="meme-shark" style="cursor: pointer;">
 
 <br>
 

@@ -106,6 +106,9 @@ Don't fall for those!
 
 Knock yourself out, but keep in mind that your trainer will make the difference in your journey! And having someone with good reputation will help you.
 
+But legally, only a trainer can make you a Facilitator and those are few:
+
+<img class="myImg" src="../images/lsp/official-trainers.png" alt="official-trainers" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
 
 <br>
 
