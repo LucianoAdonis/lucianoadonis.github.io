@@ -83,7 +83,7 @@ These are the gaps that Version 2.0, along with the training, aims to bridge. It
 
 <br>
 
-## Where Can I Get It?
+## How Can I Get Trained?
 
 For North and Central America you can contact them directly, but for South America you will have to get to them through official Partners.
 
@@ -92,7 +92,7 @@ For North and Central America you can contact them directly, but for South Ameri
 
 <br>
 
-## What About The Course That Last Two Days?
+## What About the Two-Day Course?
 
 There are multiple sites that offer the certification in two or three days... beware of those! 4 is about right for the training and you will require to practice on your own, so if you get a offer that will give you that amount of training in less than that, don't expect much!
 
@@ -102,11 +102,11 @@ Don't fall for those!
 
 <br>
 
-## Do I Get The Same?
+## Do I Get the Same Experience?
 
-Knock yourself out, but keep in mind that your trainer will make the difference in your journey! And having someone with good reputation will help you.
+The trainer will make the difference in your journey! And having someone with good reputation will help you.
 
-But legally, only a trainer can make you a Facilitator and those are few:
+But legally, only a trainer can make you a Facilitator and those are few, listed on the official [site](https://seriousplay.training/#):
 
 <img class="myImg" src="../images/lsp/official-trainers.png" alt="official-trainers" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
 

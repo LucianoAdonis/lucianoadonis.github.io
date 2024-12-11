@@ -17,6 +17,19 @@ description: Not From a Jedi
 
 <br>
 
+# What Can I tell?
+
+- Value for the client.
+
+# What I Want to Do it?
+
+Besides forcing coworkers to play at my level, both literally and nonleretally.
+
+But in reallity I was trying to find answers to:
+
+- When no one sees you, what will you do?: I'm totally against babysitting, 
+
+
 # Analogies
 
 As there isn't a straight way to explain it, I'll pull some random analogies that I can think of and pray that it's enough to convey the potential.
