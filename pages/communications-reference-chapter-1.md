@@ -1,3 +1,39 @@
+---
+layout: custom
+title: Message Templates
+description: Common expressions for daily technical communication
+lastUpdated: 2024-03-21
+author: Tech Team
+category: Communication
+tags:
+  - team-communication
+  - templates
+  - best-practices
+  - guidelines
+toc: true
+status: published
+searchKeywords:
+  - communication templates
+  - team absence
+  - time off
+  - meeting updates
+  - tech communication
+---
+
+<div class="nav-buttons">
+  <a href="/pages/communications-reference" class="custom-button right"><strong>Menu</strong></a>
+  <a href="/pages/communications-reference-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
+</div>
+
+
+---
+
+<img class="myImg" src="../images/headers/bluish-sw-archives.png" alt="bluish-sw-archives" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
+
+---
+
+<br>
+
 # Incident Response Communication Guide
 
 ## Calling for Help
