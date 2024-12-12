@@ -27,8 +27,9 @@ Besides forcing coworkers to play at my level, both literally and nonleretally.
 
 But in reallity I was trying to find answers to:
 
-- When no one sees you, what will you do?: I'm totally against babysitting, 
-
+- *When no one sees you, what will you do?*
+- How can I lift others?
+- 
 
 # Analogies
 

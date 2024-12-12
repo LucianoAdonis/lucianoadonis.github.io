@@ -5,7 +5,7 @@ description: Time for some character development
 ---
 
 <div class="nav-buttons">
-  <a href="/pages/thesis-the-core-five" class="custom-button right"><strong>Go Back to Home</strong></a>
+  <a href="/pages/thesis-the-core-five" class="custom-button right"><strong>Menu</strong></a>
   <a href="/pages/thesis-the-core-five-2" class="custom-button left"><strong>Chapter 2</strong></a>
 </div>
 
@@ -19,9 +19,7 @@ description: Time for some character development
 
 <img class="myImg" src="../images/thesis/the-core-five-1.png" alt="pthe-core-five-1" style="border: 0px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
-Dividing skills into just "soft" and "technical" feels like an oversimplification, especially in the tech world. These labels don’t capture the full complexity of what it takes to thrive in modern roles, where the lines between expertise, collaboration, and creativity are increasingly blurred.
-
-Based on my experience working with teams in big companies I had divided the categories into six dimensions:
+Based on my experience working with teams at big companies I had divided the categories into six dimensions:
 
 - **<span class="hover-image-trigger" data-image="../images/thesis/item-core-power.png">Power</span>**: Expertise in one or multiple fields, Time available to improve, Focus.
 - **<span class="hover-image-trigger" data-image="../images/thesis/item-core-range.png">Range</span>**: Scope of solutions Reusability, Efficacy.
@@ -30,7 +28,7 @@ Based on my experience working with teams in big companies I had divided the cat
 - **<span class="hover-image-trigger" data-image="../images/thesis/item-core-versatility.png">Versatility</span>**: Readapt, reuse to multiple scenarios.
 - **<span class="hover-image-trigger" data-image="../images/thesis/item-core-speed.png">Speed</span>**: Delivery Time,  Engagement.
 
-These dimensions provide a more complete view of the abilities required for tech jobs, where success often comes from the interplay of strengths rather than isolated skills. By focusing on these, we can better evaluate, develop, and celebrate the unique contributions that every individual brings.
+These dimensions provide a more complete view of the abilities required for tech jobs, where success often comes from the interplay of strengths rather than isolated skills. By focusing on these, we can better evaluate, develop, and promote the unique contributions that everyone brings.
 
 <br>
 
@@ -143,7 +141,7 @@ Reality checks are often needed to remind the piece that is only possible becaus
 ---
 
 <div class="nav-buttons">
-  <a href="/pages/thesis-the-core-five" class="custom-button right"><strong>Home</strong></a>
+  <a href="/pages/thesis-the-core-five" class="custom-button right"><strong>Menu</strong></a>
   <a href="/pages/thesis-the-core-five-1.5" class="custom-button left"><strong>Chapter 1.5</strong></a>
 </div>
 <a href="/pages/thesis-the-core-five-2" class="custom-button right"><strong>Chapter 2</strong></a>

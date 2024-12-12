@@ -24,10 +24,7 @@ Writing is the ultimate skill.
 - [Make the Most of Confluence](./pages/confluence.md): compendium.
 - [Why ADRs Matter and How to Use Them](./pages/adrs.md): Document that will save you a lot of trouble down the line.
 - [Writing Efficiently](./pages/writing.md)
-- **IA Partially Generated**: too lazy to get into details, take them as source of inspiration.
-    - [Requesting Assistance](./pages/advice-communications-assistance.md).
-    - [Expressing Things](./pages/advice-communications-expressing-things.md).
-    - [Expressions](./pages/advice-communications-expressions.md).
+- [Communication Baseline](./pages/communications-advice.md): too lazy to get into details, take them as source of inspiration.
 
 <br>
 
@@ -38,7 +35,6 @@ Anything related to behavior, techniques and ways to improve yourself and others
 - [The LEGO® SERIOUS PLAY® (LSP) Experience](./pages/lsp): more useful than you would think.
 - [Interviews and Work, Walkthrough Guide](./pages/ds-interviews): it won't land you a job right of the bat but it will definetily be more useful than many guides out there.
 - [Troubleshooting](./pages/troubleshooting): knowing is the first step.
-- **Communication**: EVENTUALLY.
 
 <br>
 

@@ -17,6 +17,19 @@ description: The Archives
 
 <br>
 
+We can reflect things that otherwise would be too costly to run in our minds.
+
+I can resonate with that as I started to use that as a technique or rather a coping mechanism to bypass the limitations of my brain. Works like projecting but in a constructive way rather than escapism.
+
+
+--- write da rules
+--- boardme
+
+msoy consiente de mundo interno
+cheaper than therapy
+
+
+
 # Concepts
 
 - **Constructivism**: Participants build physical models using LEGO® bricks to represent ideas, leveraging hands-on, minds-on learning.
@@ -40,7 +53,11 @@ description: The Archives
 A ghost Town, Singularity point (x2), Hydrangea, Rhinoceros beetle (x4), Fig tart, Secret emperor, Giotto, Angel, Via dolorosa, Spiral staircase.
 
 - Acuerdo/Agreement
-- Mejorar
+- Mejorar/Improve
+- Reflect Context
+- Escuchar a otros
+- Intentar
+
 
 <br>
 
