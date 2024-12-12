@@ -69,6 +69,7 @@ Each resource has a status to show its level of completion:
 **Dive in, figure it out.** Tools, techniques, and behind-the-scenes tips.
 
 - 🟡 [Markdown](./pages/markdown): Cool tricks to make your content shine.
+- 🔴 [Mini-Books](./pages/mini-books): Because 'Blog Posts' didn’t sound nearly as impressive
 
 <br>
 
