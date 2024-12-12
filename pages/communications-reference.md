@@ -10,7 +10,7 @@ description: More movie references than you can count!
 
 ---
 
-# Why This Mini-Book?
+# How This Mini-Book Can Help You
 
 Stuff.
 

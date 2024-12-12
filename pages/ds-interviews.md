@@ -4,7 +4,14 @@ title: Interviews and Work, Walkthrough Guide
 description: The Information That You Always Wanted!
 ---
 
-~~This Mini Book is for DevOps and Cloud Engineers leveling up from Semi-Senior Advanced to Senior roles.~~
+<img class="myImg" src="../images/interviews/main-menu.png" alt="main-menu" style="cursor: pointer;">
+
+> ~~This Mini Book is for DevOps and Cloud Engineers leveling up from Semi-Senior Advanced to Senior roles.~~
+
+---
+
+
+# How This Mini-Book Can Help You
 
 I originally started writing this to help Cloud/DevOps/SRE Semi-Seniors to advance to Senior roles. I found myself repeatedly sharing the same practical advice, so summarizing everything made sense.
 
@@ -14,12 +21,9 @@ The references might be confusing for some, and for others, they may be helpful 
 
 <!-- https://darksouls.wiki.fextralife.com/Dark+Souls+Remastered -->
 
+<br>
 
----
-
-<img class="myImg" src="../images/interviews/main-menu.png" alt="main-menu" style="cursor: pointer;">
-
----
+## Chapters Overview
 
 - [Chapter 0: Game Modes](/pages/ds-interviews-chapter-0): optional content, to talk a little bit about ~~companies~~ covenants.
 - [Chapter 1: Setting Your Character](/pages/ds-interviews-chapter-1): customization and types of builds.
@@ -27,6 +31,7 @@ The references might be confusing for some, and for others, they may be helpful 
 - [Chapter 2.5: Grand Archives](/pages/ds-interviews-chapter-1.5): optional content to get more experience and preparation. 
 - [Chapter 3: Boss Fight](/pages/ds-interviews-chapter-3):
 
+<br>
 
 ---
 

@@ -10,7 +10,7 @@ description: Review & Tips From a Chilean
 
 ---
 
-# Why This Mini-Book?
+# How This Mini-Book Can Help You
 
 Unless you’ve attended an **LSP Certification Training**, it’s hard to grasp what it truly offers. And even when you do, explaining the experience can be a bit challeng¡ng.
 

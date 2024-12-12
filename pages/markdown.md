@@ -10,7 +10,7 @@ description: Small pieces from this setup
 
 ---
 
-# Why This Mini-Book?
+# How This Mini-Book Can Help You
 
 I thought at first that templates and Jekyll were limited, but that's not true! It can do a lot more, but rarely you get the chance to do more interesting things.
 

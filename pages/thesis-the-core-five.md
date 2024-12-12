@@ -10,7 +10,7 @@ description: Observations About Hiring Solutions for your Problems
 
 ---
 
-# Why This Mini-Book?
+# How This Mini-Book Can Help You
 
 I’ve had my fair share of onboardings and interviews, and one thing that always stands out is how often the aim feels just a little off from what it is needed.
 

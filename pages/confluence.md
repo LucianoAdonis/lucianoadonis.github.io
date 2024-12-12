@@ -10,7 +10,7 @@ description: Style Above Else
 
 ---
 
-# Why This Mini-Book?
+# How This Mini-Book Can Help You
 
 Our memory isn't perfect, especially in tech, juggling multiple stacks and constantly switching contexts. Then, out of nowhere, someone (or several people) asks about something you worked on months ago, and you have to dig deep into the archives of your brain to pull that knowledge back out.
 
