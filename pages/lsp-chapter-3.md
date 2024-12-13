@@ -32,11 +32,22 @@ How and where use each kit and the amount it's part of the training, but keep in
 
 ## Shipping
 
-If you live in the best and first country of Chile, then congrats! But it will be expensive!
+If you live in the [best and first country of Chile](https://www.youtube.com/watch?v=61hqRtsIXDM&ab_channel=Tetuaje), congrats! But be warned, it’s going to be expensive.
 
+Also, remind that you will need a **valid email address** to buy the SERIOUS PLAY kits. And valid means that you are part of the Trainers Association.
 
-- Casilla Correos:
-  - 
+To get the products from the [LEGO Store](https://www.lego.com/es-us), you’ll need to use one of the following methods:
+
+- **Direct Shipping**: Generally, this option is not great.
+  - I haven’t tried it myself, but shipments from other countries to Chile can take a long time—expect at least a month.
+  - While Chile is selectable as a destination, the site doesn’t allow you to add your full postal code. And during the calculation screen enforces the same range of numbers that USA uses.
+- **Casilla Correos (P.O. Box Service)**:
+  - **Registration is Free**: You don’t need to pay to get an ID, which you’ll use as your address on the LEGO site. The service is based in Miami, so shipping to the P.O. Box is usually cheap or even free.
+  - **Flat Rate Shipping**: Once your package is in Miami, you’ll pay a flat rate of 30 USD (based on my experience) to have it forwarded to Chile. However, for larger packages like SERIOUS PLAY kits, the cost increases significantly. Add taxes, and it’s going to get pricey.
+  - **Reliability**: The good part? Your package will almost certainly arrive, and you can follow up directly with the service if something goes wrong.
+  - **Timing**: After your package arrives in Miami and you pay the import costs, it typically takes 3–4 weeks to get to you.
+    - Note: Shipments are usually sent out on Thursdays. So if you pay on a Friday, expect a week’s delay before it even leaves Miami.
+- **Amazon JP**: EVENTUALLY.
 
 <br>
 
