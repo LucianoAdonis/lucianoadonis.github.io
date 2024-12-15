@@ -11,7 +11,7 @@ description: Things that might be useful for you too
 
 # Products
 
-The products on this list are ones that I've truly put to the test and found invaluable.
+Things listed here are ones that I've truly put to the test and found invaluable.
 
 <br>  
 

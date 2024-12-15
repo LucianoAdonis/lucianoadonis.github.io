@@ -1,6 +1,6 @@
 ---
 layout: custom
-title: Obsidian
+title: Talent Quotes
 description: Okay, It's Worth It
 ---
 
