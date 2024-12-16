@@ -21,12 +21,12 @@ description: Let's Build a Death Star!
 
 As mentioned before, they provide existent kits containing the pieces needed to make the sessions, here is the summary:
 
-| Kit                        | Product ID | Type                     | Price (USD)       | Dimensions (CM)  | Weight (KG)  |
+| Kit                        | Product ID | Pieces |Purpose                     | Price (USD)       | Dimensions (CM)  | Weight (KG)  |
 |------------------------------|------------|--------------------------|-------------|-------------|----------|
-| **<span class="hover-image-trigger" data-image="../images/lsp/product-window-exploration-bag.png">Window Exploration Bag</span>**       | [#2000409](https://www.lego.com/en-us/product/window-exploration-bag-2000409)   | Short Activities         | 484.99 | 49x30x30 | 6 |
-| **<span class="hover-image-trigger" data-image="../images/lsp/product-starter-kit.png">Starter</span>**                  | [#2000414](https://www.lego.com/es-us/product/starter-kit-2000414)   | Get Serious     | 36.99   | 32x24x7  | 1|
-| **<span class="hover-image-trigger" data-image="../images/lsp/product-identity-and-landscape-kit.png">Identity and Landscape</span>**   | [#2000430](https://www.lego.com/en-us/product/identity-and-landscape-kit-2000430)   | Live Serious             | 789.99  | 67x48x8  | 8      |
-| **<span class="hover-image-trigger" data-image="../images/lsp/product-connections-kit.png">Connections</span>**              | [#2000431](https://www.lego.com/en-us/product/connections-kit-2000431)   | Live Fast and Serious    | 754.99  |48x35x9 | 5.54  |
+| **<span class="hover-image-trigger" data-image="../images/lsp/product-window-exploration-bag.png">Window Exploration Bag</span>**       | [#2000409](https://www.lego.com/en-us/product/window-exploration-bag-2000409)  | [49](https://www.bricklink.com/v2/catalog/catalogitem.page?S=2000409-2&#T=I)| Short Activities         | 484.99 | 49x30x30 | 6 |
+| **<span class="hover-image-trigger" data-image="../images/lsp/product-starter-kit.png">Starter</span>**                  | [#2000414](https://www.lego.com/es-us/product/starter-kit-2000414) | [234](https://www.bricklink.com/v2/catalog/catalogitem.page?S=2000414-4#T=I)  | Get Serious      |  36.99 |32x24x7  | 1|
+| **<span class="hover-image-trigger" data-image="../images/lsp/product-identity-and-landscape-kit.png">Identity and Landscape</span>**   | [#2000430](https://www.lego.com/en-us/product/identity-and-landscape-kit-2000430) | [2802](https://www.bricklink.com/v2/catalog/catalogitem.page?S=2000430-2#T=I)  | Live Serious  | 789.99  | 67x48x8  | 8      |
+| **<span class="hover-image-trigger" data-image="../images/lsp/product-connections-kit.png">Connections</span>**              | [#2000431](https://www.lego.com/en-us/product/connections-kit-2000431)  | [2455](https://www.bricklink.com/v2/catalog/catalogitem.page?S=2000431-1#T=I)  | Live Fast and Serious  | 754.99  |48x35x9 | 6  |
 
 
 How and where use each kit and the amount it's part of the training, but keep in mind it will be expensive.

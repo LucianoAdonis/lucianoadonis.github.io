@@ -90,6 +90,16 @@ screen.
 
 <br>
 
+## Specific But Useful
+
+- <span class="hover-image-trigger" data-image="../images/shopping/dji-om-5.png"> Selfie Stick on Steroids (DJI OM 5)</span>: smartphone gimbal stabilizer.
+  - Equipped with triple motors for ultra-smooth recordings, even on the go!
+  - Includes a built-in extension rod and base, perfect for taking group pictures.
+  - Smart gesture recognition via the app.
+  - Features dynamic automatic tracking to keep you in frame.
+
+<br>  
+
 ## Aliexpress
 
 - **<span class="hover-image-trigger" data-image="../images/shopping/aliexpress-foam-machine.png">Foam Washing Machine</span>**: I can't recommend this enough.
