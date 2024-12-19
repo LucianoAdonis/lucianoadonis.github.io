@@ -74,7 +74,7 @@ screen.
   - Perfect for side-by-side document viewing or coding.
   - Reduces the need for multiple monitors, saving desk space.
 
-- **<span class="hover-image-trigger" data-image="../images/shopping/laser-printer.png">Laser Printer (Brother)</span>**:  The best choice if you're tired of unreliable printers.
+- **<span class="hover-image-trigger" data-image="../images/shopping/laser-printer-hp-neverstop.png">Laser Printer (HP Neverstop 1200W)</span>**:  The best choice if you're tired of unreliable printers.
   - Unlike inkjet printers that use liquid ink, laser printers use toner, a fine powder that is bonded to the paper through heat and magnetism.
     - This method makes the print more durable and avoids issues like dried-out cartridges.
   - You can print thousands of pages with one toner refill.
