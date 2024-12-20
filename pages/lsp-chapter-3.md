@@ -33,32 +33,18 @@ How and where use each kit and the amount it's part of the training, but keep in
 
 <br>
 
-
-eplacement Options
-Sure, you can use your existing LEGO bricks or purchase used ones. I personally have over 90 pounds of LEGO outside of my main collection. However, here’s why that may still fall short:
-
-Damage: Used pieces can be worn, chipped, or discolored.
-Consistency: Some "common" pieces are surprisingly rare.
-For example: Window glass and firetruck stairs. Despite all the LEGO I own—including displayed sets—I only have about 7 of those pieces at best. The same goes for parts like windshields.
-Special Pieces:
-The Connections Kit is a gold mine. Its possibilities and flexibility are unmatched. Trust me, it’s amazing just for existing.
-Unbranded Kits
-
-
-
-
 ## Replacement Options
 
 You can surely use used LEGO, outside of my collection I have over 90 pounds of it. **But** it probably won't be enough, here are the reasons:
 
 - **Damage**: Used pieces can be worn, chipped, or discolored.
   - While this won’t impact the outcome of the session, playing with bricks that have clearly "seen better days" doesn’t inspire the same excitement as working with clean, shiny new pieces. 
-- **Consistency**: some pieces that one would consider to be common aren't at all.
+- **Consistency**: Some "common" pieces are surprisingly rare.
   - For example: Windshields and firetruck stairs. Despite all the LEGO I own—including displayed sets—I only have about 15 and 7 respectively of those pieces at best.
       - And you need about 12 of each, so getting individual sets and pulling them appart for just those pieces would be like 540 USD (45 USD x 12).
       - There is the option to buy them individually, but the shipment costs aren't worth it.
 - **Special Pieces**:
-  - The Connections Kit is a gold mine. You won't get the same amount of pieces anywhere else.
+  - The Connections Kit is a gold mine. You won't get the same amount of technic pieces anywhere else.
 
 And what about the unbranded Kits? Well, it depends:
 
