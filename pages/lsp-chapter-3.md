@@ -65,14 +65,19 @@ Sooner or later, you’ll need to clean your LEGO pieces. When you’re working 
 
 Recommended Method:
 
-Use mild soap.
-Place bricks in a mesh laundry bag to avoid losing pieces while cleaning.
+- Use mild soap.
+- Place bricks in a mesh laundry bag to avoid losing pieces while cleaning or ruining your laundry machine.
 
 ## Session Materials
 
-- Post-Its: Essential for longer workshops. Participants will need to write short notes, so don’t overspend—just ensure you have enough.
-- Music: a speaker may help to to the ambience sound. [Everything Has to Be a Montage](https://youtu.be/YoxIQ2HCco8?si=pAT5oMQFbh4nZ-j8&t=20).
-- Camera: you won't need a expensive camera, but you can get nice shots with a professional camera.
+- **Post-Its**: Essential for longer workshops. Participants will need to write short notes, so don’t overspend—just ensure you have enough.
+- **Music**: a speaker may help to to the ambience sound. [Everything Has to Be a Montage](https://youtu.be/YoxIQ2HCco8?si=pAT5oMQFbh4nZ-j8&t=20).
+  - Since my music taste might not work for everyone, here are a few options you can try instead:
+    - [𓆜 | playlist to be a shark](https://www.youtube.com/watch?v=7avPoMhQxX8&ab_channel=blewoo).
+    - [La mejor música de elevador o ascensor instrumental relajante lounge](https://www.youtube.com/watch?v=0Akp1v6QrYA&ab_channel=LiveBetterMedia-Espa%C3%B1ol).
+    - I'll figure better playlist/songs eventually...
+- **Camera**: you don't need a expensive camera, but it makes the difference if you want to capture all objects rather than just a few and the rest blurred.
+  - Remember to ask for permission before taking pictures of anyone involved!
 
 <br>
 
@@ -112,8 +117,12 @@ And yes, you only need to change the idiom to English or use the translate Chrom
 
 ## Comparto Mi Maleta
 
-People post available travel ranges, and you can calculate costs based on their availability.
+People post their available travel ranges, and you can calculate costs based on their schedules and availability.
 
+- You can request a quote from multiple travelers, but keep in mind they may reject your request if it doesn’t align with their plans.
+  - Think of it like Tinder... but for packages.
+  - This system allows you to compare and select the best deal.
+- Once your package arrives in Chile, you can choose to pick it up directly from the Comparto Mi Maleta office or arrange the delivery.
 
 <br>
 
