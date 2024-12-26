@@ -11,35 +11,36 @@ description: Bridging the Gap Between Support and Core Business Goals
 
 ---
 
-<img class="myImg" src="../images/lsp/teen-titans-get-serious-lsp.png" alt="teen-titans-get-serious" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
+<img class="myImg" src="../images/headers/yellow-okr.png" alt="https://www.cebra.com/hubfs/okr-marketing.jpg" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
 
 ---
 
 <br>
 
 # What Are My OKRs?
-Depending on your methodology—like the Spotify Model—you might see a hierarchy:
 
-- Business
-  - Development
-    - Infrastructure
+Depending on the organizational structure and methodology—like the Spotify Model—you might encounter a tiered hierarchy:
 
-Your specific OKRs in Infrastructure may be influenced by overarching business objectives and directly tied to the deliverables of development teams.
+- **Business**
+  - **Development**
+    - **Infrastructure**
+
+In such a model, your specific OKRs within the Infrastructure tier are likely to be influenced by overarching business objectives. These are typically aligned with the deliverables of development teams, ensuring that infrastructure supports and enhances broader business goals.
 
 <br>
 
 ## OKR Highlight Types
 
-Not all tasks directly tie to an OKR's stated goals but are nonetheless valuable. To account for this in reports, consider categorizing tasks as follows:
+While not all tasks directly contribute to the stated goals of an OKR, they play crucial roles in the organization's success. To effectively recognize and report these contributions, consider categorizing tasks as follows:
 
-- Business: Essential changes for team or organizational goals.
-- Express: Urgent priorities requiring immediate action.
-- Innovation: Creative solutions that enhance quality of life.
-- Enhancements: Refinements to boost process efficiency.
-- Standardization: Efforts to unify practices across teams.
-- Adjustments: Necessary updates for team functionality.
+- **Business Critical:** Key changes necessary to meet team or organizational goals. These are fundamental tasks that drive the core mission of the business.
+- **Express:** Tasks that address urgent priorities requiring immediate action to prevent or respond to critical situations.
+- **Innovative:** Initiatives that introduce creative solutions, significantly enhancing the quality of life or work processes within the organization.
+- **Enhancements:** Focused refinements aimed at boosting the efficiency of existing processes or systems.
+- **Standardization:** Efforts to ensure uniform practices across different teams and departments, promoting consistency and reliability.
+- **Adjustments:** Necessary updates that maintain or improve the functionality of team operations, ensuring ongoing effectiveness.
 
-This categorization helps highlight the indirect value contributed by support teams like infrastructure.
+This strategic categorization not only clarifies the value of these tasks but also highlights how support roles like infrastructure significantly contribute to the broader objectives of the organization.
 
 <br>
 

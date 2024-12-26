@@ -5,13 +5,13 @@ description: Effective Tools for Tracking and Reporting
 ---
 
 <div class="nav-buttons">
-  <a href="/pages/okr-chapter-2" class="custom-button right"><strong>Chapter 3</strong></a>
+  <a href="/pages/okr-chapter-2" class="custom-button right"><strong>Chapter 2</strong></a>
   <a href="/pages/okr" class="custom-button left"><strong>Menu</strong></a>
 </div>
 
 ---
 
-<img class="myImg" src="../images/lsp/teen-titans-get-serious-lsp.png" alt="teen-titans-get-serious" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
+<img class="myImg" src="../images/headers/yellow-okr.png" alt="https://www.cebra.com/hubfs/okr-marketing.jpg" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
 
 ---
 
@@ -59,6 +59,6 @@ After crafting your JQL, insert it into the Jira Issues macro in Confluence.
 ---
 
 <div class="nav-buttons">
-  <a href="/pages/okr-chapter-2" class="custom-button right"><strong>Chapter 3</strong></a>
+  <a href="/pages/okr-chapter-2" class="custom-button right"><strong>Chapter 2</strong></a>
   <a href="/pages/okr" class="custom-button left"><strong>Menu</strong></a>
 </div>

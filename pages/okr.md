@@ -4,7 +4,7 @@ title: OKRs and You
 description: Fun
 ---
 
-<img class="myImg" src="../images/headers/purple-computer.png.png" alt="purple-computer.png" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
+<img class="myImg" src="../images/headers/yellow-okr.png" alt="https://www.cebra.com/hubfs/okr-marketing.jpg" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
 
 >"First time with Micromanagement?"
 
@@ -33,11 +33,7 @@ In Progress:
 <br>
 
 ---
-<div class="ds-button-container">
-  <a href="/pages/lsp-chapter-0" class="custom-button left"><strong>Chapter 0 (Optional)</strong></a>
-</div>
-
 
 <div class="ds-button-container">
-  <a href="/pages/lsp-chapter-1" class="custom-button left"><strong>Chapter 1</strong></a>
+  <a href="/pages/okr-chapter-1" class="custom-button left"><strong>Chapter 1</strong></a>
 </div>
