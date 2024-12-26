@@ -22,6 +22,7 @@ title: Reference List - Chapter Ref
 - [The Three Ways of OKR Visualization: Roadmap, Dashboard, Strategy Map](https://oboard.io/blog/okr-visualization): ways to reflect the OKRs.
 - [Ultimate Guide to Objective and Key results – OKR Meaning and Examples](https://www.getjop.com/blog/what-is-okr)
 - [OKR: Qué es y cómo llevar a tu marca al éxito](https://www.cebra.com/blog/okr).
+- [Metodología OKR: ¿Qué es y cómo aplicarla en RR.HH.?](https://www.pandape.com/blog/metodologia-okr/)
 
 <br>
 
