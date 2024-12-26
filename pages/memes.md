@@ -10,17 +10,13 @@ description: Know-How
 
 ---
 
-# How This Mini-Book Can Help You
+# MacOS
 
-Making memes is must-have skill for communication.
+The edition tool for images can do wonders if you don't have much time.
 
-<br>
+# Additional Tools
 
-# Chapters Overview
-
-- [Chapter 1: Quick Edition](/pages/memes-chapter-1).
-
-<br>
+- Link to the GIST.
 
 ---
 
