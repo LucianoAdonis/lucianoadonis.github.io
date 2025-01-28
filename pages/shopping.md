@@ -114,7 +114,7 @@ screen.
 - **Fluorescent Tape**: Bright and practical.
 - **<span class="hover-image-trigger" data-image="../images/shopping/aliexpress-coin-cutter.png">Coin Cutter</span>**: Convenient for opening boxes and other things.
 
-## House Tools
+## House Tools & Items
 
 - **<span class="hover-image-trigger" data-image="../images/shopping/makita-cordless-screwdriver.png">Cordless Screwdriver (Makita)</span>**: It’s like a first aid kit, but for furniture and anything else with screws.
   - It’s not a huge investment and your hands will definitely thank you in the long run.
@@ -123,16 +123,24 @@ screen.
 - **<span class="hover-image-trigger" data-image="../images/shopping/ugreen-screwdriver-set.png">Screwdriver Set (Ugreen)</span>**: simple and efficient.
   - The spring it's quite amazing.
   - 38 Tips.
+- **CoolGuard Paint**: Designed for roofs, this paint not only includes three additional features but also reduces temperatures by up to 15ºC.
+  - With just one coat, it lowers the perceived heat inside rooms and decreases the indoor temperature by 4ºC compared to the outside when it’s 32ºC.
+
 
 <br>
 
-## Tried and Regretted
+## Tried but...
 
 - **<span class="hover-image-trigger" data-image="../images/shopping/elgato-streamdeck-mk2.png">Elgato Stream Deck MK.2</span>**: It's a cool gadget, but honestly, it's not that useful for me unless you're into gaming or streaming. It can help a lot, but it's often more effective to simplify your workflow rather than set up automation for everything.
   - You can customize the buttons with different themes and assign them to tasks like running automation, launching apps, or even closing programs.
 - **<span class="hover-image-trigger" data-image="../images/shopping/lifesmart-cololight-strip.png">LifeSmart ColoLight, 60 Leds</span>**: it's a good product if you like lights and bright colors, but it isn't for me.
   - It's extensible and doesn't require welding to do expand it as it has defined connectors.
   - Price is awful but understandable.
+- **Dron (Mavic Air 1 Fly More Combo)**: A great gadget for outdoor enthusiasts.
+  - However, my main issue is that I rarely go outside, so I hardly ever get the chance to use it.
+  - Under ideal conditions, the three batteries provide a total of 30 minutes of flight time.
+  - Each battery is supposed to last around 20 minutes, but factors like battery health and wind (which the drone compensates for to maintain stability) can reduce this.
+  - The recording quality is excellent—no complaints there.
 
 
 <br>
