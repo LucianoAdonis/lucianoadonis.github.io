@@ -1,7 +1,7 @@
 ---
 layout: custom
-title: Make the Most of Confluence
-description: The Micromanagement Series
+title: Jira and Beyond 
+description: A dream come true
 ---
 
 <img class="myImg" src="../images/headers/cian-chess-board-v2.png" alt="cian-chess-board" style="border: 0px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
@@ -12,10 +12,11 @@ description: The Micromanagement Series
 
 # How This Mini-Book Can Help You
 
-Figuring how to make your workers a metric seems bad and all, but it's not just as easy as it sounds. A good system can track and locate where we are wasting efforts.
+Figuring how to make your workers a metric seems simple and badhearted, but it isn't simple at all, but it's not just as easy as it sounds. For work reasons I had to come up with something that could help us identify all groups that contained multiple people, from different projects... and well, this already goes beyond to "my three squads metrics"
 
-The reason I'm writing this is because most of the content is behind a paywall or company that sells you the solution.
-Mine may not be as advanced, but at least will get you going.
+A good system can track and locate where we are wasting efforts. I'm all down for it, I like the concept of transparency even if that is a double edge sword.
+
+Yes, with this, they can know where are you located in an ocean of teams, and what when and where are you doing things.
 
 ---
 

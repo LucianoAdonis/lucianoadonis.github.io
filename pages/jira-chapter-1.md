@@ -1,7 +1,7 @@
 ---
 layout: custom
-title: JQL
-description: Like Magic, Without the Wonder
+title: The Case
+description: How Complicated Can Be?
 ---
 
 <div class="nav-buttons">
@@ -15,30 +15,83 @@ description: Like Magic, Without the Wonder
 
 ---
 
-# JQL
+Okay! The mission is simple, get multiple of reports that are mostly handling manually and you need to talk with people to understand in an automated fashion.
 
-The Jira Query Language is used in the advanced searches, it allows you to get more detailed results. Normally it would be overkill, speicially when the basic search it's quite useful. But when searching for details or comparing multiple specific fields to filter out results, then it's not as useful.
+This ideally should cover things that we would want to know, like:
 
-The [documentation](https://community.atlassian.com/t5/Jira-articles/Introduction-to-JQL-Standard-amp-advanced-search-in-Jira/ba-p/1707966) contains a few good examples of what you can do, in short it's like the following:
+- Distribution of Engineers within Projects
+- Current Load and what we would want to know as expected.
+- Projections.
+- And of course! The Reports!
+
+End game would be a platform that allows us to manipulate the data and share it securely... like Airtable... but let's
 
 
-- Unresolved, overdue issues: `duedate < now() AND status NOT IN (closed, resolved)`
-- Issues belonging to a closed sprint: `sprint in closedSprints()`
-
-Now think that you have to check +40 people across more than 20 projects and it may not seem that much help those small nuggets of information.
+## JIRA
 
 
-## Concepts
+## JIRA Sheets
 
-- [Fields](https://amoeboids.com/blog/a-quickstart-guide-to-jira-query-language-jql/#:~:text=learn%20more%20about%20the%20JQL%20fields%20here)
-- [Values]
-- [Operators](https://support.atlassian.com/jira-software-cloud/docs/jql-operators/)
-- [Keywords](https://support.atlassian.com/jira-software-cloud/docs/jql-keywords/)
-- [Functions](https://amoeboids.com/blog/a-quickstart-guide-to-jira-query-language-jql/#:~:text=quite%20lengthy%20%26%20is-,available%20here,-.%C2%A0)
 
-https://amoeboids.com/blog/a-quickstart-guide-to-jira-query-language-jql/
+### Columns
 
-<br>
+Regardless of the size don't forget to get the following columns:
+
+- System Fields
+  - Labels
+  - Project
+  - Project key
+  - Epic name
+  - Epic link
+
+  - Parent
+  - Sub-tasks
+
+  - Issue URL
+  - Story Points
+
+- Smart Columns
+  - Project type *
+  - Time since first comment
+  - Date of first comment
+  - Assignee(s) - Number of values
+
+- History Columns 
+  - Time with assignee
+  - Number of assignee changes
+  - Date of status
+  - Date of status change
+  - Time since status
+  - Time since status changed
+  - Time in status
+  - Time between statuses
+  - Resolved date
+  - Time since resolved
+  - Time since created
+  - Time since updated
+  - Last updated by user
+  - Last update action
+  - Number of updates
+  - Last viewed date
+  - Create date
+  - Update date
+
+- Previous Status
+
+
+
+You can get a lot from it, specially using the smart columns.
+
+Values that can be useful for metrics and references can be:
+
+- Project
+- Project Kek
+
+
+Airtable and You
+
+You can import data from Jira in excel format, specially if you are including a lot of details.
+
 
 
 ---
