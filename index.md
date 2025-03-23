@@ -6,7 +6,7 @@ description: Mini Books
 
 At work, I get to connect with all kinds of interesting people and dive into a variety of ideas. But with so much ground to cover, things can get a bit chaotic, and keeping everyone in the loop can be a challenge.
 
-That's where the 'Mini Books' on this site come in – they're designed to create a shared understanding and make things smoother down the line! 🚀
+That's where the 'Mini Books' on this site come in, designed to create a shared understanding and make things smoother down the line! 🚀
 
 ---
 
