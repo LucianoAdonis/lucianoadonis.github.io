@@ -110,6 +110,8 @@ The core!
     - `AND()`, `OR()`: Multiple conditions
     - `SWITCH()`: Multiple case handling
 
+- **[Blank](https://support.airtable.com/docs/identifying-blank-values)**: if empty or 0.
+
 ## Advanced Formula Examples
 
  - Date & Time Calculations
@@ -202,6 +204,16 @@ The core!
     COUNTIF(
         SPLIT({Tags}, ','),
         'priority'
+    )
+    ```
+
+- Array Operations
+    ```
+    # if empty use another field, otherwise use original
+    IF(
+        OR({Primary Field} = '', {Primary Field} = BLANK()),
+        {Backup Field},
+        {Primary Field}
     )
     ```
 
