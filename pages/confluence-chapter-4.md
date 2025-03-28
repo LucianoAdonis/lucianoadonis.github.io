@@ -5,7 +5,7 @@ description: Structure Above Else
 ---
 
 <div class="nav-buttons">
-  <a href="/pages/confluence-chapter-1" class="custom-button right"><strong>Chapter 3</strong></a>
+  <a href="/pages/confluence-chapter-3" class="custom-button right"><strong>Chapter 3</strong></a>
   <a href="/pages/confluence" class="custom-button left"><strong>Home</strong></a>
 </div>
 
