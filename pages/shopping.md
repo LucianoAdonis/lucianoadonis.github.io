@@ -55,6 +55,8 @@ Things listed here are ones that I've truly put to the test and found invaluable
   - The battery lasts a long time, so you don't have to worry about frequent charging.
   - You can also upload other documents and convert them to Kindle-friendly formats like EPUB.
 
+- Tineco iFloor
+
 <br>  
 
 ## Work Tech
