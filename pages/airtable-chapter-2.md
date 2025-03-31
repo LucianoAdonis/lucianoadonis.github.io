@@ -1,6 +1,6 @@
 ---
 layout: custom
-title: airtable - Chapter 2
+title: Airtable - Chapter 2
 description: Setting up the Base
 ---
 
@@ -80,6 +80,11 @@ The first time that you are importing data it will display this menu:
 
 
 <img class="myImg" src="../images/airtable/tutorial-00-airtable-interface-4d.png" alt="pagelayout-example-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
+<img class="myImg" src="../images/airtable/tutorial-00-airtable-interface-4da.png" alt="pagelayout-example-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
+<img class="myImg" src="../images/airtable/tutorial-00-airtable-interface-4db.png" alt="pagelayout-example-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+
 
 <img class="myImg" src="../images/airtable/tutorial-00-airtable-interface-4e.png" alt="pagelayout-example-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 

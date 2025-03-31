@@ -5,7 +5,7 @@ description: Basics Above Else
 ---
 
 <div class="nav-buttons">
-  <a href="/pages/airtable-chapter-0" class="custom-button right"><strong>Chapter 0</strong></a>
+  <a href="/pages/airtable" class="custom-button right"><strong>Home</strong></a>
   <a href="/pages/airtable-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
 </div>
 
@@ -21,106 +21,225 @@ In this chapter, we'll cover the basics to help you:
 - Understand how pages are organized.
 - Get familiar with the Layout feature.
 - Explore how to use Macros effectively.
-- Search in Confluence.
+- Search in airtable.
 
 With these foundations in place, we'll be ready to dive into the real fun.
 
 <br>
 
-## Cloud is Not the Same as Data Center
+# Information Sync
+
+## Sync Tables
 
 
-## Page Distribution
+
+## API Sync
+
+Bsically an endpoint that allows you to make updates to a page associated with it. Once created from the integrations menu, it will give you a query like this, but without the data part:
+
+```
+curl -X POST "https://api.airtable.com/v0/{baseId}/{tableIdOrName}/sync/{apiEndpointSyncId}" \
+-H "Authorization: Bearer YOUR_TOKEN" \
+-H "Content-Type: text/csv" \
+--data 'column1,column2
+row1-column1,row1-column2
+row2-column1,row2-column2'
+```
+
+## API Tutorial
+One would expect to have an option to provide a way to upload a file, but no.
+
+- [Create Tokens](https://airtable.com/create/tokens)
+- [Post Sync API Endpoint](https://airtable.com/developers/web/api/post-sync-api-endpoint): 
+- [Sync Integration API Details](https://support.airtable.com/docs/airtable-sync-integration-sync-api)
+
+My workaround was to cat the CSV file:
+
+```
+curl -X POST "https://api.airtable.com/v0/{baseId}/{tableIdOrName}/sync/{apiEndpointSyncId}" \
+-H "Authorization: Bearer YOURAWESOMETOKENHERE" \
+-H "Content-Type: text/csv" \
+--data "$(cat myspreedsheet.csv)"
+```
 
 
-### Cloud Differences
+And yes, because of this I had to export the table as CSV, but without the descriptions or descriptions updates, as it breaks the format...
 
-In the Cloud version it allows you to quickly add new pages directly from the side menu rather than relying solely on the "Create" button.
+But that wasn't the full extend of the problem! 5 days for us, it's about 118 records, were more than what it could handle. In theory it was 10.000 characters, I first I fought it was "ah 10K rows"
 
-<img class="myImg" src="../images/confluence/basics-cloud-page-creation.gif" alt="basics-cloud-page-creation" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
-Even though I was initially on the "Team Information" page, because I clicked the button to create a page from the "POCs" page, the new page was created, and I was automatically moved to the empty page under "POCs".
+# Working With Data
 
-<br>
+Rather than rehashing the docs, I'll only add notes to stuff that's worth mentioning. Let's dive in!
 
-## Layouts
+## Data Cell Types
 
-The Layout settings are often overlooked, as you can only see the menu after clicking the button highlighted in red:
+The core!
 
-<img class="myImg" src="../images/confluence/basics-layout-example-1.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+- **Text & Numbers**:
+    - Single Line Text.
+    - Long Text: you can enable Markdown, which can greatly impact the way that you have fields in <span class="highlight">Interfaces</span>, like formated links.
+    - Number.
+    - Currency.
+    - Percent: this is one of the fields that you probably have seen before! You have an option that allows to display this information as a progress bar.
+    - Rating: 5 stars, what else could I say?
 
-The first time you click this button, it will add existing content to a single section. If you have a lot of content, there isn't a way around it; you must add more sections and separate them manually.
+- **Date & Time**:
+    - Date
+    - Date & Time
+    - Duration
 
-<img class="myImg" src="../images/confluence/basics-layout-example-2.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+- **Structured Data**:
+    - Single Select
+    - Multiple Select
+    - Checkbox
+    - Attachments: this is where you place your images!
+    - Link to Record: this will allow you to link to another table.
+        - Or to records in the same spreadsheet. This will be a key element to generate charts with <span class="highlight">integrations</span>  like the Charts from Airtable.
 
-From left to right:
-1. This first section will allow you to include rows, by default when you add a new one, this will be placed below the one that you are currently placed.
-2. This section will allow you to set the distribution of the section row.
+## Common Formulas
 
-### Cloud Differences
+- **Text Manipulation**:
+    - `CONCATENATE()`: Joins text strings
+    - `LEFT()`, `RIGHT()`: Extract characters
+    - `FIND()`: Locate substrings
+    - `SUBSTITUTE()`: Replace text
+- **Numerical**:
+    - `SUM()`, `AVERAGE()`: Basic calculations
+    - `ROUND()`, `FLOOR()`, `CEILING()`: Number formatting
+    - `MAX()`, `MIN()`: Value comparison
+- **Logical**:
+    - `IF()`: Conditional operations
+    - `AND()`, `OR()`: Multiple conditions
+    - `SWITCH()`: Multiple case handling
 
-The base layout doesn't cover the entire page but applies to just one section, and you can add more as needed. The options remain the same, though it's likely designed this way to be more responsive.
+- **[Blank](https://support.airtable.com/docs/identifying-blank-values)**: if empty or 0.
 
-<br>
+## Advanced Formula Examples
 
-## Macros
+ - Date & Time Calculations
+    ```
+    // Get working days between dates (excluding weekends)
+    WORKDAY_DIFF({Start Date}, {End Date})
 
-The magic behind Confluence.
+    // Add business days to a date
+    WORKDAY_ADD({Start Date}, 10)
 
-<img class="myImg" src="../images/confluence/basics-macro-menu-example-1.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+    // Format date as custom string
+    DATETIME_FORMAT({Date Field}, 'MMMM D, YYYY')
+    ```
 
-1. The plus button will open the menu where we can see standard macros.
-2. Horizontal rule
-3. Table of Contents.
-4. Other macros: this last one will display the menu with the rest of the available macros installed.
+ - Complex Text Processing
 
-For the following example we are going to search for the <span class="highlight">Code Block</span> macro.
+    ```
+    // Extract domain from email
+    REGEX_EXTRACT({Email}, '@(.+)$')
 
-<img class="myImg" src="../images/confluence/basics-macro-menu-example-2.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+    // Create slug from title
+    LOWER(
+        SUBSTITUTE(
+            REGEX_REPLACE({Title}, '[^a-zA-Z0-9\\s]', ''),
+            ' ',
+            '-'
+        )
+    )
 
-1. Using the search menu you can filter the results.
-2. Click the macro.
+    // Concatenate with conditional formatting
+    IF(
+        {Status} = 'Urgent',
+        CONCATENATE('🚨 ', {Task Name}),
+        {Task Name}
+    )
+    ```
 
-For most macros, if not all, clicking it will open an insert menu for customization. Don't worry, you can always return to this menu by clicking 'edit' on the macro.
+- Lookup & Calculations
+    ```
+    // Weighted average calculation
+    (SUM({Score} * {Weight})) / SUM({Weight})
 
-<img class="myImg" src="../images/confluence/basics-macro-menu-example-3.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+    // Running total with conditions
+    ROUND(
+        SUM(
+            IF(
+                {Date} <= TODAY(),
+                {Amount},
+                0
+            )
+        ),
+        2
+    )
+    ```
 
-Things to make clear about this section are:
+- Advanced Conditional Logic
+    ```
+    // Status based on multiple conditions
+    SWITCH(
+        TRUE(),
+        {Progress} = 100, 'Complete',
+        {Progress} >= 75, 'Almost Done',
+        {Progress} >= 25, 'In Progress',
+        {Progress} > 0, 'Just Started',
+        'Not Started'
+    )
 
-The options will depend on the macro, but they are worth checking. In some cases, they are a bit complex and may require additional knowledge.
-- The preview menu lets you see how your changes will be reflected.
+    // Dynamic color coding
+    IF(
+        AND({Status} = 'Active', {Days Remaining} < 7),
+        'red',
+        IF(
+            AND({Status} = 'Active', {Days Remaining} < 14),
+            'yellow',
+            'green'
+        )
+    )
+    ```
 
-In most cases, you will first need to include content to appreciate how it changes, so in the next section, we will do that.
+- Array Operations
+    ```
+    // Unique values from linked records
+    ARRAYUNIQUE(
+        ARRAYFLATTEN(
+            VALUES({Linked Records})
+        )
+    )
 
-<img class="myImg" src="../images/confluence/basics-macro-customization.gif" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+    // Count items matching criteria
+    COUNTIF(
+        SPLIT({Tags}, ','),
+        'priority'
+    )
+    ```
 
-For this example, we are setting properties.
+- Array Operations
+    ```
+    # if empty use another field, otherwise use original
+    IF(
+        OR({Primary Field} = '', {Primary Field} = BLANK()),
+        {Backup Field},
+        {Primary Field}
+    )
+    ```
 
-- Those will be reflected in the after the macro name.
+## Known Limitations & Workarounds
 
-<br>
+- **Data**:
+    - Combining fields from a multiple or single select will result in repeated elements.
+        - This may be fixed by using the <span class="highlight">Rollout</span> feature. This will filter along with the "ARRAY" formula.
 
-## Search
+# Premium vs Free Tier
 
-It is not a skill issue, it really sucks. But there are ways to get better results.
+If you ever consider this for personal use, then you need to keep the following in mind:
 
-When using the search keep in mind the following:
-  - Limit the scope:
-    - Filter by Space
-    - Filter by User
-  - Add tags:
-
-Most of these little improvements can be optimized.
-
-## Permissions
-
-// Explain certain limitations to take actions.
+- Team:
+    - Share publicly interfaces.
+- Business:
+    - Interface: filter elements from view
 
 <br>
 
 ---
 
 <div class="nav-buttons">
-  <a href="/pages/confluence-chapter-0" class="custom-button right"><strong>Chapter 0</strong></a>
-  <a href="/pages/confluence-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
+  <a href="/pages/airtable" class="custom-button right"><strong>Home</strong></a>
+  <a href="/pages/airtable-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
 </div>

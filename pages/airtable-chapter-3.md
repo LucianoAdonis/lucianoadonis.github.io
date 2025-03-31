@@ -27,6 +27,8 @@ An URL... yeiii, which takes us to the image:
 
 <img class="myImg" src="../images/airtable/tutorial-00-airtable-interface-image-0b.png" alt="pagelayout-example-2" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
+<br>
+
 ## Formula Field
 
 Okay, what now?
@@ -78,9 +80,6 @@ Specially if you are getting data from an API, you won't get the image directly,
 
 
 <img class="myImg" src="../images/airtable/tutorial-03-airtable-scripting-2.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
-
-
-The [Panel](https://airtable.atlassian.com/conf719/panel-macro-1157466870.html) allows to create a section with colored background, but you can get more creative and do more by also using it with [Deck of Cards](https://appfire.atlassian.net/wiki/spaces/CTFCSM/pages/471176665/Deck+of+Cards)
 
 
 <br>

@@ -35,6 +35,7 @@ That's where the 'Mini Books' on this site come in, designed to create a shared 
 
 **If you don't write it, you'll forget it.** Learn how to craft clear and effective documentation.
 
+- [Make the Most of Airtable](./pages/airtable) (🔴): A comprehensive guide/tutorial.
 - [Make the Most of Confluence](./pages/confluence) (🟢): A comprehensive guide/tutorial.
 - [Why ADRs Matter and How to Use Them](./pages/adrs) (🟡): Avoid future headaches with proper records.
 - [Writing Efficiently](./pages/writing) (🟠): Streamline your writing process.
