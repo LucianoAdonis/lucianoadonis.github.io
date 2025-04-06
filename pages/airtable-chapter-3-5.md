@@ -40,7 +40,7 @@ Airtable scripting allows you to automate tasks and extend the functionality of 
 <details class="code-block">
   <summary>Calculate Total Table Usage</summary>
   <div class="code-container">
-    <button class="copy-button" onclick="copyCode(this)">Copy</button>
+    <button class="copy-button" onclick="copyCode(this)">📋</button>
     <pre><code>let total = 0;
 let tables = base.tables;
 
@@ -57,7 +57,7 @@ output.text(`\nTotal records across all tables: ${total}`);</code></pre>
 <details class="code-block">
   <summary>Total Usage with Estimations</summary>
   <div class="code-container">
-    <button class="copy-button" onclick="copyCode(this)">Copy</button>
+    <button class="copy-button" onclick="copyCode(this)">📋</button>
     <pre><code>// === CONFIG ===
 let estimatedDailyGrowth = 50; // 👈 Change this to your average daily new rows
 let maxRowsAllowed = 50000;    // 👈 Change based on your Airtable plan
@@ -86,7 +86,7 @@ output.markdown(`**🕒 Days until limit:** ${daysLeft} days`);</code></pre>
 <details class="code-block">
   <summary>Export Tables Fields and Details in Markdown Format</summary>
   <div class="code-container">
-    <button class="copy-button" onclick="copyCode(this)">Copy</button>
+    <button class="copy-button" onclick="copyCode(this)">📋</button>
     <pre><code>let tables = base.tables;
 
 let markdownOutput = '## Airtable Schema Overview\n\n';
@@ -150,12 +150,12 @@ output.text(markdownOutput);</code></pre>
   position: absolute;
   top: 0.5em;
   right: 0.5em;
-  padding: 0.5em 1em;
+  padding: 0.3em 0.6em;
   background-color: #FFCC01;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 0.9em;
+  font-size: 1.2em;
   transition: background-color 0.2s;
 }
 
@@ -198,15 +198,15 @@ function copyCode(button) {
   
   navigator.clipboard.writeText(text).then(() => {
     const originalText = button.textContent;
-    button.textContent = 'Copied!';
+    button.textContent = '✓';
     setTimeout(() => {
-      button.textContent = originalText;
+      button.textContent = '📋';
     }, 2000);
   }).catch(err => {
     console.error('Failed to copy text:', err);
-    button.textContent = 'Failed to copy';
+    button.textContent = '❌';
     setTimeout(() => {
-      button.textContent = 'Copy';
+      button.textContent = '📋';
     }, 2000);
   });
 }
