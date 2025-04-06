@@ -48,6 +48,32 @@ for (let table of tables) {
 output.text(`\nTotal records across all tables: ${total}`);
 ```
 
+## Total Usage with Estimations
+
+```
+// === CONFIG ===
+let estimatedDailyGrowth = 50; // 👈 Change this to your average daily new rows
+let maxRowsAllowed = 50000;    // 👈 Change based on your Airtable plan
+
+// === COUNT RECORDS ===
+let total = 0;
+let tables = base.tables;
+output.markdown("### 📋 Rows by Table");
+
+for (let table of tables) {
+    let query = await table.selectRecordsAsync();
+    output.text(`${table.name}: ${query.records.length} records`);
+    total += query.records.length;
+}
+
+output.markdown(`\n**🧮 Total rows:** ${total} / ${maxRowsAllowed}`);
+
+let remaining = maxRowsAllowed - total;
+let daysLeft = estimatedDailyGrowth > 0 ? Math.floor(remaining / estimatedDailyGrowth) : '∞';
+
+output.markdown(`**📈 Est. daily growth:** ${estimatedDailyGrowth} rows/day`);
+output.markdown(`**🕒 Days until limit:** ${daysLeft} days`);
+```
 
 ## Export Tables Fields and Details in Markdown Format
 
