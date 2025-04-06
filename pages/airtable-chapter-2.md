@@ -1,6 +1,6 @@
 ---
 layout: custom
-title: Airtable - Chapter 2
+title: Chapter 2
 description: Setting up the Base
 ---
 
@@ -11,15 +11,21 @@ description: Setting up the Base
 
 ---
 
+<br>
+
 
 # Data Source
 
 
-If we only follow a basic example we won't get far, but luckily I have a interesting (at least for me) data source that we can get data from, BrickEconomy.
+By default, selecting the demo example will generate data and interfaces automatically, but that's boring! Let's try something different from scratch. I have an interesting use case that will provide us with engaging data to work with... BrickEconomy! If you're not familiar, it's a site that lets you track your LEGO inventory as if the pieces were stocks...
 
 <img class="myImg" src="../images/airtable/tutorial-00-brickeconomy.png" alt="pagelayout-example-1" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 
-There are multiple sites that allow you to keep your inventory and track prices. I read once that prices in Brickeconomy tend to be more optimistic when compared to Bricklink. But this is not about LEGO... yet!
+There are several sites that help you manage your inventory and track prices. I've read that BrickEconomy's prices tend to be more optimistic compared to BrickLink. But this tutorial isn't about LEGO... at least not yet!
+
+What makes this site valuable for our purposes is that we can export our product inventory as a CSV file, which we can then import into Airtable to explore most of its functionalities.
+
+If you have faced a problem of keeping track of your things in spreadsheets you will know what could be the benefits. If you don't I'm glad that you are a healthy person.
 
 
 

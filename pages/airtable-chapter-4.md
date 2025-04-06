@@ -1,6 +1,6 @@
 ---
 layout: custom
-title: Airtable - Chapter 4
+title: Chapter 4
 description: Structure Above Else
 ---
 
@@ -11,6 +11,8 @@ description: Structure Above Else
 
 
 ---
+
+<br>
 
 # Datasource Pages
 

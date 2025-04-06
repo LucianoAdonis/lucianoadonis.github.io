@@ -1,11 +1,12 @@
 ---
 layout: custom
-title: Airtable - Chapter 1
+title: Chapter 1
 description: Basics Above Else
 ---
 
 <div class="nav-buttons">
   <a href="/pages/airtable" class="custom-button right"><strong>Home</strong></a>
+  <a href="/pages/airtable-chapter-1-5" class="custom-button middle"><strong>Chapter 1.5</strong></a>
   <a href="/pages/airtable-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
 </div>
 
@@ -27,15 +28,70 @@ With these foundations in place, we'll be ready to dive into the real fun.
 
 <br>
 
-# Information Sync
+# Layers
+
+Data
+Logic
+Interface
+
+# Core Concepts
+
+Airtable is like a spreadsheet on steroids. Here's what makes it special:
+
+- **Base**: Your main workspace
+    - Like an Excel workbook, but smarter
+    - Can have multiple tables (sheets) that talk to each other
+    - Everything in your project lives here
+
+- **Table**: Where your data lives
+    - Looks like a spreadsheet but acts like a database
+    - Each column (field) has a specific type (text, number, date, etc.)
+    - Can link data between tables (like a database)
+
+- **Fields**: Your columns, but smarter
+    - Each field has a specific type (text, number, date, etc.)
+    - Can include attachments, links, and rich content
+    - Can have formulas and rules
+
+- **Views**: Different ways to see your data
+    - Grid: Classic spreadsheet view
+    - Kanban: Like Trello boards
+    - Calendar: For dates
+    - Gallery: For pictures
+    - Form: For data entry
+    - Gantt: For projects
+
+- **Automation**: Make things happen automatically
+    - Send notifications when data changes
+    - Update records automatically
+    - Connect with other tools
+
+- **Interfaces**: Share your data beautifully
+    - Create custom dashboards
+    - Build forms for data entry
+    - Control who sees what
+
+The big difference from Excel/Google Sheets:
+- Tables can talk to each other (like a database)
+- More ways to view and organize data
+- Built-in automation and apps
+- Better for teams and complex projects
+
+<br>
+
+# Automation Approaches
+
+There are integrations and plenty of things. But saddly, I haven't use a lot from those, as at the moment of writing this I was focused (at least at the beginning) on JIRA automation.
+
+<br>
 
 ## Sync Tables
 
-
+An interesting feature to get data from other tables outside of your base.
 
 ## API Sync
 
-Bsically an endpoint that allows you to make updates to a page associated with it. Once created from the integrations menu, it will give you a query like this, but without the data part:
+This is an endpoint configuration that allows you to make updates to a page associated with it. Once created from the integrations menu, it will give you a query like this:
 
 ```
 curl -X POST "https://api.airtable.com/v0/{baseId}/{tableIdOrName}/sync/{apiEndpointSyncId}" \
@@ -46,7 +102,10 @@ row1-column1,row1-column2
 row2-column1,row2-column2'
 ```
 
-## API Tutorial
+That endpoint will be public.
+
+### API Tutorial
+
 One would expect to have an option to provide a way to upload a file, but no.
 
 - [Create Tokens](https://airtable.com/create/tokens)
@@ -241,5 +300,6 @@ If you ever consider this for personal use, then you need to keep the following 
 
 <div class="nav-buttons">
   <a href="/pages/airtable" class="custom-button right"><strong>Home</strong></a>
+  <a href="/pages/airtable-chapter-1-5" class="custom-button middle"><strong>Chapter 1.5</strong></a>
   <a href="/pages/airtable-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
 </div>

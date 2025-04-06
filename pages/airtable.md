@@ -28,7 +28,7 @@ And this is the story of how Micromonagement v2 started.
 
 ## How to Use This Mini-Book
 
-First, I recommend avoiding reading this on mobile for the best experience. Second, this mini-book is **focused on the Data Center version of airtable**, so there may be differences in menus and integrations compared to other versions. I'll do my best to include examples for both or at least provide pointers where differences arise.
+First, I recommend avoiding reading this on mobile for the best experience. Second, this mini-book is **focused on the free tier of Airtable**, but I'll add the missing parts that use a higher tier just for the full display.
 
 In regards to the exposition of the content:
 
@@ -45,8 +45,10 @@ In regards to the exposition of the content:
 The content will be split into four sections, as the index bar exceeded its length, making it easier to read and navigate:
 
 - [Chapter 1: Basics](/pages/airtable-chapter-1): Start here if you feel awkward navigating airtable.
+- [Chapter 1.5: Advanced Basics](/pages/airtable-chapter-1-5): Bridging the gap between basics and data management.
 - [Chapter 2: Data & Base](/pages/airtable-chapter-2): How to format your pages.
 - [Chapter 3: Formulas and Integrations](/pages/airtable-chapter-3): Macros
+- [Chapter 3.5: Advanced Scripting](/pages/airtable-chapter-3-5): Taking your formulas to the next level.
 - [Chapter 4: Interface Improvements](/pages/airtable-chapter-4): Random trivia that might be useful on a date to break the ice.
 
 <br>

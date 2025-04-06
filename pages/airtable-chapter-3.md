@@ -1,15 +1,18 @@
 ---
 layout: custom
-title: Airtable - Chapter 3
+title: Chapter 3
 description: Formulas and Integrations
 ---
 
 <div class="nav-buttons">
   <a href="/pages/airtable-chapter-2" class="custom-button right"><strong>Chapter 2</strong></a>
+  <a href="/pages/airtable-chapter-3-5" class="custom-button middle"><strong>Chapter 3.5</strong></a>
   <a href="/pages/airtable-chapter-4" class="custom-button left"><strong>Chapter 4</strong></a>
 </div>
 
 ---
+
+<br>
 
 # Formulas
 
@@ -88,5 +91,6 @@ Specially if you are getting data from an API, you won't get the image directly,
 
 <div class="nav-buttons">
   <a href="/pages/airtable-chapter-2" class="custom-button right"><strong>Chapter 2</strong></a>
+  <a href="/pages/airtable-chapter-3-5" class="custom-button middle"><strong>Chapter 3.5</strong></a>
   <a href="/pages/airtable-chapter-4" class="custom-button left"><strong>Chapter 4</strong></a>
 </div>
