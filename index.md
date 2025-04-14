@@ -23,7 +23,7 @@ That's where the 'Mini Books' on this site come in, designed to create a shared 
 
 ---
 ## Optimization
-**Time saved is time earned.** Use these tips to optimize work and free up space for what truly matters.
+> **Time saved is time earned.** Use these tips to optimize work and free up space for what truly matters.
 
 - [Buy it for Life](./pages/shopping.md): Recommended products that last.
 - [Slack and You](./pages/slack.md) (🟡): Communication strategies made easy.
@@ -32,8 +32,7 @@ That's where the 'Mini Books' on this site come in, designed to create a shared 
 <br>
 
 ## Educational
-
-**If you don't write it, you'll forget it.** Learn how to craft clear and effective documentation.
+> **If you don't write it, you'll forget it.** Learn how to craft clear and effective documentation.
 
 - [Make the Most of Airtable](./pages/airtable) (🔴): A comprehensive guide/tutorial.
 - [Make the Most of Confluence](./pages/confluence) (🟢): A comprehensive guide/tutorial.
@@ -45,7 +44,7 @@ That's where the 'Mini Books' on this site come in, designed to create a shared 
 <br>
 
 ## Self-Help
-**Be better to make others greater.** Practical techniques and insights for personal development.
+> **Be better to make others greater.** Practical techniques and insights for personal development.
 
 - [Interviews and Work, Walkthrough Guide](./pages/ds-interviews) (🟢): A pragmatic guide for job seekers.
 - [The LEGO® SERIOUS PLAY® (LSP) Experience](./pages/lsp) (🟡): Creative solutions through play.
@@ -54,7 +53,7 @@ That's where the 'Mini Books' on this site come in, designed to create a shared 
 <br>
 
 ## Mentoring
-**For a better work-life balance.** Personal advice to enhance workplace satisfaction.
+> **For a better work-life balance.** Personal advice to enhance workplace satisfaction.
 
 - [Obsidian](./pages/obsidian.md) (🔴): The ultimate personal knowledge tool.
 - [Digital Life](./pages/digital-life.md) (🔴): Manage your digital footprint efficiently.
@@ -63,14 +62,14 @@ That's where the 'Mini Books' on this site come in, designed to create a shared 
 
 
 ## Theories and Thesis
-**Because overthinking is a skill too.** Explorations and musings on various topics.
+> **Because overthinking is a skill too.** Explorations and musings on various topics.
 
 - [The Core Five](./pages/thesis-the-core-five.md) (🟠): A theory in progress.
 
 <br>
 
 ## Meta
-**Dive in, figure it out.** Tools, techniques, and behind-the-scenes tips.
+> **Dive in, figure it out.** Tools, techniques, and behind-the-scenes tips.
 
 - [Markdown](./pages/markdown) (🟡): Cool tricks to make your content shine.
 - [Mini-Books](./pages/mini-books) (🔴): Because 'Blog Posts' didn't sound nearly as impressive
@@ -82,7 +81,7 @@ That's where the 'Mini Books' on this site come in, designed to create a shared 
 
 
 ## Code Snippets, Tools, and Efficiency Tips
-**Little hacks that go a long way.** GitHub Gists with wisdom and free time to spare.
+> **Little hacks that go a long way.** GitHub Gists with wisdom and free time to spare.
 
 - **Configurations**:
     - <a href="https://gist.github.com/LucianoAdonis/be46fd68a6324a9777385b8982885cc3" target="_blank">Chrome Plugins</a>

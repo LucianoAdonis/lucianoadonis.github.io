@@ -4,9 +4,9 @@ title: Airtable
 description: Style Above Else
 ---
 
-<img class="myImg" src="../images/headers/white-airtable-logo.png" alt="white-airtable-logo" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
+<img class="myImg" src="../images/headers/cian-airtable-boxes.png" alt="cian-airtable-boxes" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
 
->"To plant a garden is to believe in tomorrow." – Audrey Hepburn
+>"For every one of our failures, we had spreadsheets that looked awesome." — Scott D. Cook
 
 ---
 

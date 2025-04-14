@@ -12,13 +12,13 @@ description: Observations About Hiring Solutions for your Problems
 
 # How This Mini-Book Can Help You
 
-I’ve had my fair share of onboardings and interviews, and one thing that always stands out is how often the aim feels just a little off from what it is needed.
+I've had my fair share of onboardings and interviews, and one thing that always stands out is how often the aim feels just a little off from what is needed.
 
-It reminds me of a blog I read some time ago, with a title that really stuck with me: “Companies Don’t Need Geniuses.” That sentiment perfectly captures the heart of what’s often wrong with role expectations for a new hire.
+It reminds me of a blog I read some time ago, with a title that really stuck with me: "Companies Don't Need Geniuses." That sentiment perfectly captures what's often wrong with role expectations for new hires.
 
-If you find yourself needing to hire a genius to fill a position, it’s likely for one of two reasons: you’re genuinely pushing the boundaries of innovation—or you’re chasing unicorns.
+If you find yourself needing to hire a genius to fill a position, it's likely for one of two reasons: you're genuinely pushing the boundaries of innovation—or you're setting unrealistic expectations.
 
-So instead of chasing unicorns, let's try a different approach and invest on people.
+So instead of chasing mythical perfect candidates, let's try a different approach and invest in people.
 
 ---
 
