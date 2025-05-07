@@ -38,6 +38,86 @@ Airtable scripting allows you to automate tasks and extend the functionality of 
 ## Extension Scripting Examples
 
 <details class="code-block">
+  <summary>Basic Filter</summary>
+  <div class="code-container">
+    <button class="copy-button" onclick="copyCode(this)">📋</button>
+    <pre><code>let table = base.getTable("Tasks");
+let query = await table.selectRecordsAsync();
+
+// Filter by status
+let filtered = query.records.filter(record => record.getCellValue("Status") === "Open");
+
+for (let record of filtered) {
+    output.text(`Open Task: ${record.name}`);
+}
+</code></pre>
+  </div>
+</details>
+
+<details class="code-block">
+  <summary>Keyword Search</summary>
+  <div class="code-container">
+    <button class="copy-button" onclick="copyCode(this)">📋</button>
+    <pre><code>let table = base.getTable("Projects");
+let searchTerm = await input.textAsync("Enter a keyword to search:");
+let records = await table.selectRecordsAsync();
+
+let matched = records.records.filter(record =>
+    record.name.toLowerCase().includes(searchTerm.toLowerCase())
+);
+
+if (matched.length === 0) {
+    output.text("No matches found.");
+} else {
+    matched.forEach(rec => output.text(`Found: ${rec.name}`));
+}
+
+</code></pre>
+  </div>
+</details>
+
+
+<details class="code-block">
+  <summary>Prompt with Continue / Abort</summary>
+  <div class="code-container">
+    <button class="copy-button" onclick="copyCode(this)">📋</button>
+    <pre><code>// Place logic here
+output.text("Plan to execute...");
+let confirmed = await input.buttonsAsync("Do you want to proceed?", ["Continue", "Abort"]);
+if (confirmed === "Abort") {
+    output.text("Script aborted.");
+    return;
+}
+
+// Place logic here
+output.text("Continuing the script...");
+</code></pre>
+  </div>
+</details>
+
+
+<details class="code-block">
+  <summary>Create New Record with Input</summary>
+  <div class="code-container">
+    <button class="copy-button" onclick="copyCode(this)">📋</button>
+    <pre><code>let table = base.getTable("Ideas");
+
+let ideaName = await input.textAsync("Enter the idea name:");
+let category = await input.textAsync("Enter category:");
+
+await table.createRecordAsync({
+    "Name": ideaName,
+    "Category": category
+});
+
+output.text("Idea submitted!");
+</code></pre>
+  </div>
+</details>
+
+
+
+<details class="code-block">
   <summary>Calculate Total Table Usage</summary>
   <div class="code-container">
     <button class="copy-button" onclick="copyCode(this)">📋</button>
