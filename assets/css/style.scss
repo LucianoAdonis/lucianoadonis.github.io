@@ -20,18 +20,26 @@ section {
 
 /* Fix navigation positioning for wider layout */
 nav {
-  width: 230px;
-  position: fixed;
-  top: 220px;
-  left: 50%;
-  margin-left: calc(-1 * (min(90vw, 1200px) / 2 + 250px));
-  text-align: right;
+  width: 230px !important;
+  position: fixed !important;
+  top: 220px !important; /* Restore original position */
+  left: -40px !important; /* Move beyond the left edge */
+  text-align: right !important;
+  z-index: 1000 !important;
 }
 
-/* Ensure nav doesn't go off screen on smaller viewports */
-@media screen and (max-width: 1400px) {
+/* Position navigation relative to content on larger screens */
+@media screen and (min-width: 1600px) {
   nav {
-    left: 20px;
+    left: 50px;
+    margin-left: 0;
+  }
+}
+
+/* Ensure nav doesn't go off screen on medium-large viewports */
+@media screen and (max-width: 1599px) and (min-width: 1401px) {
+  nav {
+    left: 50px;
     margin-left: 0;
   }
 }
