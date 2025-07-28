@@ -15,16 +15,17 @@
 
 /* Header styles for collapsible behavior */
 header {
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
+  opacity: 1;
 }
 
 header.collapsed {
   transform: translateY(-100%);
-  opacity: 0.8;
+  opacity: 0;
 }
 
 #banner {
-  transition: all 0.3s ease !important;
+  transition: all 0.5s ease !important;
   position: relative !important;
   display: flex !important;
   justify-content: space-between !important;
@@ -34,6 +35,7 @@ header.collapsed {
   padding-left: 20px !important;
   padding-right: 20px !important;
   overflow: hidden !important;
+  opacity: 1 !important;
 }
 
 #banner .button.fork {
@@ -46,29 +48,30 @@ header.collapsed {
 
 #banner.collapsed {
   transform: translateY(-100%) !important;
-  opacity: 0.8 !important;
+  opacity: 0 !important;
   pointer-events: none !important;
 }
 
 /* Make header and banner move together as one unit */
 header, #banner {
-  transition: all 0.3s ease !important;
+  transition: all 0.5s ease !important;
 }
 
 header.collapsed, #banner.collapsed {
   transform: translateY(-100%) !important;
-  opacity: 0.8 !important;
+  opacity: 0 !important;
 }
 
 /* Header wrapper styles for unified movement */
 .header-wrapper {
-  transition: all 0.3s ease !important;
+  transition: all 0.5s ease !important;
   position: relative !important;
+  opacity: 1 !important;
 }
 
 .header-wrapper.collapsed {
   transform: translateY(-100%) !important;
-  opacity: 0.8 !important;
+  opacity: 0 !important;
 }
 
 /* Ensure header and banner move together with same timing */

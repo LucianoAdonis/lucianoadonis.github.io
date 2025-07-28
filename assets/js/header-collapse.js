@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const banner = document.getElementById('banner');
     const section = document.querySelector('section');
     const nav = document.querySelector('nav');
-    const scrollThreshold = 50; // Start collapsing after 50px of scroll
-    const navHideThreshold = 30; // Start hiding navigation earlier
-    const scrollBuffer = 20; // Buffer to prevent premature appearance
+    const scrollThreshold = 25; // Start collapsing much earlier
+    const navHideThreshold = 25; // Start hiding navigation even earlier
+    const scrollBuffer = 5; // Smaller buffer for smoother transitions
     
     // Create a wrapper for header and banner if it doesn't exist
     if (header && banner && !header.parentElement.classList.contains('header-wrapper')) {
