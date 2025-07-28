@@ -27,11 +27,21 @@ header.collapsed {
   transition: all 0.3s ease !important;
   position: relative !important;
   display: flex !important;
-  justify-content: flex-end !important;
+  justify-content: space-between !important;
   align-items: center !important;
-  width: calc(80% + 160px) !important;
+  width: calc(80% + 110px) !important;
   margin-left: 0 !important;
+  padding-left: 20px !important;
   padding-right: 20px !important;
+  overflow: hidden !important;
+}
+
+#banner .button.fork {
+  position: relative !important;
+  z-index: 10 !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 #banner.collapsed {
