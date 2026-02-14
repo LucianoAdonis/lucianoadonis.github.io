@@ -1,0 +1,38 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  {% seo %}
+
+  <!-- Tailwind CSS v4 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+  <![endif]-->
+
+  <!-- Primary Meta Tags -->
+  <title>{{ page.title | default: site.title }} — Luciano's Library</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+
+  <!-- Open Graph / Facebook / Slack -->
+  <meta property="og:type" content="{% if page.url == '/' %}website{% else %}article{% endif %}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="{{ page.title | default: site.title }} — Luciano's Library">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:image" content="{{ page.image | default: '/images/lucianos-library-preview.png' | absolute_url }}">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ page.url | absolute_url }}">
+  <meta property="twitter:title" content="{{ page.title | default: site.title }} — Luciano's Library">
+  <meta property="twitter:description" content="{{ page.description | default: site.description }}">
+  <meta property="twitter:image" content="{{ page.image | default: '/images/lucianos-library-preview.png' | absolute_url }}">
+
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  {% include analytics.html %}
+</head>

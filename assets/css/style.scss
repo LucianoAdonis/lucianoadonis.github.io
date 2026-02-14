@@ -1,289 +1,36 @@
 ---
 ---
 
-@import "jekyll-theme-leap-day";
+/* ============================================
+   Luciano's Library - Custom Styles
+   Modern design with Tailwind CSS
+   ============================================ */
 
-/* Override default theme width constraints */
-.wrapper {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative !important;
-  transform: none !important;
-  transition: none !important;
-}
+/* ============================================
+   Modal Styles (Image Popup)
+   ============================================ */
 
-/* Header styles for collapsible behavior */
-header {
-  transition: all 0.5s ease;
-  opacity: 1;
-}
-
-header.collapsed {
-  transform: translateY(-100%);
-  opacity: 0;
-}
-
-#banner {
-  transition: all 0.5s ease !important;
-  position: relative !important;
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  width: calc(80% + 110px) !important;
-  margin-left: 0 !important;
-  padding-left: 20px !important;
-  padding-right: 20px !important;
-  overflow: hidden !important;
-  opacity: 1 !important;
-}
-
-#banner .button.fork {
-  position: relative !important;
-  z-index: 10 !important;
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
-#banner.collapsed {
-  transform: translateY(-100%) !important;
-  opacity: 0 !important;
-  pointer-events: none !important;
-}
-
-/* Make header and banner move together as one unit */
-header, #banner {
-  transition: all 0.5s ease !important;
-}
-
-header.collapsed, #banner.collapsed {
-  transform: translateY(-100%) !important;
-  opacity: 0 !important;
-}
-
-/* Header wrapper styles for unified movement */
-.header-wrapper {
-  transition: all 0.5s ease !important;
-  position: relative !important;
-  opacity: 1 !important;
-}
-
-.header-wrapper.collapsed {
-  transform: translateY(-100%) !important;
-  opacity: 0 !important;
-}
-
-/* Ensure header and banner move together with same timing */
-header, #banner {
-  transition: all 0.3s ease !important;
-}
-
-header.collapsed, #banner.collapsed {
-  transform: translateY(-100%) !important;
-  opacity: 0.8 !important;
-}
-
-/* Ensure wrapper stays in place */
-.wrapper {
-  transform: none !important;
-  transition: none !important;
-  position: relative !important;
-}
-
-section {
-  width: 80%;
-  float: none;
-  margin-left: 110px; /* Move content right to avoid navigation overlap */
-  margin-right: auto;
-  margin-top: 140px; /* Reduced margin to move content higher */
-  padding-bottom: 50px;
-  transition: margin-top 0.3s ease;
-}
-
-section.header-collapsed {
-  margin-top: 60px; /* Further reduced margin when header is collapsed */
-}
-
-/* Fix navigation positioning for wider layout */
-nav {
-  width: 230px !important;
-  position: fixed !important;
-  top: 220px !important; /* Restore original position */
-  left: -40px !important; /* Move beyond the left edge */
-  text-align: right !important;
-  z-index: 1000 !important;
-  transition: all 0.3s ease !important;
-}
-
-/* Hide navigation when header is collapsed */
-nav.header-collapsed {
-  transform: translateY(-200%) !important;
-  opacity: 0 !important;
-  pointer-events: none !important;
-}
-
-/* Position navigation relative to content on larger screens */
-@media screen and (min-width: 1600px) {
-  nav {
-    left: 50px;
-    margin-left: 0;
-  }
-}
-
-/* Ensure nav doesn't go off screen on medium-large viewports */
-@media screen and (max-width: 1599px) and (min-width: 1401px) {
-  nav {
-    left: 50px;
-    margin-left: 0;
-  }
-}
-
-/* Responsive adjustments for medium screens */
-@media only screen and (max-width: 1060px) {
-  .wrapper {
-    width: 95%;
-  }
-  
-  section {
-    width: 100%;
-    float: none;
-    min-width: unset;
-    margin-top: 170px; /* Slightly less margin on tablets */
-  }
-  
-  nav {
-    position: relative;
-    width: 100%;
-    margin-left: 0;
-    left: 0;
-    top: 0;
-    text-align: left;
-    float: none;
-    margin-bottom: 20px;
-  }
-}
-
-/* Mobile-specific adjustments */
-@media only screen and (max-width: 720px) {
-  section {
-    margin-top: 115px; /* Position right after header+banner */
-    padding: 30px 15px 30px 15px; /* Normal padding */
-    width: calc(100% - 30px); /* Account for padding */
-  }
-  
-  /* Adjust wrapper to remove gaps */
-  .wrapper {
-    margin-top: 0;
-  }
-  
-  /* Increase spacing between elements on mobile */
-  section p {
-    margin-bottom: 1.5em;
-    line-height: 1.7;
-  }
-  
-  section h1, section h2, section h3, section h4, section h5, section h6 {
-    margin-top: 2em;
-    margin-bottom: 0.75em;
-  }
-  
-  /* Adjust list spacing on mobile */
-  section ul, section ol {
-    margin-bottom: 1.5em;
-  }
-  
-  section li {
-    margin-bottom: 0.5em;
-  }
-  
-  /* Better button spacing on mobile */
-  .custom-button {
-    display: block;
-    width: calc(100% - 12px);
-    margin: 10px 6px;
-  }
-  
-  .nav-buttons {
-    flex-direction: column;
-  }
-  
-  .custom-button.left,
-  .custom-button.right {
-    float: none;
-  }
-}
-
-/* Extra small mobile devices */
-@media only screen and (max-width: 480px) {
-  section {
-    margin-top: 80px; /* Adjust for smaller header */
-    padding: 25px 10px 25px 10px; /* Normal padding */
-    width: calc(100% - 20px);
-    font-size: 15px; /* Slightly smaller font on very small screens */
-  }
-  
-  /* Ensure images scale properly on mobile */
-  section img {
-    max-width: 100%;
-    height: auto;
-    margin: 1em 0;
-  }
-  
-  /* Improve code block display on mobile */
-  pre {
-    overflow-x: auto;
-    font-size: 12px;
-  }
-}
-
-/* Improve readability with better typography */
-section {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-section p {
-  margin-bottom: 1em;
-}
-
-section h1, section h2, section h3, section h4, section h5, section h6 {
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-}
-
-.logo {
-  height: 50px;
-  transition: transform 0.2s ease-in-out;
-}
-
-.logo:hover {
-  transform: scale(1.1);
-}
-
-/* The Modal (background overlay) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1000; /* Sit on top */
-  padding-top: 50px; /* Position modal 50px from the top */
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 50px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0, 0, 0, 0.9); /* Black with opacity for a darker overlay */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
-/* Modal Content (the image) */
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%; /* Increased from default (usually 60-70%) */
-  max-width: 90%; /* Ensure it doesn't get too large on big screens */
+  width: 80%;
+  max-width: 90%;
+  animation: zoom 0.6s;
 }
 
-/* The Close Button */
 .close {
   position: absolute;
   top: 15px;
@@ -292,108 +39,48 @@ section h1, section h2, section h3, section h4, section h5, section h6 {
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
+  cursor: pointer;
 }
 
-/* Close button on hover */
 .close:hover,
 .close:focus {
   color: #bbb;
   text-decoration: none;
-  cursor: pointer;
-}
-
-/* Add Animation */
-.modal-content, .close {
-  animation-name: zoom;
-  animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-  from {transform: scale(0)}
-  to {transform: scale(1)}
+  from { transform: scale(0); }
+  to { transform: scale(1); }
 }
 
-/* Fullscreen Modal for extra large screens */
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 700px) {
   .modal-content {
-    width: 80%; /* Even larger for big screens */
+    width: 100%;
   }
 }
 
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
+/* ============================================
+   Hover Image Preview Styles
+   ============================================ */
 
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
+.hover-image-trigger {
+  position: relative;
   cursor: pointer;
 }
 
-.highlight {
-  color: #ff6347;
-  font-weight: bold;
+.hover-image {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  padding: 5px;
+  max-width: 500px;
+  max-height: 500px;
 }
 
-.highlight-team {
-  color: #ff6347;
-  font-weight: bold;
-}
-
-.nav-buttons {
-  display: flex;
-  justify-content: space-between; /* Align one button left, one button right */
-  margin-top: 20px;
-}
-
-.left-button {
-  text-align: left;
-}
-
-.right-button {
-  text-align: right;
-}
-
-.ds-button {
-  display: inline-block;
-  padding: 8px 16px;
-  margin: 5px;
-  background-color: #1A1308;   
-  color: #FFFFFF !important;  /* Force white text */
-  text-decoration: none;
-  border: 2px solid #6B6B6B;   
-  border-radius: 3px;
-  font-weight: bold;
-  font-size: 14px;
-  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
-}
-
-.ds-button * {
-  color: #FFFFFF !important;  /* Apply white color to all child elements */
-}
-
-.ds-button:hover {
-  background-color: #502208;    
-  color: #F0E68C !important;    /* Gold text on hover */
-  border-color: #F0E68C;        
-  box-shadow: 0 0 10px #F0E68C;
-}
-
-
-.ds-button-container {
-  display: flex;
-  justify-content: flex-end; /* Aligns buttons to the right */
-  margin-top: 20px; /* Adds some space above the button */
-}
-
-/* Style for the hover preview container */
 .preview-box {
   display: none;
   position: absolute;
@@ -411,116 +98,132 @@ section h1, section h2, section h3, section h4, section h5, section h6 {
   height: auto;
 }
 
+/* ============================================
+   Content Styling Classes
+   (Used in markdown content - must maintain for backward compatibility)
+   ============================================ */
+
+.highlight,
+.highlight-team {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* Navigation buttons container */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Custom yellow button (warm amber theme) */
+.custom-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(to right, #f59e0b, #d97706);
+  color: #000;
+  text-decoration: none;
+  border: 2px solid #d97706;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-button:hover {
+  background: linear-gradient(to right, #fbbf24, #f59e0b);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.custom-button.left {
+  margin-right: auto;
+}
+
+.custom-button.right {
+  margin-left: auto;
+}
+
+/* Dark Souls themed button */
+.ds-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  background-color: #1a1308;
+  color: #ffffff !important;
+  text-decoration: none;
+  border: 2px solid #6b6b6b;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
+
+.ds-button * {
+  color: #ffffff !important;
+}
+
+.ds-button:hover {
+  background-color: #502208;
+  color: #f0e68c !important;
+  border-color: #f0e68c;
+  box-shadow: 0 0 10px #f0e68c;
+}
+
+.ds-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.25rem;
+}
+
+/* Details/Summary (expandable sections) */
 details summary {
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 600;
 }
+
 details summary::before {
-  content: '➕'; /* Plus sign to indicate expandability */
-  margin-right: 10px;
+  content: '➕';
+  margin-right: 0.625rem;
 }
+
 details[open] summary::before {
-  content: '➖'; /* Minus sign to indicate it's expanded */
+  content: '➖';
 }
 
-/* Base styles for the custom buttons */
-.custom-button {
-  background-color: #FFCC01; /* Base color */
-  border: none;
-  color: #000; /* Text color */
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border: 1px solid #6B6B6B;   
-  border-radius: 2px;
-  font-size: 14px;
-  margin: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  position: relative;
-}
-
-/* Hover effect */
-.custom-button:hover {
-  background-color: #FFE788; /* Hover color */
-  transform: scale(1.05); /* Slight zoom on hover */
-}
-
-/* Left-aligned button */
-.custom-button.left {
-  float: left;
-}
-
-/* Right-aligned button */
-.custom-button.right {
-  float: right;
-}
-
-/* Clear floats after the buttons to ensure proper layout */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.hover-image-trigger {
-  position: relative;
-  cursor: pointer;
-}
-
-.hover-image {
-  display: none;
-  position: absolute;
-  z-index: 1000;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  background-color: white;
-  padding: 5px;
-  max-width: 500px;
-  max-height: 500px;
-}
-
-/* Reposition footer */
-footer {
-  width: auto;
-  position: relative;
-  left: auto;
-  margin: 20px auto;
-  text-align: center;
-  bottom: auto;
-}
-
-/* Back/Home button styles */
+/* Back/Home floating button (from navigation.js) */
 .back-button {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #4276b6;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  background: linear-gradient(to right, #3b82f6, #2563eb);
   color: white !important;
-  padding: 12px 20px;
-  border-radius: 25px;
+  padding: 0.75rem 1.25rem;
+  border-radius: 1.5rem;
   text-decoration: none;
-  font-size: 14px;
-  font-weight: bold;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  font-size: 0.875rem;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   z-index: 999;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .back-button:hover {
-  background-color: #235796;
+  background: linear-gradient(to right, #2563eb, #1d4ed8);
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 .back-button svg {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   fill: white;
 }
 
@@ -529,16 +232,97 @@ body.home-page .back-button {
   display: none;
 }
 
-/* Responsive adjustments */
-@media only screen and (max-width: 700px){
-  .modal-content {
+/* ============================================
+   Responsive Adjustments
+   ============================================ */
+
+@media only screen and (max-width: 720px) {
+  .nav-buttons {
+    flex-direction: column;
+  }
+
+  .custom-button {
     width: 100%;
+    text-align: center;
   }
-  
+
+  .custom-button.left,
+  .custom-button.right {
+    margin: 0.5rem 0;
+  }
+
   .back-button {
-    bottom: 15px;
-    right: 15px;
-    padding: 10px 16px;
-    font-size: 13px;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.625rem 1rem;
+    font-size: 0.8125rem;
   }
+}
+
+@media only screen and (max-width: 480px) {
+  .back-button {
+    bottom: 0.75rem;
+    right: 0.75rem;
+    padding: 0.5rem 0.875rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* ============================================
+   Prose Enhancements (for Tailwind Typography)
+   ============================================ */
+
+article img {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  cursor: pointer;
+}
+
+article img.myImg:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+article blockquote {
+  border-left: 4px solid #f59e0b;
+  background: linear-gradient(to right, #fef3c7, transparent);
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  font-style: italic;
+}
+
+article hr {
+  border-color: #f59e0b;
+  margin: 3rem 0;
+}
+
+/* Code blocks */
+article pre {
+  background: #1f2937;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  overflow-x: auto;
+}
+
+article code {
+  font-size: 0.875em;
+}
+
+/* Tables */
+article table {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+article table th {
+  background: linear-gradient(to right, #f59e0b, #d97706);
+  color: white;
+  font-weight: 600;
+}
+
+article table tr:hover {
+  background: #fef3c7;
 }

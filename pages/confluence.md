@@ -1,7 +1,8 @@
 ---
 layout: custom
 title: Make the Most of Confluence
-description: Style Above Else
+description: A comprehensive guide to creating effective documentation in Confluence, from basics to advanced macros and page structure.
+image: /images/headers/white-confluence-logo.png
 ---
 
 <img class="myImg" src="../images/headers/white-confluence-logo.png" alt="white-confluence-logo" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">

@@ -1,7 +1,8 @@
 ---
 layout: custom
 title: Interviews and Work, Walkthrough Guide
-description: The Information That You Always Wanted!
+description: A pragmatic guide for DevOps and Cloud Engineers navigating technical interviews, from preparation to negotiation. Dark Souls themed.
+image: /images/interviews/main-menu.png
 ---
 
 <img class="myImg" src="../images/interviews/main-menu.png" alt="main-menu" style="cursor: pointer;">
