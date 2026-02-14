@@ -1,7 +1,8 @@
 ---
 layout: custom
 title: OKRs and You
-description: Fun
+description: Practical guide to implementing OKRs (Objectives and Key Results) for transparency, alignment, and measurable impact in your organization.
+image: /images/headers/yellow-okr.png
 ---
 
 <img class="myImg" src="../images/headers/yellow-okr.png" alt="https://www.cebra.com/hubfs/okr-marketing.jpg" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
