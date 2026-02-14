@@ -7,10 +7,8 @@
     {% if page.url == "/" %}
       <!-- Homepage with Hero -->
       {% include hero.html %}
-      {% include sidebar.html %}
 
       <div class="page-container" style="padding-top: 0;">
-        <div class="page-sidebar"></div>
         <main class="page-main">
           <article>
             {{ content }}
@@ -18,11 +16,8 @@
         </main>
       </div>
     {% else %}
-      <!-- Regular pages with sidebar + content + TOC -->
+      <!-- Regular pages with content + TOC -->
       <div class="page-container">
-        {% include sidebar.html %}
-        <div class="page-sidebar"></div>
-
         <main class="page-main">
           <!-- Breadcrumb for series chapters -->
           {% if site.data.series %}

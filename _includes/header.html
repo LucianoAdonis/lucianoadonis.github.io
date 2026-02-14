@@ -9,6 +9,32 @@
     <!-- Desktop Navigation -->
     <nav class="header-nav">
       <a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
+
+      <!-- Explore Dropdown -->
+      <div class="nav-dropdown">
+        <button class="nav-link dropdown-toggle" id="explore-dropdown">
+          Explore
+          <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="dropdown-menu" id="explore-menu">
+          {% if site.data.navigation %}
+            {% for section in site.data.navigation.sections %}
+              <div class="dropdown-section">
+                <div class="dropdown-section-title">{{ section.title }}</div>
+                {% for item in section.items %}
+                  <a href="{{ item.url }}" class="dropdown-link">
+                    {{ item.title }}
+                    {% if item.series %}<span class="series-marker">›</span>{% endif %}
+                  </a>
+                {% endfor %}
+              </div>
+            {% endfor %}
+          {% endif %}
+        </div>
+      </div>
+
       <a href="/pages/confluence" class="nav-link {% if page.url contains 'confluence' %}active{% endif %}">Confluence</a>
       <a href="/pages/ds-interviews" class="nav-link {% if page.url contains 'ds-interviews' %}active{% endif %}">Interviews</a>
       <a href="/pages/airtable" class="nav-link {% if page.url contains 'airtable' %}active{% endif %}">Airtable</a>
