@@ -1,26 +1,40 @@
 <!doctype html>
 <html lang="{{ site.lang | default: 'en-US' }}">
   {% include head.html %}
-  <body class="bg-stone-50">
+  <body>
     {% include header.html %}
 
-    <div class="flex">
+    {% if page.url == "/" %}
+      <!-- Homepage with Hero -->
+      {% include hero.html %}
       {% include sidebar.html %}
 
-      <!-- Main content area -->
-      <main class="flex-1 lg:ml-64">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <!-- Breadcrumb for series pages -->
+      <div class="page-container" style="padding-top: 0;">
+        <div class="page-sidebar"></div>
+        <main class="page-main">
+          <article>
+            {{ content }}
+          </article>
+        </main>
+      </div>
+    {% else %}
+      <!-- Regular pages with sidebar + content + TOC -->
+      <div class="page-container">
+        {% include sidebar.html %}
+        <div class="page-sidebar"></div>
+
+        <main class="page-main">
+          <!-- Breadcrumb for series chapters -->
           {% if site.data.series %}
             {% for series in site.data.series %}
               {% for chapter in series.chapters %}
                 {% if page.url contains chapter.slug %}
-                  <nav class="mb-6 text-sm text-gray-600">
-                    <a href="/" class="hover:text-amber-600">Home</a>
-                    <span class="mx-2">›</span>
-                    <a href="{{ series.main }}" class="hover:text-amber-600">{{ series.title }}</a>
-                    <span class="mx-2">›</span>
-                    <span class="text-gray-900">{{ chapter.title }}</span>
+                  <nav style="margin-bottom: 2rem; font-size: 14px; color: #737373;">
+                    <a href="/" style="color: #F97316; text-decoration: none;">Home</a>
+                    <span style="margin: 0 0.5rem;">›</span>
+                    <a href="{{ series.main }}" style="color: #F97316; text-decoration: none;">{{ series.title }}</a>
+                    <span style="margin: 0 0.5rem;">›</span>
+                    <span style="color: #0A0A0A;">{{ chapter.title }}</span>
                   </nav>
                   {% break %}
                 {% endif %}
@@ -29,18 +43,18 @@
           {% endif %}
 
           <!-- Page content -->
-          <article class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline prose-strong:text-gray-900 prose-code:text-amber-700 prose-code:bg-amber-50 prose-code:px-1 prose-code:py-0.5 prose-code:rounded">
+          <article>
             {{ content }}
           </article>
 
           <!-- Auto chapter navigation for series pages -->
           {% include chapter-nav.html %}
-        </div>
-      </main>
+        </main>
 
-      <!-- Right-side TOC -->
-      {% include toc.html %}
-    </div>
+        <!-- Right-side TOC -->
+        {% include toc.html %}
+      </div>
+    {% endif %}
 
     {% include footer.html %}
     {% include modal.html %}

@@ -1,5 +1,4 @@
 // Client-side search functionality
-// Searches through all pages using a pre-generated JSON index
 
 (function() {
   'use strict';
@@ -57,7 +56,7 @@
 
   function displayResults(results, query) {
     if (results.length === 0) {
-      searchResults.innerHTML = '<div class="p-4 text-sm text-gray-500">No results found</div>';
+      searchResults.innerHTML = '<div style="padding: 1rem; text-align: center; color: #737373; font-size: 14px;">No results found</div>';
       searchResults.classList.remove('hidden');
       return;
     }
@@ -67,9 +66,9 @@
       const descHighlighted = page.description ? highlightMatch(page.description, query) : '';
 
       return `
-        <a href="${page.url}" class="block p-3 hover:bg-amber-50 border-b border-gray-100 last:border-0 transition-colors">
-          <div class="font-medium text-gray-900">${titleHighlighted}</div>
-          ${descHighlighted ? `<div class="text-sm text-gray-600 mt-1 line-clamp-2">${descHighlighted}</div>` : ''}
+        <a href="${page.url}">
+          <div style="font-weight: 600; color: #0A0A0A; margin-bottom: 4px;">${titleHighlighted}</div>
+          ${descHighlighted ? `<div style="font-size: 13px; color: #737373;">${descHighlighted}</div>` : ''}
         </a>
       `;
     }).join('');
@@ -81,7 +80,7 @@
   function highlightMatch(text, query) {
     if (!text) return '';
     const regex = new RegExp(`(${escapeRegex(query)})`, 'gi');
-    return text.replace(regex, '<mark class="bg-amber-200 text-gray-900 px-0.5 rounded">$1</mark>');
+    return text.replace(regex, '<strong style="background: rgba(249, 115, 22, 0.2); color: #EA580C; padding: 2px 4px; border-radius: 3px;">$1</strong>');
   }
 
   function escapeRegex(string) {

@@ -1,0 +1,12 @@
+<footer class="mt-16 py-8 border-t border-gray-200 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-600">
+    {% if site.github.is_project_page %}
+      <p class="mb-2">Project maintained by <a href="{{ site.github.owner_url }}" class="text-blue-600 hover:text-blue-800 hover:underline">{{ site.github.owner_name }}</a></p>
+    {% endif %}
+    {% if page.url != "/pages/confluence.html" %}
+      <p class="text-gray-500">
+        <small>Hosted on GitHub Pages — Theme by <a href="https://twitter.com/mattgraham" class="text-gray-600 hover:text-gray-800 hover:underline">mattgraham</a></small>
+      </p>
+    {% endif %}
+  </div>
+</footer>
