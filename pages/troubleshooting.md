@@ -13,10 +13,6 @@ I hope this will be useful to others.
 
 ---
 
-⚠️ **I work on this on the side, so expect to be incompleted for a while!** ⚠️
-
----
-
 * https://lucianoadonis.github.io/ 
 {:toc}
 
@@ -119,13 +115,24 @@ If everything has been quiet without any changes I would suggest this:
 - **Comparison**: Against another environment that is working, you can draw some conclusions.
 - **Contrast**: If you don't have a system that is working, you can refer to another App that has similar conditions, like another region or something.
 - **Reading Logs**: I know, this is a last resort, but everything has logs, but they are not always verbose, so you may need to apply additional configuration to have more information.
+  - Start from the most recent entries and work backwards.
+  - Look for patterns: same error repeating? Happens at specific times?
+  - Grep is your friend: `grep -i "error" logfile.log` or use your favorite log aggregation tool.
+  - If logs aren't helpful, increase verbosity and reproduce the issue. Yes, it's annoying, but necessary.
+
+- **AI for Questions**: ChatGPT, Claude, or your favorite AI can help interpret errors and suggest solutions.
+  - **BUT** - and this is important - if you don't fully understand the error, AI may confidently mislead you down the wrong path.
+  - AI is great at pattern matching, terrible at understanding your specific context.
+  - Use AI as a starting point, not the final answer.
+  - **Pro tip**: If you have good project documentation (like a `CLAUDE.md` or `AGENTS.md` in your repo), the AI can use that context to give way better suggestions. Feed it your architecture, common issues, and troubleshooting patterns.
+  - Don't just copy-paste AI solutions blindly. Understand what it's suggesting and why.
 
 If you are during implementation or testing use the classic approach:
 
-- **Read the Error**:
-- **Google the Error**:
-- **Accept the Error**:
-- **Live with the Error**:
+- **Read the Error**: Actually read it. I know it's long and boring, but sometimes it literally tells you what's wrong.
+- **Google the Error**: Copy-paste the error message (remove sensitive info first!). Someone, somewhere, has had this problem before.
+- **Accept the Error**: After 3 hours of trying, sometimes the error becomes a feature. Document it and move on.
+- **Live with the Error**: If it doesn't break production and fixing it requires rewriting the entire codebase, maybe it's not worth it. Pick your battles.
 
 ## Long Methods
 
@@ -138,8 +145,18 @@ If your problem doesn't appear to go anywhere any time soon, then you will defin
   - Always remember to take notes. Certain behaviors may only manifest under specific conditions, and in the heat of troubleshooting, it's easy to overlook or repeat steps. Keeping detailed notes helps you stay organized and in control of the situation. 
 
 ## Understanding is Half of the Battle
+
 - **Taking notes**:
+  - Write down what you've tried and what happened. Your memory is not as good as you think.
+  - Use a simple format: timestamp, action taken, result, next step.
+  - Share notes in your incident channel so others can follow along without asking "what did you try?"
+  - Bonus: these notes become your post-mortem draft. You're welcome.
+
 - **Making Diagrams**:
+  - Draw the architecture, even if it's ugly. Sometimes seeing the flow reveals the problem.
+  - Use whatever tool you have: whiteboard, draw.io, napkin, Paint (yes, Microsoft Paint works).
+  - Highlight what's broken, what's working, and what you're not sure about.
+  - Share it with the team. A picture is worth a thousand Slack messages.
 
 Making the process easy to understand will definitely help if new team members have to join the troubleshooting. It's considerate and inclusive to ensure the process is straightforward and accessible to everyone.
 There is nothing worse than feeling like you have to start completely from scratch in a troubleshooting process. A new pair of eyes is always welcome, but if things seem to be at a dead end, it is better to concentrate efforts on exploring new avenues to progress. This can save time and effort in the troubleshooting process.
@@ -147,28 +164,125 @@ There is nothing worse than feeling like you have to start completely from scrat
 
 # Proper Escalation
 
-
+When you've exhausted your options and need help, escalate properly. Don't just throw problems over the wall and hope someone catches them.
 
 ## Infrastructure
+
+Check first, escalate second:
+- Are the servers/containers running? (`kubectl get pods`, `docker ps`, whatever applies)
+- Is there disk space? Memory? CPU? (You'd be surprised how often "out of space" is the issue)
+- Network connectivity working? Can services talk to each other?
+- Any recent deployments or infrastructure changes?
+- Check monitoring/alerts - CloudWatch, Datadog, Grafana, whatever you use.
+
+When escalating to infrastructure:
+- Provide: What broke, when it broke, what changed before it broke.
+- Include relevant logs, metrics, and screenshots.
+- Don't just say "it's slow" - give actual numbers.
+
 ## Development
+
+Not everything is a code problem, but sometimes it is:
+- Can you reproduce the bug locally?
+- Is it specific to certain data/users/environments?
+- Recent code deployments? Check git history.
+- Any new dependencies or version updates?
+
+When escalating to developers:
+- Provide clear reproduction steps.
+- Include error messages, stack traces, and relevant logs.
+- Mention what you've already tried.
+- Be specific about the environment (dev/staging/prod).
+
 ## Dependencies
+
+Third-party services love to break at the worst times:
+- Check status pages (status.aws.com, etc.)
+- Review API rate limits - are you hitting them?
+- Authentication still valid? Tokens expired?
+- Network policies blocking connections?
+- Version compatibility issues?
+
+When escalating to dependency owners:
+- Document exactly which endpoint/service is failing.
+- Include request/response samples (redact sensitive info!).
+- Mention if it worked before and when it stopped.
+
 ## Other Stuff
 
+Sometimes the problem is... elsewhere:
+- **DNS Issues**: `nslookup` and `dig` are your friends.
+- **SSL Certificates**: Expired certificates break everything silently.
+- **Time Sync**: Services get weird when clocks drift.
+- **Permissions**: IAM roles, security groups, firewall rules - check them all.
+- **Configuration**: Environment variables, config files, secrets - are they correct?
+
 ## Experience
->"If you’re the smartest person in the room, you’re in the wrong room." - Richard P. Feynman
+>"If you're the smartest person in the room, you're in the wrong room." - Richard P. Feynman
+
+Every outage, every bug, every 3 AM incident makes you better. But only if you learn from it.
+- Keep a personal log of issues you've solved. Future you will thank present you.
+- Learn from senior engineers. Watch how they approach problems - it's not magic, it's pattern recognition.
+- Fail forward: mistakes happen, but make new mistakes, not the same ones.
+
+Don't try to know everything. Try to know who to ask.
 
 ## Git Gud
->"I've wrestled with alligators, I've tussled with a whale. I done handcuffed lightning And throw thunder in jail (...)" — Muhammad Ali Jinnah
+>"I've wrestled with alligators, I've tussled with a whale. I done handcuffed lightning And throw thunder in jail (...)" — Muhammad Ali
 
-Experience is what will make you proud of yourself. There isn’t a magic trick that will solve all problems; instead, there are tools and techniques that can help facilitate your reaction to things and act accordingly.
+Experience is what will make you proud of yourself. There isn't a magic trick that will solve all problems; instead, there are tools and techniques that can help facilitate your reaction to things and act accordingly.
+
+**Get comfortable with:**
+- Command line basics (grep, awk, sed, curl, jq)
+- Your cloud provider's CLI (aws, gcloud, az)
+- Container tools (docker, kubectl)
+- Log aggregation tools (whatever your company uses)
+- Network debugging (ping, traceroute, netstat, tcpdump)
+
+You don't need to master everything. But knowing enough to be dangerous (in a good way) helps.
 
 ## Share
->"When people put you up in the pedestal don’t come off the pedestal acting like your humble. Stay up on that pedestal because if they put you there that’s showing you how high they can see. Stay there and pull them up." - Víctor Wooten
+>"When people put you up in the pedestal don't come off the pedestal acting like your humble. Stay up on that pedestal because if they put you there that's showing you how high they can see. Stay there and pull them up." - Víctor Wooten
+
+Write that post-mortem. Share it. Don't hide failures.
+- Document what went wrong, why it went wrong, and how you fixed it.
+- Share your notes and diagrams with the team.
+- Do a lessons-learned session while memories are fresh.
+- Update runbooks and documentation with what you learned.
+
+Your 2 AM debugging session might save someone else's 2 AM next week.
 
 # Plan B
 
+>"Hope for the best, plan for the worst, and prepare to be surprised." — Denis Waitley
+
+Sometimes you can't fix it. That's okay. What's not okay is not having a backup plan.
+
+**Rollback Strategy**
+- Can you revert to the last working version?
+- Do you have backups? (You should have backups)
+- Feature flags to disable problematic features?
+- Graceful degradation: can the system work with reduced functionality?
+
+**Communication Plan**
+- Who needs to know about the incident? Management? Users? Other teams?
+- Draft a status update template before you need it.
+- Be honest: "We're investigating" is better than radio silence.
+- Set expectations: "ETA for fix is X hours" or "We'll update in 30 minutes."
+
+**When to Give Up (Temporarily)**
+- After 8+ hours straight, your brain is mush. Take a break.
+- If you're making things worse, stop and get help.
+- Document where you left off, so the next person can continue.
+- Sleep on it. Seriously, problems look different in the morning.
 
 # Random Conclusions
 
-- It was the 
+- It was the DNS. It's always DNS.
 - We didn't even had to do this to begin with.
+- The person who wrote the original code left the company 3 years ago.
+- "It works on my machine" stops being funny when you hear it during an outage.
+- The fix was a typo in the config file that everyone missed for 2 weeks.
+- Restarting it actually worked. Nobody knows why.
+- The documentation was outdated. Of course it was.
+- Production and staging were not identical, despite what everyone claimed.
