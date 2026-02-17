@@ -1,8 +1,7 @@
 ---
 layout: custom
 title: Airtable
-description: Learn Airtable from basics to advanced scripting, formulas, and automation. A comprehensive guide for building powerful databases.
-image: /images/headers/cian-airtable-boxes.png
+description: Style Above Else
 ---
 
 <img class="myImg" src="../images/headers/cian-airtable-boxes.png" alt="cian-airtable-boxes" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">

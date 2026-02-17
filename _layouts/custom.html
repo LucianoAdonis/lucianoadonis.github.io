@@ -1,58 +1,100 @@
 <!doctype html>
-<html lang="{{ site.lang | default: 'en-US' }}">
-  {% include head.html %}
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    {% include head-custom.html %}
+
+    <!-- Primary Meta Tags -->
+    <title>Luciano’s Mini-Books — Tech Skills, Interview Tips, Lifehacks, and More</title>
+    <meta name="title" content="Luciano’s Library — Tech Skills, Interview Tips, Lifehacks, and More" />
+    <meta name="description" content="We often get caught up in our work, whether in Infrastructure or Development, and miss chances to improve how we approach it. As a Chilean CloudOps Engineer, I’m here to share insights on Confluence, interviews, life hacks, and other common challenges. Let’s find smarter ways to grow." />
+
+    <!-- Open Graph / Slack -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lucianoadonis.github.io">
+    <meta property="og:title" content="Luciano’s Library — Tech Skills, Interview Tips, Lifehacks, and More" />
+    <meta property="og:description" content="We often get caught up in our work, whether in Infrastructure or Development, and miss chances to improve how we approach it. As a Chilean CloudOps Engineer, I’m here to share insights on Confluence, interviews, life hacks, and other common challenges. Let’s find smarter ways to grow." />
+    <meta property="og:image" content="https://lucianoadonis.github.io/images/lucianos-library-preview.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://lucianoadonis.github.io">
+    <meta property="twitter:title" content="Luciano’s Library — Tech Skills, Interview Tips, Lifehacks, and More" />
+    <meta property="twitter:description" content="We often get caught up in our work, whether in Infrastructure or Development, and miss chances to improve how we approach it. As a Chilean CloudOps Engineer, I’m here to share insights on Confluence, interviews, life hacks, and other common challenges. Let’s find smarter ways to grow." />
+    <meta property="twitter:image" content="https://lucianoadonis.github.io/images/lucianos-library-preview.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+        
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  </head>
   <body>
-    {% include header.html %}
 
-    {% if page.url == "/" %}
-      <!-- Homepage with Hero -->
-      {% include hero.html %}
+    <header>
+      <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+      <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
+    </header>
 
-      <div class="page-container" style="padding-top: 0;">
-        <main class="page-main">
-          <article>
-            {{ content }}
-          </article>
-        </main>
-      </div>
-    {% else %}
-      <!-- Regular pages with content + TOC -->
-      <div class="page-container">
-        <main class="page-main">
-          <!-- Breadcrumb for series chapters -->
-          {% if site.data.series %}
-            {% for series in site.data.series %}
-              {% for chapter in series.chapters %}
-                {% if page.url contains chapter.slug %}
-                  <nav style="margin-bottom: 2rem; font-size: 14px; color: #737373;">
-                    <a href="/" style="color: #F97316; text-decoration: none;">Home</a>
-                    <span style="margin: 0 0.5rem;">›</span>
-                    <a href="{{ series.main }}" style="color: #F97316; text-decoration: none;">{{ series.title }}</a>
-                    <span style="margin: 0 0.5rem;">›</span>
-                    <span style="color: #0A0A0A;">{{ chapter.title }}</span>
-                  </nav>
-                  {% break %}
-                {% endif %}
-              {% endfor %}
-            {% endfor %}
-          {% endif %}
+    <div id="banner">
+      <!-- Linked logo with CSS hover effect -->
+      <a href="{{ site.github.repository_url }}" style="text-decoration: none;">
+        <img id="logo" class="logo">
+      </a>
 
-          <!-- Page content -->
-          <article>
-            {{ content }}
-          </article>
+      {% if page.url != "/" %}
+        <a href="/" class="button fork"><strong>Go Home</strong></a>
+      {% endif %}
+      
+      <!-- Commenting out the extra buttons -->
+      <!--
+      {% if site.show_links %}
+        <div class="links">
+          <span></span>
+          <ul>
+            <li><a href="{{ site.links.github }}" class="button">GH</a></li>
+            <li><a href="{{ site.links.youtube }}" class="button">YT</a></li>
+          </ul>
+        </div>
+      {% endif %}
+      -->
+    </div><!-- end banner -->
 
-          <!-- Auto chapter navigation for series pages -->
-          {% include chapter-nav.html %}
-        </main>
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        {{ content }}
+      </section>
+      <footer>
+        {% if site.github.is_project_page %}
+          <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        {% if page.url != "/pages/confluence.html" %}
+          <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
+        {% endif %}
+      </footer>
+    </div>
+    <!-- Single Modal -->
+    
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+    </div>
 
-        <!-- Right-side TOC -->
-        {% include toc.html %}
-      </div>
-    {% endif %}
-
-    {% include footer.html %}
-    {% include modal.html %}
-    {% include scripts.html %}
+    <script src="/assets/js/popup-modal.js"></script>
+    <script src="/assets/js/hover-preview.js"></script>
+    <script src="/assets/js/navigation.js"></script>
+    <script src="/assets/js/header-collapse.js"></script>
   </body>
 </html>
