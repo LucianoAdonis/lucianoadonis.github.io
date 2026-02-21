@@ -2,6 +2,8 @@
 layout: custom
 title: Obsidian
 description: Okay, It's Worth It
+status: red
+category: mentoring
 ---
 
 <img class="myImg" src="../images/headers/grey-obsidian-graph-view-version-two.png" alt="grey-obsidian-graph-view-version-two" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">

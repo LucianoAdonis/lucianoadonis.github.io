@@ -2,12 +2,13 @@
 layout: custom
 title: Airtable Exceptions
 description: Automating Tasks with Scripts
+book: airtable
+chapter: 3.9
+status: red
+category: educational
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/airtable-chapter-2" class="custom-button left"><strong>Previous Chapter</strong></a>
-  <a href="/pages/airtable-chapter-3" class="custom-button right"><strong>Next Chapter</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -298,10 +299,6 @@ output.text(markdownOutput);</code></pre>
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/airtable-chapter-2" class="custom-button left"><strong>Previous Chapter</strong></a>
-  <a href="/pages/airtable-chapter-3" class="custom-button right"><strong>Next Chapter</strong></a>
-</div>
 
 <style>
 .code-block {
@@ -382,3 +379,5 @@ function copyCode(button) {
   });
 }
 </script>
+
+{% include chapter-nav.html %}

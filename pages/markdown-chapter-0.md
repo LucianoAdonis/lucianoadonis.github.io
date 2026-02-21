@@ -2,12 +2,13 @@
 layout: custom
 title: Setup - Chapter 0
 description: Tutorial of the Tutorial
+book: markdown
+chapter: 0
+status: yellow
+category: meta
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/markdown" class="custom-button right"><strong>Menu</strong></a>
-  <a href="/pages/markdown-chapter-1" class="custom-button left"><strong>Chapter 1</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -29,7 +30,4 @@ description: Tutorial of the Tutorial
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/markdown" class="custom-button right"><strong>Menu</strong></a>
-  <a href="/pages/markdown-chapter-1" class="custom-button left"><strong>Chapter 4</strong></a>
-</div>
+{% include chapter-nav.html %}

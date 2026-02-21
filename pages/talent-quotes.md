@@ -2,6 +2,8 @@
 layout: custom
 title: Talent Quotes
 description: Okay, It's Worth It
+status: red
+category: meta
 ---
 
 

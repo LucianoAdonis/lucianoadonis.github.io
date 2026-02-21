@@ -1,3 +1,9 @@
+---
+layout: custom
+title: Colors
+status: red
+category: meta
+---
 
 Colors, my greatest weakness!
 

@@ -2,12 +2,13 @@
 layout: custom
 title: Confluence - Chapter 0
 description: Self Reference
+book: confluence
+chapter: 0
+status: green
+category: educational
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/confluence" class="custom-button right"><strong>Menu</strong></a>
-  <a href="/pages/confluence-chapter-1" class="custom-button left"><strong>Chapter 1</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -74,4 +75,4 @@ At 28, I find myself with the technical proficiency of someone in their mid-30s.
 
 ---
 
-<a href="/pages/confluence-chapter-1" class="button fork"><strong>Continue to Chapter 1</strong></a>
+{% include chapter-nav.html %}

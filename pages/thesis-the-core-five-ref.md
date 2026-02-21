@@ -2,14 +2,16 @@
 layout: custom
 title: The Board - References
 description: Character
+book: thesis-the-core-five
+chapter: 99
+status: orange
+category: theory
 ---
+
+{% include chapter-nav.html position="top" %}
 
 <!--- https://darksouls.wiki.fextralife.com/Character+Information --->
 
-<div class="nav-buttons">
-  <a href="/pages/thesis-the-core-five-1" class="custom-button right"><strong>Chapter 1</strong></a>
-  <a href="/pages/thesis-the-core-five" class="custom-button left"><strong>Go Back to Home</strong></a>
-</div>
 
 ---
 
@@ -27,9 +29,4 @@ description: Character
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/thesis-the-core-five-1.5" class="custom-button right"><strong>Chapter 1</strong></a>
-  <a href="/pages/thesis-the-core-five" class="custom-button left"><strong>Home</strong></a>
-</div>
-
-<a href="/pages/thesis-the-core-five-2" class="custom-button left"><strong>Chapter 1.5</strong></a>
+{% include chapter-nav.html %}

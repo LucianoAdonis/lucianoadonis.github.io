@@ -2,12 +2,15 @@
 layout: custom
 title: Interviews - Chapter 2.5
 description: Combat
+book: ds-interviews
+chapter: 2.5
+status: green
+category: self-help
+theme: ds
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/ds-interviews-chapter-2" class="ds-button left-button"><strong>Go to Chapter 2</strong></a>
-  <a href="/pages/ds-interviews-chapter-3" class="ds-button right-button"><strong>Go to Chapter 3</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
+
 ---
 
 <img class="myImg" src="../images/interviews/location-interview-grand-archives.png" alt="location-interview-grand-archives" style="cursor: pointer;">
@@ -127,7 +130,4 @@ Behavior and other patterns not directly related to combat.
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/ds-interviews-chapter-2" class="ds-button left-button"><strong>Go to Chapter 2</strong></a>
-  <a href="/pages/ds-interviews-chapter-3" class="ds-button right-button"><strong>Go to Chapter 3</strong></a>
-</div>
+{% include chapter-nav.html %}

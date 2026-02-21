@@ -2,12 +2,13 @@
 layout: custom
 title: Wanna Read? - Chapter 2.5
 description: The Archives
+book: lsp
+chapter: 2.5
+status: yellow
+category: self-help
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/lsp-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
-  <a href="/pages/lsp-chapter-3" class="custom-button left"><strong>Chapter 3</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -63,7 +64,4 @@ A ghost Town, Singularity point (x2), Hydrangea, Rhinoceros beetle (x4), Fig tar
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/lsp-chapter-1" class="custom-button left"><strong>Chapter 1</strong></a>
-  <a href="/pages/lsp-chapter-3" class="custom-button right"><strong>Chapter 3</strong></a>
-</div>
+{% include chapter-nav.html %}

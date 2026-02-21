@@ -2,12 +2,13 @@
 layout: custom
 title: Aligning Infrastructure with Business OKRs - Chapter 2
 description: Bridging the Gap Between Support and Core Business Goals
+book: okr
+chapter: 2
+status: orange
+category: educational
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/okr-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
-  <a href="/pages/okr-chapter-3" class="custom-button left"><strong>Chapter 3</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -47,7 +48,4 @@ This strategic categorization not only clarifies the value of these tasks but al
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/okr-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
-  <a href="/pages/okr-chapter-3" class="custom-button left"><strong>Chapter 3</strong></a>
-</div>
+{% include chapter-nav.html %}

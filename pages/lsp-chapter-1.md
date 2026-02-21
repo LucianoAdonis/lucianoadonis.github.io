@@ -2,12 +2,13 @@
 layout: custom
 title: Many Questions - Chapter 1
 description: A Methodology the Jedi Wouldn’t Tell You
+book: lsp
+chapter: 1
+status: yellow
+category: self-help
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/lsp" class="custom-button right"><strong>Home</strong></a>
-  <a href="/pages/lsp-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -115,7 +116,4 @@ But legally, only a trainer can make you a Facilitator and those are few, listed
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/lsp-chapter-0" class="custom-button right"><strong>Chapter 0</strong></a>
-  <a href="/pages/lsp-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
-</div>
+{% include chapter-nav.html %}

@@ -2,12 +2,13 @@
 layout: custom
 title: Our Pieces and Us - Chapter 1
 description: Time for some character development
+book: thesis-the-core-five
+chapter: 0
+status: orange
+category: theory
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/thesis-the-core-five" class="custom-button right"><strong>Menu</strong></a>
-  <a href="/pages/thesis-the-core-five-2" class="custom-button left"><strong>Chapter 2</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -54,8 +55,4 @@ There is a high demand of professionals, but the standards are also high. Let's 
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/thesis-the-core-five" class="custom-button right"><strong>Menu</strong></a>
-  <a href="/pages/thesis-the-core-five-1.5" class="custom-button left"><strong>Chapter 1.5</strong></a>
-</div>
-<a href="/pages/thesis-the-core-five-2" class="custom-button right"><strong>Chapter 2</strong></a>
+{% include chapter-nav.html %}

@@ -2,12 +2,13 @@
 layout: custom
 title: JQL
 description: Like Magic, Without the Wonder
+book: jira
+chapter: 0
+status: red
+category: educational
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/jira" class="custom-button right"><strong>Menu</strong></a>
-  <a href="/pages/jira-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -64,7 +65,4 @@ ORDER BY priority DESC
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/jira" class="custom-button right"><strong>Menu</strong></a>
-</div>
-<a href="/pages/jira-chapter-2" class="custom-button right"><strong>Chapter 2</strong></a>
+{% include chapter-nav.html %}

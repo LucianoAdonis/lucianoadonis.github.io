@@ -2,12 +2,13 @@
 layout: custom
 title: Chapter 2
 description: Setting up the Base
+book: airtable
+chapter: 2
+status: red
+category: educational
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/airtable-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
-  <a href="/pages/airtable-chapter-3" class="custom-button left"><strong>Chapter 3</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -107,8 +108,4 @@ And the answer is no! We also have images! But where? That's what are we going t
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/airtable-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
-  <a href="/pages/airtable-chapter-3" class="custom-button left"><strong>Chapter 3</strong></a>
-</div>
-
+{% include chapter-nav.html %}

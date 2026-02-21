@@ -2,12 +2,13 @@
 layout: custom
 title: Visualizing Work Through Jira and Confluence - Chapter 3
 description: Effective Tools for Tracking and Reporting
+book: okr
+chapter: 3
+status: orange
+category: educational
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/okr-chapter-2" class="custom-button right"><strong>Chapter 2</strong></a>
-  <a href="/pages/okr" class="custom-button left"><strong>Menu</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -58,7 +59,4 @@ After crafting your JQL, insert it into the Jira Issues macro in Confluence.
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/okr-chapter-2" class="custom-button right"><strong>Chapter 2</strong></a>
-  <a href="/pages/okr" class="custom-button left"><strong>Menu</strong></a>
-</div>
+{% include chapter-nav.html %}

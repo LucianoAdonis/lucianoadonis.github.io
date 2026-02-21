@@ -2,6 +2,8 @@
 layout: custom
 title: Make the Most of Confluence
 description: Style Above Else
+status: green
+category: educational
 ---
 
 <img class="myImg" src="../images/headers/white-confluence-logo.png" alt="white-confluence-logo" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
@@ -55,11 +57,11 @@ The content will be split into four sections, as the index bar exceeded its leng
 <br>
 
 ---
-<div class="ds-button-container">
-  <a href="/pages/confluence-chapter-0" class="custom-button left"><strong>Chapter 0 (Optional)</strong></a>
+<div class="nav-buttons right-aligned">
+  <a href="/pages/confluence-chapter-0" class="custom-button right"><strong>Chapter 0 (Optional)</strong></a>
 </div>
 
 
-<div class="ds-button-container">
-  <a href="/pages/confluence-chapter-1" class="custom-button left"><strong>Chapter 1</strong></a>
+<div class="nav-buttons right-aligned">
+  <a href="/pages/confluence-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
 </div>

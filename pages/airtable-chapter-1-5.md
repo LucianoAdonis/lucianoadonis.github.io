@@ -2,12 +2,13 @@
 layout: custom
 title: Airtable - Chapter 1.5
 description: Formula Examples & Use Cases
+book: airtable
+chapter: 1.5
+status: red
+category: educational
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/airtable-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
-  <a href="/pages/airtable-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -167,7 +168,4 @@ IF(
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/airtable-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
-  <a href="/pages/airtable-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
-</div>
+{% include chapter-nav.html %}

@@ -2,6 +2,8 @@
 layout: custom
 title: The Core Five
 description: Observations About Hiring Solutions for your Problems
+status: orange
+category: theory
 ---
 
 <img class="myImg" src="../images/headers/cian-chess-board-v2.png" alt="cian-chess-board" style="border: 0px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">

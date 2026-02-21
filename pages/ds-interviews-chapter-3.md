@@ -2,16 +2,14 @@
 layout: custom
 title: Interviews - Chapter 3
 description: Showdown!
+book: ds-interviews
+chapter: 3
+status: green
+category: self-help
+theme: ds
 ---
 
-
-<div class="nav-buttons">
-  <a href="/pages/ds-interviews-chapter-2" class="ds-button left-button"><strong>Go to Chapter 2</strong></a>
-  <a href="/pages/ds-interviews" class="ds-button right-button"><strong>Go to Main Menu</strong></a>
-</div>
-<div class="nav-buttons">
-  <a href="/pages/ds-interviews-chapter-2.5" class="ds-button left-button"><strong>Go to Chapter 2.5</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -68,3 +66,5 @@ Depending on how you get the interview you may get feedback, by a third-party or
 
 
 ---
+
+{% include chapter-nav.html %}

@@ -13,6 +13,160 @@ vars:
   example_email_plus_a: test+a@gmail.com
   example_email_plus_b: test+b@gmail.com
 
+books:
+  - slug: shopping
+    title: "Buy it for Life"
+    description: "Recommended products that last."
+    status: green
+    category: optimization
+    chapters: 0
+    url: /pages/shopping
+    image: /images/headers/yellow-shopping-cart.png
+
+  - slug: communication-tips
+    title: "Communication Tips"
+    description: "Master workplace messaging, templates, and incident comms."
+    status: yellow
+    category: optimization
+    chapters: 5
+    url: /pages/communication-tips
+    image: /images/headers/purple-computer.png
+
+  - slug: airtable
+    title: "Make the Most of Airtable"
+    description: "A comprehensive guide/tutorial."
+    status: red
+    category: educational
+    chapters: 7
+    url: /pages/airtable
+    image: /images/headers/cian-airtable-boxes.png
+
+  - slug: confluence
+    title: "Make the Most of Confluence"
+    description: "A comprehensive guide/tutorial."
+    status: green
+    category: educational
+    chapters: 5
+    url: /pages/confluence
+    image: /images/headers/white-confluence-logo.png
+
+  - slug: adrs
+    title: "Why ADRs Matter and How to Use Them"
+    description: "Avoid future headaches with proper records."
+    status: yellow
+    category: educational
+    chapters: 1
+    url: /pages/adrs
+    image: /images/headers/bluish-disney-the-beauty-and-the-beast-library.png
+
+  - slug: writing
+    title: "Writing Efficiently"
+    description: "Streamline your writing process."
+    status: orange
+    category: educational
+    chapters: 0
+    url: /pages/writing
+    image: /images/headers/sky-blue-writting.png
+
+
+  - slug: management-101
+    title: "Become the Manager That You Always Hated"
+    description: "Guide to understanding and becoming one."
+    status: red
+    category: educational
+    chapters: 1
+    url: /pages/management-101
+    image: /images/headers/cian-chess-board-v2.png
+
+  - slug: ds-interviews
+    title: "Interviews and Work, Walkthrough Guide"
+    description: "A pragmatic guide for job seekers."
+    status: green
+    category: self-help
+    chapters: 6
+    url: /pages/ds-interviews
+    image: /images/interviews/main-menu.png
+
+  - slug: lsp
+    title: "The LSP Experience"
+    description: "Creative solutions through play."
+    status: yellow
+    category: self-help
+    chapters: 6
+    url: /pages/lsp
+    image: /images/headers/black-lsp-master-trainers-association-logo.png
+
+  - slug: troubleshooting
+    title: "Troubleshooting"
+    description: "Sharpen your problem-solving skills."
+    status: orange
+    category: self-help
+    chapters: 0
+    url: /pages/troubleshooting
+    image: /images/headers/green-troubleshooting-repair-computer.png
+
+  - slug: obsidian
+    title: "Obsidian"
+    description: "The ultimate personal knowledge tool."
+    status: red
+    category: mentoring
+    chapters: 0
+    url: /pages/obsidian
+    image: /images/headers/grey-obsidian-graph-view-version-two.png
+
+  - slug: digital-life
+    title: "Digital Life"
+    description: "Manage your digital footprint efficiently."
+    status: red
+    category: mentoring
+    chapters: 0
+    url: /pages/digital-life
+
+  - slug: thesis-the-core-five
+    title: "The Core Five"
+    description: "A theory in progress."
+    status: orange
+    category: theory
+    chapters: 5
+    url: /pages/thesis-the-core-five
+    image: /images/headers/cian-chess-board-v2.png
+
+  - slug: markdown
+    title: "Markdown"
+    description: "Cool tricks to make your content shine."
+    status: yellow
+    category: meta
+    chapters: 3
+    url: /pages/markdown
+    image: /images/headers/cian-markdown-wallpaper.png
+
+  - slug: mini-books
+    title: "Mini-Books"
+    description: "Because 'Blog Posts' didn't sound nearly as impressive."
+    status: red
+    category: meta
+    chapters: 0
+    url: /pages/mini-books
+    image: /images/headers/grey-obsidian-graph-view-version-two.png
+
+  - slug: okr
+    title: "OKRs and You"
+    description: "Harness OKRs for transparency and alignment."
+    status: orange
+    category: educational
+    chapters: 4
+    url: /pages/okr
+    image: /images/headers/yellow-okr.png
+
+  - slug: jira
+    title: "Jira"
+    description: "Making sense of project tracking."
+    status: red
+    category: educational
+    chapters: 3
+    url: /pages/jira
+    image: /images/headers/cian-chess-board-v2.png
+
 show_links: true
 links:
   github: https://lucianoadonis.github.io/

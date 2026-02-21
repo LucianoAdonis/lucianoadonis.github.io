@@ -2,6 +2,8 @@
 layout: custom
 title: OKRs and You
 description: Fun
+status: orange
+category: educational
 ---
 
 <img class="myImg" src="../images/headers/yellow-okr.png" alt="https://www.cebra.com/hubfs/okr-marketing.jpg" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
@@ -34,6 +36,6 @@ In Progress:
 
 ---
 
-<div class="ds-button-container">
-  <a href="/pages/okr-chapter-1" class="custom-button left"><strong>Chapter 1</strong></a>
+<div class="nav-buttons right-aligned">
+  <a href="/pages/okr-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
 </div>

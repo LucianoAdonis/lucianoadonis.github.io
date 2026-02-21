@@ -2,12 +2,14 @@
 layout: custom
 title: Interviews - Chapter 0
 description: General Information
+book: ds-interviews
+chapter: -1
+status: green
+category: self-help
+theme: ds
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/ds-interviews" class="ds-button left-button"><strong>Go Back to Home</strong></a>
-  <a href="/pages/ds-interviews-chapter-1" class="ds-button right-button"><strong>Go to Chapter 1</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -36,6 +38,4 @@ It's a 50/50 scenario. Sometimes, you won't get the same opportunities as someon
 
 ---
 
-<div class="ds-button-container">
-  <a href="/pages/ds-interviews-chapter-1" class="ds-button right-button"><strong>Continue to Chapter 1</strong></a>
-</div>
+{% include chapter-nav.html %}

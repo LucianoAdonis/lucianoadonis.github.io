@@ -2,13 +2,13 @@
 layout: custom
 title: Chapter 4
 description: Structure Above Else
+book: airtable
+chapter: 4
+status: red
+category: educational
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/airtable-chapter-3" class="custom-button right"><strong>Chapter 3</strong></a>
-  <a href="/pages/airtable" class="custom-button left"><strong>Home</strong></a>
-</div>
-
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -60,7 +60,4 @@ There isn't much from airtable but there are a few sources that are worth lookin
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/airtable-chapter-1" class="custom-button right"><strong>Chapter 3</strong></a>
-  <a href="/pages/airtable" class="custom-button left"><strong>Home</strong></a>
-</div>
+{% include chapter-nav.html %}

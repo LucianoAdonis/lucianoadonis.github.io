@@ -2,12 +2,13 @@
 layout: custom
 title: Confluence - Chapter 3
 description: Macros
+book: confluence
+chapter: 3
+status: green
+category: educational
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/confluence-chapter-2" class="custom-button right"><strong>Chapter 2</strong></a>
-  <a href="/pages/confluence-chapter-4" class="custom-button left"><strong>Chapter 4</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -209,7 +210,4 @@ You can [Customize Button Hyperlink With CSS](https://docs.adaptavist.com/cfm4cs
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/confluence-chapter-2" class="custom-button right"><strong>Chapter 2</strong></a>
-  <a href="/pages/confluence-chapter-4" class="custom-button left"><strong>Chapter 4</strong></a>
-</div>
+{% include chapter-nav.html %}

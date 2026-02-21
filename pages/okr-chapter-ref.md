@@ -1,12 +1,13 @@
 ---
 layout: custom
 title: Reference List - Chapter Ref
+book: okr
+chapter: 99
+status: orange
+category: educational
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/okr" class="custom-button right"><strong>Home</strong></a>
-  <a href="/pages/okr-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -28,7 +29,4 @@ title: Reference List - Chapter Ref
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/okr-chapter-0" class="custom-button right"><strong>Chapter 0</strong></a>
-  <a href="/pages/okr-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
-</div>
+{% include chapter-nav.html %}

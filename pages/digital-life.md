@@ -2,6 +2,8 @@
 layout: custom
 title: Digital Life
 description: Optimizing Digital Presence and Productivity
+status: red
+category: mentoring
 ---
 
 Ever feel like tech companies know you better than you know yourself? If that's giving you the creeps (and it should), keep reading. This guide's packed with sneaky-smart ways to take back control of your digital life and boost your productivity while you're at it.

@@ -2,12 +2,13 @@
 layout: custom
 title: Explain It - Chapter 2
 description: Not From a Jedi
+book: lsp
+chapter: 2
+status: yellow
+category: self-help
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/lsp-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
-  <a href="/pages/lsp-chapter-3" class="custom-button left"><strong>Chapter 3</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -63,7 +64,4 @@ But when organizations are added to the mix, we are now playing 4D chess, and bl
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/lsp-chapter-1" class="custom-button left"><strong>Chapter 1</strong></a>
-  <a href="/pages/lsp-chapter-3" class="custom-button right"><strong>Chapter 3</strong></a>
-</div>
+{% include chapter-nav.html %}

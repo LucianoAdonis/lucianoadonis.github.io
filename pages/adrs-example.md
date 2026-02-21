@@ -2,7 +2,13 @@
 layout: custom
 title: Architecture Decision Record (ADR)
 description: Documenting Key Architectural Decisions for Enterprise Systems
+book: adrs
+chapter: 1
+status: yellow
+category: educational
 ---
+
+{% include chapter-nav.html position="top" %}
 
 # Examples
 
@@ -67,3 +73,5 @@ Key risks and mitigation strategies:
 - New runbook created for microservices deployment process
 - Quarterly review scheduled to assess progress and adjust course if needed
 - Compliance team verified that the new architecture meets all regulatory requirements
+
+{% include chapter-nav.html %}

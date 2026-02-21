@@ -2,12 +2,13 @@
 layout: custom
 title: Extras - Chapter 4
 description: Style Above Else
+book: lsp
+chapter: 4
+status: yellow
+category: self-help
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/lsp-chapter-3" class="custom-button right"><strong>Chapter 2</strong></a>
-  <a href="/pages/lsp" class="custom-button left"><strong>Home</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -33,7 +34,4 @@ description: Style Above Else
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/lsp-chapter-2" class="custom-button right"><strong>Chapter 2</strong></a>
-  <a href="/pages/lsp" class="custom-button left"><strong>Home</strong></a>
-</div>
+{% include chapter-nav.html %}

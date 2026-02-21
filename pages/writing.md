@@ -1,56 +1,56 @@
 ---
 layout: custom
-title: Writing Advise
+title: Writing Advice
 description: An act that you do with your heart
+status: orange
+category: educational
 ---
 
 <img class="myImg" src="../images/headers/sky-blue-writting.png" alt="sky-blue-writting" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
 
-Depending of the document type you will need to figure how to start. If you barely have an idea of how it should look, search for references.
+Depending on the document type, you will need to figure out how to start. If you barely have an idea of how it should look, search for references first.
 
 ---
 
-Topics:
-* Types of Documents
+# Who Are You Writing This For?
 
-# Who are you writing this for?
+Know who this is for.
 
-- Know who is this for.
-  - I personally write thinking on myself if I forget everything.
-
+Personally, I write thinking of myself: the version of me who has forgotten everything. That tends to be the right level of detail.
 
 # Review
 
-Is easier to spot a bad movie than to point what it does good. And if you do, you will end up with a bunch of cliches.
+It is easier to spot a bad movie than to explain what it does well. And when you try, you usually end up with a bunch of clichés. The same applies to writing: you know something feels off before you can articulate why.
 
 ## What to Look for
 
-We tend to miss a lot of information when we write because we skip the obvious stuff to keep things simple, which isn’t necessarily bad.
+We tend to leave out information when writing because we skip the obvious to keep things simple, which is not necessarily bad. The trick is to know when skipping something actually loses the reader.
 
-Here are some tips:
+A few tips:
 
-- Avoid using subtitles for everything—sometimes less is more.
-- Think about your approach when writing. Personally, I like to brain-dump everything and then organize it later. Sometimes, I even start with the conclusion. But others might prefer to outline their titles first and work from there.
-- When writing, think about the person who’ll be reading this. What will their first thought be? It’s a good practice to assume they’ll have more knowledge gaps than you do, so cover those quickly and clearly.
+- Avoid using headings for everything: sometimes less structure is more readable.
+- Think about your approach before starting. Personally, I like to brain-dump everything and organize it later. Sometimes I start with the conclusion. Others prefer to outline headings first and fill them in. Neither is wrong.
+- Write thinking about the person reading it. What will their first reaction be? Assume they have more knowledge gaps than you do, and cover those quickly and clearly.
 
 ## What to Avoid
 
-- Overexplaining: It’s easy to overexplain simple ideas, overwhelming your writing.
-- Too Many Cliches: While relying on common phrases is tempting, avoid stuffing your review with clichés.
-- Forgetting the Purpose: Stay focused on the purpose of your document.
-- Not Enough Detail: missing parts break the immersion and may divert the attention from the document if you are trying to find out things outside of it.
+- **Overexplaining**: It is easy to over-explain simple ideas and bury the actual point.
+- **Too many clichés**: Relying on common phrases makes writing feel generic and forgettable.
+- **Losing the purpose**: Every sentence should serve the document. If it does not, cut it.
+- **Not enough detail**: Missing context breaks immersion and sends the reader searching elsewhere, which is exactly what you want to avoid.
 
 # AIs and ChatGPT
 
-As you may already know (I hope so), in a company you should avoid use this service. If you do because "insert the proper reason here," at least don't do it carelessly; exposing sensitive information by passing a whole document just to rewrite two lines of text would be very questionable.
+As you may already know, in a company context you should avoid passing sensitive information through these services. If you do use them (for whatever valid reason), at least do not do it carelessly. Uploading an entire document just to rewrite two lines of text is a risky trade-off.
 
-To put it simply, if someone asks how they're doing and they respond with a lengthy explanation about the current geopolitical and economic situation before getting into business, it might come across as odd and pretentious. The same principle applies to documents; sometimes, less is more.
+To put it simply: if someone asks how you are doing and they respond with a lengthy breakdown of the geopolitical situation before getting to the point, it comes across as odd. The same principle applies to documents. More is not always better.
 
 ## Prompts
 
-Let's say I want to write a quick context for a document that delves deeper into the Cold Start issue affecting Lambdas inside VPCs. A simple answer would be, "Lambdas that run on VPCs are not fast because the allocation of internal resources is slower than public ones that are always ready to be executed."
+Let's say you need a quick context section for a document on the Cold Start issue affecting AWS Lambdas inside VPCs. A plain answer would be: "Lambdas running inside VPCs are slower to start because allocating internal networking resources takes more time than public ones that are always ready."
 
-But let's give it a try with ChatGPT (ChatGPT 3.5) with slightly different prompts:
+But here is how the same request plays out with slightly different prompts in ChatGPT 3.5:
+
 - Explain the limitation of AWS Lambdas running in private VPCs that causes the cold start issue as context for a document:
 
   <details style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
@@ -89,7 +89,7 @@ But let's give it a try with ChatGPT (ChatGPT 3.5) with slightly different promp
     </div>
   </details>
 
-- As a senior cloud engineer, explain the limitation of AWS lambdas running in private VPCs that causes the cold start issue as context:
+- As a senior cloud engineer, explain the limitation of AWS Lambdas running in private VPCs that causes the cold start issue as context:
 
   <details style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
     <summary style="color: #00AEEF; cursor: pointer;">Click to expand</summary>
@@ -135,18 +135,17 @@ But let's give it a try with ChatGPT (ChatGPT 3.5) with slightly different promp
     </div>
   </details>
 
-  - As a senior cloud engineer, explain the limitation of AWS lambdas running in private VPCs that causes the cold start issue as context, and be brief about it:
+  - As a senior cloud engineer, explain the limitation of AWS Lambdas running in private VPCs that causes the cold start issue as context, and be brief about it:
   <details style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
     <summary style="color: #00AEEF; cursor: pointer;">Click to expand</summary>
     <div style="padding: 10px;">
-      <p>Certainly! </p>
+      <p>Certainly!</p>
 
       <p>When AWS Lambda functions are deployed within a private Virtual Private Cloud (VPC), they experience a cold start issue due to the additional networking setup and resource provisioning required before execution. This complexity in networking configuration, including subnet associations and security group assignments, along with the overhead of resource allocation within the VPC, contributes to longer initialization times. Additionally, stringent security checks and compliance measures further extend the cold start duration. As a Senior Cloud Engineer, addressing these factors is crucial to optimize the performance and responsiveness of serverless applications deployed in private VPC environments.</p>
-
     </div>
   </details>
 
-  - As a senior cloud engineer, explain the limitation of AWS lambdas running in private VPCs that causes the cold start issue as context, and be brief about it, make it two lines:
+  - As a senior cloud engineer, explain the limitation of AWS Lambdas running in private VPCs that causes the cold start issue as context, and be brief about it: make it two lines:
   <details style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
     <summary style="color: #00AEEF; cursor: pointer;">Click to expand</summary>
     <div style="padding: 10px;">
@@ -154,21 +153,80 @@ But let's give it a try with ChatGPT (ChatGPT 3.5) with slightly different promp
     </div>
   </details>
 
-If you will have to go through a lot of filler to get to the essential notions of the document, that's no good; if you want to go deeper into a topic, that's fine, but be aware of who you are writing for. Is it a "From Zero to Hero" course or just a document providing clarity and guidance over a topic you would likely read in a pinch?
+If you are going to wade through a lot of filler just to get to the essential point of a document, that is a problem. Going deep into a topic is fine, but be aware of who you are writing for. Is this a "From Zero to Hero" course or a document people will skim in a pinch?
 
-We don't want you to go into Prompt Engineering to write a summary you could otherwise come up with while trying to get the correct output. A few things that you consider are:
+You should not need to go into full Prompt Engineering mode just to get a clean paragraph. A few things worth trying:
 
-- Rewrite for clarity X text.
+- Rewrite X text for clarity.
 - Suggest alternatives to X line.
 - Rewrite this more politely.
-- Alternative expressions for X text.
+- Alternative expressions for X phrase.
 
+If you only need a grammar check, Grammarly is worth it. The paid version saves a lot of proofreading time, and the rewrite suggestions are genuinely useful when you are stuck on a sentence.
 
-If you only need a grammar check, use Grammarly; you only have to pay for it. I think it's worth every penny for the time saved in proofreading. I also find the capability to rewrite certain pieces or suggest options and ideas quite handy.
+## Prompts for Editing Your Own Work
+
+Where AI tools actually save time is in the small, repetitive edits, the kind where you know something is off but do not want to rewrite the whole thing from scratch. The key is being specific about what you want to preserve.
+
+### Keeping the Tone
+
+Use these when the content is good but the phrasing needs work, and you do not want it coming back sounding like a press release.
+
+- `Fix the grammar and spelling in this paragraph without changing the tone or wording: [text]`
+- `This is written in a casual, direct tone. Correct any errors but do not make it sound more formal: [text]`
+- `I wrote this. Clean it up without making it sound like someone else wrote it: [text]`
+
+The last one sounds obvious but it is the most useful. It tells the model that the voice is intentional and should be preserved.
+
+### Trimming Without Losing the Point
+
+Use these when a paragraph is doing too much and you need it to breathe.
+
+- `Shorten this to two sentences. Keep the main point and nothing else: [text]`
+- `Remove filler words and redundant phrases from this without changing the meaning: [text]`
+- `This is too long. Cut it in half, prioritizing clarity over completeness: [text]`
+
+The difference between these and a generic "summarize" prompt is that you are giving it permission to cut, not just compress.
+
+### Adjusting Formality
+
+Use these when the audience changes and the text needs to follow.
+
+- `Rewrite this to sound professional without being stiff or corporate: [text]`
+- `Make this less formal. The audience is technical but not executives: [text]`
+- `This reads too casual for a stakeholder update. Adjust the tone, keep the content: [text]`
+
+### Surgical Edits
+
+Use these when most of the text is fine and you only need one part fixed.
+
+- `The opening sentence of this paragraph is weak. Suggest three alternatives: [text]`
+- `This sentence is awkward. Rewrite it without changing the meaning: [sentence]`
+- `Rewrite only the conclusion of this paragraph to land harder: [text]`
+
+Scoping the instruction to one part of the text is often more useful than asking for a full rewrite. It gives you something concrete to compare rather than a new version you have to evaluate from scratch.
+
+### Matching Tone Across Sections
+
+Use this when you have written two sections at different times and they feel like they were written by different people, because they were.
+
+- `These two paragraphs need to sound like they were written by the same person in the same mood. Adjust the second to match the tone of the first: [paragraph 1] / [paragraph 2]`
+- `I want my writing to sound consistent throughout. Here is my original style: [example]. Now rewrite this section to match it: [text]`
+
+### Removing the AI Voice
+
+Use these when something you wrote, or something a tool generated, that sounds too polished, too structured, or just a bit hollow.
+
+- `Rewrite this without using corporate buzzwords, filler transitions like "in conclusion" or "it is worth noting", or bullet points: [text]`
+- `This sounds like it was written by AI. Rewrite it to sound like a person: [text]`
+- `Remove hedging phrases like "it is important to note" or "this is crucial" and say the thing directly: [text]`
+
+---
+
+None of these replace actually knowing what you want to say. But if the thought is there and the sentence is not cooperating, one of these will usually unstick it faster than staring at the screen.
 
 ## Advice for the Young at Heart
 
-Adding more text won't necessarily improve your document; it might make reading overly complicated. ChatGPT typically aims to meet a specific character count to sound informative and engaging, but it's crucial to maintain clarity and conciseness above everything else.
+Adding more text does not improve a document. It usually makes it harder to read. ChatGPT tends to target a certain length to sound thorough and engaging, but clarity and conciseness beat length every time.
 
-ChatGPT is helpful, but it is like using Mahoraga. Depends on how you use it.
-
+ChatGPT is useful, but it is like using Mahoraga. It depends entirely on how you wield it.

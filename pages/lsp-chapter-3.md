@@ -2,12 +2,13 @@
 layout: custom
 title: Materials - Chapter 3
 description: Let's Build a Death Star!
+book: lsp
+chapter: 3
+status: yellow
+category: self-help
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/lsp-chapter-2" class="custom-button right"><strong>Chapter 2</strong></a>
-  <a href="/pages/lsp-chapter-4" class="custom-button left"><strong>Chapter 4</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -148,7 +149,4 @@ There is a lot to cover, but to keep it simple, here is the summary:
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/lsp-chapter-2" class="custom-button right"><strong>Chapter 2</strong></a>
-  <a href="/pages/lsp-chapter-4" class="custom-button left"><strong>Chapter 4</strong></a>
-</div>
+{% include chapter-nav.html %}

@@ -2,12 +2,13 @@
 layout: custom
 title: Manager Skill Tree
 description: Time for some character development
+book: management-101
+chapter: 1
+status: red
+category: educational
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/tales-manager" class="custom-button right"><strong>Menu</strong></a>
-  <a href="/pages/tales-manager-2" class="custom-button left"><strong>Chapter 2</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -32,7 +33,4 @@ So, I’d rather fight smarter... even if that means dealing with more people th
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/tales-manager" class="custom-button right"><strong>Menu</strong></a>
-</div>
-<a href="/pages/tales-manager-2" class="custom-button right"><strong>Chapter 2</strong></a>
+{% include chapter-nav.html %}

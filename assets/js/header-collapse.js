@@ -1,85 +1,45 @@
-// Header collapse functionality
+// Header collapse functionality — header+banner move as one unit
 document.addEventListener('DOMContentLoaded', function() {
-    let lastScrollTop = 0;
-    const header = document.querySelector('header');
-    const banner = document.getElementById('banner');
-    const section = document.querySelector('section');
-    const nav = document.querySelector('nav');
-    const scrollThreshold = 25; // Start collapsing much earlier
-    const navHideThreshold = 25; // Start hiding navigation even earlier
-    const scrollBuffer = 5; // Smaller buffer for smoother transitions
-    
-    // Create a wrapper for header and banner if it doesn't exist
+    var lastScrollTop = 0;
+    var header = document.querySelector('header');
+    var banner = document.getElementById('banner');
+    var section = document.querySelector('section');
+    var scrollThreshold = 25;
+    var scrollBuffer = 5;
+
+    // Wrap header and banner in a single div so they collapse together
     if (header && banner && !header.parentElement.classList.contains('header-wrapper')) {
-        const wrapper = document.createElement('div');
+        var wrapper = document.createElement('div');
         wrapper.className = 'header-wrapper';
         header.parentNode.insertBefore(wrapper, header);
         wrapper.appendChild(header);
         wrapper.appendChild(banner);
     }
-    
-    const headerWrapper = document.querySelector('.header-wrapper');
-    
-    // Debug: Check if elements are found
-    console.log('Header found:', header);
-    console.log('Banner found:', banner);
-    console.log('Header wrapper found:', headerWrapper);
-    console.log('Section found:', section);
-    console.log('Navigation found:', nav);
-    
+
+    var headerWrapper = document.querySelector('.header-wrapper');
+    if (!headerWrapper) return;
+
     window.addEventListener('scroll', function() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
-        // Check if we've scrolled past the threshold
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
         if (scrollTop > scrollThreshold) {
-            // Scrolling down - collapse header
             if (scrollTop > lastScrollTop) {
-                if (headerWrapper) {
-                    headerWrapper.classList.add('collapsed');
-                }
-                // Always apply to individual elements as backup
-                header.classList.add('collapsed');
-                banner.classList.add('collapsed');
-                section.classList.add('header-collapsed');
-                console.log('Collapsing - Wrapper classes:', headerWrapper ? headerWrapper.classList.toString() : 'No wrapper');
+                // Scrolling down — collapse
+                headerWrapper.classList.add('collapsed');
+                if (section) section.classList.add('header-collapsed');
             } else {
-                // Scrolling up - expand header only if we're close to the top
+                // Scrolling up — only expand near the top
                 if (scrollTop <= scrollThreshold + scrollBuffer) {
-                    if (headerWrapper) {
-                        headerWrapper.classList.remove('collapsed');
-                    }
-                    // Always apply to individual elements as backup
-                    header.classList.remove('collapsed');
-                    banner.classList.remove('collapsed');
-                    section.classList.remove('header-collapsed');
-                    console.log('Expanding - Wrapper classes:', headerWrapper ? headerWrapper.classList.toString() : 'No wrapper');
+                    headerWrapper.classList.remove('collapsed');
+                    if (section) section.classList.remove('header-collapsed');
                 }
             }
         } else {
-            // At the top - always show header
-            if (headerWrapper) {
-                headerWrapper.classList.remove('collapsed');
-            }
-            // Always apply to individual elements as backup
-            header.classList.remove('collapsed');
-            banner.classList.remove('collapsed');
-            section.classList.remove('header-collapsed');
+            // At the top — always show
+            headerWrapper.classList.remove('collapsed');
+            if (section) section.classList.remove('header-collapsed');
         }
-        
-        // Handle navigation hiding separately for smoother effect
-        if (scrollTop > navHideThreshold) {
-            if (scrollTop > lastScrollTop) {
-                // Scrolling down - hide navigation
-                if (nav) nav.classList.add('header-collapsed');
-            } else {
-                // Scrolling up - show navigation
-                if (nav) nav.classList.remove('header-collapsed');
-            }
-        } else {
-            // At the top - always show navigation
-            if (nav) nav.classList.remove('header-collapsed');
-        }
-        
+
         lastScrollTop = scrollTop;
     });
-}); 
+});

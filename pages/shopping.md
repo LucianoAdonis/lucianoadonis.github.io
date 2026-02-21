@@ -2,6 +2,8 @@
 layout: custom
 title: Awesome Products
 description: Things that might be useful for you too
+status: green
+category: optimization
 ---
 
 <img class="myImg" src="../images/headers/yellow-shopping-cart.png" alt="yellow-shopping-cart" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">

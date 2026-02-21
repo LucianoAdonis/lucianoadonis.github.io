@@ -2,12 +2,14 @@
 layout: custom
 title: Interviews - Chapter 2
 description: It's not you, it's me, Mario
+book: ds-interviews
+chapter: 2
+status: green
+category: self-help
+theme: ds
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/ds-interviews" class="ds-button left-button"><strong>Go to Chapter 1</strong></a>
-  <a href="/pages/ds-interviews-chapter-3" class="ds-button right-button"><strong>Go to Chapter 3</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -75,10 +77,4 @@ With this in mind, at least you won’t stumble right out of the fog gate, givin
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/ds-interviews-chapter-1" class="ds-button left-button"><strong>Go to Chapter 1</strong></a>
-  <a href="/pages/ds-interviews-chapter-2.5" class="ds-button right-button"><strong>Go to Chapter 2.5</strong></a>
-</div>
-<div class="ds-button-container">
-  <a href="/pages/ds-interviews-chapter-3" class="ds-button right-button"><strong>Go to Chapter 3</strong></a>
-</div>
+{% include chapter-nav.html %}

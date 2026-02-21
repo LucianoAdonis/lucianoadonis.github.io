@@ -2,14 +2,17 @@
 layout: custom
 title: Interviews - Chapter 1
 description: Character
+book: ds-interviews
+chapter: 1
+status: green
+category: self-help
+theme: ds
 ---
+
+{% include chapter-nav.html position="top" %}
 
 <!--- https://darksouls.wiki.fextralife.com/Character+Information --->
 
-<div class="nav-buttons">
-  <a href="/pages/ds-interviews" class="ds-button left-button"><strong>Go Back to Home</strong></a>
-  <a href="/pages/ds-interviews-chapter-2" class="ds-button right-button"><strong>Go to Chapter 2</strong></a>
-</div>
 
 ---
 
@@ -89,8 +92,4 @@ The following only applies upon your third or fourth run after the Senior thresh
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/ds-interviews" class="ds-button left-button"><strong>Go Back to Home</strong></a>
-  <a href="/pages/ds-interviews-chapter-2" class="ds-button right-button"><strong>Go to Chapter 2</strong></a>
-</div>
-
+{% include chapter-nav.html %}

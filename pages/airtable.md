@@ -2,6 +2,8 @@
 layout: custom
 title: Airtable
 description: Style Above Else
+status: red
+category: educational
 ---
 
 <img class="myImg" src="../images/headers/cian-airtable-boxes.png" alt="cian-airtable-boxes" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
@@ -55,6 +57,6 @@ The content will be split into four sections, as the index bar exceeded its leng
 
 ---
 
-<div class="ds-button-container">
-  <a href="/pages/airtable-chapter-1" class="custom-button left"><strong>Chapter 1</strong></a>
+<div class="nav-buttons right-aligned">
+  <a href="/pages/airtable-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
 </div>

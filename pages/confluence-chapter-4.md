@@ -2,13 +2,13 @@
 layout: custom
 title: Confluence - Chapter 4
 description: Structure Above Else
+book: confluence
+chapter: 4
+status: green
+category: educational
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/confluence-chapter-3" class="custom-button right"><strong>Chapter 3</strong></a>
-  <a href="/pages/confluence" class="custom-button left"><strong>Home</strong></a>
-</div>
-
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -58,7 +58,4 @@ There isn't much from Confluence but there are a few sources that are worth look
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/confluence-chapter-1" class="custom-button right"><strong>Chapter 3</strong></a>
-  <a href="/pages/confluence" class="custom-button left"><strong>Home</strong></a>
-</div>
+{% include chapter-nav.html %}

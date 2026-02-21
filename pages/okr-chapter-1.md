@@ -2,12 +2,13 @@
 layout: custom
 title: Why OKRs Matter - Chapter 1
 description: Foundations of Objectives and Key Results
+book: okr
+chapter: 1
+status: orange
+category: educational
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/okr" class="custom-button right"><strong>Home</strong></a>
-  <a href="/pages/okr-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -86,7 +87,4 @@ By using Epics to categorize work, teams—whether they are in development, infr
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/okr-chapter-0" class="custom-button right"><strong>Chapter 0</strong></a>
-  <a href="/pages/okr-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
-</div>
+{% include chapter-nav.html %}

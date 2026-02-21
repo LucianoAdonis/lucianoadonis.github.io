@@ -3,10 +3,20 @@
 
 @import "jekyll-theme-leap-day";
 
+/* Global font — Inter for readability */
+body, section, p, li, td, th, input, button, select, textarea {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+}
+
 /* Override default theme width constraints */
 .wrapper {
-  width: 90%;
-  max-width: 1200px;
+  width: 95%;
+  max-width: 1400px;
   margin: 0 auto;
   position: relative !important;
   transform: none !important;
@@ -17,6 +27,19 @@
 header {
   transition: all 0.5s ease;
   opacity: 1;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+header p {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
 }
 
 header.collapsed {
@@ -25,25 +48,27 @@ header.collapsed {
 }
 
 #banner {
-  transition: all 0.5s ease !important;
+  transition: all 0.3s ease !important;
   position: relative !important;
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
-  width: calc(80% + 110px) !important;
+  width: 100% !important;
   margin-left: 0 !important;
+  margin-right: 0 !important;
   padding-left: 20px !important;
   padding-right: 20px !important;
-  overflow: hidden !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
   opacity: 1 !important;
 }
 
-#banner .button.fork {
-  position: relative !important;
-  z-index: 10 !important;
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
+/* Hide the default fork button and logo — we use custom banner elements */
+#banner .button.fork,
+#banner .logo,
+#banner .logo-link,
+#banner span.logo {
+  display: none !important;
 }
 
 #banner.collapsed {
@@ -52,36 +77,72 @@ header.collapsed {
   pointer-events: none !important;
 }
 
-/* Make header and banner move together as one unit */
-header, #banner {
-  transition: all 0.5s ease !important;
+/* Banner icon buttons — black pill with white icon, used for Home and GitHub */
+.banner-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #1A1308;
+  border-radius: 4px;
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-header.collapsed, #banner.collapsed {
-  transform: translateY(-100%) !important;
-  opacity: 0 !important;
+.banner-icon-btn svg {
+  fill: #FFFFFF;
+  width: 20px;
+  height: 20px;
 }
 
-/* Header wrapper styles for unified movement */
+.banner-icon-btn:hover {
+  background-color: #333;
+  transform: scale(1.08);
+}
+
+/* Banner center area (reading time or quote) */
+.banner-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner-center .reading-time {
+  color: #1A1308;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.banner-quote {
+  color: #1A1308;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+
+/* Header wrapper styles — header+banner move as one unit */
 .header-wrapper {
-  transition: all 0.5s ease !important;
+  transition: transform 0.3s ease, opacity 0.3s ease !important;
   position: relative !important;
   opacity: 1 !important;
+  z-index: 100;
 }
 
 .header-wrapper.collapsed {
   transform: translateY(-100%) !important;
   opacity: 0 !important;
+  pointer-events: none !important;
 }
 
-/* Ensure header and banner move together with same timing */
-header, #banner {
-  transition: all 0.3s ease !important;
-}
-
+/* Individual header/banner transitions removed — wrapper handles it */
 header.collapsed, #banner.collapsed {
-  transform: translateY(-100%) !important;
-  opacity: 0.8 !important;
+  /* no-op, wrapper handles collapse */
 }
 
 /* Ensure wrapper stays in place */
@@ -92,51 +153,23 @@ header.collapsed, #banner.collapsed {
 }
 
 section {
-  width: 80%;
+  width: 100%;
+  max-width: 1100px;
   float: none;
-  margin-left: 110px; /* Move content right to avoid navigation overlap */
+  margin-left: auto;
   margin-right: auto;
-  margin-top: 140px; /* Reduced margin to move content higher */
+  margin-top: 140px;
   padding-bottom: 50px;
   transition: margin-top 0.3s ease;
 }
 
 section.header-collapsed {
-  margin-top: 60px; /* Further reduced margin when header is collapsed */
+  margin-top: 60px;
 }
 
-/* Fix navigation positioning for wider layout */
+/* Hide the old nav element (replaced by TOC sidebar) */
 nav {
-  width: 230px !important;
-  position: fixed !important;
-  top: 220px !important; /* Restore original position */
-  left: -40px !important; /* Move beyond the left edge */
-  text-align: right !important;
-  z-index: 1000 !important;
-  transition: all 0.3s ease !important;
-}
-
-/* Hide navigation when header is collapsed */
-nav.header-collapsed {
-  transform: translateY(-200%) !important;
-  opacity: 0 !important;
-  pointer-events: none !important;
-}
-
-/* Position navigation relative to content on larger screens */
-@media screen and (min-width: 1600px) {
-  nav {
-    left: 50px;
-    margin-left: 0;
-  }
-}
-
-/* Ensure nav doesn't go off screen on medium-large viewports */
-@media screen and (max-width: 1599px) and (min-width: 1401px) {
-  nav {
-    left: 50px;
-    margin-left: 0;
-  }
+  display: none !important;
 }
 
 /* Responsive adjustments for medium screens */
@@ -144,23 +177,12 @@ nav.header-collapsed {
   .wrapper {
     width: 95%;
   }
-  
+
   section {
     width: 100%;
     float: none;
     min-width: unset;
-    margin-top: 170px; /* Slightly less margin on tablets */
-  }
-  
-  nav {
-    position: relative;
-    width: 100%;
-    margin-left: 0;
-    left: 0;
-    top: 0;
-    text-align: left;
-    float: none;
-    margin-bottom: 20px;
+    margin-top: 170px;
   }
 }
 
@@ -239,27 +261,63 @@ nav.header-collapsed {
 
 /* Improve readability with better typography */
 section {
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 17px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
 }
 
 section p {
-  margin-bottom: 1em;
+  margin-bottom: 1.1em;
 }
 
-section h1, section h2, section h3, section h4, section h5, section h6 {
+section h1 {
+  font-size: 1.8em;
+  margin-top: 1.6em;
+  margin-bottom: 0.5em;
+}
+
+section h2 {
+  font-size: 1.4em;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
 }
 
-.logo {
-  height: 50px;
-  transition: transform 0.2s ease-in-out;
+section h3 {
+  font-size: 1.15em;
+  margin-top: 1.4em;
+  margin-bottom: 0.4em;
 }
 
-.logo:hover {
-  transform: scale(1.1);
+section h4, section h5, section h6 {
+  font-size: 1em;
+  margin-top: 1.3em;
+  margin-bottom: 0.4em;
 }
+
+section li {
+  margin-bottom: 0.3em;
+  line-height: 1.6;
+}
+
+section ul {
+  list-style-type: disc;
+}
+
+section ul li::marker {
+  color: #FFCC01;
+  font-size: 1.4em;
+}
+
+section ul ul li::marker {
+  color: #ccc;
+}
+
+section ol li::marker {
+  color: #FFCC01;
+  font-weight: 600;
+}
+
+/* Logo hidden — no longer used in banner */
 
 /* The Modal (background overlay) */
 .modal {
@@ -349,48 +407,54 @@ section h1, section h2, section h3, section h4, section h5, section h6 {
 
 .nav-buttons {
   display: flex;
-  justify-content: space-between; /* Align one button left, one button right */
+  justify-content: space-between;
+  align-items: center;
   margin-top: 20px;
+  gap: 8px;
 }
 
-.left-button {
-  text-align: left;
+/* Chapter navigation component */
+.chapter-nav {
+  margin: 24px 0;
 }
 
-.right-button {
-  text-align: right;
+.chapter-nav .nav-buttons {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
-.ds-button {
-  display: inline-block;
-  padding: 8px 16px;
-  margin: 5px;
-  background-color: #1A1308;   
-  color: #FFFFFF !important;  /* Force white text */
-  text-decoration: none;
-  border: 2px solid #6B6B6B;   
-  border-radius: 3px;
-  font-weight: bold;
-  font-size: 14px;
-  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+.chapter-progress {
+  text-align: center;
+  margin-top: 8px;
 }
 
-.ds-button * {
-  color: #FFFFFF !important;  /* Apply white color to all child elements */
+.chapter-progress-text {
+  font-size: 13px;
+  color: #999;
+  display: block;
+  margin-bottom: 6px;
 }
 
-.ds-button:hover {
-  background-color: #502208;    
-  color: #F0E68C !important;    /* Gold text on hover */
-  border-color: #F0E68C;        
-  box-shadow: 0 0 10px #F0E68C;
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+  overflow: hidden;
 }
 
+.progress-fill {
+  height: 100%;
+  background-color: #FFCC01;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
 
-.ds-button-container {
-  display: flex;
-  justify-content: flex-end; /* Aligns buttons to the right */
-  margin-top: 20px; /* Adds some space above the button */
+/* Disabled button state */
+.custom-button.disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 /* Style for the hover preview container */
@@ -529,16 +593,598 @@ body.home-page .back-button {
   display: none;
 }
 
-/* Responsive adjustments */
-@media only screen and (max-width: 700px){
+/* Scroll-to-top button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  background-color: #FFCC01;
+  color: #1A1308 !important;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.scroll-to-top:hover {
+  background-color: #FFE788;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-to-top svg {
+  width: 20px;
+  height: 20px;
+  fill: #1A1308;
+}
+
+/* Reading time badge */
+.reading-time {
+  display: inline-block;
+  font-size: 12px;
+  color: #999;
+  margin-top: 4px;
+  letter-spacing: 0.5px;
+}
+
+/* Typography polish — blockquotes */
+section blockquote {
+  border-left: 4px solid #FFCC01;
+  background-color: rgba(255, 204, 1, 0.06);
+  padding: 12px 20px;
+  margin: 1em 0;
+  border-radius: 0 4px 4px 0;
+}
+
+section blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Typography polish — tables */
+section table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5em 0;
+}
+
+section table th {
+  background-color: #FFCC01;
+  color: #1A1308;
+  font-weight: bold;
+  padding: 10px 14px;
+  text-align: left;
+}
+
+section table td {
+  padding: 8px 14px;
+  border-bottom: 1px solid #333;
+}
+
+section table tr:hover {
+  background-color: rgba(255, 204, 1, 0.04);
+}
+
+/* Typography polish — content links */
+section a:not(.custom-button):not(.back-button):not(.ds-button) {
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+section a:not(.custom-button):not(.back-button):not(.ds-button):hover {
+  color: #FFCC01;
+}
+
+/* Typography polish — clickable images */
+.myImg {
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ===== DS-Interviews dark theme buttons ===== */
+body.ds-theme .custom-button {
+  background-color: #1A1308;
+  color: #FFFFFF;
+  border: 2px solid #6B6B6B;
+}
+
+body.ds-theme .custom-button strong {
+  color: #FFFFFF;
+}
+
+body.ds-theme .custom-button:hover {
+  background-color: #333;
+  border-color: #FFFFFF;
+  transform: scale(1.05);
+}
+
+body.ds-theme .custom-button.disabled {
+  background-color: #1A1308;
+  border-color: #444;
+  opacity: 0.35;
+}
+
+body.ds-theme .progress-fill {
+  background-color: #FFFFFF;
+}
+
+body.ds-theme .progress-bar {
+  background-color: #444;
+}
+
+body.ds-theme .chapter-progress-text {
+  color: #888;
+}
+
+/* Right-aligned nav-buttons variant */
+.nav-buttons.right-aligned {
+  justify-content: flex-end;
+}
+
+/* ===== TOC Sidebar (left side, vertically centered) ===== */
+.toc-sidebar {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -280px;
+  width: 260px;
+  max-height: 70vh;
+  overflow-y: auto;
+  background-color: #1A1308;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 16px;
+  z-index: 998;
+  transition: left 0.3s ease;
+}
+
+.toc-sidebar.open {
+  left: 16px;
+}
+
+.toc-header {
+  font-size: 13px;
+  font-weight: bold;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #333;
+}
+
+.toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toc-item {
+  margin-bottom: 4px;
+}
+
+/* h1 = top level (no indent), h2 = sub, h3 = sub-sub */
+.toc-item.toc-sub {
+  padding-left: 12px;
+}
+
+.toc-item.toc-sub2 {
+  padding-left: 24px;
+}
+
+.toc-link {
+  display: block;
+  font-size: 13px;
+  color: #999;
+  text-decoration: none;
+  padding: 3px 8px;
+  border-radius: 3px;
+  border-left: 2px solid transparent;
+  transition: all 0.2s ease;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.4;
+}
+
+.toc-link:hover {
+  color: #eee;
+  background-color: rgba(255, 204, 1, 0.06);
+}
+
+.toc-link.active {
+  color: #FFCC01;
+  border-left-color: #FFCC01;
+  background-color: rgba(255, 204, 1, 0.08);
+}
+
+.toc-toggle {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+  width: 36px;
+  height: 36px;
+  background-color: #1A1308;
+  border: 1px solid #444;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transition: all 0.2s ease;
+}
+
+.toc-toggle:hover {
+  border-color: #FFCC01;
+}
+
+.toc-toggle svg {
+  width: 18px;
+  height: 18px;
+  fill: #999;
+}
+
+.toc-toggle:hover svg {
+  fill: #FFCC01;
+}
+
+/* On wide screens, show TOC permanently and center content in remaining space */
+@media screen and (min-width: 1300px) {
+  .toc-sidebar {
+    left: 16px;
+  }
+
+  .toc-toggle {
+    display: none;
+  }
+
+  /* Position wrapper right of TOC (310px right edge + 16px gap = 326px) */
+  .wrapper {
+    margin-left: 326px;
+    margin-right: 16px;
+    width: auto;
+    max-width: calc(100vw - 342px);
+  }
+
+  /* Section must not exceed wrapper width */
+  section {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Homepage has no TOC — keep wrapper centered */
+  body.home-page .wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    max-width: 1400px;
+  }
+}
+
+/* On medium screens (1061–1299px), allow TOC toggle */
+@media screen and (min-width: 1061px) and (max-width: 1299px) {
+  .toc-toggle {
+    display: flex;
+  }
+
+  .toc-sidebar {
+    display: block;
+  }
+}
+
+/* On narrow screens, hide TOC entirely */
+@media screen and (max-width: 1060px) {
+  .toc-toggle {
+    display: none;
+  }
+
+  .toc-sidebar {
+    display: none;
+  }
+}
+
+/* ===== Homepage card grid ===== */
+.book-count {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 16px;
+}
+
+.visible-count {
+  font-size: 12px;
+  color: #777;
+  white-space: nowrap;
+  margin-left: auto;
+}
+
+/* Filters bar — search + dropdowns on one line */
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.book-search {
+  flex: 1;
+  min-width: 180px;
+  padding: 8px 12px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #1A1308;
+  color: #eee;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.book-search:focus {
+  border-color: #FFCC01;
+}
+
+.book-search::placeholder {
+  color: #777;
+}
+
+.filter-select {
+  padding: 8px 12px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #1A1308;
+  color: #eee;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23999'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 28px;
+}
+
+.filter-select:focus,
+.filter-select:hover {
+  border-color: #FFCC01;
+}
+
+.filter-select option {
+  background-color: #1A1308;
+  color: #eee;
+}
+
+/* Status dots */
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.status-dot.green { background-color: #22c55e; }
+.status-dot.yellow { background-color: #eab308; }
+.status-dot.orange { background-color: #f97316; }
+.status-dot.red { background-color: #ef4444; }
+
+/* Card grid */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.book-card {
+  display: block;
+  background-color: #1A1308;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 0;
+  text-decoration: none;
+  color: #ddd;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 180px;
+}
+
+.book-card:hover {
+  border-color: #F0E68C;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(240, 230, 140, 0.1);
+}
+
+.book-card:hover .card-overlay {
+  background-color: rgba(26, 19, 8, 0.75);
+}
+
+/* Dark overlay that dims the background image */
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(26, 19, 8, 0.82);
+  transition: background-color 0.2s ease;
+  z-index: 1;
+}
+
+/* Card content sits above the overlay */
+.card-content {
+  position: relative;
+  z-index: 2;
+  padding: 16px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.card-category {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #888;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #eee;
+  margin: 0 0 6px 0;
+  line-height: 1.3;
+}
+
+.book-card:hover .card-title {
+  color: #FFCC01;
+}
+
+.card-desc {
+  font-size: 13px;
+  color: #999;
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+}
+
+.card-chapters {
+  font-size: 11px;
+  color: #777;
+}
+
+/* ===== Responsive adjustments ===== */
+
+/* Tablet / small desktop (720px) */
+@media only screen and (max-width: 720px) {
+  /* Banner responsive */
+  #banner {
+    padding: 6px 12px !important;
+  }
+
+  .banner-icon-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .banner-icon-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .banner-center .reading-time,
+  .banner-quote {
+    font-size: 12px;
+  }
+
+  /* Header text responsive */
+  header h1 {
+    font-size: 1.4em;
+  }
+
+  header p {
+    font-size: 0.9em;
+  }
+
+  /* Filters responsive — full-width stacked */
+  .filters {
+    gap: 8px;
+  }
+
+  .book-search,
+  .filter-select {
+    width: 100%;
+    min-width: unset;
+  }
+
+  /* Fixed buttons responsive */
+  .back-button {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+
+  .scroll-to-top {
+    bottom: 60px;
+  }
+
+  /* Nav buttons responsive */
+  .nav-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .custom-button {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+
+  /* Book grid single column */
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Small mobile (480px) */
+@media only screen and (max-width: 480px) {
+  /* Banner tighter */
+  #banner {
+    padding: 6px 8px !important;
+  }
+
+  /* Header text smaller */
+  header h1 {
+    font-size: 1.2em;
+  }
+
+  /* Fixed buttons repositioned */
+  .back-button {
+    padding: 8px 12px;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .scroll-to-top {
+    bottom: 52px;
+    right: 10px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .scroll-to-top svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Modal fullwidth on small screens */
+@media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
-  }
-  
-  .back-button {
-    bottom: 15px;
-    right: 15px;
-    padding: 10px 16px;
-    font-size: 13px;
   }
 }

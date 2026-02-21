@@ -3,12 +3,13 @@ layout: custom
 title: Repository - Chapter 1
 description: Cheap and Simple Site
 keywords: [markdown, jekyll, tutorial, GitHub Pages]
+book: markdown
+chapter: 1
+status: yellow
+category: meta
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/markdown" class="custom-button right"><strong>Menu</strong></a>
-  <a href="/pages/markdown-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -111,7 +112,4 @@ This paraters are the ones that you would see in the [_config.yml](https://githu
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/markdown" class="custom-button right"><strong>Menu</strong></a>
-  <a href="/pages/markdown-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
-</div>
+{% include chapter-nav.html %}

@@ -2,6 +2,8 @@
 layout: custom
 title: Books
 description: To Do
+status: red
+category: meta
 ---
 
 <img class="myImg" src="../images/headers/yellow-shopping-cart.png" alt="yellow-shopping-cart" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">

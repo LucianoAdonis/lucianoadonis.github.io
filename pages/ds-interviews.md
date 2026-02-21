@@ -2,6 +2,9 @@
 layout: custom
 title: Interviews and Work, Walkthrough Guide
 description: The Information That You Always Wanted!
+status: green
+category: self-help
+theme: ds
 ---
 
 <img class="myImg" src="../images/interviews/main-menu.png" alt="main-menu" style="cursor: pointer;">
@@ -35,10 +38,10 @@ The references might be confusing for some, and for others, they may be helpful 
 
 ---
 
-<div class="ds-button-container">
-  <a href="/pages/ds-interviews-chapter-0" class="ds-button right-button"><strong>Go to Chapter 0</strong></a>
+<div class="nav-buttons right-aligned">
+  <a href="/pages/ds-interviews-chapter-0" class="custom-button right"><strong>Go to Chapter 0</strong></a>
 </div>
 
-<div class="ds-button-container">
-  <a href="/pages/ds-interviews-chapter-1" class="ds-button right-button"><strong>Go to Chapter 1</strong></a>
+<div class="nav-buttons right-aligned">
+  <a href="/pages/ds-interviews-chapter-1" class="custom-button right"><strong>Go to Chapter 1</strong></a>
 </div>

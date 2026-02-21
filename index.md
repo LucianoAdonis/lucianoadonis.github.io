@@ -4,81 +4,60 @@ title: Luciano's Library
 description: Mini Books
 ---
 
-At work, I get to connect with all kinds of interesting people and dive into a variety of ideas. But with so much ground to cover, things can get a bit chaotic, and keeping everyone in the loop can be a challenge.
+At work, I get to talk to a lot of interesting people and juggle a wide range of ideas. With that much in motion, things can get messy, and keeping everyone aligned takes effort.
 
-That's where the 'Mini Books' on this site come in, designed to create a shared understanding and make things smoother down the line! 🚀
+So I put together these “Mini Books.” They’re meant to create a shared baseline and make life easier for all of us.
 
----
-
-<details>
-<summary>Status Indicators</summary>
-
-- 🟢 <strong>Nearly Done</strong>: Almost complete, polishing underway.<br>
-- 🟡 <strong>Draft</strong>: Work in progress, feedback welcomed!<br>
-- 🟠 <strong>Jottings</strong>: Initial ideas and thoughts.<br>
-- 🔴 <strong>Barely Started</strong>: Structure in place, content coming.
-
-</details>
-<br>
-
----
-## Optimization
-> **Time saved is time earned.** Use these tips to optimize work and free up space for what truly matters.
-
-- [Buy it for Life](./pages/shopping.md): Recommended products that last.
-- [Slack and You](./pages/slack.md) (🟡): Communication strategies made easy.
-- Check out the [Gist Section](#code-snippets-tools-and-efficiency-tips) for efficiency tips!
-
-<br>
-
-## Educational
-> **If you don't write it, you'll forget it.** Learn how to craft clear and effective documentation.
-
-- [Make the Most of Airtable](./pages/airtable) (🔴): A comprehensive guide/tutorial.
-- [Make the Most of Confluence](./pages/confluence) (🟢): A comprehensive guide/tutorial.
-- [Why ADRs Matter and How to Use Them](./pages/adrs) (🟡): Avoid future headaches with proper records.
-- [Writing Efficiently](./pages/writing) (🟠): Streamline your writing process.
-- [Communication Reference](./pages/communications-reference) (🔴): Frameworks for better communication.
-- [Become the Manager that you always hated](./pages/management-101) (🔴): 
-
-<br>
-
-## Self-Help
-> **Be better to make others greater.** Practical techniques and insights for personal development.
-
-- [Interviews and Work, Walkthrough Guide](./pages/ds-interviews) (🟢): A pragmatic guide for job seekers.
-- [The LEGO® SERIOUS PLAY® (LSP) Experience](./pages/lsp) (🟡): Creative solutions through play.
-- [Troubleshooting](./pages/troubleshooting) (🟠): Sharpen your problem-solving skills.
-
-<br>
-
-## Mentoring
-> **For a better work-life balance.** Personal advice to enhance workplace satisfaction.
-
-- [Obsidian](./pages/obsidian.md) (🔴): The ultimate personal knowledge tool.
-- [Digital Life](./pages/digital-life.md) (🔴): Manage your digital footprint efficiently.
-
-<br>
-
-
-## Theories and Thesis
-> **Because overthinking is a skill too.** Explorations and musings on various topics.
-
-- [The Core Five](./pages/thesis-the-core-five.md) (🟠): A theory in progress.
-
-<br>
-
-## Meta
-> **Dive in, figure it out.** Tools, techniques, and behind-the-scenes tips.
-
-- [Markdown](./pages/markdown) (🟡): Cool tricks to make your content shine.
-- [Mini-Books](./pages/mini-books) (🔴): Because 'Blog Posts' didn't sound nearly as impressive
-
-<br>
+They also give me a convenient link to send when someone new asks how things work.
 
 ---
 
+{% assign total_books = site.books | size %}
+{% assign categories = site.books | map: "category" | uniq %}
+{% assign cat_count = categories | size %}
 
+<p class="book-count">{{ total_books }} mini-books across {{ cat_count }} categories</p>
+
+<div class="filters">
+  <input type="text" id="book-search" class="book-search" placeholder="Search mini-books...">
+  <select id="status-filter" class="filter-select">
+    <option value="all">All Status</option>
+    <option value="green">Nearly Done</option>
+    <option value="yellow">Draft</option>
+    <option value="orange">Jottings</option>
+    <option value="red">Barely Started</option>
+  </select>
+  <select id="category-filter" class="filter-select">
+    <option value="all">All Categories</option>
+    <option value="educational">Educational</option>
+    <option value="self-help">Self-Help</option>
+    <option value="optimization">Optimization</option>
+    <option value="mentoring">Mentoring</option>
+    <option value="theory">Theory</option>
+    <option value="meta">Meta</option>
+  </select>
+</div>
+
+<div class="book-grid">
+{% for book in site.books %}
+  <a href="{{ book.url }}" class="book-card" data-title="{{ book.title }}" data-description="{{ book.description }}" data-status="{{ book.status }}" data-category="{{ book.category }}"{% if book.image %} style="background-image: url('{{ book.image }}');"{% endif %}>
+    <div class="card-overlay"></div>
+    <div class="card-content">
+      <div class="card-header">
+        <span class="status-dot {{ book.status }}"></span>
+        <span class="card-category">{{ book.category }}</span>
+      </div>
+      <h3 class="card-title">{{ book.title }}</h3>
+      <p class="card-desc">{{ book.description }}</p>
+      {% if book.chapters > 0 %}
+        <span class="card-chapters">{{ book.chapters }} chapters</span>
+      {% endif %}
+    </div>
+  </a>
+{% endfor %}
+</div>
+
+---
 
 ## Code Snippets, Tools, and Efficiency Tips
 > **Little hacks that go a long way.** GitHub Gists with wisdom and free time to spare.
@@ -100,6 +79,6 @@ That's where the 'Mini Books' on this site come in, designed to create a shared 
 
 ---
 
-## ⌬ Contribute
+## Contribute
 
 Want to contribute? Open a PR or reach out to me directly! I'll be setting up a contributor page soon. Feedback and suggestions are always welcome.

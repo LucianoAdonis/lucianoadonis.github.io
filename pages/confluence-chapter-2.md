@@ -2,12 +2,13 @@
 layout: custom
 title: Confluence - Chapter 2
 description: Structure Above Else
+book: confluence
+chapter: 2
+status: green
+category: educational
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/confluence-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
-  <a href="/pages/confluence-chapter-3" class="custom-button left"><strong>Chapter 3</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -144,8 +145,4 @@ The idea is not to go and reinvent the wheel but to have the insights to pick th
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/confluence-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
-  <a href="/pages/confluence-chapter-3" class="custom-button left"><strong>Chapter 3</strong></a>
-</div>
-
+{% include chapter-nav.html %}

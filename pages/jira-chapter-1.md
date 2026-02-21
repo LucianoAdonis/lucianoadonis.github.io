@@ -2,12 +2,13 @@
 layout: custom
 title: The Case
 description: How Complicated Can Be?
+book: jira
+chapter: 1
+status: red
+category: educational
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/jira" class="custom-button right"><strong>Menu</strong></a>
-  <a href="/pages/jira-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -96,7 +97,4 @@ You can import data from Jira in excel format, specially if you are including a 
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/jira" class="custom-button right"><strong>Menu</strong></a>
-</div>
-<a href="/pages/jira-chapter-2" class="custom-button right"><strong>Chapter 2</strong></a>
+{% include chapter-nav.html %}

@@ -2,13 +2,13 @@
 layout: custom
 title: Chapter 1
 description: Basics Above Else
+book: airtable
+chapter: 1
+status: red
+category: educational
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/airtable" class="custom-button right"><strong>Home</strong></a>
-  <a href="/pages/airtable-chapter-1-5" class="custom-button middle"><strong>Chapter 1.5</strong></a>
-  <a href="/pages/airtable-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -298,8 +298,4 @@ If you ever consider this for personal use, then you need to keep the following 
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/airtable" class="custom-button right"><strong>Home</strong></a>
-  <a href="/pages/airtable-chapter-1-5" class="custom-button middle"><strong>Chapter 1.5</strong></a>
-  <a href="/pages/airtable-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
-</div>
+{% include chapter-nav.html %}

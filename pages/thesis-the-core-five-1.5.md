@@ -2,13 +2,13 @@
 layout: custom
 title: OverBoard - Chapter 1.5
 description: Be Careful About What You Wish
+book: thesis-the-core-five
+chapter: 1.5
+status: orange
+category: theory
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/thesis-the-core-five-1" class="custom-button right"><strong>Chapter 1</strong></a>
-  <a href="/pages/thesis-the-core-five-2" class="custom-button left"><strong>Chapter 2</strong></a>
-</div>
-
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -34,3 +34,4 @@ The people that want to stay and the people you want to retain may be different.
 
 ## Leaving Soon
 
+{% include chapter-nav.html %}

@@ -2,6 +2,8 @@
 layout: custom
 title: Tech Manager
 description: Take less to play than the actual thing!
+status: red
+category: meta
 ---
 
 A boardgame to teach players how to became a successful ~~or at least how to survive as a~~ manager.

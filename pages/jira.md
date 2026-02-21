@@ -2,6 +2,8 @@
 layout: custom
 title: Jira and Beyond 
 description: A dream come true
+status: red
+category: educational
 ---
 
 <img class="myImg" src="../images/headers/cian-chess-board-v2.png" alt="cian-chess-board" style="border: 0px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
@@ -33,7 +35,9 @@ I'll structure this in a friendly manner:
 
 <div class="nav-buttons">
   <a href="/index" class="custom-button right"><strong>Main Page</strong></a>
-  <a href="/pages/jira-chapter-1" class="custom-button left"><strong>Chapter 1</strong></a>
+  <a href="/pages/jira-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
 </div>
 
-<a href="/pages/jira-chapter-2" class="custom-button right"><strong>Chapter 1.5</strong></a>
+<div class="nav-buttons right-aligned">
+  <a href="/pages/jira-chapter-2" class="custom-button right"><strong>Chapter 1.5</strong></a>
+</div>

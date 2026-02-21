@@ -1,0 +1,83 @@
+{% if page.book %}
+{% assign book_slug = page.book %}
+{% assign current_chapter = page.chapter %}
+
+{% comment %} Collect all pages for this book and sort by chapter {% endcomment %}
+{% assign book_pages = "" | split: "" %}
+{% for p in site.pages %}
+  {% if p.book == book_slug %}
+    {% assign book_pages = book_pages | push: p %}
+  {% endif %}
+{% endfor %}
+{% assign book_pages = book_pages | sort: "chapter" %}
+
+{% comment %} Find total count, current index, prev and next {% endcomment %}
+{% assign total = book_pages | size %}
+{% assign current_index = -1 %}
+{% assign prev_page = nil %}
+{% assign next_page = nil %}
+
+{% for p in book_pages %}
+  {% if p.chapter == current_chapter and p.url == page.url %}
+    {% assign current_index = forloop.index0 %}
+  {% endif %}
+{% endfor %}
+
+{% if current_index > 0 %}
+  {% assign prev_idx = current_index | minus: 1 %}
+  {% assign prev_page = book_pages[prev_idx] %}
+{% endif %}
+
+{% assign next_idx = current_index | plus: 1 %}
+{% if next_idx < total %}
+  {% assign next_page = book_pages[next_idx] %}
+{% endif %}
+
+{% comment %} Find book home page {% endcomment %}
+{% assign book_home = nil %}
+{% assign book_slug_html = book_slug | append: ".html" %}
+{% for p in site.pages %}
+  {% assign p_url_parts = p.url | split: "/" %}
+  {% assign p_last = p_url_parts | last %}
+  {% if p_last == book_slug or p_last == book_slug_html %}
+    {% unless p.book %}
+      {% assign book_home = p %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+
+{% comment %} Compute 1-based position for display {% endcomment %}
+{% assign display_pos = current_index | plus: 1 %}
+
+<div class="chapter-nav">
+  <div class="nav-buttons">
+    {% if prev_page %}
+      <a href="{{ prev_page.url | relative_url }}" class="custom-button right"><strong>&laquo; Previous</strong></a>
+    {% else %}
+      <span class="custom-button right disabled"><strong>&laquo; Previous</strong></span>
+    {% endif %}
+
+    {% unless include.position == "top" %}
+      {% if book_home %}
+        <a href="{{ book_home.url | relative_url }}" class="custom-button"><strong>Index</strong></a>
+      {% endif %}
+    {% endunless %}
+
+    {% if next_page %}
+      <a href="{{ next_page.url | relative_url }}" class="custom-button left"><strong>Next &raquo;</strong></a>
+    {% else %}
+      <span class="custom-button left disabled"><strong>Next &raquo;</strong></span>
+    {% endif %}
+  </div>
+
+  {% unless include.position == "top" %}
+  <div class="chapter-progress">
+    <span class="chapter-progress-text">Chapter {{ display_pos }} of {{ total }}</span>
+    <div class="progress-bar">
+      {% assign pct = display_pos | times: 100 | divided_by: total %}
+      <div class="progress-fill" style="width: {{ pct }}%"></div>
+    </div>
+  </div>
+  {% endunless %}
+</div>
+{% endif %}

@@ -2,12 +2,13 @@
 layout: custom
 title: Confluence - Chapter 1
 description: Basics Above Else
+book: confluence
+chapter: 1
+status: green
+category: educational
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/confluence-chapter-0" class="custom-button right"><strong>Chapter 0</strong></a>
-  <a href="/pages/confluence-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -138,7 +139,4 @@ Most of these little improvements can be optimized.
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/confluence-chapter-0" class="custom-button right"><strong>Chapter 0</strong></a>
-  <a href="/pages/confluence-chapter-2" class="custom-button left"><strong>Chapter 2</strong></a>
-</div>
+{% include chapter-nav.html %}

@@ -2,12 +2,13 @@
 layout: custom
 title: Our Pieces and Us - Chapter 1
 description: Time for some character development
+book: thesis-the-core-five
+chapter: 1
+status: orange
+category: theory
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/thesis-the-core-five" class="custom-button right"><strong>Menu</strong></a>
-  <a href="/pages/thesis-the-core-five-2" class="custom-button left"><strong>Chapter 2</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -140,8 +141,4 @@ Reality checks are often needed to remind the piece that is only possible becaus
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/thesis-the-core-five" class="custom-button right"><strong>Menu</strong></a>
-  <a href="/pages/thesis-the-core-five-1.5" class="custom-button left"><strong>Chapter 1.5</strong></a>
-</div>
-<a href="/pages/thesis-the-core-five-2" class="custom-button right"><strong>Chapter 2</strong></a>
+{% include chapter-nav.html %}

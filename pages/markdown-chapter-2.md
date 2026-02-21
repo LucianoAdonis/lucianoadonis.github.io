@@ -2,12 +2,13 @@
 layout: custom
 title: HTML - Chapter 2
 description: CSS is my Passion
+book: markdown
+chapter: 2
+status: yellow
+category: meta
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/markdown-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
-  <a href="/pages/markdown-chapter-3" class="custom-button left"><strong>Chapter 3</strong></a>
-</div>
+{% include chapter-nav.html position="top" %}
 
 ---
 
@@ -284,7 +285,4 @@ function copyToClipboard() {
 
 ---
 
-<div class="nav-buttons">
-  <a href="/pages/markdown-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
-  <a href="/pages/markdown-chapter-3" class="custom-button left"><strong>Chapter 3</strong></a>
-</div>
+{% include chapter-nav.html %}

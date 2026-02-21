@@ -2,6 +2,8 @@
 layout: custom
 title: Tales of Managers
 description: Guide to understanding and becoming one
+status: red
+category: educational
 ---
 
 <img class="myImg" src="../images/headers/cian-chess-board-v2.png" alt="cian-chess-board" style="border: 0px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
@@ -20,15 +22,13 @@ What it even is a manager? The person who brings pizza? The ones that talk with 
 
 The rant will be long, so brace yourself:
 
-- [Chapter 1: Memes](/pages//management-101-1.md): 
-- [Chapter 2: The ABC of Managing](/pages//management-101-2.md): 
+- [Chapter 1: Memes](/pages/management-101-chapter-1):
+
 
 
 ---
 
 <div class="nav-buttons">
-  <a href="/index" class="custom-button right"><strong>Main Page</strong></a>
-  <a href="/pages/management-101-1" class="custom-button left"><strong>Chapter 1</strong></a>
+  <a href="/" class="custom-button right"><strong>Main Page</strong></a>
+  <a href="/pages/management-101-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
 </div>
-
-<a href="/pages/management-101-2" class="custom-button right"><strong>Chapter 1.5</strong></a>

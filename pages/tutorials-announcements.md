@@ -1,3 +1,9 @@
+---
+layout: custom
+title: Tutorials - Announcements
+status: red
+category: meta
+---
 
 # Structure
 
