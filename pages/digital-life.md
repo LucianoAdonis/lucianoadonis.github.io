@@ -1,124 +1,110 @@
 ---
 layout: custom
 title: Digital Life
-description: Optimizing Digital Presence and Productivity
-status: red
+description: Small habits that keep your digital footprint manageable
+status: orange
 category: mentoring
 ---
 
-Ever feel like tech companies know you better than you know yourself? If that's giving you the creeps (and it should), keep reading. This guide's packed with sneaky-smart ways to take back control of your digital life and boost your productivity while you're at it.
+Tech companies do know more about you than you know yourself. If that is unsettling, good, keep reading. These are practical ways to take back some control without turning it into a full-time project.
 
 <br>
 
 # Email (Gmail)
 
-Your email address often serves as your primary digital identifier. Gmail offers several features to help you manage your digital life effectively.
+Your email address is your primary digital identifier. How you manage it determines a lot of what ends up in your inbox and what gets exposed when a service has a breach.
 
 ## Plus Sign Possibilities
 
-Leverage Gmail's '+' feature to create unlimited email variations:
+Gmail's `+` feature lets you create unlimited variations of your address without creating new accounts:
 
-Example: If your email is `username@gmail.com`, you can use:
+Example: if your email is `username@gmail.com`, you can use:
 - `username+work@gmail.com` for professional correspondence
 - `username+shopping@gmail.com` for online retail accounts
 
-Benefits of this approach:
-- Simplifies email organization
-- Enables easy filtering and rule creation
-- Helps identify which services share your email address
-- Assists in tracking the source of potential spam
+This helps you:
+- Create filters automatically based on the tag
+- Identify which services sold or leaked your email address
+- Keep different contexts separate without managing multiple inboxes
 
 <br>
 
 ## Labels
 
-Gmail labels offer more than just visual organization. They can aid in email verification and sender identification.
+Labels in Gmail do more than color-code your inbox. Combined with filters, they become an automated sorting system.
 
-Advanced labeling techniques:
-- Nested labels for hierarchical organization
-- Color-coding for quick visual identification
-- Automatic labeling using filters
-- Using labels in search queries for efficient email retrieval
+Useful patterns:
+- Nested labels for hierarchical organization (e.g., `Work/Receipts`, `Work/HR`)
+- Automatic labeling using filters based on sender or subject
+- Using labels in search queries: `label:work/receipts from:company`
 
 <br>
 
 ## Unsubscribe
 
-Regularly unsubscribing from unnecessary emails is more efficient than creating elaborate labeling systems.
+Regularly unsubscribing beats building elaborate filter systems. Filters hide noise, unsubscribing removes it.
 
-Unsubscribe best practices:
-- Use Gmail's built-in unsubscribe feature when available
-- Be cautious with unfamiliar unsubscribe links to avoid potential phishing attempts
-- Consider using a service like Unroll.me to manage subscriptions in bulk
+A few notes:
+- Gmail's built-in unsubscribe link (shown at the top of promotional emails) is the safest option
+- Be cautious with unsubscribe links in emails from senders you do not recognize; some are phishing attempts
+- Services like Unroll.me exist for bulk management, but they do read your email to work, so consider whether that is an acceptable trade
 
 <br>
 
 ## Account Separation
 
-Compartmentalizing your email usage can significantly reduce spam and enhance security.
+Using the same email for everything means one breach gives attackers access to your entire digital life.
 
-Strategies for account separation:
-- Use separate email addresses for personal, professional, and online services
-- Consider using disposable email addresses for one-time signups
-- Utilize email aliases for different contexts (e.g., job hunting, volunteering)
+Practical separation:
+- One address for personal correspondence with people you know
+- One address for online services and shopping
+- Disposable addresses (e.g., via SimpleLogin or a second Gmail account) for one-time signups
 
 <br>
 
 ## Security
 
-Implement robust security measures to protect your email account.
+The basics, in rough order of impact:
 
-Advanced security options:
-- Enable two-factor authentication
-- Use physical security keys for critical accounts
-- Regularly review account activity and connected apps
-- Set up recovery options (backup email, phone number)
+- Enable two-factor authentication on every account that supports it. Use an authenticator app, not SMS, for anything important.
+- Use physical security keys for accounts like your primary email and any financial services
+- Review connected apps periodically in your Google account settings. Remove anything you no longer use.
+- Set up recovery options: backup email and phone number
 
 <br>
 
 ## Forward Account
 
-Create a separate email account for mobile notifications to maintain privacy and security.
+One pattern that works well for mobile notifications: a separate account you forward non-sensitive email to. You can check notifications there without exposing your primary address to every app you install.
 
-Setting up a forward account:
-- Create filters to forward only non-sensitive emails
-- Use Gmail's vacation responder to automate responses on the forwarding account
-- Regularly review and update forwarding rules
+Keep the forwarding rules narrow. Forwarding everything defeats the purpose.
 
 <br>
 
 # Social Presence
 
-Curate your online presence thoughtfully to maintain professionalism and privacy.
+What shows up when someone searches your name is not entirely in your control, but it is worth being deliberate about.
 
 <br>
 
 ## Usernames
 
-Consistency in usernames across platforms can enhance your personal brand. Consider using variations for accounts you wish to keep separate from your professional identity.
+Consistent usernames across platforms make it easier for people who should find you to do so. Variations work well for accounts you want to keep separate from your professional identity.
+
+The tradeoff is real: a consistent username makes you more searchable, which is good for professional networking and bad for anything you want to keep private.
 
 <br>
 
 ### Linktree
 
-Linktree provides a centralized hub for your online presence.
+Linktree gives you one URL to share that points to everything else. Useful for situations where you want to give someone access to your profiles without a long list.
 
-Optimizing your Linktree:
-- Prioritize links based on your current goals (e.g., job seeking, networking)
-- Use a consistent visual theme that aligns with your personal brand
-- Regularly update links to ensure relevance
+The prioritization matters more than the design. Put the link most relevant to your current goals at the top. A job seeker and someone promoting a side project should have different orderings.
 
 <br>
 
 ### Carrd.co
 
-Carrd.co offers a more customizable alternative to Linktree for creating a personal landing page.
+Carrd offers more customization than Linktree if you want something that looks like a personal page rather than a list. Supports custom domains, which gives it a more professional appearance.
 
-Carrd.co best practices:
-- Utilize custom domains for a more professional appearance
-- Incorporate your personal branding elements
-- Include a clear call-to-action based on your current objectives
-
-<br>
-
-Remember, the key to effective digital life management is regular review and adjustment of your strategies to align with your evolving needs and goals.
+The same principle applies: a clear call to action based on what you actually want people to do when they land there.

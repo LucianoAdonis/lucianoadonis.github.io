@@ -34,7 +34,7 @@ books:
 
   - slug: airtable
     title: "Make the Most of Airtable"
-    description: "A comprehensive guide/tutorial."
+    description: "Build databases, views, and automations without writing code."
     status: red
     category: educational
     chapters: 7
@@ -43,7 +43,7 @@ books:
 
   - slug: confluence
     title: "Make the Most of Confluence"
-    description: "A comprehensive guide/tutorial."
+    description: "Write docs people actually read and find later."
     status: green
     category: educational
     chapters: 5
@@ -116,8 +116,8 @@ books:
 
   - slug: digital-life
     title: "Digital Life"
-    description: "Manage your digital footprint efficiently."
-    status: red
+    description: "Small habits that keep your digital footprint manageable."
+    status: orange
     category: mentoring
     chapters: 0
     url: /pages/digital-life

@@ -10,6 +10,7 @@ category: educational
 
 {% include chapter-nav.html position="top" %}
 
+
 ---
 
 <img class="myImg" src="../images/headers/cian-chess-board.png" alt="cian-chess-board" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">

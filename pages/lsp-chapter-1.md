@@ -10,6 +10,7 @@ category: self-help
 
 {% include chapter-nav.html position="top" %}
 
+
 ---
 
 <img class="myImg" src="../images/lsp/teen-titans-get-serious-lsp.png" alt="teen-titans-get-serious" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
@@ -56,8 +57,6 @@ The versatility of the methodology and all of the knowledge that it is behind it
 Well, as mentioned before there is a **LSP V1.0** and **V2.0**, you can guess which one it's free.
 
 The certification consists 4-Day 40-Hour Training program on the **V2.0** that it won't make you an expert but will help you to get you started making tailored solutions and facilitate the workshops.
-
-And yes, you have to "**pay-to-learn**", there is no other way around it, specially because it's teached to others, a summary and mind map won't be helpfull at all.
 
 There’s no way around it, especially because the methodology is meant to be taught through experience. A summary or mind map won’t be helpful at all. To truly grasp it, you need to learn from a well-structured example of how sessions are guided, reinforced by studying and analyzing what was done.
 

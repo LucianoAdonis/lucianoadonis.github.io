@@ -10,6 +10,7 @@ category: theory
 
 {% include chapter-nav.html position="top" %}
 
+
 ---
 
 <img class="myImg" src="../images/interviews/main-menu.png" alt="main-menu" style="cursor: pointer;">

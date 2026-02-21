@@ -10,6 +10,7 @@ category: meta
 
 {% include chapter-nav.html position="top" %}
 
+
 ---
 
 <img class="myImg" src="../images/headers/pink-css-is-my-pasion.png" alt="pink-css-is-my-pasion" style="cursor: pointer;">

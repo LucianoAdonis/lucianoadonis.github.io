@@ -10,6 +10,7 @@ category: educational
 
 {% include chapter-nav.html position="top" %}
 
+
 ---
 
 <img class="myImg" src="../images/headers/yellow-okr.png" alt="https://www.cebra.com/hubfs/okr-marketing.jpg" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">

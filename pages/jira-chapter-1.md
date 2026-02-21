@@ -10,6 +10,7 @@ category: educational
 
 {% include chapter-nav.html position="top" %}
 
+
 ---
 
 <img class="myImg" src="../images/headers/cian-chess-board.png" alt="cian-chess-board" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
@@ -81,17 +82,17 @@ Regardless of the size don't forget to get the following columns:
 
 
 
-You can get a lot from it, specially using the smart columns.
+You can get a lot from it, especially using the smart columns.
 
-Values that can be useful for metrics and references can be:
+Values useful for metrics and references:
 
 - Project
-- Project Kek
+- Project key
+- Assignee
+- Status
+- Sprint
 
-
-Airtable and You
-
-You can import data from Jira in excel format, specially if you are including a lot of details.
+You can import Jira data in Excel format, especially when you need to bring in a lot of detail columns at once. From there, Airtable is a good destination for manipulating and presenting the data.
 
 
 

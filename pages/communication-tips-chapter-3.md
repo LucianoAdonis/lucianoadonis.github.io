@@ -10,6 +10,7 @@ category: optimization
 
 {% include chapter-nav.html position="top" %}
 
+
 ---
 
 <img class="myImg" src="../images/headers/purple-computer.png" alt="headers-purple-computer" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">

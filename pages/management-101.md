@@ -2,7 +2,7 @@
 layout: custom
 title: Tales of Managers
 description: Guide to understanding and becoming one
-status: red
+status: yellow
 category: educational
 ---
 
@@ -14,7 +14,7 @@ category: educational
 
 # How This Mini-Book Can Help You
 
-What it even is a manager? The person who brings pizza? The ones that talk with higher council (bussinees)?, [Perhaps a Manager is like the ocean, full of conflict, full of pain](https://youtu.be/toYfeN0ACDw?si=_KxE6Gq8C0aGnp4-&t=141)
+What even is a manager? The person who brings pizza? The one who talks to the higher council (businesses)? [Perhaps a manager is like the ocean, full of conflict, full of pain.](https://youtu.be/toYfeN0ACDw?si=_KxE6Gq8C0aGnp4-&t=141)
 
 ---
 
@@ -22,13 +22,12 @@ What it even is a manager? The person who brings pizza? The ones that talk with 
 
 The rant will be long, so brace yourself:
 
-- [Chapter 1: Memes](/pages/management-101-chapter-1):
-
+- [Chapter 1: Memes](/pages/management-101-chapter-1): Why someone would choose this path, and the skills that actually matter
 
 
 ---
 
 <div class="nav-buttons">
   <a href="/" class="custom-button right"><strong>Main Page</strong></a>
-  <a href="/pages/management-101-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
+  <a href="/pages/management-101-chapter-1" class="custom-button left"><strong>Chapter 1</strong></a>
 </div>

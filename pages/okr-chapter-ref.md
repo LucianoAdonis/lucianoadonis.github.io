@@ -9,6 +9,7 @@ category: educational
 
 {% include chapter-nav.html position="top" %}
 
+
 ---
 
 <img class="myImg" src="../images/lsp/teen-titans-get-serious-lsp.png" alt="teen-titans-get-serious" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">

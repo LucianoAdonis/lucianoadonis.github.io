@@ -1,7 +1,7 @@
 ---
 layout: custom
-title: Jira and Beyond 
-description: A dream come true
+title: Jira and Beyond
+description: Using Jira to track what is actually happening across teams
 status: red
 category: educational
 ---
@@ -14,30 +14,22 @@ category: educational
 
 # How This Mini-Book Can Help You
 
-Figuring how to make your workers a metric seems simple and badhearted, but it isn't simple at all, but it's not just as easy as it sounds. For work reasons I had to come up with something that could help us identify all groups that contained multiple people, from different projects... and well, this already goes beyond to "my three squads metrics"
+Turning team activity into readable metrics sounds simple until you try to do it across multiple projects, squads, and people who all use Jira slightly differently. This guide came out of a real attempt to build something that could track engineer distribution, workload, and progress without requiring someone to manually compile spreadsheets every week.
 
-A good system can track and locate where we are wasting efforts. I'm all down for it, I like the concept of transparency even if that is a double edge sword.
-
-Yes, with this, they can know where are you located in an ocean of teams, and what when and where are you doing things.
+A good tracking system shows you where effort is going. The transparency cuts both ways: yes, it tells management where people are, and it also gives you the data to push back when the workload is unreasonable.
 
 ---
 
 # Chapters Overview
 
-I'll structure this in a friendly manner:
-
-- [Chapter 1: JQL](/pages/jira-chapter-1.md): 
-- [Chapter 2: Integrations](/pages/jira-chapter-2.md): 
-- [Chapter 2.5: Spreadsheets](/pages/jira-chapter-2.md): 
+- [Chapter 0: JQL](/pages/jira-chapter-0): The query language that powers advanced searches
+- [Chapter 1: The Case](/pages/jira-chapter-1): Building reports across multiple projects and teams
+- [Chapter 1.5: Spreadsheets](/pages/jira-chapter-1-5): Getting your data out and working with it
 
 
 ---
 
 <div class="nav-buttons">
-  <a href="/index" class="custom-button right"><strong>Main Page</strong></a>
-  <a href="/pages/jira-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
-</div>
-
-<div class="nav-buttons right-aligned">
-  <a href="/pages/jira-chapter-2" class="custom-button right"><strong>Chapter 1.5</strong></a>
+  <a href="/" class="custom-button right"><strong>Main Page</strong></a>
+  <a href="/pages/jira-chapter-0" class="custom-button left"><strong>Chapter 0</strong></a>
 </div>
