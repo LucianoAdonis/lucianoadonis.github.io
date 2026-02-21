@@ -38,7 +38,7 @@ That second reason matters a lot more than people admit.
 
 # When to Write One
 
-Not every decision needs an ADR. The bar is roughly: would future you, or someone new to the codebase, need to understand why this exists?
+Not every decision needs an ADR. A simple test: would future you, or someone new to the codebase, need to understand why this exists?
 
 Good candidates:
 - Choosing a database, message broker, or infrastructure pattern
@@ -84,7 +84,7 @@ Keep it to a paragraph or two. If it takes more than that, you are writing a des
 
 ## Options Considered
 
-List what you actually evaluated. For each option, include enough to understand why it was or was not chosen.
+List what you actually evaluated. For each option, include enough detail to understand why it was or was not chosen.
 
 The point here is to show the work. An ADR where only one option is listed is not an ADR, it is a justification. You need the alternatives to demonstrate that the decision was not made arbitrarily, and to explain why the rejected options were not good enough.
 
@@ -100,7 +100,7 @@ Option B: [name]
 ...
 ```
 
-You do not need exhaustive pros and cons lists. What you need is an honest answer to "what would someone argue in favour of the option you did not pick, and why were they wrong?"
+You do not need exhaustive pros and cons lists. What you need is an honest answer to "what would someone argue in favor of the option you did not pick, and why were they wrong?"
 
 ---
 
@@ -108,7 +108,7 @@ You do not need exhaustive pros and cons lists. What you need is an honest answe
 
 What was chosen, and the condensed argument for it.
 
-This should directly address the tradeoffs raised in the options section. If Option B was rejected because of operational complexity, the decision section should explain how the chosen option handles that concern, or acknowledge that the complexity was accepted for other reasons.
+This should directly address the tradeoffs raised in the options section. If Option B was rejected because of operational complexity, the decision section should explain how the chosen option handles that concern, or acknowledge that the tradeoff was accepted deliberately.
 
 One paragraph is usually enough. If the decision requires more, split it into the decision itself and a brief rationale.
 
@@ -128,7 +128,7 @@ Also note anything that needs to happen for the decision to remain valid: depend
 
 ADRs are not press releases. They do not need to sell the decision to the reader.
 
-Write them as if you are explaining the situation to a colleague who will disagree with you and ask hard questions. That is the right level of rigour. Vague language and passive voice are usually signs that someone is hedging because the reasoning does not hold up to scrutiny.
+Write them as if you are explaining the situation to a colleague who will disagree with you and ask hard questions. That is the right level of rigor. Vague language and passive voice are usually signs that someone is hedging because the reasoning does not hold up to scrutiny.
 
 If the decision was made under pressure, with incomplete information, or with known risks that were accepted for pragmatic reasons, say so. That context is valuable. It tells the reader whether to trust the decision or to revisit it.
 

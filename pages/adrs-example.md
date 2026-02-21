@@ -1,77 +1,88 @@
 ---
 layout: custom
-title: Architecture Decision Record (ADR)
-description: Documenting Key Architectural Decisions for Enterprise Systems
+title: Architecture Decision Record Example
+description: A worked example using the 5-section format.
 book: adrs
 chapter: 1
 status: yellow
 category: educational
 ---
 
-{% include chapter-nav.html position="top" %}
+---
 
-# Examples
+<img class="myImg" src="../images/headers/bluish-disney-the-beauty-and-the-beast-library.png" alt="the-beauty-and-the-beast" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
 
-## ADR-001: Transition to Microservices Architecture for E-commerce Platform
+---
 
-### Problem Statement
-Our monolithic e-commerce platform is struggling to scale with increased traffic and new feature demands. The current architecture has become a bottleneck for growth and innovation, hindering our ability to respond quickly to market changes. We need a more flexible, scalable architecture that allows for independent service scaling and faster feature development.
+Below is a worked example using the structure from the main page. The scenario is a team deciding how to handle a scaling problem in their backend. Read the annotations in italics to understand what each section is actually doing.
 
-Our primary objectives are to improve scalability, reduce time-to-market for new features, and enhance system resilience. This is not a new implementation, but rather an upgrade to our existing system. We expect this change to result in better performance during traffic spikes, faster feature rollouts, and improved fault isolation.
+---
 
-<br>
+# ADR-001: Move from vertical scaling to a service-based split for the checkout flow
 
-### Considered Options
-We explored three main options for addressing our scalability and flexibility challenges:
+---
 
-1. Vertical Scaling of Monolith: While simpler to implement and maintaining our current architecture, this option offers limited scalability and doesn't solve our code complexity issues.
+## Status
 
-2. Microservices Architecture: This option provides high scalability, allows independent service deployment, and improves fault isolation. However, it increases operational complexity and requires significant refactoring.
+Accepted — 2024-08-14
 
-3. Modular Monolith: This approach maintains the simplicity of a monolith while improving modularity. However, it doesn't fully address our scalability issues and still has deployment dependencies.
+Reviewed by: Platform lead, two senior engineers, product manager.
 
-<br>
+---
 
-### Proposed Architecture
-After careful consideration, we propose transitioning to a microservices architecture. Our approach involves decomposing our monolith into core services: User Service, Product Catalog, Order Management, Payment Processing, and Inventory Management.
+## Context
 
-We'll use Docker for containerization and Kubernetes for orchestration, leveraging our current Spring Boot knowledge for service development. This architecture allows each service to be independently scaled based on demand. For security, we'll implement OAuth2 for service-to-service authentication and use an API Gateway for external requests.
+Our monolithic API handles all customer-facing operations. Over the last two quarters, checkout-related endpoints have been responsible for 80% of our response time degradation during peak hours. The rest of the system runs fine.
 
-<br>
+Vertical scaling (larger instances) has been our go-to fix for the past 18 months. We have maxed out the instance tier our cloud provider offers without a significant cost increase, and the gains from the last two upgrades did not hold past the first major traffic spike.
 
-### Impact Analysis
-The transition to microservices will have several impacts:
-- Performance: We expect a 30% improvement in response times for our most used features.
-- Team Structure: We'll need to reorganize into cross-functional teams aligned with specific services.
-- Learning Curve: The team will need training in microservices patterns, Docker, and Kubernetes.
-- Costs: Initial development costs will increase, but we anticipate long-term savings in scaling and maintenance.
+The team is small (six engineers), we run on Node.js, and we have no existing experience operating distributed systems. Those constraints matter for evaluating options.
 
-<br>
+---
 
-### Implementation Plan
-We propose a 12-month phased rollout:
-1. Months 1-3: Team training and proof of concept
-2. Months 4-6: Extract User Service and Product Catalog, test in production with 10% of traffic
-3. Months 7-9: Extract Order Management and Payment Processing
-4. Months 10-12: Extract Inventory Management, gradually increase traffic to new services
+## Options Considered
 
-We'll use feature flags to easily roll back if we encounter issues, and we'll hold weekly team meetings to address challenges and share learnings.
+**Option 1: Continue vertical scaling**
 
-<br>
+Upgrade to the next instance tier and re-evaluate in six months.
 
-### Risks and Mitigations
-Key risks and mitigation strategies:
-1. Data Consistency: Implement event sourcing and CQRS patterns to manage data across services.
-2. Performance Overhead: Optimize inter-service communication, consider using gRPC for critical paths.
-3. Operational Complexity: Invest in robust monitoring and tracing tools, implement automated deployment pipelines.
+Considered because it requires no architecture changes and zero learning curve. Rejected because we have already hit diminishing returns on this approach, and the next tier roughly doubles our infrastructure cost for an estimated 15–20% improvement that will not survive the next traffic spike.
 
-<br>
+**Option 2: Full microservices extraction**
 
-### Compliance and Governance
-- Architecture review board approval obtained on 2023-06-15
-- Security team consulted, additional encryption requirements for inter-service communication noted
-- New runbook created for microservices deployment process
-- Quarterly review scheduled to assess progress and adjust course if needed
-- Compliance team verified that the new architecture meets all regulatory requirements
+Break the entire monolith into independently deployable services.
 
-{% include chapter-nav.html %}
+Considered because it would eliminate the problem at the root. Rejected because the scope is too large relative to team size. Splitting the entire system while keeping it running would consume most of our capacity for 6–12 months, and the operational overhead of running a distributed system is something we have no experience managing. The problem we have is specific to checkout, not the whole application.
+
+**Option 3: Extract the checkout flow as a standalone service**
+
+Pull only the checkout-related handlers, their direct dependencies, and the data they own into a separate service. Everything else stays in the monolith.
+
+This is a much smaller scope than full microservices. It directly addresses the bottleneck without taking on the full cost of option 2. The risk is that the checkout service will need to call back into the monolith for some shared operations (user sessions, product catalog), which adds network hops we do not currently have.
+
+---
+
+## Decision
+
+We are going with option 3.
+
+The checkout flow accounts for a disproportionate share of our scaling problem and is already relatively well-bounded in the codebase. Extracting it gives us the scaling relief we need without committing the team to a multi-month architectural overhaul.
+
+The inter-service calls back to the monolith are a real cost. We are accepting this tradeoff because the alternative (keeping everything in the monolith) is unsustainable, and the full extraction (option 2) is not feasible at our current team size. We will keep a list of the cross-service dependencies and treat them as technical debt to clean up in future iterations.
+
+---
+
+## Consequences
+
+**What gets better:**
+- Checkout can be scaled independently during peak hours without scaling the entire application.
+- Deployments to the checkout service are isolated, reducing the risk of unrelated changes affecting it.
+
+**What gets harder:**
+- We are introducing network calls between services for the first time. Latency, timeouts, and retry logic now need to be handled explicitly.
+- Debugging a failed checkout now involves logs across two services.
+- The team needs to learn how to operate, monitor, and deploy a second service.
+
+**Conditions that need to hold:**
+- The cross-service API contract between checkout and the monolith must be treated as a formal interface, not an internal call. Any breaking changes require versioning.
+- This ADR should be revisited if the team size grows enough to take on option 2, or if the cross-service calls become a source of reliability problems.
