@@ -28,9 +28,9 @@ So instead of chasing mythical perfect candidates, let's try a different approac
 
 The rant will be long, so brace yourself:
 
-- [Chapter 1: Our Pieces and Us](/pages/thesis-the-core-five-1.md): think mark, think.
-- [Chapter 1.5: OverBoard](/pages/thesis-the-core-five-1.5.md): what will happen to your pieces.
-- [Chapter 2: The Board](/pages/thesis-the-core-five-2.md): it's game on!
+- [Chapter 1: Our Pieces and Us](/pages/thesis-the-core-five-1): think mark, think.
+- [Chapter 1.5: OverBoard](/pages/thesis-the-core-five-1.5): what will happen to your pieces.
+- [Chapter 2: The Board](/pages/thesis-the-core-five-2): it's game on!
 -  Chapter 3: 4D Businesses.
 
 
@@ -40,5 +40,3 @@ The rant will be long, so brace yourself:
   <a href="/index" class="custom-button right"><strong>Main Page</strong></a>
   <a href="/pages/thesis-the-core-five-1" class="custom-button left"><strong>Chapter 1</strong></a>
 </div>
-
-<a href="/pages/thesis-the-core-five-2" class="custom-button right"><strong>Chapter 1.5</strong></a>

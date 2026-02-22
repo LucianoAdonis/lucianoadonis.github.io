@@ -32,6 +32,8 @@ Based on my experience working with teams at big companies I had divided the cat
 
 These dimensions provide a more complete view of the abilities required for tech jobs, where success often comes from the interplay of strengths rather than isolated skills. By focusing on these, we can better evaluate, develop, and promote the unique contributions that everyone brings.
 
+Speed is listed separately because it is the most context-dependent of the six. Some projects reward fast delivery above everything else. Others require precision, and rushing becomes a liability. The core five apply in every situation. Speed is the modifier: sometimes it amplifies the others, sometimes it is beside the point. A senior engineer on a long-running sustaining project does not need Speed the way someone shipping features under competitive pressure does. Treating Speed as equally core to all roles is how you end up optimizing for the wrong thing.
+
 <br>
 
 ## About The Speaker
@@ -84,7 +86,15 @@ For my own sadness, most situations donâ€™t need to escalate into a technical â€
 
 ## Chain of Command
 
+The chain of command determines which dimensions get rewarded, and therefore which ones people will actually develop over time.
 
+In a culture that celebrates putting out fires, Power and Speed get all the recognition. Foresight and Insight, which would have prevented the fire, are invisible. Nobody throws a party for the incident that never happened.
+
+This has a compounding effect. The engineer who spends time building Foresight, mapping dependencies, thinking three steps ahead, produces no visible output during that time. The one who solves crises loudly gets promoted. Over time the team calibrates itself to what gets rewarded, and the dimensions that require patience and context get quietly atrophied.
+
+A manager who understands this can create deliberate signals. Recognition for catching a dependency issue before it became an incident. Feedback that explicitly names Insight and Foresight in performance reviews, not just delivery speed. The behavior you reinforce is the behavior you grow.
+
+The piece is always paying attention to what the board rewards. Make sure the board rewards what you actually need.
 
 # Combinations
 

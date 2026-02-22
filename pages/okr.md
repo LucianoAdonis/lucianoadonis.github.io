@@ -1,12 +1,12 @@
 ---
 layout: custom
 title: OKRs and You
-description: Fun
+description: How to track work so reporting upward does not feel like archaeology
 status: orange
 category: educational
 ---
 
-<img class="myImg" src="../images/headers/yellow-okr.png" alt="https://www.cebra.com/hubfs/okr-marketing.jpg" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
+<img class="myImg" src="../images/headers/yellow-okr.png" alt="yellow-okr" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
 
 >"First time with Micromanagement?"
 
@@ -14,28 +14,24 @@ category: educational
 
 # How This Mini-Book Can Help You
 
-In the complex landscape of modern business, transparency and accountability can sometimes fall through the cracks. This often leads to misalignments in reported efforts versus actual work done, creating a cascade of challenges such as underutilization of talent, resource shortages, or even dubious corporate practices.
+OKRs exist because at some point someone noticed that teams were busy, managers were reporting progress, and yet nothing meaningful was getting done. The framework is an attempt to fix the gap between "we worked on things" and "we moved the needle."
 
-Enter the power of Objectives and Key Results (OKRs). This framework isn’t just a tool; it’s a revelatory lens through which clarity and peace of mind can be achieved at all levels of an organization.
+For engineers and leads, the practical value is simpler: when your Jira Epics are tied to Key Results, your work speaks for itself in every status update. You do not have to explain what you did. The numbers do it.
 
-For managers, OKRs offer a robust mechanism to accurately reflect team efforts. Leaders gain insights into real priorities, ensuring strategic alignment across the board. Engineers and frontline staff, on the other hand, receive clear expectations and well-defined roles, fostering a culture of accountability and precision.
+This guide covers how OKRs are structured, how deliverables and Key Results relate to each other, and how to wire Jira so that reporting upward is a matter of pointing at something rather than writing a summary from scratch.
 
-With OKRs, surprises are not stumbling blocks but stepping stones to proactive management and organizational health. This mini-book guides you through harnessing the full potential of OKRs to create a more transparent, effective, and aligned workplace.
-
-<br>
+---
 
 # Chapters Overview
 
-In Progress:
-
-- [Chapter 1: Why OKRs Matter](/pages/okr-chapter-1): You will have a lot of questions if you are wondering about attending or not.
-- [Chapter 2: Aligning Infrastructure with Business OKRs](/pages/okr-chapter-2): "Boom", "kaboom" & "tuturu".
-- [Chapter 3: Visualizing Work Through Jira and Confluence](/pages/okr-chapter-3): Bricks dahhh.
+- [Chapter 1: Why OKRs Matter](/pages/okr-chapter-1): The structure, the hierarchy, and where Jira fits in.
+- [Chapter 2: Aligning Infrastructure with Business OKRs](/pages/okr-chapter-2): What to do when your team's work does not obviously match any company objective.
+- [Chapter 3: Visualizing Work Through Jira and Confluence](/pages/okr-chapter-3): Making the connection between epics and results visible.
 
 <br>
 
 ---
 
-<div class="nav-buttons right-aligned">
-  <a href="/pages/okr-chapter-1" class="custom-button right"><strong>Chapter 1</strong></a>
+<div class="nav-buttons">
+  <a href="/pages/okr-chapter-1" class="custom-button left"><strong>Chapter 1</strong></a>
 </div>

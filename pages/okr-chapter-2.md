@@ -1,7 +1,7 @@
 ---
 layout: custom
 title: Aligning Infrastructure with Business OKRs - Chapter 2
-description: Bridging the Gap Between Support and Core Business Goals
+description: What to do when your team's work does not obviously match any company objective
 book: okr
 chapter: 2
 status: orange
@@ -10,42 +10,40 @@ category: educational
 
 {% include chapter-nav.html position="top" %}
 
-
 ---
 
-<img class="myImg" src="../images/headers/yellow-okr.png" alt="https://www.cebra.com/hubfs/okr-marketing.jpg" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
+<img class="myImg" src="../images/headers/yellow-okr.png" alt="yellow-okr" style="border: 1px solid #000; border-radius: 1px; padding: 0px; cursor: pointer;">
 
 ---
-
-<br>
 
 # What Are My OKRs?
 
-Depending on the organizational structure and methodology—like the Spotify Model—you might encounter a tiered hierarchy:
+OKRs cascade down from company level to team level. A common structure looks like this:
 
-- **Business**
-  - **Development**
-    - **Infrastructure**
+- **Business OKRs**: where the company wants to go this quarter
+  - **Development OKRs**: what product and engineering are doing to get there
+    - **Infrastructure OKRs**: what the infra team is doing to support development
 
-In such a model, your specific OKRs within the Infrastructure tier are likely to be influenced by overarching business objectives. These are typically aligned with the deliverables of development teams, ensuring that infrastructure supports and enhances broader business goals.
+In practice, infrastructure teams often struggle here. The company objective is "grow revenue in LATAM by 20%." The infra team's work is Kubernetes upgrades, certificate rotations, and pipeline improvements. The connection is not obvious from the outside, which makes it easy for that work to get dismissed as overhead rather than recognized as what keeps everything else running.
 
-<br>
-
-## OKR Highlight Types
-
-While not all tasks directly contribute to the stated goals of an OKR, they play crucial roles in the organization's success. To effectively recognize and report these contributions, consider categorizing tasks as follows:
-
-- **Business Critical:** Key changes necessary to meet team or organizational goals. These are fundamental tasks that drive the core mission of the business.
-- **Express:** Tasks that address urgent priorities requiring immediate action to prevent or respond to critical situations.
-- **Innovative:** Initiatives that introduce creative solutions, significantly enhancing the quality of life or work processes within the organization.
-- **Enhancements:** Focused refinements aimed at boosting the efficiency of existing processes or systems.
-- **Standardization:** Efforts to ensure uniform practices across different teams and departments, promoting consistency and reliability.
-- **Adjustments:** Necessary updates that maintain or improve the functionality of team operations, ensuring ongoing effectiveness.
-
-This strategic categorization not only clarifies the value of these tasks but also highlights how support roles like infrastructure significantly contribute to the broader objectives of the organization.
+The answer is not to pretend the connection is tighter than it is. It is to make the real connection explicit: without the reliability work, the product work cannot ship. Without the pipeline improvements, deployment frequency stays low. The infra team's OKRs support the development OKRs, which support the business OKRs. That chain needs to be documented.
 
 <br>
 
+# OKR Highlight Types
+
+Not all work fits neatly under a stated OKR. Some of it is urgent, some of it is maintenance, some of it is the kind of thing nobody asked for but everyone benefits from. Categorizing work by type helps when reporting, because it explains why the Epic exists even when it does not map directly to a Key Result.
+
+Useful categories:
+
+- **Business Critical**: work required to hit a committed goal. If this does not get done, a Key Result misses.
+- **Express**: urgent work that jumped the queue because something broke or a deadline moved. It was not planned but it was necessary.
+- **Innovative**: something that improves how work gets done, not just what gets done. Usually generates future velocity.
+- **Enhancement**: incremental improvements to something already working. The difference between acceptable and good.
+- **Standardization**: making sure multiple teams or systems do the same thing the same way. Reduces future cognitive load.
+- **Adjustment**: updates required to keep something functioning as the environment around it changes. Version upgrades, dependency patches, config drift corrections.
+
+The categorization does two things. It makes it easier to explain why work happened that was not in the original OKR plan. And it gives leadership a clearer picture of where team effort actually goes, which is usually more fragmented than any quarterly plan suggests.
 
 ---
 

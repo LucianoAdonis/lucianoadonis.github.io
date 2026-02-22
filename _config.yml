@@ -117,7 +117,7 @@ books:
   - slug: digital-life
     title: "Digital Life"
     description: "Small habits that keep your digital footprint manageable."
-    status: orange
+    status: yellow
     category: mentoring
     chapters: 0
     url: /pages/digital-life

@@ -19,9 +19,6 @@ I hope this will be useful to others.
 
 ---
 
-* https://lucianoadonis.github.io/
-{:toc}
-
 # Reacting to a Problem
 
 >"We cannot choose our external circumstances, but we can always choose how we respond to them."
@@ -31,14 +28,14 @@ Before you start touching everything, you need to diagnose the general situation
 
 | Main Question | Follow-up Questions | Expected Insights |
 | -------------|:-------------------:|:-----------------:|
-| How bad is it? | What is the affected environment? | |
-| | Does this impact team delivery? | |
-| | Can we live with the issue? | |
+| How bad is it? | What is the affected environment? | Prod beats everything else. Dev can usually wait. Knowing the environment sets the urgency before you touch anything. |
+| | Does this impact team delivery? | If yes, loop in management before they hear it from someone else. The update can be brief, but the silence is worse. |
+| | Can we live with the issue? | Sets whether this is a stop-everything fix or a document-and-schedule. Not every issue needs to be resolved right now. |
 | What could be a possible cause? | Naming | Unless you are prepared for the unexpected and have ways to avoid depending on the names of resources, some changes may cause disruption, as they could prevent you from accessing the right resource. |
-| | Paths | |
+| | Paths | Hardcoded paths are fragile. Changing a folder name, moving a volume, or restructuring a container can break things silently with no error that points directly to the cause. |
 | | Versions | A [minor](https://docs.npmjs.com/about-semantic-versioning#:~:text=Backward%20compatible%20new%20features) update may not cause issues, but you never know. Best to be sure. |
-| | Policies | |
-| | Rules | |
+| | Policies | IAM policies and security rules change quietly. A permission that worked yesterday may have been tightened by someone else without a deployment or announcement. |
+| | Rules | Firewall rules, routing rules, and load balancer rules can be modified without touching any code. These are easy to overlook because nothing in the application changed. |
 | | Making plans on a Friday | Horrible idea if you want a relaxed weekend. |
 
 Reasoning through the scope and range of the issue will reduce the stress caused by the abrupt interruption of your day. And by knowing what it actually is, you can at least prepare some talking points for management while you figure things out.
@@ -52,7 +49,7 @@ Preparation is key, and it is normal to ignore things that are "working" and don
 
 >"Expect the best, prepare for the worst." - Muhammad Ali Jinnah
 
-Considering worst-case scenarios: like making the issue worse, or the existential dread of a 2 AM escalation: is a powerful motivator to set boundaries when troubleshooting. If you find yourself making things worse, it is a clear sign that those boundaries could have prevented the situation. The consequences of not setting them can be severe.
+Considering worst-case scenarios, like making the issue worse or the existential dread of a 2 AM escalation, is a powerful motivator to set boundaries when troubleshooting. If you find yourself making things worse, it is a clear sign that those boundaries could have prevented the situation. The consequences of not setting them can be severe.
 
 Examples of sensible limits:
 - Stop troubleshooting after 11 PM unless it is a P1.
@@ -119,11 +116,17 @@ I will eventually go deeper into each of these, but consider the following as a 
 
 ## Quick Methods
 
+Before anything else, establish two things:
+
+- **Time Correlation**: When exactly did this start? Pull up deployment history, check what cron jobs ran around that time, look at certificate expiry dates. Problems rarely appear from nowhere. Most of the time something changed, and the timestamp points you directly at it.
+- **Reproduce It First**: Confirm you can make the problem happen consistently before you change anything. If you cannot reproduce it reliably, you have no way to verify whether a fix worked. "It seemed to go away" is not a resolution. If the problem is intermittent, find the conditions that trigger it.
+
 If everything has been quiet with no recent changes, start here:
 
 - **Comparison**: Compare against another environment that is working. Differences between the two usually point to the cause.
 - **Contrast**: If you do not have a working equivalent, look at another application with similar conditions: another region, another tenant, or a staging environment.
 - **Reading Logs**: Yes, this feels obvious, but it is often skipped. Everything has logs, though they are not always verbose. You may need to increase the log level to get useful information.
+- **Verify Assumptions**: Most debugging sessions go wrong because of an assumption that was never checked. "The service is running" — verify it. "The config is loading from the right file" — check the path. "I am connected to the right environment" — confirm. One wrong assumption at the start can waste hours.
 
 If you are in the middle of implementation or testing, use the classic approach:
 
@@ -131,6 +134,7 @@ If you are in the middle of implementation or testing, use the classic approach:
 - **Google the Error**: Copy the exact error string, remove environment-specific parts like hostnames or IDs, and search with the technology name included. Stack Overflow is your friend, but pay attention to the date of the answers: some solutions are years old and may not apply to current versions.
 - **Accept the Error**: Sometimes an error is a known warning or a non-blocking issue. Before investing more time, verify that what you are seeing is actually causing the problem and not just noise.
 - **Live with the Error**: This is the technical debt option. Document it, create a ticket, and move on. Not every error needs to be fixed right now, especially if it has existed for months without causing impact.
+- **Change One Thing at a Time**: When testing a fix, change exactly one variable, observe the result, then decide the next step. Making multiple changes simultaneously means you cannot tell what helped or what introduced a new problem. Under pressure this feels slow. It is actually faster.
 
 ## Long Methods
 
@@ -146,6 +150,7 @@ If the problem does not seem to be going anywhere soon, you will definitely need
 
 - **Taking Notes**: Document as you go: what you tried, what changed, what the result was. This prevents repeating the same steps twice, helps when you need to hand off to someone else, and gives you material for a post-mortem or runbook later. A messy note is better than no note.
 - **Making Diagrams**: A quick sketch of how components interact will often reveal where the problem might be. You do not need a formal diagram: a whiteboard photo is fine. Focus on data flow and dependencies. It is also easier for a new pair of eyes to understand at a glance.
+- **Rubber Duck Debugging**: Explain the problem out loud. To a colleague, to a stranger, to a rubber duck on your desk. The act of putting into words what you have been thinking implicitly forces you to confront assumptions you have been glossing over. Very often the answer surfaces before you finish the explanation. If no one is around, write it in a message you do not send.
 
 Making the process easy to follow is considerate to anyone who joins mid-way. There is nothing worse than feeling like you are starting from scratch in an ongoing incident. If things are truly at a dead end, fresh perspective is welcome, but only if there is enough context to get up to speed quickly.
 
