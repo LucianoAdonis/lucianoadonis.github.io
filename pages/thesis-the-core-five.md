@@ -31,6 +31,7 @@ The rant will be long, so brace yourself:
 - [Chapter 1: Our Pieces and Us](/pages/thesis-the-core-five-1): think mark, think.
 - [Chapter 1.5: OverBoard](/pages/thesis-the-core-five-1.5): what will happen to your pieces.
 - [Chapter 2: The Board](/pages/thesis-the-core-five-2): it's game on!
+- [Chapter 2.5: The Piece Matrix](/pages/thesis-the-core-five-2.5): know what you have before you move it.
 -  Chapter 3: 4D Businesses.
 
 

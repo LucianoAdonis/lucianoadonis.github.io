@@ -140,7 +140,7 @@ Reading and Writing can allow people to artificially receive part of the experie
 
 Not knowing the paths will make everything take longer, as the discovery phase will solely depend on the piece.
 
-Knowing the available paths and possible challenges can lead to take better decisions 
+Knowing the available paths and possible challenges can lead to take better decisions
 
 <img class="myImg" src="../images/thesis/the-core-five-5c.png" alt="pthe-core-five-5c" style="border: 0px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
 

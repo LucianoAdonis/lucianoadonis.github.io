@@ -92,7 +92,9 @@
       "Bash(echo Playwright not found:*)",
       "Bash(npx playwright:*)",
       "Bash(which playwright:*)",
-      "Bash(bundle exec:*)"
+      "Bash(bundle exec:*)",
+      "Bash(pdfinfo:*)",
+      "Bash(pdftotext:*)"
     ]
   },
   "customInstructions": "This is a folder with multiple repositories of dockerfiles that make multipurpose images, most of them are probably outdate or could use other tools and standarizations to make the repositories look and feel better, suggestions are welcome",
