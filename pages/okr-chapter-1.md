@@ -94,7 +94,44 @@ When a manager reports upward, they point at the Key Result number. If asked for
 
 OKRs are time-bound, usually quarterly. Some organizations run annual Objectives with quarterly Key Results underneath them. The cadence matters less than the habit of reviewing them regularly and being honest about whether the numbers are moving.
 
-Carrying an OKR into the next quarter is allowed. The useful question when that happens is whether the target was unrealistic to begin with or whether something blocked progress that should be addressed. An OKR that gets carried over three times in a row is not an OKR anymore, it is a wish.
+<br>
+
+## Fiscal Years and Quarters
+
+When someone says "Q2 OKRs," which months they mean depends entirely on when the company's fiscal year starts. Not every company runs on a calendar year.
+
+**Standard calendar year (January start)**
+
+| Quarter | Months |
+|---------|--------|
+| Q1 | January, February, March |
+| Q2 | April, May, June |
+| Q3 | July, August, September |
+| Q4 | October, November, December |
+
+**Fiscal year starting in October (common in US federal government and some large enterprises)**
+
+| Quarter | Months |
+|---------|--------|
+| Q1 | October, November, December |
+| Q2 | January, February, March |
+| Q3 | April, May, June |
+| Q4 | July, August, September |
+
+Other common start months are April (UK government, Japan) and July. When joining a new company or working with a new client, confirming the fiscal year start date early saves confusion later. "Our Q3 goals" means something different depending on who is saying it.
+
+<br>
+
+## Carrying Over OKRs
+
+Carrying an OKR into the next quarter is allowed. The useful question when that happens is whether the target was unrealistic to begin with, or whether something blocked progress that should be addressed. An OKR that gets carried over three times in a row is not an OKR anymore, it is a wish.
+
+When extending an OKR into a new period:
+
+- **Review the reason**: was the scope too ambitious, did external conditions change, or is this genuinely a long-term initiative that spans quarters by design?
+- **Update the Key Results**: new information or changed conditions may mean the original numbers are no longer the right target.
+- **Communicate it explicitly**: a carried-over OKR that is not announced looks like a missed OKR. Say it out loud, say why, and say what changes.
+- **Check alignment**: make sure the carried-over OKR still maps to current company priorities. Objectives that made sense in Q2 are not always relevant in Q3.
 
 <br>
 
