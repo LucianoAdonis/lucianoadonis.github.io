@@ -82,7 +82,7 @@ I wouldn't suggest you going and trying all of them, instead go to the [next sec
 
 # Macro Combinations
 
-Macros are comparable to Terraform functions. It's essential to recognize that there are easier ways to accomplish tasks. Yet, to fully leverage the tool, it's crucial to stretch its capabilities and intertwine multiple functions with a specific goal in mind.
+Macros are comparable to Terraform functions. Simpler approaches exist for most tasks, but you get more from the tool when you chain macros toward a concrete result.
 
 ## Practical Enhancements
 

@@ -17,7 +17,7 @@ category: educational
 
 # Scripting
 
-Airtable scripting allows you to automate tasks and extend the functionality of your bases using JavaScript. Whether you need to perform complex calculations, integrate with external services, or create custom workflows, scripts can help you achieve these goals.
+Airtable scripting lets you automate tasks in your bases with JavaScript.
 
 <br>
 

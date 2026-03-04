@@ -3,6 +3,10 @@
 
 @import "jekyll-theme-leap-day";
 
+html {
+  color-scheme: dark;
+}
+
 /* Global font — Inter for readability */
 body, section, p, li, td, th, input, button, select, textarea {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -11,6 +15,7 @@ body, section, p, li, td, th, input, button, select, textarea {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-weight: 700;
+  text-wrap: balance;
 }
 
 /* Override default theme width constraints */
@@ -25,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header styles for collapsible behavior */
 header {
-  transition: all 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease;
   opacity: 1;
   text-align: center;
 }
@@ -48,7 +53,7 @@ header.collapsed {
 }
 
 #banner {
-  transition: all 0.3s ease !important;
+  transition: transform 0.3s ease, opacity 0.3s ease !important;
   position: relative !important;
   display: flex !important;
   justify-content: space-between !important;
@@ -89,6 +94,7 @@ header.collapsed {
   text-decoration: none;
   flex-shrink: 0;
   transition: background-color 0.2s ease, transform 0.2s ease;
+  touch-action: manipulation;
 }
 
 .banner-icon-btn svg {
@@ -349,7 +355,18 @@ section ol li::marker {
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
-  transition: 0.3s;
+  transition: color 0.3s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+}
+
+.close:focus-visible {
+  outline: 2px solid #FFCC01;
+  outline-offset: 4px;
+  border-radius: 2px;
 }
 
 /* Close button on hover */
@@ -378,22 +395,6 @@ section ol li::marker {
   }
 }
 
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 .highlight {
   color: #ff6347;
@@ -496,13 +497,14 @@ details[open] summary::before {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border: 1px solid #6B6B6B;   
+  border: 1px solid #6B6B6B;
   border-radius: 2px;
   font-size: 14px;
   margin: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
   position: relative;
+  touch-action: manipulation;
 }
 
 /* Hover effect */
@@ -570,10 +572,11 @@ footer {
   font-weight: bold;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   z-index: 999;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   align-items: center;
   gap: 8px;
+  touch-action: manipulation;
 }
 
 .back-button:hover {
@@ -612,7 +615,8 @@ body.home-page .back-button {
   opacity: 0;
   transform: translateY(20px);
   pointer-events: none;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  touch-action: manipulation;
 }
 
 .scroll-to-top.visible {
@@ -827,7 +831,8 @@ body.ds-theme .chapter-progress-text {
   align-items: center;
   justify-content: center;
   z-index: 999;
-  transition: all 0.2s ease;
+  transition: border-color 0.2s ease;
+  touch-action: manipulation;
 }
 
 .toc-toggle:hover {
@@ -936,8 +941,10 @@ body.ds-theme .chapter-progress-text {
   transition: border-color 0.2s ease;
 }
 
-.book-search:focus {
+.book-search:focus-visible {
   border-color: #FFCC01;
+  outline: 2px solid #FFCC01;
+  outline-offset: 2px;
 }
 
 .book-search::placeholder {
@@ -964,9 +971,14 @@ body.ds-theme .chapter-progress-text {
   padding-right: 28px;
 }
 
-.filter-select:focus,
 .filter-select:hover {
   border-color: #FFCC01;
+}
+
+.filter-select:focus-visible {
+  border-color: #FFCC01;
+  outline: 2px solid #FFCC01;
+  outline-offset: 2px;
 }
 
 .filter-select option {
@@ -1186,5 +1198,14 @@ body.ds-theme .chapter-progress-text {
 @media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
+  }
+}
+
+/* Respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

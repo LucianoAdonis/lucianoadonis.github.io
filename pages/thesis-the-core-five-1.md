@@ -44,7 +44,7 @@ In my personal view, I’ve reached a level of balance where some things no long
 
 Despite having multiple advantages and a blend of skills, I’ve come to realize that the true magic comes from the unique elements that people bring to the table. These contributions—whether they are fresh ideas, attitudes, or even lighthearted memes—are what make collaboration dynamic and impactful.
 
-Personally, I’ve leaned heavily on speed to gain an edge and tackle challenges in the past. This experience has taught me that success isn’t just about raw “power” or expertise—it’s about leveraging all dimensions of ability. It’s disheartening to think of talented individuals being overlooked simply because they don’t fit into traditional molds or categories.
+Personally, I’ve leaned heavily on speed to gain an edge and tackle challenges in the past. This experience has taught me that success isn’t just about raw “power” or expertise—it’s about using all dimensions of ability. It’s disheartening to think of talented individuals being overlooked simply because they don’t fit into traditional molds or categories.
 
 <br>
 

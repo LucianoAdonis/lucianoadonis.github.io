@@ -18,7 +18,7 @@ category: educational
 
 Often overlooked, [Page Layouts, Columns, and Sections](https://confluence.atlassian.com/doc/page-layouts-columns-and-sections-275188613.html) can significantly improve how you display content and help you to accentuate key points.
 
-Instead of presenting your content as a dense, vertical monolith of text, you can transform the page space into a dynamic, engaging structure that captivates your audience.
+Instead of presenting a dense wall of text, you can break the page into columns, panels, and sections that guide the reader's eye.
 
 <br>
 

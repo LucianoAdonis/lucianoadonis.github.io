@@ -34,7 +34,7 @@ cheaper than therapy
 
 # Concepts
 
-- **Constructivism**: Participants build physical models using LEGO® bricks to represent ideas, leveraging hands-on, minds-on learning.
+- **Constructivism**: Participants build physical models using LEGO® bricks to represent ideas, using hands-on, minds-on learning.
 - **Metaphorical Thinking**: Models serve as metaphors to express abstract concepts, emotions, and ideas.
 - **Storytelling**: Each participant explains their model, encouraging deeper insights and fostering group understanding.
 - **Collaborative Problem-Solving**: The methodology promotes co-creation by integrating multiple perspectives.

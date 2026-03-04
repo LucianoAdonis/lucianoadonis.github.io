@@ -167,6 +167,33 @@ books:
     url: /pages/jira
     image: /images/headers/cian-chess-board-v2.png
 
+  - slug: incident-response
+    title: "The ER Playbook"
+    description: "What tech teams can learn from emergency rooms."
+    status: yellow
+    category: educational
+    chapters: 4
+    url: /pages/incident-response
+    image: /images/headers/green-upscaled-sacred-heart-hospital.png
+
+  - slug: mentoring
+    title: "The Mentoring Manual"
+    description: "What they do not teach you about teaching others."
+    status: yellow
+    category: mentoring
+    chapters: 3
+    url: /pages/mentoring
+    image: /images/headers/cian-chess-board-v2.png
+
+  - slug: ai-at-work
+    title: "AI at Work"
+    description: "How to actually use AI tools without losing your mind."
+    status: yellow
+    category: educational
+    chapters: 3
+    url: /pages/ai-at-work
+    image: /images/headers/purple-computer.png
+
 show_links: true
 links:
   github: https://lucianoadonis.github.io/

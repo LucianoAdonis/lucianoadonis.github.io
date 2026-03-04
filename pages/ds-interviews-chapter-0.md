@@ -24,7 +24,7 @@ Usually, you would only worry about this once you're deep into the game, but som
 
 In this mode, you're on your own to find a match. You must traverse through random and questionable pages to land on one where a boss fight can be possible. 
 
-It's tricky at first, but when you win, the benefit is that you can negotiate better rewards and positioning. This freedom often comes with more leverage in the long run, especially if you align yourself with a Covenant later.
+It's tricky at first, but when you win, the benefit is that you can negotiate better rewards and positioning. This freedom often comes with more negotiating power over time, especially if you align yourself with a Covenant later.
 
 # Covenants
 

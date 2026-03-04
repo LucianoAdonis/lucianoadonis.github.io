@@ -37,7 +37,7 @@ Do we have here some General knowledge questions? Those are a separate challenge
 
 ## Certifications are Good, But...
 
-They’re mostly just a way to skip the easy questions in interviews, but if you play your cards right, they can serve as leverage to claim even greater rewards.
+They’re mostly just a way to skip the easy questions in interviews, but if you play your cards right, they can help you negotiate better rewards.
 
 - It’s tough for those who’ve put in a serious effort to get certified. Still, all a certification tells me is that you have time to study, a good memory, and probably a Cloud Guru subscription or whatever young ones use these days.
 - Certifications can even backfire. That’s why I only certify in technologies I’m actively working with and have enough hands-on experience to support. Otherwise, it’s just cramming knowledge.
@@ -64,7 +64,7 @@ A few takeaways:
 
 ## Communication
 
-Clear Communication is Crucial whether in interviews or building relationships with clients, the ability to explain your ideas is not just a must but a significant factor in your professional success. Preparation is your Estus Flask—it will keep you going. While there will come a time when you'll breeze through interviews, preparation is key until then.
+Clear Communication Matters — whether in interviews or building relationships with clients, explaining your ideas well drives your career. Preparation is your Estus Flask—it will keep you going. While there will come a time when you'll breeze through interviews, preparation is key until then.
 
 With this in mind, at least you won’t stumble right out of the fog gate, giving off the wrong impression.
 

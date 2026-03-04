@@ -97,10 +97,14 @@
       "Bash(pdftotext:*)"
     ]
   },
+  "enabledMcpjsonServers": [
+    "context7"
+  ],
   "customInstructions": "This is a folder with multiple repositories of dockerfiles that make multipurpose images, most of them are probably outdate or could use other tools and standarizations to make the repositories look and feel better, suggestions are welcome",
   "autoApprove": {
     "read": true,
     "glob": true,
     "grep": true
-  }
+  },
+  "enableAllProjectMcpServers": true
 }
