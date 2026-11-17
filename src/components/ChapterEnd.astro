@@ -1,0 +1,132 @@
+---
+/** What comes after a chapter: the next one, big; or the end of the book. */
+import Glyph from './Glyph.astro';
+import Elsewhere from './Elsewhere.astro';
+import { chapterLabel, type Book, type Page } from '../lib/library';
+
+interface Props {
+  book: Book;
+  prev?: Page;
+  next?: Page;
+}
+const { book, prev, next } = Astro.props;
+---
+<nav class="chapter-end" aria-label="Chapters" data-pagefind-ignore>
+  {
+    next ? (
+      <a class="next" href={`/pages/${next.id}`} rel="next">
+        <span class="label">Next · {chapterLabel(next)}</span>
+        <span class="t">{next.data.title}</span>
+        <span class="d">{next.data.description}</span>
+        <Glyph name="arrow-right" size="1.5rem" class="arrow" strokeWidth={2} />
+      </a>
+    ) : (
+      <div class="the-end">
+        <p class="end-mark">That's the whole book.</p>
+        <p class="end-links">
+          <a href={`/pages/${book.id}`}>Back to the contents</a>
+          <a href="/">Back to the shelf</a>
+        </p>
+        {book.page.data.elsewhere && <Elsewhere elsewhere={book.page.data.elsewhere} />}
+      </div>
+    )
+  }
+  <p class="others">
+    {
+      prev && (
+        <a href={`/pages/${prev.id}`} rel="prev">
+          <Glyph name="arrow-left" size="1em" strokeWidth={2} />
+          {prev.data.label ? prev.data.label : `Chapter ${prev.data.chapter}`}: {prev.data.title}
+        </a>
+      )
+    }
+    <a href={`/pages/${book.id}`}>Contents</a>
+  </p>
+</nav>
+
+<style>
+  .chapter-end {
+    display: grid;
+    gap: var(--space-5);
+    margin-top: var(--space-8);
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--rule);
+  }
+  .next {
+    position: relative;
+    display: grid;
+    gap: var(--space-1);
+    padding: var(--space-5) calc(var(--space-5) + 2rem) var(--space-5) var(--space-5);
+    border-radius: 6px;
+    background: var(--tint);
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .next .label {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: var(--text-sm);
+  }
+  .next .t {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: var(--text-lg);
+    line-height: 1.15;
+  }
+  .next .d {
+    color: var(--ink-2);
+  }
+  .next :global(.arrow) {
+    position: absolute;
+    inset-inline-end: var(--space-5);
+    inset-block-start: 50%;
+    translate: 0 -50%;
+    color: var(--accent);
+    transition: translate 240ms var(--ease-out);
+  }
+  .next:hover :global(.arrow) {
+    translate: 4px -50%;
+  }
+  .next:hover .t {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.18em;
+  }
+  .the-end {
+    display: grid;
+    gap: var(--space-4);
+  }
+  .end-mark {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: var(--text-lg);
+  }
+  .end-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-5);
+    margin: 0;
+  }
+  .end-links a,
+  .others a {
+    color: var(--accent);
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-underline-offset: 0.2em;
+  }
+  .others {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--space-3) var(--space-5);
+    margin: 0;
+    font-size: var(--text-sm);
+  }
+  .others a {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    min-block-size: 2.75rem;
+  }
+</style>

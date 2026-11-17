@@ -1,0 +1,48 @@
+---
+/** A page that belongs to no book (Odds and Ends), or an unlisted draft. */
+import type { MarkdownHeading } from 'astro';
+import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
+import Base from './Base.astro';
+import Plate from '../components/Plate.astro';
+import StatusMark from '../components/StatusMark.astro';
+import Toc from '../components/Toc.astro';
+import { countWords, minutesFor, type Page } from '../lib/library';
+import { monthYear, revisedOf } from '../lib/dates';
+
+interface Props {
+  page: Page;
+  Content: AstroComponentFactory;
+  headings: MarkdownHeading[];
+}
+const { page, Content, headings } = Astro.props;
+const d = page.data;
+const minutes = minutesFor(countWords(page.body));
+const revised = revisedOf(page);
+---
+<Base title={d.title} description={d.description} noindex={d.draft}>
+  <article class="reading" {...(d.draft ? {} : { 'data-pagefind-body': '' })}>
+    <header class="reading-head measure">
+      <p class="kicker label" data-pagefind-ignore>{d.draft ? 'Unlisted, not on the shelf yet' : 'Odds and Ends'}</p>
+      <h1>{d.title}</h1>
+      <p class="dek">{d.description}</p>
+      <p class="meta" data-pagefind-ignore>
+        <span>{minutes} min</span>
+        <StatusMark status={d.status} withLabel />
+        <span>Revised <time datetime={revised.toISOString().slice(0, 10)}>{monthYear(revised)}</time></span>
+      </p>
+    </header>
+    {
+      d.plate && (
+        <div class="measure reading-plate">
+          <Plate src={d.plate} alt={d.plateAlt!} eager />
+        </div>
+      )
+    }
+    <div class="reading-body">
+      <Toc headings={headings} label="On this page" />
+      <div class="prose">
+        <Content />
+      </div>
+    </div>
+  </article>
+</Base>

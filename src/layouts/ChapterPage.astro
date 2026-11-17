@@ -1,0 +1,58 @@
+---
+/** A chapter: running head, chapter title page, the text in one column, then what comes next. */
+import type { MarkdownHeading } from 'astro';
+import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
+import Base from './Base.astro';
+import RunningHead from '../components/RunningHead.astro';
+import Plate from '../components/Plate.astro';
+import StatusMark from '../components/StatusMark.astro';
+import Toc from '../components/Toc.astro';
+import ChapterEnd from '../components/ChapterEnd.astro';
+import { chapterLabel, countWords, minutesFor, type Book, type Page } from '../lib/library';
+import { monthYear, revisedOf } from '../lib/dates';
+
+interface Props {
+  page: Page;
+  book: Book;
+  Content: AstroComponentFactory;
+  headings: MarkdownHeading[];
+}
+const { page, book, Content, headings } = Astro.props;
+const d = page.data;
+const index = book.chapters.findIndex((c) => c.id === page.id);
+const label = chapterLabel(page);
+const minutes = minutesFor(countWords(page.body));
+const revised = revisedOf(page);
+---
+<Base title={`${d.title} (${book.title})`} description={d.description} hue={book.hue} theme={book.theme}>
+  <RunningHead book={book} position={index + 1} total={book.chapters.length} label={label} />
+  <article class="reading" data-pagefind-body>
+    <span hidden data-pagefind-meta={`book:${book.title}`}></span>
+    <header class="reading-head measure">
+      <p class="kicker label" data-pagefind-ignore>{label}</p>
+      <h1>{d.title}</h1>
+      <p class="dek">{d.description}</p>
+      <p class="meta" data-pagefind-ignore>
+        <span>{minutes} min</span>
+        <StatusMark status={d.status} withLabel />
+        <span>Revised <time datetime={revised.toISOString().slice(0, 10)}>{monthYear(revised)}</time></span>
+      </p>
+    </header>
+    {
+      d.plate && (
+        <div class="measure reading-plate">
+          <Plate src={d.plate} alt={d.plateAlt!} eager />
+        </div>
+      )
+    }
+    <div class="reading-body">
+      <Toc headings={headings} />
+      <div class="prose">
+        <Content />
+      </div>
+    </div>
+    <div class="measure">
+      <ChapterEnd book={book} prev={book.chapters[index - 1]} next={book.chapters[index + 1]} />
+    </div>
+  </article>
+</Base>

@@ -1,0 +1,67 @@
+---
+import { Font } from 'astro:assets';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { bookStyle } from '../lib/color';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  /** Hue of the book this page belongs to: its color becomes the page accent. */
+  hue?: number;
+  theme?: 'ds';
+  home?: boolean;
+  noindex?: boolean;
+  type?: 'website' | 'article';
+  /** Path of the page that holds this page's text, when it is a pointer. */
+  canonicalPath?: string;
+}
+const { title, description, hue, theme, home = false, noindex = false, type = 'article', canonicalPath } = Astro.props;
+
+const site = "Luciano's Library";
+const fullTitle = home ? `${site}: mini-books on work, tools and theories` : `${title} · ${site}`;
+const canonical = new URL(canonicalPath ?? Astro.url.pathname.replace(/\.html$/, '').replace(/\/index$/, '/'), Astro.site);
+const ogImage = new URL('/images/lucianos-library-preview.png', Astro.site);
+---
+<!doctype html>
+<html
+  lang="en"
+  data-theme={theme}
+  data-book-colors={hue !== undefined ? '' : undefined}
+  style={hue !== undefined ? bookStyle(hue) : undefined}
+  class:list={[import.meta.env.DEV && 'dev']}
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content={site} />
+    <meta property="og:title" content={home ? site : title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="oklch(97.2% 0.013 92)" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="oklch(20.5% 0.012 70)" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <Font cssVariable="--font-text" preload={[{ weight: '400', style: 'normal', subset: 'latin' }]} />
+    <Font cssVariable="--font-display" />
+    <Font cssVariable="--font-caps" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to the text</a>
+    <SiteHeader home={home} />
+    <main id="main" tabindex="-1">
+      <slot />
+    </main>
+    <SiteFooter />
+    <script>
+      import '../scripts/enhance';
+    </script>
+  </body>
+</html>

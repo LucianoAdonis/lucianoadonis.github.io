@@ -1,0 +1,110 @@
+---
+/**
+ * A labeled shelf of spines. The boards are a repeating gradient sized to the
+ * row height, so a shelf that wraps on a narrow screen still has a board under
+ * every row.
+ */
+import Spine from './Spine.astro';
+import type { Book } from '../lib/library';
+
+export type ShelfItem = { type: 'book'; book: Book } | { type: 'year'; year: number };
+
+interface Props {
+  id: string;
+  label: string;
+  items: ShelfItem[];
+  maxWords: number;
+  morph?: boolean;
+}
+const { id, label, items, maxWords, morph = false } = Astro.props;
+---
+<section class="shelf" aria-labelledby={`${id}-label`}>
+  <h2 class="shelf-label label" id={`${id}-label`}>{label}</h2>
+  <ul class="row" role="list">
+    {
+      items.map((item) =>
+        item.type === 'book' ? (
+          <li>
+            <Spine book={item.book} maxWords={maxWords} morph={morph} />
+          </li>
+        ) : (
+          <li class="bookend" aria-hidden="true">
+            <span>{item.year}</span>
+          </li>
+        )
+      )
+    }
+  </ul>
+</section>
+
+<style>
+  .shelf {
+    --spine-scale: 1;
+    --row-h: calc(252px * var(--spine-scale));
+    --plank-h: 13px;
+    --gap-y: 46px;
+  }
+  @media (max-width: 40rem) {
+    .shelf {
+      --spine-scale: 0.78;
+    }
+  }
+
+  .shelf-label {
+    margin: 0 0 var(--space-3);
+    color: var(--ink-2);
+    font-size: var(--text-sm);
+  }
+
+  .row {
+    list-style: none;
+    margin: 0;
+    padding: 0 var(--space-3) var(--plank-h);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    column-gap: 3px;
+    row-gap: var(--gap-y);
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent 0 var(--row-h),
+      oklch(from var(--plank) calc(l + 0.08) c h) var(--row-h) calc(var(--row-h) + 4px),
+      var(--plank) calc(var(--row-h) + 4px) calc(var(--row-h) + var(--plank-h)),
+      var(--plank-shadow) calc(var(--row-h) + var(--plank-h)) calc(var(--row-h) + var(--plank-h) + 1px),
+      oklch(from var(--plank-shadow) l c h / 0.22) calc(var(--row-h) + var(--plank-h) + 1px)
+        calc(var(--row-h) + var(--plank-h) + 3px),
+      transparent calc(var(--row-h) + var(--plank-h) + 9px) calc(var(--row-h) + var(--gap-y))
+    );
+  }
+  .row > li {
+    block-size: var(--row-h);
+    display: flex;
+    align-items: flex-end;
+  }
+  /* After the base .row rule so it wins: seven spines fit one phone row. */
+  @media (max-width: 40rem) {
+    .row {
+      column-gap: 2px;
+      padding-inline: 4px;
+    }
+  }
+
+  .bookend {
+    margin-inline: var(--space-3) var(--space-2);
+  }
+  .bookend span {
+    display: grid;
+    place-items: center;
+    width: calc(26px * var(--spine-scale));
+    height: calc(120px * var(--spine-scale));
+    writing-mode: vertical-rl;
+    font-family: var(--font-caps);
+    font-weight: 700;
+    font-size: var(--text-sm);
+    letter-spacing: 0.08em;
+    color: var(--ink-3);
+    border: 1.5px solid var(--rule-strong);
+    border-bottom: 0;
+    border-radius: 3px 3px 0 0;
+  }
+</style>

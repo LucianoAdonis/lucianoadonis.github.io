@@ -1,0 +1,53 @@
+---
+const year = new Date().getUTCFullYear();
+---
+<footer class="site-footer">
+  <p class="colophon">
+    <span class="label">Luciano's Library</span>
+    Written by Luciano Adonis, 2024 to {year}. Set in Alegreya, from Huerta Tipográfica.
+  </p>
+  <ul class="links" role="list">
+    <li><a href="https://github.com/LucianoAdonis/lucianoadonis.github.io/issues">Send feedback</a></li>
+    <li><a href="https://github.com/LucianoAdonis/lucianoadonis.github.io">Source</a></li>
+    <li><a href="https://www.youtube.com/@energon-hq/">YouTube</a></li>
+    <li><a href="https://neorgon.com/">Neorgon</a></li>
+  </ul>
+</footer>
+
+<style>
+  .site-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-3) var(--space-6);
+    margin-top: var(--space-9);
+    padding: var(--space-6) var(--gutter) var(--space-7);
+    border-top: 1px solid var(--rule);
+    color: var(--ink-3);
+    font-size: var(--text-sm);
+  }
+  .colophon {
+    margin: 0;
+    max-inline-size: 46ch;
+  }
+  .colophon .label {
+    display: block;
+    color: var(--ink-2);
+  }
+  .links {
+    display: flex;
+    gap: var(--space-5);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .links a {
+    color: var(--ink-2);
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 1px;
+  }
+  .links a:hover {
+    color: var(--ink);
+  }
+</style>

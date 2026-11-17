@@ -1,0 +1,134 @@
+---
+/**
+ * A printed contents page: the author's own chapter numbers (0, 1.5, 2.5, and
+ * labels like References), dot leaders, reading time, and each chapter's status.
+ */
+import StatusMark from './StatusMark.astro';
+import { chapterLabel, countWords, minutesFor, type Page } from '../lib/library';
+
+interface Props {
+  chapters: Page[];
+}
+const { chapters } = Astro.props;
+const rows = chapters.map((c) => ({
+  id: c.id,
+  num: c.data.label ?? String(c.data.chapter),
+  isLabel: Boolean(c.data.label),
+  title: c.data.title,
+  description: c.data.description,
+  minutes: minutesFor(countWords(c.body)),
+  status: c.data.status,
+  aria: chapterLabel(c),
+}));
+---
+<nav class="contents" aria-labelledby="contents-title" data-pagefind-ignore>
+  <h2 id="contents-title" class="contents-title label">Contents</h2>
+  <ol role="list">
+    {
+      rows.map((r) => (
+        <li class:list={[r.isLabel && 'labeled']}>
+          <span class="num" aria-hidden="true">{r.num}</span>
+          <div class="entry">
+            <a href={`/pages/${r.id}`}>
+              <span class="t">
+                <span class="vh">{r.aria}: </span>
+                {r.title}
+              </span>
+              <span class="dots" aria-hidden="true" />
+              <span class="min">{r.minutes} min</span>
+            </a>
+            <p class="d">
+              <StatusMark status={r.status} size="11px" />
+              <span>{r.description}</span>
+            </p>
+          </div>
+        </li>
+      ))
+    }
+  </ol>
+</nav>
+
+<style>
+  .contents-title {
+    margin: 0 0 var(--space-3);
+    font-size: var(--text-sm);
+    color: var(--ink-3);
+  }
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--space-4);
+  }
+  li {
+    display: grid;
+    grid-template-columns: 2.6rem minmax(0, 1fr);
+    align-items: baseline;
+  }
+  li.labeled {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .num {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+    color: var(--accent);
+  }
+  .labeled .num {
+    font-family: var(--font-caps);
+    font-weight: 700;
+    font-size: var(--text-xs);
+    letter-spacing: 0.04em;
+    margin-bottom: var(--space-1);
+  }
+  .labeled .entry {
+    padding-inline-start: 2.6rem;
+  }
+  .labeled .num {
+    padding-inline-start: 2.6rem;
+  }
+  a {
+    display: grid;
+    grid-template-columns: minmax(0, auto) minmax(1.5rem, 1fr) auto;
+    align-items: baseline;
+    gap: var(--space-2);
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .t {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.12rem;
+    line-height: 1.25;
+  }
+  a:hover .t {
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 0.2em;
+  }
+  .dots {
+    align-self: end;
+    margin-bottom: 0.4em;
+    border-bottom: 2px dotted var(--rule-strong);
+  }
+  .min {
+    color: var(--ink-3);
+    font-size: var(--text-sm);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .d {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-2);
+    margin: var(--space-1) 0 0;
+    color: var(--ink-2);
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  .d :global(.status) {
+    color: var(--ink-3);
+    translate: 0 0.08em;
+  }
+</style>

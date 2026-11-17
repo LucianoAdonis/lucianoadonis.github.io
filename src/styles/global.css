@@ -1,0 +1,692 @@
+/*
+ * Luciano's Library: pocket paperbacks.
+ * Paper and ink everywhere; each book brings its own color (src/lib/color.ts),
+ * which shows on spines and covers and, inside a book, as the one accent.
+ */
+
+/* ---------- Tokens ---------- */
+
+:root {
+  color-scheme: light;
+
+  /* Cream paperback stock and printing ink. Neutrals lean toward the paper. */
+  --paper: oklch(97.2% 0.013 92);
+  --paper-2: oklch(94.8% 0.016 88);
+  --paper-3: oklch(91.5% 0.018 84);
+  --ink: oklch(25.5% 0.018 70);
+  --ink-2: oklch(40% 0.018 70);
+  --ink-3: oklch(47% 0.016 70);
+  --rule: oklch(86% 0.014 85);
+  --rule-strong: oklch(70% 0.018 80);
+  --plank: oklch(66% 0.05 62);
+  --plank-shadow: oklch(52% 0.045 58);
+  --shelf-wall: oklch(94.2% 0.018 86);
+  --focus: oklch(50% 0.16 262);
+  --review: oklch(93% 0.08 98);
+
+  /* Per-book colors arrive as --spine-* / --accent-* / --tint-* (light and dark). */
+  --accent: var(--accent-light, var(--ink));
+  --tint: var(--tint-light, var(--paper-2));
+  --spine-face: var(--spine-bg, var(--ink));
+
+  /* Type. Alegreya for reading, Alegreya Sans for display, Sans SC for labels. */
+  --font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+  --text-xs: 0.8125rem;
+  --text-sm: 0.9375rem;
+  --text-base: clamp(1.125rem, 1.06rem + 0.28vw, 1.25rem);
+  --text-lg: clamp(1.375rem, 1.25rem + 0.5vw, 1.625rem);
+  --text-xl: clamp(1.875rem, 1.55rem + 1.4vw, 2.625rem);
+  --text-2xl: clamp(2.5rem, 1.9rem + 2.6vw, 4rem);
+  --text-3xl: clamp(3rem, 2.1rem + 4.2vw, 5.75rem);
+  --leading: 1.6;
+  /* About 66 characters of Alegreya at 20px (66ch rendered ~85: ch is the wide '0'). */
+  --measure: 34rem;
+
+  /* Space, 4pt base. */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --gutter: clamp(1rem, 0.6rem + 2vw, 2.5rem);
+
+  --radius: 4px;
+  --ease-out: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --paper: oklch(20.5% 0.012 70);
+    --paper-2: oklch(23.5% 0.013 70);
+    --paper-3: oklch(27.5% 0.014 70);
+    --ink: oklch(92.5% 0.012 90);
+    --ink-2: oklch(81% 0.014 85);
+    --ink-3: oklch(72% 0.014 80);
+    --rule: oklch(33% 0.012 70);
+    --rule-strong: oklch(47% 0.014 72);
+    --plank: oklch(38% 0.04 58);
+    --plank-shadow: oklch(15% 0.02 58);
+    --shelf-wall: oklch(22.5% 0.013 70);
+    --focus: oklch(76% 0.13 262);
+    --review: oklch(34% 0.07 98);
+    --accent: var(--accent-dark, var(--ink));
+    --tint: var(--tint-dark, var(--paper-2));
+    --spine-face: var(--spine-bg-dark, var(--spine-bg, var(--ink)));
+  }
+}
+
+/* The Dark Souls book is read by the bonfire, whatever the system says. */
+:root[data-theme='ds'] {
+  color-scheme: dark;
+  --paper: oklch(17.5% 0.014 48);
+  --paper-2: oklch(21% 0.016 48);
+  --paper-3: oklch(25% 0.018 48);
+  --ink: oklch(90% 0.025 80);
+  --ink-2: oklch(80% 0.03 75);
+  --ink-3: oklch(71% 0.03 70);
+  --rule: oklch(31% 0.02 50);
+  --rule-strong: oklch(46% 0.03 52);
+  --focus: oklch(80% 0.14 75);
+  --review: oklch(34% 0.07 98);
+  --accent: oklch(76% 0.15 60);
+  --tint: oklch(24% 0.04 52);
+  --spine-face: var(--spine-bg-dark, var(--spine-bg));
+}
+
+/*
+ * Custom properties resolve where they are declared, so the derived colors
+ * must be re-declared on every element that carries a book's raw colors
+ * (spines, covers, and <html> on a book's pages).
+ */
+[data-book-colors] {
+  --spine-face: var(--spine-bg);
+  --accent: var(--accent-light);
+  --tint: var(--tint-light);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) [data-book-colors],
+  :root:not([data-theme='light'])[data-book-colors] {
+    --spine-face: var(--spine-bg-dark);
+    --accent: var(--accent-dark);
+    --tint: var(--tint-dark);
+  }
+}
+:root[data-theme='ds'] [data-book-colors] {
+  --spine-face: var(--spine-bg-dark);
+}
+
+/* ---------- Base ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: 4.5rem;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-text);
+  font-size: var(--text-base);
+  line-height: var(--leading);
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  flex: 1;
+}
+main:focus {
+  outline: none;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+::selection {
+  background: color-mix(in oklch, var(--accent) 22%, var(--paper));
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+.vh {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  inset-inline-start: var(--space-4);
+  inset-block-start: -10rem;
+  z-index: 100;
+  padding: var(--space-2) var(--space-4);
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: var(--radius);
+}
+.skip-link:focus {
+  inset-block-start: var(--space-3);
+}
+
+.label {
+  font-family: var(--font-caps);
+  font-weight: 500;
+  font-size: var(--text-sm);
+  letter-spacing: 0.04em;
+  line-height: 1.3;
+}
+
+kbd {
+  font-family: var(--font-mono);
+  font-size: 0.78em;
+  padding: 0.05em 0.4em;
+  border: 1px solid var(--rule-strong);
+  border-bottom-width: 2px;
+  border-radius: 3px;
+  background: var(--paper);
+  color: var(--ink-2);
+}
+
+/* ---------- Reading pages (chapters, loose pages) ---------- */
+
+.reading-head {
+  padding-block: var(--space-8) var(--space-6);
+}
+.kicker {
+  margin: 0 0 var(--space-3);
+  color: var(--accent);
+  font-weight: 700;
+}
+.reading-head h1 {
+  margin: 0;
+  font-family: var(--font-text);
+  font-weight: 800;
+  font-size: var(--text-2xl);
+  line-height: 1.04;
+  letter-spacing: -0.015em;
+}
+.dek {
+  margin: var(--space-4) 0 0;
+  font-style: italic;
+  font-size: var(--text-lg);
+  line-height: 1.35;
+  color: var(--ink-2);
+  text-wrap: pretty;
+}
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-5);
+  margin: var(--space-5) 0 0;
+  color: var(--ink-3);
+  font-family: var(--font-caps);
+  font-weight: 500;
+  font-size: var(--text-sm);
+  letter-spacing: 0.03em;
+}
+.reading-plate {
+  margin-block-end: var(--space-7);
+}
+.reading-body {
+  display: grid;
+  grid-template-columns:
+    minmax(var(--gutter), 1fr)
+    min(var(--measure), calc(100% - 2 * var(--gutter)))
+    minmax(var(--gutter), 1fr);
+}
+.reading-body > * {
+  grid-column: 2;
+}
+.reading-body > .toc-side {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: end;
+  align-self: start;
+  inline-size: min(15rem, 100% - var(--space-7) - var(--gutter));
+  margin-inline: var(--gutter) var(--space-7);
+}
+
+:root[data-theme='ds'] .reading-head h1 {
+  font-family: var(--font-caps);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* ---------- Reading column ---------- */
+
+/* The reading column, with the page gutters built in. */
+.measure {
+  width: min(var(--measure), 100% - 2 * var(--gutter));
+  margin-inline: auto;
+}
+
+.prose {
+  font-size: var(--text-base);
+  line-height: var(--leading);
+  overflow-wrap: break-word;
+}
+
+.prose > * {
+  margin-block: 0;
+}
+.prose > * + * {
+  margin-block-start: 1em;
+}
+
+.prose p,
+.prose li {
+  text-wrap: pretty;
+  hanging-punctuation: first;
+}
+
+.prose h2,
+.prose h3,
+.prose h4 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+}
+.prose h2 {
+  font-size: var(--text-lg);
+  font-weight: 800;
+  margin-block-start: 2.2em;
+}
+.prose h3 {
+  font-size: 1.15em;
+  font-weight: 700;
+  margin-block-start: 1.8em;
+}
+.prose h4 {
+  font-family: var(--font-caps);
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-block-start: 1.6em;
+}
+.prose :is(h2, h3, h4) + * {
+  margin-block-start: 0.6em;
+}
+
+.prose a {
+  color: var(--accent);
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+.prose a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.prose strong {
+  font-weight: 700;
+}
+.prose del {
+  color: var(--ink-3);
+  text-decoration-thickness: 1.5px;
+}
+
+.prose ul,
+.prose ol {
+  padding-inline-start: 1.3em;
+}
+.prose li + li,
+.prose li > ul,
+.prose li > ol {
+  margin-block-start: 0.4em;
+}
+.prose ul > li::marker {
+  color: var(--accent);
+  content: '\2022\00a0\00a0';
+}
+.prose ol > li::marker {
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.prose blockquote {
+  position: relative;
+  margin-inline: 0;
+  padding-inline-start: 1.6em;
+  font-style: italic;
+  color: var(--ink-2);
+}
+.prose blockquote::before {
+  content: '\201C';
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-start: -0.12em;
+  font-family: var(--font-text);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.1em;
+  line-height: 1;
+  color: var(--accent);
+}
+.prose blockquote > * + * {
+  margin-block-start: 0.6em;
+}
+
+.prose hr {
+  border: 0;
+  margin-block: 2.4em;
+  text-align: center;
+  overflow: visible;
+  height: auto;
+}
+/* A rule before any text is a leftover separator from the old header image. */
+.prose > hr:first-child {
+  display: none;
+}
+.prose hr::before {
+  content: '\2042';
+  font-family: var(--font-text);
+  font-size: 1.25em;
+  color: var(--accent);
+  letter-spacing: 0;
+}
+
+.prose :not(pre) > code {
+  font-family: var(--font-mono);
+  font-size: 0.84em;
+  padding: 0.08em 0.32em;
+  border-radius: 3px;
+  background: var(--paper-3);
+  overflow-wrap: anywhere;
+}
+
+.prose pre {
+  position: relative;
+  padding: var(--space-4) var(--space-5);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  line-height: 1.6;
+  overflow-x: auto;
+  tab-size: 2;
+}
+.prose pre code {
+  font-family: inherit;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92em;
+  line-height: 1.45;
+  font-variant-numeric: tabular-nums;
+}
+.prose th {
+  text-align: start;
+  font-family: var(--font-display);
+  font-weight: 700;
+  border-bottom: 2px solid var(--rule-strong);
+  padding: 0.5em 0.8em 0.5em 0;
+  vertical-align: bottom;
+}
+.prose td {
+  border-bottom: 1px solid var(--rule);
+  padding: 0.55em 0.8em 0.55em 0;
+  vertical-align: top;
+}
+.table-scroll {
+  overflow-x: auto;
+}
+.table-scroll:focus-visible {
+  outline-offset: 2px;
+}
+
+.prose details {
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: var(--space-3) var(--space-4);
+  background: var(--paper-2);
+}
+.prose details > * + * {
+  margin-block-start: 0.8em;
+}
+.prose summary {
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-weight: 700;
+  list-style-position: outside;
+  margin-inline-start: 1em;
+}
+.prose summary::marker {
+  color: var(--accent);
+}
+
+.prose img,
+.prose video {
+  border-radius: var(--radius);
+  margin-inline: auto;
+}
+.prose video {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+  background: var(--paper-2);
+}
+.prose p:has(> img:only-child) {
+  margin-block: 1.5em;
+}
+
+/* UI names in tutorials ("Panel Macro", "Code Block"): set like a key cap. */
+.prose .ui {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.92em;
+  padding: 0 0.3em;
+  border-radius: 3px;
+  background: var(--paper-3);
+  white-space: nowrap;
+}
+
+/* Enhancements from src/scripts/enhance.ts. */
+.copy-code {
+  position: absolute;
+  inset-block-start: var(--space-2);
+  inset-inline-end: var(--space-2);
+  padding: 0.2em 0.6em;
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--ink-2);
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 160ms var(--ease-out);
+}
+.prose pre:hover .copy-code,
+.copy-code:focus-visible {
+  opacity: 1;
+}
+@media (hover: none) {
+  .copy-code {
+    opacity: 1;
+  }
+}
+
+.prose button.peek {
+  font: inherit;
+  color: var(--accent);
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline dotted;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.2em;
+}
+.prose button.peek::after {
+  content: '\00a0+';
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+.prose button.peek[aria-expanded='true']::after {
+  content: '\00a0\2212';
+}
+.peek-figure {
+  margin: var(--space-3) 0 var(--space-2);
+}
+.peek-figure img {
+  max-inline-size: min(100%, 22rem);
+  border-radius: var(--radius);
+  border: 1px solid var(--rule);
+  background: var(--paper-2);
+}
+
+.prose button.widen {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+}
+.prose .is-wide {
+  --wide: min(100vw - 2 * var(--gutter), 72rem);
+  inline-size: var(--wide);
+  margin-inline: calc((100% - var(--wide)) / 2);
+}
+.prose .is-wide button.widen {
+  cursor: zoom-out;
+}
+
+/* Text added in the book pass, waiting for the author. Visible only in dev. */
+.dev [data-review] {
+  background: var(--review);
+  outline: 1px dashed var(--rule-strong);
+  outline-offset: 2px;
+}
+
+/* Shiki dual themes: light by default, dark tokens on a dark page. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .astro-code,
+  :root:not([data-theme='light']) .astro-code span {
+    color: var(--shiki-dark) !important;
+    background-color: var(--shiki-dark-bg) !important;
+  }
+}
+:root[data-theme='ds'] .astro-code,
+:root[data-theme='ds'] .astro-code span {
+  color: var(--shiki-dark) !important;
+  background-color: var(--shiki-dark-bg) !important;
+}
+
+/* ---------- Motion ---------- */
+
+@view-transition {
+  navigation: auto;
+}
+::view-transition-group(*) {
+  animation-duration: 360ms;
+  animation-timing-function: var(--ease-out-expo);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- Print: a chapter should print like a page from the book ---------- */
+
+@media print {
+  :root {
+    --paper: #fffdf8;
+    --ink: #1d1a16;
+  }
+  .site-header,
+  .site-footer,
+  .running-head,
+  .chapter-end,
+  .toc,
+  .search-panel,
+  .copy-code,
+  .skip-link {
+    display: none !important;
+  }
+  body {
+    font-size: 11pt;
+  }
+  .prose a[href^='http']::after {
+    content: ' (' attr(href) ')';
+    font-size: 0.85em;
+    color: #555;
+    overflow-wrap: anywhere;
+  }
+  .prose pre,
+  .prose img,
+  .prose table {
+    break-inside: avoid;
+  }
+  .prose button.peek {
+    color: inherit;
+    text-decoration: none;
+  }
+  .prose button.peek::after {
+    content: none;
+  }
+}

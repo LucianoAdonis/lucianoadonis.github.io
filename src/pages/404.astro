@@ -1,0 +1,85 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import droids from '../assets/images/headers/transparent-star-wars-there-arent-the-droids.png';
+---
+<Base title="Page Not Found" description="Try Harder" noindex>
+  <section class="lost">
+    <div class="copy">
+      <p class="kicker label">404</p>
+      <h1>Page Not Found</h1>
+      <p class="dek">Try Harder.</p>
+      <p class="ways">
+        <a href="/">Back to the shelf</a>
+        <button type="button" popovertarget="search">Search the library</button>
+      </p>
+    </div>
+    <Image
+      class="droids"
+      src={droids}
+      alt="C-3PO and R2-D2 in fake glasses and mustaches, over the line: these aren't the droids you're looking for"
+      widths={[600, 1000, 1400]}
+      sizes="(min-width: 60rem) 44rem, 100vw"
+      loading="eager"
+    />
+  </section>
+</Base>
+
+<style>
+  .lost {
+    width: min(72rem, 100% - 2 * var(--gutter));
+    margin: var(--space-8) auto 0;
+    display: grid;
+    gap: var(--space-6);
+    align-items: end;
+  }
+  @media (min-width: 56rem) {
+    .lost {
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    }
+  }
+  h1 {
+    margin: 0;
+    font-family: var(--font-text);
+    font-weight: 800;
+    font-size: var(--text-2xl);
+    line-height: 1.05;
+  }
+  .ways {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin: var(--space-6) 0 0;
+  }
+  .ways a,
+  .ways button {
+    display: inline-flex;
+    align-items: center;
+    min-block-size: 2.75rem;
+    padding: 0 var(--space-4);
+    font: inherit;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-sm);
+    border-radius: var(--radius);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .ways a {
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .ways button {
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--ink-3);
+  }
+  /* The PNG's left half is empty; crop to the droids. */
+  .droids {
+    inline-size: 100%;
+    block-size: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: 100% 100%;
+  }
+</style>

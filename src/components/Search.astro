@@ -1,0 +1,138 @@
+---
+/**
+ * Full-text search over the built site (Pagefind). A non-modal popover under
+ * the header: the page stays readable behind it, Esc or a click outside closes
+ * it, "/" opens it. The index only exists after `npm run build`.
+ */
+---
+<div id="search" class="search-panel" popover>
+  <search>
+    <form class="search-form" action="/" role="search">
+      <label for="search-input" class="vh">Search the library</label>
+      <input
+        id="search-input"
+        type="search"
+        placeholder="Search the library"
+        autocomplete="off"
+        spellcheck="false"
+        enterkeyhint="go"
+      />
+      <button type="button" class="search-close" popovertarget="search" popovertargetaction="hide">
+        <span class="vh">Close search</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"></path></svg>
+      </button>
+    </form>
+    <p class="search-status" role="status" aria-live="polite"></p>
+    <ol class="search-results" role="list"></ol>
+  </search>
+</div>
+
+<script>
+  import { initSearch } from '../scripts/search';
+  initSearch();
+</script>
+
+<style is:global>
+  .search-panel {
+    position: fixed;
+    inset: 4.25rem auto auto 50%;
+    translate: -50% 0;
+    margin: 0;
+    inline-size: min(40rem, calc(100vw - 2rem));
+    max-block-size: min(70vh, 40rem);
+    overflow: auto;
+    padding: var(--space-4);
+    background: var(--paper);
+    color: var(--ink);
+    border: 1px solid var(--rule-strong);
+    border-radius: 6px;
+    box-shadow: 0 24px 60px -28px oklch(18% 0.03 60 / 0.6);
+  }
+  .search-form {
+    display: flex;
+    gap: var(--space-2);
+    align-items: center;
+  }
+  .search-form input {
+    flex: 1;
+    min-inline-size: 0;
+    font: inherit;
+    font-size: 1.125rem;
+    padding: var(--space-2) var(--space-3);
+    color: var(--ink);
+    background: var(--paper-2);
+    border: 1.5px solid var(--ink-3);
+    border-radius: var(--radius);
+  }
+  .search-form input::-webkit-search-cancel-button {
+    appearance: none;
+    display: none;
+  }
+  .search-form input:focus-visible {
+    outline-offset: 1px;
+  }
+  .search-close {
+    display: grid;
+    place-items: center;
+    inline-size: 2.75rem;
+    block-size: 2.75rem;
+    border: 0;
+    border-radius: var(--radius);
+    background: transparent;
+    color: var(--ink-2);
+    cursor: pointer;
+  }
+  .search-close:hover {
+    background: var(--paper-3);
+  }
+  .search-status {
+    margin: var(--space-3) 0 0;
+    color: var(--ink-3);
+    font-size: var(--text-sm);
+  }
+  .search-status:empty {
+    display: none;
+  }
+  .search-results {
+    list-style: none;
+    margin: var(--space-2) 0 0;
+    padding: 0;
+  }
+  .search-results a {
+    display: block;
+    padding: var(--space-3);
+    margin-inline: calc(-1 * var(--space-3));
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: inherit;
+  }
+  .search-results a:hover,
+  .search-results a:focus-visible {
+    background: var(--paper-2);
+  }
+  .search-results .result-book {
+    display: block;
+    color: var(--ink-3);
+    font-size: var(--text-xs);
+  }
+  .search-results .result-title {
+    display: block;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.05rem;
+    line-height: 1.3;
+  }
+  .search-results .result-excerpt {
+    display: block;
+    margin-top: var(--space-1);
+    font-size: 0.95rem;
+    line-height: 1.45;
+    color: var(--ink-2);
+  }
+  .search-results mark {
+    background: color-mix(in oklch, var(--accent) 20%, var(--paper));
+    color: inherit;
+    border-radius: 2px;
+    padding-inline: 0.1em;
+  }
+</style>

@@ -1,0 +1,62 @@
+---
+/**
+ * Book glyphs and the few UI icons, from Lucide (ISC license, lucide-static).
+ * Inlined at build time so they take currentColor and cost no request.
+ */
+import files from 'lucide-static/icons/files.svg?raw';
+import ticket from 'lucide-static/icons/ticket.svg?raw';
+import table from 'lucide-static/icons/table.svg?raw';
+import hash from 'lucide-static/icons/hash.svg?raw';
+import gem from 'lucide-static/icons/gem.svg?raw';
+import scrollText from 'lucide-static/icons/scroll-text.svg?raw';
+import sparkles from 'lucide-static/icons/sparkles.svg?raw';
+import messageSquare from 'lucide-static/icons/message-square.svg?raw';
+import sprout from 'lucide-static/icons/sprout.svg?raw';
+import crown from 'lucide-static/icons/crown.svg?raw';
+import target from 'lucide-static/icons/target.svg?raw';
+import siren from 'lucide-static/icons/siren.svg?raw';
+import flame from 'lucide-static/icons/flame.svg?raw';
+import penLine from 'lucide-static/icons/pen-line.svg?raw';
+import wrench from 'lucide-static/icons/wrench.svg?raw';
+import chessKnight from 'lucide-static/icons/chess-knight.svg?raw';
+import toyBrick from 'lucide-static/icons/toy-brick.svg?raw';
+import dice5 from 'lucide-static/icons/dice-5.svg?raw';
+import shoppingCart from 'lucide-static/icons/shopping-cart.svg?raw';
+import lock from 'lucide-static/icons/lock.svg?raw';
+import bookOpen from 'lucide-static/icons/book-open.svg?raw';
+import search from 'lucide-static/icons/search.svg?raw';
+import arrowRight from 'lucide-static/icons/arrow-right.svg?raw';
+import arrowLeft from 'lucide-static/icons/arrow-left.svg?raw';
+import arrowUpRight from 'lucide-static/icons/arrow-up-right.svg?raw';
+import copy from 'lucide-static/icons/copy.svg?raw';
+import check from 'lucide-static/icons/check.svg?raw';
+import x from 'lucide-static/icons/x.svg?raw';
+
+const ICONS: Record<string, string> = {
+  pages: files, ticket, table, hash, gem, scroll: scrollText, spark: sparkles, message: messageSquare,
+  sprout, crown, target, siren, bonfire: flame, pen: penLine, wrench, knight: chessKnight,
+  brick: toyBrick, dice: dice5, cart: shoppingCart, lock, book: bookOpen,
+  search, 'arrow-right': arrowRight, 'arrow-left': arrowLeft, 'arrow-up-right': arrowUpRight, copy, check, x,
+};
+
+interface Props {
+  name: string;
+  size?: number | string;
+  class?: string;
+  strokeWidth?: number;
+}
+const { name, size = '1em', class: className, strokeWidth = 1.75 } = Astro.props;
+const raw = ICONS[name];
+if (!raw) throw new Error(`Glyph: no icon named "${name}"`);
+// Rewrite only the opening <svg> tag: the shapes inside (a <rect>'s width and
+// height) must keep their attributes, or icons like lock and table lose parts.
+const svg = raw
+  .replace(/<!--[\s\S]*?-->/g, '')
+  .replace(/<svg\b[^>]*>/, (tag) =>
+    tag
+      .replace(/\s(width|height|class)="[^"]*"/g, '')
+      .replace(/stroke-width="[^"]*"/, `stroke-width="${strokeWidth}"`)
+      .replace('<svg', `<svg aria-hidden="true" focusable="false" width="${size}" height="${size}"${className ? ` class="${className}"` : ''}`)
+  );
+---
+<Fragment set:html={svg} />

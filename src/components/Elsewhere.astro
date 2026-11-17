@@ -1,0 +1,92 @@
+---
+/**
+ * Where a book's job went. "superseded" is a box near the top of the book: the
+ * catalog or method lives on a Neorgon site now, and the book keeps the essay.
+ * "related" is one quiet line under the contents.
+ */
+import Glyph from './Glyph.astro';
+import type { Page } from '../lib/library';
+
+interface Props {
+  elsewhere: NonNullable<Page['data']['elsewhere']>;
+}
+const { elsewhere } = Astro.props;
+---
+{
+  elsewhere.relation === 'superseded' ? (
+    <aside class="moved" aria-labelledby="moved-title">
+      <p id="moved-title" class="moved-title label">Moved on</p>
+      <p class="moved-note">{elsewhere.note}</p>
+      <a class="moved-link" href={elsewhere.url}>
+        Open {elsewhere.name}
+        <Glyph name="arrow-up-right" size="1.05em" strokeWidth={2} />
+      </a>
+    </aside>
+  ) : (
+    <p class="related">
+      <span class="related-k label">Related</span>
+      <a href={elsewhere.url}>{elsewhere.name}</a>
+      <span>{elsewhere.note}</span>
+    </p>
+  )
+}
+
+<style>
+  .moved {
+    display: grid;
+    gap: var(--space-2);
+    padding: var(--space-4) var(--space-5);
+    background: var(--tint);
+    border: 1px solid oklch(from var(--accent) l c h / 0.35);
+    border-radius: 6px;
+  }
+  .moved-title {
+    margin: 0;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  .moved-note {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.45;
+  }
+  .moved-link {
+    justify-self: start;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    margin-top: var(--space-1);
+    min-block-size: 2.75rem;
+    padding: 0 var(--space-4);
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--paper);
+    background: var(--accent);
+    border-radius: var(--radius);
+    text-decoration: none;
+  }
+  .moved-link:hover {
+    background: oklch(from var(--accent) calc(l - 0.06) c h);
+  }
+  .related {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--space-1) var(--space-2);
+    margin: 0;
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--rule);
+    color: var(--ink-2);
+    font-size: 1rem;
+  }
+  .related-k {
+    color: var(--ink-3);
+    font-size: var(--text-xs);
+  }
+  .related a {
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--accent);
+    text-underline-offset: 0.2em;
+  }
+</style>

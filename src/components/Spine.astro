@@ -1,0 +1,191 @@
+---
+/**
+ * One book standing on the shelf. Thickness follows the book's length, height
+ * varies a little per book (stable, from its id), and the title is sized at
+ * build time to fit up the spine.
+ */
+import Glyph from './Glyph.astro';
+import StatusMark from './StatusMark.astro';
+import { STATUS, partsText, type Book } from '../lib/library';
+import { bookColors, bookStyle } from '../lib/color';
+import { monthYear, monthYearLong } from '../lib/dates';
+
+interface Props {
+  book: Book;
+  maxWords: number;
+  /** Align the hover slip to the spine's right edge (books near the end of a row). */
+  edge?: 'start' | 'end';
+  /** Give this spine the view-transition name its cover uses. */
+  morph?: boolean;
+}
+const { book, maxWords, edge = 'start', morph = false } = Astro.props;
+
+const hash = [...book.id].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) >>> 0, 7);
+const width = Math.round(36 + 38 * Math.sqrt(book.words / maxWords));
+const height = 214 + (hash % 6) * 6;
+const room = height - 80; // glyph above, status below
+
+// Small caps run about 0.56em per character. One line if it fits at 13px+,
+// otherwise two lines if the spine is thick enough, otherwise three.
+const n = book.title.length;
+const fit = (lines: number, max: number) => Math.min(max, ((room * lines) / (n * 0.56)) * (lines > 1 ? 0.9 : 1));
+let size = fit(1, 17);
+if (size < 13) {
+  const two = fit(2, 15);
+  size = 2 * two * 1.1 <= width - 14 ? two : Math.max(11, fit(3, 13));
+}
+size = Math.max(10.5, Math.round(size * 10) / 10);
+
+const colors = bookColors(book.hue);
+const parts = book.chapters.length;
+const style = [
+  bookStyle(book.hue),
+  `--w:${width}px`,
+  `--h:${height}px`,
+  `--room:${room}px`,
+  `--title:${size}px`,
+  morph ? `view-transition-name:book-${book.id}` : '',
+].filter(Boolean).join(';');
+---
+<a class="spine" href={`/pages/${book.id}`} style={style} data-book-colors data-mode={colors.spineMode} data-edge={edge}>
+  <span class="glyph"><Glyph name={book.glyph} size="20" strokeWidth={1.9} /></span>
+  <span class="title">{book.title}</span>
+  <span class="mark"><StatusMark status={book.status} size="13px" silent /></span>
+  <span class="vh">, {STATUS[book.status].label}, {partsText(parts)}, revised {monthYearLong(book.revised)}</span>
+  <span class="slip" aria-hidden="true">
+    <span class="slip-desc">{book.description}</span>
+    <span class="slip-meta label">{STATUS[book.status].label} · {partsText(parts)} · {book.minutes} min · revised {monthYear(book.revised)}</span>
+  </span>
+</a>
+
+<style>
+  .spine {
+    position: relative;
+    display: grid;
+    grid-template-rows: 34px 1fr 30px;
+    justify-items: center;
+    align-items: center;
+    inline-size: calc(var(--w) * var(--spine-scale, 1));
+    block-size: calc(var(--h) * var(--spine-scale, 1));
+    padding-block: 6px;
+    color: var(--spine-fg);
+    text-decoration: none;
+    border-radius: 3px 3px 1px 1px;
+    background:
+      linear-gradient(
+        90deg,
+        oklch(from var(--spine-face) calc(l - 0.07) c h) 0%,
+        var(--spine-face) 14%,
+        oklch(from var(--spine-face) calc(l + 0.025) c h) 42%,
+        var(--spine-face) 72%,
+        oklch(from var(--spine-face) calc(l - 0.1) c h) 100%
+      );
+    transition: transform 280ms var(--ease-out);
+  }
+  /* Printed bands near the head and foot of the spine. */
+  .spine::before,
+  .spine::after {
+    content: '';
+    position: absolute;
+    inset-inline: 5px;
+    block-size: 1.5px;
+    background: oklch(from var(--spine-fg) l c h / 0.42);
+  }
+  .spine::before {
+    inset-block-start: 40px;
+  }
+  .spine::after {
+    inset-block-end: 34px;
+  }
+
+  .spine:hover,
+  .spine:focus-visible {
+    transform: translateY(-10px);
+    /* The lift makes a stacking context; raise it so the slip paints over the neighbors. */
+    z-index: 5;
+  }
+  .spine:focus-visible {
+    outline-offset: 4px;
+  }
+
+  .glyph,
+  .mark {
+    display: grid;
+    place-items: center;
+  }
+  .title {
+    writing-mode: vertical-rl;
+    inline-size: calc(var(--room) * var(--spine-scale, 1));
+    max-block-size: calc(var(--w) * var(--spine-scale, 1) - 10px);
+    font-family: var(--font-caps);
+    font-weight: 700;
+    font-size: calc(var(--title) * var(--spine-scale, 1));
+    line-height: 1.08;
+    letter-spacing: 0.03em;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  /*
+   * The slip opens beside the spine (like reading the back of a book you pulled
+   * out), so it never covers the shelf label or the toolbar. WCAG 1.4.13: it stays
+   * open while the pointer moves onto it (the ::before bridge spans the gap, and
+   * the slip is inside the link, so hovering it keeps the spine hovered), and
+   * Escape dismisses it (enhance.ts sets data-slip="off").
+   */
+  .slip {
+    position: absolute;
+    inset-block-start: 18px;
+    inset-inline-start: calc(100% + 12px);
+    z-index: 10;
+    inline-size: min(18rem, 80vw);
+    display: grid;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-4);
+    background: var(--paper);
+    color: var(--ink);
+    border: 1px solid var(--rule-strong);
+    border-radius: var(--radius);
+    box-shadow: 0 14px 30px -18px oklch(18% 0.03 60 / 0.55);
+    text-align: start;
+    font-family: var(--font-text);
+    font-size: 1rem;
+    line-height: 1.35;
+    /* Out of layout until shown: a hidden but laid-out slip still widens the page. */
+    display: none;
+  }
+  .slip::before {
+    content: '';
+    position: absolute;
+    inset-block: 0;
+    inset-inline-end: 100%;
+    inline-size: 14px;
+  }
+  .spine[data-edge='end'] .slip {
+    inset-inline-start: auto;
+    inset-inline-end: calc(100% + 12px);
+  }
+  .spine[data-edge='end'] .slip::before {
+    inset-inline-end: auto;
+    inset-inline-start: 100%;
+  }
+  .slip-meta {
+    color: var(--ink-3);
+    font-size: var(--text-xs);
+  }
+  .spine:is(:hover, :focus-visible):not([data-slip='off']) .slip {
+    display: grid;
+    animation: slip-in 240ms var(--ease-out);
+  }
+  @keyframes slip-in {
+    from {
+      opacity: 0;
+      translate: -6px 0;
+    }
+  }
+  @media (hover: none) {
+    .spine:is(:hover, :focus-visible) .slip {
+      display: none;
+    }
+  }
+</style>

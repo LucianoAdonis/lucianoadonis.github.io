@@ -11,86 +11,18 @@ DevsChile as always!
 ## Quick Start
 
 ```bash
-make local   # Install deps + serve at http://127.0.0.1:4000
-make run     # Serve (deps already installed) + open browser
+make install   # dependencies
+make dev       # http://localhost:4321
+make check     # typecheck, voice lint, build and site checks: run before a PR
 ```
 
-## Content Structure
-
-### Front Matter
-
-Every content page needs at minimum:
-
-```yaml
----
-layout: custom
-title: Page Title
-description: Short description
-status: red          # green | yellow | orange | red
-category: educational # optimization | educational | self-help | mentoring | theory | meta
----
-```
-
-Chapter pages also need:
-
-```yaml
-book: book-slug      # parent book slug
-chapter: 1           # numeric order (supports 0, 1.5, etc.)
-```
-
-### File Naming
-
-- Book home: `pages/<book-slug>.md` (e.g., `pages/confluence.md`)
-- Chapters: `pages/<book-slug>-chapter-<N>.md` (e.g., `pages/confluence-chapter-1.md`)
-- Use hyphens, lowercase, no spaces
-
-### Links
-
-Always use absolute paths without `.md` extension:
-
-```markdown
-[Link Text](/pages/page-name)        # correct
-[Link Text](./pages/page-name.md)    # incorrect
-```
-
-### Navigation
-
-Chapter pages use the automated navigation include. Add this at the top and bottom of chapter content:
-
-```liquid
-{% include chapter-nav.html %}
-```
-
-Book home pages use manual nav buttons:
-
-```html
-<div class="nav-buttons">
-  <a href="/pages/book-slug-chapter-1" class="custom-button left"><strong>Chapter 1</strong></a>
-</div>
-```
-
-### Button Classes
-
-Use `custom-button` with `left`/`right` modifiers inside `nav-buttons` containers. Do not use `ds-button`.
-
-### Images
-
-- Store in `images/` organized by topic (e.g., `images/confluence/`)
-- Header images go in `images/headers/`
-- Use `class="myImg"` for clickable modal images
-
-### Status Indicators
-
-- **green**: Nearly Done
-- **yellow**: Draft
-- **orange**: Jottings
-- **red**: Barely Started
-
-## Scaffolding
-
-Create new content from templates:
+## Adding Things
 
 ```bash
-make new-book slug=my-book title="My Book" category=educational
-make new-chapter slug=my-book chapter=1 title="My Book" category=educational desc="Chapter description"
+make new-book slug=my-book title="My Book" shelf=tools hue=200 glyph=book
+make new-chapter book=my-book chapter=1 title="First Chapter"
 ```
+
+Both write a file under `src/content/pages/` from `templates/`. The front matter, the statuses and the structure rules are in [AGENTS.md](AGENTS.md); the voice is in [VOICE.md](VOICE.md).
+
+Links between pages are absolute (`/pages/page-name`), images go under `src/assets/images/` and are linked with a relative Markdown path, and every page URL that ever existed has to keep working (`scripts/legacy-urls.txt`).

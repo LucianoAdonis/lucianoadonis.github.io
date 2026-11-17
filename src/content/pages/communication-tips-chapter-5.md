@@ -1,0 +1,178 @@
+---
+title: Incident Response Communication
+description: Channel selection, escalation paths, severity definitions, and post-incident checklists.
+status: yellow
+started: 2024-11-22
+revised: 2026-02-21
+book: communication-tips
+chapter: 5
+plate: ../../assets/images/headers/purple-computer.png
+plateAlt: "Isometric illustration on a purple background: a server tower, a monitor showing code brackets, a phone, an HTML tile, a chart tile, a pen and a red book."
+---
+
+Something broke. Here's where to post, what to say, and when to escalate.
+
+## Calling for Help
+
+### Channel Selection Guidelines
+
+Where you post depends on the scope of the incident:
+
+1. **Private Group** (for initial triage)
+   - Single environment impact
+   - Minor component affected
+   - Limited scope (fewer than 5 people involved)
+   - Uncertain team ownership
+
+2. **Public Channel** (mandatory for)
+   - Multi-environment impact
+   - Critical component affected
+   - Multiple teams involved
+   - Potential widespread impact
+   - Escalated incidents
+
+### Team Engagement Protocol
+
+#### Development Team Engagement
+
+- Post in the squad's dev channel.
+- Tag relevant subject matter experts.
+- Include:
+  - Error logs
+  - Environment details
+  - Recent changes
+  - Impact assessment
+
+#### Infrastructure Team Engagement
+
+- Contact the current on-call engineer first.
+- Provide:
+  - Infrastructure metrics
+  - Alert screenshots
+  - Access issues
+  - System health indicators
+
+#### Cross-team Collaboration
+
+- Create a war room channel if needed.
+- Establish a single communication channel for the incident.
+- Designate an incident commander.
+- Assign a note-taker.
+
+## Message Templates
+
+### Initial Alert
+
+```
+🚨 Incident Alert
+• Issue: [Brief description]
+• Impact: [Affected services/users]
+• Environment: [Dev/Staging/Prod]
+• Current status: [Investigating/Identified/In Progress]
+• Severity: [P1/P2/P3/P4]
+• Started at: [Time]
+CC: @oncall @teamlead
+```
+
+### Assistance Request
+
+```
+Need assistance with:
+• Component: [System/Service name]
+• Problem: [Specific issue]
+• Attempted: [Actions taken so far]
+• Logs: [Link to logs]
+• Access needed: [Yes/No]
+Priority: [Urgent/High/Medium/Low]
+```
+
+## Incident Management Process
+
+### 1. Detection and Triage
+
+- Identify severity level.
+- Determine the immediate response team.
+- Create a dedicated incident channel if needed.
+- Start incident documentation.
+
+### 2. Communication Flow
+
+| Severity | Update Frequency |
+|----------|-----------------|
+| P1 | Every 30 minutes |
+| P2 | Every 60 minutes |
+| P3 | Every 2 hours |
+| P4 | Final update post-resolution |
+
+### 3. Escalation Path
+
+```
+L1 Support (15 min) → L2 Engineer (30 min) → Team Lead (45 min) → Department Head (60 min)
+```
+
+Each transition should include a handoff message summarizing what's been tried so far.
+
+## Incident Severity Definitions
+
+| Severity | Definition | Example |
+|----------|------------|---------|
+| **P1** | Service down, customer impact | Production API returning 500s for all users |
+| **P2** | Degraded service, workaround exists | Slow response times, users can retry |
+| **P3** | Minor impact, non-critical | A single internal tool is unavailable |
+| **P4** | Minimal impact, can be scheduled | A cosmetic bug in the admin panel |
+
+## Communication Channels Matrix
+
+| Severity | Primary Channel | Secondary Channel | Update Frequency |
+|----------|----------------|-------------------|------------------|
+| P1 | `#incidents` | Team Slack/Teams | 30 min |
+| P2 | `#team-channel` | Email | 60 min |
+| P3 | `#team-channel` | none | 120 min |
+| P4 | Squad channel | none | Daily |
+
+## Post-Incident Actions
+
+### Immediate Actions
+
+- [ ] Post resolution update in all relevant channels:
+  - Development
+  - DevOps
+  - Scrum
+  - Status page
+- [ ] Create incident report ticket
+- [ ] Schedule immediate debrief if needed
+
+### Documentation Requirements
+
+- [ ] Incident timeline
+- [ ] Root cause analysis
+- [ ] Resolution steps taken
+- [ ] Customer impact assessment
+- [ ] Prevention measures
+
+### Follow-up Tasks
+
+- [ ] Create tickets for:
+  - Incident documentation
+  - Action items
+  - System improvements
+  - Process updates
+- [ ] Schedule post-mortem meeting
+- [ ] Update runbooks and documentation
+- [ ] Review monitoring and alerts
+
+## Best Practices
+
+**Do:**
+- Keep communication clear and concise.
+- Use thread discussions for technical details.
+- Document all decisions as they happen.
+- Follow escalation procedures.
+- Update status regularly, even if there's no new information.
+
+**Don't:**
+- Spam multiple channels with the same message.
+- Leave status updates hanging without a resolution message.
+- Make assumptions about root cause before investigation.
+- Work in isolation during a team-wide incident.
+- Forget to close the loop with a final "resolved" message.

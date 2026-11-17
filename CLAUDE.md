@@ -1,106 +1,50 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Luciano's Library: a personal library of mini-books (short, multi-chapter guides on work tools, interviews, hiring, mentoring and a few theories). Astro 7 static site, deployed to GitHub Pages at minibooks.lucianoadonis.com by `.github/workflows/deploy.yml`.
 
-## Project Overview
+## Read first
 
-Jekyll-based GitHub Pages site serving as a personal knowledge library of "mini-books" on technical and professional topics. Live at https://lucianoadonis.github.io/.
+| For | Read |
+|---|---|
+| How the prose must sound | `VOICE.md` (measured from the author's 2024-25 writing; it outranks AGENTS.md and any generic style guide) |
+| How a page is structured, front matter, statuses | `AGENTS.md` |
+| Who the site is for, design principles, anti-references | `PRODUCT.md` |
+| The visual system (tokens, type, spines, covers) | `DESIGN.md` |
 
-## Build & Serve Commands
+## Commands
 
 ```bash
-# Install dependencies and serve locally (also regenerates Gemfile)
-make local
-
-# Serve locally (assumes dependencies already installed) and open browser
-make run
-
-# Create new content from templates
-make new-book slug=my-book title="My Book" category=educational
-make new-chapter slug=my-book chapter=1 title="My Book" category=educational desc="Chapter desc"
-
-# Manual steps if needed
-bundle install --path vendor/bundle
-bundle exec jekyll serve
-# Site available at http://127.0.0.1:4000
+make install    # npm ci
+make dev        # http://localhost:4321; text marked data-review="new" shows highlighted
+make build      # astro build + pagefind index (search only works on a build)
+make preview    # serve the build
+make check      # what CI runs: astro check, voice lint, build, check-site
+make new-book slug=my-book title="My Book" shelf=tools hue=200 glyph=book
+make new-chapter book=my-book chapter=1 title="Chapter Title"
 ```
-
-There are no test or lint commands configured for this project.
 
 ## Architecture
 
-- **Static site generator:** Jekyll 3.10.0 via the `github-pages` gem
-- **Theme:** Remote theme `pages-themes/leap-day@v0.2.0`, customized via `assets/css/style.scss`
-- **Markdown parser:** kramdown with TOC levels 2..3
+- One content collection, `src/content/pages/<slug>.md`, served at `/pages/<slug>`. The schema is `src/content.config.ts`. A file is a **book landing** (has `shelf` and `spine`), a **chapter** (has `book` and `chapter`), a **loose page** (neither; listed under Odds and Ends), a **draft** (`draft: true`, built but unlisted and unindexed) or a **pointer** (`movedTo`, keeps an old URL alive).
+- `src/lib/library.ts` builds the book model (chapters, word counts, reading time, dates) once per build. `src/lib/color.ts` derives every book color from its `spine.hue` and checks contrast. `src/lib/dates.ts` computes "revised".
+- Routes: `src/pages/index.astro` (the shelf), `src/pages/pages/[...slug].astro` (dispatches to `src/layouts/BookPage|ChapterPage|LoosePage|MovedPage.astro`), `src/pages/404.astro`.
+- Client JS is progressive only: `src/scripts/enhance.ts` (table scroll, copy buttons, peeks, widen images, TOC highlight) and `src/scripts/search.ts` (Pagefind).
+- Checks: `scripts/voice-lint.mjs` (the ```lint block in VOICE.md over all content), `scripts/check-site.mjs` (every URL in `scripts/legacy-urls.txt` resolves, links and anchors, one h1, no raw Markdown in visible text).
 
-### Layouts
+## Gotchas
 
-Two layouts in `_layouts/`:
-- `default.html` — basic layout with standard header/banner
-- `custom.html` — extends default with Open Graph/Twitter meta tags, favicon, reading time, and loads all JS scripts. **All content pages use `layout: custom`.**
+- **URLs are a promise.** Every URL the old Jekyll site served is in `scripts/legacy-urls.txt` and `check-site` fails if one stops resolving. `build.format: 'file'` emits `pages/<slug>.html`, which GitHub Pages serves at `/pages/<slug>`. The glob loader uses a custom `generateId`, because the default slugifies `chapter-2.5` into `chapter-25`.
+- **Revised dates come from git.** `revised` is the later of the front matter date and the newest commit touching the file, skipping commits listed in `.git-blame-ignore-revs` (add mechanical sweeps there). CI checks out with `fetch-depth: 0`; a shallow clone silently falls back to the front matter date.
+- **No em dashes, ever.** Markdown runs through Sätteri with `smartPunctuation.dashes: false`, so `--` never becomes a dash; the voice lint bans the character.
+- **Quoted material is exempt from the voice lint** only between `<!-- voice-lint: off -->` and `<!-- voice-lint: on -->` (see the ChatGPT samples in `writing.md`). The exclamation cap ignores the `!` of image syntax.
+- **Review markers.** `<div data-review="new">` (blank lines inside) or `<span data-review="new">` wraps words that exist in no source and wait for the author. `<!-- source: ... -->` comments mark text moved from older material; `2026 batch (8126bde), restored` marks 2026 sections restored on 2026-11-17. Remove a marker once the author approves the text.
+- **Book colors must be re-declared where they land.** Custom properties resolve where declared, so any element carrying a book's raw colors needs `data-book-colors` (see global.css) or `--spine-face` and `--accent` resolve to the page defaults.
+- **Astro renders `data-foo={false}` as `data-foo="false"`.** Pagefind treats the attribute's presence as "index this", so conditional attributes are spread (`{...(cond ? {'data-pagefind-body': ''} : {})}`).
+- **Hover slips must leave layout when hidden** (`display: none`): a transparent but laid-out slip widened every narrow page.
+- **The ds-interviews book is always dark** (`theme: ds` on its landing; chapters inherit).
+- `scripts/migrate_from_jekyll.py` is the record of the 2026-11-17 conversion. It refuses to run without `--force` and would erase everything since.
+- Dependencies are pinned exactly and were at least two weeks old when added (astro 7.4.7 carries the fix for GHSA-r3h5-4585-7x3w).
 
-### Content Structure
+## Deploy
 
-Content lives in `pages/` as Markdown files. Mini-books follow a pattern:
-- Main page: `pages/<book-slug>.md`
-- Chapters: `pages/<book-slug>-chapter-<N>.md`
-
-Every content page requires front matter with at least:
-```yaml
-layout: custom
-title: Page Title
-description: Short description
-status: green|yellow|orange|red
-category: optimization|educational|self-help|mentoring|theory|meta
-```
-
-Chapter pages additionally require:
-```yaml
-book: book-slug    # parent book slug, must match filename prefix
-chapter: N         # numeric order (supports 0, 1.5, etc.)
-```
-
-Status indicators: `green` Nearly Done, `yellow` Draft, `orange` Jottings, `red` Barely Started.
-
-### Includes
-
-Reusable partials in `_includes/`:
-- `chapter-nav.html` — auto-generated prev/next/home navigation with progress bar for chapter pages. Uses `book` and `chapter` front matter to find siblings. Add with `{% include chapter-nav.html %}` at top and bottom of chapter content.
-- `reading-time.html` — estimated reading time badge (words / 200 wpm). Automatically included in `custom.html` header.
-
-### JavaScript
-
-JS files loaded by `custom.html` from `assets/js/`:
-- `popup-modal.js` — image modal for elements with `class="myImg"`
-- `hover-preview.js` — hover image preview for `class="hover-image-trigger"`
-- `navigation.js` — dynamic back/home button + scroll-to-top button
-- `header-collapse.js` — collapses header on scroll down, reveals on scroll up
-- `toc-sidebar.js` — floating table of contents sidebar (activates on pages with 3+ headings)
-- `homepage-filter.js` — card grid filtering on homepage only (search + status + category)
-
-### Button Conventions
-
-Use `custom-button` class with `left`/`right` modifiers inside `nav-buttons` containers. Do not use `ds-button` (deprecated and removed).
-
-```html
-<div class="nav-buttons">
-  <a href="/pages/prev" class="custom-button right"><strong>Previous</strong></a>
-  <a href="/pages/next" class="custom-button left"><strong>Next</strong></a>
-</div>
-```
-
-### Link Format
-
-Always use absolute paths without `.md` extension: `/pages/page-name` (not `./pages/page-name.md`).
-
-### Homepage
-
-The homepage (`index.md`) uses a card grid generated from `site.books` defined in `_config.yml`. When adding a new book, add an entry to the `books` array in `_config.yml`.
-
-### Images
-
-Stored in `images/` organized by topic (e.g., `images/confluence/`, `images/interviews/`). Header images are in `images/headers/`.
-
-### Site Variables
-
-`_config.yml` defines `vars` (example emails) accessible in templates via `{{ site.vars.example_email }}` and `books` (array of mini-book metadata) used by the homepage card grid.
+Push to `main`; the workflow builds, runs every check, and publishes. The repository's Pages source must be **GitHub Actions** (Settings > Pages); with the old "Deploy from a branch" setting, GitHub would try to build this repo with Jekyll.

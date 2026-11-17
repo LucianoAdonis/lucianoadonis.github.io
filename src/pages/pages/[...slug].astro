@@ -1,0 +1,34 @@
+---
+/**
+ * Every page keeps the URL it had on the Jekyll site: /pages/<slug>.
+ * A page is a book landing, a chapter, or a loose page (see content.config.ts).
+ */
+import { getCollection, render } from 'astro:content';
+import BookPage from '../../layouts/BookPage.astro';
+import ChapterPage from '../../layouts/ChapterPage.astro';
+import LoosePage from '../../layouts/LoosePage.astro';
+import MovedPage from '../../layouts/MovedPage.astro';
+import { library } from '../../lib/library';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages');
+  return pages.map((page) => ({ params: { slug: page.id }, props: { page } }));
+}
+
+const { page } = Astro.props;
+const { Content, headings } = await render(page);
+const { bookById } = await library();
+const asBook = page.data.shelf ? bookById.get(page.id) : undefined;
+const parent = page.data.book && !page.data.draft ? bookById.get(page.data.book.id) : undefined;
+---
+{
+  page.data.movedTo ? (
+    <MovedPage page={page} />
+  ) : asBook ? (
+    <BookPage book={asBook} Content={Content} />
+  ) : parent ? (
+    <ChapterPage page={page} book={parent} Content={Content} headings={headings} />
+  ) : (
+    <LoosePage page={page} Content={Content} headings={headings} />
+  )
+}
