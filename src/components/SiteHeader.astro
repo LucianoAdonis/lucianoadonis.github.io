@@ -9,10 +9,10 @@ const { home = false } = Astro.props;
 ---
 <header class="site-header">
   {home ? <span /> : <a class="wordmark" href="/">Luciano's Library</a>}
-  <button class="search-open" type="button" popovertarget="search" aria-keyshortcuts="/">
+  <button class="search-open" type="button" popovertarget="search" aria-keyshortcuts="Control+K">
     <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
     <span>Search</span>
-    <kbd aria-hidden="true">/</kbd>
+    <kbd aria-hidden="true" data-shortcut>Ctrl K</kbd>
   </button>
 </header>
 <Search />
@@ -45,7 +45,7 @@ const { home = false } = Astro.props;
     min-block-size: 2.75rem;
     padding: 0 var(--space-3);
     font-family: var(--font-display);
-    font-weight: 500;
+    font-weight: 700;
     font-size: var(--text-sm);
     color: var(--ink-2);
     background: transparent;

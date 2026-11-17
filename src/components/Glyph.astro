@@ -48,10 +48,15 @@ interface Props {
 const { name, size = '1em', class: className, strokeWidth = 1.75 } = Astro.props;
 const raw = ICONS[name];
 if (!raw) throw new Error(`Glyph: no icon named "${name}"`);
+// Rewrite only the opening <svg> tag: the shapes inside (a <rect>'s width and
+// height) must keep their attributes, or icons like lock and table lose parts.
 const svg = raw
   .replace(/<!--[\s\S]*?-->/g, '')
-  .replace(/\s(width|height|class)="[^"]*"/g, '')
-  .replace(/stroke-width="[^"]*"/, `stroke-width="${strokeWidth}"`)
-  .replace('<svg', `<svg aria-hidden="true" focusable="false" width="${size}" height="${size}"${className ? ` class="${className}"` : ''}`);
+  .replace(/<svg\b[^>]*>/, (tag) =>
+    tag
+      .replace(/\s(width|height|class)="[^"]*"/g, '')
+      .replace(/stroke-width="[^"]*"/, `stroke-width="${strokeWidth}"`)
+      .replace('<svg', `<svg aria-hidden="true" focusable="false" width="${size}" height="${size}"${className ? ` class="${className}"` : ''}`)
+  );
 ---
 <Fragment set:html={svg} />

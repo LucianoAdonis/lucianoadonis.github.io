@@ -57,7 +57,7 @@ Sure, you can dive into the instructions for the LEGO® SERIOUS PLAY® Starter K
 - How do I manage participants?
 - What should my behavior be during a session?
 - What happens if X does Y, and Z isn’t happy about it?
-- How do we manage time~~ and space~~?
+- How do we manage time ~~and space~~?
 - Where can I find predefined exercises with detailed steps?
 - Can I get custom materials?
 

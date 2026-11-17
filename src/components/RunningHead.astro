@@ -20,7 +20,7 @@ const { book, position, total, label } = Astro.props;
       <span class="swatch" aria-hidden="true"></span>
       <span class="name">{book.title}</span>
     </a>
-    <span class="pos label">{label} · {position} of {total}</span>
+    <span class="pos label">{label}<span class="vh">, {position} of {total} in this book</span></span>
   </div>
   <div class="progress" aria-hidden="true"></div>
 </div>

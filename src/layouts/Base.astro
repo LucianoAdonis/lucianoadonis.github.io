@@ -56,7 +56,7 @@ const ogImage = new URL('/images/lucianos-library-preview.png', Astro.site);
   <body>
     <a class="skip-link" href="#main">Skip to the text</a>
     <SiteHeader home={home} />
-    <main id="main">
+    <main id="main" tabindex="-1">
       <slot />
     </main>
     <SiteFooter />

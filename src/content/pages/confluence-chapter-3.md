@@ -166,12 +166,12 @@ So it goes like this:
 
 Originally the example didn't look like the one shown before. It was like this:
 
-<details style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
-    <summary style="color: #00AEEF; cursor: pointer;">Click to expand</summary>
-    <div style="padding: 10px;">
-      <img class="myImg" src="/images/confluence/panel-example-first-attempt.png" alt="The first attempt at the Cloud Guardians page, with a black banner, a pale pink contents box and a pink Requesting Help panel" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
-    </div>
-  </details>
+<details>
+<summary>Click to expand</summary>
+
+![The first attempt at the Cloud Guardians page, with a black banner, a pale pink contents box and a pink Requesting Help panel](../../assets/images/confluence/panel-example-first-attempt.png)
+
+</details>
 
 Even though it may look alright, reading with high contrast or weird colors can throw your attention away.
 
@@ -183,7 +183,7 @@ For this site I used Coolors, and took as main color the Knuckles red (#E63D26),
 
 The contrast is another element to keep in mind if you are going to use bright colors. As it may affect the readability and chakra misalignment.
 
-![The Edit Panel dialog with the Background Color field set to #001427, over the page in edit mode showing the red logo and the Our Team section](../../assets/images/confluence/panel-sections-wcolors-example.gif)
+<video class="clip" controls muted loop playsinline preload="none" width="760" height="494" poster="/media/confluence/panel-sections-wcolors-example.jpg" aria-label="The Edit Panel dialog with the Background Color field set to #001427, over the page in edit mode showing the red logo and the Our Team section"><source src="/media/confluence/panel-sections-wcolors-example.mp4" type="video/mp4"></video>
 
 Just to recap:
 - Be mindful of the colors that you use.

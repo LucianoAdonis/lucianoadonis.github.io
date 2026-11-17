@@ -5,6 +5,26 @@
 
 const prose = document.querySelectorAll<HTMLElement>('.prose');
 
+// One polite status line per page, for results that only change a button's text.
+const statusLine = document.createElement('p');
+statusLine.className = 'vh';
+statusLine.setAttribute('role', 'status');
+document.body.append(statusLine);
+const announce = (text: string) => {
+  statusLine.textContent = '';
+  window.setTimeout(() => (statusLine.textContent = text), 50);
+};
+
+// The nearest heading above an element, to name things after the section they sit in.
+function sectionName(el: Element): string {
+  for (let node: Element | null = el; node && !node.matches('.prose'); node = node.parentElement) {
+    for (let prev = node.previousElementSibling; prev; prev = prev.previousElementSibling) {
+      if (/^H[2-4]$/.test(prev.tagName)) return prev.textContent?.trim() ?? '';
+    }
+  }
+  return '';
+}
+
 // Wide tables scroll inside their own box instead of pushing the page sideways.
 for (const table of document.querySelectorAll<HTMLTableElement>('.prose table')) {
   const box = document.createElement('div');
@@ -12,27 +32,34 @@ for (const table of document.querySelectorAll<HTMLTableElement>('.prose table'))
   table.replaceWith(box);
   box.append(table);
   if (box.scrollWidth > box.clientWidth + 1) {
+    const where = table.caption?.textContent?.trim() || sectionName(box);
     box.tabIndex = 0;
     box.setAttribute('role', 'region');
-    box.setAttribute('aria-label', 'Table, scrolls sideways');
+    box.setAttribute('aria-label', where ? `${where}, table, scrolls sideways` : 'Table, scrolls sideways');
   }
 }
 
 // Copy buttons on code blocks.
 for (const pre of document.querySelectorAll<HTMLPreElement>('.prose pre')) {
+  const code = pre.querySelector('code') ?? pre;
+  const lang = pre.dataset.language;
   const button = document.createElement('button');
   button.type = 'button';
   button.className = 'copy-code';
   button.textContent = 'Copy';
+  button.setAttribute('aria-label', lang && lang !== 'plaintext' ? `Copy ${lang} code` : 'Copy code');
   button.addEventListener('click', async () => {
-    const text = pre.querySelector('code')?.innerText ?? pre.innerText;
     try {
-      await navigator.clipboard.writeText(text);
+      await navigator.clipboard.writeText(code.textContent ?? '');
       button.textContent = 'Copied';
+      announce('Copied to the clipboard');
     } catch {
-      button.textContent = 'Press Ctrl+C';
+      // No clipboard access: select the code so the reader's own copy works.
+      window.getSelection()?.selectAllChildren(code);
+      button.textContent = 'Selected';
+      announce('Code selected, copy it with your usual shortcut');
     }
-    window.setTimeout(() => (button.textContent = 'Copy'), 1600);
+    window.setTimeout(() => (button.textContent = 'Copy'), 1800);
   });
   pre.append(button);
 }
@@ -72,10 +99,13 @@ document.querySelectorAll<HTMLElement>('.prose span.peek[data-image]').forEach((
 });
 
 // Screenshots wider than the column can open out to full width, in place.
+// The width attribute is the source's own width; with srcset, naturalWidth is
+// only the candidate the browser picked.
 function offerWider(img: HTMLImageElement) {
   const holder = img.parentElement;
   if (!holder || img.closest('button, a, .peek-figure')) return;
-  if (img.naturalWidth < img.clientWidth * 1.2) return;
+  const sourceWidth = Number(img.getAttribute('width')) || img.naturalWidth;
+  if (sourceWidth < img.clientWidth * 1.2) return;
   const button = document.createElement('button');
   button.type = 'button';
   button.className = 'widen';
@@ -89,22 +119,33 @@ function offerWider(img: HTMLImageElement) {
   });
 }
 for (const root of prose) {
-  for (const img of root.querySelectorAll<HTMLImageElement>('p > img:only-child, p > img')) {
-    if (img.complete && img.naturalWidth) offerWider(img);
+  for (const img of root.querySelectorAll<HTMLImageElement>('p > img')) {
+    if (img.complete && img.clientWidth) offerWider(img);
     else img.addEventListener('load', () => offerWider(img), { once: true });
   }
 }
 
-// Keep a spine's hover slip on screen near the right edge of a row.
-for (const spine of document.querySelectorAll<HTMLElement>('.spine')) {
+// Spine slips: open on the side with room, and close on Escape (WCAG 1.4.13).
+const spines = document.querySelectorAll<HTMLElement>('.spine');
+for (const spine of spines) {
   const place = () => {
     const rect = spine.getBoundingClientRect();
     const slip = Math.min(288, window.innerWidth * 0.8);
-    spine.dataset.edge = rect.left + slip > document.documentElement.clientWidth - 12 ? 'end' : 'start';
+    spine.dataset.edge = rect.right + 12 + slip > document.documentElement.clientWidth - 8 ? 'end' : 'start';
   };
-  spine.addEventListener('pointerenter', place);
+  const reset = () => delete spine.dataset.slip;
+  // A new hover is a new request: a slip dismissed with Escape may show again.
+  spine.addEventListener('pointerenter', () => (reset(), place()));
   spine.addEventListener('focus', place);
+  spine.addEventListener('pointerleave', reset);
+  spine.addEventListener('blur', reset);
 }
+document.addEventListener('keydown', (event) => {
+  if (event.key !== 'Escape') return;
+  for (const spine of spines) {
+    if (spine.matches(':hover, :focus-visible')) spine.dataset.slip = 'off';
+  }
+});
 
 // Mark the section being read in the chapter's "In this chapter" list.
 const tocLinks = new Map<string, HTMLAnchorElement>();

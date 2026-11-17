@@ -6,15 +6,12 @@ started: 2024-09-10
 revised: 2026-03-04
 book: ds-interviews
 chapter: 1
+plate: ../../assets/images/interviews/main-menu.png
+plateAlt: "The Dark Souls title screen, Prepare to Die Edition, with an armored knight kneeling behind the logo and a \"Press Start Button\" prompt"
 ---
 
 <!--- https://darksouls.wiki.fextralife.com/Character+Information --->
 
----
-
-![The Dark Souls title screen, Prepare to Die Edition, with an armored knight kneeling behind the logo and a "Press Start Button" prompt](../../assets/images/interviews/main-menu.png)
-
----
 
 ## Core Mechanics
 

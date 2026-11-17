@@ -6,7 +6,7 @@
  */
 import Glyph from './Glyph.astro';
 import StatusMark from './StatusMark.astro';
-import { STATUS, type Book } from '../lib/library';
+import { STATUS, partsText, type Book } from '../lib/library';
 import { bookColors, bookStyle } from '../lib/color';
 import { monthYear, monthYearLong } from '../lib/dates';
 
@@ -38,7 +38,6 @@ size = Math.max(10.5, Math.round(size * 10) / 10);
 
 const colors = bookColors(book.hue);
 const parts = book.chapters.length;
-const partsText = parts === 0 ? 'one page' : `${parts} ${parts === 1 ? 'chapter' : 'chapters'}`;
 const style = [
   bookStyle(book.hue),
   `--w:${width}px`,
@@ -52,10 +51,10 @@ const style = [
   <span class="glyph"><Glyph name={book.glyph} size="20" strokeWidth={1.9} /></span>
   <span class="title">{book.title}</span>
   <span class="mark"><StatusMark status={book.status} size="13px" silent /></span>
-  <span class="vh">, {STATUS[book.status].label}, {partsText}, revised {monthYearLong(book.revised)}</span>
+  <span class="vh">, {STATUS[book.status].label}, {partsText(parts)}, revised {monthYearLong(book.revised)}</span>
   <span class="slip" aria-hidden="true">
     <span class="slip-desc">{book.description}</span>
-    <span class="slip-meta label">{STATUS[book.status].label} · {partsText} · {book.minutes} min · revised {monthYear(book.revised)}</span>
+    <span class="slip-meta label">{STATUS[book.status].label} · {partsText(parts)} · {book.minutes} min · revised {monthYear(book.revised)}</span>
   </span>
 </a>
 
@@ -102,6 +101,8 @@ const style = [
   .spine:hover,
   .spine:focus-visible {
     transform: translateY(-10px);
+    /* The lift makes a stacking context; raise it so the slip paints over the neighbors. */
+    z-index: 5;
   }
   .spine:focus-visible {
     outline-offset: 4px;
@@ -125,10 +126,17 @@ const style = [
     overflow: hidden;
   }
 
+  /*
+   * The slip opens beside the spine (like reading the back of a book you pulled
+   * out), so it never covers the shelf label or the toolbar. WCAG 1.4.13: it stays
+   * open while the pointer moves onto it (the ::before bridge spans the gap, and
+   * the slip is inside the link, so hovering it keeps the spine hovered), and
+   * Escape dismisses it (enhance.ts sets data-slip="off").
+   */
   .slip {
     position: absolute;
-    inset-block-end: calc(100% + 12px);
-    inset-inline-start: 0;
+    inset-block-start: 18px;
+    inset-inline-start: calc(100% + 12px);
     z-index: 10;
     inline-size: min(18rem, 80vw);
     display: grid;
@@ -143,26 +151,36 @@ const style = [
     font-family: var(--font-text);
     font-size: 1rem;
     line-height: 1.35;
-    pointer-events: none;
     /* Out of layout until shown: a hidden but laid-out slip still widens the page. */
     display: none;
   }
+  .slip::before {
+    content: '';
+    position: absolute;
+    inset-block: 0;
+    inset-inline-end: 100%;
+    inline-size: 14px;
+  }
   .spine[data-edge='end'] .slip {
     inset-inline-start: auto;
-    inset-inline-end: 0;
+    inset-inline-end: calc(100% + 12px);
+  }
+  .spine[data-edge='end'] .slip::before {
+    inset-inline-end: auto;
+    inset-inline-start: 100%;
   }
   .slip-meta {
     color: var(--ink-3);
     font-size: var(--text-xs);
   }
-  .spine:is(:hover, :focus-visible) .slip {
+  .spine:is(:hover, :focus-visible):not([data-slip='off']) .slip {
     display: grid;
     animation: slip-in 240ms var(--ease-out);
   }
   @keyframes slip-in {
     from {
       opacity: 0;
-      translate: 0 6px;
+      translate: -6px 0;
     }
   }
   @media (hover: none) {

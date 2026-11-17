@@ -34,6 +34,9 @@ export function countWords(markdown: string | undefined): number {
   return (text.match(/[\p{L}\p{N}][\p{L}\p{N}'’-]*/gu) || []).length;
 }
 
+/** "one page", "1 chapter", "5 chapters". */
+export const partsText = (n: number) => (n === 0 ? 'one page' : `${n} ${n === 1 ? 'chapter' : 'chapters'}`);
+
 /** The old site's rule: 200 words a minute, never less than one. */
 export const minutesFor = (words: number) => Math.max(1, Math.round(words / 200));
 

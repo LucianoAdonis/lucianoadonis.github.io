@@ -61,7 +61,10 @@ function bestSpine(h: number, mode: 'dark' | 'light'): Spine | null {
   const step = mode === 'dark' ? -0.005 : 0.005;
   for (let l = start; mode === 'dark' ? l >= 0.28 : l <= 0.93; l += step) {
     const bg = fitGamut({ l, c: CHROMA, h });
-    if (contrast(bg, fg) >= TARGET) return { bg, fg, mode };
+    // Spine.astro paints a highlight band (+0.025 lightness) under the title, so
+    // light lettering is checked against that brightest stop, not the flat face.
+    const under = mode === 'dark' ? fitGamut({ l: l + 0.025, c: CHROMA, h }) : bg;
+    if (contrast(bg, fg) >= TARGET && contrast(under, fg) >= TARGET) return { bg, fg, mode };
   }
   return null;
 }

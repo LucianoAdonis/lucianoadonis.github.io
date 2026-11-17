@@ -46,7 +46,7 @@ const { id, label, items, maxWords, morph = false } = Astro.props;
   }
   @media (max-width: 40rem) {
     .shelf {
-      --spine-scale: 0.84;
+      --spine-scale: 0.78;
     }
   }
 
@@ -81,6 +81,13 @@ const { id, label, items, maxWords, morph = false } = Astro.props;
     display: flex;
     align-items: flex-end;
   }
+  /* After the base .row rule so it wins: seven spines fit one phone row. */
+  @media (max-width: 40rem) {
+    .row {
+      column-gap: 2px;
+      padding-inline: 4px;
+    }
+  }
 
   .bookend {
     margin-inline: var(--space-3) var(--space-2);
@@ -88,8 +95,8 @@ const { id, label, items, maxWords, morph = false } = Astro.props;
   .bookend span {
     display: grid;
     place-items: center;
-    inline-size: calc(26px * var(--spine-scale));
-    block-size: calc(120px * var(--spine-scale));
+    width: calc(26px * var(--spine-scale));
+    height: calc(120px * var(--spine-scale));
     writing-mode: vertical-rl;
     font-family: var(--font-caps);
     font-weight: 700;
@@ -97,7 +104,7 @@ const { id, label, items, maxWords, morph = false } = Astro.props;
     letter-spacing: 0.08em;
     color: var(--ink-3);
     border: 1.5px solid var(--rule-strong);
-    border-block-end: 0;
+    border-bottom: 0;
     border-radius: 3px 3px 0 0;
   }
 </style>

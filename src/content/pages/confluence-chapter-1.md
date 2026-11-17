@@ -48,7 +48,7 @@ You can also create pages in your personal space.
 
 The Cloud version allows you to quickly add new pages directly from the side menu rather than relying solely on the "Create" button.
 
-![Cloud sidebar with the page tree (Platforms, Guilds, Finance, Team Information, About Confluence, POCs) and a Create button at the bottom](../../assets/images/confluence/basics-cloud-page-creation.gif)
+<video class="clip" controls muted loop playsinline preload="none" width="592" height="628" poster="/media/confluence/basics-cloud-page-creation.jpg" aria-label="Cloud sidebar with the page tree (Platforms, Guilds, Finance, Team Information, About Confluence, POCs) and a Create button at the bottom"><source src="/media/confluence/basics-cloud-page-creation.mp4" type="video/mp4"></video>
 
 Even though I was initially on the "Team Information" page, because I clicked the button to create a page from the "POCs" page, the new page was created, and I was automatically moved to the empty page under "POCs".
 
@@ -99,7 +99,7 @@ The options will depend on the macro, but they are worth checking. In some cases
 
 In most cases, you will first need to include content to appreciate how it changes, so in the next section, we will do that.
 
-![Animation of a Code Block macro on an editor page, a title bar over a box with the text echo hi](../../assets/images/confluence/basics-macro-customization.gif)
+<video class="clip" controls muted loop playsinline preload="none" width="760" height="456" poster="/media/confluence/basics-macro-customization.jpg" aria-label="Animation of a Code Block macro on an editor page, a title bar over a box with the text echo hi"><source src="/media/confluence/basics-macro-customization.mp4" type="video/mp4"></video>
 
 For this example, we are setting properties.
 

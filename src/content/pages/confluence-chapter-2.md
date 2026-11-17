@@ -108,7 +108,7 @@ From that link I picked just a few examples:
 2. [Project Plan](https://www.atlassian.com/software/confluence/templates/project-plan):
 ![The Cloud Project Plan template in edit mode, a table of owner, approver, objective and status, then Problem statement and Scope sections with emoji headings](../../assets/images/confluence/cloud-template-example-2.png)
   - Besides Emojis and adding more colors, the main titles start at two, which is a good approach to avoid getting dizzy for the transition of a higher case to a paragraph type.
-  ![Animation of the Brainstorming template planning section, a heading with an hourglass emoji over a table of objectives and method](../../assets/images/confluence/cloud-template-example-2a.gif)
+  <video class="clip" controls muted loop playsinline preload="none" width="760" height="110" poster="/media/confluence/cloud-template-example-2a.jpg" aria-label="Animation of the Brainstorming template planning section, a heading with an hourglass emoji over a table of objectives and method"><source src="/media/confluence/cloud-template-example-2a.mp4" type="video/mp4"></video>
   - Scrolling down there is a Macro that I haven't seen before:
   ![A Timeline section in the Cloud template with a planner roadmap, two swim lanes holding Feature 1, Feature 2, Feature 3, an iOS app and an Android app](../../assets/images/confluence/cloud-template-example-2b.png)
     - Quite handy if you ever need it.

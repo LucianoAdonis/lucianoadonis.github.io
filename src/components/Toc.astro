@@ -7,14 +7,16 @@ import type { MarkdownHeading } from 'astro';
 
 interface Props {
   headings: MarkdownHeading[];
+  label?: string;
 }
+const { label = 'In this chapter' } = Astro.props;
 const items = Astro.props.headings.filter((h) => h.depth === 2 || h.depth === 3);
 ---
 {
   items.length >= 3 && (
     <>
-      <nav class="toc toc-side" aria-label="In this chapter" data-pagefind-ignore>
-        <p class="label">In this chapter</p>
+      <nav class="toc toc-side" aria-label={label} data-pagefind-ignore>
+        <p class="label">{label}</p>
         <ol role="list">
           {items.map((h) => (
             <li class={`d${h.depth}`}>
@@ -24,7 +26,7 @@ const items = Astro.props.headings.filter((h) => h.depth === 2 || h.depth === 3)
         </ol>
       </nav>
       <details class="toc toc-fold" data-pagefind-ignore>
-        <summary class="label">In this chapter</summary>
+        <summary class="label">{label}</summary>
         <ol role="list">
           {items.map((h) => (
             <li class={`d${h.depth}`}>
@@ -85,6 +87,21 @@ const items = Astro.props.headings.filter((h) => h.depth === 2 || h.depth === 3)
     min-block-size: 2rem;
     display: flex;
     align-items: center;
+    list-style: none;
+  }
+  .toc-fold summary::-webkit-details-marker {
+    display: none;
+  }
+  .toc-fold summary::after {
+    content: '+';
+    margin-inline-start: auto;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--accent);
+  }
+  .toc-fold[open] summary::after {
+    content: '\2212';
   }
   .toc-fold[open] summary {
     margin-block-end: var(--space-2);

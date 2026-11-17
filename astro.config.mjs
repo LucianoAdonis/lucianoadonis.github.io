@@ -29,7 +29,8 @@ export default defineConfig({
       name: 'Alegreya Sans',
       cssVariable: '--font-display',
       provider: fontProviders.fontsource(),
-      weights: [500, 700, 800],
+      // 500 dropped after the 2026-11-17 review: fonts were 85-95% of first-load bytes.
+      weights: [700, 800],
       styles: ['normal'],
       subsets,
       fallbacks: ['system-ui', 'sans-serif'],
@@ -44,6 +45,13 @@ export default defineConfig({
       fallbacks: ['system-ui', 'sans-serif'],
     },
   ],
+  // Markdown images get a srcset, so a phone stops downloading 1,700px screenshots.
+  // Capped at 1280: the reading column is 34rem, so nothing wider is ever shown.
+  image: {
+    layout: 'constrained',
+    responsiveStyles: true,
+    breakpoints: [480, 640, 750, 828, 1080, 1280],
+  },
   markdown: {
     processor: satteri({
       features: {

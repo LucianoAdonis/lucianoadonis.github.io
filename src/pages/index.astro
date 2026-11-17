@@ -36,7 +36,7 @@ const gists = [
     group: 'Random Finds',
     links: [
       ['Cool Pages', 'https://gist.github.com/LucianoAdonis/24888d407bec9e59c9cfc460a866b163'],
-      ['Edition Tools and Sites', 'https://gist.github.com/LucianoAdonis/93f008e9bf92b0dbcdd5d2ee03f37535'],
+      ['Editing Tools and Sites', 'https://gist.github.com/LucianoAdonis/93f008e9bf92b0dbcdd5d2ee03f37535'],
       ['Team Building Activities', 'https://gist.github.com/LucianoAdonis/91398d78df653e6a2d4969c87261b184'],
       ['Music to Describe Your Sprint', 'https://gist.github.com/LucianoAdonis/da2d0e3b8cea63407eb0a181bf30985f'],
     ],
@@ -76,15 +76,32 @@ const gists = [
         <input type="radio" name="arrange" id="arrange-date" value="date" />
         <label for="arrange-date">By last revised</label>
       </fieldset>
-      <ul class="legend" role="list" aria-label="How finished each book is">
-        {
-          (Object.keys(STATUS) as Status[]).map((s) => (
-            <li title={STATUS[s].note}>
-              <StatusMark status={s} size="13px" withLabel />
-            </li>
-          ))
-        }
-      </ul>
+      <div class="legend-wrap">
+        <ul class="legend" role="list" aria-label="How finished each book is">
+          {
+            (Object.keys(STATUS) as Status[]).map((s) => (
+              <li>
+                <StatusMark status={s} size="13px" withLabel />
+              </li>
+            ))
+          }
+        </ul>
+        <details class="legend-box">
+          <summary aria-label="What the marks mean" />
+          <dl class="legend-notes">
+          {
+            (Object.keys(STATUS) as Status[]).map((s) => (
+              <div>
+                <dt>
+                  <StatusMark status={s} size="12px" withLabel />
+                </dt>
+                <dd>{STATUS[s].note}</dd>
+              </div>
+            ))
+          }
+          </dl>
+        </details>
+      </div>
     </div>
 
     <div class="by-topic">
@@ -242,9 +259,82 @@ const gists = [
     letter-spacing: 0.03em;
   }
 
-  .by-topic {
+  .legend-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2) var(--space-3);
+  }
+  .legend-box {
+    position: relative;
+  }
+  .legend-box summary {
     display: grid;
-    gap: var(--space-7);
+    place-items: center;
+    list-style: none;
+    cursor: pointer;
+    min-inline-size: 2.75rem;
+    min-block-size: 2.75rem;
+  }
+  .legend-notes {
+    position: absolute;
+    inset-inline-end: 0;
+    inset-block-start: calc(100% + var(--space-1));
+    z-index: 15;
+    inline-size: min(26rem, 90vw);
+    box-shadow: 0 14px 30px -18px oklch(18% 0.03 60 / 0.55);
+    border: 1px solid var(--rule-strong);
+  }
+  .legend-box summary::-webkit-details-marker {
+    display: none;
+  }
+  .legend-box summary::after {
+    content: '?';
+    display: grid;
+    place-items: center;
+    inline-size: 1.4rem;
+    block-size: 1.4rem;
+    border: 1px solid var(--ink-3);
+    border-radius: 50%;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-xs);
+    color: var(--ink-3);
+  }
+  .legend-box[open] summary::after {
+    content: '\2212';
+  }
+  .legend-notes {
+    display: grid;
+    gap: var(--space-2);
+    margin: var(--space-3) 0 0;
+    padding: var(--space-3) var(--space-4);
+    background: var(--paper-2);
+    border-radius: 6px;
+    font-size: var(--text-sm);
+  }
+  .legend-notes div {
+    display: grid;
+    grid-template-columns: 9.5rem 1fr;
+    gap: var(--space-3);
+  }
+  .legend-notes dt {
+    font-family: var(--font-caps);
+    letter-spacing: 0.03em;
+  }
+  .legend-notes dd {
+    margin: 0;
+    color: var(--ink-2);
+  }
+
+  .by-topic {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-7) var(--space-8);
+  }
+  .by-topic > :global(.shelf) {
+    flex: 1 1 auto;
+    min-inline-size: min(100%, 15rem);
   }
   .library:has(#arrange-date:checked) .by-topic,
   .library:not(:has(#arrange-date:checked)) .by-date {
