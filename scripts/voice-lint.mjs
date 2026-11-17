@@ -49,12 +49,15 @@ if (!files.length) {
 }
 if (!files.length) { console.error('voice-lint: no files to lint'); process.exit(2); }
 
-// Blank out skipped regions but keep line numbers stable.
+// Blank out skipped regions but keep line numbers stable. Quoted material that is
+// other people's words (a sample of AI output, a pasted email) goes between
+// <!-- voice-lint: off --> and <!-- voice-lint: on --> so the lint leaves it alone.
 const blank = (s) => s.replace(/[^\n]/g, ' ');
 const prose = (text) =>
   text
     .replace(/^---\n[\s\S]*?\n---\n/, blank)
     .replace(/^(```|~~~)[\s\S]*?^\1[^\n]*$/gm, blank)
+    .replace(/<!--\s*voice-lint:\s*off\s*-->[\s\S]*?<!--\s*voice-lint:\s*on\s*-->/g, blank)
     .replace(/<!--[\s\S]*?-->/g, blank);
 
 let violations = 0;

@@ -127,7 +127,7 @@ ban /\b(is|are) not [^.!?]{3,70}[.] (It|That|This|They) (is|are)\b/ 2026 tell: n
 cap 1 /\bThe (real|key|goal|trick|skill|point|difference) (is|isn.t|is not)\b/ 2026 tell: 1.31 per 1k against 0.20
 cap 4 /\b(do|does|did|is|are|was|were|have|has|had|would|should|could|will|can) not\b/ uncontracted prose: core median 1 per page, max 4
 cap 2 /!!/ stacked exclamation: never in the core (it has 0 doubles)
-cap 4 /!/ exclamation: median 1 per page, p90 4
+cap 4 /!(?!\[)/ exclamation (not the ! of Markdown image syntax): median 1 per page, p90 4
 cap 2 /\.\.\./ ellipsis: p90 1 per page, max 2
 cap 2 /^[^<]*[a-z)]; [A-Za-z]/ prose semicolon, lines with HTML skipped: p90 2 per page, max 5
 cap 1 /\b([Jj]aja|[Hh]aha|[Yy]eiii|[Ll]ol)\b/ laughter tokens: 3 in 29k words

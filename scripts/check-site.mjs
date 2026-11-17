@@ -66,7 +66,8 @@ const visibleText = (html) =>
 
 for (const file of pages) {
   const rel = '/' + relative(dist, file);
-  const html = readFileSync(file, 'utf8');
+  // Inline scripts carry template strings like href="${x}"; only real markup counts.
+  const html = readFileSync(file, 'utf8').replace(/<(script|style)\b[\s\S]*?<\/\1>/gi, '');
 
   // links
   for (const m of html.matchAll(/\s(href|src)="([^"]*)"/g)) {
