@@ -1,18 +1,16 @@
 ---
-title: Airtable
-description: Formula Examples & Use Cases
-status: red
+title: Formula Examples & Use Cases
+description: Bridging the gap between basics and data management.
+status: yellow
 started: 2025-04-06
 revised: 2026-02-21
 book: airtable
 chapter: 1.5
 ---
 
-## Formula Examples & Use Cases
-
 This chapter provides practical examples of common Airtable formulas to help you understand their real-world applications.
 
-### Text Manipulation Examples
+## Text Manipulation Examples
 
 These formulas help you work with text fields:
 
@@ -37,7 +35,7 @@ IF(
 SUBSTITUTE({Title}, " ", "-")
 ```
 
-### Numerical Examples
+## Numerical Examples
 
 Common calculations and number formatting:
 
@@ -52,9 +50,9 @@ CEILING({Raw Price}, 1)
 MAX({Sales Team Totals})
 ```
 
-### Logical Examples
+## Logical Examples
 
-#### Basic Conditions
+### Basic Conditions
 
 ```airtable
 // Simple IF for status colors
@@ -64,7 +62,7 @@ IF({Status} = "Complete", "green", "red")
 AND({Due Date} < TODAY(), {Status} != "Complete")
 ```
 
-#### SWITCH Statement Magic
+### SWITCH Statement Magic
 
 The SWITCH formula is a powerful alternative to nested IF statements. Here are two ways to use it:
 
@@ -94,7 +92,7 @@ SWITCH(
 )
 ```
 
-#### Real-World Example: Deal Classification
+### Real-World Example: Deal Classification
 
 Here's a practical example using SWITCH to categorize deals:
 
@@ -110,9 +108,9 @@ SWITCH(
 
 This is much more readable and maintainable than nested IF statements!
 
-#### Fiscal Year and Quarter
+### Fiscal Year and Quarter
 
-In the following Formula, we assume that your date table is called "Date" and there is extra logic to account for the the Fiscal Year Starting on October.
+In the following Formula, we assume that your date table is called "Date" and there is extra logic to account for the Fiscal Year Starting on October.
 
 ```
 IF(
@@ -141,7 +139,7 @@ IF(
 )
 ```
 
-### Pro Tips
+## Pro Tips
 
 1. Use SWITCH with TRUE() when you need multiple conditions
 2. Add emojis to make your statuses more visual

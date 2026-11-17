@@ -1,7 +1,7 @@
 ---
-title: Confluence
+title: The Macros Strikes Back
 description: Macros
-status: green
+status: yellow
 started: 2024-09-02
 revised: 2026-03-04
 book: confluence
@@ -23,7 +23,7 @@ There will be examples of a few combinations and how to make the most of them.
 
 ### Advanced Macros
 
-I wouldn't suggest you going and trying all of them, instead go to the [next section](#simple-combination) to start learning simple combinations and go from there.
+I wouldn't suggest you go and try all of them, instead go to the [next section](#macro-combinations) to start learning simple combinations and go from there.
 
 **Small Details:**
 
@@ -60,10 +60,16 @@ I wouldn't suggest you going and trying all of them, instead go to the [next sec
 - [Bob Swift - Markdown](https://appfire.atlassian.net/wiki/spaces/MARKDOWN/pages/72386542/Cloud): allows you to connect to Gitlab, Github and Bitbucket using defined profiles.
   - Default Markdown Plugin doesn't have the features to use authentication, for Gist it may be useful.
 - [Bob Swift - HTML](https://appfire.atlassian.net/wiki/spaces/HTML/pages/70617206/Html-bobswift+macro): renders content from HTML.
-  - Default [HTML Include](https://confluence.atlassian.com/conf85/html-include-macro-1283360207.html) plugin may be disable by default as it could make the site vulnerable to cross-site scripting attacks.
-- [Comala - Questions](): it makes a space to have questions that you can filter an render in pages.
+  - Default [HTML Include](https://confluence.atlassian.com/conf85/html-include-macro-1283360207.html) plugin may be disabled by default as it could make the site vulnerable to cross-site scripting attacks.
+- Comala - Questions: it makes a space to have questions that you can filter and render in pages.
 
 ### Cloud Macros
+
+<div data-review="new">
+
+[Pending to add... the Cloud macros.]
+
+</div>
 
 ### Hardcore Macros
 
@@ -77,30 +83,30 @@ Macros are comparable to Terraform functions. Simpler approaches exist for most 
 
 Sometimes people don't use certain options of their macros which can impact in the way things are felt.
 
-If you document is heavy on code I could assume your readers won't care most of the time in the code itself but rather what you are talking about. For those cases, the expand option from the Code Macro will make a difference.
+If your document is heavy on code I could assume your readers won't care most of the time in the code itself but rather what you are talking about. For those cases, the expand option from the Code Macro will make a difference.
 
-This can also be done for images of even sections, with the expand macros. I personally hid memes this way.
+This can also be done for images or even sections, with the expand macros. I personally hid memes this way.
 
 ### Quick Wins
 
 If you've only got the mental bandwidth for a few Macros, prioritize the following macros to get ahead of multiple documentations:
 
 * [Multiexcerpt](https://confluence.atlassian.com/conf719/excerpt-macro-1157466743.html): I consider [Multiexcerpt Include](https://confluence.atlassian.com/conf719/excerpt-include-macro-1157466741.html) to be part of it, so it counts as one. This will allow you to reuse content in other pages. Like coding!
-* [Table Filter](https://docs.stiltsoft.com/tfac/cloud/how-to-use-table-filter-macro-42239756.html): There are such great things that you can do with filters and queries. It's sad that you have to but at least is not painful!
-- [ChildTabs](https://docs.bitvoodoo.app/navitabs-tabs-for-confluence-data-center/?utm_source=bv-app&utm_medium=Editor&utm_campaign=Navitabs%20Child%20Tabs%20Macro): For when you've got a bunch of subpages—this helps you keep it all organized without endless tabs.
+* [Table Filter](https://docs.stiltsoft.com/tfac/cloud/how-to-use-table-filter-macro-42239756.html): There are such great things that you can do with filters and queries. It's sad that you have to but at least it's not painful!
+- [ChildTabs](https://docs.bitvoodoo.app/navitabs-tabs-for-confluence-data-center/?utm_source=bv-app&utm_medium=Editor&utm_campaign=Navitabs%20Child%20Tabs%20Macro): For when you've got a bunch of subpages, this helps you keep it all organized without endless tabs.
 
-In the following example, the main page "Macros Example" displays two results with the <span class="ui">ChildTabs</span> that are the pages under it. The context behind those pages will be explained in the Datasource Page's [example](#example-1). Still, you must know that separated pages are loaded simultaneously and quickly accessible through the parent page.
+In the following example, the main page "Macros Example" displays two results with the <span class="ui">ChildTabs</span> that are the pages under it. The context behind those pages will be explained in the Datasource Page's [example](/pages/confluence-chapter-4#example). Still, you must know that separated pages are loaded simultaneously and quickly accessible through the parent page.
 
 The cross-reference between those is not limited by location but just for simplicity.
 
-![childtabs-macro-content-side-by-side](../../assets/images/confluence/childtabs-macro-content-side-by-side.png)
+![Two copies of the Macros Example page side by side: ChildTabs lists Consumer Page and Datasource Page, and both tabs show the same Old Man Yells at Cloud picture, with the extra text Blah Blah only under the first](../../assets/images/confluence/childtabs-macro-content-side-by-side.png)
 
 ### Panels, Cards, Sections, and Layouts
 
-The [Panel](https://confluence.atlassian.com/conf719/panel-macro-1157466870.html) allows to create a section with colored background, but you can get more creative and do more by also using it with [Deck of Cards](https://appfire.atlassian.net/wiki/spaces/CTFCSM/pages/471176665/Deck+of+Cards)
+The [Panel](https://confluence.atlassian.com/conf719/panel-macro-1157466870.html) allows you to create a section with colored background, but you can get more creative and do more by also using it with [Deck of Cards](https://appfire.atlassian.net/wiki/spaces/CTFCSM/pages/471176665/Deck+of+Cards).
 
 Let's begin with a new page example, the 'Cloud Guardians' team:
-![panel-example-final-result](../../assets/images/confluence/panel-example-final-result.png)
+![The finished Cloud Guardians page: a dark banner with a red Knuckles logo, red Our Team and Our Products headings, a contents box on the side, and a tabbed deck of three product cards (Policy Enforcer, Cost Analyzer, Security Sentinel) each with a Learn more button](../../assets/images/confluence/panel-example-final-result.png)
 
 Compared to the first example of the 'Gotta Go Fast' team, it looks more imposing. Even though it seems similar, there are a lot of changes, but for now, let's focus on the main ones:
 
@@ -111,12 +117,12 @@ Compared to the first example of the 'Gotta Go Fast' team, it looks more imposin
 
 It may look similar to the configuration, but it has its nuances. Starting from the title:
 
-![panel-example-configuration-1](../../assets/images/confluence/panel-example-configuration-1.png)
+![The page in edit mode with eight red markers: the banner Panel, the centered logo, the title image, a horizontal rule, the layout split, the red title, the Panel holding the contents table and the Table of Contents macro with minLevel 2](../../assets/images/confluence/panel-example-configuration-1.png)
 
-1. A <span class="ui">Panel</span> sets the background to match set the color.
+1. A <span class="ui">Panel</span> sets the background to set the color.
 2. The Knuckles SEGA logo is centered and has a smaller size.
 3. The title image was generated using the Tech Headlines font on the [Font SpaceTech](https://www.fontspace.com/) site.
-    - It looks invisible as I change it with the MacOS image editor to be white and compatible with the background.
+    - It looks invisible as I changed it with the MacOS image editor to be white and compatible with the background.
 4. A simple line made with the <span class="ui">Horizontal Rule</span> macro separates the contents from the logo.
   - Not much thought was put into it; it felt right.
 5. Next section is divided with a <span class="ui">Layout</span> section of 2/3.
@@ -124,11 +130,12 @@ It may look similar to the configuration, but it has its nuances. Starting from 
 7. We use the <span class="ui">Panel</span> macro with a background of #FAFFFD (Baby Powder color) to highlight the content section, ensuring important sections stand out.
 8. We make sure the <span class="ui">Content Table</span> section contains the rule to start at level 2; otherwise, it will have a weird indentation.
 
-And well, that was the fun part. For the next part we will see the <span class="ui">Deck of Cards</span>,
+And well, that was the fun part. For the next part we will see the <span class="ui">Deck of Cards</span>.
+
 Let's first refresh the Macros that we will use for this section:
 
 1. [Deck of Cards](https://appfire.atlassian.net/wiki/spaces/CTFCSM/pages/471176665/Deck+of+Cards)
-2. [Section](https://confluence.atlassian.com/doc/section-macro-51872531.html)
+2. [Card](https://appfire.atlassian.net/wiki/spaces/CTFCSM/pages/471176639/Card)
 3. [Column](https://confluence.atlassian.com/doc/column-macro-51872396.html)
 4. [Section](https://confluence.atlassian.com/doc/section-macro-51872531.html)
 5. [Panel](https://confluence.atlassian.com/doc/panel-macro-51872380.html)
@@ -136,16 +143,16 @@ Let's first refresh the Macros that we will use for this section:
 
 Please note that for screenshots, the last card of the first tab won't be visible. You're not missing anything.
 
-![panel-example-configuration-2](../../assets/images/confluence/panel-example-configuration-2.png)
+![The edit view of the Deck of Cards, nested boxes labelled Panel, Deck of Cards, Card, Section, Column, Panel, Span and Button Hyperlink with red numbers 1 to 9, then a second Column with the same pattern](../../assets/images/confluence/panel-example-configuration-2.png)
 
 Yeah, I know. It's quite messy to read and probably hard to edit, too. However, I can only say that the result is worth the trouble.
 
 So it goes like this:
 
-1. Originally the first <span class="ui">Panel</span> was going to set a different color for the whole Deck of Cards, but it didn't looked right, so I avoided doing it like that. See images below to understand the pain:
-  ![panel-example-bad-ending](../../assets/images/confluence/panel-example-bad-ending.png)
+1. Originally the first <span class="ui">Panel</span> was going to set a different color for the whole Deck of Cards, but it didn't look right, so I avoided doing it like that. See images below to understand the pain:
+  ![The products section with a dark navy Panel around the whole Deck of Cards, with the white cards sitting inside it](../../assets/images/confluence/panel-example-bad-ending.png)
   On that note, keep in mind that other Macros do not render in the preview:
-  ![panel-example-nested-panels](../../assets/images/confluence/panel-example-nested-panels.png)
+  ![The Edit Panel macro dialog with the background color set to #001427 while the preview shows the nested macros unrendered and overlapping](../../assets/images/confluence/panel-example-nested-panels.png)
 2. The <span class="ui">Deck of Cards</span> creates horizontal tabs containing one or multiple <span class="ui">Cards</span>.
 3. Inside of a <span class="ui">Card</span> we will have the <span class="ui">Section</span>.
 4. <span class="ui">Section</span> will contain the <span class="ui">Column</span> macro.
@@ -157,26 +164,26 @@ So it goes like this:
 
 #### Optimized Colors and Contrast
 
-Originally the example didn't looked like the one shown before. It was like this:
+Originally the example didn't look like the one shown before. It was like this:
 
 <details style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
     <summary style="color: #00AEEF; cursor: pointer;">Click to expand</summary>
     <div style="padding: 10px;">
-      <img class="myImg" src="/images/confluence/panel-example-first-attempt.png" alt="panel-example-first-attempt" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
+      <img class="myImg" src="/images/confluence/panel-example-first-attempt.png" alt="The first attempt at the Cloud Guardians page, with a black banner, a pale pink contents box and a pink Requesting Help panel" style="border: 2px solid #000; border-radius: 4px; padding: 5px; cursor: pointer;">
     </div>
   </details>
 
-Even thought it may look alright, reading with highcontrast or weird colors can throw your attention away.
+Even though it may look alright, reading with high contrast or weird colors can throw your attention away.
 
 There are plenty of tools to get ideas of how to get better colors based on a palette by either of concepts of complementary colors or the like.
 
-For this site I used Coolors, and took as main color the Knuckles red (#E63D26) locked that color and started generating palettes like pulling for a Gacha Character, and in the end I went with the Baby Powder as it was more subtle.
+For this site I used Coolors, and took as main color the Knuckles red (#E63D26), locked that color and started generating palettes like pulling for a Gacha Character, and in the end I went with the Baby Powder as it was more subtle.
 
-![](../../assets/images/confluence/panel-example-palette-cut.png)
+![A Coolors palette of five swatches: Chili red E63D26, Oxford Blue 001427, Battleship gray 71857D, Jasmine F4D58D and Baby powder FAFFFD, with the color picker open on the last one](../../assets/images/confluence/panel-example-palette-cut.png)
 
-The contrast is another element to keep in mind if you are going to user bright colors. As it may affect the readiblity and chakra mislalignment.
+The contrast is another element to keep in mind if you are going to use bright colors. As it may affect the readability and chakra misalignment.
 
-![panel-sections-wcolors-example](../../assets/images/confluence/panel-sections-wcolors-example.gif)
+![The Edit Panel dialog with the Background Color field set to #001427, over the page in edit mode showing the red logo and the Our Team section](../../assets/images/confluence/panel-sections-wcolors-example.gif)
 
 Just to recap:
 - Be mindful of the colors that you use.

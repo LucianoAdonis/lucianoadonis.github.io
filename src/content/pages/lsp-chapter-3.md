@@ -7,7 +7,7 @@ revised: 2026-02-21
 book: lsp
 chapter: 3
 plate: ../../assets/images/lsp/header-lego-identity-and-landscape-kit.png
-plateAlt: header-lego-identity-and-landscape-kit
+plateAlt: A heap of LEGO Serious Play pieces, with bricks, baseplates, animals, minifigures and an orange sorting tray
 ---
 
 ## LEGO Kits
@@ -21,7 +21,7 @@ As mentioned earlier, LEGO provides pre-existing kits containing the pieces need
 | **<span class="peek" data-image="/images/lsp/product-identity-and-landscape-kit.png">Identity and Landscape</span>**   | [#2000430](https://www.lego.com/en-us/product/identity-and-landscape-kit-2000430) | [2802](https://www.bricklink.com/v2/catalog/catalogitem.page?S=2000430-2#T=I)  | Live Serious  | 789.99  | 67x48x8  | 8      |
 | **<span class="peek" data-image="/images/lsp/product-connections-kit.png">Connections</span>**              | [#2000431](https://www.lego.com/en-us/product/connections-kit-2000431)  | [2455](https://www.bricklink.com/v2/catalog/catalogitem.page?S=2000431-1#T=I)  | Live Fast and Serious  | 754.99  |48x35x9 | 6  |
 
-How and where use each kit and the amount it's part of the training, but keep in mind it will be expensive.
+How and where to use each kit, and how many of each, is part of the training, but keep in mind it will be expensive.
 
 ### Replacement Options
 
@@ -30,16 +30,16 @@ You can surely use used LEGO, outside of my collection I have over 90 pounds of 
 - **Damage**: Used pieces can be worn, chipped, or discolored.
   - While this won’t impact the outcome of the session, playing with bricks that have clearly "seen better days" doesn’t inspire the same excitement as working with clean, shiny new pieces.
 - **Consistency**: Some "common" pieces are surprisingly rare.
-  - For example: Windshields and firetruck stairs. Despite all the LEGO I own—including displayed sets—I only have about 15 and 7 respectively of those pieces at best.
-      - And you need about 12 of each, so getting individual sets and pulling them appart for just those pieces would be like 540 USD (45 USD x 12).
+  - For example: Windshields and firetruck stairs. Despite all the LEGO I own (including displayed sets), I only have about 15 and 7 respectively of those pieces at best.
+      - And you need about 12 of each, so getting individual sets and pulling them apart for just those pieces would be like 540 USD (45 USD x 12).
       - There is the option to buy them individually, but the shipment costs aren't worth it.
 - **Special Pieces**:
   - The Connections Kit is a gold mine. You won't get the same amount of technic pieces anywhere else.
 
 And what about the unbranded Kits? Well, it depends:
 
-- **Aliexpress**:
-  - I’ve built a few sets, and yes, your fingertips will burn slightly. A Reddit comment warned about this, and it’s true—it’s the paint.
+- **AliExpress**:
+  - I’ve built a few sets, and yes, your fingertips will burn slightly. A Reddit comment warned about this, and it’s true, it’s the paint.
   - Some pieces fade after cleaning.
   - Quality is not the same. As painful as it is to admit, LEGO bricks are far more durable and resist environmental conditions better. So it may be cheaper but it won't last.
 
@@ -58,33 +58,33 @@ Recommended Method:
 
 ### Session Materials
 
-- **Post-Its**: Essential for longer workshops. Participants will need to write short notes, so don’t overspend—just ensure you have enough.
-- **Music**: a speaker may help to to the ambience sound. [Everything Has to Be a Montage](https://youtu.be/YoxIQ2HCco8?si=pAT5oMQFbh4nZ-j8&t=20).
+- **Post-Its**: Essential for longer workshops. Participants will need to write short notes, so don’t overspend, just make sure you have enough.
+- **Music**: a speaker may help with the ambience. [Everything Has to Be a Montage](https://youtu.be/YoxIQ2HCco8?si=pAT5oMQFbh4nZ-j8&t=20).
   - Since my music taste might not work for everyone, here are a few options you can try instead:
     - [𓆜 | playlist to be a shark](https://www.youtube.com/watch?v=7avPoMhQxX8&ab_channel=blewoo).
     - [La mejor música de elevador o ascensor instrumental relajante lounge](https://www.youtube.com/watch?v=0Akp1v6QrYA&ab_channel=LiveBetterMedia-Espa%C3%B1ol).
     - I'll figure better playlist/songs eventually...
-- **Camera**: you don't need a expensive camera, but it makes the difference if you want to capture all objects rather than just a few and the rest blurred.
+- **Camera**: you don't need an expensive camera, but it makes the difference if you want to capture all objects rather than just a few and the rest blurred.
   - Remember to ask for permission before taking pictures of anyone involved!
 
 ## Buying LEGO Kits
 
-If you live in the [best and first country of Chile](https://www.youtube.com/watch?v=61hqRtsIXDM&ab_channel=Tetuaje), congrats! But brace yourself—it’s going to be expensive.
+If you live in the [best and first country of Chile](https://www.youtube.com/watch?v=61hqRtsIXDM&ab_channel=Tetuaje), congrats! But brace yourself, it’s going to be expensive.
 
-To buy directly from the[LEGO Store](https://www.lego.com/es-us), you’ll need one of these methods:
+To buy directly from the [LEGO Store](https://www.lego.com/es-us), you’ll need one of these methods:
 
 - **Direct Shipping**: Not an option. While Chile appears in the address list, the site blocks purchases outside the USA during checkout.
 - [Casilla Correos (P.O. Box Service)](https://casillainternacional.com/): Reliable but expensive.
 - [Comparto Mi maleta](https://compartomimaleta.com/): Haven’t tested it myself.
 - [Amazon JP](https://amazon.co.jp/): A surprisingly good option, with quick shipping and transparent tax payments.
 
-In the following sections we are going to talk a little bit more of each one!
+In the following sections we'll talk a little bit more about each one!
 
 ### Amazon JP
 
-You can only get the **<span class="peek" data-image="/images/lsp/product-starter-kit.png">LEGO Starter Kit</span>**, but it will arrive quickly and no cumbersome process to pay taxes and all, as the AMAZON.COM it will show you what you will pay.
+You can only get the **<span class="peek" data-image="/images/lsp/product-starter-kit.png">LEGO Starter Kit</span>**, but it will arrive quickly and no cumbersome process to pay taxes and all, as Amazon.com will show you what you'll pay.
 
-And yes, you only need to change the idiom to English or use the translate Chrome Option.
+And yes, you only need to change the language to English or use the translate Chrome Option.
 
 **Steps to Buy**:
 
@@ -115,7 +115,7 @@ There is a lot to cover, but to keep it simple, here is the summary:
 
 **Steps to Buy**:
 
-- Add your [Casilla address](https://casillainternacional.com/CLAyuda.aspx) to the LEGO Store. you can see it
+- Add your [Casilla address](https://casillainternacional.com/CLAyuda.aspx) to the LEGO Store (the link shows you yours).
 - Pre-alert your purchase on the Casilla site [here](https://casillainternacional.com/PBOXCASILLA/ifprealerta_nous.aspx).
 - Use their [Price Calculator](https://casillainternacional.com/tarifas_calculadora.aspx) to estimate costs.
 - Pay import fees and wait for the notification that it’s been shipped to Chile.

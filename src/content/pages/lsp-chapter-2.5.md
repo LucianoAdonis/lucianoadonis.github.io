@@ -1,13 +1,13 @@
 ---
 title: Wanna Read?
 description: The Archives
-status: yellow
+status: orange
 started: 2024-12-11
 revised: 2026-03-04
 book: lsp
 chapter: 2.5
 plate: ../../assets/images/headers/bluish-lego-sw-archives.png
-plateAlt: bluish-lego-sw-archives
+plateAlt: A dark blue archive hall with tall shelves glowing with blue light on both sides of a long central aisle
 ---
 
 We can reflect things that otherwise would be too costly to run in our minds.

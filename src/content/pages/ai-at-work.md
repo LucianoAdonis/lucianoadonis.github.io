@@ -14,25 +14,15 @@ elsewhere:
   relation: related
   note: Guides for setting up and checking AI agents.
 plate: ../../assets/images/headers/purple-computer.png
-plateAlt: purple-computer
+plateAlt: Isometric illustration on a purple background of a computer tower, two monitors showing code, a phone, a pen and a red book floating together
 ---
 
 > "The tool is only as smart as the person directing it."
 
 ## How This Mini-Book Can Help You
 
-Everyone has an opinion on AI at work. Half the internet says it will replace you. The other half says it is a toy. The truth is somewhere in between, and it depends entirely on how you use it.
+Ever stared at a ChatGPT response and thought "this is useless"? The problem was probably the prompt, not the model, and this book is about closing that gap.
 
-This mini-book is not about the theory of artificial intelligence or the ethics of machine learning. It is about the practical, day-to-day use of AI tools — ChatGPT, Claude, Copilot, and whatever else ships next month — in a professional tech context.
+This mini-book covers the day-to-day use of AI tools (ChatGPT, Claude, Copilot, and whatever else ships next month) at a tech job. Theory and ethics are someone else's book.
 
-The goal is simple: use these tools to do your actual work better, faster, and with fewer errors. Not to impress anyone. Not to automate yourself out of a job. Just to be more effective.
-
-If you have ever stared at a ChatGPT response and thought "this is useless," the problem was probably the prompt, not the model. This book is about closing that gap.
-
-## Chapters Overview
-
-- [Chapter 1: The Rules](/pages/ai-at-work-chapter-1): What to use AI for, what not to, and how to avoid the obvious traps.
-- [Chapter 2: Prompts That Work](/pages/ai-at-work-chapter-2): Patterns for code review, debugging, documentation, and knowledge extraction.
-- [Chapter 3: AI in Your Workflow](/pages/ai-at-work-chapter-3): Integrating AI tools into daily work without making it your personality.
-
----
+You want to do your actual work better and faster, with fewer errors. That's it, nobody's automating themselves out of a job here.

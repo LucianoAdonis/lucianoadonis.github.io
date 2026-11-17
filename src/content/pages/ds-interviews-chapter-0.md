@@ -1,14 +1,17 @@
 ---
-title: Interviews
-description: General Information
+title: Game Modes
+description: Optional content, to talk a little bit about covenants.
 status: green
 started: 2024-09-09
 revised: 2026-03-04
 book: ds-interviews
 chapter: 0
 plate: ../../assets/images/interviews/location-interview-network-menu.png
-plateAlt: location-interview-network-menu
+plateAlt: The Dark Souls network settings menu, with the matchmaking password set to "bruh" and ranking registration turned off
 ---
+
+<!-- source: corpus-2025/pages/ds-interviews.md -->
+Optional content, to talk a little bit about ~~companies~~ covenants.
 
 Usually, you would only worry about this once you're deep into the game, but sometimes knowing the options will lead to better mental health.
 
@@ -16,7 +19,7 @@ Usually, you would only worry about this once you're deep into the game, but som
 
 In this mode, you're on your own to find a match. You must traverse through random and questionable pages to land on one where a boss fight can be possible.
 
-It's tricky at first, but when you win, the benefit is that you can negotiate better rewards and positioning. This freedom often comes with more negotiating power over time, especially if you align yourself with a Covenant later.
+It's tricky at first, but when you win, the benefit is that you can negotiate better rewards and positioning. This freedom often comes with more leverage in the long run, especially if you align yourself with a Covenant later.
 
 ## Covenants
 
@@ -32,7 +35,7 @@ It's a 50/50 scenario. Sometimes, you won't get the same opportunities as someon
 ### Ranks
 <!-- https://darksouls.wiki.fextralife.com/Covenants#:~:text=humanity%20as%20offerings.-,Ranks,-Most%20of%20the -->
 
-Most of the covenants allow progression within the covenant in the form of ranks, starting at base (referred to as +0), and maxing at +3.. Raising your rank in a covenant will typically give bonuses and bragging rights.
+Most of the covenants allow progression within the covenant in the form of ranks, starting at base (referred to as +0), and maxing at +3. Raising your rank in a covenant will typically give bonuses and bragging rights.
 
 - Base Senior/+0: 0 offerings
 - Covenant rank +1: 10 total offerings
@@ -40,11 +43,11 @@ Most of the covenants allow progression within the covenant in the form of ranks
 - Covenant rank +3: 50 more offerings, for 80 total
 - Covenant rank +4
 
-In all honesty, this is not really worth it unless you are really into the game, and even if you are you should be carefull.
+In all honesty, this isn't really worth it unless you are really into the game, and even if you are you should be careful.
 
 ### Rewards
 
-Based you base salary, there are some benefits to it:
+Based on your base salary, there are some benefits to it:
 
 - **Worlds Available:** you get more stuff
   - This can be potentiated by knowing languages like English (If it isn't your primary language).
@@ -54,13 +57,13 @@ Based you base salary, there are some benefits to it:
 
 ### Opposite Covenants
 
-Now, there's a risky mechanic that's technically not illegal but frowned upon: swapping between rival Covenants. The tech work it is huge, so multiple covenants playing in the same worlds is not a weird scene, but sometimes things get a little tense, and that leads to "interesting" opportunities by just moving.
+Now, there's a risky mechanic that's technically not illegal but frowned upon: swapping between rival Covenants. The tech world is huge, so multiple covenants playing in the same worlds isn't a weird scene, but sometimes things get a little tense, and that leads to "interesting" opportunities by just moving.
 
 Keep the following in mind:
 
-- You might get shadow banned from other words through their link with the Covenants.
+- You might get shadow banned from other worlds through their link with the Covenants.
   - Even if you work around the usual restrictions, like moving to a single-player, finding a match, and then joining the rival Covenant, you're still at risk.
-- The upfront rewards are excellent, but after that, they are the same as any covenant.
+- The upfront rewards are excellent, but after that, they're the same as any covenant.
 - It's a shady move.
 - Additional things to consider:
   - What happens when you don't have a match?

@@ -1,7 +1,7 @@
 ---
-title: Confluence
+title: Page Structure
 description: Structure Above Else
-status: green
+status: yellow
 started: 2024-08-19
 revised: 2026-03-04
 book: confluence
@@ -18,22 +18,22 @@ Instead of presenting a dense wall of text, you can break the page into columns,
 
 The following page, a dummy (thanks, ChatGPT), would be your run-of-the-mill page in Confluence. Let's see it!
 
-![pagelayout-example-1](../../assets/images/confluence/pagelayout-example-1.png)
+![A plain Confluence page for the Gotta Go Fast team: one long column with a big Sonic-style logo, a search box and headings for Mission, What We Do, Why Choose Us, How We Work, Meet the Team and How to Engage Us](../../assets/images/confluence/pagelayout-example-1.png)
 
 - It doesn't have cohesion.
 - It feels awkward.
 - It looks like some jotted-down pointers from the new hire.
 
-I'm not mean. It is just Digital Feng Shui. Now let's continue with an "arranged" version of it:
+I'm not mean. It's just Digital Feng Shui. Now let's continue with an "arranged" version of it:
 
-![pagelayout-example-2](../../assets/images/confluence/pagelayout-example-2.png)
+![The same page rearranged: intro text on the left, logo and search box on the right, Mission across the top, and What We Do, Why Choose Us and How We Work in three columns](../../assets/images/confluence/pagelayout-example-2.png)
 
 - It could be improved! But it feels more natural and structured. They know what they are doing.
 - Some extra colors may do some good, but let's keep it simple.
 
 So, what happened? A few slight changes to the layout:
 
-![pagelayout-example-2-explanation](../../assets/images/confluence/pagelayout-example-2-explanation.png)
+![The rearranged page in edit mode with eight red numbered markers on the heading, the section borders, the intro text, the logo, the Livesearch macro and the three-column section](../../assets/images/confluence/pagelayout-example-2-explanation.png)
 
 1. The title was adjusted to Level 3 to avoid distracting the reader from the content.
 2. A section was defined for only that item so it doesn't collide with others.
@@ -41,20 +41,18 @@ So, what happened? A few slight changes to the layout:
 4. The logo is displayed on the side, in the same size.
 5. The Livesearch macro will now have a text to display, and it's kept under the logo.
 6. The double section is distributed in 2/3 to have more space for text.
-7. The difference with this section is that it has three columns. Whatever works for you!
+7. The difference with this section is that it has three columns. Whatever works for you.
 8. Sometimes, having a section acting as a separator is more straightforward than adding many new lines to persist the separation.
 
-You may say that it looks good, but it lacks personality as it may work as a page for documentation but not for a team presentation. If that's the case, you can skip right to the [Panels and Layout](#panels-cards-sections-and-layouts) section to see a more colorful example.
-
-### Considerations
+You may say that it looks good, but it lacks personality as it may work as a page for documentation but not for a team presentation. If that's the case, you can skip right to the [Panels, Cards, Sections, and Layouts](/pages/confluence-chapter-3#panels-cards-sections-and-layouts) section to see a more colorful example.
 
 ## Template Magic
 
-One of the biggest problems that I have seen regarding people documentating is a lack of structure, so basically they expend more time wondering about how to do structure the page rather than sitting down to write.
+One of the biggest problems that I have seen regarding people documenting is a lack of structure, so basically they expend more time wondering how to structure the page rather than sitting down to write.
 
 By using a template you can limit the scope of the work, so instead of making something from nothing, they just have to fill the document with the proper information.
 
-Before diving in types of structures, we have to discuss about ways to make the Template more obvious to the casual Confluence User.
+Before diving in types of structures, we have to discuss ways to make the Template more obvious to the casual Confluence User.
 
 ### Facilitate the Usage
 
@@ -62,27 +60,27 @@ Instead of creating a normal page by clicking the 'Create' button, you have to s
 
 There are more straightforward ways to achieve this, but you may understand why people always miss this.
 
-[Add Page via Form](https://apps-docs.servicerocket.com/x/mglb?utm_medium=confluence&utm_source=macro_editor). In later sections, we will board more Macros, but by now, this is what lets you define a button to create a page based on a defined template or Live Templates.
+[Add Page via Form](https://apps-docs.servicerocket.com/x/mglb?utm_medium=confluence&utm_source=macro_editor). In later sections, we will cover more Macros, but by now, this is what lets you define a button to create a page based on a defined template or Live Templates.
 
 The Live Templates must be discussed separately, which can quickly get tricky.
 
 ### Complex Documents
 
-An [Architecture Decision Record (ADR)](/pages/adrs) is a decent example of that! By "Complex" I'm referring to the lenght and the things that the page has to aboard.
+An [Architecture Decision Record (ADR)](/pages/adrs) is a decent example of that. By "Complex" I'm referring to the length and the things that the page has to cover.
 
-In short, a document that get's you information relevant of how things where, what where the options, what was proposed and how changes were applied. I cannot state how helpful is to have that for both onboarding (as context) and for internal agreedments.
+In short, a document that gets you information relevant to how things were, what were the options, what was proposed and how changes were applied. I can't state how helpful it is to have that for both onboarding (as context) and for internal agreements.
 
-![templates-example-1](../../assets/images/confluence/templates-example-1.png)
+![A blank ADR-style template in edit mode with nine red numbered markers: the page tags icon, an In Review status badge, a comment, a Table of Contents macro, the Problem Statement title, a Warning macro, guiding comments, an Option 1 subtitle and a Code Block macro](../../assets/images/confluence/templates-example-1.png)
 
 1. Page <span class="ui">Tags</span> can be part of the <span class="ui">template</span>! Make sure to set them.
 2. The <span class="ui">Badge</span> Macro can help visualize the status.
 3. This is a <span class="ui">Comment</span> you will be seeing a lot.
 4. I have seen people trying to make an index manually. To avoid that awkwardness, the <span class="ui">Table of Contents</span> will take care of it. So they only focus on writing.
 5. You'll find <span class="ui">Titles</span> already defined with the proper level, saving you time and effort.
-6. A <span class="ui">Warning</span> shouldn't be used like that. But in this case is enough to make something clear and have it as a reference that the macros exist.
+6. A <span class="ui">Warning</span> shouldn't be used like that. But in this case it's enough to make something clear and have it as a reference that the macros exist.
 7. The <span class="ui">Comments</span> can be helpful in clarifying the objectives of sections or other things to consider.
 8. Example <span class="ui">Subtitle</span> with a <span class="ui">Comment</span> of the same level.
-9. It's helpful to have some macros already in place, such as the <span class="ui">Code Block</span>, to convey the message that 'hey, this is possible and we've got you covered!'
+9. It's helpful to have some macros already in place, such as the <span class="ui">Code Block</span>, to convey the message that 'hey, this is possible and we've got you covered.'
 
 ### Simple Documents
 
@@ -104,19 +102,19 @@ The Cloud version has the advantage to have more variety and freedom to provide 
 From that link I picked just a few examples:
 
 1. [Brainstorming](https://www.atlassian.com/software/confluence/templates/brainstorming)
-![cloud-template-example-1](../../assets/images/confluence/cloud-template-example-1.png)
-    - In my opinion, the Cloud version seems to take more pride in using emojis, while Data Center docs often feel like they’re trying to turn into RFCs or some other clunky format.
+![The Cloud Brainstorming template in edit mode, a table with moderator, participants, date and video call link, a contents list with emoji and a Planning section](../../assets/images/confluence/cloud-template-example-1.png)
+    - In my opinion, the Cloud version seems to take more pride in using emojis, while Data Center docs often feel like they're trying to turn into RFCs or some other clunky format.
 
 2. [Project Plan](https://www.atlassian.com/software/confluence/templates/project-plan):
-![cloud-template-example-2](../../assets/images/confluence/cloud-template-example-2.png)
-  - Besides Emojis and adding more colors, the titles main titles start at two, which is a good approach to avoid getting dizzy for the transtion of a higher case to a paragraph type.
-  ![cloud-template-example-2a](../../assets/images/confluence/cloud-template-example-2a.gif)
+![The Cloud Project Plan template in edit mode, a table of owner, approver, objective and status, then Problem statement and Scope sections with emoji headings](../../assets/images/confluence/cloud-template-example-2.png)
+  - Besides Emojis and adding more colors, the main titles start at two, which is a good approach to avoid getting dizzy for the transition of a higher case to a paragraph type.
+  ![Animation of the Brainstorming template planning section, a heading with an hourglass emoji over a table of objectives and method](../../assets/images/confluence/cloud-template-example-2a.gif)
   - Scrolling down there is a Macro that I haven't seen before:
-  ![cloud-template-example-2b](../../assets/images/confluence/cloud-template-example-2b.png)
+  ![A Timeline section in the Cloud template with a planner roadmap, two swim lanes holding Feature 1, Feature 2, Feature 3, an iOS app and an Android app](../../assets/images/confluence/cloud-template-example-2b.png)
     - Quite handy if you ever need it.
 
-While these templates are great and can save time, **remember that not everything that shines is gold**. You should look beyond predefined templates and customize your workflow. Don't feel constrained by the structure—use these templates as a starting point, but have the insight to choose the right tools and create something unique!
+While these templates are great and can save time, **remember that not everything that shines is gold**. You should look beyond predefined templates and customize your workflow. Don't feel constrained by the structure. Use these templates as a starting point, but have the insight to choose the right tools and create something unique.
 
-The idea is not to go and reinvent the wheel but to have the insights to pick the right tools and come up with something intersting!
+The idea is not to go and reinvent the wheel but to have the insights to pick the right tools and come up with something interesting.
 
 ---

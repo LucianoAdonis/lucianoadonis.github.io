@@ -1,24 +1,29 @@
 ---
 title: Visualizing Work Through Jira and Confluence
-description: Making the connection between epics and results visible
+description: Getting your OKR report down to a link.
 status: orange
 started: 2024-12-25
 revised: 2026-02-21
 book: okr
 chapter: 3
 plate: ../../assets/images/headers/yellow-okr.png
-plateAlt: yellow-okr
+plateAlt: '"OKR" in dark letters on three wooden cubes, standing on a glossy yellow surface'
 ---
 
 ## Why This Matters
 
-The goal is to make reporting upward require zero writing. When a stakeholder asks "how are we tracking against the reliability OKR?", the answer should be a link, not a paragraph you compose from memory.
+<!-- source: 2026 batch (8126bde), restored -->
+You want reporting upward to take zero writing. When a stakeholder asks "how are we tracking against the reliability OKR?", the answer should be a link, not a paragraph you write from memory.
 
-The way to get there is to make the Objective → Key Result → Epic chain visible in your tools. Chapter 1 described the chain. This chapter covers how to wire it in Jira and surface it in Confluence.
+For that, the Objective, Key Result and Epic chain has to be visible in your tools. [Chapter 1](/pages/okr-chapter-1) described the chain. This chapter wires it in Jira and shows it in Confluence.
 
-## Structuring Epics for Reporting
+---
 
-Every Epic in Jira that contributes to an OKR should say so in its description. A simple format that works:
+## Confluence
+
+With the Jira and Confluence integration, macros run queries that show who's involved in a task, what's done and the current status. That covers direct and indirect contributions to OKRs.
+
+First, make every Epic that feeds an OKR say so in its description. A simple format:
 
 ```
 OKR: [Objective name]
@@ -26,60 +31,65 @@ Key Result: [KR text and target]
 What this Epic does: [one sentence]
 ```
 
-This is not bureaucracy. It is the difference between being able to answer "why does this Epic exist?" in a meeting and having to go find the person who created it.
+That's how you answer "why does this Epic exist?" without hunting for whoever created it.
 
-When Epics reference their Key Results, you can query them in Jira by searching for the KR text in Epic descriptions, or by using a label or custom field if your team sets that up. Either way, pulling a report of "all Epics contributing to KR2" becomes a search rather than a memory exercise.
+<!-- source: 2026 batch (8126bde), restored -->
+Once Epics reference their Key Results, you can find them in Jira by searching for the KR text in the descriptions, or by using a label or custom field if your team sets that up. Either way, pulling "all Epics contributing to KR2" becomes a search.
 
-## Confluence: Surfacing the Work
+---
 
-With Jira and Confluence linked, you can pull live Jira data directly into a Confluence page using the Jira Issues macro. The result is a page that updates automatically as work progresses, without anyone maintaining it manually.
+## Insert Jira Issues Macro in Confluence
 
-### Adding the Jira Issues Macro
+Once the applications are linked, the Jira Issues macro displays issues directly on a Confluence page.
 
-- Open the Confluence page where you want to display progress.
-- In the editor, click the "+" icon and select "Other macros."
-- Search for "Jira Issues" and select it.
-- Configure the macro using a JQL query to filter the specific Epics or issues you want to show.
+- Open the Confluence page where you want to display Jira issues.
+- Click "Insert more content" (the "+" icon) in the editor toolbar, then select "Other macros".
+- Type "Jira" in the search box and select the "Jira Issues" macro.
+- Configure the macro to show the issues you want, filtering with JQL (Jira Query Language).
 
-### Writing the JQL Query
+---
 
-JQL lets you filter exactly which issues appear. Some useful queries for OKR reporting:
+## Create a Jira Query Using JQL
 
-Show all Epics in a project with a specific label:
+JQL lets you say exactly which issues you want.
+
+- Decide the criteria, for example a specific project, a particular user or a certain status.
+- Open Jira, go to the "Issues" menu and select "Search for issues".
+- Enter your query in the JQL field. For example:
+
+```
+project = "MYPROJECT" AND status = "Open" AND assignee = currentUser() ORDER BY created DESC
+```
+
+- Test it in Jira to make sure it returns what you expect.
+
+The most useful pattern for OKR reporting is to label every Epic with a tag for its Key Result and query by that label. One Confluence page per OKR, each showing its contributing Epics:
+
 ```
 project = "MYPROJECT" AND issuetype = Epic AND labels = "okr-reliability-q3"
 ```
 
-Show open issues assigned to your team under a specific Epic:
+<!-- source: 2026 batch (8126bde), restored -->
+Two more that come in handy. Open issues assigned to your team under a specific Epic:
+
 ```
 "Epic Link" = PROJ-42 AND status != Done ORDER BY priority DESC
 ```
 
-Show everything updated in the last 7 days in a project:
+Everything updated in the last 7 days in a project:
+
 ```
 project = "MYPROJECT" AND updated >= -7d ORDER BY updated DESC
 ```
 
-The most useful pattern for OKR reporting is to label every Epic with a tag that identifies the Key Result it contributes to, then query by that label in Confluence. One Confluence page per OKR, each showing the live status of its contributing Epics.
+---
 
-### Saving and Embedding the Query
+## Insert the JQL into the Jira Issues Macro
 
-- Paste your JQL into the macro's query field.
-- Test it in Jira first to confirm it returns the right results.
-- Save the macro. The page will display the matching issues as a live table.
+- Go back to your Confluence page where the macro is placed.
+- Click the macro to edit it and paste your JQL in the query field.
+- Save the macro settings.
 
-When you refresh the Confluence page during a review meeting, the data is current without anyone having prepared a report. That is the point.
-
-## The Reporting Chain in Practice
-
-A complete setup looks like this:
-
-1. Company sets Objectives and Key Results for the quarter.
-2. Team creates Epics in Jira, each referencing the Key Result it moves.
-3. Epics are labeled for easy querying (`okr-[kr-slug]`).
-4. A Confluence page per OKR uses the Jira Issues macro to show all contributing Epics and their status.
-5. At review time: open the Confluence page, see the current state, report the number.
-
-The effort is upfront in the setup. After that, the tools do the tracking.
+Now the page shows the matching issues as a live table, and refreshing it in a review meeting gives you current data without anyone preparing a report.
 
 ---

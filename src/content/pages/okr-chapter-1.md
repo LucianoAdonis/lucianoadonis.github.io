@@ -1,38 +1,41 @@
 ---
 title: Why OKRs Matter
-description: The structure, the hierarchy, and where Jira fits in
+description: The third layer nobody explains, and which months your Q3 really is.
 status: orange
 started: 2024-12-25
 revised: 2026-03-03
 book: okr
 chapter: 1
 plate: ../../assets/images/headers/yellow-okr.png
-plateAlt: yellow-okr
+plateAlt: '"OKR" in dark letters on three wooden cubes, standing on a glossy yellow surface'
 ---
 
 ## What is an OKR?
 
-OKR stands for Objectives and Key Results. The formula is:
+It's a sentence you fill in (OKR stands for Objectives and Key Results):
 
-**I will [Objective] as measured by [Key Results].**
+**I will (Objective) as measured by (Key Results).**
 
-That is the whole thing. What makes it useful is not the formula, it is the discipline of separating what you want to achieve from how you will know you achieved it.
+The Objective is qualitative, like "Improve platform reliability", and you can't tick a box and say you're done. The Key Results are the numbers that say whether you got there, like "Reduce incident frequency by 30% this quarter."
 
-An Objective is a direction. It is qualitative and tells you where you are going. "Improve platform reliability." You cannot check a box and say you are done. It is a statement of intent.
+<!-- source: 2026 batch (8126bde), restored -->
+The point of the sentence is splitting what you want from how you'll know you got it.
 
-A Key Result is the proof. It is a specific, measurable number that tells you whether you actually moved in that direction. "Reduce incident frequency by 30% this quarter." When the quarter ends, either the number is there or it is not.
+For example, "I will enhance the user experience on our website" as measured by "achieving a user satisfaction rate of 70%, reducing load time to under one second, and decreasing error rates to less than 1%."
+
+---
 
 ## The Third Layer Nobody Explains
 
-Most OKR explanations stop at two layers. There is a third one that is where most of the actual work happens.
+Most explanations stop at two layers, and there's a third where the actual work happens.
 
-- **Objective**: the direction
-- **Key Result**: the measurable proof that you moved in that direction
-- **Initiative**: the actual work you do to move the Key Result
+<!-- source: 2026 batch (8126bde), restored -->
+- **Objective**: the direction, where are we going?
+- **Key Result**: the measurable proof that you moved in that direction, how will we know we got there?
+- **Initiative**: the work you do to move the Key Result, what are we building or changing?
+- **Stories/Tasks**: what an Epic breaks down to this sprint
 
-An Initiative is a project, a campaign, a feature, a migration. In Jira, an Initiative becomes an Epic. Multiple Epics can contribute to a single Key Result. Multiple Key Results roll up to a single Objective.
-
-The full chain looks like this:
+An Initiative is a project, a campaign, a feature, a migration. In Jira it becomes an Epic. Several Epics can feed one Key Result, and several Key Results roll up to one Objective:
 
 ```
 Objective
@@ -45,84 +48,89 @@ Objective
     └── Epic E
 ```
 
-This is the chain from company strategy down to the ticket an engineer picks up on Monday morning. Each layer answers a different question:
+That's the chain from company strategy down to the ticket an engineer picks up on Monday morning.
 
-- Objective: where are we going?
-- Key Result: how will we know we got there?
-- Epic: what are we actually building or changing?
-- Stories/Tasks: what does that break down to this sprint?
+---
 
 ## Can a Key Result Be Divided?
 
-This is a common question and the short answer is: Key Results should not be divided into sub-Key Results. What you can do is have multiple Epics contributing to the same Key Result. That is not dividing it, that is just how the work gets organized.
+This is a common question. Short answer: no, a Key Result shouldn't have sub-Key Results. What you can do is have multiple Epics contributing to the same one, which is just how the work gets organized.
 
-If a Key Result starts to feel like it needs to be split, it usually means it is measuring two different things and should be two separate Key Results, each with its own Epics.
+If a Key Result feels like it needs splitting, it's probably measuring two things and should be two Key Results, each with its own Epics.
 
-The thing to avoid is treating Epics as Key Results. An Epic is the work. A Key Result is the outcome. "Migrate authentication service to the new provider" is an Epic. "Reduce login failure rate from 2% to 0.5%" is a Key Result. You might need three Epics to achieve that Key Result, but the KR is the thing you report against, not the individual Epics.
+Also avoid treating Epics as Key Results. "Migrate authentication service to the new provider" is an Epic. "Reduce login failure rate from 2% to 0.5%" is a Key Result, and that's the thing you report against.
 
-The distinction matters because it keeps the focus on outcomes rather than output. Shipping an Epic is not success on its own. Moving the number is.
+<!-- source: 2026 batch (8126bde), restored -->
+You might need three Epics to move that one Key Result, and shipping all three doesn't count until the number moves.
+
+---
 
 ## A Concrete Example
 
-Say the company objective is: "Make the platform something engineers are proud to work on."
+<!-- source: 2026 batch (8126bde), restored -->
 
-Three Key Results under that objective might be:
+Say the company Objective is "Make the platform something engineers are proud to work on."
+
+Three Key Results under it might be:
 
 - Reduce deployment time from 45 minutes to 15 minutes
 - Reduce the number of flaky tests in CI from 80 to under 10
 - Achieve a developer satisfaction score of 8 out of 10 in the quarterly survey
 
-The first Key Result could have three contributing Epics: pipeline parallelization, artifact caching, and test environment provisioning improvements. Each Epic has stories. The engineers work the stories. The Key Result moves as the work lands.
+The first Key Result could have three contributing Epics: pipeline parallelization, artifact caching, and test environment provisioning improvements. Each Epic has stories, the engineers work the stories, and the Key Result moves as the work lands.
 
-When a manager reports upward, they point at the Key Result number. If asked for evidence, they point at the Epics. The chain is already there.
+When a manager reports upward, they point at the Key Result number. If someone asks for evidence, they point at the Epics.
 
-## OKR Cycles
+---
 
-OKRs are time-bound, usually quarterly. Some organizations run annual Objectives with quarterly Key Results underneath them. The cadence matters less than the habit of reviewing them regularly and being honest about whether the numbers are moving.
+## Do OKRs Have Timelines?
 
-### Fiscal Years and Quarters
+Usually yes, and they're often quarterly. The catch is that those quarters follow the organization's fiscal year, not the calendar one. That flexibility lets you fit OKRs into different schedules and reassess regularly.
 
-When someone says "Q2 OKRs," which months they mean depends entirely on when the company's fiscal year starts. Not every company runs on a calendar year.
+<!-- source: 2026 batch (8126bde), restored -->
+Some organizations run annual Objectives with quarterly Key Results underneath. Either way, review them often.
 
-**Standard calendar year (January start)**
+### Understanding Fiscal Years
 
-| Quarter | Months |
-|---------|--------|
-| Q1 | January, February, March |
-| Q2 | April, May, June |
-| Q3 | July, August, September |
-| Q4 | October, November, December |
+Which months "Q2" means depends on when the fiscal year starts. Two common cases:
 
-**Fiscal year starting in October (common in US federal government and some large enterprises)**
+Standard calendar year (January start)
+- **Q1:** January, February, March
+- **Q2:** April, May, June
+- **Q3:** July, August, September
+- **Q4:** October, November, December
 
-| Quarter | Months |
-|---------|--------|
-| Q1 | October, November, December |
-| Q2 | January, February, March |
-| Q3 | April, May, June |
-| Q4 | July, August, September |
+<!-- source: 2026 batch (8126bde), restored -->
+Fiscal year starting in October (common in the U.S. Federal Government and some large enterprises)
+- **Q1:** October, November, December
+- **Q2:** January, February, March
+- **Q3:** April, May, June
+- **Q4:** July, August, September
 
-Other common start months are April (UK government, Japan) and July. When joining a new company or working with a new client, confirming the fiscal year start date early saves confusion later. "Our Q3 goals" means something different depending on who is saying it.
+<!-- source: 2026 batch (8126bde), restored -->
+April (UK government, Japan) and July are other common start months.
 
-### Carrying Over OKRs
+Organizations pick the starting month for regulatory reasons, industry practice or strategy. When you join a new company or start with a new client, confirm it early, because "our Q3 goals" means something different depending on who says it.
 
-Carrying an OKR into the next quarter is allowed. The useful question when that happens is whether the target was unrealistic to begin with, or whether something blocked progress that should be addressed. An OKR that gets carried over three times in a row is not an OKR anymore, it is a wish.
+### Considerations for Carrying Over OKRs
 
-When extending an OKR into a new period:
+<!-- source: 2026 batch (8126bde), restored -->
+Carrying an OKR into the next quarter is allowed. When it happens, ask whether the target was unrealistic to begin with, or whether something blocked progress that needs fixing. If it's on its third carry-over, drop it or rewrite it.
 
-- **Review the reason**: was the scope too ambitious, did external conditions change, or is this genuinely a long-term initiative that spans quarters by design?
-- **Update the Key Results**: new information or changed conditions may mean the original numbers are no longer the right target.
-- **Communicate it explicitly**: a carried-over OKR that is not announced looks like a missed OKR. Say it out loud, say why, and say what changes.
-- **Check alignment**: make sure the carried-over OKR still maps to current company priorities. Objectives that made sense in Q2 are not always relevant in Q3.
+An OKR can move to the next period if it was too ambitious, blocked, or a long-term project by design. When you extend one:
+
+<!-- source: 2026 batch (8126bde), restored -->
+- **Review and Rationale:** Why is it carried over? Over-ambition, external factors, or its long-term nature?
+- **Update and Adapt:** Revise the Key Results if the business changed.
+- **Communication:** Say it out loud, say why, and say what changes, or people will read it as a miss.
+- **Integration with New Goals:** Check it still maps to current priorities.
+
+---
 
 ## How Does Jira Relate to OKRs?
 
-Epics in Jira are the natural home for Initiatives. When you create an Epic, its description should reference the Key Result it contributes to. This does two things:
+Many organizations use Jira to follow OKRs. Managers and product owners create Epics that correspond to each OKR, and teams (development, infrastructure, whatever) use them to show their own contribution to the company goals.
 
-First, it makes the connection visible to anyone looking at the Epic. An engineer can see why the work exists, not just what it is.
-
-Second, it makes upward reporting mechanical. When someone asks "how are we tracking against KR2?", the answer is "here are the Epics contributing to KR2, and here is their current completion percentage."
-
-Without this connection, reporting becomes a summary you write from memory. With it, the work reports itself.
+Put the Key Result in the Epic's description. Anyone looking at it can see why the work exists, not just what it is. And when someone asks "how are we tracking against KR2?", you answer with the Epics contributing to it and their completion percentage. Chapter 3 shows how to pull that into Confluence.
 
 ---

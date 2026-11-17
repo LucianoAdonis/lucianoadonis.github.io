@@ -5,7 +5,7 @@ status: red
 started: 2024-11-29
 revised: 2026-02-21
 plate: ../../assets/images/headers/yellow-shopping-cart.png
-plateAlt: yellow-shopping-cart
+plateAlt: A small toy shopping cart with blue handles, alone on a plain yellow background
 ---
 
 ## Suggested Books
@@ -21,3 +21,9 @@ plateAlt: yellow-shopping-cart
 - Worthing Saga - Orson Scott Card
 
 ## Suggestions if you don't like reading
+
+<div data-review="new">
+
+Still being written.
+
+</div>

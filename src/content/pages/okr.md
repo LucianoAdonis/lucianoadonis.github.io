@@ -1,6 +1,6 @@
 ---
 title: OKRs and You
-description: Harness OKRs for transparency and alignment.
+description: 'Fun'
 status: orange
 started: 2024-12-25
 revised: 2026-02-21
@@ -9,25 +9,19 @@ spine:
   hue: 105
   glyph: target
 plate: ../../assets/images/headers/yellow-okr.png
-plateAlt: yellow-okr
+plateAlt: '"OKR" in dark letters on three wooden cubes, standing on a glossy yellow surface'
 ---
 
 >"First time with Micromanagement?"
 
 ## How This Mini-Book Can Help You
 
-OKRs exist because at some point someone noticed that teams were busy, managers were reporting progress, and yet nothing meaningful was getting done. The framework is an attempt to fix the gap between "we worked on things" and "we moved the needle."
+Somewhere in a lot of companies, transparency and accountability fall through the cracks. What gets reported and the work that actually happens stop matching, and you end up with talent that's underused, teams short on resources, or some dubious corporate practices.
 
-For engineers and leads, the practical value is simpler: when your Jira Epics are tied to Key Results, your work speaks for itself in every status update. You do not have to explain what you did. The numbers do it.
+OKRs (Objectives and Key Results) are the framework that tries to fix that gap between "we worked on things" and "we moved the needle." Teams were busy, managers were reporting progress, and yet nothing meaningful was getting done, so someone came up with this.
 
-This guide covers how OKRs are structured, how deliverables and Key Results relate to each other, and how to wire Jira so that reporting upward is a matter of pointing at something rather than writing a summary from scratch.
+If you manage a team, OKRs give you a way to show what your people really do, and leaders get to see the real priorities. If you're an engineer, you get clear expectations and a defined role. Tie your Jira Epics to Key Results and your work speaks for itself in every status update. You don't have to explain what you did, the numbers do it!
 
----
-
-## Chapters Overview
-
-- [Chapter 1: Why OKRs Matter](/pages/okr-chapter-1): The structure, the hierarchy, and where Jira fits in.
-- [Chapter 2: Aligning Infrastructure with Business OKRs](/pages/okr-chapter-2): What to do when your team's work does not obviously match any company objective.
-- [Chapter 3: Visualizing Work Through Jira and Confluence](/pages/okr-chapter-3): Making the connection between epics and results visible.
+This mini-book covers how OKRs are structured, how Epics feed Key Results, and how to wire Jira so reporting is a link.
 
 ---

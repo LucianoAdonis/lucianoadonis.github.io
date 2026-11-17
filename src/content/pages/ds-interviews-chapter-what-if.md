@@ -1,21 +1,25 @@
 ---
-title: Interviews
-description: General Information
-status: green
+title: What If You Become the Monster
+description: Sitting on the other side of the interview.
+status: orange
 started: 2024-11-22
 revised: 2026-02-21
 book: ds-interviews
 chapter: -1
 label: What If
 plate: ../../assets/images/interviews/location-interview-network-menu.png
-plateAlt: location-interview-network-menu
+plateAlt: The Dark Souls network settings menu, with the matchmaking password set to "bruh" and ranking registration turned off
 ---
 
 Congrats! You now have become the monster you swear to destroy.
 
 ## Types of Candidates
 
-In this mod
+<div data-review="new">
+
+Still writing this one.
+
+</div>
 
 ## Attack Patterns
 

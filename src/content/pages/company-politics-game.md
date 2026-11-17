@@ -1,7 +1,7 @@
 ---
 title: Tech Manager
 description: Take less to play than the actual thing!
-status: red
+status: orange
 started: 2025-07-15
 revised: 2026-02-21
 shelf: theories
@@ -15,10 +15,16 @@ elsewhere:
   note: The board game became Rush Q Cards, playable in the browser.
 ---
 
-A boardgame to teach players how to became a successful ~~or at least how to survive as a~~ manager.
+A board game to teach players how to become a successful ~~or at least how to survive as a~~ manager.
 Making them aware of the cards that they have, how they can play with them, but also how they can take into account the ones from other players and use them against them. All to prove to the higher ups who's the best to keep around.
 
-### Summary
+<div data-review="new">
+
+The solo version, played against the computer, is Rush Q Cards. This page keeps the multiplayer idea, with cooperation, betrayal and the rotating layoff.
+
+</div>
+
+## Summary
 
 As candidate Manager looking for a promotion, your objective is to build your team, complete projects, earn reputation points, secure your position, and if you play your cards well, become a Director.
 
@@ -42,17 +48,17 @@ Contents:
 		- Complexity Cards 📈
 		- (...)
 
-### Mechanichs
+## Mechanics
 
 [Pending to add/consider the style card as an additional reinforcement]
 
-A match is composed of 8 quarters (2 fiscal years), and a quarter is a round of cadidates' turns.
+A match is composed of 8 quarters (2 fiscal years), and a quarter is a round of candidates' turns.
 
 During each turn, candidates will pick an event from the **Event Deck**. More often than not this will present a challenge that they will have to face using their cards as resources to face them.
 
-The events may range from net positive to loses. Good news, decent news and drama, is what you can expect.
+The events may range from net positive to losses. Good news, decent news and drama, is what you can expect.
 
-The types of cards will be later on explained, but the basic strategy is to keep a good balance between **People Cards** and **Project Cards**, played in front of you. This cards at the end of the game will represent your work history.
+The types of cards will be later on explained, but the basic strategy is to keep a good balance between **People Cards** and **Project Cards**, played in front of you. These cards at the end of the game will represent your work history.
 
 ---
 
@@ -62,15 +68,15 @@ Every quarter one player will choose a card from the **Rush Quarter Deck**, and 
 - Moral Damage to People Card.
 - Opening new paths to victory.
 
-_But we aware, the gains from this betrayal will cost you more than you think!_
+_But be aware, the gains from this betrayal will cost you more than you think!_
 
 Candidates may and should choose to play cooperatively at some points in the game, as it's key to get far and not get an **Early Layoff**.
 
 After the first fiscal year, three **Early Layoff** cards will be added to the **Event Deck**. The candidate that started playing will be the first **Target**. Each quarter, it will change to the next player following the same order of play.
 
-If a **Early Layoff** is drawn and the **Target** doesn't have enough **reputation points** to justify it's position, it's out of the game. But in case it does, it will lose all his played cards with the exception of half of the people cards and it will gain inmmunity so the target of the layoff will skip it.
+If an **Early Layoff** is drawn and the **Target** doesn't have enough **reputation points** to justify its position, it's out of the game. But in case it does, it will lose all his played cards with the exception of half of the people cards and it will gain immunity so the target of the layoff will skip it.
 
-#### Projects
+### Projects
 
 Projects are what provide you **reputation points**, you can only work on projects if you have enough team (**People Cards**) to assign to them.
 There is a base limit of three active projects per player, which means that your team even if you have more people can only work at three until completed.
@@ -99,7 +105,7 @@ Clarifications:
 	- You can assign people to them, but you are not allowed to move people from the project until completed.
 		- *If have someone already working with the team, you wouldn't pull them out, right?, right???*
 
-#### People
+### People
 
 ```
 
@@ -124,22 +130,22 @@ Points from Cards:
 - 3 = 2 Members
 - 4 = 3 Members
 
-#### Profiles
+### Profiles
 
 Each manager has their own style, be either to lead or to work. But for sake of simplicity, just Lead style:
 
 - **Strategist Explorer**: no project distribution limit as long as it has people.
 	- (To not forget) Can be punished by scope creep and delays like Complexity Cards or Events.
-- **Strategist Full Focus**: increases the multipler for all projects by 1
+- **Strategist Full Focus**: increases the multiplier for all projects by 1
 	- Can only have two active projects.
 - **Technical Expert**: can use communication cards to progress projects.
-	- (To not forget) Communication cards can punish this playstyle and reduce multiplers.
+	- (To not forget) Communication cards can punish this playstyle and reduce multipliers.
 
-#### A Turn
+### A Turn
 
 - You pick 5 cards. Shuffling some once is allowed as you should ensure to have at least one **People Card**.
 	- People cards are multipliers, those stay after every quarter, unless they state otherwise.
-- The first player doesn't pick a event before starting it's turn.
+- The first player doesn't pick an event before starting its turn.
 	- Events have priority resolving at the start of a turn.
 	- If an event cannot be applied (e.g., condition can no longer decrease certain attributes) it's skipped.
 	- If it applies, it must be resolved.
@@ -152,7 +158,7 @@ Each manager has their own style, be either to lead or to work. But for sake of 
 - There are two type of cards that give you points:
 	- **People Cards**:
 		- Duration: undefined, based on the card.
-		- Value: multipliers, always multipled by 1.
+		- Value: multipliers, always multiplied by 1.
 		- Redeem Condition: associated project, no blockers or delays.
 		- Example:
 			- Small Team: 3x (1)
@@ -190,7 +196,7 @@ Favors
  -
  -
 
-Consetions
+Concessions
 
 Topic
 
@@ -200,7 +206,7 @@ Types of cards:
 
 Each card has two effects
 
-Looks similar to a pendulumn yugioh card
+Looks similar to a pendulum yugioh card
 
 [    ] (Title)
 ------

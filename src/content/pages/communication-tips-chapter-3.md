@@ -1,30 +1,30 @@
 ---
-title: Tech Expressions and Everyday Language
-description: Common phrases you will hear in stand-ups, code reviews, and team chat.
+title: Common Tech Expressions
+description: Common phrases you'll hear in stand-ups, code reviews, and team chat.
 status: yellow
-started: 2026-02-21
+started: 2024-11-22
 revised: 2026-02-21
 book: communication-tips
 chapter: 3
 plate: ../../assets/images/headers/purple-computer.png
-plateAlt: headers-purple-computer
+plateAlt: "Isometric illustration on a purple background: a server tower, a monitor showing code brackets, a phone, an HTML tile, a chart tile, a pen and a red book."
 ---
 
-Every workplace develops its own shorthand. The phrases below come up constantly in engineering teams, and understanding them makes it easier to follow conversations, especially if you are new to the industry or joining a team with a different culture.
+You'll hear these constantly in engineering teams, especially if you're new to the industry or joining a team with a different culture.
 
 ## Daily Stand-ups
 
-Stand-ups tend to follow a predictable rhythm. These are the phrases you will hear most often:
+Stand-ups follow a predictable rhythm. These are the ones you'll hear most often:
 
-- "I'm working on...": Current focus
-- "Blocked by...": Something is preventing progress
-- "Need help with...": Requesting assistance
-- "Should be done by...": Setting expectations
-- "Can pair with someone on...": Offering or requesting collaboration
+- "I'm working on [task]": Current focus
+- "Blocked by [thing]": Something is preventing progress
+- "Need help with [thing]": Requesting assistance
+- "Should be done by [time]": Setting expectations
+- "Can pair with someone on [task]": Offering or requesting collaboration
 
 ## Debugging Life
 
-Debugging has its own vocabulary, often delivered with a healthy dose of humour:
+Debugging has its own vocabulary:
 
 - "Digging into the logs": Investigating an issue
 - "Found the root cause": Identified the source problem
@@ -66,11 +66,11 @@ The general-purpose phrases that fill the spaces between technical work:
 
 Communicating blockers clearly helps the team help you faster:
 
-- "Stuck on...": Need direct assistance
-- "Blocked by...": An external dependency is the issue
-- "Waiting for...": Pending someone else's work
-- "Need access to...": Permission required
-- "Can someone review...": Awaiting feedback before proceeding
+- "Stuck on": Need direct assistance
+- "Blocked by": An external dependency is the issue
+- "Waiting for": Pending someone else's work
+- "Need access to": Permission required
+- "Can someone review": Awaiting feedback before proceeding
 
 ## Polite Pushback
 
@@ -98,17 +98,17 @@ A consistent format makes status updates scannable:
 
 ## Meeting Speak
 
-Meetings have their own dialect. Recognising these phrases helps you navigate them:
+Meetings have their own dialect. Recognizing these phrases helps you navigate them:
 
 - "Let's take this offline": Discuss later, outside this meeting
-- "Hard stop at...": Must leave at a specific time
+- "Hard stop at": Must leave at a specific time
 - "Double-click on that": Explore the topic in more depth
-- "Circle back to...": Return to a previous point
+- "Circle back to": Return to a previous point
 - "Action items?": What concrete tasks come out of this meeting
 
-## Time Management Abbreviations
+## Time Management
 
-These abbreviations show up in chat and calendar events constantly:
+These show up in chat and calendar events constantly:
 
 - **EOD**: End of Day
 - **COB**: Close of Business
@@ -118,7 +118,7 @@ These abbreviations show up in chat and calendar events constantly:
 
 ## Common Idioms
 
-Workplace idioms you will encounter, especially in cross-functional meetings:
+Workplace idioms you'll run into, especially in cross-functional meetings:
 
 - "Putting out fires": Handling urgent issues reactively
 - "In the weeds": Deep in complex details
@@ -138,4 +138,4 @@ Quick affirmations that keep conversations moving:
 
 ---
 
-Keep it professional, clear, and friendly. When in doubt, overcommunicate, but keep it concise.
+Remember: keep it professional, clear, and friendly. When in doubt, overcommunicate (but keep it concise)!

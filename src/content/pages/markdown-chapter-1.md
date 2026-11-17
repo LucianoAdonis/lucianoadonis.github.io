@@ -7,18 +7,18 @@ revised: 2026-02-21
 book: markdown
 chapter: 1
 plate: ../../assets/images/markdown/markdown-github-screenshot.png
-plateAlt: markdown-github-screenshot
+plateAlt: The GitHub page of the lucianoadonis.github.io repository on a dark theme, listing the folders _layouts, assets, images and pages above the About box
 ---
 
 ## Templates
 
 In this [page](https://pages.github.com/themes/) you can get the list of available themes and their repositories.
 
-If you want to customize you will need to look the repository to overwrite them.
+If you want to customize you will need to look at the repository to overwrite them.
 
 ## Structure
 
-To use other layout or make changes to the existent one, make a copy from the original repository and do the proper changes.
+To use other layout or make changes to the existing one, make a copy from the original repository and do the proper changes.
 
 The following example repository structure is part of this [page](https://github.com/LucianoAdonis/lucianoadonis.github.io/tree/main).
 
@@ -45,11 +45,11 @@ The following example repository structure is part of this [page](https://github
 
 Continuing the Leap Day example you can get the file from the [_layouts](https://github.com/pages-themes/leap-day/blob/master/_layouts/default.html) folder.
 
-Sometimes it's easier to look what you will get by going directly to that repo and see what you need to update.
+Sometimes it's easier to look at what you will get by going directly to that repo and see what you need to update.
 
 This logic to overwrite values applies for other settings.
 
-#### Layout Overwrite
+### Layout Overwrite
 
 There are a lot of values that you can change directly in each page, this is how you do it:
 
@@ -63,7 +63,7 @@ description:
 
 ```
 
-There a lot of parameters that you can update, but that's for another time!
+There are a lot of parameters that you can update, but that's for another time!
 
 ```markdown
 
@@ -89,6 +89,6 @@ featured: true
 
 ```
 
-This paraters are the ones that you would see in the [_config.yml](https://github.com/LucianoAdonis/lucianoadonis.github.io/blob/main/_config.yml).
+These parameters are the ones that you would see in the [_config.yml](https://github.com/LucianoAdonis/lucianoadonis.github.io/blob/main/_config.yml).
 
 ---

@@ -7,63 +7,86 @@ revised: 2026-02-21
 book: thesis-the-core-five
 chapter: 1.5
 plate: ../../assets/images/interviews/main-menu.png
-plateAlt: main-menu
+plateAlt: The Dark Souls title screen, an armored knight kneeling with a sword beside the words "Prepare to Die Edition" and "Press Start Button"
 ---
+
+<div data-review="new">
+
+This chapter is still being written. What's here is the list I started with and a few notes on who stays and who leaves.
+
+</div>
 
 ## Personal Drive
 
-Not everyone on your team is there for the same reason. Understanding why someone shows up matters more than knowing how well they perform right now. A person optimizing for their paycheck behaves differently from one chasing reputation, and both behave differently from someone who is genuinely trying to learn.
+<!-- source: 2026 batch (8126bde), restored -->
+Not everyone on your team shows up for the same reason. Why someone shows up tells you more than how well they're performing right now. A person working for the paycheck acts differently from one chasing reputation, and both act differently from someone who's really trying to learn.
 
-Broad categories of what drives people:
+<!-- source: 2026 batch (8126bde), restored -->
+Here are the broad categories of what drives people:
 
-- **Self-improvement**: using the work as a mirror, learning through difficulty, getting better at something hard
-- **Learning**: acquiring new skills, expanding range, staying curious
-- **Career advancement**: the next title, the next role, the next company
-- **Insight**: understanding how the company works, the politics, the real decision-making, not the org chart version
-- **Paycheck**: funding everything outside of work, no more and no less
-- **Reputation**: being known for something, recognition, the story they tell about themselves
+- **Self Improvement**: Get to know yourself through hardships, using the work as a mirror.
+- **Learning**: Develop new skills, expanding your range and staying curious.
+- **Career**: Professional Advancement, the next title, the next role, the next company.
+- **Insight**: Learn about the company and their ways, how it really works, the politics and the real decision-making.
+- **Paycheck**: To justify hobbies, and afford living. No more, no less.
+- **Reputation**: Achievements, recognition, slaying dragons, being known for something.
 
-None of these are wrong. The problem is when you assume everyone shares your drive, or when a project requires one type of motivation and you have staffed it with people running on a different one entirely.
+<!-- source: 2026 batch (8126bde), restored -->
+None of these are wrong. The trouble starts when you assume everybody shares your drive, or when a project needs one kind of motivation and you've staffed it with people running on another.
 
 ## Project Types
 
-The type of project a person is on shapes their experience far more than most managers account for. Four broad categories:
+<!-- source: 2026 batch (8126bde), restored -->
+The type of project someone is on shapes their experience a lot more than most managers count on. There are four broad ones:
 
-- **Greenfield**: building something new, early decisions, high ambiguity, creative energy. The appeal is ownership and novelty.
-- **Improvement**: the long optimization phase, incremental, strategic, requires deep context to move well.
-- **Sustaining**: keeping things alive, limited changes, precision over creativity. Stability is the goal.
-- **Reactive**: responding to what breaks, high urgency, firefighting, time pressure. Adrenaline-driven and exhausting at scale.
+- **Greenfield**: Something new, early decisions, lots of ambiguity. Creative energy, and the appeal is ownership and novelty.
+- **Improvement**: The long optimization phase, incremental, and it needs deep context to move well.
+- **Sustaining**: Keeping things alive, few changes, precision over creativity.
+- **Reactive**: Responding to what breaks, high urgency, firefighting. Driven by adrenaline and exhausting at scale.
 
-Someone who has run a Greenfield project three times may find a fourth one unstimulating. The novelty is gone. They have made these decisions before. For them it is an Opening they have already played. For a junior engineer, the same project is a chance to finally build something from scratch, make real decisions, and own something end to end.
+Someone who has run three Greenfield projects may find a fourth boring, they've already played that opening. For a junior it's the first chance to build from scratch and own something end to end.
 
-The mismatch between person and project type is where retention risk hides, and it almost never surfaces in a sprint review.
+<!-- source: 2026 batch (8126bde), restored -->
+That mismatch is <span data-review="new">probably</span> where most of your retention risk is.
 
 ## Retention
 
-The people who want to stay and the people you want to retain may be different. That sentence sounds cynical. It is just accurate.
+The people that want to stay and the people you want to retain may be different.
+
+<!-- source: 2026 batch (8126bde), restored -->
+Sounds cynical, but it's accurate.
 
 ### Want To Stay
 
-The comfortable person. Making progress, no complaints in 1:1s, showing up, delivering, not asking for more. The silence is the signal. They are not engaged enough to be frustrated.
+The comfortable one. Making progress, no complaints in 1:1s, delivering, not asking for more.
 
-The project's pace suits them, which is fine if the role calls for steady maintenance. The problem is when you need someone pushing and instead you have someone drifting. Comfortable conditions in a role that demands growth produce stagnation, not loyalty worth protecting.
+<!-- source: 2026 batch (8126bde), restored -->
+No complaints <span data-review="new">might just mean</span> they aren't engaged enough to be frustrated.
 
-In a Sustaining project this person may be exactly right. In a Greenfield or Improvement context, the same behavior is a warning sign.
+<!-- source: 2026 batch (8126bde), restored -->
+The project's pace suits them, which is fine if the role calls for steady maintenance. It gets bad when you need someone pushing and you have someone drifting.
+
+<!-- source: 2026 batch (8126bde), restored -->
+In a Sustaining project this person may be exactly right. In Greenfield or Improvement, the same behavior is a warning sign.
 
 ### Leaving Soon
 
-The person you want to keep. They have opinions. They are frustrated, which means they care. They ask questions about other projects, about direction, about why decisions were made the way they were. They might be carrying more than their defined scope and feeling under-recognized for it.
+The one you want to keep. They have opinions, they're frustrated (which means they care), and they ask about other projects, about direction, and why decisions were made the way they were.
 
-In a 1:1 they engage, but there is an undercurrent of "I could be doing more than this." They are outgrowing the current situation and they know it, even if they have not said it out loud.
+<!-- source: 2026 batch (8126bde), restored -->
+They might be carrying more than their defined scope and feeling under-recognized for it.
 
-The danger is that this person is easy to misread as difficult. Their frustration can look like a management problem when it is actually a signal. The moment they go quiet is the moment you have already lost them. Quiet does not mean resolved. It means they stopped expecting things to change.
+<!-- source: 2026 batch (8126bde), restored -->
+In a 1:1 they engage, but there's an undercurrent of "I could be doing more than this." They're outgrowing the current situation and they know it, even if they haven't said it out loud.
+
+Easy to misread as difficult. The moment they go quiet is the moment you've already lost them.
 
 ## The Information Problem
 
-A manager typically only knows whether people are making progress or not. That is a delivery signal, not a health signal. It tells you the piece is moving, not whether it wants to keep moving.
+A manager usually only knows whether people are making progress. The rest needs someone close enough to the team to notice and trusted enough to report honestly, like a TL, TPM or PM who has both access and credibility. <!-- source: 2025 base, restored --> Without that person, attrition is a surprise every time.
 
-Qualitative signals require someone close enough to the team to observe them and trusted enough to report honestly: a TL, TPM, or PM who has both access and credibility. Without that, attrition is a surprise every time. You find out when someone hands in their notice, not three months earlier when the warning signs were already there.
+<!-- source: 2026 batch (8126bde), restored -->
+You find out when someone hands in their notice, not three months earlier when the warning signs were already there.
 
-This is why the relationship with your TL matters beyond technical oversight. They are your ground-level read on who is quietly disengaging, who is frustrated in a way that could still be redirected, and who has mentally already left.
-
-If you do not have that person, you are managing the board without being able to see half of it.
+<!-- source: 2026 batch (8126bde), restored -->
+That's why your relationship with your TL matters beyond technical oversight. They're your ground-level read on who is quietly disengaging, who is frustrated in a way you could still redirect, and who has mentally already left.

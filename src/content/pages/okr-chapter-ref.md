@@ -8,7 +8,7 @@ book: okr
 chapter: 99
 label: References
 plate: ../../assets/images/lsp/teen-titans-get-serious-lsp.png
-plateAlt: teen-titans-get-serious
+plateAlt: Teen Titans cartoon characters scowling in front of a conference table with colorful LEGO builds
 ---
 
 - [What is an OKR? Definition and Examples](https://www.whatmatters.com/faqs/okr-meaning-definition-example): standard information.

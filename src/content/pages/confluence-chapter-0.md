@@ -1,7 +1,7 @@
 ---
-title: Confluence
+title: About the Author
 description: Self Reference
-status: green
+status: yellow
 started: 2024-08-19
 revised: 2026-02-21
 book: confluence
@@ -12,7 +12,7 @@ chapter: 0
 
 I feel awkward writing the following section about myself rather than jumping straight to the topic, but I think it may help clear some misunderstandings about writing.
 
-If you want to accompany me in this group therapy section, which may help you sort your own feelings, continue reading. Otherwise, feel free to jump to the [following section](#why-this-mini-book).
+If you want to accompany me in this group therapy section, which may help you sort your own feelings, continue reading. Otherwise, feel free to jump to the [following section](/pages/confluence#how-this-mini-book-can-help-you).
 
 I promise the rest of the content related to Confluence will be more direct to what you want to know!
 
@@ -22,7 +22,7 @@ When I was in High School, we had to choose between two types of electives: scie
 
 It wasn't because I was eager to improve my writing skills, read books and poems, and spend time dwelling on finding other meanings in them. I just wanted to be in a class with cute girls, and it seemed like an easy/obvious option.
 
-Thinking back, I was more in line with what you'd expect from the archetype of a Rudeus (Mushoku Tensei), Zenitsu (Demon Slayer), or Mineta (My Hero Academia)—an average teenager. I've come a long way since then—I'm a decent person now. But I digress.
+Thinking back, I was more in line with what you'd expect from the archetype of a Rudeus (Mushoku Tensei), Zenitsu (Demon Slayer), or Mineta (My Hero Academia), an average teenager. I've come a long way since then, I'm a decent person now. But I digress.
 
 I ended up being dead wrong. It was a lot of work, reading, and making reports about every small thing we read.
 
@@ -50,12 +50,18 @@ Still, being out of tune with others, and being forced to learn led me to believ
 
 Looking back, I felt that I lacked a reason or meaning behind my actions to move forward. But I kept learning, and I still am. The difference is that the foundation of **pain** helped me develop more tolerance for spending time on things.
 
-I realized when I started university and then working (in tech) that people often didn't give it more thought to writing and other things, even thought they were still mandatory and part of the general expectations.
+I realized when I started university and then working (in tech) that people often didn't give it more thought to writing and other things, even though they were still mandatory and part of the general expectations.
 
 // I think I learned a lot from the forewords in science fiction books, where editors shared their thoughts and opinions about the book and other related sources. It was insightful, and I usually skipped those things if they were present during any mandatory High School book.
 
 ### If You Don't Know Me by Now
 
-At 28, I find myself with the technical proficiency of someone in their mid-30s. But back when I was 19, I would often see people around 27 or 28 being celebrated as geniuses or experts in talks and courses, and I couldn’t quite relate.
+At 28, I find myself with the technical proficiency of someone in their mid-30s. But back when I was 19, I would often see people around 27 or 28 being celebrated as geniuses or experts in talks and courses, and I couldn't quite relate.
+
+<div data-review="new">
+
+[Pending to add... the rest of this section is still being written.]
+
+</div>
 
 ---

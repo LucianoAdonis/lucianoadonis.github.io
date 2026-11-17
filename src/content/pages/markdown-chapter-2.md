@@ -7,7 +7,7 @@ revised: 2026-02-21
 book: markdown
 chapter: 2
 plate: ../../assets/images/headers/pink-css-is-my-pasion.png
-plateAlt: pink-css-is-my-pasion
+plateAlt: A sticker reading CSS IS MY PASSION, the last word in a pink to blue gradient, on a pink background
 ---
 
 ## Adjustments
@@ -27,7 +27,7 @@ It mixes the title of the page set with the "title" followed by a `|` and then t
 
 ### Favicon
 
-Inside of the head of your layout you must include the following line
+Inside the head of your layout you must include the following line
 
 ```html
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -35,9 +35,15 @@ Inside of the head of your layout you must include the following line
 
 I mention that because as I have multiple subpages handling that in everything would be complex.
 
-You can either overwrite the default.html or create a new one an refer it.
+You can either overwrite the default.html or create a new one and refer to it.
 
 ### Layout
+
+<div data-review="new">
+
+Still being written.
+
+</div>
 
 ## Format
 
@@ -80,6 +86,12 @@ Here's a small square displaying the color `#ff6347` (Tomato):
   ```
 </details>
 
+<div data-review="new">
+
+One loss on this page: the original squares grew when you hovered them, but inline styles can't do `:hover`, so these just sit there.
+
+</div>
+
 ### Links
 
 * **Hyper Links**
@@ -119,13 +131,13 @@ Markdown itself does not natively support expandable or collapsible sections. Ho
 ### Import Images
 
 - **No Format:**
-  ![alt image](../../assets/images/neptunia-please-wait.png "Title")
+  ![Neptune in a yellow helmet and green overalls standing in a flower meadow, under the words Esperen, por favor](../../assets/images/neptunia-please-wait.png "Title")
 
 - **With Format:**
-  ![With Format](../../assets/images/neptunia-please-wait.png)
+  ![Neptune in a yellow helmet and green overalls standing in a flower meadow, under the words Esperen, por favor](../../assets/images/neptunia-please-wait.png)
 
 - **Popup Image:**
-  ![Popup Image](../../assets/images/neptunia-please-wait.png)
+  ![Neptune in a yellow helmet and green overalls standing in a flower meadow, under the words Esperen, por favor](../../assets/images/neptunia-please-wait.png)
 
 <details>
 <summary>See Code</summary>
@@ -236,5 +248,11 @@ function copyToClipboard() {
 </details>
 
 ### Content Tips
+
+<div data-review="new">
+
+Still being written.
+
+</div>
 
 ---

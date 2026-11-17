@@ -1,6 +1,6 @@
 ---
-title: Jira
-description: Making sense of project tracking.
+title: Jira and Beyond
+description: A dream come true
 status: red
 started: 2025-02-18
 revised: 2026-02-21
@@ -9,23 +9,17 @@ spine:
   hue: 227
   glyph: ticket
 plate: ../../assets/images/headers/cian-chess-board-v2.png
-plateAlt: cian-chess-board
+plateAlt: A board of eight columns and three rows of chess squares, blue knights, bishops, a pawn and rooks on the top row, an empty middle row, and a row of purple rooks at the bottom
 ---
 
 > The Business is not as forgiving as I am -  Darth Manager
 
 ## How This Mini-Book Can Help You
 
-Turning team activity into readable metrics sounds simple until you try to do it across multiple projects, squads, and people who all use Jira slightly differently. This guide came out of a real attempt to build something that could track engineer distribution, workload, and progress without requiring someone to manually compile spreadsheets every week.
+Figuring out how to turn your workers into a metric seems simple and bad-hearted, but it isn't simple at all, and it's not as easy as it sounds. For work reasons I had to come up with something that could help us identify all the groups that contained multiple people, from different projects... and well, this already goes beyond "my three squads metrics".
 
-A good tracking system shows you where effort is going. The transparency cuts both ways: yes, it tells management where people are, and it also gives you the data to push back when the workload is unreasonable.
+A good system can track and locate where we are wasting effort. I'm all for it, I like the concept of transparency even if that is a double-edged sword.
 
----
-
-## Chapters Overview
-
-- [Chapter 0: JQL](/pages/jira-chapter-0): The query language that powers advanced searches
-- [Chapter 1: The Case](/pages/jira-chapter-1): Building reports across multiple projects and teams
-- [Chapter 1.5: Spreadsheets](/pages/jira-chapter-1-5): Getting your data out and working with it
+Yes, with this, they can know where you're located in an ocean of teams, and what, when and where you're doing things.
 
 ---

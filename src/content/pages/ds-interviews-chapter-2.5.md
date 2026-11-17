@@ -1,26 +1,32 @@
 ---
-title: Interviews
-description: Combat
-status: green
+title: Grand Archives
+description: Optional content to get more experience and preparation.
+status: yellow
 started: 2024-09-10
 revised: 2026-02-21
 book: ds-interviews
 chapter: 2.5
 plate: ../../assets/images/interviews/location-interview-grand-archives.png
-plateAlt: location-interview-grand-archives
+plateAlt: A knight with a shield walking toward an arched doorway in a vast dark library, under the title "Grand Archives"
 ---
 
 ## Practice Grounds
 
-For this section, we’ll dive into the general attack patterns and how to counter them. Honestly, it’s just dodging and hitting—how hard can it be, right?
+For this section, we'll dive into the general attack patterns and how to counter them. Honestly, it's just dodging and hitting, how hard can it be, right?
 
 ### Stamina
+
+<div data-review="new">
+
+Still being written.
+
+</div>
 
 ### Status Ailments
 
 Behavior and other patterns not directly related to combat.
 
-![object-estus-flask](../../assets/images/interviews/object-estus-flask.png)
+![The Estus Flask item card, with a quantity of 1](../../assets/images/interviews/object-estus-flask.png)
 
 ### Enemies Moveset
 
@@ -28,15 +34,15 @@ Behavior and other patterns not directly related to combat.
   <details>
     <summary><strong>Tell me about your experience</strong></summary>
     <ul>
-      <li>The interviewer wants to know about your experience. Briefly mention the technologies and projects you’ve worked on.</li>
+      <li>The interviewer wants to know about your experience. Briefly mention the technologies and projects you've worked on.</li>
       <li>Prepare this beforehand, focusing on what they might want to hear and highlighting your key achievements.</li>
     </ul>
   </details>
 
   <details>
-    <summary><strong>What’s your level with X technology?</strong></summary>
+    <summary><strong>What's your level with X technology?</strong></summary>
     <ul>
-      <li>Your answer sets the difficulty of the questions. A safe option is “intermediate” if you’re unsure, but “advanced” or “expert” works if you have deep experience.</li>
+      <li>Your answer sets the difficulty of the questions. A safe option is "intermediate" if you're unsure, but "advanced" or "expert" works if you have deep experience.</li>
       <li>Expect a more engaging conversation when both parties have high levels of knowledge.</li>
     </ul>
   </details>
@@ -45,7 +51,7 @@ Behavior and other patterns not directly related to combat.
     <summary><strong>In this hypothetical scenario, how would you accomplish it?</strong></summary>
     <ul>
       <li>This question aims to assess your understanding of architectures, workflows, and tools.</li>
-      <li>You may not have direct experience, but knowing which tools are best is key. Multiple answers are common, so stick to what you’re confident with.</li>
+      <li>You may not have direct experience, but knowing which tools are best is key. Multiple answers are common, so stick to what you're confident with.</li>
       <li>They may challenge your answers to see how you react and adapt.</li>
     </ul>
   </details>
@@ -54,7 +60,7 @@ Behavior and other patterns not directly related to combat.
     <summary><strong>Architecture types</strong></summary>
     <ul>
       <li>At this level, you should be familiar with various architectures like microservices, monoliths, and event-driven systems, and know when each is appropriate.</li>
-      <li>Expect questions like “What challenges would you face when using a microservice architecture from scratch?”</li>
+      <li>Expect questions like "What challenges would you face when using a microservice architecture from scratch?"</li>
     </ul>
   </details>
 
@@ -106,11 +112,11 @@ Behavior and other patterns not directly related to combat.
   <details>
     <summary><strong>Security</strong></summary>
     <ul>
-      <li>“Do it with security in mind” applies to everything above.</li>
+      <li>"Do it with security in mind" applies to everything above.</li>
     </ul>
   </details>
 </div>
 
-![object-fundamentals](../../assets/images/interviews/object-the-fundamentals.png)
+![The Fundamentals item card, a worn book, with a quantity of 1](../../assets/images/interviews/object-the-fundamentals.png)
 
 ---

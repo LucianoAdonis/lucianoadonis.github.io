@@ -1,20 +1,18 @@
 ---
 title: JQL - Examples
-description: Like Magic, Without the Wonder
+description: Enough Tickets to Drown Myself In
 status: red
 started: 2025-02-18
 revised: 2026-02-21
 book: jira
 chapter: 1.5
 plate: ../../assets/images/headers/cian-chess-board.png
-plateAlt: cian-chess-board
+plateAlt: A row of chess pieces on a light blue background, a knight and a bishop worth 3 each, a rook worth 5, a queen worth 9, a king, and a document icon marked minus and plus
 ---
-
-## JQL General
 
 ## In Progress Tickets
 
-This would be useful to get what you currently are working:
+This would be useful to get what you're currently working on:
 
 ```
 PROJECT = "EHQ" AND assignee IN ("luciano@ehq.cl") AND status = "In Progress" ORDER BY status DESC, updated DESC      
@@ -30,14 +28,10 @@ This could prevent getting results that are not getting actively updated.
 PROJECT = EHQ AND assignee IN ("luciano.ehq.cl") AND status NOT IN (Closed, Done, "In Progress", "Resolved", "Withdrawn") ORDER BY status DESC, updated DESC
 ```
 
-###
-
 ```
 (status = "In Progress" AND updated >= -7d) OR (status = "In Progress" AND updated < -7d)  
 ORDER BY updated DESC
 ```
-
-###
 
 ```
 (status IN ("To Do", "In Progress", "Open"))  
@@ -55,9 +49,9 @@ ORDER BY updated DESC
 
 ## Real Queries
 
-The thing is, that this won't cut it. I was getting over 100+ projects and enough tickets to drown myself into.
+The thing is, that this won't cut it. I was getting over 100 projects and enough tickets to drown myself in.
 
-The issue was in the structure, the proper patterns should be between parentesis
+The issue was in the structure, the proper patterns should be between parentheses
 
 ```
 project IN (LONG, LIST, PROJECTS)  
@@ -66,9 +60,9 @@ AND updated >= startOfDay(-1y)
 AND updated < startOfDay()
 ```
 
-But I had to remove the labels, as it caused some issues with the results, as tickets labeled assigned to other people, weren't not appearing.
+But I had to remove the labels, as it caused some issues with the results, as tickets labeled assigned to other people, weren't appearing.
 
-Regardless I got what I needed
+Regardless, I got what I needed:
 
 ```
 project IN ("LONG", "PROJECT", "LIST")

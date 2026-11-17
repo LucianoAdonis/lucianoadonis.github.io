@@ -1,6 +1,6 @@
 ---
-title: Airtable Exceptions
-description: Automating Tasks with Scripts
+title: Script Limitations
+description: Same-table backlinks, and other scripts.
 status: red
 started: 2025-04-06
 revised: 2026-03-04
@@ -8,17 +8,13 @@ book: airtable
 chapter: 3.9
 ---
 
-## Scripting
-
-Airtable scripting lets you automate tasks in your bases with JavaScript.
-
-### Getting Started
-
-[Content will go here]
-
 ## Limitations
 
-[Content will go here]
+<div data-review="new">
+
+I'm still writing this part.
+
+</div>
 
 ### Backlinks in the same table
 
@@ -27,7 +23,7 @@ https://builtonair.com/script/same-table-linked-records-backlinks/
 >When you link one person to another, Airtable currently doesn’t show the backlink to who the “children” are to that “parent” person. With this script, it automatically within the same table generate those links for you. It will show you who the “children” are to that “parent”.
 
 <details class="code-block">
-  <summary>Prompt with Continue / Abort</summary>
+  <summary>Same Table Backlinks Script</summary>
 
 ```js
 /*****

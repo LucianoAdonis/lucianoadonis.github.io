@@ -2,24 +2,24 @@
 title: Message Templates
 description: Copy-paste templates for meeting absences, time off, and status updates.
 status: yellow
-started: 2026-02-21
+started: 2024-11-22
 revised: 2026-02-21
 book: communication-tips
 chapter: 4
 plate: ../../assets/images/headers/purple-computer.png
-plateAlt: headers-purple-computer
+plateAlt: "Isometric illustration on a purple background: a server tower, a monitor showing code brackets, a phone, an HTML tile, a chart tile, a pen and a red book."
 ---
 
-These templates are designed to be copied and adapted. Replace the bracketed placeholders with your own details and adjust the tone to fit your team's culture.
+Copy these and adapt them. Replace the bracketed placeholders with your own details and adjust the tone to fit your team's culture.
 
-The `[$TEAM_GREETING]` placeholder represents whatever greeting your team typically uses: for example, "Hi team", "Hey folks", "Good morning everyone", or simply "Hello all". Use whatever feels natural in your workspace.
+The `[$TEAM_GREETING]` placeholder is whatever greeting your team usually uses: "Hi team", "Hey folks", "Good morning everyone", or simply "Hello all". Use what feels natural in your workspace.
 
 ## Unable to Join a Team Meeting
 
-Key principles for communicating a meeting absence:
+Key principles:
 
 - Always communicate as early as possible.
-- Use appropriate channels (prioritise the team's Scrum or Sprint channel).
+- Use appropriate channels (prioritize the team's Scrum or Sprint channel).
 - Provide clear status updates and next steps.
 - Tag relevant team members.
 - Follow up after the meeting.
@@ -137,7 +137,7 @@ I'll be away today from [start time] to [end time]:
 CC: @mylead
 ```
 
-## Return to Work
+## Return to Work Protocol
 
 #### First Day Back
 
@@ -170,7 +170,7 @@ Use this checklist before any planned absence:
 
 ### Message Structure
 
-Every work message benefits from a consistent structure:
+A consistent structure helps every work message:
 
 1. Clear subject or purpose
 2. Current status

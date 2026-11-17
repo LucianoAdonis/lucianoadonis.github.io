@@ -1,6 +1,6 @@
 ---
 title: The Board
-description: Where your pieces actually play
+description: It's game on!
 status: orange
 started: 2024-11-22
 revised: 2026-02-21
@@ -12,62 +12,70 @@ chapter: 2
 
 ---
 
-![cian-chess-board](../../assets/images/headers/cian-chess-board.png)
+![A light blue banner with a knight, a bishop, a rook and a queen, each labeled with its point value (3, 3, 5 and 9), then a king and a document icon](../../assets/images/headers/cian-chess-board.png)
 
 ---
 
+<div data-review="new">
+
+This chapter is still being written. The sections below are short notes, not the full thing.
+
+</div>
+
 ## Board Expectations
 
-Every manager wants strong pieces. The reality is that you work with what the board gives you, and even when you do have strong pieces, the question is whether you are using them in positions that match their actual value.
+<!-- source: 2026 batch (8126bde), restored -->
+Every manager wants strong pieces, but you work with what the board gives you.
 
-A queen played as a pawn is not a waste you notice immediately. The board might look balanced. The piece is technically in a safe position. But you are getting pawn output from a queen, and somewhere else on the board there is a gap that a queen could have filled.
+Even with strong pieces, the question is whether you're playing them where their value is.
 
-The gap between what you have and how you are using it is where most team performance problems live.
+<!-- source: 2026 batch (8126bde), restored -->
+A queen played as a pawn isn't a waste you notice right away. The board might look balanced and the piece sits in a safe square. But you're getting pawn output from a queen, and somewhere else there's a gap a queen could have filled.
 
 ### Matching
 
-Matching is the act of placing a piece where its actual strengths are in play, not just where there is an open square.
+A high Power, low Versatility engineer shouldn't own cross-team coordination. A high Foresight, high Insight person shouldn't be buried in tickets with no say over direction.
 
-A high Power, low Versatility engineer should not be the one owning cross-team coordination. A high Foresight, high Insight person should not be buried in ticket execution with no influence over direction. These are not failures of the person. They are failures of placement.
+Two engineers with the same seniority and stack can have totally different profiles: one goes deep and needs stability, the other moves fast and needs variety. Treat them as interchangeable and you get worse results than treating them as different pieces with different best squares.
 
-Good matching requires knowing your pieces well enough to do more than read their title. Two engineers with the same seniority level and the same tech stack can have completely different dimension profiles. One is a specialist who goes deep and needs stability. The other is a generalist who moves fast and needs variety. Treating them as interchangeable produces worse outcomes than treating them as different pieces with different best positions.
+<!-- source: 2026 batch (8126bde), restored -->
+Good matching means knowing your pieces well enough to do more than read their title. In that example one is a specialist and the other a generalist.
 
-The other side of matching is covering. A junior piece placed next to a strong senior can take on work that would otherwise be beyond their current level, because the senior can backstop the decisions that require more experience. The junior develops. The senior multiplies. This is not charity, it is a deliberate configuration of the board.
+Matching also means covering. A junior next to a strong senior can take work beyond their level because the senior backstops the hard decisions.
 
 ### Short Term Solutions
 
-Short term solutions are about buying time without making the long-term situation worse.
+Buying time without making the long term worse.
 
-Reassigning a strong piece from one area to stabilize another works once. If you do it repeatedly, you create two problems instead of one: the original gap and a new dependency on the strong piece to keep moving between fires.
+Pulling a strong piece over to stabilize an area works once. Do it again and again and you get two problems: the original gap and a dependency on that piece to keep jumping between fires.
 
-Temporary coverage, pairing, and scope reduction are valid tools. The trap is treating them as permanent without acknowledging what they are costing. Every time a piece plays outside its intended position, something in the original position is either uncovered or underperforming.
+Temporary coverage, pairing and scope reduction are fair tools.
 
-Short term decisions accumulate into the board state you are managing six months from now.
+<!-- source: 2026 batch (8126bde), restored -->
+The trap is treating them as permanent without admitting what they cost. Every piece playing out of position leaves something uncovered or underperforming, so those decisions pile up.
 
 ### Long Term Solutions
 
-Long term solutions involve changing the board, not just repositioning pieces on it.
+<!-- source: 2026 batch (8126bde), restored -->
+Long term solutions mean investing in the dimensions that are weak across your whole team, instead of compensating around them every time.
 
-That means investing in the dimensions that are consistently weak across your team rather than compensating around them every time. If Range is always the gap that creates blockers, the answer is not finding one person with high Range and routing every cross-cutting problem to them. That person becomes a bottleneck and eventually a flight risk. The answer is developing Range as a distributed capability.
+If Range is always the gap that blocks you, don't find one person with high Range and route every cross-cutting problem to them. They become a bottleneck and then a flight risk. Grow Range across the team.
 
-It also means accepting that some positions cannot be filled from the inside on a useful timeline. Knowing when to hire specifically for a dimension gap, rather than hiring the strongest available generalist and hoping they cover it, is one of the harder calls to make.
+Some squares can't be filled from the inside in a useful time.
 
-Long term thinking on a team is mostly about not creating dependencies you cannot explain or afford to lose.
+<!-- source: 2026 batch (8126bde), restored -->
+Knowing when to hire for a specific dimension gap, instead of hiring the strongest generalist and hoping they cover it, is one of the harder calls.
 
 ### Invest in Potential
 
-A piece with high potential but uneven dimensions is often more valuable than a piece with moderate development across all dimensions, given the right conditions.
+A piece with high potential and uneven dimensions can be worth more than one with moderate development everywhere, given time, investment and a senior covering while it grows.
 
-The right conditions are: time, investment, and a senior piece willing to cover while the development happens. Without those three, potential is just an optimistic description of current gaps.
-
-What makes investment worth the risk is identifying which dimensions are blocking the piece from contributing at the next level, and whether those dimensions can realistically be developed in the current project context. Not every project type develops every dimension. A Reactive project develops Speed and some Versatility. It does not develop Foresight or Insight. A sustained Improvement project develops Insight and Range. Putting a person you want to grow in the wrong type of project for what they need to develop is an investment that does not compound.
+Pick the dimensions that block them from the next level, and check that your project can actually develop them. A Reactive project grows Speed and some Versatility. A long Improvement project grows Insight and Range.
 
 ### How Innovation Looks
 
-Innovation on a team rarely looks like a breakthrough. It looks like a piece that has developed enough Foresight to see a problem before it becomes urgent, and enough Range to propose a solution that works across more than one context.
+Innovation usually looks like a piece with enough Foresight to see a problem coming and enough Range to propose something that works in more than one context.
 
-The conditions that produce it are the opposite of constant Reactive mode. A team in permanent firefighting does not innovate. It does not have the Foresight to anticipate because all attention is on the present. It does not develop Range because every solution is optimized for the immediate problem. Speed and Power dominate, and the other dimensions atrophy.
-
-Innovation is a signal that the board is in a healthy enough state for pieces to see further than the next move.
+A team in permanent firefighting doesn't get there: all attention is on the present, and Speed and Power take over while the rest fade. It can't anticipate, and it doesn't develop Range, because every solution gets optimized for the immediate problem.
 
 ---

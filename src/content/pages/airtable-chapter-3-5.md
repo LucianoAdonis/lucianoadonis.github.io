@@ -1,6 +1,6 @@
 ---
-title: Airtable Scripting
-description: Automating Tasks with Scripts
+title: Advanced Scripting
+description: Taking your formulas to the next level.
 status: red
 started: 2025-04-06
 revised: 2026-03-04
@@ -12,15 +12,11 @@ chapter: 3.5
 
 Airtable scripting lets you automate tasks in your bases with JavaScript.
 
-### Getting Started
+<div data-review="new">
 
-[Content will go here]
+I'm still writing this part.
 
-## Scripts
-
-[Content will go here]
-
-### Automation Scripting Examples
+</div>
 
 ### Extension Scripting Examples
 
@@ -184,6 +180,10 @@ output.text(markdownOutput);
 
 ## Best Practices and Tips
 
-[Content will go here]
+<div data-review="new">
+
+I'm still writing this part.
+
+</div>
 
 ---

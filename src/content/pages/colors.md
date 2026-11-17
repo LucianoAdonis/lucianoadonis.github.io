@@ -1,79 +1,90 @@
 ---
 title: Colors
-description: Practical pastel palettes and color guidance for Confluence, Jira, and documentation work
+description: My greatest weakness, plus pastel palettes for Confluence and Jira
 status: yellow
 started: 2025-03-12
 revised: 2026-02-21
 ---
 
-Colors are easy to ignore until you have to make something look intentional. Then suddenly you have 40 browser tabs open comparing hex codes.
+Colors, my greatest weakness!
 
-This is a practical reference. Mostly Confluence-focused, with enough theory to make the choices make sense.
+Not to exaggerate, but usually we don't care about them, until we have to do something that requires a lot of combination, and mixing becomes a critical skill.
+
+Like I wasn't aware of the opposite* colors.
+
+<div data-review="new">
+
+*Complementary, apparently. More on that below.
+
+</div>
 
 ---
 
 ## How Pastel Colors Work
 
-A color has three properties: hue (what color it is), saturation (how intense it is), and lightness (how bright or dark it is).
+<!-- source: 2026 batch (8126bde), restored -->
+The trap is picking colors that feel safe but are still too saturated. `#FF6B6B` looks like a reasonable red until you use it as a section background and the text becomes unreadable.
 
-A pastel is a color with high lightness and low-to-moderate saturation. That combination reads as soft and readable — the eye does not fight the background to see the text on top of it.
+A color has three properties: hue (what color it is), saturation (how intense it is) and lightness (how bright or dark it is).
 
-The trap most people fall into is picking colors that feel safe but are still too saturated. `#FF6B6B` looks like a reasonable red until you use it as a section background and the text becomes unreadable. Back it off: reduce the saturation and raise the lightness until it feels almost white. That is the target.
+A pastel has high lightness and low-to-moderate saturation. It reads as soft, and the eye doesn't have to fight the background to see the text on top.
 
-A useful check: if you squint and the background still jumps out at you, it is too saturated.
+Back it off: lower the saturation and raise the lightness until it feels almost white.
+
+A quick check: squint at it. If the background still jumps out, it's too saturated.
 
 ### Complementary and Analogous Colors
 
-Two concepts that come up when picking palettes:
+Two ideas that keep coming up when you pick a palette:
 
-- **Complementary colors** sit opposite each other on the color wheel (red/green, blue/orange, purple/yellow). They create contrast and make each other pop. Useful for highlighting something against a background — but pairing two saturated complements directly looks aggressive. Pastel complements work better.
-- **Analogous colors** sit next to each other on the color wheel (blue, blue-green, green). They feel harmonious and calm. A palette of analogous pastels never clashes. Good for multi-section documents where you want variety without noise.
+- **Complementary colors**: they sit opposite each other on the color wheel (red/green, blue/orange, purple/yellow). They create contrast and make each other pop, which helps when you highlight something against a background. Two saturated complements side by side look aggressive. Pastel complements work better.
+- **Analogous colors**: they sit next to each other on the wheel (blue, blue-green, green). They feel calm, and a palette of analogous pastels never clashes. Good for multi-section documents where you want variety without noise.
 
 ---
 
-## Confluence: Section Backgrounds
+## Confluence Section Backgrounds
 
-These work well as panel or table backgrounds without competing with the text.
+<!-- source: 2026 batch (8126bde), restored -->
+These work as panel or table backgrounds without competing with the text.
 
 ### Semantic Palette
 
-Use these when the color should carry meaning — status, alert level, or type of information.
+Use these when the color carries meaning: status, alert level or type of information.
 
 | Purpose | Hex | Description |
 |---------|-----|-------------|
-| Info / Note | `#DEEBFF` | Soft blue — context, definitions, good-to-know |
-| Success / Done | `#E3FCEF` | Soft green — completed work, confirmed status |
-| Warning / Caution | `#FFFAE6` | Soft yellow — proceed with attention |
-| Error / Blocked | `#FFEBE6` | Soft red — problems, blockers, urgent items |
-| Neutral / Default | `#F4F5F7` | Light gray — general sections with no implied meaning |
+| Info / Note | `#DEEBFF` | Soft blue, for context, definitions, good-to-know |
+| Success / Done | `#E3FCEF` | Soft green, for completed work and confirmed status |
+| Warning / Caution | `#FFFAE6` | Soft yellow, proceed with attention |
+| Error / Blocked | `#FFEBE6` | Soft red, for problems, blockers, urgent items |
+| Neutral / Default | `#F4F5F7` | Light gray, for general sections with no implied meaning |
 
-These match what Confluence's built-in Info, Note, Warning, and Error panel macros use internally, so custom tables built with these colors stay consistent with the rest of the page.
+<span data-review="new">As far as I can tell, they</span> match what Confluence's built-in Info, Note, Warning and Error panel macros use, so custom tables in these colors stay consistent with the rest of the page.
 
 ### Tonal Palette
 
-Use these when you want visual variety without implying status. Good for dividing sections in a long document or giving a header row a distinct background.
+Use these for variety when you don't want to imply a status. Good for splitting a long document or giving a header row its own background.
 
 | Name | Hex | Description |
 |------|-----|-------------|
 | Slate | `#EDF2F7` | Near-white blue-gray. Safe default for any section. |
-| Lavender | `#EDE7F6` | Soft purple. Good for theory, planning, or design content. |
+| Lavender | `#EDE7F6` | Soft purple. Good for theory, planning or design content. |
 | Peach | `#FFF3E0` | Warm off-white. Good for templates or reference sections. |
 | Sage | `#F1F8F0` | Near-white green. Good for instructions or how-tos. |
 | Steel | `#E8F4FD` | Cool pale blue. Good for callouts or reference material. |
-| Rose | `#FCE4EC` | Very soft pink. Use sparingly — best as a one-off highlight. |
+| Rose | `#FCE4EC` | Very soft pink. Use sparingly, best as a one-off highlight. |
 
 ---
 
 ## Text on Color
 
-The background color determines what text color works on top of it.
-
-### Rules
+<!-- source: 2026 batch (8126bde), restored -->
+The background decides which text color works on top of it.
 
 - On any pastel background, use dark navy (`#172B4D`) for body text instead of pure black. It reads softer and still has strong contrast.
-- On white or near-white sections, `#333333` or `#42526E` works well for secondary text.
-- Never use white text on a pastel background. Contrast will be too low.
-- For labels, badges, or borders on colored sections: use a darker shade of the same hue. Same color family, much lower lightness. This looks intentional rather than accidental.
+- On white or near-white sections, `#333333` or `#42526E` works for secondary text.
+- Never use white text on a pastel background, the contrast is too low.
+- For labels, badges or borders on colored sections, use a darker shade of the same hue. Same family, much lower lightness, and it looks intentional.
 
 ### Pairing Examples
 
@@ -85,43 +96,46 @@ The background color determines what text color works on top of it.
 | `#FFEBE6` | `#BF2600` | Errors, blockers, critical flags |
 | `#F4F5F7` | `#172B4D` | Neutral sections, general use |
 
-The text colors here are darker shades of the same hue as the background. Pick the hue family, drop the lightness significantly, and you get a text color that feels matched rather than random.
-
 ---
 
 ## Status Colors
 
-Status colors appear in Jira tickets, Confluence status macros, and hand-built tables. Two palettes — one softer, one with a bit more presence.
+<!-- source: 2026 batch (8126bde), restored -->
+Status colors show up in Jira tickets, Confluence status macros and hand-built tables. Here are two palettes, one with a bit more presence.
 
-### Softer Palette
+### Stronger Status Palette
 
-Less distracting in dense tables. Good default.
+<!-- source: 2026 batch (8126bde), restored -->
+More readable at a glance. Use it for dashboards or tables someone needs to scan quickly.
 
-| Status | Hex | Description |
-|--------|-----|-------------|
-| To Do | `#FFF4E5` | Light orange, neutral |
-| In Progress | `#E5EDFF` | Light blue |
-| Blocked | `#FFD5D5` | Light red |
-| Done | `#D5FFE5` | Light green |
+| Status | Hex Code | Color Description |
+|--------|----------|-------------------|
+| To Do | `#FFEBCC` | Soft Peach |
+| In Progress | `#CCE5FF` | Brighter Blue |
+| Blocked | `#FFB3B3` | Stronger Red |
+| Done | `#B3FFCC` | Brighter Green |
 
-### Slightly Stronger
+### Softer Status Palette
 
-More readable at a glance. Use for dashboards or tables someone needs to scan quickly.
+<!-- source: 2026 batch (8126bde), restored -->
+Less distracting in dense tables.
 
-| Status | Hex | Description |
-|--------|-----|-------------|
-| To Do | `#FFEBCC` | Soft peach |
-| In Progress | `#CCE5FF` | Brighter blue |
-| Blocked | `#FFB3B3` | Stronger red |
-| Done | `#B3FFCC` | Brighter green |
+| Status | Hex Code | Color Description |
+|--------|----------|-------------------|
+| To Do | `#FFF4E5` | Light Orange (Soft and Neutral) |
+| In Progress | `#E5EDFF` | Light Blue |
+| Blocked | `#FFD5D5` | Light Red (Indicates Urgency) |
+| Done | `#D5FFE5` | Light Green (Success/Completion) |
 
-Use the softer palette as the default. The stronger one is for situations where someone is scanning many rows fast and the subtler version would get lost.
+<!-- source: 2026 batch (8126bde), restored -->
+Use the softer one as the default. The stronger one is for when someone is scanning many rows fast and the subtle version would get lost.
 
 ---
 
 ## Confluence Status Macro Colors
 
-Confluence's built-in Status macro has six preset colors. These are the hex equivalents for when you need to match them in custom tables or panels.
+<!-- source: 2026 batch (8126bde), restored -->
+Confluence's built-in Status macro has six preset colors. These are the hex equivalents, for when you need to match them in custom tables or panels.
 
 | Macro Color | Hex | Use for |
 |-------------|-----|---------|
@@ -136,21 +150,19 @@ Confluence's built-in Status macro has six preset colors. These are the hex equi
 
 ## What to Avoid
 
-**Pure saturated primaries.** `#FF0000`, `#0000FF`, `#FFFF00` are too aggressive as backgrounds. They work as small accents — a 4px border, a badge chip — but not as section fills.
-
-**Multiple strong colors on the same page.** Each meaningful color should mean one thing. If blue means info, green means done, and yellow means caution, adding a random purple section breaks the system. Readers will try to interpret it and come up with nothing.
-
-**Dark backgrounds.** Dark mode is a deliberate design choice. A black or very dark navy cell in a Confluence table reads as a mistake rather than a decision. Stick to light backgrounds.
-
-**Off-brand grays.** Not all grays look the same next to each other. A gray with a brownish cast next to a gray with a blue cast looks accidental. Pick one and use it consistently. `#F4F5F7` is Atlassian's standard light gray — it works with everything else on this page.
-
-**Gradients.** Gradients read as decorative rather than functional in documentation. A solid pastel does the same job with less visual noise.
+<!-- source: 2026 batch (8126bde), restored -->
+- **Pure saturated primaries**: `#FF0000`, `#0000FF` and `#FFFF00` are too aggressive as backgrounds. They work as small accents (a 4px border, a badge chip), not as section fills.
+- **Multiple strong colors on one page**: each color should mean one thing. If blue is info, green is done and yellow is caution, a random purple section breaks the system, and readers will try to interpret it and come up with nothing.
+- **Dark backgrounds**: dark mode is a deliberate design choice. A black or very dark navy cell in a Confluence table reads as a mistake, so stick to light backgrounds.
+- **Off-brand grays**: a brownish gray next to a bluish gray looks accidental. Pick one and stay with it. `#F4F5F7` is Atlassian's standard light gray and works with everything else on this page.
+- **Gradients**: they read as decoration in documentation. Use a solid pastel.
 
 ---
 
 ## Quick Reference
 
-Copy-paste palette for Confluence. All of these work together in the same document without clashing.
+<!-- source: 2026 batch (8126bde), restored -->
+A copy-paste palette for Confluence. These all work together in one document without clashing.
 
 ```
 Section Backgrounds

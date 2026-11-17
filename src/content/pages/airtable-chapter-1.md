@@ -1,7 +1,7 @@
 ---
-title: Chapter 1
-description: Basics Above Else
-status: red
+title: Basics
+description: Start here if you feel awkward navigating Airtable.
+status: orange
 started: 2024-09-02
 revised: 2026-02-21
 book: airtable
@@ -16,15 +16,15 @@ In this chapter, we'll cover the basics to help you:
 - Understand how pages are organized.
 - Get familiar with the Layout feature.
 - Explore how to use Macros effectively.
-- Search in airtable.
+- Search in Airtable.
 
 With these foundations in place, we'll be ready to dive into the real fun.
 
 ## Layers
 
-Data
-Logic
-Interface
+- Data
+- Logic
+- Interface
 
 ## Core Concepts
 
@@ -71,7 +71,7 @@ The big difference from Excel/Google Sheets:
 
 ## Automation Approaches
 
-There are integrations and plenty of things. But saddly, I haven't use a lot from those, as at the moment of writing this I was focused (at least at the beginning) on JIRA automation.
+There are integrations and plenty of things. But sadly, I haven't used a lot from those, as at the moment of writing this I was focused (at least at the beginning) on JIRA automation.
 
 ### Sync Tables
 
@@ -97,7 +97,7 @@ That endpoint will be public.
 One would expect to have an option to provide a way to upload a file, but no.
 
 - [Create Tokens](https://airtable.com/create/tokens)
-- [Post Sync API Endpoint](https://airtable.com/developers/web/api/post-sync-api-endpoint):
+- [Post Sync API Endpoint](https://airtable.com/developers/web/api/post-sync-api-endpoint)
 - [Sync Integration API Details](https://support.airtable.com/docs/airtable-sync-integration-sync-api)
 
 My workaround was to cat the CSV file:
@@ -111,7 +111,13 @@ curl -X POST "https://api.airtable.com/v0/{baseId}/{tableIdOrName}/sync/{apiEndp
 
 And yes, because of this I had to export the table as CSV, but without the descriptions or descriptions updates, as it breaks the format...
 
-But that wasn't the full extend of the problem! 5 days for us, it's about 118 records, were more than what it could handle. In theory it was 10.000 characters, I first I fought it was "ah 10K rows"
+But that wasn't the full extent of the problem! 5 days for us, it's about 118 records, were more than what it could handle. In theory it was 10.000 characters, and at first I thought it was "ah, 10K rows"
+
+<div data-review="new">
+
+I'm still writing down how this one ended.
+
+</div>
 
 ## Working With Data
 
@@ -123,7 +129,7 @@ The core!
 
 - **Text & Numbers**:
     - Single Line Text.
-    - Long Text: you can enable Markdown, which can greatly impact the way that you have fields in <span class="ui">Interfaces</span>, like formated links.
+    - Long Text: you can enable Markdown, which can greatly impact the way that you have fields in <span class="ui">Interfaces</span>, like formatted links.
     - Number.
     - Currency.
     - Percent: this is one of the fields that you probably have seen before! You have an option that allows to display this information as a progress bar.
@@ -138,7 +144,7 @@ The core!
     - Single Select
     - Multiple Select
     - Checkbox
-    - Attachments: this is where you place your images!
+    - Attachments: this is where you place your images.
     - Link to Record: this will allow you to link to another table.
         - Or to records in the same spreadsheet. This will be a key element to generate charts with <span class="ui">integrations</span>  like the Charts from Airtable.
 
@@ -255,7 +261,7 @@ The core!
     )
     ```
 
-- Array Operations
+- Fallback for Empty Values
     ```
     # if empty use another field, otherwise use original
     IF(
@@ -269,7 +275,7 @@ The core!
 
 - **Data**:
     - Combining fields from a multiple or single select will result in repeated elements.
-        - This may be fixed by using the <span class="ui">Rollout</span> feature. This will filter along with the "ARRAY" formula.
+        - This may be fixed by using the <span class="ui">Rollup</span> feature. This will filter along with the "ARRAY" formula.
 
 ## Premium vs Free Tier
 

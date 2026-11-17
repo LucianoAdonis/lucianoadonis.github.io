@@ -1,26 +1,22 @@
 ---
 title: Setup
-description: Getting your environment ready before the fun starts
+description: Tutorial of the Tutorial
 status: yellow
 started: 2024-12-10
 revised: 2026-02-21
 book: markdown
 chapter: 0
 plate: ../../assets/images/lsp/header-lego-identity-and-landscape-kit.png
-plateAlt: header-lego-identity-and-landscape-kit
----
-
-This chapter is the boring one. Before you start writing or customizing, there are a few things worth knowing upfront so you do not get stuck on something avoidable later.
-
+plateAlt: A huge pile of colorful LEGO bricks, animals, minifigures and baseplates around an orange sorting tray
 ---
 
 ## Templates
 
-GitHub Pages offers a set of official themes you can apply with a single line in `_config.yml`. The full list is at [pages.github.com/themes](https://pages.github.com/themes/).
+GitHub Pages has a set of official themes, and you apply one with a single line in `_config.yml`. The full list is at [pages.github.com/themes](https://pages.github.com/themes/).
 
-Each theme has a repository where you can see the default layout files. That matters because customizing means overriding those defaults, and you cannot override something you have not found yet.
+Each theme has its own repository with the default layout files. That matters, because customizing means overriding those defaults and you can't override what you haven't found yet.
 
-The theme this site uses is [Leap Day](https://github.com/pages-themes/leap-day). To apply it:
+This site uses [Leap Day](https://github.com/pages-themes/leap-day):
 
 ```yaml
 # _config.yml
@@ -29,16 +25,17 @@ plugins:
   - jekyll-remote-theme
 ```
 
-If the official themes are too constrained, you can also base your site on any public GitHub repository that is a valid Jekyll theme by referencing its `user/repo` path the same way.
+If the official themes feel too tight, any public GitHub repository that's a valid Jekyll theme works the same way, by its `user/repo` path.
 
 ---
 
 ## Domain
 
-By default your site lives at `username.github.io`. If you want a custom domain, the setup takes about ten minutes.
+<!-- source: 2026 batch (8126bde), restored -->
+By default your site lives at `username.github.io`. A custom domain <span data-review="new">should take</span> about ten minutes of setup<span data-review="new">, not counting the DNS wait</span>:
 
 1. Buy a domain from any registrar.
-2. In your registrar's DNS settings, add four `A` records pointing to GitHub's servers:
+2. In the registrar's DNS settings, add four `A` records pointing to GitHub:
    ```
    185.199.108.153
    185.199.109.153
@@ -46,22 +43,23 @@ By default your site lives at `username.github.io`. If you want a custom domain,
    185.199.111.153
    ```
 3. Add a `CNAME` record pointing `www` to `username.github.io`.
-4. In your repository settings, go to Pages and set the custom domain. GitHub will provision an SSL certificate automatically.
-5. Create a file named `CNAME` at the root of your repository containing just your domain name:
+4. In your repository settings, open Pages and set the custom domain. GitHub issues the SSL certificate by itself.
+5. Create a file named `CNAME` at the root of the repository with just your domain in it:
    ```
    yourdomain.com
    ```
 
-DNS changes can take a few hours to propagate. If the SSL certificate does not appear within an hour of the DNS resolving, go back to the Pages settings and save again to re-trigger the check.
+DNS can take a few hours to propagate. If the certificate hasn't shown up an hour after the DNS resolves, go back to the Pages settings and save again to trigger the check.
 
 ---
 
-## Other repositories
+## Other Repositories
 
 A few repositories worth bookmarking before you start:
 
-- [github.com/pages-themes](https://github.com/orgs/pages-themes/repositories): All the official GitHub Pages themes in one place.
-- [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll): The Jekyll source. Useful when you hit something the documentation does not explain well.
-- [awesome-jekyll-plugins](https://github.com/planetjekyll/awesome-jekyll-plugins): A curated list of plugins. Most will not work on GitHub Pages (only whitelisted plugins are allowed), but good for knowing what is possible when running Jekyll locally.
+- [github.com/pages-themes](https://github.com/orgs/pages-themes/repositories): all the official themes in one place.
+- [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll): the Jekyll source, for when the documentation doesn't explain something well.
+- [awesome-jekyll-plugins](https://github.com/planetjekyll/awesome-jekyll-plugins): a curated list of plugins. Most won't work on GitHub Pages (only whitelisted ones do), but it shows what's possible if you run Jekyll locally.
 
-If you are starting from scratch, forking an existing site is often faster than starting from a blank template. You get working navigation, layouts, and configuration that you can adapt instead of building from the ground up.
+<!-- source: 2026 batch (8126bde), restored -->
+If you're starting from scratch, forking an existing site is often faster than starting from a blank template. You get working navigation, layouts and configuration to adapt instead of building it all yourself.

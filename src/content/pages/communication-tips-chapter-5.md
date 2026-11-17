@@ -2,15 +2,15 @@
 title: Incident Response Communication
 description: Channel selection, escalation paths, severity definitions, and post-incident checklists.
 status: yellow
-started: 2026-02-21
+started: 2024-11-22
 revised: 2026-02-21
 book: communication-tips
 chapter: 5
 plate: ../../assets/images/headers/purple-computer.png
-plateAlt: headers-purple-computer
+plateAlt: "Isometric illustration on a purple background: a server tower, a monitor showing code brackets, a phone, an HTML tile, a chart tile, a pen and a red book."
 ---
 
-When something breaks, clear communication is just as important as the technical fix. This chapter covers how to call for help, structure incident messages, manage escalation, and close the loop after resolution.
+Something broke. Here's where to post, what to say, and when to escalate.
 
 ## Calling for Help
 
@@ -110,7 +110,7 @@ Priority: [Urgent/High/Medium/Low]
 L1 Support (15 min) → L2 Engineer (30 min) → Team Lead (45 min) → Department Head (60 min)
 ```
 
-Each transition should include a handoff message summarising what has been tried so far.
+Each transition should include a handoff message summarizing what's been tried so far.
 
 ## Incident Severity Definitions
 
@@ -127,8 +127,8 @@ Each transition should include a handoff message summarising what has been tried
 |----------|----------------|-------------------|------------------|
 | P1 | `#incidents` | Team Slack/Teams | 30 min |
 | P2 | `#team-channel` | Email | 60 min |
-| P3 | `#team-channel` |: | 120 min |
-| P4 | Squad channel |: | Daily |
+| P3 | `#team-channel` | none | 120 min |
+| P4 | Squad channel | none | Daily |
 
 ## Post-Incident Actions
 
@@ -168,7 +168,7 @@ Each transition should include a handoff message summarising what has been tried
 - Use thread discussions for technical details.
 - Document all decisions as they happen.
 - Follow escalation procedures.
-- Update status regularly, even if there is no new information.
+- Update status regularly, even if there's no new information.
 
 **Don't:**
 - Spam multiple channels with the same message.

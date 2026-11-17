@@ -1,40 +1,42 @@
 ---
 title: Aligning Infrastructure with Business OKRs
-description: What to do when your team's work does not obviously match any company objective
+description: When the goal is revenue in LATAM and your work is Kubernetes upgrades.
 status: orange
 started: 2024-12-25
 revised: 2026-02-21
 book: okr
 chapter: 2
 plate: ../../assets/images/headers/yellow-okr.png
-plateAlt: yellow-okr
+plateAlt: '"OKR" in dark letters on three wooden cubes, standing on a glossy yellow surface'
 ---
 
 ## What Are My OKRs?
 
-OKRs cascade down from company level to team level. A common structure looks like this:
+<!-- source: 2026 batch (8126bde), restored -->
+OKRs cascade down from company level to team level. It depends on how your organization is built, and with something like the Spotify Model you might find a tiered hierarchy:
 
 - **Business OKRs**: where the company wants to go this quarter
-  - **Development OKRs**: what product and engineering are doing to get there
-    - **Infrastructure OKRs**: what the infra team is doing to support development
+  - **Development OKRs**: what product and engineering do to get there
+    - **Infrastructure OKRs**: what the infra team does to support development
 
-In practice, infrastructure teams often struggle here. The company objective is "grow revenue in LATAM by 20%." The infra team's work is Kubernetes upgrades, certificate rotations, and pipeline improvements. The connection is not obvious from the outside, which makes it easy for that work to get dismissed as overhead rather than recognized as what keeps everything else running.
+<!-- source: 2026 batch (8126bde), restored -->
+Say the company objective is "grow revenue in LATAM by 20%" and your work is Kubernetes upgrades, certificate rotations and pipeline improvements. Infra teams often struggle here: the connection isn't obvious from outside, so that work easily gets dismissed as overhead instead of seen as what keeps everything else running. Make the link explicit: without reliability work the product work can't ship, and without pipeline improvements deployment frequency stays low. Then write that chain down.
 
-The answer is not to pretend the connection is tighter than it is. It is to make the real connection explicit: without the reliability work, the product work cannot ship. Without the pipeline improvements, deployment frequency stays low. The infra team's OKRs support the development OKRs, which support the business OKRs. That chain needs to be documented.
+---
 
 ## OKR Highlight Types
 
-Not all work fits neatly under a stated OKR. Some of it is urgent, some of it is maintenance, some of it is the kind of thing nobody asked for but everyone benefits from. Categorizing work by type helps when reporting, because it explains why the Epic exists even when it does not map directly to a Key Result.
+Not every task feeds a stated OKR, and they still matter. Giving them a type helps you report why an Epic exists when it doesn't map to a Key Result:
 
-Useful categories:
+<!-- source: 2026 batch (8126bde), restored -->
+- **Business Critical**: work required to hit a committed goal. If it doesn't get done, a Key Result misses.
+- **Express**: urgent work that jumped the queue because something broke or a deadline moved.
+- **Innovative**: improves how work gets done, not just what gets done. Usually generates future velocity.
+- **Enhancement**: small improvements to something already working, the difference between acceptable and good.
+- **Standardization**: making multiple teams or systems do the same thing the same way, which cuts future cognitive load.
+- **Adjustment**: updates to keep something working as the environment changes, like version upgrades, dependency patches or config drift fixes.
 
-- **Business Critical**: work required to hit a committed goal. If this does not get done, a Key Result misses.
-- **Express**: urgent work that jumped the queue because something broke or a deadline moved. It was not planned but it was necessary.
-- **Innovative**: something that improves how work gets done, not just what gets done. Usually generates future velocity.
-- **Enhancement**: incremental improvements to something already working. The difference between acceptable and good.
-- **Standardization**: making sure multiple teams or systems do the same thing the same way. Reduces future cognitive load.
-- **Adjustment**: updates required to keep something functioning as the environment around it changes. Version upgrades, dependency patches, config drift corrections.
-
-The categorization does two things. It makes it easier to explain why work happened that was not in the original OKR plan. And it gives leadership a clearer picture of where team effort actually goes, which is usually more fragmented than any quarterly plan suggests.
+<!-- source: 2026 batch (8126bde), restored -->
+This explains work that wasn't in the original plan, and it shows leadership where the team's effort really goes, which is probably more fragmented than any quarterly plan suggests.
 
 ---

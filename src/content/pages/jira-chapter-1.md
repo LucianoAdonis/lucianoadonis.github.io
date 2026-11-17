@@ -1,16 +1,16 @@
 ---
 title: The Case
-description: How Complicated Can Be?
+description: How Complicated Can It Be?
 status: red
 started: 2025-02-18
 revised: 2026-02-21
 book: jira
 chapter: 1
 plate: ../../assets/images/headers/cian-chess-board.png
-plateAlt: cian-chess-board
+plateAlt: A row of chess pieces on a light blue background, a knight and a bishop worth 3 each, a rook worth 5, a queen worth 9, a king, and a document icon marked minus and plus
 ---
 
-Okay! The mission is simple, get multiple of reports that are mostly handling manually and you need to talk with people to understand in an automated fashion.
+Okay! The mission is simple, get multiple reports that are mostly handled manually, and that you need to talk with people to understand, into an automated fashion.
 
 This ideally should cover things that we would want to know, like:
 
@@ -21,13 +21,11 @@ This ideally should cover things that we would want to know, like:
 
 End game would be a platform that allows us to manipulate the data and share it securely... like Airtable... but let's
 
-### JIRA
+## Jira Sheets
 
-### JIRA Sheets
+### Columns
 
-#### Columns
-
-Regardless of the size don't forget to get the following columns:
+Regardless of the size, don't forget to get the following columns:
 
 - System Fields
   - Labels
@@ -80,6 +78,8 @@ Values useful for metrics and references:
 - Status
 - Sprint
 
-You can import Jira data in Excel format, especially when you need to bring in a lot of detail columns at once. From there, Airtable is a good destination for manipulating and presenting the data.
+### Airtable and You
+
+You can import data from Jira in Excel format, especially if you're including a lot of details. From there, Airtable can take it.
 
 ---

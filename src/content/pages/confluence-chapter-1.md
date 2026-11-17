@@ -1,7 +1,7 @@
 ---
-title: Confluence
+title: Basics
 description: Basics Above Else
-status: green
+status: yellow
 started: 2024-09-02
 revised: 2026-02-21
 book: confluence
@@ -32,7 +32,7 @@ That feature is convenient, especially in teams with high rotation. It prevents 
 
 There are workarounds, like using a macro to make people who have edited the document appear as contributors at the end of the page, which we'll cover later in the advanced topics.
 
-This difference extends beyond features—integrations, performance improvements, and even the user interface can differ. Cloud gets more frequent updates, while Data Center tends to get behind to be more stable.
+This difference extends beyond features: integrations, performance improvements, and even the user interface can differ. Cloud gets more frequent updates, while Data Center tends to fall behind to be more stable.
 
 ### Page Distribution
 
@@ -42,13 +42,13 @@ It's a common mistake that people often create pages without realizing where the
 
 To keep your space organized, double-check your location before you create a page. It's a quick step that can save you from having to clean up later.
 
-// You can also create pages in your personal space.
+You can also create pages in your personal space.
 
 #### Cloud Differences
 
-In the Cloud version it allows you to quickly add new pages directly from the side menu rather than relying solely on the "Create" button.
+The Cloud version allows you to quickly add new pages directly from the side menu rather than relying solely on the "Create" button.
 
-![basics-cloud-page-creation](../../assets/images/confluence/basics-cloud-page-creation.gif)
+![Cloud sidebar with the page tree (Platforms, Guilds, Finance, Team Information, About Confluence, POCs) and a Create button at the bottom](../../assets/images/confluence/basics-cloud-page-creation.gif)
 
 Even though I was initially on the "Team Information" page, because I clicked the button to create a page from the "POCs" page, the new page was created, and I was automatically moved to the empty page under "POCs".
 
@@ -56,11 +56,11 @@ Even though I was initially on the "Team Information" page, because I clicked th
 
 The Layout settings are often overlooked, as you can only see the menu after clicking the button highlighted in red:
 
-![pagelayout-example-1](../../assets/images/confluence/basics-layout-example-1.png)
+![Editor toolbar with the Page layout button highlighted in red and its tooltip showing](../../assets/images/confluence/basics-layout-example-1.png)
 
 The first time you click this button, it will add existing content to a single section. If you have a lot of content, there isn't a way around it; you must add more sections and separate them manually.
 
-![pagelayout-example-1](../../assets/images/confluence/basics-layout-example-2.png)
+![Editor toolbar after clicking Page layout, showing Add section, Remove section, Move up and Move down on the left and six column layouts on the right, over an empty three-column section](../../assets/images/confluence/basics-layout-example-2.png)
 
 From left to right:
 1. This first section will allow you to include rows, by default when you add a new one, this will be placed below the one that you are currently placed.
@@ -74,7 +74,7 @@ The base layout doesn't cover the entire page but applies to just one section, a
 
 The magic behind Confluence.
 
-![pagelayout-example-1](../../assets/images/confluence/basics-macro-menu-example-1.png)
+![The plus menu in the editor listing the standard macros, with numbers 1 to 4 marking the plus button, Horizontal rule, Table of Contents and Other macros](../../assets/images/confluence/basics-macro-menu-example-1.png)
 
 1. The plus button will open the menu where we can see standard macros.
 2. Horizontal rule
@@ -83,14 +83,14 @@ The magic behind Confluence.
 
 For the following example we are going to search for the <span class="ui">Code Block</span> macro.
 
-![pagelayout-example-1](../../assets/images/confluence/basics-macro-menu-example-2.png)
+![The Select macro dialog with the word code typed in the search box (1) and the Code Block macro highlighted (2)](../../assets/images/confluence/basics-macro-menu-example-2.png)
 
 1. Using the search menu you can filter the results.
 2. Click the macro.
 
 For most macros, if not all, clicking it will open an insert menu for customization. Don't worry, you can always return to this menu by clicking 'edit' on the macro.
 
-![pagelayout-example-1](../../assets/images/confluence/basics-macro-menu-example-3.png)
+![The Insert Code Block Macro dialog, with the options on the left, a preview on the right and the Insert and Cancel buttons](../../assets/images/confluence/basics-macro-menu-example-3.png)
 
 Things to make clear about this section are:
 
@@ -99,15 +99,15 @@ The options will depend on the macro, but they are worth checking. In some cases
 
 In most cases, you will first need to include content to appreciate how it changes, so in the next section, we will do that.
 
-![pagelayout-example-1](../../assets/images/confluence/basics-macro-customization.gif)
+![Animation of a Code Block macro on an editor page, a title bar over a box with the text echo hi](../../assets/images/confluence/basics-macro-customization.gif)
 
 For this example, we are setting properties.
 
-- Those will be reflected in the after the macro name.
+- Those will be reflected after the macro name.
 
 ### Search
 
-It is not a skill issue, it really sucks. But there are ways to get better results.
+It's not a skill issue, it really sucks. But there are ways to get better results.
 
 When using the search keep in mind the following:
   - Limit the scope:
@@ -119,6 +119,6 @@ Most of these little improvements can be optimized.
 
 ### Permissions
 
-// Explain certain limitations to take actions.
+<span data-review="new">[Pending to add...</span> explain certain limitations to take actions.<span data-review="new">]</span>
 
 ---
