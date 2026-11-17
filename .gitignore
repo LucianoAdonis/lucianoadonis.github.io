@@ -4,3 +4,9 @@ vendor
 .bundle
 _site
 analysis-output.md
+
+# Ephemeral skill working state
+.forge/
+node_modules
+dist
+.astro

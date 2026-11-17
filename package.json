@@ -1,0 +1,27 @@
+{
+  "name": "lucianoadonis-minibooks",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Luciano's Library: mini-books on work, tools and theories, built with Astro.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && pagefind --site dist",
+    "preview": "astro preview",
+    "check": "astro check",
+    "check:site": "node scripts/check-site.mjs",
+    "lint:voice": "node scripts/voice-lint.mjs"
+  },
+  "engines": {
+    "node": ">=22.23.4"
+  },
+  "dependencies": {
+    "@astrojs/markdown-satteri": "0.4.10",
+    "astro": "7.4.12",
+    "pagefind": "1.6.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.12",
+    "typescript": "6.0.3"
+  }
+}

@@ -1,0 +1,9 @@
+---
+import { getCollection } from 'astro:content';
+const entries = (await getCollection('pages')).sort((a, b) => a.id.localeCompare(b.id));
+---
+<!doctype html>
+<html lang="en">
+  <head><meta charset="utf-8" /><title>Luciano's Library</title></head>
+  <body><ul>{entries.map((e) => <li><a href={`/pages/${e.id}`}>{e.data.title}</a></li>)}</ul></body>
+</html>

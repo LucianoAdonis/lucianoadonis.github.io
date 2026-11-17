@@ -1,0 +1,17 @@
+---
+// Bare placeholder route: the real layouts land after the design brief is confirmed.
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('pages');
+  return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+<!doctype html>
+<html lang="en">
+  <head><meta charset="utf-8" /><title>{entry.data.title}</title></head>
+  <body><h1>{entry.data.title}</h1><Content /></body>
+</html>
