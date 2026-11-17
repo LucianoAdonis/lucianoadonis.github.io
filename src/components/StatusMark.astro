@@ -1,0 +1,45 @@
+---
+/**
+ * How finished a book is, drawn as how full a circle is: a quarter for
+ * Barely Started up to full for Nearly Done. Shape carries the meaning, so it
+ * reads in any color; the word sits next to it wherever there is room.
+ */
+import { STATUS, type Status } from '../lib/library';
+
+interface Props {
+  status: Status;
+  size?: string;
+  withLabel?: boolean;
+  /** No text at all: the caller already says the status in words. */
+  silent?: boolean;
+  class?: string;
+}
+const { status, size = '0.9em', withLabel = false, silent = false, class: className } = Astro.props;
+const { fill, label } = STATUS[status];
+const r = 7;
+// Pie wedge from 12 o'clock clockwise.
+const angle = fill * 2 * Math.PI;
+const x = 8 + r * Math.sin(angle);
+const y = 8 - r * Math.cos(angle);
+const large = fill > 0.5 ? 1 : 0;
+const wedge = fill >= 1 ? '' : `M8 8 L8 ${8 - r} A${r} ${r} 0 ${large} 1 ${x.toFixed(3)} ${y.toFixed(3)} Z`;
+---
+<span class:list={['status', `status-${status}`, className]}>
+  <svg viewBox="0 0 16 16" width={size} height={size} aria-hidden="true" focusable="false">
+    <circle cx="8" cy="8" r={r} fill="none" stroke="currentColor" stroke-width="1.5" />
+    {fill >= 1 ? <circle cx="8" cy="8" r={r} fill="currentColor" /> : <path d={wedge} fill="currentColor" />}
+  </svg>
+  {withLabel ? <span class="status-label">{label}</span> : silent ? null : <span class="vh">{label}</span>}
+</span>
+
+<style>
+  .status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    white-space: nowrap;
+  }
+  svg {
+    flex: none;
+  }
+</style>

@@ -1,0 +1,99 @@
+---
+/**
+ * The running head a printed book carries at the top of each page: which book,
+ * which chapter of how many. Sticks while reading; the thin line under it fills
+ * with reading progress where the browser supports scroll-driven animation.
+ */
+import type { Book } from '../lib/library';
+
+interface Props {
+  book: Book;
+  position: number;
+  total: number;
+  label: string;
+}
+const { book, position, total, label } = Astro.props;
+---
+<div class="running-head" data-pagefind-ignore>
+  <div class="inner">
+    <a class="book" href={`/pages/${book.id}`}>
+      <span class="swatch" aria-hidden="true"></span>
+      <span class="name">{book.title}</span>
+    </a>
+    <span class="pos label">{label} · {position} of {total}</span>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+</div>
+
+<style>
+  .running-head {
+    position: sticky;
+    inset-block-start: 0;
+    z-index: 20;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+  }
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    min-block-size: 3rem;
+    padding: 0 var(--gutter);
+  }
+  .book {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    min-inline-size: 0;
+    min-block-size: 2.75rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-sm);
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .book:hover .name {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+  .name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .swatch {
+    flex: none;
+    inline-size: 0.6rem;
+    block-size: 1rem;
+    border-radius: 1px;
+    background: var(--spine-face);
+  }
+  .pos {
+    flex: none;
+    color: var(--ink-3);
+    font-size: var(--text-xs);
+  }
+  .progress {
+    display: none;
+  }
+  @supports (animation-timeline: scroll()) {
+    .progress {
+      display: block;
+      block-size: 2px;
+      margin-block-end: -1px;
+      background: var(--accent);
+      transform-origin: 0 50%;
+      animation: read linear both;
+      animation-timeline: scroll(root block);
+    }
+  }
+  @keyframes read {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+</style>

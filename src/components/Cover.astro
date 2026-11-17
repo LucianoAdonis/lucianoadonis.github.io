@@ -1,0 +1,113 @@
+---
+/**
+ * The front cover of a book: its color, its glyph, its title as the page's h1.
+ * Shares a view-transition name with its spine, so clicking a spine on the
+ * shelf grows it into this cover.
+ */
+import Glyph from './Glyph.astro';
+import { bookColors, bookStyle } from '../lib/color';
+import { shelfLabel, type Book } from '../lib/library';
+
+interface Props {
+  book: Book;
+}
+const { book } = Astro.props;
+const colors = bookColors(book.hue);
+---
+<div
+  class="cover"
+  data-book-colors
+  data-mode={colors.spineMode}
+  style={`${bookStyle(book.hue)};view-transition-name:book-${book.id}`}
+>
+  <div class="cover-top">
+    <span class="cover-shelf label" data-pagefind-ignore>{shelfLabel(book.shelf)}</span>
+    <Glyph name={book.glyph} size="44" strokeWidth={1.6} class="cover-glyph" />
+  </div>
+  <div class="cover-main">
+    <h1 class="cover-title" data-pagefind-meta="title">{book.title}</h1>
+    <p class="cover-sub">{book.description}</p>
+  </div>
+  <p class="cover-author label" data-pagefind-ignore>Luciano Adonis</p>
+</div>
+
+<style>
+  .cover {
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: var(--space-5);
+    aspect-ratio: 2 / 3;
+    inline-size: 100%;
+    padding: var(--space-5) var(--space-5) var(--space-4);
+    color: var(--spine-fg);
+    background:
+      linear-gradient(
+        90deg,
+        oklch(from var(--spine-face) calc(l - 0.06) c h) 0,
+        var(--spine-face) 5%,
+        var(--spine-face) 100%
+      );
+    border-radius: 3px 8px 8px 3px;
+    box-shadow:
+      0 1px 0 oklch(from var(--spine-face) calc(l - 0.12) c h),
+      0 26px 50px -30px oklch(18% 0.03 60 / 0.55);
+  }
+  /* The printed rules a paperback cover carries above and below its title. */
+  .cover::before,
+  .cover::after {
+    content: '';
+    position: absolute;
+    inset-inline: var(--space-5);
+    block-size: 1.5px;
+    background: oklch(from var(--spine-fg) l c h / 0.45);
+  }
+  .cover::before {
+    inset-block-start: 5.25rem;
+  }
+  .cover::after {
+    inset-block-end: 3.25rem;
+  }
+  .cover-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+  .cover-shelf {
+    font-size: var(--text-sm);
+    padding-top: var(--space-1);
+  }
+  .cover-main {
+    align-self: end;
+    display: grid;
+    gap: var(--space-3);
+    padding-bottom: var(--space-4);
+  }
+  .cover-title {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(2rem, 1.5rem + 2vw, 2.9rem);
+    line-height: 1.02;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    hyphens: manual;
+  }
+  .cover-sub {
+    margin: 0;
+    font-family: var(--font-text);
+    font-style: italic;
+    font-size: 1.15rem;
+    line-height: 1.35;
+  }
+  .cover-author {
+    margin: 0;
+    font-size: var(--text-sm);
+  }
+  :global(:root[data-theme='ds']) .cover-title {
+    font-family: var(--font-caps);
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+</style>

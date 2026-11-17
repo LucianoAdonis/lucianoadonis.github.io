@@ -1,0 +1,70 @@
+---
+/** A page whose text was a copy of another chapter: the old URL keeps working and points there. */
+import Base from './Base.astro';
+import Glyph from '../components/Glyph.astro';
+import { chapterLabel, library, type Page } from '../lib/library';
+
+interface Props {
+  page: Page;
+}
+const { page } = Astro.props;
+const { byId, bookById } = await library();
+const target = byId.get(page.data.movedTo!.id);
+if (!target) throw new Error(`${page.id}: movedTo points at a missing page`);
+const book = target.data.book ? bookById.get(target.data.book.id) : bookById.get(target.id);
+const href = `/pages/${target.id}`;
+---
+<Base title={page.data.title} description={`Moved to ${target.data.title}`} canonicalPath={href} hue={book?.hue} noindex>
+  <section class="moved-page">
+    <p class="kicker label">Moved</p>
+    <h1>{page.data.title}</h1>
+    <p class="dek">This page was a copy of a chapter in {book ? book.title : 'another book'}, so it points there now.</p>
+    <a class="go" href={href}>
+      {book && <span class="label">{book.title} · {chapterLabel(target)}</span>}
+      <span class="t">{target.data.title}</span>
+      <Glyph name="arrow-right" size="1.4rem" strokeWidth={2} class="arrow" />
+    </a>
+  </section>
+</Base>
+
+<style>
+  .moved-page {
+    width: min(var(--measure), 100% - 2 * var(--gutter));
+    margin: var(--space-8) auto 0;
+  }
+  h1 {
+    margin: 0;
+    font-family: var(--font-text);
+    font-weight: 800;
+    font-size: var(--text-2xl);
+    line-height: 1.05;
+  }
+  .go {
+    position: relative;
+    display: grid;
+    gap: var(--space-1);
+    margin-top: var(--space-6);
+    padding: var(--space-5) calc(var(--space-5) + 2rem) var(--space-5) var(--space-5);
+    border-radius: 6px;
+    background: var(--tint);
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .go .label {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: var(--text-sm);
+  }
+  .go .t {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: var(--text-lg);
+  }
+  .go :global(.arrow) {
+    position: absolute;
+    inset-inline-end: var(--space-5);
+    inset-block-start: 50%;
+    translate: 0 -50%;
+    color: var(--accent);
+  }
+</style>

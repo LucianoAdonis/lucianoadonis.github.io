@@ -1,0 +1,5 @@
+# Mechanical commits that touched content without changing what it says.
+# src/lib/dates.ts skips them when working out a page's 'revised' date, and
+# git blame --ignore-revs-file skips them too.
+# feat(content): Migrate the Jekyll pages into the Astro collection
+8126bdea29edda117c5d9c305cd203828d51f45a

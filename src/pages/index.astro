@@ -1,9 +1,334 @@
 ---
-import { getCollection } from 'astro:content';
-const entries = (await getCollection('pages')).sort((a, b) => a.id.localeCompare(b.id));
+import Base from '../layouts/Base.astro';
+import Shelf, { type ShelfItem } from '../components/Shelf.astro';
+import StatusMark from '../components/StatusMark.astro';
+import { library, SHELVES, STATUS, type Status } from '../lib/library';
+import { monthYear } from '../lib/dates';
+
+const { books, loose } = await library();
+const maxWords = Math.max(...books.map((b) => b.words));
+
+const byShelf = SHELVES.map((s) => ({
+  ...s,
+  items: books.filter((b) => b.shelf === s.id).map((book): ShelfItem => ({ type: 'book', book })),
+})).filter((s) => s.items.length);
+
+// One long shelf, newest revision first, with a bookend between years.
+const byDate: ShelfItem[] = [];
+let year: number | undefined;
+for (const book of [...books].sort((a, b) => b.revised.getTime() - a.revised.getTime())) {
+  const y = book.revised.getUTCFullYear();
+  if (y !== year) byDate.push({ type: 'year', year: (year = y) });
+  byDate.push({ type: 'book', book });
+}
+
+const gists = [
+  {
+    group: 'Configurations',
+    links: [
+      ['Chrome Plugins', 'https://gist.github.com/LucianoAdonis/be46fd68a6324a9777385b8982885cc3'],
+      ['VSCode Settings to Make Life Better', 'https://gist.github.com/LucianoAdonis/4a711db16b8eef7a24c5e66110ba644e'],
+      ['Brewfile', 'https://gist.github.com/LucianoAdonis/43a43e5b80515abb828ceb1d3dca2258'],
+      ['Sublime Customization', 'https://gist.github.com/LucianoAdonis/2fdc70716cc00e7d584494b0beafc985'],
+    ],
+  },
+  {
+    group: 'Random Finds',
+    links: [
+      ['Cool Pages', 'https://gist.github.com/LucianoAdonis/24888d407bec9e59c9cfc460a866b163'],
+      ['Edition Tools and Sites', 'https://gist.github.com/LucianoAdonis/93f008e9bf92b0dbcdd5d2ee03f37535'],
+      ['Team Building Activities', 'https://gist.github.com/LucianoAdonis/91398d78df653e6a2d4969c87261b184'],
+      ['Music to Describe Your Sprint', 'https://gist.github.com/LucianoAdonis/da2d0e3b8cea63407eb0a181bf30985f'],
+    ],
+  },
+  {
+    group: 'Hack a Facebook',
+    links: [['Apple Security for Family and Friends', 'https://gist.github.com/LucianoAdonis/77e2ba214320560e1f4958a30152f262']],
+  },
+];
 ---
-<!doctype html>
-<html lang="en">
-  <head><meta charset="utf-8" /><title>Luciano's Library</title></head>
-  <body><ul>{entries.map((e) => <li><a href={`/pages/${e.id}`}>{e.data.title}</a></li>)}</ul></body>
-</html>
+<Base
+  title="Luciano's Library"
+  description="Mini-books by Luciano Adonis on work tools, interviews, hiring, mentoring and a few theories, written since 2024 and still changing."
+  home
+  type="website"
+>
+  <header class="masthead">
+    <h1 class="masthead-title">Luciano's Library</h1>
+    <div class="masthead-intro">
+      <p>
+        At work, I get to talk to a lot of interesting people and juggle a wide range of ideas. With that much in
+        motion, things can get messy, and keeping everyone aligned takes effort.
+      </p>
+      <p>
+        So I put together these mini-books. They're meant to create a shared baseline and make life easier for all
+        of us. They also give me a convenient link to send when someone new asks how things work.
+      </p>
+    </div>
+  </header>
+
+  <section class="library" aria-label="The shelves">
+    <div class="library-tools">
+      <fieldset class="arrange">
+        <legend class="label">Arrange</legend>
+        <input type="radio" name="arrange" id="arrange-topic" value="topic" checked />
+        <label for="arrange-topic">By topic</label>
+        <input type="radio" name="arrange" id="arrange-date" value="date" />
+        <label for="arrange-date">By last revised</label>
+      </fieldset>
+      <ul class="legend" role="list" aria-label="How finished each book is">
+        {
+          (Object.keys(STATUS) as Status[]).map((s) => (
+            <li title={STATUS[s].note}>
+              <StatusMark status={s} size="13px" withLabel />
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    <div class="by-topic">
+      {byShelf.map((s) => <Shelf id={`shelf-${s.id}`} label={s.label} items={s.items} maxWords={maxWords} morph />)}
+    </div>
+    <div class="by-date">
+      <Shelf id="shelf-recent" label="Newest revision first" items={byDate} maxWords={maxWords} morph />
+    </div>
+  </section>
+
+  <section class="odds" aria-labelledby="odds-title">
+    <h2 id="odds-title" class="odds-title">Odds and Ends</h2>
+    <div class="odds-grid">
+      <ul class="loose" role="list">
+        {
+          loose.map((p) => (
+            <li>
+              <a href={`/pages/${p.id}`}>{p.data.title}</a>
+              <span class="loose-desc">{p.data.description}</span>
+              <span class="loose-meta label">
+                <StatusMark status={p.data.status} size="11px" withLabel /> · revised {monthYear(p.data.revised)}
+              </span>
+            </li>
+          ))
+        }
+      </ul>
+      <div class="gists">
+        <h3 class="label">Gists</h3>
+        {
+          gists.map((g) => (
+            <div class="gist-group">
+              <p class="gist-name">{g.group}</p>
+              <ul role="list">
+                {g.links.map(([name, href]) => (
+                  <li>
+                    <a href={href}>{name}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .masthead,
+  .library,
+  .odds {
+    width: min(72rem, 100% - 2 * var(--gutter));
+    margin-inline: auto;
+  }
+
+  .masthead {
+    display: grid;
+    gap: var(--space-5) var(--space-8);
+    padding-block: var(--space-8) var(--space-7);
+    align-items: end;
+  }
+  @media (min-width: 52rem) {
+    .masthead {
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    }
+  }
+  .masthead-title {
+    margin: 0;
+    font-family: var(--font-text);
+    font-weight: 800;
+    font-size: var(--text-3xl);
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+  .masthead-intro {
+    max-inline-size: 38rem;
+    color: var(--ink-2);
+  }
+  .masthead-intro p {
+    margin: 0;
+    text-wrap: pretty;
+  }
+  .masthead-intro p + p {
+    margin-top: 0.8em;
+  }
+
+  .library-tools {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4) var(--space-6);
+    padding-block: var(--space-4);
+    margin-bottom: var(--space-6);
+    border-block: 1px solid var(--rule);
+  }
+
+  .arrange {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .arrange legend {
+    float: left;
+    margin-inline-end: var(--space-3);
+    color: var(--ink-3);
+  }
+  .arrange input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .arrange label {
+    padding: var(--space-2) var(--space-3);
+    min-block-size: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-sm);
+    color: var(--ink-2);
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    cursor: pointer;
+  }
+  .arrange label:hover {
+    color: var(--ink);
+    background: var(--paper-2);
+  }
+  .arrange input:checked + label {
+    color: var(--ink);
+    border-color: var(--ink-3);
+    background: var(--paper-2);
+  }
+  .arrange input:focus-visible + label {
+    outline: 2px solid var(--focus);
+    outline-offset: 2px;
+  }
+
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-5);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: var(--ink-3);
+    font-family: var(--font-caps);
+    font-weight: 500;
+    font-size: var(--text-sm);
+    letter-spacing: 0.03em;
+  }
+
+  .by-topic {
+    display: grid;
+    gap: var(--space-7);
+  }
+  .library:has(#arrange-date:checked) .by-topic,
+  .library:not(:has(#arrange-date:checked)) .by-date {
+    display: none;
+  }
+
+  .odds {
+    margin-top: var(--space-9);
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--rule);
+  }
+  .odds-title {
+    margin: 0 0 var(--space-5);
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: var(--text-xl);
+    line-height: 1.1;
+  }
+  .odds-grid {
+    display: grid;
+    gap: var(--space-7);
+  }
+  @media (min-width: 52rem) {
+    .odds-grid {
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    }
+  }
+  .loose {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--space-5);
+  }
+  .loose li {
+    display: grid;
+    gap: var(--space-1);
+  }
+  .loose a {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--ink);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    justify-self: start;
+  }
+  .loose a:hover {
+    text-decoration-thickness: 2px;
+  }
+  .loose-desc {
+    color: var(--ink-2);
+  }
+  .loose-meta {
+    color: var(--ink-3);
+    font-size: var(--text-xs);
+  }
+
+  .gists h3 {
+    margin: 0 0 var(--space-3);
+    color: var(--ink-3);
+    font-size: var(--text-sm);
+  }
+  .gist-group + .gist-group {
+    margin-top: var(--space-4);
+  }
+  .gist-name {
+    margin: 0 0 var(--space-1);
+    font-family: var(--font-display);
+    font-weight: 700;
+  }
+  .gists ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--space-1);
+  }
+  .gists a {
+    color: var(--ink-2);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+  }
+  .gists a:hover {
+    color: var(--ink);
+  }
+</style>

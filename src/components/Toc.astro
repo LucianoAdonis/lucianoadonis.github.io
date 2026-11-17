@@ -1,0 +1,105 @@
+---
+/**
+ * "In this chapter": the h2s (and h3s under them) of a long page. In the left
+ * margin on wide screens, folded up above the text on narrow ones.
+ */
+import type { MarkdownHeading } from 'astro';
+
+interface Props {
+  headings: MarkdownHeading[];
+}
+const items = Astro.props.headings.filter((h) => h.depth === 2 || h.depth === 3);
+---
+{
+  items.length >= 3 && (
+    <>
+      <nav class="toc toc-side" aria-label="In this chapter" data-pagefind-ignore>
+        <p class="label">In this chapter</p>
+        <ol role="list">
+          {items.map((h) => (
+            <li class={`d${h.depth}`}>
+              <a href={`#${h.slug}`}>{h.text}</a>
+            </li>
+          ))}
+        </ol>
+      </nav>
+      <details class="toc toc-fold" data-pagefind-ignore>
+        <summary class="label">In this chapter</summary>
+        <ol role="list">
+          {items.map((h) => (
+            <li class={`d${h.depth}`}>
+              <a href={`#${h.slug}`}>{h.text}</a>
+            </li>
+          ))}
+        </ol>
+      </details>
+    </>
+  )
+}
+
+<style>
+  .toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--space-1);
+  }
+  .toc a {
+    display: block;
+    padding: 0.25rem 0;
+    color: var(--ink-2);
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-size: var(--text-sm);
+    line-height: 1.3;
+  }
+  .toc a:hover {
+    color: var(--ink);
+  }
+  .toc a[aria-current] {
+    color: var(--accent);
+    font-weight: 700;
+  }
+  .toc .d3 a {
+    padding-inline-start: var(--space-3);
+    font-size: var(--text-xs);
+  }
+  .toc .label {
+    margin: 0 0 var(--space-2);
+    color: var(--ink-3);
+    font-size: var(--text-xs);
+  }
+
+  .toc-side {
+    display: none;
+  }
+  .toc-fold {
+    margin-block-end: var(--space-6);
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+  }
+  .toc-fold summary {
+    cursor: pointer;
+    min-block-size: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  .toc-fold[open] summary {
+    margin-block-end: var(--space-2);
+  }
+
+  @media (min-width: 76rem) {
+    .toc-side {
+      display: block;
+      position: sticky;
+      inset-block-start: 5rem;
+      max-block-size: calc(100dvh - 7rem);
+      overflow-y: auto;
+    }
+    .toc-fold {
+      display: none;
+    }
+  }
+</style>

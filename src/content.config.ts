@@ -60,6 +60,9 @@ const pages = defineCollection({
           })
           .optional(),
         draft: z.boolean().default(false),
+        // The page's text lives elsewhere now (it was a copy). The URL keeps
+        // working and points there; the page drops out of contents and lists.
+        movedTo: reference('pages').optional(),
       })
       .superRefine((d, ctx) => {
         const issue = (message: string, path: string) =>
@@ -70,6 +73,7 @@ const pages = defineCollection({
         if (d.shelf && !d.spine) issue('a book landing needs a `spine` (hue and glyph)', 'spine');
         if (d.plate && !d.plateAlt) issue('`plate` needs `plateAlt`', 'plateAlt');
         if (d.revised < d.started) issue('`revised` is earlier than `started`', 'revised');
+        if (d.movedTo && (d.book || d.shelf)) issue('a moved page belongs to no book and no shelf', 'movedTo');
       }),
 });
 

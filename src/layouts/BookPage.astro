@@ -1,0 +1,110 @@
+---
+/** A book's landing page: front cover beside the title page (facts and contents), then its preface. */
+import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
+import Base from './Base.astro';
+import Cover from '../components/Cover.astro';
+import Contents from '../components/Contents.astro';
+import Elsewhere from '../components/Elsewhere.astro';
+import Plate from '../components/Plate.astro';
+import StatusMark from '../components/StatusMark.astro';
+import { monthYear } from '../lib/dates';
+import type { Book } from '../lib/library';
+
+interface Props {
+  book: Book;
+  Content: AstroComponentFactory;
+}
+const { book, Content } = Astro.props;
+const d = book.page.data;
+const superseded = d.elsewhere?.relation === 'superseded';
+const parts = book.chapters.length;
+---
+<Base title={book.title} description={book.description} hue={book.hue} theme={book.theme}>
+  <article class="book" data-pagefind-body>
+    <div class="book-head">
+      <div class="cover-col">
+        <Cover book={book} />
+      </div>
+      <div class="title-page">
+        {superseded && <Elsewhere elsewhere={d.elsewhere!} />}
+        <dl class="facts" data-pagefind-ignore>
+          <div>
+            <dt class="label">Status</dt>
+            <dd><StatusMark status={book.status} withLabel /></dd>
+          </div>
+          <div>
+            <dt class="label">Started</dt>
+            <dd><time datetime={book.started.toISOString().slice(0, 10)}>{monthYear(book.started)}</time></dd>
+          </div>
+          <div>
+            <dt class="label">Revised</dt>
+            <dd><time datetime={book.revised.toISOString().slice(0, 10)}>{monthYear(book.revised)}</time></dd>
+          </div>
+          <div>
+            <dt class="label">Length</dt>
+            <dd>{parts ? `${parts} chapters, ` : ''}{book.minutes} min</dd>
+          </div>
+        </dl>
+        {parts > 0 && <Contents chapters={book.chapters} />}
+        {!superseded && d.elsewhere && <Elsewhere elsewhere={d.elsewhere} />}
+      </div>
+    </div>
+
+    <div class="book-body measure">
+      {d.plate && <Plate src={d.plate} alt={d.plateAlt!} />}
+      <div class="prose">
+        <Content />
+      </div>
+    </div>
+  </article>
+</Base>
+
+<style>
+  .book-head {
+    display: grid;
+    gap: var(--space-7);
+    width: min(72rem, 100% - 2 * var(--gutter));
+    margin: var(--space-7) auto var(--space-8);
+  }
+  .cover-col {
+    inline-size: min(15rem, 68%);
+  }
+  @media (min-width: 56rem) {
+    .book-head {
+      grid-template-columns: minmax(15rem, 21rem) minmax(0, 1fr);
+      gap: var(--space-8);
+      align-items: start;
+    }
+    .cover-col {
+      inline-size: 100%;
+      position: sticky;
+      inset-block-start: var(--space-6);
+    }
+  }
+  .title-page {
+    display: grid;
+    gap: var(--space-6);
+    align-content: start;
+    max-inline-size: 40rem;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+    gap: var(--space-4);
+    margin: 0;
+    padding-bottom: var(--space-5);
+    border-bottom: 1px solid var(--rule);
+  }
+  .facts dt {
+    color: var(--ink-3);
+    font-size: var(--text-xs);
+  }
+  .facts dd {
+    margin: var(--space-1) 0 0;
+    font-family: var(--font-display);
+    font-weight: 700;
+  }
+  .book-body :global(.plate) {
+    margin-block-end: var(--space-7);
+  }
+</style>
